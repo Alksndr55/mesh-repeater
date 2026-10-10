@@ -1,0 +1,18 @@
+# Local KiCad state and backups
+*.kicad_prl
+*.lck
+~*.lck
+*-backups/
+*.bak
+*.kicad_pcb-bak
+*.kicad_sch-bak
+*.kicad_wks-bak
+fp-info-cache
+# Local build results
+__pycache__/
+*.pyc
+*.o
+*.elf
+*.map
+.DS_Store
+Thumbs.db

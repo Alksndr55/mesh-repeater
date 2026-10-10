@@ -1,0 +1,77 @@
+{
+  "board_sha256": "71bc08b859a27f69a8d4f061caf5d2b3182581594e13b1cb2704353220fa1b22",
+  "date": "2026-10-10",
+  "checks": [
+    {
+      "check": "No local state, locks, caches, tokens or historical project files in Git index",
+      "ok": true,
+      "details": null
+    },
+    {
+      "check": "PCB exactly matches approved canonical S4.12",
+      "ok": true,
+      "details": "71bc08b859a27f69a8d4f061caf5d2b3182581594e13b1cb2704353220fa1b22"
+    },
+    {
+      "check": "Every native CAD file is an exact unchanged copy",
+      "ok": true,
+      "details": 11
+    },
+    {
+      "check": "Portable project DRC: zero violations, unconnected and schematic parity",
+      "ok": true,
+      "details": null
+    },
+    {
+      "check": "Portable project ERC: zero errors and one intentional FB warning",
+      "ok": true,
+      "details": null
+    },
+    {
+      "check": "All 46 used local footprints and STEP models retain exact asset hashes",
+      "ok": true,
+      "details": 46
+    },
+    {
+      "check": "Both assembly and shopping tables have the same 136 unique references",
+      "ok": true,
+      "details": null
+    },
+    {
+      "check": "Shopping table retains every electrical value, fit rule and footprint",
+      "ok": true,
+      "details": null
+    },
+    {
+      "check": "Procurement package for every shopping row is filled",
+      "ok": true,
+      "details": null
+    },
+    {
+      "check": "Every published README and HTML local link resolves",
+      "ok": true,
+      "details": []
+    },
+    {
+      "check": "No private workspace paths, notification links or credential patterns in indexed text",
+      "ok": true,
+      "details": []
+    },
+    {
+      "check": "Published PDF has six pages and no private metadata patterns",
+      "ok": true,
+      "details": {
+        "pages": 6,
+        "metadata": {
+          "/Producer": "KiCad PDF",
+          "/CreationDate": "D:2026:10:10:21:55:33",
+          "/Creator": "Eeschema-PDF",
+          "/Title": "CN3722 / зарядка Na-ion и LTO",
+          "/Author": "",
+          "/Subject": ""
+        }
+      }
+    }
+  ],
+  "summary": "Portable editable CAD snapshot verified; physical bench qualification remains incomplete."
+}
