@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "project": "Mesh Repeater ver 1.0",
-  "revision": "S4.12",
-  "date": "2026-10-10",
-  "board_sha256": "71bc08b859a27f69a8d4f061caf5d2b3182581594e13b1cb2704353220fa1b22",
+  "revision": "S4.16",
+  "date": "2026-10-11",
+  "board_sha256": "742ae27bb1d13893f6dc368e5c67f5c41b35a3e6765331fc7e9871297d23dec6",
   "path_convention": "Asset files are relative to the KiCad project directory. historical_source_record identifies unpublished engineering build records, not a file included in this snapshot. Manufacturer URLs provide provenance; manufacturer PDFs/images are not included.",
   "license_scope": "Existing third-party licenses/notices are recorded only. No new license is assigned to original Mesh Repeater contributions.",
   "counts": {
-    "footprint_files": 32,
-    "local_step_files": 14,
-    "generated_step_files": 13,
+    "footprint_files": 37,
+    "local_step_files": 17,
+    "generated_step_files": 16,
     "renamed_kicad_step_files": 1
   },
   "footprints": [
@@ -73,9 +73,15 @@
       "file": "Meshcore.pretty/C_0805_2012Metric.kicad_mod",
       "sha256": "e890bdf55fa18fc6df6878eb1b5251a991e1b93985509175eb269d3d002880b4",
       "references": [
+        "C2",
+        "C3",
+        "C4",
+        "C5",
+        "C6",
+        "C7",
         "C12",
         "C14",
-        "C2",
+        "C52",
         "C21",
         "C22",
         "C23",
@@ -83,18 +89,15 @@
         "C25",
         "C26",
         "C27",
-        "C3",
         "C30",
         "C33",
-        "C4",
-        "C5",
-        "C52",
         "C56",
         "C57",
         "C58",
         "C59",
-        "C6",
-        "C7"
+        "C60",
+        "C61",
+        "C62"
       ],
       "description": "Capacitor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf, https://docs.google.com/spreadsheets/d/1BsfQQcO9C6DZCsRaXUlFlo91Tg2WpOkGARC1WS5S8t0/edit?usp=sharing)",
       "origin": "kicad_library_derivative",
@@ -134,7 +137,6 @@
       "sha256": "9131ae7bf3d875cd9cadf27760dbdafb5bef422a6db91a0a320cd40d4342baaa",
       "references": [
         "C15",
-        "C16",
         "C34",
         "C35",
         "C36",
@@ -144,6 +146,7 @@
         "C40",
         "C41",
         "C42",
+        "C16",
         "C43",
         "C44",
         "C45",
@@ -321,6 +324,19 @@
       "modifications": "Local library name, model links and display fields may differ; preserve upstream geometric-description metadata."
     },
     {
+      "file": "Meshcore.pretty/NTC_TDK_B57861S_Onboard_or_Remote_P2.54mm.kicad_mod",
+      "origin": "project_generated_geometry",
+      "license": "No new project license assigned; see LICENSE.md",
+      "sha256": "168283349342d577188df529f866752bc60e3d2b139152443f48f0df9363ff9c",
+      "references": [
+        "TH1"
+      ],
+      "description": "TDK B57861S0103F040; formed flexible leads P2.54; body diameter <=2.41mm, body length <=6.5mm, vertical assembly <=12.5mm; keep4.5mm straight at body and bend radius>=0.75mm. Fit ONE sensor onboard or ONE remote sensor to these pads. Board pitch is assembly choice, not native factory lead pitch.",
+      "geometry_sources": [
+        "https://www.tdk-electronics.tdk.com/inf/50/db/ntc/NTC_Mini_sensors_S861.pdf"
+      ]
+    },
+    {
       "file": "Meshcore.pretty/NiceNano_13x2_Socket.kicad_mod",
       "sha256": "e7c3d67ad190087bc3815f1507128fc58edb6702c2933674df83903e69eae219",
       "references": [
@@ -412,9 +428,27 @@
       "modifications": "Local library name, model links and display fields may differ; preserve upstream geometric-description metadata."
     },
     {
+      "file": "Meshcore.pretty/RF_Cut_Link_0p6.kicad_mod",
+      "origin": "project_generated_geometry",
+      "license": "No new project license assigned; see LICENSE.md",
+      "sha256": "73bd9b0b9a1fcfb75c49fc765fdea95ec68e9d3a96f232d7b901f4a69a8ef9ba",
+      "references": [
+        "NT1"
+      ],
+      "description": "Permanent copper net-tie bypass under optional FL1. Cut central bar before fitting SAW. Not a purchased part. 0.6mm square pads, centres 1mm; 0.6mm copper bar with exposed cut window.",
+      "geometry_sources": []
+    },
+    {
       "file": "Meshcore.pretty/R_0805_2012Metric.kicad_mod",
       "sha256": "949bbbe025b509557866ddd9fcb0403244571f3ceb4f954c9766ee622d18421c",
       "references": [
+        "R3",
+        "R4",
+        "R5",
+        "R6",
+        "R7",
+        "R8",
+        "R9",
         "R10",
         "R11",
         "R13",
@@ -430,7 +464,6 @@
         "R27",
         "R28",
         "R29",
-        "R3",
         "R30",
         "R31",
         "R33",
@@ -439,7 +472,6 @@
         "R37",
         "R38",
         "R39",
-        "R4",
         "R42",
         "R43",
         "R44",
@@ -448,16 +480,26 @@
         "R47",
         "R48",
         "R49",
-        "R5",
         "R50",
         "R51",
         "R52",
         "R53",
         "R54",
-        "R6",
-        "R7",
-        "R8",
-        "R9"
+        "R56",
+        "R58",
+        "R57",
+        "R59",
+        "R60",
+        "R69",
+        "R61",
+        "R62",
+        "R70",
+        "R63",
+        "R64",
+        "R65",
+        "R66",
+        "R67",
+        "R68"
       ],
       "description": "Resistor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf)",
       "origin": "kicad_library_derivative",
@@ -494,7 +536,8 @@
       "sha256": "022447f04f0072678b1cd06cabe1b92d512e16d0a7b02436400192aa99812ae0",
       "references": [
         "R40",
-        "R41"
+        "R41",
+        "R55"
       ],
       "description": "Vishay WSL1206 for 0.006..0.20 ohm; manufacturer lands a=1.65mm b=1.93mm l=1.80mm, document30100 revision23-Nov-2023 page2. Full paste apertures are an engineering choice.",
       "origin": "project_generated_footprint",
@@ -506,11 +549,38 @@
       "historical_source_record": "design/qualified_footprints/Meshcore.pretty/R_Vishay_WSL1206_18.kicad_mod"
     },
     {
+      "file": "Meshcore.pretty/SAW_AEL_DCC6C_S869M000S003.kicad_mod",
+      "origin": "project_generated_geometry",
+      "license": "No new project license assigned; see LICENSE.md",
+      "sha256": "d2afd17d232005ebf12cb6b8d719f0dff5610c74b3ba5467b9f3285f3e6f179f",
+      "references": [
+        "FL1"
+      ],
+      "description": "Abracon/AEL S869M000S003, DCC6C body 3x3x1.3mm. Manufacturer Rev A recommended land pattern, rotated: input2 +Y; output5 -Y; 1/3/4/6 GND. RF centres +/-1.2mm; ordinary lands0.8x1.2mm; elongated pin1 land0.8x1.8mm. Land-pattern top-row height caption0.4mm conflicts with drawn proportions and total3.2mm; implemented0.8mm, same as explicit middle row. See research report. Source https://abracon.com/datasheets/AEL-Crystals/PN/S869M000S003.pdf printedpage3. Old AEL MAX RFinput13dBm.",
+      "geometry_sources": [
+        "https://abracon.com/datasheets/AEL-Crystals/PN/S869M000S003.pdf"
+      ]
+    },
+    {
+      "file": "Meshcore.pretty/SMA_KLS1_SMA002_B_Horizontal.kicad_mod",
+      "origin": "project_generated_geometry",
+      "license": "No new project license assigned; see LICENSE.md",
+      "sha256": "a6ac815b98c0c3345ecf2bfcba79d1e8e9a8e513b828383c34a098945fcb21f4",
+      "references": [
+        "J13"
+      ],
+      "description": "KLS L-KLS1-SMA002-B female right-angle SMA, manufacturer drawing V0 2025-07-28 sheet1. 5.08mm square GND pitch, 4x1.70mm GND finished holes, 1.30mm RF finished hole. Body6x6mm, horizontal length14.46mm, total height13.0mm, insertion3.5mm. RFpin origin; connector points -Y. Land diameters2.4/2.0mm and courtyard are project engineering choices. Source https://img.klsele.com/admin/product_upload/20250828165703L-KLS1-SMA002-B%26KLS1-SMA002-B-1.27.pdf",
+      "geometry_sources": [
+        "https://img.klsele.com/admin/product_upload/20250828165703L-KLS1-SMA002-B&KLS1-SMA002-B-1.27.pdf"
+      ]
+    },
+    {
       "file": "Meshcore.pretty/SOIC-8_3.9x4.9mm_P1.27mm.kicad_mod",
       "sha256": "3c9b63198dd4dbf5e6c28c84702c29fad46a35103b821a19306c4ac888ad8e76",
       "references": [
         "U4",
-        "U6"
+        "U6",
+        "U10"
       ],
       "description": "SOIC, 8 Pin (JEDEC MS-012AA, https://www.analog.com/media/en/package-pcb-resources/package/pkg_pdf/soic_narrow-r/r_8.pdf)",
       "origin": "kicad_library_derivative",
@@ -530,7 +600,11 @@
       "references": [
         "Q1",
         "Q2",
-        "Q3"
+        "Q3",
+        "Q4",
+        "Q6",
+        "Q7",
+        "Q5"
       ],
       "description": "SOT, 3 Pin (JEDEC TO-236 Var AB https://www.jedec.org/document_search?search_api_views_fulltext=TO-236)",
       "origin": "kicad_library_derivative",
@@ -546,7 +620,7 @@
     },
     {
       "file": "Meshcore.pretty/SOT-23-5.kicad_mod",
-      "sha256": "684a94089f59798a46492dac8dd0242edfa4d915e76a210abdca369e4faa4f9b",
+      "sha256": "80ccc44ba3dadfcbe6d4f1607fc6cc1dbd03d0fb5f21664c98f8d721fb1e0f8a",
       "references": [
         "U8",
         "U9"
@@ -614,6 +688,21 @@
       "historical_source_record": "design/build_gps_footprint_s4_7.py"
     },
     {
+      "file": "Meshcore.pretty/TO-92_Inline.kicad_mod",
+      "origin": "kicad_library_derivative",
+      "license": "CC-BY-SA-4.0",
+      "sha256": "fc2e306a210a4f40c12f2af3cc09bf923761c9faadfeed9e6d331799a6bde77d",
+      "references": [
+        "U11"
+      ],
+      "description": "TO-92 leads in-line, narrow, oval pads, drill 0.75mm (see NXP sot054_po.pdf)",
+      "geometry_sources": [
+        "https://www.onsemi.com/pdf/datasheet/lm285-d.pdf"
+      ],
+      "exception": "KiCad libraries design exception",
+      "attribution": "KiCad Libraries contributors"
+    },
+    {
       "file": "Meshcore.pretty/TPS63802_DLA0010A.kicad_mod",
       "sha256": "a58190a0522c39fc5a4fee712fc5ef71ffe8f0715099edbc0fff80364a25d811",
       "references": [
@@ -654,7 +743,9 @@
         "TP3",
         "TP4",
         "TP6",
-        "TP7"
+        "TP7",
+        "TP8",
+        "TP9"
       ],
       "description": "SMD pad as test Point, diameter 1.5mm",
       "origin": "kicad_library_derivative",
@@ -682,7 +773,26 @@
       "geometry_basis": "CR2032 nominaldiameter20mm, height3.2mm; positivefaceup.",
       "uncertainty": "Generic cell envelope. ZplacementinKeystone1060 approximate pendingholderseatingmeasurement.",
       "own_license_status": "not_assigned_by_this_manifest",
-      "historical_source_record": "design/build_3d_models.py"
+      "historical_source_record": "design/build_3d_models.py",
+      "geometry_provenance": {
+        "file": "CR2032_Cell.step",
+        "refs": [
+          "BT1"
+        ],
+        "description": "CR2032 nominaldiameter20mm, height3.2mm; positivefaceup.",
+        "sources": [],
+        "uncertainty": "Generic cell envelope. ZplacementinKeystone1060 approximate pendingholderseatingmeasurement.",
+        "bbox_mm": {
+          "xmin": -10.0,
+          "xmax": 10.0,
+          "ymin": -10.0,
+          "ymax": 10.0,
+          "zmin": 0.0,
+          "zmax": 3.2110000999999997
+        },
+        "valid_step": true,
+        "sha256": "2e61853937eaed4a26c043eb43a569b183f40fc3d1a451455ee6cdb7bc57140e"
+      }
     },
     {
       "file": "3dmodels/Coilcraft_XGL4020.step",
@@ -698,7 +808,28 @@
       "geometry_basis": "XGL4020 nominal4x4, maximum height2.1; actual terminals0.82x3.25.",
       "uncertainty": "Simplified surface details; nominal dimensions, no manufacturing tolerances.",
       "own_license_status": "not_assigned_by_this_manifest",
-      "historical_source_record": "design/build_3d_models.py"
+      "historical_source_record": "design/build_3d_models.py",
+      "geometry_provenance": {
+        "file": "Coilcraft_XGL4020.step",
+        "refs": [
+          "L2"
+        ],
+        "description": "XGL4020 nominal4x4, maximum height2.1; actual terminals0.82x3.25.",
+        "sources": [
+          "https://www.coilcraft.com/getmedia/76c9c081-4945-4c85-9129-9356e1ad6734/xgl4020.pdf"
+        ],
+        "uncertainty": "Simplified surface details; nominal dimensions, no manufacturing tolerances.",
+        "bbox_mm": {
+          "xmin": -2.0,
+          "xmax": 2.0,
+          "ymin": -2.0,
+          "ymax": 2.0,
+          "zmin": 0.0,
+          "zmax": 2.1080001
+        },
+        "valid_step": true,
+        "sha256": "b6bd76d01981e885ab7167550fa756113c7c8f41f9a80b5c0d8a5ae3be9c8e67"
+      }
     },
     {
       "file": "3dmodels/Connfly_DS1027_2BBN1.step",
@@ -749,7 +880,29 @@
       "geometry_basis": "HT-RA62 PCB16x17x0.8mm,2mmpitch; exposed components, no metal can.",
       "uncertainty": "PCB dimensions and pitch from official mechanical drawing. IPEXbody/height and component placement are illustrative from official photo; loadedheight not specified by manufacturer. Solderstand-off0.1mm assumed.",
       "own_license_status": "not_assigned_by_this_manifest",
-      "historical_source_record": "design/build_3d_models.py"
+      "historical_source_record": "design/build_3d_models.py",
+      "geometry_provenance": {
+        "file": "Heltec_HT_RA62_Approx.step",
+        "refs": [
+          "M2"
+        ],
+        "description": "HT-RA62 PCB16x17x0.8mm,2mmpitch; exposed components, no metal can.",
+        "sources": [
+          "https://resource.heltec.cn/download/HT-RA62/HT-RA62.png",
+          "https://resource.heltec.cn/download/HT-RA62/HT-RA62%28Rev1.1%29.pdf"
+        ],
+        "uncertainty": "PCB dimensions and pitch from official mechanical drawing. IPEXbody/height and component placement are illustrative from official photo; loadedheight not specified by manufacturer. Solderstand-off0.1mm assumed.",
+        "bbox_mm": {
+          "xmin": -8.250000000000007,
+          "xmax": 8.250000000000007,
+          "ymin": -8.5,
+          "ymax": 8.5,
+          "zmin": 0.05,
+          "zmax": 2.7
+        },
+        "valid_step": true,
+        "sha256": "8f01259c84ab23507bb623e440bbcba2db85635ddbbfbc85315013359566e15e"
+      }
     },
     {
       "file": "3dmodels/KLS_TS6604_4p3.step",
@@ -783,7 +936,53 @@
       "geometry_basis": "Illustrative NiceNano-compatible nRF52840 module plus two13-way2.54mm sockets. USB at footprint+Y, BLEantenna at-Y.",
       "uncertainty": "ACTUAL OZON CLONE NOT MEASURED. Representative ICBbuyclone PCB17.78x33 and26holes; PCBthickness1mm, bottomZ6.5mm, socketstack and on-modulecomponents/USB/antenna are illustrative assumptions. USBmouth localY+17.5, about1mminsidecarrieredge; do not treat as verified plugclearance or pinmap.",
       "own_license_status": "not_assigned_by_this_manifest",
-      "historical_source_record": "design/build_3d_models.py"
+      "historical_source_record": "design/build_3d_models.py",
+      "geometry_provenance": {
+        "file": "NiceNano_Clone_Approx.step",
+        "refs": [
+          "M1"
+        ],
+        "description": "Illustrative NiceNano-compatible nRF52840 module plus two13-way2.54mm sockets. USB at footprint+Y, BLEantenna at-Y.",
+        "sources": [
+          "https://wiki.icbbuy.com/doku.php?id=developmentboard:nrf52840",
+          "../Meshcore.pretty/NiceNano_13x2_Socket.kicad_mod"
+        ],
+        "uncertainty": "ACTUAL OZON CLONE NOT MEASURED. Representative ICBbuyclone PCB17.78x33 and26holes; PCBthickness1mm, bottomZ6.5mm, socketstack and on-modulecomponents/USB/antenna are illustrative assumptions. USBmouth localY+17.5, about1mminsidecarrieredge; do not treat as verified plugclearance or pinmap.",
+        "bbox_mm": {
+          "xmin": -8.89,
+          "xmax": 8.89,
+          "ymin": -17.5,
+          "ymax": 16.51,
+          "zmin": -2.5,
+          "zmax": 10.7
+        },
+        "valid_step": true,
+        "sha256": "d0171b50564695dc8925d020891c3b814ea1b3340944900e3f424e6dfdfda088"
+      }
+    },
+    {
+      "file": "3dmodels/S869M000S003_Approx.step",
+      "origin": "project_generated_simplified_model",
+      "license": "No new project license assigned; see LICENSE.md",
+      "sha256": "f014778833906a7ee87329e0ef6e8959c5eaa838f1694c58b1b39a34db635efd",
+      "references": [
+        "FL1"
+      ],
+      "geometry_sources": [
+        "https://abracon.com/datasheets/AEL-Crystals/PN/S869M000S003.pdf"
+      ]
+    },
+    {
+      "file": "3dmodels/SMA_KLS1_SMA002_B_Approx.step",
+      "origin": "project_generated_simplified_model",
+      "license": "No new project license assigned; see LICENSE.md",
+      "sha256": "6d4fe1194d68cf1f6bb598c5a9eca8142b4ff96218b0d503e7e3cd4f3e645574",
+      "references": [
+        "J13"
+      ],
+      "geometry_sources": [
+        "https://img.klsele.com/admin/product_upload/20250828165703L-KLS1-SMA002-B&KLS1-SMA002-B-1.27.pdf"
+      ]
     },
     {
       "file": "3dmodels/Shield_Frame_76x43.step",
@@ -799,7 +998,28 @@
       "geometry_basis": "Customframe:76x43 wallcentre dimensions, wall0.2, top14mm. No mounting flange.",
       "uncertainty": "Proposed custom metalwork, not an available supplierpart. Frame/lid connection and retentionmechanism not designed. Outer76.2x43.2, inner75.8x42.8.",
       "own_license_status": "not_assigned_by_this_manifest",
-      "historical_source_record": "design/build_3d_models.py"
+      "historical_source_record": "design/build_3d_models.py",
+      "geometry_provenance": {
+        "file": "Shield_Frame_76x43.step",
+        "refs": [
+          "SH1"
+        ],
+        "description": "Customframe:76x43 wallcentre dimensions, wall0.2, top14mm. No mounting flange.",
+        "sources": [
+          "../Meshcore.pretty/Shield_Frame_76x43.kicad_mod"
+        ],
+        "uncertainty": "Proposed custom metalwork, not an available supplierpart. Frame/lid connection and retentionmechanism not designed. Outer76.2x43.2, inner75.8x42.8.",
+        "bbox_mm": {
+          "xmin": -38.1,
+          "xmax": 38.1,
+          "ymin": -21.6,
+          "ymax": 21.6,
+          "zmin": 0.0,
+          "zmax": 14.0
+        },
+        "valid_step": true,
+        "sha256": "36a219fac7772c7b7f1d818d9d5f43f0271e14b4739aa7205f7e6304ff25c867"
+      }
     },
     {
       "file": "3dmodels/Shield_Lid_76x43.step",
@@ -813,7 +1033,26 @@
       "geometry_basis": "Separate removablelid, underside14.0mm, thickness0.2mm.",
       "uncertainty": "Conceptual coveronly, without detailed catches or manufacturingqualification. Normally hidden inKiCad forcomponentinspection.",
       "own_license_status": "not_assigned_by_this_manifest",
-      "historical_source_record": "design/build_3d_models.py"
+      "historical_source_record": "design/build_3d_models.py",
+      "geometry_provenance": {
+        "file": "Shield_Lid_76x43.step",
+        "refs": [
+          "SH1"
+        ],
+        "description": "Separate removablelid, underside14.0mm, thickness0.2mm.",
+        "sources": [],
+        "uncertainty": "Conceptual coveronly, without detailed catches or manufacturingqualification. Normally hidden inKiCad forcomponentinspection.",
+        "bbox_mm": {
+          "xmin": -38.2,
+          "xmax": 38.2,
+          "ymin": -21.7,
+          "ymax": 21.7,
+          "zmin": 14.0,
+          "zmax": 14.2
+        },
+        "valid_step": true,
+        "sha256": "eae413cb0dd8a1c8bb92b650392139432c92ef89365f211742fb0b5f655c1956"
+      }
     },
     {
       "file": "3dmodels/Sumida_CDRH127_LD.step",
@@ -830,7 +1069,29 @@
       "geometry_basis": "CDRH127/LD nominal12x12; maximumheight8. Terminals along footprintY.",
       "uncertainty": "Simplified surface details; nominal dimensions, no manufacturing tolerances.",
       "own_license_status": "not_assigned_by_this_manifest",
-      "historical_source_record": "design/build_3d_models.py"
+      "historical_source_record": "design/build_3d_models.py",
+      "geometry_provenance": {
+        "file": "Sumida_CDRH127_LD.step",
+        "refs": [
+          "L3",
+          "L4"
+        ],
+        "description": "CDRH127/LD nominal12x12; maximumheight8. Terminals along footprintY.",
+        "sources": [
+          "https://products.sumida.com/products/pdf/CDRH127LD%20%28en%29.pdf"
+        ],
+        "uncertainty": "Simplified surface details; nominal dimensions, no manufacturing tolerances.",
+        "bbox_mm": {
+          "xmin": -6.0,
+          "xmax": 6.0,
+          "ymin": -6.0,
+          "ymax": 6.0,
+          "zmin": 0.0,
+          "zmax": 8.008000099999999
+        },
+        "valid_step": true,
+        "sha256": "94832871efb6205b0fb77c3eaac46e01d9efcbe52f2ebd014d618ab59f0b05be"
+      }
     },
     {
       "file": "3dmodels/Sumida_CDRH127_LD_101.step",
@@ -847,6 +1108,34 @@
       "uncertainty": "Simplified nominal visual model. Not a manufacturer STEP or mechanical tolerance certification.",
       "own_license_status": "not_assigned_by_this_manifest",
       "historical_source_record": "design/build_3d_models_s4_6.py"
+    },
+    {
+      "file": "3dmodels/TDK_B57861S_Vertical_Approx.step",
+      "origin": "project_generated_simplified_model",
+      "license": "No new project license assigned; see LICENSE.md",
+      "sha256": "605a437a0adc4d4ea826ad05a57c8fddf7ad756bc49f4fd55659f5e829762dc2",
+      "geometry_provenance": {
+        "file": "TDK_B57861S_Vertical_Approx.step",
+        "ref": "TH1",
+        "source": "https://www.tdk-electronics.tdk.com/inf/50/db/ntc/NTC_Mini_sensors_S861.pdf",
+        "body_max_mm": {
+          "diameter": 2.41,
+          "length": 6.5
+        },
+        "assembly": "Vertical, formed and trimmed flexible leads P2.54; retain >=4.5mm straight lead at body and bend radius >=0.75mm per TDK. ONE onboard NTC or ONE remote NTC on the same pads. Verify formed sample height <=12.5mm and retain it mechanically.",
+        "assembly_height_above_pcb_mm": 12.5,
+        "shield_inside_height_mm": 14,
+        "nominal_headroom_mm": 1.5,
+        "model_status": "Simplified maximum body envelope, not manufacturer-certified STEP; lower lead bends approximated by sloping segments for display, not a manufacturing forming template.",
+        "sha256": "605a437a0adc4d4ea826ad05a57c8fddf7ad756bc49f4fd55659f5e829762dc2",
+        "valid_step": true
+      },
+      "references": [
+        "TH1"
+      ],
+      "geometry_sources": [
+        "https://www.tdk-electronics.tdk.com/inf/50/db/ntc/NTC_Mini_sensors_S861.pdf"
+      ]
     },
     {
       "file": "3dmodels/TI_DCT0008A.step",
@@ -878,7 +1167,28 @@
       "geometry_basis": "TI DLA0010A:2x3mm, nominalheight0.9, asymmetric10contacts, no exposed centrepad.",
       "uncertainty": "Simplified surface details; nominal dimensions, no manufacturing tolerances.",
       "own_license_status": "not_assigned_by_this_manifest",
-      "historical_source_record": "design/build_3d_models.py"
+      "historical_source_record": "design/build_3d_models.py",
+      "geometry_provenance": {
+        "file": "TPS63802_DLA0010A.step",
+        "refs": [
+          "U2"
+        ],
+        "description": "TI DLA0010A:2x3mm, nominalheight0.9, asymmetric10contacts, no exposed centrepad.",
+        "sources": [
+          "https://www.ti.com/lit/ds/symlink/tps63802.pdf"
+        ],
+        "uncertainty": "Simplified surface details; nominal dimensions, no manufacturing tolerances.",
+        "bbox_mm": {
+          "xmin": -1.0,
+          "xmax": 1.0,
+          "ymin": -1.5,
+          "ymax": 1.5,
+          "zmin": 0.0,
+          "zmax": 0.913
+        },
+        "valid_step": true,
+        "sha256": "e5e3775caacbf170bd75cf228bb8f9e615edc705298a8c430399939a4b3fd667"
+      }
     },
     {
       "file": "3dmodels/Vishay_WSL1206.step",
@@ -886,7 +1196,8 @@
       "origin": "project_generated_step",
       "references": [
         "R40",
-        "R41"
+        "R41",
+        "R55"
       ],
       "generator": "CadQuery",
       "geometry_sources": [
@@ -895,7 +1206,29 @@
       "geometry_basis": "WSL1206: nominal3.20x1.60x0.635mm.",
       "uncertainty": "Simplified surface details; nominal dimensions, no manufacturing tolerances.",
       "own_license_status": "not_assigned_by_this_manifest",
-      "historical_source_record": "design/build_3d_models.py"
+      "historical_source_record": "design/build_3d_models.py",
+      "geometry_provenance": {
+        "file": "Vishay_WSL1206.step",
+        "refs": [
+          "R40",
+          "R41"
+        ],
+        "description": "WSL1206: nominal3.20x1.60x0.635mm.",
+        "sources": [
+          "https://www.vishay.com/docs/30100/wsl.pdf"
+        ],
+        "uncertainty": "Simplified surface details; nominal dimensions, no manufacturing tolerances.",
+        "bbox_mm": {
+          "xmin": -1.6,
+          "xmax": 1.6,
+          "ymin": -0.8,
+          "ymax": 0.8,
+          "zmin": 0.0,
+          "zmax": 0.6450001
+        },
+        "valid_step": true,
+        "sha256": "4fe190ec44210285548f50b2997bedd29fb197988c23002071778e6401df17c5"
+      }
     }
   ],
   "required_license_documents": [

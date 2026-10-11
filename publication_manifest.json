@@ -1,11 +1,11 @@
 {
   "project": "Mesh Repeater ver 1.0",
   "designed_by": "@Alksndritm",
-  "cad_revision": "S4.12",
-  "date": "2026-10-10",
-  "status": "engineering prototype; bench qualification and fabrication release incomplete",
-  "board_sha256": "71bc08b859a27f69a8d4f061caf5d2b3182581594e13b1cb2704353220fa1b22",
-  "physical_positions": 136,
+  "cad_revision": "S4.16",
+  "date": "2026-10-11",
+  "status": "engineering prototype; manufacturing package paused; bench qualification incomplete",
+  "board_sha256": "742ae27bb1d13893f6dc368e5c67f5c41b35a3e6765331fc7e9871297d23dec6",
+  "physical_positions": 167,
   "dimensions_mm": [
     90,
     100
@@ -27,20 +27,25 @@
     "L_Sumida_CDRH127_LDNP_101MC",
     "Molex_PicoBlade_53261-0871_1x08-1MP_P1.25mm_Horizontal",
     "MountingHole_3.2mm_M3",
+    "NTC_TDK_B57861S_Onboard_or_Remote_P2.54mm",
     "NiceNano_13x2_Socket",
     "PinHeader_1x02_P2.54mm_Vertical",
     "PinHeader_1x03_P2.54mm_Vertical",
     "PinHeader_1x04_P2.54mm_Vertical",
     "PinHeader_2x03_P2.54mm_Vertical",
+    "RF_Cut_Link_0p6",
     "R_0805_2012Metric",
     "R_1206_3216Metric",
     "R_Vishay_WSL1206_18",
+    "SAW_AEL_DCC6C_S869M000S003",
+    "SMA_KLS1_SMA002_B_Horizontal",
     "SOIC-8_3.9x4.9mm_P1.27mm",
     "SOT-23",
     "SOT-23-5",
     "SW_Push_KLS7_TS6604_4_3_180",
     "Shield_Frame_76x43",
     "TI_DCT0008A",
+    "TO-92_Inline",
     "TPS63802_DLA0010A",
     "TSSOP-16_4.4x5mm_P0.65mm",
     "TestPoint_Pad_D1.5mm"
@@ -53,10 +58,13 @@
     "Heltec_HT_RA62_Approx.step",
     "KLS_TS6604_4p3.step",
     "NiceNano_Clone_Approx.step",
+    "S869M000S003_Approx.step",
+    "SMA_KLS1_SMA002_B_Approx.step",
     "Shield_Frame_76x43.step",
     "Shield_Lid_76x43.step",
     "Sumida_CDRH127_LD.step",
     "Sumida_CDRH127_LD_101.step",
+    "TDK_B57861S_Vertical_Approx.step",
     "TI_DCT0008A.step",
     "TPS63802_DLA0010A.step",
     "Vishay_WSL1206.step"
@@ -79,14 +87,17 @@
     "Package_SO.3dshapes/TSSOP-16_4.4x5mm_P0.65mm.step",
     "Package_TO_SOT_SMD.3dshapes/SOT-23-5.step",
     "Package_TO_SOT_SMD.3dshapes/SOT-23.step",
+    "Package_TO_SOT_THT.3dshapes/TO-92_Inline.step",
     "Resistor_SMD.3dshapes/R_0805_2012Metric.step",
     "Resistor_SMD.3dshapes/R_1206_3216Metric.step"
   ],
   "native_cad_copied_without_modification": true,
   "publication_only_changes": [
     "portable audit source paths",
-    "GNU make clean target",
     "current documentation and procurement notes",
-    "pruned unused library assets"
-  ]
+    "updated asset provenance and checksums"
+  ],
+  "substrate_nominal_mm": 1.5,
+  "native_total_thickness_mm": 1.52,
+  "schematic_sheets": 7
 }
