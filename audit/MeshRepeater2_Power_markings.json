@@ -1,0 +1,8726 @@
+{
+  "source": "design\\MeshRepeater2_Power\\MeshRepeater2_Power.kicad_pcb",
+  "destination": "design\\MeshRepeater2_Power\\MeshRepeater2_Power.kicad_pcb",
+  "source_pcb_sha256": "ba1a4b14fb74e31d1ff870d8522506dafab903c2f8694050a3ae005726c74a89",
+  "model_sha256": "4ae809f8dabec401a68c193432beecf15771c0c0392094c52c7d423df961b07b",
+  "board": "POWER",
+  "dry_run": false,
+  "invariant_before": "04bd10c770472bb5fd95decfc25d63618057714dde06db3728fde75f25b3d7fd",
+  "invariant_after": "04bd10c770472bb5fd95decfc25d63618057714dde06db3728fde75f25b3d7fd",
+  "unchanged_electrical_and_placement": true,
+  "primary_count": 115,
+  "expected_count": 115,
+  "minimum_font_mm": 0.8,
+  "label_edge_gap_mm": 0.4,
+  "reserved_mask_gap_mm": 0.16,
+  "assembly_flip": "none",
+  "associations": [
+    {
+      "ref": "R16",
+      "mode": "projected_body",
+      "real_body_center_mm": [
+        37.400000000000006,
+        18.4
+      ],
+      "label": {
+        "owner": "R16",
+        "kind": "projected_body",
+        "text": "R16\nNa:49.9k\nLTO:49.9k",
+        "at_mm": [
+          37.399999,
+          18.4
+        ],
+        "box_mm": [
+          33.600952,
+          15.894456,
+          41.199047,
+          20.905544000000003
+        ],
+        "angle_deg": 0.0,
+        "layer": "B.Silkscreen",
+        "font_mm": 1.0,
+        "uuid": "00f36db1-54f0-41da-b194-3ca9226a34ea"
+      }
+    },
+    {
+      "ref": "C30",
+      "mode": "projected_body",
+      "real_body_center_mm": [
+        21.0,
+        38.8
+      ],
+      "label": {
+        "owner": "C30",
+        "kind": "projected_body",
+        "text": "C30\nNa:12pF\nLTO:6.8pF",
+        "at_mm": [
+          20.999999,
+          38.8
+        ],
+        "box_mm": [
+          17.200951999999997,
+          36.294456,
+          24.799047,
+          41.305544000000005
+        ],
+        "angle_deg": 0.0,
+        "layer": "B.Silkscreen",
+        "font_mm": 1.0,
+        "uuid": "4bf9ece3-91b4-4445-84fe-12ed1fbce21b"
+      }
+    },
+    {
+      "ref": "J12",
+      "mode": "projected_body",
+      "real_body_center_mm": [
+        39.0,
+        5.8999999999999995
+      ],
+      "label": {
+        "owner": "J12",
+        "kind": "projected_body",
+        "text": "J12\nBAT/MID",
+        "at_mm": [
+          39.0,
+          5.899999
+        ],
+        "box_mm": [
+          35.677143,
+          4.199427,
+          42.322857,
+          7.6005709999999995
+        ],
+        "angle_deg": 0.0,
+        "layer": "B.Silkscreen",
+        "font_mm": 1.0,
+        "uuid": "10fa5188-f836-4be0-8a04-84741a8b9fc3"
+      }
+    },
+    {
+      "ref": "U10",
+      "mode": "projected_body",
+      "real_body_center_mm": [
+        44.8,
+        39.4
+      ],
+      "label": {
+        "owner": "U10",
+        "kind": "projected_body",
+        "text": "U10\nLM393XK",
+        "at_mm": [
+          44.799999,
+          39.4
+        ],
+        "box_mm": [
+          41.239047,
+          37.699428,
+          48.360952000000005,
+          41.100572
+        ],
+        "angle_deg": 0.0,
+        "layer": "B.Silkscreen",
+        "font_mm": 1.0,
+        "uuid": "bd1efc62-f619-4035-8c3d-0be36f51c5c4"
+      }
+    },
+    {
+      "ref": "Q1",
+      "mode": "projected_body",
+      "real_body_center_mm": [
+        25.0,
+        22.0
+      ],
+      "label": {
+        "owner": "Q1",
+        "kind": "projected_body",
+        "text": "Q1\nAO3401A",
+        "at_mm": [
+          24.999999,
+          22.0
+        ],
+        "box_mm": [
+          21.534284999999997,
+          20.299428,
+          28.465714000000002,
+          23.700572
+        ],
+        "angle_deg": 0.0,
+        "layer": "B.Silkscreen",
+        "font_mm": 1.0,
+        "uuid": "27b3599e-4a07-412c-a65a-409e8bd6db75"
+      }
+    },
+    {
+      "ref": "U8",
+      "mode": "projected_body",
+      "real_body_center_mm": [
+        30.5,
+        15.600000000000001
+      ],
+      "label": {
+        "owner": "U8",
+        "kind": "projected_body",
+        "text": "U8\nLMV431A",
+        "at_mm": [
+          30.499999,
+          15.6
+        ],
+        "box_mm": [
+          27.404284999999998,
+          14.073525,
+          33.595714,
+          17.126475000000003
+        ],
+        "angle_deg": 0.0,
+        "layer": "B.Silkscreen",
+        "font_mm": 0.9,
+        "uuid": "41ee000e-a13c-4a77-950b-65c4b50baf47"
+      }
+    },
+    {
+      "ref": "U9",
+      "mode": "projected_body",
+      "real_body_center_mm": [
+        12.8,
+        49.0
+      ],
+      "label": {
+        "owner": "U9",
+        "kind": "projected_body",
+        "text": "U9\nLMV431A",
+        "at_mm": [
+          12.8,
+          49.0
+        ],
+        "box_mm": [
+          9.358095,
+          47.299428,
+          16.241905000000003,
+          50.700572
+        ],
+        "angle_deg": 0.0,
+        "layer": "B.Silkscreen",
+        "font_mm": 1.0,
+        "uuid": "511cc7c7-6f6a-4e7f-aaa4-5c485e0b43ff"
+      }
+    },
+    {
+      "ref": "C13",
+      "mode": "projected_body",
+      "real_body_center_mm": [
+        46.2,
+        16.399999
+      ],
+      "label": {
+        "owner": "C13",
+        "kind": "projected_body",
+        "text": "C13\n100nF",
+        "at_mm": [
+          46.2,
+          16.399999
+        ],
+        "box_mm": [
+          43.710476,
+          14.699427,
+          48.689524,
+          18.100571000000002
+        ],
+        "angle_deg": 0.0,
+        "layer": "B.Silkscreen",
+        "font_mm": 1.0,
+        "uuid": "db60f6c4-0c83-43bf-b57d-a807468f4994"
+      }
+    },
+    {
+      "ref": "C15",
+      "mode": "projected_body",
+      "real_body_center_mm": [
+        54.0,
+        36.8
+      ],
+      "label": {
+        "owner": "C15",
+        "kind": "projected_body",
+        "text": "C15\n100uF",
+        "at_mm": [
+          54.0,
+          36.8
+        ],
+        "box_mm": [
+          51.510476,
+          35.099427999999996,
+          56.489524,
+          38.500572
+        ],
+        "angle_deg": 0.0,
+        "layer": "B.Silkscreen",
+        "font_mm": 1.0,
+        "uuid": "e17923c8-3adb-495b-b65e-5e5d20316124"
+      }
+    },
+    {
+      "ref": "C16",
+      "mode": "projected_body",
+      "real_body_center_mm": [
+        72.0,
+        36.8
+      ],
+      "label": {
+        "owner": "C16",
+        "kind": "projected_body",
+        "text": "C16\n100uF",
+        "at_mm": [
+          72.0,
+          36.8
+        ],
+        "box_mm": [
+          69.51047600000001,
+          35.099427999999996,
+          74.48952399999999,
+          38.500572
+        ],
+        "angle_deg": 0.0,
+        "layer": "B.Silkscreen",
+        "font_mm": 1.0,
+        "uuid": "9181cb9d-ea08-4e2a-9c39-f293844dfd05"
+      }
+    },
+    {
+      "ref": "C34",
+      "mode": "projected_body",
+      "real_body_center_mm": [
+        61.0,
+        36.8
+      ],
+      "label": {
+        "owner": "C34",
+        "kind": "projected_body",
+        "text": "C34\n100uF",
+        "at_mm": [
+          61.0,
+          36.8
+        ],
+        "box_mm": [
+          58.510476,
+          35.099427999999996,
+          63.489524,
+          38.500572
+        ],
+        "angle_deg": 0.0,
+        "layer": "B.Silkscreen",
+        "font_mm": 1.0,
+        "uuid": "d5b65b2f-33ee-4b71-9de3-83b9477007e0"
+      }
+    },
+    {
+      "ref": "C35",
+      "mode": "projected_body",
+      "real_body_center_mm": [
+        54.0,
+        40.8
+      ],
+      "label": {
+        "owner": "C35",
+        "kind": "projected_body",
+        "text": "C35\n100uF",
+        "at_mm": [
+          54.0,
+          40.8
+        ],
+        "box_mm": [
+          51.510476,
+          39.099427999999996,
+          56.489524,
+          42.500572
+        ],
+        "angle_deg": 0.0,
+        "layer": "B.Silkscreen",
+        "font_mm": 1.0,
+        "uuid": "2c4288c1-aa4e-4547-a7c7-ab56081b062c"
+      }
+    },
+    {
+      "ref": "C36",
+      "mode": "projected_body",
+      "real_body_center_mm": [
+        61.0,
+        40.8
+      ],
+      "label": {
+        "owner": "C36",
+        "kind": "projected_body",
+        "text": "C36\n100uF",
+        "at_mm": [
+          61.0,
+          40.8
+        ],
+        "box_mm": [
+          58.510476,
+          39.099427999999996,
+          63.489524,
+          42.500572
+        ],
+        "angle_deg": 0.0,
+        "layer": "B.Silkscreen",
+        "font_mm": 1.0,
+        "uuid": "ed9079f8-c715-45e6-833d-f96bfc869aa6"
+      }
+    },
+    {
+      "ref": "C37",
+      "mode": "projected_body",
+      "real_body_center_mm": [
+        54.0,
+        44.8
+      ],
+      "label": {
+        "owner": "C37",
+        "kind": "projected_body",
+        "text": "C37\n100uF",
+        "at_mm": [
+          54.0,
+          44.8
+        ],
+        "box_mm": [
+          51.510476,
+          43.099427999999996,
+          56.489524,
+          46.500572
+        ],
+        "angle_deg": 0.0,
+        "layer": "B.Silkscreen",
+        "font_mm": 1.0,
+        "uuid": "81f58b9b-36a8-4a11-a0e3-c4b3ea2a507d"
+      }
+    },
+    {
+      "ref": "C38",
+      "mode": "projected_body",
+      "real_body_center_mm": [
+        61.0,
+        44.8
+      ],
+      "label": {
+        "owner": "C38",
+        "kind": "projected_body",
+        "text": "C38\n100uF",
+        "at_mm": [
+          61.0,
+          44.8
+        ],
+        "box_mm": [
+          58.510476,
+          43.099427999999996,
+          63.489524,
+          46.500572
+        ],
+        "angle_deg": 0.0,
+        "layer": "B.Silkscreen",
+        "font_mm": 1.0,
+        "uuid": "80c38bdc-f0d1-41f0-bf87-ea0a81fadb5e"
+      }
+    },
+    {
+      "ref": "C39",
+      "mode": "projected_body",
+      "real_body_center_mm": [
+        54.0,
+        48.8
+      ],
+      "label": {
+        "owner": "C39",
+        "kind": "projected_body",
+        "text": "C39\n100uF",
+        "at_mm": [
+          54.0,
+          48.8
+        ],
+        "box_mm": [
+          51.510476,
+          47.099427999999996,
+          56.489524,
+          50.500572
+        ],
+        "angle_deg": 0.0,
+        "layer": "B.Silkscreen",
+        "font_mm": 1.0,
+        "uuid": "82f267b5-b73c-41fb-9451-c2ec29c315d5"
+      }
+    },
+    {
+      "ref": "C40",
+      "mode": "projected_body",
+      "real_body_center_mm": [
+        61.0,
+        48.8
+      ],
+      "label": {
+        "owner": "C40",
+        "kind": "projected_body",
+        "text": "C40\n100uF",
+        "at_mm": [
+          61.0,
+          48.8
+        ],
+        "box_mm": [
+          58.510476,
+          47.099427999999996,
+          63.489524,
+          50.500572
+        ],
+        "angle_deg": 0.0,
+        "layer": "B.Silkscreen",
+        "font_mm": 1.0,
+        "uuid": "92ad13ce-893a-4a45-9329-2e47356d368b"
+      }
+    },
+    {
+      "ref": "C41",
+      "mode": "projected_body",
+      "real_body_center_mm": [
+        54.0,
+        52.8
+      ],
+      "label": {
+        "owner": "C41",
+        "kind": "projected_body",
+        "text": "C41\n100uF",
+        "at_mm": [
+          54.0,
+          52.8
+        ],
+        "box_mm": [
+          51.510476,
+          51.099427999999996,
+          56.489524,
+          54.500572
+        ],
+        "angle_deg": 0.0,
+        "layer": "B.Silkscreen",
+        "font_mm": 1.0,
+        "uuid": "67ebaa98-0f6b-4882-b154-955ef8c7cbdd"
+      }
+    },
+    {
+      "ref": "C42",
+      "mode": "projected_body",
+      "real_body_center_mm": [
+        61.0,
+        52.8
+      ],
+      "label": {
+        "owner": "C42",
+        "kind": "projected_body",
+        "text": "C42\n100uF",
+        "at_mm": [
+          61.0,
+          52.8
+        ],
+        "box_mm": [
+          58.510476,
+          51.099427999999996,
+          63.489524,
+          54.500572
+        ],
+        "angle_deg": 0.0,
+        "layer": "B.Silkscreen",
+        "font_mm": 1.0,
+        "uuid": "d3853bda-4fdb-475c-8338-7873d16211e4"
+      }
+    },
+    {
+      "ref": "C43",
+      "mode": "projected_body",
+      "real_body_center_mm": [
+        79.0,
+        36.8
+      ],
+      "label": {
+        "owner": "C43",
+        "kind": "projected_body",
+        "text": "C43\n100uF",
+        "at_mm": [
+          79.0,
+          36.8
+        ],
+        "box_mm": [
+          76.51047600000001,
+          35.099427999999996,
+          81.48952399999999,
+          38.500572
+        ],
+        "angle_deg": 0.0,
+        "layer": "B.Silkscreen",
+        "font_mm": 1.0,
+        "uuid": "97006cab-ce54-4688-8a09-765c70ad9117"
+      }
+    },
+    {
+      "ref": "C44",
+      "mode": "projected_body",
+      "real_body_center_mm": [
+        72.0,
+        40.8
+      ],
+      "label": {
+        "owner": "C44",
+        "kind": "projected_body",
+        "text": "C44\n100uF",
+        "at_mm": [
+          72.0,
+          40.8
+        ],
+        "box_mm": [
+          69.51047600000001,
+          39.099427999999996,
+          74.48952399999999,
+          42.500572
+        ],
+        "angle_deg": 0.0,
+        "layer": "B.Silkscreen",
+        "font_mm": 1.0,
+        "uuid": "5bdb202c-9931-4369-b0b0-7411df9898ee"
+      }
+    },
+    {
+      "ref": "C45",
+      "mode": "projected_body",
+      "real_body_center_mm": [
+        79.0,
+        40.8
+      ],
+      "label": {
+        "owner": "C45",
+        "kind": "projected_body",
+        "text": "C45\n100uF",
+        "at_mm": [
+          79.0,
+          40.8
+        ],
+        "box_mm": [
+          76.51047600000001,
+          39.099427999999996,
+          81.48952399999999,
+          42.500572
+        ],
+        "angle_deg": 0.0,
+        "layer": "B.Silkscreen",
+        "font_mm": 1.0,
+        "uuid": "252856a4-1dec-4085-835f-30cc2f58d4be"
+      }
+    },
+    {
+      "ref": "C46",
+      "mode": "projected_body",
+      "real_body_center_mm": [
+        72.0,
+        44.8
+      ],
+      "label": {
+        "owner": "C46",
+        "kind": "projected_body",
+        "text": "C46\n100uF",
+        "at_mm": [
+          72.0,
+          44.8
+        ],
+        "box_mm": [
+          69.51047600000001,
+          43.099427999999996,
+          74.48952399999999,
+          46.500572
+        ],
+        "angle_deg": 0.0,
+        "layer": "B.Silkscreen",
+        "font_mm": 1.0,
+        "uuid": "fb726f89-c559-4a04-956a-b0705bb2587f"
+      }
+    },
+    {
+      "ref": "C47",
+      "mode": "projected_body",
+      "real_body_center_mm": [
+        79.0,
+        44.8
+      ],
+      "label": {
+        "owner": "C47",
+        "kind": "projected_body",
+        "text": "C47\n100uF",
+        "at_mm": [
+          79.0,
+          44.8
+        ],
+        "box_mm": [
+          76.51047600000001,
+          43.099427999999996,
+          81.48952399999999,
+          46.500572
+        ],
+        "angle_deg": 0.0,
+        "layer": "B.Silkscreen",
+        "font_mm": 1.0,
+        "uuid": "80cccdfb-17e1-4718-9032-69da0b5d260f"
+      }
+    },
+    {
+      "ref": "C48",
+      "mode": "projected_body",
+      "real_body_center_mm": [
+        72.0,
+        48.8
+      ],
+      "label": {
+        "owner": "C48",
+        "kind": "projected_body",
+        "text": "C48\n100uF",
+        "at_mm": [
+          72.0,
+          48.8
+        ],
+        "box_mm": [
+          69.51047600000001,
+          47.099427999999996,
+          74.48952399999999,
+          50.500572
+        ],
+        "angle_deg": 0.0,
+        "layer": "B.Silkscreen",
+        "font_mm": 1.0,
+        "uuid": "7c1f68e1-94a1-4b3a-b7e0-34d16eaee272"
+      }
+    },
+    {
+      "ref": "C49",
+      "mode": "projected_body",
+      "real_body_center_mm": [
+        79.0,
+        48.8
+      ],
+      "label": {
+        "owner": "C49",
+        "kind": "projected_body",
+        "text": "C49\n100uF",
+        "at_mm": [
+          79.0,
+          48.8
+        ],
+        "box_mm": [
+          76.51047600000001,
+          47.099427999999996,
+          81.48952399999999,
+          50.500572
+        ],
+        "angle_deg": 0.0,
+        "layer": "B.Silkscreen",
+        "font_mm": 1.0,
+        "uuid": "cbd984b2-b3f0-4733-aead-2f0b3a4f8d68"
+      }
+    },
+    {
+      "ref": "C50",
+      "mode": "projected_body",
+      "real_body_center_mm": [
+        72.0,
+        52.8
+      ],
+      "label": {
+        "owner": "C50",
+        "kind": "projected_body",
+        "text": "C50\n100uF",
+        "at_mm": [
+          72.0,
+          52.8
+        ],
+        "box_mm": [
+          69.51047600000001,
+          51.099427999999996,
+          74.48952399999999,
+          54.500572
+        ],
+        "angle_deg": 0.0,
+        "layer": "B.Silkscreen",
+        "font_mm": 1.0,
+        "uuid": "bc2e15ed-26f5-40d5-acde-b4fe7dd71f89"
+      }
+    },
+    {
+      "ref": "C51",
+      "mode": "projected_body",
+      "real_body_center_mm": [
+        79.0,
+        52.8
+      ],
+      "label": {
+        "owner": "C51",
+        "kind": "projected_body",
+        "text": "C51\n100uF",
+        "at_mm": [
+          79.0,
+          52.8
+        ],
+        "box_mm": [
+          76.51047600000001,
+          51.099427999999996,
+          81.48952399999999,
+          54.500572
+        ],
+        "angle_deg": 0.0,
+        "layer": "B.Silkscreen",
+        "font_mm": 1.0,
+        "uuid": "017ae214-ae7d-4888-a305-915a93ee8bee"
+      }
+    },
+    {
+      "ref": "C60",
+      "mode": "projected_body",
+      "real_body_center_mm": [
+        47.8,
+        35.3
+      ],
+      "label": {
+        "owner": "C60",
+        "kind": "projected_body",
+        "text": "C60\n100nF",
+        "at_mm": [
+          47.8,
+          35.3
+        ],
+        "box_mm": [
+          45.310476,
+          33.599427999999996,
+          50.289524,
+          37.000572
+        ],
+        "angle_deg": 0.0,
+        "layer": "B.Silkscreen",
+        "font_mm": 1.0,
+        "uuid": "6c66e338-0216-4ef5-81f0-7d65c033f097"
+      }
+    },
+    {
+      "ref": "C62",
+      "mode": "projected_body",
+      "real_body_center_mm": [
+        41.5,
+        51.7
+      ],
+      "label": {
+        "owner": "C62",
+        "kind": "projected_body",
+        "text": "C62\n100nF",
+        "at_mm": [
+          41.5,
+          51.7
+        ],
+        "box_mm": [
+          39.261427999999995,
+          50.173525,
+          43.738572000000005,
+          53.226475
+        ],
+        "angle_deg": 0.0,
+        "layer": "B.Silkscreen",
+        "font_mm": 0.9,
+        "uuid": "f05adcb6-379b-4596-840d-89629261c4a8"
+      }
+    },
+    {
+      "ref": "L2",
+      "mode": "projected_body",
+      "real_body_center_mm": [
+        46.2,
+        20.5
+      ],
+      "label": {
+        "owner": "L2",
+        "kind": "projected_body",
+        "text": "L2\n0.47uH",
+        "at_mm": [
+          46.199999,
+          20.5
+        ],
+        "box_mm": [
+          44.812522,
+          18.215714,
+          47.587477,
+          22.784286
+        ],
+        "angle_deg": 90.0,
+        "layer": "B.Silkscreen",
+        "font_mm": 0.8,
+        "uuid": "1d6159be-f94b-44e3-99d7-a30123297693"
+      }
+    },
+    {
+      "ref": "R53",
+      "mode": "projected_body",
+      "real_body_center_mm": [
+        21.1,
+        47.3
+      ],
+      "label": {
+        "owner": "R53",
+        "kind": "projected_body",
+        "text": "R53\n2.49k",
+        "at_mm": [
+          21.099999,
+          47.3
+        ],
+        "box_mm": [
+          18.848571,
+          45.599427999999996,
+          23.351428000000002,
+          49.000572
+        ],
+        "angle_deg": 0.0,
+        "layer": "B.Silkscreen",
+        "font_mm": 1.0,
+        "uuid": "4d467cbc-23d3-4b1b-ad9e-4f387c1ef4a6"
+      }
+    },
+    {
+      "ref": "U1",
+      "mode": "projected_body",
+      "real_body_center_mm": [
+        17.5,
+        28.5
+      ],
+      "label": {
+        "owner": "U1",
+        "kind": "projected_body",
+        "text": "U1\nCN3722",
+        "at_mm": [
+          17.499999,
+          28.5
+        ],
+        "box_mm": [
+          14.391428000000001,
+          26.799428,
+          20.608571,
+          30.200572
+        ],
+        "angle_deg": 0.0,
+        "layer": "B.Silkscreen",
+        "font_mm": 1.0,
+        "uuid": "aadbcb2d-a344-41af-a705-ca410ed33915"
+      }
+    },
+    {
+      "ref": "C14",
+      "mode": "projected_body",
+      "real_body_center_mm": [
+        42.0,
+        23.4
+      ],
+      "label": {
+        "owner": "C14",
+        "kind": "projected_body",
+        "text": "C14\n22uF",
+        "at_mm": [
+          41.999999,
+          23.4
+        ],
+        "box_mm": [
+          39.986666,
+          21.699427999999997,
+          44.013333,
+          25.100572
+        ],
+        "angle_deg": 0.0,
+        "layer": "B.Silkscreen",
+        "font_mm": 1.0,
+        "uuid": "75e5ca14-3551-4d5a-a973-9740d8f50dc3"
+      }
+    },
+    {
+      "ref": "C5",
+      "mode": "projected_body",
+      "real_body_center_mm": [
+        13.899999999999999,
+        37.099999
+      ],
+      "label": {
+        "owner": "C5",
+        "kind": "projected_body",
+        "text": "C5\n470pF",
+        "at_mm": [
+          13.899999,
+          37.099999
+        ],
+        "box_mm": [
+          11.410475,
+          35.399426999999996,
+          16.389523,
+          38.800571
+        ],
+        "angle_deg": 0.0,
+        "layer": "B.Silkscreen",
+        "font_mm": 1.0,
+        "uuid": "ca081267-6fe2-447c-b878-e015f49026b4"
+      }
+    },
+    {
+      "ref": "C59",
+      "mode": "projected_body",
+      "real_body_center_mm": [
+        12.8,
+        52.5
+      ],
+      "label": {
+        "owner": "C59",
+        "kind": "projected_body",
+        "text": "C59\n47nF",
+        "at_mm": [
+          12.799999,
+          52.5
+        ],
+        "box_mm": [
+          10.786666,
+          50.799428,
+          14.813333,
+          54.200572
+        ],
+        "angle_deg": 0.0,
+        "layer": "B.Silkscreen",
+        "font_mm": 1.0,
+        "uuid": "0b11efc9-db7c-4b6a-99cc-24e87a7e0a3b"
+      }
+    },
+    {
+      "ref": "J7",
+      "mode": "projected_body",
+      "real_body_center_mm": [
+        12.600000000000001,
+        5.85
+      ],
+      "label": {
+        "owner": "J7",
+        "kind": "projected_body",
+        "text": "J7\nSOLAR",
+        "at_mm": [
+          12.599999,
+          5.85
+        ],
+        "box_mm": [
+          10.086666000000001,
+          4.149428,
+          15.113332999999999,
+          7.550572
+        ],
+        "angle_deg": 0.0,
+        "layer": "B.Silkscreen",
+        "font_mm": 1.0,
+        "uuid": "3703fc32-3155-4409-becc-d99229d5426e"
+      }
+    },
+    {
+      "ref": "L1",
+      "mode": "projected_body",
+      "real_body_center_mm": [
+        33.8,
+        37.5
+      ],
+      "label": {
+        "owner": "L1",
+        "kind": "projected_body",
+        "text": "L1\n100uH",
+        "at_mm": [
+          33.8,
+          37.5
+        ],
+        "box_mm": [
+          31.215238,
+          35.799428,
+          36.384762,
+          39.200572
+        ],
+        "angle_deg": 0.0,
+        "layer": "B.Silkscreen",
+        "font_mm": 1.0,
+        "uuid": "636da7dd-d6ab-4da4-8ba0-2b88705a0b6f"
+      }
+    },
+    {
+      "ref": "L3",
+      "mode": "projected_body",
+      "real_body_center_mm": [
+        58.0,
+        23.0
+      ],
+      "label": {
+        "owner": "L3",
+        "kind": "projected_body",
+        "text": "L3\n2.4uH",
+        "at_mm": [
+          58.0,
+          23.0
+        ],
+        "box_mm": [
+          56.299428,
+          20.653333,
+          59.700572,
+          25.346666000000003
+        ],
+        "angle_deg": 90.0,
+        "layer": "B.Silkscreen",
+        "font_mm": 1.0,
+        "uuid": "bcc0acd1-0959-489b-b130-46e11911a734"
+      }
+    },
+    {
+      "ref": "L4",
+      "mode": "projected_body",
+      "real_body_center_mm": [
+        72.0,
+        23.0
+      ],
+      "label": {
+        "owner": "L4",
+        "kind": "projected_body",
+        "text": "L4\n2.4uH",
+        "at_mm": [
+          72.0,
+          23.0
+        ],
+        "box_mm": [
+          70.299428,
+          20.653333,
+          73.700572,
+          25.346666000000003
+        ],
+        "angle_deg": 90.0,
+        "layer": "B.Silkscreen",
+        "font_mm": 1.0,
+        "uuid": "5b917ffa-e449-4d24-a93f-bc32177ed4cc"
+      }
+    },
+    {
+      "ref": "R40",
+      "mode": "projected_body",
+      "real_body_center_mm": [
+        57.5,
+        32.5
+      ],
+      "label": {
+        "owner": "R40",
+        "kind": "projected_body",
+        "text": "R40\n22mR",
+        "at_mm": [
+          57.499999,
+          32.5
+        ],
+        "box_mm": [
+          55.200952,
+          30.799428,
+          59.799047,
+          34.200572
+        ],
+        "angle_deg": 0.0,
+        "layer": "B.Silkscreen",
+        "font_mm": 1.0,
+        "uuid": "3c7fa432-aabf-4c36-9aa5-b23b8250a935"
+      }
+    },
+    {
+      "ref": "R41",
+      "mode": "projected_body",
+      "real_body_center_mm": [
+        75.5,
+        32.5
+      ],
+      "label": {
+        "owner": "R41",
+        "kind": "projected_body",
+        "text": "R41\n22mR",
+        "at_mm": [
+          75.499999,
+          32.5
+        ],
+        "box_mm": [
+          73.200952,
+          30.799428,
+          77.79904699999999,
+          34.200572
+        ],
+        "angle_deg": 0.0,
+        "layer": "B.Silkscreen",
+        "font_mm": 1.0,
+        "uuid": "934f97ee-b3e9-47a5-b241-58bcccbd9eec"
+      }
+    },
+    {
+      "ref": "R50",
+      "mode": "projected_body",
+      "real_body_center_mm": [
+        25.5,
+        17.4
+      ],
+      "label": {
+        "owner": "R50",
+        "kind": "projected_body",
+        "text": "R50\n100k",
+        "at_mm": [
+          25.5,
+          17.4
+        ],
+        "box_mm": [
+          23.689999999999998,
+          15.873525,
+          27.310000000000002,
+          18.926475
+        ],
+        "angle_deg": 0.0,
+        "layer": "B.Silkscreen",
+        "font_mm": 0.9,
+        "uuid": "a47b8565-679f-49e2-9316-e2d609adb926"
+      }
+    },
+    {
+      "ref": "R55",
+      "mode": "projected_body",
+      "real_body_center_mm": [
+        47.5,
+        24.299999
+      ],
+      "label": {
+        "owner": "R55",
+        "kind": "projected_body",
+        "text": "R55\n47mR",
+        "at_mm": [
+          47.499999,
+          24.299998
+        ],
+        "box_mm": [
+          45.634761,
+          22.912520999999998,
+          49.365238,
+          25.687476
+        ],
+        "angle_deg": 0.0,
+        "layer": "B.Silkscreen",
+        "font_mm": 0.8,
+        "uuid": "843e9565-fece-436c-904c-d37a2770ca26"
+      }
+    },
+    {
+      "ref": "R58",
+      "mode": "projected_body",
+      "real_body_center_mm": [
+        42.0,
+        34.2
+      ],
+      "label": {
+        "owner": "R58",
+        "kind": "projected_body",
+        "text": "R58\n100k",
+        "at_mm": [
+          42.0,
+          34.2
+        ],
+        "box_mm": [
+          40.299428,
+          32.186665999999995,
+          43.700572,
+          36.213333
+        ],
+        "angle_deg": 90.0,
+        "layer": "B.Silkscreen",
+        "font_mm": 1.0,
+        "uuid": "9db66514-bb42-43cd-9375-4ae3521fe928"
+      }
+    },
+    {
+      "ref": "R59",
+      "mode": "projected_body",
+      "real_body_center_mm": [
+        45.5,
+        45.5
+      ],
+      "label": {
+        "owner": "R59",
+        "kind": "projected_body",
+        "text": "R59\n100k",
+        "at_mm": [
+          45.499999,
+          45.5
+        ],
+        "box_mm": [
+          43.486666,
+          43.799428,
+          47.513333,
+          47.200572
+        ],
+        "angle_deg": 0.0,
+        "layer": "B.Silkscreen",
+        "font_mm": 1.0,
+        "uuid": "6a0fbf22-e3b5-4222-b9eb-1d6bfb7f4cfe"
+      }
+    },
+    {
+      "ref": "R60",
+      "mode": "projected_body",
+      "real_body_center_mm": [
+        33.5,
+        45.5
+      ],
+      "label": {
+        "owner": "R60",
+        "kind": "projected_body",
+        "text": "R60\n100k",
+        "at_mm": [
+          33.499999,
+          45.5
+        ],
+        "box_mm": [
+          31.486666,
+          43.799428,
+          35.513333,
+          47.200572
+        ],
+        "angle_deg": 0.0,
+        "layer": "B.Silkscreen",
+        "font_mm": 1.0,
+        "uuid": "f9fbfef5-ce19-4aed-9965-8cccf4ce5a40"
+      }
+    },
+    {
+      "ref": "R61",
+      "mode": "projected_body",
+      "real_body_center_mm": [
+        41.5,
+        45.5
+      ],
+      "label": {
+        "owner": "R61",
+        "kind": "projected_body",
+        "text": "R61\n100k",
+        "at_mm": [
+          41.5,
+          45.5
+        ],
+        "box_mm": [
+          39.69,
+          43.973524999999995,
+          43.31,
+          47.026475000000005
+        ],
+        "angle_deg": 0.0,
+        "layer": "B.Silkscreen",
+        "font_mm": 0.9,
+        "uuid": "d7ed8f1d-5e2f-4d8c-99b8-1f01211c303b"
+      }
+    },
+    {
+      "ref": "R63",
+      "mode": "projected_body",
+      "real_body_center_mm": [
+        37.5,
+        48.5
+      ],
+      "label": {
+        "owner": "R63",
+        "kind": "projected_body",
+        "text": "R63\n100k",
+        "at_mm": [
+          37.5,
+          48.5
+        ],
+        "box_mm": [
+          35.69,
+          46.973524999999995,
+          39.31,
+          50.026475000000005
+        ],
+        "angle_deg": 0.0,
+        "layer": "B.Silkscreen",
+        "font_mm": 0.9,
+        "uuid": "616d599b-3247-4a88-8591-01461c0a4488"
+      }
+    },
+    {
+      "ref": "R64",
+      "mode": "projected_body",
+      "real_body_center_mm": [
+        49.9,
+        47.900000000000006
+      ],
+      "label": {
+        "owner": "R64",
+        "kind": "projected_body",
+        "text": "R64\n1.2M",
+        "at_mm": [
+          49.9,
+          47.9
+        ],
+        "box_mm": [
+          48.373525,
+          46.154286,
+          51.426475,
+          49.645714
+        ],
+        "angle_deg": 90.0,
+        "layer": "B.Silkscreen",
+        "font_mm": 0.9,
+        "uuid": "b76ee756-dda0-4556-9cf2-44af2ea44947"
+      }
+    },
+    {
+      "ref": "C1",
+      "mode": "projected_body",
+      "real_body_center_mm": [
+        24.799999999999997,
+        25.4
+      ],
+      "label": {
+        "owner": "C1",
+        "kind": "projected_body",
+        "text": "C1\n10uF",
+        "at_mm": [
+          24.799999,
+          25.4
+        ],
+        "box_mm": [
+          22.989998999999997,
+          23.873524999999997,
+          26.610000000000003,
+          26.926475
+        ],
+        "angle_deg": 0.0,
+        "layer": "B.Silkscreen",
+        "font_mm": 0.9,
+        "uuid": "4f7ea408-4a2c-4422-ab08-cded8c56dc04"
+      }
+    },
+    {
+      "ref": "C61",
+      "mode": "projected_body",
+      "real_body_center_mm": [
+        49.9,
+        43.5
+      ],
+      "label": {
+        "owner": "C61",
+        "kind": "projected_body",
+        "text": "C61\n1nF",
+        "at_mm": [
+          49.9,
+          43.5
+        ],
+        "box_mm": [
+          48.373525,
+          42.032857,
+          51.426475,
+          44.967143
+        ],
+        "angle_deg": 90.0,
+        "layer": "B.Silkscreen",
+        "font_mm": 0.9,
+        "uuid": "9e94e1b5-0dd6-45fe-bbf8-b8ca6aee7189"
+      }
+    },
+    {
+      "ref": "C8",
+      "mode": "projected_body",
+      "real_body_center_mm": [
+        12.0,
+        21.5
+      ],
+      "label": {
+        "owner": "C8",
+        "kind": "projected_body",
+        "text": "C8\n47uF",
+        "at_mm": [
+          12.0,
+          21.5
+        ],
+        "box_mm": [
+          10.299428,
+          19.486666,
+          13.700572,
+          23.513333000000003
+        ],
+        "angle_deg": 90.0,
+        "layer": "B.Silkscreen",
+        "font_mm": 1.0,
+        "uuid": "c35b87f1-9661-42d8-aefd-bcf0382827df"
+      }
+    },
+    {
+      "ref": "D1",
+      "mode": "projected_body",
+      "real_body_center_mm": [
+        31.0,
+        19.6
+      ],
+      "label": {
+        "owner": "D1",
+        "kind": "projected_body",
+        "text": "D1\nSS24",
+        "at_mm": [
+          31.0,
+          19.6
+        ],
+        "box_mm": [
+          28.915238,
+          17.899428,
+          33.084762000000005,
+          21.300572000000003
+        ],
+        "angle_deg": 0.0,
+        "layer": "B.Silkscreen",
+        "font_mm": 1.0,
+        "uuid": "241a81b5-7a04-4875-b1f4-55a6b2ff8b01"
+      }
+    },
+    {
+      "ref": "D2",
+      "mode": "projected_body",
+      "real_body_center_mm": [
+        31.0,
+        24.5
+      ],
+      "label": {
+        "owner": "D2",
+        "kind": "projected_body",
+        "text": "D2\nSS24",
+        "at_mm": [
+          31.0,
+          24.5
+        ],
+        "box_mm": [
+          28.915238,
+          22.799428,
+          33.084762000000005,
+          26.200572
+        ],
+        "angle_deg": 0.0,
+        "layer": "B.Silkscreen",
+        "font_mm": 1.0,
+        "uuid": "7518995c-7f2b-4848-90a6-225e73e6bf9d"
+      }
+    },
+    {
+      "ref": "R10",
+      "mode": "projected_body",
+      "real_body_center_mm": [
+        51.0,
+        7.0
+      ],
+      "label": {
+        "owner": "R10",
+        "kind": "projected_body",
+        "text": "R10\n10k",
+        "at_mm": [
+          51.0,
+          7.0
+        ],
+        "box_mm": [
+          49.367619,
+          5.299428000000001,
+          52.632381,
+          8.700572
+        ],
+        "angle_deg": 0.0,
+        "layer": "B.Silkscreen",
+        "font_mm": 1.0,
+        "uuid": "57fbb16c-023e-4c60-87a4-def67c4da080"
+      }
+    },
+    {
+      "ref": "R11",
+      "mode": "projected_body",
+      "real_body_center_mm": [
+        56.0,
+        7.0
+      ],
+      "label": {
+        "owner": "R11",
+        "kind": "projected_body",
+        "text": "R11\n10k",
+        "at_mm": [
+          56.0,
+          7.0
+        ],
+        "box_mm": [
+          54.367619,
+          5.299428000000001,
+          57.632381,
+          8.700572
+        ],
+        "angle_deg": 0.0,
+        "layer": "B.Silkscreen",
+        "font_mm": 1.0,
+        "uuid": "de5928f6-14bf-4dad-b753-610abe8f3adb"
+      }
+    },
+    {
+      "ref": "R69",
+      "mode": "projected_body",
+      "real_body_center_mm": [
+        37.5,
+        45.5
+      ],
+      "label": {
+        "owner": "R69",
+        "kind": "projected_body",
+        "text": "R69\n30k",
+        "at_mm": [
+          37.5,
+          45.499999
+        ],
+        "box_mm": [
+          36.168095,
+          44.112522,
+          38.831905,
+          46.887477000000004
+        ],
+        "angle_deg": 0.0,
+        "layer": "B.Silkscreen",
+        "font_mm": 0.8,
+        "uuid": "409fc1dd-1b30-43ad-91f8-fa77271b4b71"
+      }
+    },
+    {
+      "ref": "R7",
+      "mode": "projected_body",
+      "real_body_center_mm": [
+        10.100000000000001,
+        32.299999
+      ],
+      "label": {
+        "owner": "R7",
+        "kind": "projected_body",
+        "text": "R7\n105k",
+        "at_mm": [
+          10.099999,
+          32.299999
+        ],
+        "box_mm": [
+          8.086666000000001,
+          30.599427,
+          12.113332999999999,
+          34.000571
+        ],
+        "angle_deg": 0.0,
+        "layer": "B.Silkscreen",
+        "font_mm": 1.0,
+        "uuid": "9cfe69c9-2192-4db0-9485-fd4b06c977cf"
+      }
+    },
+    {
+      "ref": "D3",
+      "mode": "projected_body",
+      "real_body_center_mm": [
+        51.0,
+        2.2
+      ],
+      "label": {
+        "owner": "D3",
+        "kind": "projected_body",
+        "text": "D3\nRED",
+        "at_mm": [
+          51.0,
+          2.2
+        ],
+        "box_mm": [
+          49.367619,
+          0.499428,
+          52.632381,
+          3.900572
+        ],
+        "angle_deg": 0.0,
+        "layer": "B.Silkscreen",
+        "font_mm": 1.0,
+        "uuid": "78ec5f02-902a-466e-bbb1-86e0dbc1557d"
+      }
+    },
+    {
+      "ref": "J8",
+      "mode": "projected_body",
+      "real_body_center_mm": [
+        24.0,
+        5.85
+      ],
+      "label": {
+        "owner": "J8",
+        "kind": "projected_body",
+        "text": "J8\nBAT",
+        "at_mm": [
+          24.0,
+          5.85
+        ],
+        "box_mm": [
+          22.510475999999997,
+          4.149428,
+          25.489524000000003,
+          7.550572
+        ],
+        "angle_deg": 0.0,
+        "layer": "B.Silkscreen",
+        "font_mm": 1.0,
+        "uuid": "f37d0665-2140-4b40-b743-a6950fd80654"
+      }
+    },
+    {
+      "ref": "R47",
+      "mode": "projected_body",
+      "real_body_center_mm": [
+        18.2,
+        15.0
+      ],
+      "label": {
+        "owner": "R47",
+        "kind": "projected_body",
+        "text": "R47\n2R",
+        "at_mm": [
+          18.2,
+          15.0
+        ],
+        "box_mm": [
+          16.567618999999997,
+          13.299428,
+          19.832381,
+          16.700572
+        ],
+        "angle_deg": 0.0,
+        "layer": "B.Silkscreen",
+        "font_mm": 1.0,
+        "uuid": "ca1ca20c-f59b-479b-b8f3-eb79eae0c764"
+      }
+    },
+    {
+      "ref": "R51",
+      "mode": "projected_body",
+      "real_body_center_mm": [
+        12.8,
+        45.0
+      ],
+      "label": {
+        "owner": "R51",
+        "kind": "projected_body",
+        "text": "R51\n2R",
+        "at_mm": [
+          12.8,
+          45.0
+        ],
+        "box_mm": [
+          11.167619,
+          43.299428,
+          14.432381,
+          46.700572
+        ],
+        "angle_deg": 0.0,
+        "layer": "B.Silkscreen",
+        "font_mm": 1.0,
+        "uuid": "7b81c6a6-9606-46b8-aecb-5a82a890e040"
+      }
+    },
+    {
+      "ref": "R62",
+      "mode": "projected_body",
+      "real_body_center_mm": [
+        41.5,
+        48.5
+      ],
+      "label": {
+        "owner": "R62",
+        "kind": "projected_body",
+        "text": "R62\n1M",
+        "at_mm": [
+          41.5,
+          48.499999
+        ],
+        "box_mm": [
+          40.168095,
+          47.112522,
+          42.831905,
+          49.887477000000004
+        ],
+        "angle_deg": 0.0,
+        "layer": "B.Silkscreen",
+        "font_mm": 0.8,
+        "uuid": "fbacf55c-926b-462f-8d22-2c2dd1c956ac"
+      }
+    },
+    {
+      "ref": "R66",
+      "mode": "projected_body",
+      "real_body_center_mm": [
+        33.5,
+        51.0
+      ],
+      "label": {
+        "owner": "R66",
+        "kind": "projected_body",
+        "text": "R66\n1k",
+        "at_mm": [
+          33.5,
+          51.0
+        ],
+        "box_mm": [
+          31.867618999999998,
+          49.299428,
+          35.132381,
+          52.700572
+        ],
+        "angle_deg": 0.0,
+        "layer": "B.Silkscreen",
+        "font_mm": 1.0,
+        "uuid": "b73d7c5e-d27c-485a-a2f0-26c29593f6e7"
+      }
+    },
+    {
+      "ref": "C53",
+      "mode": "projected_body",
+      "real_body_center_mm": [
+        48.0,
+        11.899999999999999
+      ],
+      "label": {
+        "owner": "C53",
+        "kind": "projected_body",
+        "text": "C53",
+        "at_mm": [
+          48.0,
+          11.899999
+        ],
+        "box_mm": [
+          46.367619,
+          11.004399000000001,
+          49.632381,
+          12.795599
+        ],
+        "angle_deg": 0.0,
+        "layer": "B.Silkscreen",
+        "font_mm": 1.0,
+        "uuid": "ae421cde-e033-4fa2-a55e-0b5a243fe8b4"
+      }
+    },
+    {
+      "ref": "C54",
+      "mode": "projected_body",
+      "real_body_center_mm": [
+        45.0,
+        27.299999
+      ],
+      "label": {
+        "owner": "C54",
+        "kind": "projected_body",
+        "text": "C54",
+        "at_mm": [
+          45.0,
+          27.299999
+        ],
+        "box_mm": [
+          43.367619,
+          26.404398999999998,
+          46.632381,
+          28.195599
+        ],
+        "angle_deg": 0.0,
+        "layer": "B.Silkscreen",
+        "font_mm": 1.0,
+        "uuid": "4e325051-8cc2-40e7-bae6-4beed28b95ed"
+      }
+    },
+    {
+      "ref": "C55",
+      "mode": "projected_body",
+      "real_body_center_mm": [
+        45.0,
+        30.299999
+      ],
+      "label": {
+        "owner": "C55",
+        "kind": "projected_body",
+        "text": "C55",
+        "at_mm": [
+          45.0,
+          30.299999
+        ],
+        "box_mm": [
+          43.367619,
+          29.404398999999998,
+          46.632381,
+          31.195599
+        ],
+        "angle_deg": 0.0,
+        "layer": "B.Silkscreen",
+        "font_mm": 1.0,
+        "uuid": "2d0bd8f7-58e1-4acf-8560-750e9d293975"
+      }
+    },
+    {
+      "ref": "TP1",
+      "mode": "projected_body",
+      "real_body_center_mm": [
+        2.0,
+        45.0
+      ],
+      "label": {
+        "owner": "TP1",
+        "kind": "projected_body",
+        "text": "TP1",
+        "at_mm": [
+          2.0,
+          45.0
+        ],
+        "box_mm": [
+          0.4628570000000001,
+          44.1044,
+          3.537143,
+          45.8956
+        ],
+        "angle_deg": 0.0,
+        "layer": "B.Silkscreen",
+        "font_mm": 1.0,
+        "uuid": "22b563fe-8ac7-4920-b97e-87993c5dab36"
+      }
+    },
+    {
+      "ref": "TP3",
+      "mode": "projected_body",
+      "real_body_center_mm": [
+        49.5,
+        30.5
+      ],
+      "label": {
+        "owner": "TP3",
+        "kind": "projected_body",
+        "text": "TP3",
+        "at_mm": [
+          49.5,
+          30.5
+        ],
+        "box_mm": [
+          47.962857,
+          29.6044,
+          51.037143,
+          31.3956
+        ],
+        "angle_deg": 0.0,
+        "layer": "B.Silkscreen",
+        "font_mm": 1.0,
+        "uuid": "b5474d7c-3af1-4f48-a8b7-109c4e9fb47d"
+      }
+    },
+    {
+      "ref": "TP6",
+      "mode": "projected_body",
+      "real_body_center_mm": [
+        4.0,
+        40.0
+      ],
+      "label": {
+        "owner": "TP6",
+        "kind": "projected_body",
+        "text": "TP6",
+        "at_mm": [
+          4.0,
+          40.0
+        ],
+        "box_mm": [
+          2.462857,
+          39.1044,
+          5.5371429999999995,
+          40.8956
+        ],
+        "angle_deg": 0.0,
+        "layer": "B.Silkscreen",
+        "font_mm": 1.0,
+        "uuid": "0b1d2dd8-889b-4d9d-afbd-4d7de1b8c6d7"
+      }
+    },
+    {
+      "ref": "TP8",
+      "mode": "projected_body",
+      "real_body_center_mm": [
+        65.0,
+        31.0
+      ],
+      "label": {
+        "owner": "TP8",
+        "kind": "projected_body",
+        "text": "TP8",
+        "at_mm": [
+          65.0,
+          31.0
+        ],
+        "box_mm": [
+          63.462857,
+          30.1044,
+          66.537143,
+          31.8956
+        ],
+        "angle_deg": 0.0,
+        "layer": "B.Silkscreen",
+        "font_mm": 1.0,
+        "uuid": "81dcab9c-153c-4f7b-839d-9ddb16455aba"
+      }
+    },
+    {
+      "ref": "TP9",
+      "mode": "projected_body",
+      "real_body_center_mm": [
+        3.8,
+        15.5
+      ],
+      "label": {
+        "owner": "TP9",
+        "kind": "projected_body",
+        "text": "TP9",
+        "at_mm": [
+          3.8,
+          15.5
+        ],
+        "box_mm": [
+          2.262857,
+          14.6044,
+          5.337142999999999,
+          16.3956
+        ],
+        "angle_deg": 0.0,
+        "layer": "B.Silkscreen",
+        "font_mm": 1.0,
+        "uuid": "c27036d6-b426-4d53-80a2-f9b72fb4fffb"
+      }
+    },
+    {
+      "ref": "H1",
+      "mode": "adjacent_front",
+      "real_body_center_mm": [
+        3.5,
+        3.5
+      ],
+      "label": {
+        "owner": "H1",
+        "kind": "adjacent_front",
+        "text": "H1\nGND M3",
+        "at_mm": [
+          3.499999,
+          8.276475
+        ],
+        "box_mm": [
+          0.682857,
+          6.75,
+          6.317142,
+          9.80295
+        ],
+        "angle_deg": 0.0,
+        "layer": "F.Silkscreen",
+        "font_mm": 0.9,
+        "uuid": "ce5bf855-35dc-467a-93a4-41b7e10bca29"
+      }
+    },
+    {
+      "ref": "H2",
+      "mode": "adjacent_front",
+      "real_body_center_mm": [
+        86.5,
+        3.5
+      ],
+      "label": {
+        "owner": "H2",
+        "kind": "adjacent_front",
+        "text": "H2\nGND M3",
+        "at_mm": [
+          86.499999,
+          8.276475
+        ],
+        "box_mm": [
+          83.68285700000001,
+          6.75,
+          89.31714199999999,
+          9.80295
+        ],
+        "angle_deg": 0.0,
+        "layer": "F.Silkscreen",
+        "font_mm": 0.9,
+        "uuid": "8cdcb19c-e301-44cc-b19d-eca65fcd4bfc"
+      }
+    },
+    {
+      "ref": "H3",
+      "mode": "adjacent_front",
+      "real_body_center_mm": [
+        3.5,
+        56.5
+      ],
+      "label": {
+        "owner": "H3",
+        "kind": "adjacent_front",
+        "text": "H3\nGND M3",
+        "at_mm": [
+          3.499999,
+          51.723525
+        ],
+        "box_mm": [
+          0.682857,
+          50.19705,
+          6.317142,
+          53.25
+        ],
+        "angle_deg": 0.0,
+        "layer": "F.Silkscreen",
+        "font_mm": 0.9,
+        "uuid": "2313e2a0-ba51-4175-bd80-2a4f2a233178"
+      }
+    },
+    {
+      "ref": "H4",
+      "mode": "adjacent_front",
+      "real_body_center_mm": [
+        86.5,
+        56.5
+      ],
+      "label": {
+        "owner": "H4",
+        "kind": "adjacent_front",
+        "text": "H4\nGND M3",
+        "at_mm": [
+          86.499999,
+          51.723525
+        ],
+        "box_mm": [
+          83.68285700000001,
+          50.19705,
+          89.31714199999999,
+          53.25
+        ],
+        "angle_deg": 0.0,
+        "layer": "F.Silkscreen",
+        "font_mm": 0.9,
+        "uuid": "f37e0894-a230-48b8-acbd-9927a2b7e905"
+      }
+    },
+    {
+      "ref": "C58",
+      "mode": "adjacent_front",
+      "real_body_center_mm": [
+        14.5,
+        15.0
+      ],
+      "label": {
+        "owner": "C58",
+        "kind": "adjacent_front",
+        "text": "C58\n47nF",
+        "at_mm": [
+          10.339998,
+          15.0
+        ],
+        "box_mm": [
+          8.529998,
+          13.473525,
+          12.149999,
+          16.526475
+        ],
+        "angle_deg": 0.0,
+        "layer": "F.Silkscreen",
+        "font_mm": 0.9,
+        "uuid": "d900a168-772d-4313-a1ce-980ef9d517a0"
+      }
+    },
+    {
+      "ref": "C6",
+      "mode": "adjacent_front",
+      "real_body_center_mm": [
+        24.8,
+        36.2
+      ],
+      "label": {
+        "owner": "C6",
+        "kind": "adjacent_front",
+        "text": "C6\n220nF",
+        "at_mm": [
+          24.799999,
+          38.632477
+        ],
+        "box_mm": [
+          22.78238,
+          37.245,
+          26.817619,
+          40.019955
+        ],
+        "angle_deg": 0.0,
+        "layer": "F.Silkscreen",
+        "font_mm": 0.8,
+        "uuid": "53df3903-8ee6-4ef7-9c12-cb2f6b7ec344"
+      }
+    },
+    {
+      "ref": "C7",
+      "mode": "adjacent_front",
+      "real_body_center_mm": [
+        21.299999999999997,
+        33.0
+      ],
+      "label": {
+        "owner": "C7",
+        "kind": "adjacent_front",
+        "text": "C7\n100nF",
+        "at_mm": [
+          17.678524,
+          34.0
+        ],
+        "box_mm": [
+          16.152048999999998,
+          31.761428,
+          19.204999,
+          36.238572000000005
+        ],
+        "angle_deg": 90.0,
+        "layer": "F.Silkscreen",
+        "font_mm": 0.9,
+        "uuid": "8e31eda4-1101-41b1-af5e-b0d1a246b0b7"
+      }
+    },
+    {
+      "ref": "R17",
+      "mode": "adjacent_front",
+      "real_body_center_mm": [
+        50.0,
+        15.2
+      ],
+      "label": {
+        "owner": "R17",
+        "kind": "adjacent_front",
+        "text": "R17\n100k",
+        "at_mm": [
+          53.51,
+          14.7
+        ],
+        "box_mm": [
+          51.699999999999996,
+          13.173525,
+          55.32,
+          16.226475
+        ],
+        "angle_deg": 0.0,
+        "layer": "F.Silkscreen",
+        "font_mm": 0.9,
+        "uuid": "b1cbd8fe-eff4-49e6-8638-79f5e94d4726"
+      }
+    },
+    {
+      "ref": "C4",
+      "mode": "adjacent_front",
+      "real_body_center_mm": [
+        24.8,
+        41.5
+      ],
+      "label": {
+        "owner": "C4",
+        "kind": "adjacent_front",
+        "text": "C4\n22uF",
+        "at_mm": [
+          20.639999,
+          41.5
+        ],
+        "box_mm": [
+          18.829998999999997,
+          39.973524999999995,
+          22.450000000000003,
+          43.026475000000005
+        ],
+        "angle_deg": 0.0,
+        "layer": "F.Silkscreen",
+        "font_mm": 0.9,
+        "uuid": "12e34bff-795c-4fe5-91fe-3a406151980c"
+      }
+    },
+    {
+      "ref": "R67",
+      "mode": "adjacent_front",
+      "real_body_center_mm": [
+        33.5,
+        53.5
+      ],
+      "label": {
+        "owner": "R67",
+        "kind": "adjacent_front",
+        "text": "R67\n1M",
+        "at_mm": [
+          30.332857,
+          53.0
+        ],
+        "box_mm": [
+          28.865713999999997,
+          51.473524999999995,
+          31.8,
+          54.526475000000005
+        ],
+        "angle_deg": 0.0,
+        "layer": "F.Silkscreen",
+        "font_mm": 0.9,
+        "uuid": "2bd4d21e-69b4-4a9b-8e6e-788422278277"
+      }
+    },
+    {
+      "ref": "R8",
+      "mode": "adjacent_front",
+      "real_body_center_mm": [
+        10.100000000000001,
+        34.9
+      ],
+      "label": {
+        "owner": "R8",
+        "kind": "adjacent_front",
+        "text": "R8\n10k",
+        "at_mm": [
+          10.099999,
+          37.471475
+        ],
+        "box_mm": [
+          8.718571,
+          35.945,
+          11.481428,
+          38.99795
+        ],
+        "angle_deg": 0.0,
+        "layer": "F.Silkscreen",
+        "font_mm": 0.9,
+        "uuid": "1b6532c7-cf15-4082-9899-088dc929e715"
+      }
+    },
+    {
+      "ref": "R9",
+      "mode": "adjacent_front",
+      "real_body_center_mm": [
+        10.100000000000001,
+        29.700000000000003
+      ],
+      "label": {
+        "owner": "R9",
+        "kind": "adjacent_front",
+        "text": "R9\n10k",
+        "at_mm": [
+          9.599999,
+          27.128525
+        ],
+        "box_mm": [
+          8.218571,
+          25.60205,
+          10.981428,
+          28.655
+        ],
+        "angle_deg": 0.0,
+        "layer": "F.Silkscreen",
+        "font_mm": 0.9,
+        "uuid": "f3e47cf6-fe34-4b98-bdcd-195a6537f773"
+      }
+    },
+    {
+      "ref": "C12",
+      "mode": "spatial_group",
+      "group": "G1",
+      "real_body_center_mm": [
+        42.0,
+        17.65
+      ],
+      "label": {
+        "owner": "C12",
+        "kind": "spatial_group",
+        "text": "C12\n10uF",
+        "at_mm": [
+          22.899999,
+          43.474999
+        ],
+        "box_mm": [
+          20.886665999999998,
+          41.774426999999996,
+          24.913333,
+          45.175571
+        ],
+        "angle_deg": 0.0,
+        "layer": "B.Silkscreen",
+        "font_mm": 1.0,
+        "uuid": "a997710f-a8ba-42a3-a413-08cdd9bc7d09"
+      }
+    },
+    {
+      "ref": "C52",
+      "mode": "spatial_group",
+      "group": "G1",
+      "real_body_center_mm": [
+        42.0,
+        15.25
+      ],
+      "label": {
+        "owner": "C52",
+        "kind": "spatial_group",
+        "text": "C52\n10uF",
+        "at_mm": [
+          22.899999,
+          33.875
+        ],
+        "box_mm": [
+          20.886665999999998,
+          32.174428,
+          24.913333,
+          35.575572
+        ],
+        "angle_deg": 0.0,
+        "layer": "B.Silkscreen",
+        "font_mm": 1.0,
+        "uuid": "8541e1aa-9f24-4858-9bce-47ef287395e5"
+      }
+    },
+    {
+      "ref": "U2",
+      "mode": "spatial_group",
+      "group": "G1",
+      "real_body_center_mm": [
+        42.0,
+        20.5
+      ],
+      "label": {
+        "owner": "U2",
+        "kind": "spatial_group",
+        "text": "U2\nTPS63802DLAR",
+        "at_mm": [
+          22.899999,
+          54.875
+        ],
+        "box_mm": [
+          17.14857,
+          53.174428,
+          28.651428000000003,
+          56.575572
+        ],
+        "angle_deg": 0.0,
+        "layer": "B.Silkscreen",
+        "font_mm": 1.0,
+        "uuid": "1bce8ac6-8350-4122-bbf7-d387091f3083"
+      }
+    },
+    {
+      "ref": "R15",
+      "mode": "spatial_group",
+      "group": "G1",
+      "real_body_center_mm": [
+        37.400000000000006,
+        15.899999
+      ],
+      "label": {
+        "owner": "R15",
+        "kind": "spatial_group",
+        "text": "R15\nNa:40.2k\nLTO:130k",
+        "at_mm": [
+          4.499999,
+          36.474996
+        ],
+        "box_mm": [
+          0.9390470000000001,
+          33.969452,
+          8.060952,
+          38.980540000000005
+        ],
+        "angle_deg": 0.0,
+        "layer": "B.Silkscreen",
+        "font_mm": 1.0,
+        "uuid": "e1fdfc60-a5d5-40c3-a6cc-04f96ff058c6"
+      }
+    },
+    {
+      "ref": "R3",
+      "mode": "spatial_group",
+      "group": "G2",
+      "real_body_center_mm": [
+        21.0,
+        35.8
+      ],
+      "label": {
+        "owner": "R3",
+        "kind": "spatial_group",
+        "text": "R3\nNa:61.9k\nLTO:121k",
+        "at_mm": [
+          64.549999,
+          21.949999
+        ],
+        "box_mm": [
+          60.989047,
+          19.444454999999998,
+          68.110952,
+          24.455543000000002
+        ],
+        "angle_deg": 0.0,
+        "layer": "B.Silkscreen",
+        "font_mm": 1.0,
+        "uuid": "187a9dea-c458-453a-8971-9af275865fc3"
+      }
+    },
+    {
+      "ref": "R4",
+      "mode": "spatial_group",
+      "group": "G2",
+      "real_body_center_mm": [
+        17.5,
+        38.8
+      ],
+      "label": {
+        "owner": "R4",
+        "kind": "spatial_group",
+        "text": "R4\nNa:100k\nLTO:100k",
+        "at_mm": [
+          57.549999,
+          27.949999
+        ],
+        "box_mm": [
+          53.989047,
+          25.444454999999998,
+          61.110952000000005,
+          30.455543000000002
+        ],
+        "angle_deg": 0.0,
+        "layer": "B.Silkscreen",
+        "font_mm": 1.0,
+        "uuid": "23775fb0-25c2-45d9-9d3e-346d794c1b7a"
+      }
+    },
+    {
+      "ref": "R5",
+      "mode": "spatial_group",
+      "group": "G2",
+      "real_body_center_mm": [
+        13.899999999999999,
+        34.5
+      ],
+      "label": {
+        "owner": "R5",
+        "kind": "spatial_group",
+        "text": "R5\n1M",
+        "at_mm": [
+          50.35,
+          19.35
+        ],
+        "box_mm": [
+          49.122381,
+          17.649428,
+          51.577619,
+          21.050572000000003
+        ],
+        "angle_deg": 0.0,
+        "layer": "B.Silkscreen",
+        "font_mm": 1.0,
+        "uuid": "89179002-f2e2-4889-861d-50526a7e7997"
+      }
+    },
+    {
+      "ref": "Q4",
+      "mode": "spatial_group",
+      "group": "G3",
+      "real_body_center_mm": [
+        29.5,
+        28.75
+      ],
+      "label": {
+        "owner": "Q4",
+        "kind": "spatial_group",
+        "text": "Q4\nAO3401A",
+        "at_mm": [
+          36.649999,
+          30.125
+        ],
+        "box_mm": [
+          33.184284999999996,
+          28.424428,
+          40.115714000000004,
+          31.825572
+        ],
+        "angle_deg": 0.0,
+        "layer": "B.Silkscreen",
+        "font_mm": 1.0,
+        "uuid": "e438bf8b-e074-4132-8e4d-b280de24c0b0"
+      }
+    },
+    {
+      "ref": "R56",
+      "mode": "spatial_group",
+      "group": "G3",
+      "real_body_center_mm": [
+        25.2,
+        31.0
+      ],
+      "label": {
+        "owner": "R56",
+        "kind": "spatial_group",
+        "text": "R56\nNa:1.8R\nLTO:0R",
+        "at_mm": [
+          28.049999,
+          34.625
+        ],
+        "box_mm": [
+          24.965238,
+          32.119456,
+          31.134761,
+          37.130544
+        ],
+        "angle_deg": 0.0,
+        "layer": "B.Silkscreen",
+        "font_mm": 1.0,
+        "uuid": "6ab12940-8226-4d22-bc5b-8bd510d60be2"
+      }
+    },
+    {
+      "ref": "R65",
+      "mode": "spatial_group",
+      "group": "G4",
+      "real_body_center_mm": [
+        49.9,
+        51.5
+      ],
+      "label": {
+        "owner": "R65",
+        "kind": "spatial_group",
+        "text": "R65\n10k",
+        "at_mm": [
+          87.0,
+          30.875
+        ],
+        "box_mm": [
+          85.299428,
+          29.242618999999998,
+          88.700572,
+          32.507381
+        ],
+        "angle_deg": 90.0,
+        "layer": "B.Silkscreen",
+        "font_mm": 1.0,
+        "uuid": "a9bae0f3-76c4-4fb2-9af2-f6e8a71a782c"
+      }
+    },
+    {
+      "ref": "TH1",
+      "mode": "spatial_group",
+      "group": "G4",
+      "real_body_center_mm": [
+        46.27,
+        53.0
+      ],
+      "label": {
+        "owner": "TH1",
+        "kind": "spatial_group",
+        "text": "TH1\n10k NTC",
+        "at_mm": [
+          81.554999,
+          33.125
+        ],
+        "box_mm": [
+          78.23214200000001,
+          31.424428,
+          84.87785699999999,
+          34.825572
+        ],
+        "angle_deg": 0.0,
+        "layer": "B.Silkscreen",
+        "font_mm": 1.0,
+        "uuid": "73be512d-9093-4d73-b0cc-43b735d71ab7"
+      }
+    },
+    {
+      "ref": "R70",
+      "mode": "spatial_group",
+      "group": "G4",
+      "real_body_center_mm": [
+        45.5,
+        48.5
+      ],
+      "label": {
+        "owner": "R70",
+        "kind": "spatial_group",
+        "text": "R70\n150k",
+        "at_mm": [
+          80.399999,
+          26.375
+        ],
+        "box_mm": [
+          78.386666,
+          24.674428,
+          82.413333,
+          28.075572
+        ],
+        "angle_deg": 0.0,
+        "layer": "B.Silkscreen",
+        "font_mm": 1.0,
+        "uuid": "12a07a7e-4a3d-4aca-9242-6151a9ca8aa9"
+      }
+    },
+    {
+      "ref": "U11",
+      "mode": "spatial_group",
+      "group": "G5",
+      "real_body_center_mm": [
+        27.230000500000003,
+        48.680761000000004
+      ],
+      "label": {
+        "owner": "U11",
+        "kind": "spatial_group",
+        "text": "U11\nLM285Z-2.5G",
+        "at_mm": [
+          7.1625,
+          28.600951
+        ],
+        "box_mm": [
+          1.7920239999999998,
+          26.900378999999997,
+          12.532976,
+          30.301523000000003
+        ],
+        "angle_deg": 0.0,
+        "layer": "B.Silkscreen",
+        "font_mm": 1.0,
+        "uuid": "fc3f4b0d-4ca4-47e4-94cb-a855facf8d4b"
+      }
+    },
+    {
+      "ref": "R57",
+      "mode": "spatial_group",
+      "group": "G5",
+      "real_body_center_mm": [
+        25.5,
+        45.0
+      ],
+      "label": {
+        "owner": "R57",
+        "kind": "spatial_group",
+        "text": "R57\n47k",
+        "at_mm": [
+          4.567499,
+          23.079809
+        ],
+        "box_mm": [
+          2.935118,
+          21.379237,
+          6.199879999999999,
+          24.780381000000002
+        ],
+        "angle_deg": 0.0,
+        "layer": "B.Silkscreen",
+        "font_mm": 1.0,
+        "uuid": "d3362bd0-51c0-4303-9f30-e5441eceabd5"
+      }
+    },
+    {
+      "ref": "J101",
+      "mode": "spatial_group",
+      "group": "G6",
+      "real_body_center_mm": [
+        70.5,
+        1.6
+      ],
+      "label": {
+        "owner": "J101",
+        "kind": "spatial_group",
+        "text": "J101\nIDC 12P",
+        "at_mm": [
+          29.125,
+          7.95
+        ],
+        "box_mm": [
+          27.424428,
+          4.698571,
+          30.825572,
+          11.201428
+        ],
+        "angle_deg": 90.0,
+        "layer": "B.Silkscreen",
+        "font_mm": 1.0,
+        "uuid": "ce7136ed-5944-4062-9b08-3139d0fd1f4f"
+      }
+    },
+    {
+      "ref": "D4",
+      "mode": "spatial_group",
+      "group": "G6",
+      "real_body_center_mm": [
+        56.0,
+        2.2
+      ],
+      "label": {
+        "owner": "D4",
+        "kind": "spatial_group",
+        "text": "D4\nGREEN",
+        "at_mm": [
+          7.374999,
+          8.85
+        ],
+        "box_mm": [
+          4.766428,
+          7.149428,
+          9.983571,
+          10.550571999999999
+        ],
+        "angle_deg": 0.0,
+        "layer": "B.Silkscreen",
+        "font_mm": 1.0,
+        "uuid": "7381bcdb-2d37-4ac5-8e4d-2f164b4adc3c"
+      }
+    },
+    {
+      "ref": "Q7",
+      "mode": "spatial_group",
+      "group": "G7",
+      "real_body_center_mm": [
+        40.55,
+        28.75
+      ],
+      "label": {
+        "owner": "Q7",
+        "kind": "spatial_group",
+        "text": "Q7\nAO3401A",
+        "at_mm": [
+          40.599999,
+          56.75
+        ],
+        "box_mm": [
+          37.134285,
+          55.049428,
+          44.065714,
+          58.450572
+        ],
+        "angle_deg": 0.0,
+        "layer": "B.Silkscreen",
+        "font_mm": 1.0,
+        "uuid": "8f5c10f1-c429-4931-b7d0-bdf4659d28dd"
+      }
+    },
+    {
+      "ref": "Q6",
+      "mode": "spatial_group",
+      "group": "G7",
+      "real_body_center_mm": [
+        36.45,
+        28.75
+      ],
+      "label": {
+        "owner": "Q6",
+        "kind": "spatial_group",
+        "text": "Q6\nAO3401A",
+        "at_mm": [
+          32.399999,
+          56.75
+        ],
+        "box_mm": [
+          28.934285,
+          55.049428,
+          35.865714000000004,
+          58.450572
+        ],
+        "angle_deg": 0.0,
+        "layer": "B.Silkscreen",
+        "font_mm": 1.0,
+        "uuid": "d2144097-89d0-42f6-8572-6514acb4c3a5"
+      }
+    },
+    {
+      "ref": "R48",
+      "mode": "spatial_group",
+      "group": "G8",
+      "real_body_center_mm": [
+        22.0,
+        15.0
+      ],
+      "label": {
+        "owner": "R48",
+        "kind": "spatial_group",
+        "text": "R48\n120k",
+        "at_mm": [
+          52.049999,
+          14.0
+        ],
+        "box_mm": [
+          50.036666,
+          12.299428,
+          54.063333,
+          15.700572
+        ],
+        "angle_deg": 0.0,
+        "layer": "B.Silkscreen",
+        "font_mm": 1.0,
+        "uuid": "5d94021a-3830-4011-a3c4-a6a4165810eb"
+      }
+    },
+    {
+      "ref": "R49",
+      "mode": "spatial_group",
+      "group": "G8",
+      "real_body_center_mm": [
+        25.8,
+        15.0
+      ],
+      "label": {
+        "owner": "R49",
+        "kind": "spatial_group",
+        "text": "R49\n2.49k",
+        "at_mm": [
+          57.749999,
+          14.0
+        ],
+        "box_mm": [
+          55.498571,
+          12.299428,
+          60.001428000000004,
+          15.700572
+        ],
+        "angle_deg": 0.0,
+        "layer": "B.Silkscreen",
+        "font_mm": 1.0,
+        "uuid": "55913ed0-b200-4a3d-b7a0-c223fe39e239"
+      }
+    },
+    {
+      "ref": "C3",
+      "mode": "spatial_group",
+      "group": "G9",
+      "real_body_center_mm": [
+        17.5,
+        23.6
+      ],
+      "label": {
+        "owner": "C3",
+        "kind": "spatial_group",
+        "text": "C3\n100nF",
+        "at_mm": [
+          27.75,
+          45.15
+        ],
+        "box_mm": [
+          25.260475999999997,
+          43.449428,
+          30.239524000000003,
+          46.850572
+        ],
+        "angle_deg": 0.0,
+        "layer": "B.Silkscreen",
+        "font_mm": 1.0,
+        "uuid": "20d3bda9-cfe3-4134-9ee8-0ae83f57ba54"
+      }
+    },
+    {
+      "ref": "C2",
+      "mode": "spatial_group",
+      "group": "G9",
+      "real_body_center_mm": [
+        19.0,
+        21.5
+      ],
+      "label": {
+        "owner": "C2",
+        "kind": "spatial_group",
+        "text": "C2\n100nF",
+        "at_mm": [
+          30.75,
+          40.949999
+        ],
+        "box_mm": [
+          28.260475999999997,
+          39.249427,
+          33.239524,
+          42.650571
+        ],
+        "angle_deg": 0.0,
+        "layer": "B.Silkscreen",
+        "font_mm": 1.0,
+        "uuid": "343ede55-133f-47d6-8d11-f5aed74b47cb"
+      }
+    },
+    {
+      "ref": "R52",
+      "mode": "spatial_group",
+      "group": "G10",
+      "real_body_center_mm": [
+        17.5,
+        47.3
+      ],
+      "label": {
+        "owner": "R52",
+        "kind": "spatial_group",
+        "text": "R52\n120k",
+        "at_mm": [
+          6.999999,
+          46.55
+        ],
+        "box_mm": [
+          4.9866660000000005,
+          44.849427999999996,
+          9.013333,
+          48.250572
+        ],
+        "angle_deg": 0.0,
+        "layer": "B.Silkscreen",
+        "font_mm": 1.0,
+        "uuid": "d8ddc7e1-609f-40b4-a4bb-0ef45426afa1"
+      }
+    },
+    {
+      "ref": "R54",
+      "mode": "spatial_group",
+      "group": "G10",
+      "real_body_center_mm": [
+        17.5,
+        50.3
+      ],
+      "label": {
+        "owner": "R54",
+        "kind": "spatial_group",
+        "text": "R54\n100k",
+        "at_mm": [
+          6.999999,
+          51.05
+        ],
+        "box_mm": [
+          4.9866660000000005,
+          49.349427999999996,
+          9.013333,
+          52.750572
+        ],
+        "angle_deg": 0.0,
+        "layer": "B.Silkscreen",
+        "font_mm": 1.0,
+        "uuid": "03bd0188-61c2-4d8a-ad9d-f28c277c497a"
+      }
+    },
+    {
+      "ref": "Q5",
+      "mode": "spatial_group",
+      "group": "G11",
+      "real_body_center_mm": [
+        37.5,
+        51.3
+      ],
+      "label": {
+        "owner": "Q5",
+        "kind": "spatial_group",
+        "text": "Q5\nBSS138",
+        "at_mm": [
+          85.499999,
+          20.999999
+        ],
+        "box_mm": [
+          82.439047,
+          19.299426999999998,
+          88.560952,
+          22.700571
+        ],
+        "angle_deg": 0.0,
+        "layer": "B.Silkscreen",
+        "font_mm": 1.0,
+        "uuid": "b627c030-9a0a-4c31-acda-7214fc0045b5"
+      }
+    },
+    {
+      "ref": "R68",
+      "mode": "spatial_group",
+      "group": "G11",
+      "real_body_center_mm": [
+        33.5,
+        48.5
+      ],
+      "label": {
+        "owner": "R68",
+        "kind": "spatial_group",
+        "text": "R68\n1k",
+        "at_mm": [
+          79.5,
+          16.8
+        ],
+        "box_mm": [
+          77.867619,
+          15.099428,
+          81.132381,
+          18.500572000000002
+        ],
+        "angle_deg": 0.0,
+        "layer": "B.Silkscreen",
+        "font_mm": 1.0,
+        "uuid": "631efe21-bf65-4e66-b681-fa6d17a7af83"
+      }
+    },
+    {
+      "ref": "R1",
+      "mode": "spatial_group",
+      "group": "G12",
+      "real_body_center_mm": [
+        25.200000000000003,
+        28.4
+      ],
+      "label": {
+        "owner": "R1",
+        "kind": "spatial_group",
+        "text": "R1\n0.28R",
+        "at_mm": [
+          18.799999,
+          11.549999
+        ],
+        "box_mm": [
+          16.453332999999997,
+          9.849427,
+          21.146666,
+          13.250570999999999
+        ],
+        "angle_deg": 0.0,
+        "layer": "B.Silkscreen",
+        "font_mm": 1.0,
+        "uuid": "8a1cc7d5-0b81-4a5c-b611-d24c3d2c1e08"
+      }
+    },
+    {
+      "ref": "R6",
+      "mode": "spatial_group",
+      "group": "G12",
+      "real_body_center_mm": [
+        24.8,
+        33.8
+      ],
+      "label": {
+        "owner": "R6",
+        "kind": "spatial_group",
+        "text": "R6\n120R",
+        "at_mm": [
+          18.199999,
+          19.65
+        ],
+        "box_mm": [
+          16.091427999999997,
+          17.949427999999997,
+          20.308571,
+          21.350572
+        ],
+        "angle_deg": 0.0,
+        "layer": "B.Silkscreen",
+        "font_mm": 1.0,
+        "uuid": "9daac9e1-3678-45ff-adbf-626e65827fba"
+      }
+    },
+    {
+      "ref": "R14",
+      "mode": "spatial_group",
+      "group": "G13",
+      "real_body_center_mm": [
+        38.0,
+        25.1
+      ],
+      "label": {
+        "owner": "R14",
+        "kind": "spatial_group",
+        "text": "R14\n10k",
+        "at_mm": [
+          53.5,
+          23.225
+        ],
+        "box_mm": [
+          51.867619,
+          21.524428,
+          55.132381,
+          24.925572000000003
+        ],
+        "angle_deg": 0.0,
+        "layer": "B.Silkscreen",
+        "font_mm": 1.0,
+        "uuid": "c2fc1f2b-78cf-482d-8576-93a05b2984ec"
+      }
+    },
+    {
+      "ref": "R13",
+      "mode": "spatial_group",
+      "group": "G13",
+      "real_body_center_mm": [
+        38.0,
+        22.6
+      ],
+      "label": {
+        "owner": "R13",
+        "kind": "spatial_group",
+        "text": "R13\n56k",
+        "at_mm": [
+          53.5,
+          19.475
+        ],
+        "box_mm": [
+          51.867619,
+          17.774428,
+          55.132381,
+          21.175572000000003
+        ],
+        "angle_deg": 0.0,
+        "layer": "B.Silkscreen",
+        "font_mm": 1.0,
+        "uuid": "6f2e4c04-2fb5-406b-8afc-7954bdff649d"
+      }
+    }
+  ],
+  "spatial_groups": [
+    {
+      "id": "G1",
+      "refs": [
+        "C12",
+        "C52",
+        "U2",
+        "R15"
+      ],
+      "scale": 4.0,
+      "origin_mm": [
+        39.7,
+        17.875
+      ],
+      "translation_mm": [
+        -145.10000000000002,
+        -27.125
+      ],
+      "preserves_orientation": true
+    },
+    {
+      "id": "G2",
+      "refs": [
+        "R3",
+        "R4",
+        "R5"
+      ],
+      "scale": 2.0,
+      "origin_mm": [
+        17.45,
+        36.65
+      ],
+      "translation_mm": [
+        22.550000000000004,
+        -49.65
+      ],
+      "preserves_orientation": true
+    },
+    {
+      "id": "G3",
+      "refs": [
+        "Q4",
+        "R56"
+      ],
+      "scale": 2.0,
+      "origin_mm": [
+        27.35,
+        29.875
+      ],
+      "translation_mm": [
+        -22.35,
+        -27.375
+      ],
+      "preserves_orientation": true
+    },
+    {
+      "id": "G4",
+      "refs": [
+        "R65",
+        "TH1",
+        "R70"
+      ],
+      "scale": 1.5,
+      "origin_mm": [
+        47.7,
+        50.75
+      ],
+      "translation_mm": [
+        12.149999999999991,
+        -46.375
+      ],
+      "preserves_orientation": true
+    },
+    {
+      "id": "G5",
+      "refs": [
+        "U11",
+        "R57"
+      ],
+      "scale": 1.5,
+      "origin_mm": [
+        26.36500025,
+        46.8403805
+      ],
+      "translation_mm": [
+        -33.682500125,
+        -44.42019025
+      ],
+      "preserves_orientation": true
+    },
+    {
+      "id": "G6",
+      "refs": [
+        "J101",
+        "D4"
+      ],
+      "scale": 1.5,
+      "origin_mm": [
+        63.25,
+        1.9000000000000001
+      ],
+      "translation_mm": [
+        -76.625,
+        5.550000000000001
+      ],
+      "preserves_orientation": true
+    },
+    {
+      "id": "G7",
+      "refs": [
+        "Q7",
+        "Q6"
+      ],
+      "scale": 2.0,
+      "origin_mm": [
+        38.5,
+        28.75
+      ],
+      "translation_mm": [
+        -40.5,
+        -0.75
+      ],
+      "preserves_orientation": true
+    },
+    {
+      "id": "G8",
+      "refs": [
+        "R48",
+        "R49"
+      ],
+      "scale": 1.5,
+      "origin_mm": [
+        23.9,
+        15.0
+      ],
+      "translation_mm": [
+        19.050000000000004,
+        -8.5
+      ],
+      "preserves_orientation": true
+    },
+    {
+      "id": "G9",
+      "refs": [
+        "C3",
+        "C2"
+      ],
+      "scale": 2.0,
+      "origin_mm": [
+        18.25,
+        22.55
+      ],
+      "translation_mm": [
+        -7.25,
+        -2.0500000000000043
+      ],
+      "preserves_orientation": true
+    },
+    {
+      "id": "G10",
+      "refs": [
+        "R52",
+        "R54"
+      ],
+      "scale": 1.5,
+      "origin_mm": [
+        17.5,
+        48.8
+      ],
+      "translation_mm": [
+        -19.25,
+        -24.39999999999999
+      ],
+      "preserves_orientation": true
+    },
+    {
+      "id": "G11",
+      "refs": [
+        "Q5",
+        "R68"
+      ],
+      "scale": 1.5,
+      "origin_mm": [
+        35.5,
+        49.9
+      ],
+      "translation_mm": [
+        29.25,
+        -55.949999999999996
+      ],
+      "preserves_orientation": true
+    },
+    {
+      "id": "G12",
+      "refs": [
+        "R1",
+        "R6"
+      ],
+      "scale": 1.5,
+      "origin_mm": [
+        25.0,
+        31.099999999999998
+      ],
+      "translation_mm": [
+        -19.0,
+        -31.05
+      ],
+      "preserves_orientation": true
+    },
+    {
+      "id": "G13",
+      "refs": [
+        "R14",
+        "R13"
+      ],
+      "scale": 1.5,
+      "origin_mm": [
+        38.0,
+        23.85
+      ],
+      "translation_mm": [
+        -3.5,
+        -14.425000000000004
+      ],
+      "preserves_orientation": true
+    }
+  ],
+  "pinouts": [
+    {
+      "ref": "J101",
+      "pins": [
+        {
+          "pin": "1",
+          "net": "FILTER_OUT",
+          "pad_at_mm": [
+            64.15,
+            11.0
+          ],
+          "label": {
+            "owner": "J101",
+            "kind": "pin_aligned",
+            "text": "1 3V3",
+            "at_mm": [
+              64.15,
+              14.510477
+            ],
+            "box_mm": [
+              63.4065,
+              12.55,
+              64.89349999999999,
+              16.470953
+            ],
+            "angle_deg": 90.0,
+            "layer": "B.Silkscreen",
+            "font_mm": 0.8,
+            "uuid": "7ebe37ae-f2e0-4a61-875c-b48d049c25cb"
+          }
+        },
+        {
+          "pin": "2",
+          "net": "GND",
+          "pad_at_mm": [
+            64.15,
+            8.46
+          ],
+          "label": {
+            "owner": "J101",
+            "kind": "pin_aligned",
+            "text": "2 GND",
+            "at_mm": [
+              64.15,
+              4.835238
+            ],
+            "box_mm": [
+              63.4065,
+              2.7604759999999997,
+              64.89349999999999,
+              6.909999999999999
+            ],
+            "angle_deg": 90.0,
+            "layer": "B.Silkscreen",
+            "font_mm": 0.8,
+            "uuid": "6155a1be-d373-4baa-9d5b-f5bfc4128b55"
+          }
+        },
+        {
+          "pin": "3",
+          "net": "FILTER_OUT",
+          "pad_at_mm": [
+            66.69,
+            11.0
+          ],
+          "label": {
+            "owner": "J101",
+            "kind": "pin_aligned",
+            "text": "3 3V3",
+            "at_mm": [
+              66.69,
+              14.510477
+            ],
+            "box_mm": [
+              65.9465,
+              12.55,
+              67.4335,
+              16.470953
+            ],
+            "angle_deg": 90.0,
+            "layer": "B.Silkscreen",
+            "font_mm": 0.8,
+            "uuid": "344fcc53-9b35-445f-89b1-f00429ca490a"
+          }
+        },
+        {
+          "pin": "4",
+          "net": "GND",
+          "pad_at_mm": [
+            66.69,
+            8.46
+          ],
+          "label": {
+            "owner": "J101",
+            "kind": "pin_aligned",
+            "text": "4 GND",
+            "at_mm": [
+              66.69,
+              4.835238
+            ],
+            "box_mm": [
+              65.9465,
+              2.7604759999999997,
+              67.4335,
+              6.909999999999999
+            ],
+            "angle_deg": 90.0,
+            "layer": "B.Silkscreen",
+            "font_mm": 0.8,
+            "uuid": "26bd7f1b-69db-44ce-8fda-5b1e3d21ae98"
+          }
+        },
+        {
+          "pin": "5",
+          "net": "FILTER_OUT",
+          "pad_at_mm": [
+            69.23,
+            11.0
+          ],
+          "label": {
+            "owner": "J101",
+            "kind": "pin_aligned",
+            "text": "5 3V3",
+            "at_mm": [
+              69.23,
+              14.510477
+            ],
+            "box_mm": [
+              68.4865,
+              12.55,
+              69.9735,
+              16.470953
+            ],
+            "angle_deg": 90.0,
+            "layer": "B.Silkscreen",
+            "font_mm": 0.8,
+            "uuid": "e2683e9b-203b-4d77-999c-7a20dae2607c"
+          }
+        },
+        {
+          "pin": "6",
+          "net": "GND",
+          "pad_at_mm": [
+            69.23,
+            8.46
+          ],
+          "label": {
+            "owner": "J101",
+            "kind": "pin_aligned",
+            "text": "6 GND",
+            "at_mm": [
+              69.23,
+              4.835238
+            ],
+            "box_mm": [
+              68.4865,
+              2.7604759999999997,
+              69.9735,
+              6.909999999999999
+            ],
+            "angle_deg": 90.0,
+            "layer": "B.Silkscreen",
+            "font_mm": 0.8,
+            "uuid": "91375206-4673-4f94-9d6f-0a152b318f7e"
+          }
+        },
+        {
+          "pin": "7",
+          "net": "FILTER_OUT",
+          "pad_at_mm": [
+            71.77,
+            11.0
+          ],
+          "label": {
+            "owner": "J101",
+            "kind": "pin_aligned",
+            "text": "7 3V3",
+            "at_mm": [
+              71.77,
+              14.510477
+            ],
+            "box_mm": [
+              71.0265,
+              12.55,
+              72.5135,
+              16.470953
+            ],
+            "angle_deg": 90.0,
+            "layer": "B.Silkscreen",
+            "font_mm": 0.8,
+            "uuid": "2aff48f0-ca53-4eab-bcdc-e835c1cc5a1e"
+          }
+        },
+        {
+          "pin": "8",
+          "net": "GND",
+          "pad_at_mm": [
+            71.77,
+            8.46
+          ],
+          "label": {
+            "owner": "J101",
+            "kind": "pin_aligned",
+            "text": "8 GND",
+            "at_mm": [
+              71.77,
+              4.835238
+            ],
+            "box_mm": [
+              71.0265,
+              2.7604759999999997,
+              72.5135,
+              6.909999999999999
+            ],
+            "angle_deg": 90.0,
+            "layer": "B.Silkscreen",
+            "font_mm": 0.8,
+            "uuid": "22eed742-d1e2-46de-bc7e-2651f68f6604"
+          }
+        },
+        {
+          "pin": "9",
+          "net": "BAT",
+          "pad_at_mm": [
+            74.31,
+            11.0
+          ],
+          "label": {
+            "owner": "J101",
+            "kind": "pin_aligned",
+            "text": "9 BAT",
+            "at_mm": [
+              74.31,
+              14.453334
+            ],
+            "box_mm": [
+              73.5665,
+              12.55,
+              75.0535,
+              16.356667
+            ],
+            "angle_deg": 90.0,
+            "layer": "B.Silkscreen",
+            "font_mm": 0.8,
+            "uuid": "202eb0c6-287f-400e-bd69-cd1782bb99ce"
+          }
+        },
+        {
+          "pin": "10",
+          "net": "GND",
+          "pad_at_mm": [
+            74.31,
+            8.46
+          ],
+          "label": {
+            "owner": "J101",
+            "kind": "pin_aligned",
+            "text": "10 GND",
+            "at_mm": [
+              74.31,
+              4.454286
+            ],
+            "box_mm": [
+              73.5665,
+              1.998571,
+              75.0535,
+              6.909999999999999
+            ],
+            "angle_deg": 90.0,
+            "layer": "B.Silkscreen",
+            "font_mm": 0.8,
+            "uuid": "63a9b3cc-fd23-4520-99dd-fd439ce1b5c2"
+          }
+        },
+        {
+          "pin": "11",
+          "net": "MODE",
+          "pad_at_mm": [
+            76.85,
+            11.0
+          ],
+          "label": {
+            "owner": "J101",
+            "kind": "pin_aligned",
+            "text": "11 MODE",
+            "at_mm": [
+              76.85,
+              15.424763
+            ],
+            "box_mm": [
+              76.10650000000001,
+              12.55,
+              77.59349999999999,
+              18.299525000000003
+            ],
+            "angle_deg": 90.0,
+            "layer": "B.Silkscreen",
+            "font_mm": 0.8,
+            "uuid": "d57ad174-175f-4cd8-8b73-6e2c6c48a204"
+          }
+        },
+        {
+          "pin": "12",
+          "net": "GND",
+          "pad_at_mm": [
+            76.85,
+            8.46
+          ],
+          "label": {
+            "owner": "J101",
+            "kind": "pin_aligned",
+            "text": "12 GND",
+            "at_mm": [
+              76.85,
+              4.454286
+            ],
+            "box_mm": [
+              76.10650000000001,
+              1.998571,
+              77.59349999999999,
+              6.909999999999999
+            ],
+            "angle_deg": 90.0,
+            "layer": "B.Silkscreen",
+            "font_mm": 0.8,
+            "uuid": "957bc9da-62ae-4c98-8898-34886d29fc61"
+          }
+        }
+      ],
+      "source": "actual native numbered pads",
+      "view": "native B",
+      "name": "POWER / LOGIC"
+    },
+    {
+      "ref": "J12",
+      "pins": [
+        {
+          "pin": "1",
+          "net": "BAT",
+          "pad_at_mm": [
+            35.25,
+            9.3
+          ],
+          "label": {
+            "owner": "J12",
+            "kind": "pin_aligned",
+            "text": "1 BAT+",
+            "at_mm": [
+              35.25,
+              13.248572
+            ],
+            "box_mm": [
+              34.506499999999996,
+              10.85,
+              35.993500000000004,
+              15.647143
+            ],
+            "angle_deg": 90.0,
+            "layer": "B.Silkscreen",
+            "font_mm": 0.8,
+            "uuid": "8ddcfdae-5fbb-44cc-9494-011b13f8c195"
+          }
+        },
+        {
+          "pin": "2",
+          "net": "LTO_MID",
+          "pad_at_mm": [
+            37.75,
+            9.3
+          ],
+          "label": {
+            "owner": "J12",
+            "kind": "pin_aligned",
+            "text": "2 MID",
+            "at_mm": [
+              37.75,
+              12.753334
+            ],
+            "box_mm": [
+              37.006499999999996,
+              10.85,
+              38.493500000000004,
+              14.656666999999999
+            ],
+            "angle_deg": 90.0,
+            "layer": "B.Silkscreen",
+            "font_mm": 0.8,
+            "uuid": "4acca4c5-edc2-476d-b40a-d185aa08b1b6"
+          }
+        },
+        {
+          "pin": "3",
+          "net": "GND",
+          "pad_at_mm": [
+            40.25,
+            9.3
+          ],
+          "label": {
+            "owner": "J12",
+            "kind": "pin_aligned",
+            "text": "3 GND",
+            "at_mm": [
+              40.25,
+              12.924762
+            ],
+            "box_mm": [
+              39.506499999999996,
+              10.85,
+              40.993500000000004,
+              14.999524
+            ],
+            "angle_deg": 90.0,
+            "layer": "B.Silkscreen",
+            "font_mm": 0.8,
+            "uuid": "2ab48591-7033-493c-8c40-2c296a6c880e"
+          }
+        },
+        {
+          "pin": "4",
+          "net": "unconnected-(J12-NC-Pad4)",
+          "pad_at_mm": [
+            42.75,
+            9.3
+          ],
+          "label": {
+            "owner": "J12",
+            "kind": "pin_aligned",
+            "text": "4 NC",
+            "at_mm": [
+              42.75,
+              12.524762
+            ],
+            "box_mm": [
+              42.006499999999996,
+              10.85,
+              43.493500000000004,
+              14.199524
+            ],
+            "angle_deg": 90.0,
+            "layer": "B.Silkscreen",
+            "font_mm": 0.8,
+            "uuid": "4f64c675-017c-41c9-a6c6-80f256f5bd57"
+          }
+        }
+      ],
+      "source": "actual native numbered pads",
+      "view": "native B",
+      "name": "LTO"
+    },
+    {
+      "ref": "J7",
+      "pins": [
+        {
+          "pin": "1",
+          "net": "SOLAR",
+          "pad_at_mm": [
+            11.35,
+            9.3
+          ],
+          "label": {
+            "owner": "J7",
+            "kind": "pin_aligned",
+            "text": "1 SOLAR+",
+            "at_mm": [
+              11.35,
+              14.067619
+            ],
+            "box_mm": [
+              10.6065,
+              10.85,
+              12.093499999999999,
+              17.285238
+            ],
+            "angle_deg": 90.0,
+            "layer": "B.Silkscreen",
+            "font_mm": 0.8,
+            "uuid": "cd8029e2-d391-4894-a8dc-d5c5483d0bd7"
+          }
+        },
+        {
+          "pin": "2",
+          "net": "GND",
+          "pad_at_mm": [
+            13.85,
+            9.3
+          ],
+          "label": {
+            "owner": "J7",
+            "kind": "pin_aligned",
+            "text": "2 GND",
+            "at_mm": [
+              13.85,
+              12.924762
+            ],
+            "box_mm": [
+              13.1065,
+              10.85,
+              14.593499999999999,
+              14.999524
+            ],
+            "angle_deg": 90.0,
+            "layer": "B.Silkscreen",
+            "font_mm": 0.8,
+            "uuid": "02b6e960-013e-4d75-adff-1f407daeef8a"
+          }
+        }
+      ],
+      "source": "actual native numbered pads",
+      "view": "native B",
+      "name": "SOLAR"
+    },
+    {
+      "ref": "J8",
+      "pins": [
+        {
+          "pin": "1",
+          "net": "BAT",
+          "pad_at_mm": [
+            22.75,
+            9.3
+          ],
+          "label": {
+            "owner": "J8",
+            "kind": "pin_aligned",
+            "text": "1 BAT+",
+            "at_mm": [
+              22.75,
+              13.248572
+            ],
+            "box_mm": [
+              22.0065,
+              10.85,
+              23.4935,
+              15.647143
+            ],
+            "angle_deg": 90.0,
+            "layer": "B.Silkscreen",
+            "font_mm": 0.8,
+            "uuid": "fac96b47-3e46-4b8b-b2de-8014bffe33b9"
+          }
+        },
+        {
+          "pin": "2",
+          "net": "GND",
+          "pad_at_mm": [
+            25.25,
+            9.3
+          ],
+          "label": {
+            "owner": "J8",
+            "kind": "pin_aligned",
+            "text": "2 GND",
+            "at_mm": [
+              25.25,
+              12.924762
+            ],
+            "box_mm": [
+              24.5065,
+              10.85,
+              25.9935,
+              14.999524
+            ],
+            "angle_deg": 90.0,
+            "layer": "B.Silkscreen",
+            "font_mm": 0.8,
+            "uuid": "43549019-5815-438f-9672-d1f252139161"
+          }
+        }
+      ],
+      "source": "actual native numbered pads",
+      "view": "native B",
+      "name": "BAT"
+    },
+    {
+      "ref": "TH1",
+      "pins": [
+        {
+          "pin": "1",
+          "net": "/4. Thermal/CHG_TSENSE",
+          "pad_at_mm": [
+            45.0,
+            53.0
+          ],
+          "label": {
+            "owner": "TH1",
+            "kind": "pin_aligned",
+            "text": "1 NTC",
+            "at_mm": [
+              45.0,
+              56.529524
+            ],
+            "box_mm": [
+              44.256499999999996,
+              54.55,
+              45.743500000000004,
+              58.509048
+            ],
+            "angle_deg": 90.0,
+            "layer": "B.Silkscreen",
+            "font_mm": 0.8,
+            "uuid": "897722e5-de49-4578-9a06-c61ee986d7ac"
+          }
+        },
+        {
+          "pin": "2",
+          "net": "GND",
+          "pad_at_mm": [
+            47.54,
+            53.0
+          ],
+          "label": {
+            "owner": "TH1",
+            "kind": "pin_aligned",
+            "text": "2 GND",
+            "at_mm": [
+              47.54,
+              56.624762
+            ],
+            "box_mm": [
+              46.7965,
+              54.55,
+              48.283500000000004,
+              58.699524000000004
+            ],
+            "angle_deg": 90.0,
+            "layer": "B.Silkscreen",
+            "font_mm": 0.8,
+            "uuid": "1e5a41c4-8df5-468a-bb8d-7e02127d2240"
+          }
+        }
+      ],
+      "source": "actual native numbered pads",
+      "view": "native B",
+      "name": "NTC"
+    }
+  ],
+  "all_text": [
+    {
+      "owner": "PRODUCT",
+      "kind": "function",
+      "text": "POWER 2.0",
+      "at_mm": [
+        44.999999,
+        58.5
+      ],
+      "box_mm": [
+        40.580951999999996,
+        57.464,
+        49.419047,
+        59.536
+      ],
+      "angle_deg": 0.0,
+      "layer": "F.Silkscreen",
+      "font_mm": 1.0,
+      "uuid": "1e4210b8-ad53-4870-bde7-18c86e226196"
+    },
+    {
+      "owner": "BAL1_OPTION",
+      "kind": "function",
+      "text": "BAL1",
+      "at_mm": [
+        21.5,
+        17.8
+      ],
+      "box_mm": [
+        19.390476,
+        16.764,
+        23.609524,
+        18.836000000000002
+      ],
+      "angle_deg": 0.0,
+      "layer": "F.Silkscreen",
+      "font_mm": 1.0,
+      "uuid": "8f34c5d4-8f65-4ab4-a112-a5aec4b9288d"
+    },
+    {
+      "owner": "BAL2_OPTION",
+      "kind": "function",
+      "text": "BAL2",
+      "at_mm": [
+        16.5,
+        56.2
+      ],
+      "box_mm": [
+        14.390476,
+        55.164,
+        18.609524,
+        57.236000000000004
+      ],
+      "angle_deg": 0.0,
+      "layer": "F.Silkscreen",
+      "font_mm": 1.0,
+      "uuid": "3ff7c41a-3fbe-4599-89df-8c4c45df7501"
+    },
+    {
+      "owner": "COLD_A_OPTION",
+      "kind": "function",
+      "text": "A",
+      "at_mm": [
+        32.999999,
+        28.75
+      ],
+      "box_mm": [
+        32.271428,
+        27.714,
+        33.728571,
+        29.786
+      ],
+      "angle_deg": 0.0,
+      "layer": "F.Silkscreen",
+      "font_mm": 1.0,
+      "uuid": "d0dfa827-311d-40db-85d8-ef731e71fd16"
+    },
+    {
+      "owner": "COLD_B_OPTION",
+      "kind": "function",
+      "text": "B",
+      "at_mm": [
+        25.5,
+        53.5
+      ],
+      "box_mm": [
+        24.7,
+        52.464,
+        26.3,
+        54.536
+      ],
+      "angle_deg": 0.0,
+      "layer": "F.Silkscreen",
+      "font_mm": 1.0,
+      "uuid": "c2cd4d65-e40a-4d6c-88bf-c03b6e19c14d"
+    },
+    {
+      "owner": "COLD_OPTION",
+      "kind": "function",
+      "text": "COLD A+B",
+      "at_mm": [
+        36.0,
+        56.7
+      ],
+      "box_mm": [
+        31.842857,
+        55.664,
+        40.157143000000005,
+        57.736000000000004
+      ],
+      "angle_deg": 0.0,
+      "layer": "F.Silkscreen",
+      "font_mm": 1.0,
+      "uuid": "31d05366-1c95-465b-8b4a-fa9db4203e6d"
+    },
+    {
+      "owner": "D3",
+      "kind": "function",
+      "text": "CHARGE",
+      "at_mm": [
+        50.999999,
+        4.5
+      ],
+      "box_mm": [
+        48.41619,
+        3.6512,
+        53.583809,
+        5.3488
+      ],
+      "angle_deg": 0.0,
+      "layer": "F.Silkscreen",
+      "font_mm": 0.8,
+      "uuid": "b8d5f1de-0af7-463c-9043-b5da710f10ab"
+    },
+    {
+      "owner": "D4",
+      "kind": "function",
+      "text": "DONE",
+      "at_mm": [
+        56.0,
+        4.5
+      ],
+      "box_mm": [
+        54.14,
+        3.6512,
+        57.86,
+        5.3488
+      ],
+      "angle_deg": 0.0,
+      "layer": "F.Silkscreen",
+      "font_mm": 0.8,
+      "uuid": "544cf9ad-9289-402c-976a-97892231603d"
+    },
+    {
+      "owner": "J101",
+      "kind": "pin_aligned",
+      "text": "1 3V3",
+      "at_mm": [
+        64.15,
+        14.510477
+      ],
+      "box_mm": [
+        63.4065,
+        12.55,
+        64.89349999999999,
+        16.470953
+      ],
+      "angle_deg": 90.0,
+      "layer": "B.Silkscreen",
+      "font_mm": 0.8,
+      "uuid": "7ebe37ae-f2e0-4a61-875c-b48d049c25cb"
+    },
+    {
+      "owner": "J101",
+      "kind": "pin_aligned",
+      "text": "2 GND",
+      "at_mm": [
+        64.15,
+        4.835238
+      ],
+      "box_mm": [
+        63.4065,
+        2.7604759999999997,
+        64.89349999999999,
+        6.909999999999999
+      ],
+      "angle_deg": 90.0,
+      "layer": "B.Silkscreen",
+      "font_mm": 0.8,
+      "uuid": "6155a1be-d373-4baa-9d5b-f5bfc4128b55"
+    },
+    {
+      "owner": "J101",
+      "kind": "pin_aligned",
+      "text": "3 3V3",
+      "at_mm": [
+        66.69,
+        14.510477
+      ],
+      "box_mm": [
+        65.9465,
+        12.55,
+        67.4335,
+        16.470953
+      ],
+      "angle_deg": 90.0,
+      "layer": "B.Silkscreen",
+      "font_mm": 0.8,
+      "uuid": "344fcc53-9b35-445f-89b1-f00429ca490a"
+    },
+    {
+      "owner": "J101",
+      "kind": "pin_aligned",
+      "text": "4 GND",
+      "at_mm": [
+        66.69,
+        4.835238
+      ],
+      "box_mm": [
+        65.9465,
+        2.7604759999999997,
+        67.4335,
+        6.909999999999999
+      ],
+      "angle_deg": 90.0,
+      "layer": "B.Silkscreen",
+      "font_mm": 0.8,
+      "uuid": "26bd7f1b-69db-44ce-8fda-5b1e3d21ae98"
+    },
+    {
+      "owner": "J101",
+      "kind": "pin_aligned",
+      "text": "5 3V3",
+      "at_mm": [
+        69.23,
+        14.510477
+      ],
+      "box_mm": [
+        68.4865,
+        12.55,
+        69.9735,
+        16.470953
+      ],
+      "angle_deg": 90.0,
+      "layer": "B.Silkscreen",
+      "font_mm": 0.8,
+      "uuid": "e2683e9b-203b-4d77-999c-7a20dae2607c"
+    },
+    {
+      "owner": "J101",
+      "kind": "pin_aligned",
+      "text": "6 GND",
+      "at_mm": [
+        69.23,
+        4.835238
+      ],
+      "box_mm": [
+        68.4865,
+        2.7604759999999997,
+        69.9735,
+        6.909999999999999
+      ],
+      "angle_deg": 90.0,
+      "layer": "B.Silkscreen",
+      "font_mm": 0.8,
+      "uuid": "91375206-4673-4f94-9d6f-0a152b318f7e"
+    },
+    {
+      "owner": "J101",
+      "kind": "pin_aligned",
+      "text": "7 3V3",
+      "at_mm": [
+        71.77,
+        14.510477
+      ],
+      "box_mm": [
+        71.0265,
+        12.55,
+        72.5135,
+        16.470953
+      ],
+      "angle_deg": 90.0,
+      "layer": "B.Silkscreen",
+      "font_mm": 0.8,
+      "uuid": "2aff48f0-ca53-4eab-bcdc-e835c1cc5a1e"
+    },
+    {
+      "owner": "J101",
+      "kind": "pin_aligned",
+      "text": "8 GND",
+      "at_mm": [
+        71.77,
+        4.835238
+      ],
+      "box_mm": [
+        71.0265,
+        2.7604759999999997,
+        72.5135,
+        6.909999999999999
+      ],
+      "angle_deg": 90.0,
+      "layer": "B.Silkscreen",
+      "font_mm": 0.8,
+      "uuid": "22eed742-d1e2-46de-bc7e-2651f68f6604"
+    },
+    {
+      "owner": "J101",
+      "kind": "pin_aligned",
+      "text": "9 BAT",
+      "at_mm": [
+        74.31,
+        14.453334
+      ],
+      "box_mm": [
+        73.5665,
+        12.55,
+        75.0535,
+        16.356667
+      ],
+      "angle_deg": 90.0,
+      "layer": "B.Silkscreen",
+      "font_mm": 0.8,
+      "uuid": "202eb0c6-287f-400e-bd69-cd1782bb99ce"
+    },
+    {
+      "owner": "J101",
+      "kind": "pin_aligned",
+      "text": "10 GND",
+      "at_mm": [
+        74.31,
+        4.454286
+      ],
+      "box_mm": [
+        73.5665,
+        1.998571,
+        75.0535,
+        6.909999999999999
+      ],
+      "angle_deg": 90.0,
+      "layer": "B.Silkscreen",
+      "font_mm": 0.8,
+      "uuid": "63a9b3cc-fd23-4520-99dd-fd439ce1b5c2"
+    },
+    {
+      "owner": "J101",
+      "kind": "pin_aligned",
+      "text": "11 MODE",
+      "at_mm": [
+        76.85,
+        15.424763
+      ],
+      "box_mm": [
+        76.10650000000001,
+        12.55,
+        77.59349999999999,
+        18.299525000000003
+      ],
+      "angle_deg": 90.0,
+      "layer": "B.Silkscreen",
+      "font_mm": 0.8,
+      "uuid": "d57ad174-175f-4cd8-8b73-6e2c6c48a204"
+    },
+    {
+      "owner": "J101",
+      "kind": "pin_aligned",
+      "text": "12 GND",
+      "at_mm": [
+        76.85,
+        4.454286
+      ],
+      "box_mm": [
+        76.10650000000001,
+        1.998571,
+        77.59349999999999,
+        6.909999999999999
+      ],
+      "angle_deg": 90.0,
+      "layer": "B.Silkscreen",
+      "font_mm": 0.8,
+      "uuid": "957bc9da-62ae-4c98-8898-34886d29fc61"
+    },
+    {
+      "owner": "J12",
+      "kind": "pin_aligned",
+      "text": "1 BAT+",
+      "at_mm": [
+        35.25,
+        13.248572
+      ],
+      "box_mm": [
+        34.506499999999996,
+        10.85,
+        35.993500000000004,
+        15.647143
+      ],
+      "angle_deg": 90.0,
+      "layer": "B.Silkscreen",
+      "font_mm": 0.8,
+      "uuid": "8ddcfdae-5fbb-44cc-9494-011b13f8c195"
+    },
+    {
+      "owner": "J12",
+      "kind": "pin_aligned",
+      "text": "2 MID",
+      "at_mm": [
+        37.75,
+        12.753334
+      ],
+      "box_mm": [
+        37.006499999999996,
+        10.85,
+        38.493500000000004,
+        14.656666999999999
+      ],
+      "angle_deg": 90.0,
+      "layer": "B.Silkscreen",
+      "font_mm": 0.8,
+      "uuid": "4acca4c5-edc2-476d-b40a-d185aa08b1b6"
+    },
+    {
+      "owner": "J12",
+      "kind": "pin_aligned",
+      "text": "3 GND",
+      "at_mm": [
+        40.25,
+        12.924762
+      ],
+      "box_mm": [
+        39.506499999999996,
+        10.85,
+        40.993500000000004,
+        14.999524
+      ],
+      "angle_deg": 90.0,
+      "layer": "B.Silkscreen",
+      "font_mm": 0.8,
+      "uuid": "2ab48591-7033-493c-8c40-2c296a6c880e"
+    },
+    {
+      "owner": "J12",
+      "kind": "pin_aligned",
+      "text": "4 NC",
+      "at_mm": [
+        42.75,
+        12.524762
+      ],
+      "box_mm": [
+        42.006499999999996,
+        10.85,
+        43.493500000000004,
+        14.199524
+      ],
+      "angle_deg": 90.0,
+      "layer": "B.Silkscreen",
+      "font_mm": 0.8,
+      "uuid": "4f64c675-017c-41c9-a6c6-80f256f5bd57"
+    },
+    {
+      "owner": "J7",
+      "kind": "pin_aligned",
+      "text": "1 SOLAR+",
+      "at_mm": [
+        11.35,
+        14.067619
+      ],
+      "box_mm": [
+        10.6065,
+        10.85,
+        12.093499999999999,
+        17.285238
+      ],
+      "angle_deg": 90.0,
+      "layer": "B.Silkscreen",
+      "font_mm": 0.8,
+      "uuid": "cd8029e2-d391-4894-a8dc-d5c5483d0bd7"
+    },
+    {
+      "owner": "J7",
+      "kind": "pin_aligned",
+      "text": "2 GND",
+      "at_mm": [
+        13.85,
+        12.924762
+      ],
+      "box_mm": [
+        13.1065,
+        10.85,
+        14.593499999999999,
+        14.999524
+      ],
+      "angle_deg": 90.0,
+      "layer": "B.Silkscreen",
+      "font_mm": 0.8,
+      "uuid": "02b6e960-013e-4d75-adff-1f407daeef8a"
+    },
+    {
+      "owner": "J8",
+      "kind": "pin_aligned",
+      "text": "1 BAT+",
+      "at_mm": [
+        22.75,
+        13.248572
+      ],
+      "box_mm": [
+        22.0065,
+        10.85,
+        23.4935,
+        15.647143
+      ],
+      "angle_deg": 90.0,
+      "layer": "B.Silkscreen",
+      "font_mm": 0.8,
+      "uuid": "fac96b47-3e46-4b8b-b2de-8014bffe33b9"
+    },
+    {
+      "owner": "J8",
+      "kind": "pin_aligned",
+      "text": "2 GND",
+      "at_mm": [
+        25.25,
+        12.924762
+      ],
+      "box_mm": [
+        24.5065,
+        10.85,
+        25.9935,
+        14.999524
+      ],
+      "angle_deg": 90.0,
+      "layer": "B.Silkscreen",
+      "font_mm": 0.8,
+      "uuid": "43549019-5815-438f-9672-d1f252139161"
+    },
+    {
+      "owner": "TH1",
+      "kind": "pin_aligned",
+      "text": "1 NTC",
+      "at_mm": [
+        45.0,
+        56.529524
+      ],
+      "box_mm": [
+        44.256499999999996,
+        54.55,
+        45.743500000000004,
+        58.509048
+      ],
+      "angle_deg": 90.0,
+      "layer": "B.Silkscreen",
+      "font_mm": 0.8,
+      "uuid": "897722e5-de49-4578-9a06-c61ee986d7ac"
+    },
+    {
+      "owner": "TH1",
+      "kind": "pin_aligned",
+      "text": "2 GND",
+      "at_mm": [
+        47.54,
+        56.624762
+      ],
+      "box_mm": [
+        46.7965,
+        54.55,
+        48.283500000000004,
+        58.699524000000004
+      ],
+      "angle_deg": 90.0,
+      "layer": "B.Silkscreen",
+      "font_mm": 0.8,
+      "uuid": "1e5a41c4-8df5-468a-bb8d-7e02127d2240"
+    },
+    {
+      "owner": "R16",
+      "kind": "projected_body",
+      "text": "R16\nNa:49.9k\nLTO:49.9k",
+      "at_mm": [
+        37.399999,
+        18.4
+      ],
+      "box_mm": [
+        33.600952,
+        15.894456,
+        41.199047,
+        20.905544000000003
+      ],
+      "angle_deg": 0.0,
+      "layer": "B.Silkscreen",
+      "font_mm": 1.0,
+      "uuid": "00f36db1-54f0-41da-b194-3ca9226a34ea"
+    },
+    {
+      "owner": "C30",
+      "kind": "projected_body",
+      "text": "C30\nNa:12pF\nLTO:6.8pF",
+      "at_mm": [
+        20.999999,
+        38.8
+      ],
+      "box_mm": [
+        17.200951999999997,
+        36.294456,
+        24.799047,
+        41.305544000000005
+      ],
+      "angle_deg": 0.0,
+      "layer": "B.Silkscreen",
+      "font_mm": 1.0,
+      "uuid": "4bf9ece3-91b4-4445-84fe-12ed1fbce21b"
+    },
+    {
+      "owner": "J12",
+      "kind": "projected_body",
+      "text": "J12\nBAT/MID",
+      "at_mm": [
+        39.0,
+        5.899999
+      ],
+      "box_mm": [
+        35.677143,
+        4.199427,
+        42.322857,
+        7.6005709999999995
+      ],
+      "angle_deg": 0.0,
+      "layer": "B.Silkscreen",
+      "font_mm": 1.0,
+      "uuid": "10fa5188-f836-4be0-8a04-84741a8b9fc3"
+    },
+    {
+      "owner": "U10",
+      "kind": "projected_body",
+      "text": "U10\nLM393XK",
+      "at_mm": [
+        44.799999,
+        39.4
+      ],
+      "box_mm": [
+        41.239047,
+        37.699428,
+        48.360952000000005,
+        41.100572
+      ],
+      "angle_deg": 0.0,
+      "layer": "B.Silkscreen",
+      "font_mm": 1.0,
+      "uuid": "bd1efc62-f619-4035-8c3d-0be36f51c5c4"
+    },
+    {
+      "owner": "Q1",
+      "kind": "projected_body",
+      "text": "Q1\nAO3401A",
+      "at_mm": [
+        24.999999,
+        22.0
+      ],
+      "box_mm": [
+        21.534284999999997,
+        20.299428,
+        28.465714000000002,
+        23.700572
+      ],
+      "angle_deg": 0.0,
+      "layer": "B.Silkscreen",
+      "font_mm": 1.0,
+      "uuid": "27b3599e-4a07-412c-a65a-409e8bd6db75"
+    },
+    {
+      "owner": "U8",
+      "kind": "projected_body",
+      "text": "U8\nLMV431A",
+      "at_mm": [
+        30.499999,
+        15.6
+      ],
+      "box_mm": [
+        27.404284999999998,
+        14.073525,
+        33.595714,
+        17.126475000000003
+      ],
+      "angle_deg": 0.0,
+      "layer": "B.Silkscreen",
+      "font_mm": 0.9,
+      "uuid": "41ee000e-a13c-4a77-950b-65c4b50baf47"
+    },
+    {
+      "owner": "U9",
+      "kind": "projected_body",
+      "text": "U9\nLMV431A",
+      "at_mm": [
+        12.8,
+        49.0
+      ],
+      "box_mm": [
+        9.358095,
+        47.299428,
+        16.241905000000003,
+        50.700572
+      ],
+      "angle_deg": 0.0,
+      "layer": "B.Silkscreen",
+      "font_mm": 1.0,
+      "uuid": "511cc7c7-6f6a-4e7f-aaa4-5c485e0b43ff"
+    },
+    {
+      "owner": "C13",
+      "kind": "projected_body",
+      "text": "C13\n100nF",
+      "at_mm": [
+        46.2,
+        16.399999
+      ],
+      "box_mm": [
+        43.710476,
+        14.699427,
+        48.689524,
+        18.100571000000002
+      ],
+      "angle_deg": 0.0,
+      "layer": "B.Silkscreen",
+      "font_mm": 1.0,
+      "uuid": "db60f6c4-0c83-43bf-b57d-a807468f4994"
+    },
+    {
+      "owner": "C15",
+      "kind": "projected_body",
+      "text": "C15\n100uF",
+      "at_mm": [
+        54.0,
+        36.8
+      ],
+      "box_mm": [
+        51.510476,
+        35.099427999999996,
+        56.489524,
+        38.500572
+      ],
+      "angle_deg": 0.0,
+      "layer": "B.Silkscreen",
+      "font_mm": 1.0,
+      "uuid": "e17923c8-3adb-495b-b65e-5e5d20316124"
+    },
+    {
+      "owner": "C16",
+      "kind": "projected_body",
+      "text": "C16\n100uF",
+      "at_mm": [
+        72.0,
+        36.8
+      ],
+      "box_mm": [
+        69.51047600000001,
+        35.099427999999996,
+        74.48952399999999,
+        38.500572
+      ],
+      "angle_deg": 0.0,
+      "layer": "B.Silkscreen",
+      "font_mm": 1.0,
+      "uuid": "9181cb9d-ea08-4e2a-9c39-f293844dfd05"
+    },
+    {
+      "owner": "C34",
+      "kind": "projected_body",
+      "text": "C34\n100uF",
+      "at_mm": [
+        61.0,
+        36.8
+      ],
+      "box_mm": [
+        58.510476,
+        35.099427999999996,
+        63.489524,
+        38.500572
+      ],
+      "angle_deg": 0.0,
+      "layer": "B.Silkscreen",
+      "font_mm": 1.0,
+      "uuid": "d5b65b2f-33ee-4b71-9de3-83b9477007e0"
+    },
+    {
+      "owner": "C35",
+      "kind": "projected_body",
+      "text": "C35\n100uF",
+      "at_mm": [
+        54.0,
+        40.8
+      ],
+      "box_mm": [
+        51.510476,
+        39.099427999999996,
+        56.489524,
+        42.500572
+      ],
+      "angle_deg": 0.0,
+      "layer": "B.Silkscreen",
+      "font_mm": 1.0,
+      "uuid": "2c4288c1-aa4e-4547-a7c7-ab56081b062c"
+    },
+    {
+      "owner": "C36",
+      "kind": "projected_body",
+      "text": "C36\n100uF",
+      "at_mm": [
+        61.0,
+        40.8
+      ],
+      "box_mm": [
+        58.510476,
+        39.099427999999996,
+        63.489524,
+        42.500572
+      ],
+      "angle_deg": 0.0,
+      "layer": "B.Silkscreen",
+      "font_mm": 1.0,
+      "uuid": "ed9079f8-c715-45e6-833d-f96bfc869aa6"
+    },
+    {
+      "owner": "C37",
+      "kind": "projected_body",
+      "text": "C37\n100uF",
+      "at_mm": [
+        54.0,
+        44.8
+      ],
+      "box_mm": [
+        51.510476,
+        43.099427999999996,
+        56.489524,
+        46.500572
+      ],
+      "angle_deg": 0.0,
+      "layer": "B.Silkscreen",
+      "font_mm": 1.0,
+      "uuid": "81f58b9b-36a8-4a11-a0e3-c4b3ea2a507d"
+    },
+    {
+      "owner": "C38",
+      "kind": "projected_body",
+      "text": "C38\n100uF",
+      "at_mm": [
+        61.0,
+        44.8
+      ],
+      "box_mm": [
+        58.510476,
+        43.099427999999996,
+        63.489524,
+        46.500572
+      ],
+      "angle_deg": 0.0,
+      "layer": "B.Silkscreen",
+      "font_mm": 1.0,
+      "uuid": "80c38bdc-f0d1-41f0-bf87-ea0a81fadb5e"
+    },
+    {
+      "owner": "C39",
+      "kind": "projected_body",
+      "text": "C39\n100uF",
+      "at_mm": [
+        54.0,
+        48.8
+      ],
+      "box_mm": [
+        51.510476,
+        47.099427999999996,
+        56.489524,
+        50.500572
+      ],
+      "angle_deg": 0.0,
+      "layer": "B.Silkscreen",
+      "font_mm": 1.0,
+      "uuid": "82f267b5-b73c-41fb-9451-c2ec29c315d5"
+    },
+    {
+      "owner": "C40",
+      "kind": "projected_body",
+      "text": "C40\n100uF",
+      "at_mm": [
+        61.0,
+        48.8
+      ],
+      "box_mm": [
+        58.510476,
+        47.099427999999996,
+        63.489524,
+        50.500572
+      ],
+      "angle_deg": 0.0,
+      "layer": "B.Silkscreen",
+      "font_mm": 1.0,
+      "uuid": "92ad13ce-893a-4a45-9329-2e47356d368b"
+    },
+    {
+      "owner": "C41",
+      "kind": "projected_body",
+      "text": "C41\n100uF",
+      "at_mm": [
+        54.0,
+        52.8
+      ],
+      "box_mm": [
+        51.510476,
+        51.099427999999996,
+        56.489524,
+        54.500572
+      ],
+      "angle_deg": 0.0,
+      "layer": "B.Silkscreen",
+      "font_mm": 1.0,
+      "uuid": "67ebaa98-0f6b-4882-b154-955ef8c7cbdd"
+    },
+    {
+      "owner": "C42",
+      "kind": "projected_body",
+      "text": "C42\n100uF",
+      "at_mm": [
+        61.0,
+        52.8
+      ],
+      "box_mm": [
+        58.510476,
+        51.099427999999996,
+        63.489524,
+        54.500572
+      ],
+      "angle_deg": 0.0,
+      "layer": "B.Silkscreen",
+      "font_mm": 1.0,
+      "uuid": "d3853bda-4fdb-475c-8338-7873d16211e4"
+    },
+    {
+      "owner": "C43",
+      "kind": "projected_body",
+      "text": "C43\n100uF",
+      "at_mm": [
+        79.0,
+        36.8
+      ],
+      "box_mm": [
+        76.51047600000001,
+        35.099427999999996,
+        81.48952399999999,
+        38.500572
+      ],
+      "angle_deg": 0.0,
+      "layer": "B.Silkscreen",
+      "font_mm": 1.0,
+      "uuid": "97006cab-ce54-4688-8a09-765c70ad9117"
+    },
+    {
+      "owner": "C44",
+      "kind": "projected_body",
+      "text": "C44\n100uF",
+      "at_mm": [
+        72.0,
+        40.8
+      ],
+      "box_mm": [
+        69.51047600000001,
+        39.099427999999996,
+        74.48952399999999,
+        42.500572
+      ],
+      "angle_deg": 0.0,
+      "layer": "B.Silkscreen",
+      "font_mm": 1.0,
+      "uuid": "5bdb202c-9931-4369-b0b0-7411df9898ee"
+    },
+    {
+      "owner": "C45",
+      "kind": "projected_body",
+      "text": "C45\n100uF",
+      "at_mm": [
+        79.0,
+        40.8
+      ],
+      "box_mm": [
+        76.51047600000001,
+        39.099427999999996,
+        81.48952399999999,
+        42.500572
+      ],
+      "angle_deg": 0.0,
+      "layer": "B.Silkscreen",
+      "font_mm": 1.0,
+      "uuid": "252856a4-1dec-4085-835f-30cc2f58d4be"
+    },
+    {
+      "owner": "C46",
+      "kind": "projected_body",
+      "text": "C46\n100uF",
+      "at_mm": [
+        72.0,
+        44.8
+      ],
+      "box_mm": [
+        69.51047600000001,
+        43.099427999999996,
+        74.48952399999999,
+        46.500572
+      ],
+      "angle_deg": 0.0,
+      "layer": "B.Silkscreen",
+      "font_mm": 1.0,
+      "uuid": "fb726f89-c559-4a04-956a-b0705bb2587f"
+    },
+    {
+      "owner": "C47",
+      "kind": "projected_body",
+      "text": "C47\n100uF",
+      "at_mm": [
+        79.0,
+        44.8
+      ],
+      "box_mm": [
+        76.51047600000001,
+        43.099427999999996,
+        81.48952399999999,
+        46.500572
+      ],
+      "angle_deg": 0.0,
+      "layer": "B.Silkscreen",
+      "font_mm": 1.0,
+      "uuid": "80cccdfb-17e1-4718-9032-69da0b5d260f"
+    },
+    {
+      "owner": "C48",
+      "kind": "projected_body",
+      "text": "C48\n100uF",
+      "at_mm": [
+        72.0,
+        48.8
+      ],
+      "box_mm": [
+        69.51047600000001,
+        47.099427999999996,
+        74.48952399999999,
+        50.500572
+      ],
+      "angle_deg": 0.0,
+      "layer": "B.Silkscreen",
+      "font_mm": 1.0,
+      "uuid": "7c1f68e1-94a1-4b3a-b7e0-34d16eaee272"
+    },
+    {
+      "owner": "C49",
+      "kind": "projected_body",
+      "text": "C49\n100uF",
+      "at_mm": [
+        79.0,
+        48.8
+      ],
+      "box_mm": [
+        76.51047600000001,
+        47.099427999999996,
+        81.48952399999999,
+        50.500572
+      ],
+      "angle_deg": 0.0,
+      "layer": "B.Silkscreen",
+      "font_mm": 1.0,
+      "uuid": "cbd984b2-b3f0-4733-aead-2f0b3a4f8d68"
+    },
+    {
+      "owner": "C50",
+      "kind": "projected_body",
+      "text": "C50\n100uF",
+      "at_mm": [
+        72.0,
+        52.8
+      ],
+      "box_mm": [
+        69.51047600000001,
+        51.099427999999996,
+        74.48952399999999,
+        54.500572
+      ],
+      "angle_deg": 0.0,
+      "layer": "B.Silkscreen",
+      "font_mm": 1.0,
+      "uuid": "bc2e15ed-26f5-40d5-acde-b4fe7dd71f89"
+    },
+    {
+      "owner": "C51",
+      "kind": "projected_body",
+      "text": "C51\n100uF",
+      "at_mm": [
+        79.0,
+        52.8
+      ],
+      "box_mm": [
+        76.51047600000001,
+        51.099427999999996,
+        81.48952399999999,
+        54.500572
+      ],
+      "angle_deg": 0.0,
+      "layer": "B.Silkscreen",
+      "font_mm": 1.0,
+      "uuid": "017ae214-ae7d-4888-a305-915a93ee8bee"
+    },
+    {
+      "owner": "C60",
+      "kind": "projected_body",
+      "text": "C60\n100nF",
+      "at_mm": [
+        47.8,
+        35.3
+      ],
+      "box_mm": [
+        45.310476,
+        33.599427999999996,
+        50.289524,
+        37.000572
+      ],
+      "angle_deg": 0.0,
+      "layer": "B.Silkscreen",
+      "font_mm": 1.0,
+      "uuid": "6c66e338-0216-4ef5-81f0-7d65c033f097"
+    },
+    {
+      "owner": "C62",
+      "kind": "projected_body",
+      "text": "C62\n100nF",
+      "at_mm": [
+        41.5,
+        51.7
+      ],
+      "box_mm": [
+        39.261427999999995,
+        50.173525,
+        43.738572000000005,
+        53.226475
+      ],
+      "angle_deg": 0.0,
+      "layer": "B.Silkscreen",
+      "font_mm": 0.9,
+      "uuid": "f05adcb6-379b-4596-840d-89629261c4a8"
+    },
+    {
+      "owner": "L2",
+      "kind": "projected_body",
+      "text": "L2\n0.47uH",
+      "at_mm": [
+        46.199999,
+        20.5
+      ],
+      "box_mm": [
+        44.812522,
+        18.215714,
+        47.587477,
+        22.784286
+      ],
+      "angle_deg": 90.0,
+      "layer": "B.Silkscreen",
+      "font_mm": 0.8,
+      "uuid": "1d6159be-f94b-44e3-99d7-a30123297693"
+    },
+    {
+      "owner": "R53",
+      "kind": "projected_body",
+      "text": "R53\n2.49k",
+      "at_mm": [
+        21.099999,
+        47.3
+      ],
+      "box_mm": [
+        18.848571,
+        45.599427999999996,
+        23.351428000000002,
+        49.000572
+      ],
+      "angle_deg": 0.0,
+      "layer": "B.Silkscreen",
+      "font_mm": 1.0,
+      "uuid": "4d467cbc-23d3-4b1b-ad9e-4f387c1ef4a6"
+    },
+    {
+      "owner": "U1",
+      "kind": "projected_body",
+      "text": "U1\nCN3722",
+      "at_mm": [
+        17.499999,
+        28.5
+      ],
+      "box_mm": [
+        14.391428000000001,
+        26.799428,
+        20.608571,
+        30.200572
+      ],
+      "angle_deg": 0.0,
+      "layer": "B.Silkscreen",
+      "font_mm": 1.0,
+      "uuid": "aadbcb2d-a344-41af-a705-ca410ed33915"
+    },
+    {
+      "owner": "C14",
+      "kind": "projected_body",
+      "text": "C14\n22uF",
+      "at_mm": [
+        41.999999,
+        23.4
+      ],
+      "box_mm": [
+        39.986666,
+        21.699427999999997,
+        44.013333,
+        25.100572
+      ],
+      "angle_deg": 0.0,
+      "layer": "B.Silkscreen",
+      "font_mm": 1.0,
+      "uuid": "75e5ca14-3551-4d5a-a973-9740d8f50dc3"
+    },
+    {
+      "owner": "C5",
+      "kind": "projected_body",
+      "text": "C5\n470pF",
+      "at_mm": [
+        13.899999,
+        37.099999
+      ],
+      "box_mm": [
+        11.410475,
+        35.399426999999996,
+        16.389523,
+        38.800571
+      ],
+      "angle_deg": 0.0,
+      "layer": "B.Silkscreen",
+      "font_mm": 1.0,
+      "uuid": "ca081267-6fe2-447c-b878-e015f49026b4"
+    },
+    {
+      "owner": "C59",
+      "kind": "projected_body",
+      "text": "C59\n47nF",
+      "at_mm": [
+        12.799999,
+        52.5
+      ],
+      "box_mm": [
+        10.786666,
+        50.799428,
+        14.813333,
+        54.200572
+      ],
+      "angle_deg": 0.0,
+      "layer": "B.Silkscreen",
+      "font_mm": 1.0,
+      "uuid": "0b11efc9-db7c-4b6a-99cc-24e87a7e0a3b"
+    },
+    {
+      "owner": "J7",
+      "kind": "projected_body",
+      "text": "J7\nSOLAR",
+      "at_mm": [
+        12.599999,
+        5.85
+      ],
+      "box_mm": [
+        10.086666000000001,
+        4.149428,
+        15.113332999999999,
+        7.550572
+      ],
+      "angle_deg": 0.0,
+      "layer": "B.Silkscreen",
+      "font_mm": 1.0,
+      "uuid": "3703fc32-3155-4409-becc-d99229d5426e"
+    },
+    {
+      "owner": "L1",
+      "kind": "projected_body",
+      "text": "L1\n100uH",
+      "at_mm": [
+        33.8,
+        37.5
+      ],
+      "box_mm": [
+        31.215238,
+        35.799428,
+        36.384762,
+        39.200572
+      ],
+      "angle_deg": 0.0,
+      "layer": "B.Silkscreen",
+      "font_mm": 1.0,
+      "uuid": "636da7dd-d6ab-4da4-8ba0-2b88705a0b6f"
+    },
+    {
+      "owner": "L3",
+      "kind": "projected_body",
+      "text": "L3\n2.4uH",
+      "at_mm": [
+        58.0,
+        23.0
+      ],
+      "box_mm": [
+        56.299428,
+        20.653333,
+        59.700572,
+        25.346666000000003
+      ],
+      "angle_deg": 90.0,
+      "layer": "B.Silkscreen",
+      "font_mm": 1.0,
+      "uuid": "bcc0acd1-0959-489b-b130-46e11911a734"
+    },
+    {
+      "owner": "L4",
+      "kind": "projected_body",
+      "text": "L4\n2.4uH",
+      "at_mm": [
+        72.0,
+        23.0
+      ],
+      "box_mm": [
+        70.299428,
+        20.653333,
+        73.700572,
+        25.346666000000003
+      ],
+      "angle_deg": 90.0,
+      "layer": "B.Silkscreen",
+      "font_mm": 1.0,
+      "uuid": "5b917ffa-e449-4d24-a93f-bc32177ed4cc"
+    },
+    {
+      "owner": "R40",
+      "kind": "projected_body",
+      "text": "R40\n22mR",
+      "at_mm": [
+        57.499999,
+        32.5
+      ],
+      "box_mm": [
+        55.200952,
+        30.799428,
+        59.799047,
+        34.200572
+      ],
+      "angle_deg": 0.0,
+      "layer": "B.Silkscreen",
+      "font_mm": 1.0,
+      "uuid": "3c7fa432-aabf-4c36-9aa5-b23b8250a935"
+    },
+    {
+      "owner": "R41",
+      "kind": "projected_body",
+      "text": "R41\n22mR",
+      "at_mm": [
+        75.499999,
+        32.5
+      ],
+      "box_mm": [
+        73.200952,
+        30.799428,
+        77.79904699999999,
+        34.200572
+      ],
+      "angle_deg": 0.0,
+      "layer": "B.Silkscreen",
+      "font_mm": 1.0,
+      "uuid": "934f97ee-b3e9-47a5-b241-58bcccbd9eec"
+    },
+    {
+      "owner": "R50",
+      "kind": "projected_body",
+      "text": "R50\n100k",
+      "at_mm": [
+        25.5,
+        17.4
+      ],
+      "box_mm": [
+        23.689999999999998,
+        15.873525,
+        27.310000000000002,
+        18.926475
+      ],
+      "angle_deg": 0.0,
+      "layer": "B.Silkscreen",
+      "font_mm": 0.9,
+      "uuid": "a47b8565-679f-49e2-9316-e2d609adb926"
+    },
+    {
+      "owner": "R55",
+      "kind": "projected_body",
+      "text": "R55\n47mR",
+      "at_mm": [
+        47.499999,
+        24.299998
+      ],
+      "box_mm": [
+        45.634761,
+        22.912520999999998,
+        49.365238,
+        25.687476
+      ],
+      "angle_deg": 0.0,
+      "layer": "B.Silkscreen",
+      "font_mm": 0.8,
+      "uuid": "843e9565-fece-436c-904c-d37a2770ca26"
+    },
+    {
+      "owner": "R58",
+      "kind": "projected_body",
+      "text": "R58\n100k",
+      "at_mm": [
+        42.0,
+        34.2
+      ],
+      "box_mm": [
+        40.299428,
+        32.186665999999995,
+        43.700572,
+        36.213333
+      ],
+      "angle_deg": 90.0,
+      "layer": "B.Silkscreen",
+      "font_mm": 1.0,
+      "uuid": "9db66514-bb42-43cd-9375-4ae3521fe928"
+    },
+    {
+      "owner": "R59",
+      "kind": "projected_body",
+      "text": "R59\n100k",
+      "at_mm": [
+        45.499999,
+        45.5
+      ],
+      "box_mm": [
+        43.486666,
+        43.799428,
+        47.513333,
+        47.200572
+      ],
+      "angle_deg": 0.0,
+      "layer": "B.Silkscreen",
+      "font_mm": 1.0,
+      "uuid": "6a0fbf22-e3b5-4222-b9eb-1d6bfb7f4cfe"
+    },
+    {
+      "owner": "R60",
+      "kind": "projected_body",
+      "text": "R60\n100k",
+      "at_mm": [
+        33.499999,
+        45.5
+      ],
+      "box_mm": [
+        31.486666,
+        43.799428,
+        35.513333,
+        47.200572
+      ],
+      "angle_deg": 0.0,
+      "layer": "B.Silkscreen",
+      "font_mm": 1.0,
+      "uuid": "f9fbfef5-ce19-4aed-9965-8cccf4ce5a40"
+    },
+    {
+      "owner": "R61",
+      "kind": "projected_body",
+      "text": "R61\n100k",
+      "at_mm": [
+        41.5,
+        45.5
+      ],
+      "box_mm": [
+        39.69,
+        43.973524999999995,
+        43.31,
+        47.026475000000005
+      ],
+      "angle_deg": 0.0,
+      "layer": "B.Silkscreen",
+      "font_mm": 0.9,
+      "uuid": "d7ed8f1d-5e2f-4d8c-99b8-1f01211c303b"
+    },
+    {
+      "owner": "R63",
+      "kind": "projected_body",
+      "text": "R63\n100k",
+      "at_mm": [
+        37.5,
+        48.5
+      ],
+      "box_mm": [
+        35.69,
+        46.973524999999995,
+        39.31,
+        50.026475000000005
+      ],
+      "angle_deg": 0.0,
+      "layer": "B.Silkscreen",
+      "font_mm": 0.9,
+      "uuid": "616d599b-3247-4a88-8591-01461c0a4488"
+    },
+    {
+      "owner": "R64",
+      "kind": "projected_body",
+      "text": "R64\n1.2M",
+      "at_mm": [
+        49.9,
+        47.9
+      ],
+      "box_mm": [
+        48.373525,
+        46.154286,
+        51.426475,
+        49.645714
+      ],
+      "angle_deg": 90.0,
+      "layer": "B.Silkscreen",
+      "font_mm": 0.9,
+      "uuid": "b76ee756-dda0-4556-9cf2-44af2ea44947"
+    },
+    {
+      "owner": "C1",
+      "kind": "projected_body",
+      "text": "C1\n10uF",
+      "at_mm": [
+        24.799999,
+        25.4
+      ],
+      "box_mm": [
+        22.989998999999997,
+        23.873524999999997,
+        26.610000000000003,
+        26.926475
+      ],
+      "angle_deg": 0.0,
+      "layer": "B.Silkscreen",
+      "font_mm": 0.9,
+      "uuid": "4f7ea408-4a2c-4422-ab08-cded8c56dc04"
+    },
+    {
+      "owner": "C61",
+      "kind": "projected_body",
+      "text": "C61\n1nF",
+      "at_mm": [
+        49.9,
+        43.5
+      ],
+      "box_mm": [
+        48.373525,
+        42.032857,
+        51.426475,
+        44.967143
+      ],
+      "angle_deg": 90.0,
+      "layer": "B.Silkscreen",
+      "font_mm": 0.9,
+      "uuid": "9e94e1b5-0dd6-45fe-bbf8-b8ca6aee7189"
+    },
+    {
+      "owner": "C8",
+      "kind": "projected_body",
+      "text": "C8\n47uF",
+      "at_mm": [
+        12.0,
+        21.5
+      ],
+      "box_mm": [
+        10.299428,
+        19.486666,
+        13.700572,
+        23.513333000000003
+      ],
+      "angle_deg": 90.0,
+      "layer": "B.Silkscreen",
+      "font_mm": 1.0,
+      "uuid": "c35b87f1-9661-42d8-aefd-bcf0382827df"
+    },
+    {
+      "owner": "D1",
+      "kind": "projected_body",
+      "text": "D1\nSS24",
+      "at_mm": [
+        31.0,
+        19.6
+      ],
+      "box_mm": [
+        28.915238,
+        17.899428,
+        33.084762000000005,
+        21.300572000000003
+      ],
+      "angle_deg": 0.0,
+      "layer": "B.Silkscreen",
+      "font_mm": 1.0,
+      "uuid": "241a81b5-7a04-4875-b1f4-55a6b2ff8b01"
+    },
+    {
+      "owner": "D2",
+      "kind": "projected_body",
+      "text": "D2\nSS24",
+      "at_mm": [
+        31.0,
+        24.5
+      ],
+      "box_mm": [
+        28.915238,
+        22.799428,
+        33.084762000000005,
+        26.200572
+      ],
+      "angle_deg": 0.0,
+      "layer": "B.Silkscreen",
+      "font_mm": 1.0,
+      "uuid": "7518995c-7f2b-4848-90a6-225e73e6bf9d"
+    },
+    {
+      "owner": "R10",
+      "kind": "projected_body",
+      "text": "R10\n10k",
+      "at_mm": [
+        51.0,
+        7.0
+      ],
+      "box_mm": [
+        49.367619,
+        5.299428000000001,
+        52.632381,
+        8.700572
+      ],
+      "angle_deg": 0.0,
+      "layer": "B.Silkscreen",
+      "font_mm": 1.0,
+      "uuid": "57fbb16c-023e-4c60-87a4-def67c4da080"
+    },
+    {
+      "owner": "R11",
+      "kind": "projected_body",
+      "text": "R11\n10k",
+      "at_mm": [
+        56.0,
+        7.0
+      ],
+      "box_mm": [
+        54.367619,
+        5.299428000000001,
+        57.632381,
+        8.700572
+      ],
+      "angle_deg": 0.0,
+      "layer": "B.Silkscreen",
+      "font_mm": 1.0,
+      "uuid": "de5928f6-14bf-4dad-b753-610abe8f3adb"
+    },
+    {
+      "owner": "R69",
+      "kind": "projected_body",
+      "text": "R69\n30k",
+      "at_mm": [
+        37.5,
+        45.499999
+      ],
+      "box_mm": [
+        36.168095,
+        44.112522,
+        38.831905,
+        46.887477000000004
+      ],
+      "angle_deg": 0.0,
+      "layer": "B.Silkscreen",
+      "font_mm": 0.8,
+      "uuid": "409fc1dd-1b30-43ad-91f8-fa77271b4b71"
+    },
+    {
+      "owner": "R7",
+      "kind": "projected_body",
+      "text": "R7\n105k",
+      "at_mm": [
+        10.099999,
+        32.299999
+      ],
+      "box_mm": [
+        8.086666000000001,
+        30.599427,
+        12.113332999999999,
+        34.000571
+      ],
+      "angle_deg": 0.0,
+      "layer": "B.Silkscreen",
+      "font_mm": 1.0,
+      "uuid": "9cfe69c9-2192-4db0-9485-fd4b06c977cf"
+    },
+    {
+      "owner": "D3",
+      "kind": "projected_body",
+      "text": "D3\nRED",
+      "at_mm": [
+        51.0,
+        2.2
+      ],
+      "box_mm": [
+        49.367619,
+        0.499428,
+        52.632381,
+        3.900572
+      ],
+      "angle_deg": 0.0,
+      "layer": "B.Silkscreen",
+      "font_mm": 1.0,
+      "uuid": "78ec5f02-902a-466e-bbb1-86e0dbc1557d"
+    },
+    {
+      "owner": "J8",
+      "kind": "projected_body",
+      "text": "J8\nBAT",
+      "at_mm": [
+        24.0,
+        5.85
+      ],
+      "box_mm": [
+        22.510475999999997,
+        4.149428,
+        25.489524000000003,
+        7.550572
+      ],
+      "angle_deg": 0.0,
+      "layer": "B.Silkscreen",
+      "font_mm": 1.0,
+      "uuid": "f37d0665-2140-4b40-b743-a6950fd80654"
+    },
+    {
+      "owner": "R47",
+      "kind": "projected_body",
+      "text": "R47\n2R",
+      "at_mm": [
+        18.2,
+        15.0
+      ],
+      "box_mm": [
+        16.567618999999997,
+        13.299428,
+        19.832381,
+        16.700572
+      ],
+      "angle_deg": 0.0,
+      "layer": "B.Silkscreen",
+      "font_mm": 1.0,
+      "uuid": "ca1ca20c-f59b-479b-b8f3-eb79eae0c764"
+    },
+    {
+      "owner": "R51",
+      "kind": "projected_body",
+      "text": "R51\n2R",
+      "at_mm": [
+        12.8,
+        45.0
+      ],
+      "box_mm": [
+        11.167619,
+        43.299428,
+        14.432381,
+        46.700572
+      ],
+      "angle_deg": 0.0,
+      "layer": "B.Silkscreen",
+      "font_mm": 1.0,
+      "uuid": "7b81c6a6-9606-46b8-aecb-5a82a890e040"
+    },
+    {
+      "owner": "R62",
+      "kind": "projected_body",
+      "text": "R62\n1M",
+      "at_mm": [
+        41.5,
+        48.499999
+      ],
+      "box_mm": [
+        40.168095,
+        47.112522,
+        42.831905,
+        49.887477000000004
+      ],
+      "angle_deg": 0.0,
+      "layer": "B.Silkscreen",
+      "font_mm": 0.8,
+      "uuid": "fbacf55c-926b-462f-8d22-2c2dd1c956ac"
+    },
+    {
+      "owner": "R66",
+      "kind": "projected_body",
+      "text": "R66\n1k",
+      "at_mm": [
+        33.5,
+        51.0
+      ],
+      "box_mm": [
+        31.867618999999998,
+        49.299428,
+        35.132381,
+        52.700572
+      ],
+      "angle_deg": 0.0,
+      "layer": "B.Silkscreen",
+      "font_mm": 1.0,
+      "uuid": "b73d7c5e-d27c-485a-a2f0-26c29593f6e7"
+    },
+    {
+      "owner": "C53",
+      "kind": "projected_body",
+      "text": "C53",
+      "at_mm": [
+        48.0,
+        11.899999
+      ],
+      "box_mm": [
+        46.367619,
+        11.004399000000001,
+        49.632381,
+        12.795599
+      ],
+      "angle_deg": 0.0,
+      "layer": "B.Silkscreen",
+      "font_mm": 1.0,
+      "uuid": "ae421cde-e033-4fa2-a55e-0b5a243fe8b4"
+    },
+    {
+      "owner": "C54",
+      "kind": "projected_body",
+      "text": "C54",
+      "at_mm": [
+        45.0,
+        27.299999
+      ],
+      "box_mm": [
+        43.367619,
+        26.404398999999998,
+        46.632381,
+        28.195599
+      ],
+      "angle_deg": 0.0,
+      "layer": "B.Silkscreen",
+      "font_mm": 1.0,
+      "uuid": "4e325051-8cc2-40e7-bae6-4beed28b95ed"
+    },
+    {
+      "owner": "C55",
+      "kind": "projected_body",
+      "text": "C55",
+      "at_mm": [
+        45.0,
+        30.299999
+      ],
+      "box_mm": [
+        43.367619,
+        29.404398999999998,
+        46.632381,
+        31.195599
+      ],
+      "angle_deg": 0.0,
+      "layer": "B.Silkscreen",
+      "font_mm": 1.0,
+      "uuid": "2d0bd8f7-58e1-4acf-8560-750e9d293975"
+    },
+    {
+      "owner": "TP1",
+      "kind": "projected_body",
+      "text": "TP1",
+      "at_mm": [
+        2.0,
+        45.0
+      ],
+      "box_mm": [
+        0.4628570000000001,
+        44.1044,
+        3.537143,
+        45.8956
+      ],
+      "angle_deg": 0.0,
+      "layer": "B.Silkscreen",
+      "font_mm": 1.0,
+      "uuid": "22b563fe-8ac7-4920-b97e-87993c5dab36"
+    },
+    {
+      "owner": "TP3",
+      "kind": "projected_body",
+      "text": "TP3",
+      "at_mm": [
+        49.5,
+        30.5
+      ],
+      "box_mm": [
+        47.962857,
+        29.6044,
+        51.037143,
+        31.3956
+      ],
+      "angle_deg": 0.0,
+      "layer": "B.Silkscreen",
+      "font_mm": 1.0,
+      "uuid": "b5474d7c-3af1-4f48-a8b7-109c4e9fb47d"
+    },
+    {
+      "owner": "TP6",
+      "kind": "projected_body",
+      "text": "TP6",
+      "at_mm": [
+        4.0,
+        40.0
+      ],
+      "box_mm": [
+        2.462857,
+        39.1044,
+        5.5371429999999995,
+        40.8956
+      ],
+      "angle_deg": 0.0,
+      "layer": "B.Silkscreen",
+      "font_mm": 1.0,
+      "uuid": "0b1d2dd8-889b-4d9d-afbd-4d7de1b8c6d7"
+    },
+    {
+      "owner": "TP8",
+      "kind": "projected_body",
+      "text": "TP8",
+      "at_mm": [
+        65.0,
+        31.0
+      ],
+      "box_mm": [
+        63.462857,
+        30.1044,
+        66.537143,
+        31.8956
+      ],
+      "angle_deg": 0.0,
+      "layer": "B.Silkscreen",
+      "font_mm": 1.0,
+      "uuid": "81dcab9c-153c-4f7b-839d-9ddb16455aba"
+    },
+    {
+      "owner": "TP9",
+      "kind": "projected_body",
+      "text": "TP9",
+      "at_mm": [
+        3.8,
+        15.5
+      ],
+      "box_mm": [
+        2.262857,
+        14.6044,
+        5.337142999999999,
+        16.3956
+      ],
+      "angle_deg": 0.0,
+      "layer": "B.Silkscreen",
+      "font_mm": 1.0,
+      "uuid": "c27036d6-b426-4d53-80a2-f9b72fb4fffb"
+    },
+    {
+      "owner": "H1",
+      "kind": "adjacent_front",
+      "text": "H1\nGND M3",
+      "at_mm": [
+        3.499999,
+        8.276475
+      ],
+      "box_mm": [
+        0.682857,
+        6.75,
+        6.317142,
+        9.80295
+      ],
+      "angle_deg": 0.0,
+      "layer": "F.Silkscreen",
+      "font_mm": 0.9,
+      "uuid": "ce5bf855-35dc-467a-93a4-41b7e10bca29"
+    },
+    {
+      "owner": "H2",
+      "kind": "adjacent_front",
+      "text": "H2\nGND M3",
+      "at_mm": [
+        86.499999,
+        8.276475
+      ],
+      "box_mm": [
+        83.68285700000001,
+        6.75,
+        89.31714199999999,
+        9.80295
+      ],
+      "angle_deg": 0.0,
+      "layer": "F.Silkscreen",
+      "font_mm": 0.9,
+      "uuid": "8cdcb19c-e301-44cc-b19d-eca65fcd4bfc"
+    },
+    {
+      "owner": "H3",
+      "kind": "adjacent_front",
+      "text": "H3\nGND M3",
+      "at_mm": [
+        3.499999,
+        51.723525
+      ],
+      "box_mm": [
+        0.682857,
+        50.19705,
+        6.317142,
+        53.25
+      ],
+      "angle_deg": 0.0,
+      "layer": "F.Silkscreen",
+      "font_mm": 0.9,
+      "uuid": "2313e2a0-ba51-4175-bd80-2a4f2a233178"
+    },
+    {
+      "owner": "H4",
+      "kind": "adjacent_front",
+      "text": "H4\nGND M3",
+      "at_mm": [
+        86.499999,
+        51.723525
+      ],
+      "box_mm": [
+        83.68285700000001,
+        50.19705,
+        89.31714199999999,
+        53.25
+      ],
+      "angle_deg": 0.0,
+      "layer": "F.Silkscreen",
+      "font_mm": 0.9,
+      "uuid": "f37e0894-a230-48b8-acbd-9927a2b7e905"
+    },
+    {
+      "owner": "C58",
+      "kind": "adjacent_front",
+      "text": "C58\n47nF",
+      "at_mm": [
+        10.339998,
+        15.0
+      ],
+      "box_mm": [
+        8.529998,
+        13.473525,
+        12.149999,
+        16.526475
+      ],
+      "angle_deg": 0.0,
+      "layer": "F.Silkscreen",
+      "font_mm": 0.9,
+      "uuid": "d900a168-772d-4313-a1ce-980ef9d517a0"
+    },
+    {
+      "owner": "C6",
+      "kind": "adjacent_front",
+      "text": "C6\n220nF",
+      "at_mm": [
+        24.799999,
+        38.632477
+      ],
+      "box_mm": [
+        22.78238,
+        37.245,
+        26.817619,
+        40.019955
+      ],
+      "angle_deg": 0.0,
+      "layer": "F.Silkscreen",
+      "font_mm": 0.8,
+      "uuid": "53df3903-8ee6-4ef7-9c12-cb2f6b7ec344"
+    },
+    {
+      "owner": "C7",
+      "kind": "adjacent_front",
+      "text": "C7\n100nF",
+      "at_mm": [
+        17.678524,
+        34.0
+      ],
+      "box_mm": [
+        16.152048999999998,
+        31.761428,
+        19.204999,
+        36.238572000000005
+      ],
+      "angle_deg": 90.0,
+      "layer": "F.Silkscreen",
+      "font_mm": 0.9,
+      "uuid": "8e31eda4-1101-41b1-af5e-b0d1a246b0b7"
+    },
+    {
+      "owner": "R17",
+      "kind": "adjacent_front",
+      "text": "R17\n100k",
+      "at_mm": [
+        53.51,
+        14.7
+      ],
+      "box_mm": [
+        51.699999999999996,
+        13.173525,
+        55.32,
+        16.226475
+      ],
+      "angle_deg": 0.0,
+      "layer": "F.Silkscreen",
+      "font_mm": 0.9,
+      "uuid": "b1cbd8fe-eff4-49e6-8638-79f5e94d4726"
+    },
+    {
+      "owner": "C4",
+      "kind": "adjacent_front",
+      "text": "C4\n22uF",
+      "at_mm": [
+        20.639999,
+        41.5
+      ],
+      "box_mm": [
+        18.829998999999997,
+        39.973524999999995,
+        22.450000000000003,
+        43.026475000000005
+      ],
+      "angle_deg": 0.0,
+      "layer": "F.Silkscreen",
+      "font_mm": 0.9,
+      "uuid": "12e34bff-795c-4fe5-91fe-3a406151980c"
+    },
+    {
+      "owner": "R67",
+      "kind": "adjacent_front",
+      "text": "R67\n1M",
+      "at_mm": [
+        30.332857,
+        53.0
+      ],
+      "box_mm": [
+        28.865713999999997,
+        51.473524999999995,
+        31.8,
+        54.526475000000005
+      ],
+      "angle_deg": 0.0,
+      "layer": "F.Silkscreen",
+      "font_mm": 0.9,
+      "uuid": "2bd4d21e-69b4-4a9b-8e6e-788422278277"
+    },
+    {
+      "owner": "R8",
+      "kind": "adjacent_front",
+      "text": "R8\n10k",
+      "at_mm": [
+        10.099999,
+        37.471475
+      ],
+      "box_mm": [
+        8.718571,
+        35.945,
+        11.481428,
+        38.99795
+      ],
+      "angle_deg": 0.0,
+      "layer": "F.Silkscreen",
+      "font_mm": 0.9,
+      "uuid": "1b6532c7-cf15-4082-9899-088dc929e715"
+    },
+    {
+      "owner": "R9",
+      "kind": "adjacent_front",
+      "text": "R9\n10k",
+      "at_mm": [
+        9.599999,
+        27.128525
+      ],
+      "box_mm": [
+        8.218571,
+        25.60205,
+        10.981428,
+        28.655
+      ],
+      "angle_deg": 0.0,
+      "layer": "F.Silkscreen",
+      "font_mm": 0.9,
+      "uuid": "f3e47cf6-fe34-4b98-bdcd-195a6537f773"
+    },
+    {
+      "owner": "C12",
+      "kind": "spatial_group",
+      "text": "C12\n10uF",
+      "at_mm": [
+        22.899999,
+        43.474999
+      ],
+      "box_mm": [
+        20.886665999999998,
+        41.774426999999996,
+        24.913333,
+        45.175571
+      ],
+      "angle_deg": 0.0,
+      "layer": "B.Silkscreen",
+      "font_mm": 1.0,
+      "uuid": "a997710f-a8ba-42a3-a413-08cdd9bc7d09"
+    },
+    {
+      "owner": "C52",
+      "kind": "spatial_group",
+      "text": "C52\n10uF",
+      "at_mm": [
+        22.899999,
+        33.875
+      ],
+      "box_mm": [
+        20.886665999999998,
+        32.174428,
+        24.913333,
+        35.575572
+      ],
+      "angle_deg": 0.0,
+      "layer": "B.Silkscreen",
+      "font_mm": 1.0,
+      "uuid": "8541e1aa-9f24-4858-9bce-47ef287395e5"
+    },
+    {
+      "owner": "U2",
+      "kind": "spatial_group",
+      "text": "U2\nTPS63802DLAR",
+      "at_mm": [
+        22.899999,
+        54.875
+      ],
+      "box_mm": [
+        17.14857,
+        53.174428,
+        28.651428000000003,
+        56.575572
+      ],
+      "angle_deg": 0.0,
+      "layer": "B.Silkscreen",
+      "font_mm": 1.0,
+      "uuid": "1bce8ac6-8350-4122-bbf7-d387091f3083"
+    },
+    {
+      "owner": "R15",
+      "kind": "spatial_group",
+      "text": "R15\nNa:40.2k\nLTO:130k",
+      "at_mm": [
+        4.499999,
+        36.474996
+      ],
+      "box_mm": [
+        0.9390470000000001,
+        33.969452,
+        8.060952,
+        38.980540000000005
+      ],
+      "angle_deg": 0.0,
+      "layer": "B.Silkscreen",
+      "font_mm": 1.0,
+      "uuid": "e1fdfc60-a5d5-40c3-a6cc-04f96ff058c6"
+    },
+    {
+      "owner": "G1",
+      "kind": "group_heading",
+      "text": "G1 x4",
+      "at_mm": [
+        14.795237,
+        30.974429
+      ],
+      "box_mm": [
+        12.834761,
+        30.230929,
+        16.755714,
+        31.717929
+      ],
+      "angle_deg": 0.0,
+      "layer": "B.Silkscreen",
+      "font_mm": 0.8,
+      "uuid": "da5b7e0f-0971-4cc8-94fe-bbe940cdad82"
+    },
+    {
+      "owner": "R3",
+      "kind": "spatial_group",
+      "text": "R3\nNa:61.9k\nLTO:121k",
+      "at_mm": [
+        64.549999,
+        21.949999
+      ],
+      "box_mm": [
+        60.989047,
+        19.444454999999998,
+        68.110952,
+        24.455543000000002
+      ],
+      "angle_deg": 0.0,
+      "layer": "B.Silkscreen",
+      "font_mm": 1.0,
+      "uuid": "187a9dea-c458-453a-8971-9af275865fc3"
+    },
+    {
+      "owner": "R4",
+      "kind": "spatial_group",
+      "text": "R4\nNa:100k\nLTO:100k",
+      "at_mm": [
+        57.549999,
+        27.949999
+      ],
+      "box_mm": [
+        53.989047,
+        25.444454999999998,
+        61.110952000000005,
+        30.455543000000002
+      ],
+      "angle_deg": 0.0,
+      "layer": "B.Silkscreen",
+      "font_mm": 1.0,
+      "uuid": "23775fb0-25c2-45d9-9d3e-346d794c1b7a"
+    },
+    {
+      "owner": "R5",
+      "kind": "spatial_group",
+      "text": "R5\n1M",
+      "at_mm": [
+        50.35,
+        19.35
+      ],
+      "box_mm": [
+        49.122381,
+        17.649428,
+        51.577619,
+        21.050572000000003
+      ],
+      "angle_deg": 0.0,
+      "layer": "B.Silkscreen",
+      "font_mm": 1.0,
+      "uuid": "89179002-f2e2-4889-861d-50526a7e7997"
+    },
+    {
+      "owner": "G2",
+      "kind": "group_heading",
+      "text": "G2 x2",
+      "at_mm": [
+        58.616665,
+        16.449428
+      ],
+      "box_mm": [
+        56.656189,
+        15.705928,
+        60.577142,
+        17.192928000000002
+      ],
+      "angle_deg": 0.0,
+      "layer": "B.Silkscreen",
+      "font_mm": 0.8,
+      "uuid": "d38499d5-bce1-4523-9886-0618126a8ec0"
+    },
+    {
+      "owner": "Q4",
+      "kind": "spatial_group",
+      "text": "Q4\nAO3401A",
+      "at_mm": [
+        36.649999,
+        30.125
+      ],
+      "box_mm": [
+        33.184284999999996,
+        28.424428,
+        40.115714000000004,
+        31.825572
+      ],
+      "angle_deg": 0.0,
+      "layer": "B.Silkscreen",
+      "font_mm": 1.0,
+      "uuid": "e438bf8b-e074-4132-8e4d-b280de24c0b0"
+    },
+    {
+      "owner": "R56",
+      "kind": "spatial_group",
+      "text": "R56\nNa:1.8R\nLTO:0R",
+      "at_mm": [
+        28.049999,
+        34.625
+      ],
+      "box_mm": [
+        24.965238,
+        32.119456,
+        31.134761,
+        37.130544
+      ],
+      "angle_deg": 0.0,
+      "layer": "B.Silkscreen",
+      "font_mm": 1.0,
+      "uuid": "6ab12940-8226-4d22-bc5b-8bd510d60be2"
+    },
+    {
+      "owner": "G3",
+      "kind": "group_heading",
+      "text": "G3 x2",
+      "at_mm": [
+        32.540476,
+        27.224428
+      ],
+      "box_mm": [
+        30.58,
+        26.480928,
+        34.500953,
+        27.967928
+      ],
+      "angle_deg": 0.0,
+      "layer": "B.Silkscreen",
+      "font_mm": 0.8,
+      "uuid": "29841855-ae05-4741-b5f2-d7a2f3992b85"
+    },
+    {
+      "owner": "R65",
+      "kind": "spatial_group",
+      "text": "R65\n10k",
+      "at_mm": [
+        87.0,
+        30.875
+      ],
+      "box_mm": [
+        85.299428,
+        29.242618999999998,
+        88.700572,
+        32.507381
+      ],
+      "angle_deg": 90.0,
+      "layer": "B.Silkscreen",
+      "font_mm": 1.0,
+      "uuid": "a9bae0f3-76c4-4fb2-9af2-f6e8a71a782c"
+    },
+    {
+      "owner": "TH1",
+      "kind": "spatial_group",
+      "text": "TH1\n10k NTC",
+      "at_mm": [
+        81.554999,
+        33.125
+      ],
+      "box_mm": [
+        78.23214200000001,
+        31.424428,
+        84.87785699999999,
+        34.825572
+      ],
+      "angle_deg": 0.0,
+      "layer": "B.Silkscreen",
+      "font_mm": 1.0,
+      "uuid": "73be512d-9093-4d73-b0cc-43b735d71ab7"
+    },
+    {
+      "owner": "R70",
+      "kind": "spatial_group",
+      "text": "R70\n150k",
+      "at_mm": [
+        80.399999,
+        26.375
+      ],
+      "box_mm": [
+        78.386666,
+        24.674428,
+        82.413333,
+        28.075572
+      ],
+      "angle_deg": 0.0,
+      "layer": "B.Silkscreen",
+      "font_mm": 1.0,
+      "uuid": "12a07a7e-4a3d-4aca-9242-6151a9ca8aa9"
+    },
+    {
+      "owner": "G4",
+      "kind": "group_heading",
+      "text": "G4 x1.5",
+      "at_mm": [
+        83.466358,
+        23.474429
+      ],
+      "box_mm": [
+        80.934453,
+        22.730929,
+        85.998263,
+        24.217929
+      ],
+      "angle_deg": 0.0,
+      "layer": "B.Silkscreen",
+      "font_mm": 0.8,
+      "uuid": "d2e86bc2-9923-427e-bac5-32a8f0020d02"
+    },
+    {
+      "owner": "U11",
+      "kind": "spatial_group",
+      "text": "U11\nLM285Z-2.5G",
+      "at_mm": [
+        7.1625,
+        28.600951
+      ],
+      "box_mm": [
+        1.7920239999999998,
+        26.900378999999997,
+        12.532976,
+        30.301523000000003
+      ],
+      "angle_deg": 0.0,
+      "layer": "B.Silkscreen",
+      "font_mm": 1.0,
+      "uuid": "fc3f4b0d-4ca4-47e4-94cb-a855facf8d4b"
+    },
+    {
+      "owner": "R57",
+      "kind": "spatial_group",
+      "text": "R57\n47k",
+      "at_mm": [
+        4.567499,
+        23.079809
+      ],
+      "box_mm": [
+        2.935118,
+        21.379237,
+        6.199879999999999,
+        24.780381000000002
+      ],
+      "angle_deg": 0.0,
+      "layer": "B.Silkscreen",
+      "font_mm": 1.0,
+      "uuid": "d3362bd0-51c0-4303-9f30-e5441eceabd5"
+    },
+    {
+      "owner": "G5",
+      "kind": "group_heading",
+      "text": "G5 x1.5",
+      "at_mm": [
+        7.162499,
+        20.179238
+      ],
+      "box_mm": [
+        4.630594,
+        19.435737999999997,
+        9.694404,
+        20.922738000000003
+      ],
+      "angle_deg": 0.0,
+      "layer": "B.Silkscreen",
+      "font_mm": 0.8,
+      "uuid": "aa84bef0-241a-4185-90d8-d819f755487b"
+    },
+    {
+      "owner": "J101",
+      "kind": "spatial_group",
+      "text": "J101\nIDC 12P",
+      "at_mm": [
+        29.125,
+        7.95
+      ],
+      "box_mm": [
+        27.424428,
+        4.698571,
+        30.825572,
+        11.201428
+      ],
+      "angle_deg": 90.0,
+      "layer": "B.Silkscreen",
+      "font_mm": 1.0,
+      "uuid": "ce7136ed-5944-4062-9b08-3139d0fd1f4f"
+    },
+    {
+      "owner": "D4",
+      "kind": "spatial_group",
+      "text": "D4\nGREEN",
+      "at_mm": [
+        7.374999,
+        8.85
+      ],
+      "box_mm": [
+        4.766428,
+        7.149428,
+        9.983571,
+        10.550571999999999
+      ],
+      "angle_deg": 0.0,
+      "layer": "B.Silkscreen",
+      "font_mm": 1.0,
+      "uuid": "7381bcdb-2d37-4ac5-8e4d-2f164b4adc3c"
+    },
+    {
+      "owner": "G6",
+      "kind": "group_heading",
+      "text": "G6 x1.5",
+      "at_mm": [
+        17.796001,
+        3.498572
+      ],
+      "box_mm": [
+        15.264096,
+        2.7550719999999997,
+        20.327906000000002,
+        4.242071999999999
+      ],
+      "angle_deg": 0.0,
+      "layer": "B.Silkscreen",
+      "font_mm": 0.8,
+      "uuid": "7fce609a-2e4e-4ab8-907e-19c66f7f45af"
+    },
+    {
+      "owner": "Q7",
+      "kind": "spatial_group",
+      "text": "Q7\nAO3401A",
+      "at_mm": [
+        40.599999,
+        56.75
+      ],
+      "box_mm": [
+        37.134285,
+        55.049428,
+        44.065714,
+        58.450572
+      ],
+      "angle_deg": 0.0,
+      "layer": "B.Silkscreen",
+      "font_mm": 1.0,
+      "uuid": "8f5c10f1-c429-4931-b7d0-bdf4659d28dd"
+    },
+    {
+      "owner": "Q6",
+      "kind": "spatial_group",
+      "text": "Q6\nAO3401A",
+      "at_mm": [
+        32.399999,
+        56.75
+      ],
+      "box_mm": [
+        28.934285,
+        55.049428,
+        35.865714000000004,
+        58.450572
+      ],
+      "angle_deg": 0.0,
+      "layer": "B.Silkscreen",
+      "font_mm": 1.0,
+      "uuid": "d2144097-89d0-42f6-8572-6514acb4c3a5"
+    },
+    {
+      "owner": "G7",
+      "kind": "group_heading",
+      "text": "G7 x2",
+      "at_mm": [
+        36.5,
+        53.849428
+      ],
+      "box_mm": [
+        34.539524,
+        53.105928,
+        38.460477000000004,
+        54.592928
+      ],
+      "angle_deg": 0.0,
+      "layer": "B.Silkscreen",
+      "font_mm": 0.8,
+      "uuid": "382051f6-d139-4312-8bd3-6b4391d8e968"
+    },
+    {
+      "owner": "R48",
+      "kind": "spatial_group",
+      "text": "R48\n120k",
+      "at_mm": [
+        52.049999,
+        14.0
+      ],
+      "box_mm": [
+        50.036666,
+        12.299428,
+        54.063333,
+        15.700572
+      ],
+      "angle_deg": 0.0,
+      "layer": "B.Silkscreen",
+      "font_mm": 1.0,
+      "uuid": "5d94021a-3830-4011-a3c4-a6a4165810eb"
+    },
+    {
+      "owner": "R49",
+      "kind": "spatial_group",
+      "text": "R49\n2.49k",
+      "at_mm": [
+        57.749999,
+        14.0
+      ],
+      "box_mm": [
+        55.498571,
+        12.299428,
+        60.001428000000004,
+        15.700572
+      ],
+      "angle_deg": 0.0,
+      "layer": "B.Silkscreen",
+      "font_mm": 1.0,
+      "uuid": "55913ed0-b200-4a3d-b7a0-c223fe39e239"
+    },
+    {
+      "owner": "G8",
+      "kind": "group_heading",
+      "text": "G8 x1.5",
+      "at_mm": [
+        55.019047,
+        11.099428
+      ],
+      "box_mm": [
+        52.487142,
+        10.355928,
+        57.550952,
+        11.842927999999999
+      ],
+      "angle_deg": 0.0,
+      "layer": "B.Silkscreen",
+      "font_mm": 0.8,
+      "uuid": "728ecf8e-5ecf-4a5c-8f86-6d27f5b271ed"
+    },
+    {
+      "owner": "C3",
+      "kind": "spatial_group",
+      "text": "C3\n100nF",
+      "at_mm": [
+        27.75,
+        45.15
+      ],
+      "box_mm": [
+        25.260475999999997,
+        43.449428,
+        30.239524000000003,
+        46.850572
+      ],
+      "angle_deg": 0.0,
+      "layer": "B.Silkscreen",
+      "font_mm": 1.0,
+      "uuid": "20d3bda9-cfe3-4134-9ee8-0ae83f57ba54"
+    },
+    {
+      "owner": "C2",
+      "kind": "spatial_group",
+      "text": "C2\n100nF",
+      "at_mm": [
+        30.75,
+        40.949999
+      ],
+      "box_mm": [
+        28.260475999999997,
+        39.249427,
+        33.239524,
+        42.650571
+      ],
+      "angle_deg": 0.0,
+      "layer": "B.Silkscreen",
+      "font_mm": 1.0,
+      "uuid": "343ede55-133f-47d6-8d11-f5aed74b47cb"
+    },
+    {
+      "owner": "G9",
+      "kind": "group_heading",
+      "text": "G9 x2",
+      "at_mm": [
+        29.25,
+        38.049428
+      ],
+      "box_mm": [
+        27.289524,
+        37.305928,
+        31.210477,
+        38.792928
+      ],
+      "angle_deg": 0.0,
+      "layer": "B.Silkscreen",
+      "font_mm": 0.8,
+      "uuid": "89c4805a-2cb0-4c97-8e89-c4ae7538d599"
+    },
+    {
+      "owner": "R52",
+      "kind": "spatial_group",
+      "text": "R52\n120k",
+      "at_mm": [
+        6.999999,
+        46.55
+      ],
+      "box_mm": [
+        4.9866660000000005,
+        44.849427999999996,
+        9.013333,
+        48.250572
+      ],
+      "angle_deg": 0.0,
+      "layer": "B.Silkscreen",
+      "font_mm": 1.0,
+      "uuid": "d8ddc7e1-609f-40b4-a4bb-0ef45426afa1"
+    },
+    {
+      "owner": "R54",
+      "kind": "spatial_group",
+      "text": "R54\n100k",
+      "at_mm": [
+        6.999999,
+        51.05
+      ],
+      "box_mm": [
+        4.9866660000000005,
+        49.349427999999996,
+        9.013333,
+        52.750572
+      ],
+      "angle_deg": 0.0,
+      "layer": "B.Silkscreen",
+      "font_mm": 1.0,
+      "uuid": "03bd0188-61c2-4d8a-ad9d-f28c277c497a"
+    },
+    {
+      "owner": "G10",
+      "kind": "group_heading",
+      "text": "G10 x1.5",
+      "at_mm": [
+        7.0,
+        43.649428
+      ],
+      "box_mm": [
+        4.087143,
+        42.905927999999996,
+        9.912858,
+        44.392928000000005
+      ],
+      "angle_deg": 0.0,
+      "layer": "B.Silkscreen",
+      "font_mm": 0.8,
+      "uuid": "2cce68e9-b41e-4655-b5a0-e85cac8b8cee"
+    },
+    {
+      "owner": "Q5",
+      "kind": "spatial_group",
+      "text": "Q5\nBSS138",
+      "at_mm": [
+        85.499999,
+        20.999999
+      ],
+      "box_mm": [
+        82.439047,
+        19.299426999999998,
+        88.560952,
+        22.700571
+      ],
+      "angle_deg": 0.0,
+      "layer": "B.Silkscreen",
+      "font_mm": 1.0,
+      "uuid": "b627c030-9a0a-4c31-acda-7214fc0045b5"
+    },
+    {
+      "owner": "R68",
+      "kind": "spatial_group",
+      "text": "R68\n1k",
+      "at_mm": [
+        79.5,
+        16.8
+      ],
+      "box_mm": [
+        77.867619,
+        15.099428,
+        81.132381,
+        18.500572000000002
+      ],
+      "angle_deg": 0.0,
+      "layer": "B.Silkscreen",
+      "font_mm": 1.0,
+      "uuid": "631efe21-bf65-4e66-b681-fa6d17a7af83"
+    },
+    {
+      "owner": "G11",
+      "kind": "group_heading",
+      "text": "G11 x1.5",
+      "at_mm": [
+        83.214285,
+        13.899428
+      ],
+      "box_mm": [
+        80.301428,
+        13.155928000000001,
+        86.12714299999999,
+        14.642928
+      ],
+      "angle_deg": 0.0,
+      "layer": "B.Silkscreen",
+      "font_mm": 0.8,
+      "uuid": "0284de68-97b3-4475-9160-0ec2cbac800e"
+    },
+    {
+      "owner": "R1",
+      "kind": "spatial_group",
+      "text": "R1\n0.28R",
+      "at_mm": [
+        18.799999,
+        11.549999
+      ],
+      "box_mm": [
+        16.453332999999997,
+        9.849427,
+        21.146666,
+        13.250570999999999
+      ],
+      "angle_deg": 0.0,
+      "layer": "B.Silkscreen",
+      "font_mm": 1.0,
+      "uuid": "8a1cc7d5-0b81-4a5c-b611-d24c3d2c1e08"
+    },
+    {
+      "owner": "R6",
+      "kind": "spatial_group",
+      "text": "R6\n120R",
+      "at_mm": [
+        18.199999,
+        19.65
+      ],
+      "box_mm": [
+        16.091427999999997,
+        17.949427999999997,
+        20.308571,
+        21.350572
+      ],
+      "angle_deg": 0.0,
+      "layer": "B.Silkscreen",
+      "font_mm": 1.0,
+      "uuid": "9daac9e1-3678-45ff-adbf-626e65827fba"
+    },
+    {
+      "owner": "G12",
+      "kind": "group_heading",
+      "text": "G12 x1.5",
+      "at_mm": [
+        18.619047,
+        8.649428
+      ],
+      "box_mm": [
+        15.706190000000001,
+        7.905928000000001,
+        21.531905000000002,
+        9.392928
+      ],
+      "angle_deg": 0.0,
+      "layer": "B.Silkscreen",
+      "font_mm": 0.8,
+      "uuid": "7dfd6f32-c7b2-4970-8bbb-5f09906c3de5"
+    },
+    {
+      "owner": "R14",
+      "kind": "spatial_group",
+      "text": "R14\n10k",
+      "at_mm": [
+        53.5,
+        23.225
+      ],
+      "box_mm": [
+        51.867619,
+        21.524428,
+        55.132381,
+        24.925572000000003
+      ],
+      "angle_deg": 0.0,
+      "layer": "B.Silkscreen",
+      "font_mm": 1.0,
+      "uuid": "c2fc1f2b-78cf-482d-8576-93a05b2984ec"
+    },
+    {
+      "owner": "R13",
+      "kind": "spatial_group",
+      "text": "R13\n56k",
+      "at_mm": [
+        53.5,
+        19.475
+      ],
+      "box_mm": [
+        51.867619,
+        17.774428,
+        55.132381,
+        21.175572000000003
+      ],
+      "angle_deg": 0.0,
+      "layer": "B.Silkscreen",
+      "font_mm": 1.0,
+      "uuid": "6f2e4c04-2fb5-406b-8afc-7954bdff649d"
+    },
+    {
+      "owner": "G13",
+      "kind": "group_heading",
+      "text": "G13 x1.5",
+      "at_mm": [
+        53.5,
+        16.574428
+      ],
+      "box_mm": [
+        50.587143,
+        15.830928,
+        56.412858,
+        17.317928000000002
+      ],
+      "angle_deg": 0.0,
+      "layer": "B.Silkscreen",
+      "font_mm": 0.8,
+      "uuid": "8f8e3d22-0869-4373-bae3-8c78d7b76dd3"
+    },
+    {
+      "owner": "C1",
+      "kind": "front_reference",
+      "text": "C1",
+      "at_mm": [
+        21.549047,
+        24.9
+      ],
+      "box_mm": [
+        20.598094999999997,
+        24.156499999999998,
+        22.5,
+        25.643500000000003
+      ],
+      "angle_deg": 0.0,
+      "layer": "F.Silkscreen",
+      "font_mm": 0.8,
+      "uuid": "4fbefb00-9e62-4b17-b28d-ec57d2a14d39"
+    },
+    {
+      "owner": "C13",
+      "kind": "front_reference",
+      "text": "C13",
+      "at_mm": [
+        46.2,
+        14.836499
+      ],
+      "box_mm": [
+        44.868095,
+        14.092999,
+        47.531905,
+        15.579998999999999
+      ],
+      "angle_deg": 0.0,
+      "layer": "F.Silkscreen",
+      "font_mm": 0.8,
+      "uuid": "5f0238fa-1e7b-4614-afa9-f7952438712f"
+    },
+    {
+      "owner": "C14",
+      "kind": "front_reference",
+      "text": "C14",
+      "at_mm": [
+        42.0,
+        25.1885
+      ],
+      "box_mm": [
+        40.668095,
+        24.445,
+        43.331905,
+        25.932000000000002
+      ],
+      "angle_deg": 0.0,
+      "layer": "F.Silkscreen",
+      "font_mm": 0.8,
+      "uuid": "d4c01cc2-0068-4312-81b4-8709c5634bd7"
+    },
+    {
+      "owner": "C15",
+      "kind": "front_reference",
+      "text": "C15",
+      "at_mm": [
+        53.0,
+        34.0365
+      ],
+      "box_mm": [
+        51.668095,
+        33.293,
+        54.331905,
+        34.78
+      ],
+      "angle_deg": 0.0,
+      "layer": "F.Silkscreen",
+      "font_mm": 0.8,
+      "uuid": "1e83a6f3-f229-4fa0-9265-adb68891dafe"
+    },
+    {
+      "owner": "C16",
+      "kind": "front_reference",
+      "text": "C16",
+      "at_mm": [
+        71.0,
+        34.0365
+      ],
+      "box_mm": [
+        69.66809500000001,
+        33.293,
+        72.33190499999999,
+        34.78
+      ],
+      "angle_deg": 0.0,
+      "layer": "F.Silkscreen",
+      "font_mm": 0.8,
+      "uuid": "ddd7fbf1-730e-4950-a634-97ed66911b0f"
+    },
+    {
+      "owner": "C2",
+      "kind": "front_reference",
+      "text": "C2",
+      "at_mm": [
+        21.650952,
+        21.5
+      ],
+      "box_mm": [
+        20.7,
+        20.7565,
+        22.601905000000002,
+        22.2435
+      ],
+      "angle_deg": 0.0,
+      "layer": "F.Silkscreen",
+      "font_mm": 0.8,
+      "uuid": "00745f47-902e-4fdf-82ed-4da113bad546"
+    },
+    {
+      "owner": "C3",
+      "kind": "front_reference",
+      "text": "C3",
+      "at_mm": [
+        22.000952,
+        23.1
+      ],
+      "box_mm": [
+        21.049999999999997,
+        22.356499999999997,
+        22.951905,
+        23.843500000000002
+      ],
+      "angle_deg": 0.0,
+      "layer": "F.Silkscreen",
+      "font_mm": 0.8,
+      "uuid": "424e54e5-5d90-4bfe-b48b-b2d75f02982c"
+    },
+    {
+      "owner": "C34",
+      "kind": "front_reference",
+      "text": "C34",
+      "at_mm": [
+        62.0,
+        34.0365
+      ],
+      "box_mm": [
+        60.668095,
+        33.293,
+        63.331905,
+        34.78
+      ],
+      "angle_deg": 0.0,
+      "layer": "F.Silkscreen",
+      "font_mm": 0.8,
+      "uuid": "4aed0327-7d6e-4463-ab92-ef47675fe256"
+    },
+    {
+      "owner": "C36",
+      "kind": "front_reference",
+      "text": "C36",
+      "at_mm": [
+        65.281905,
+        40.8
+      ],
+      "box_mm": [
+        63.949999999999996,
+        40.0565,
+        66.61381,
+        41.5435
+      ],
+      "angle_deg": 0.0,
+      "layer": "F.Silkscreen",
+      "font_mm": 0.8,
+      "uuid": "d653ab28-c491-475d-9a39-c6baa57ac82c"
+    },
+    {
+      "owner": "C38",
+      "kind": "front_reference",
+      "text": "C38",
+      "at_mm": [
+        65.281905,
+        44.8
+      ],
+      "box_mm": [
+        63.949999999999996,
+        44.0565,
+        66.61381,
+        45.5435
+      ],
+      "angle_deg": 0.0,
+      "layer": "F.Silkscreen",
+      "font_mm": 0.8,
+      "uuid": "b2579415-2694-461e-b5e0-9ea62345c9f5"
+    },
+    {
+      "owner": "C40",
+      "kind": "front_reference",
+      "text": "C40",
+      "at_mm": [
+        65.281905,
+        48.8
+      ],
+      "box_mm": [
+        63.949999999999996,
+        48.0565,
+        66.61381,
+        49.5435
+      ],
+      "angle_deg": 0.0,
+      "layer": "F.Silkscreen",
+      "font_mm": 0.8,
+      "uuid": "5a2e7280-fe76-4218-ab83-5fb3c95e0139"
+    },
+    {
+      "owner": "C41",
+      "kind": "front_reference",
+      "text": "C41",
+      "at_mm": [
+        54.0,
+        55.5635
+      ],
+      "box_mm": [
+        52.668095,
+        54.82,
+        55.331905,
+        56.307
+      ],
+      "angle_deg": 0.0,
+      "layer": "F.Silkscreen",
+      "font_mm": 0.8,
+      "uuid": "2633797d-459a-45bb-8bf4-dcb84e8eb78b"
+    },
+    {
+      "owner": "C42",
+      "kind": "front_reference",
+      "text": "C42",
+      "at_mm": [
+        61.0,
+        55.5635
+      ],
+      "box_mm": [
+        59.668095,
+        54.82,
+        62.331905,
+        56.307
+      ],
+      "angle_deg": 0.0,
+      "layer": "F.Silkscreen",
+      "font_mm": 0.8,
+      "uuid": "100cc5dc-5d25-49d7-b2e6-4f8250b18a1b"
+    },
+    {
+      "owner": "C43",
+      "kind": "front_reference",
+      "text": "C43",
+      "at_mm": [
+        80.0,
+        34.0365
+      ],
+      "box_mm": [
+        78.66809500000001,
+        33.293,
+        81.33190499999999,
+        34.78
+      ],
+      "angle_deg": 0.0,
+      "layer": "F.Silkscreen",
+      "font_mm": 0.8,
+      "uuid": "8af01468-de21-41c0-91f2-d311f681652b"
+    },
+    {
+      "owner": "C45",
+      "kind": "front_reference",
+      "text": "C45",
+      "at_mm": [
+        83.281905,
+        40.8
+      ],
+      "box_mm": [
+        81.95,
+        40.0565,
+        84.61381,
+        41.5435
+      ],
+      "angle_deg": 0.0,
+      "layer": "F.Silkscreen",
+      "font_mm": 0.8,
+      "uuid": "9aa2c640-bf43-4c94-b9c5-aefd2e9dbeee"
+    },
+    {
+      "owner": "C47",
+      "kind": "front_reference",
+      "text": "C47",
+      "at_mm": [
+        83.281905,
+        44.8
+      ],
+      "box_mm": [
+        81.95,
+        44.0565,
+        84.61381,
+        45.5435
+      ],
+      "angle_deg": 0.0,
+      "layer": "F.Silkscreen",
+      "font_mm": 0.8,
+      "uuid": "e6595803-dc9d-43f4-b296-b1653587e033"
+    },
+    {
+      "owner": "C49",
+      "kind": "front_reference",
+      "text": "C49",
+      "at_mm": [
+        83.281905,
+        48.8
+      ],
+      "box_mm": [
+        81.95,
+        48.0565,
+        84.61381,
+        49.5435
+      ],
+      "angle_deg": 0.0,
+      "layer": "F.Silkscreen",
+      "font_mm": 0.8,
+      "uuid": "16d13d9a-e4cb-4197-9a97-a9e5b2b424e3"
+    },
+    {
+      "owner": "C5",
+      "kind": "front_reference",
+      "text": "C5",
+      "at_mm": [
+        13.899999,
+        38.888498
+      ],
+      "box_mm": [
+        12.949047,
+        38.144998,
+        14.850952,
+        39.631998
+      ],
+      "angle_deg": 0.0,
+      "layer": "F.Silkscreen",
+      "font_mm": 0.8,
+      "uuid": "411b69ae-525e-4b27-93dd-7aa1f5d4ebd9"
+    },
+    {
+      "owner": "C50",
+      "kind": "front_reference",
+      "text": "C50",
+      "at_mm": [
+        72.0,
+        55.5635
+      ],
+      "box_mm": [
+        70.66809500000001,
+        54.82,
+        73.33190499999999,
+        56.307
+      ],
+      "angle_deg": 0.0,
+      "layer": "F.Silkscreen",
+      "font_mm": 0.8,
+      "uuid": "f6d5cbb9-0f3c-416b-b420-3acf4e7aeeb9"
+    },
+    {
+      "owner": "C51",
+      "kind": "front_reference",
+      "text": "C51",
+      "at_mm": [
+        79.0,
+        55.5635
+      ],
+      "box_mm": [
+        77.66809500000001,
+        54.82,
+        80.33190499999999,
+        56.307
+      ],
+      "angle_deg": 0.0,
+      "layer": "F.Silkscreen",
+      "font_mm": 0.8,
+      "uuid": "4a30b5c6-a2a2-48ec-97e2-d4619321dc5d"
+    },
+    {
+      "owner": "C52",
+      "kind": "front_reference",
+      "text": "C52",
+      "at_mm": [
+        42.0,
+        13.4615
+      ],
+      "box_mm": [
+        40.668095,
+        12.718,
+        43.331905,
+        14.205
+      ],
+      "angle_deg": 0.0,
+      "layer": "F.Silkscreen",
+      "font_mm": 0.8,
+      "uuid": "ebf1f5d6-5788-4a93-b51e-f468014834d4"
+    },
+    {
+      "owner": "C53",
+      "kind": "front_reference",
+      "text": "C53",
+      "at_mm": [
+        48.0,
+        9.9365
+      ],
+      "box_mm": [
+        46.668095,
+        9.193,
+        49.331905,
+        10.68
+      ],
+      "angle_deg": 0.0,
+      "layer": "F.Silkscreen",
+      "font_mm": 0.8,
+      "uuid": "3b4154f1-e2d2-4b8b-9e5a-6d30426f1f7e"
+    },
+    {
+      "owner": "C54",
+      "kind": "front_reference",
+      "text": "C54",
+      "at_mm": [
+        48.631904,
+        27.299999
+      ],
+      "box_mm": [
+        47.299999,
+        26.556499,
+        49.963809000000005,
+        28.043499
+      ],
+      "angle_deg": 0.0,
+      "layer": "F.Silkscreen",
+      "font_mm": 0.8,
+      "uuid": "702ebeae-2077-4beb-937b-6aae913e31bc"
+    },
+    {
+      "owner": "C55",
+      "kind": "front_reference",
+      "text": "C55",
+      "at_mm": [
+        45.0,
+        32.263498
+      ],
+      "box_mm": [
+        43.668095,
+        31.519997999999998,
+        46.331905,
+        33.006998
+      ],
+      "angle_deg": 0.0,
+      "layer": "F.Silkscreen",
+      "font_mm": 0.8,
+      "uuid": "75e1ce33-9ab5-4bfd-af1b-05092eca230f"
+    },
+    {
+      "owner": "C59",
+      "kind": "front_reference",
+      "text": "C59",
+      "at_mm": [
+        15.831905,
+        52.5
+      ],
+      "box_mm": [
+        14.5,
+        51.756499999999996,
+        17.16381,
+        53.243500000000004
+      ],
+      "angle_deg": 0.0,
+      "layer": "F.Silkscreen",
+      "font_mm": 0.8,
+      "uuid": "8ed594ef-d21e-4602-99d2-ebf790b4a76e"
+    },
+    {
+      "owner": "C60",
+      "kind": "front_reference",
+      "text": "C60",
+      "at_mm": [
+        44.768095,
+        35.3
+      ],
+      "box_mm": [
+        43.436189999999996,
+        34.5565,
+        46.1,
+        36.0435
+      ],
+      "angle_deg": 0.0,
+      "layer": "F.Silkscreen",
+      "font_mm": 0.8,
+      "uuid": "a482caa1-94fc-4301-8717-9c90069def44"
+    },
+    {
+      "owner": "C61",
+      "kind": "front_reference",
+      "text": "C61",
+      "at_mm": [
+        48.1115,
+        43.5
+      ],
+      "box_mm": [
+        47.368,
+        42.168095,
+        48.855000000000004,
+        44.831905
+      ],
+      "angle_deg": 90.0,
+      "layer": "F.Silkscreen",
+      "font_mm": 0.8,
+      "uuid": "b258fdb6-7ab9-4eb0-9138-f8d65032e037"
+    },
+    {
+      "owner": "C62",
+      "kind": "front_reference",
+      "text": "C62",
+      "at_mm": [
+        41.5,
+        53.488499
+      ],
+      "box_mm": [
+        40.168095,
+        52.744999,
+        42.831905,
+        54.231999
+      ],
+      "angle_deg": 0.0,
+      "layer": "F.Silkscreen",
+      "font_mm": 0.8,
+      "uuid": "8a413676-52da-49b1-9305-ed8be12082a4"
+    },
+    {
+      "owner": "C8",
+      "kind": "front_reference",
+      "text": "C8",
+      "at_mm": [
+        7.6565,
+        21.5
+      ],
+      "box_mm": [
+        6.913,
+        20.549046999999998,
+        8.4,
+        22.450952
+      ],
+      "angle_deg": 90.0,
+      "layer": "F.Silkscreen",
+      "font_mm": 0.8,
+      "uuid": "2670917d-7af9-4098-b6a0-5b64f3fda3d8"
+    },
+    {
+      "owner": "D1",
+      "kind": "front_reference",
+      "text": "D1",
+      "at_mm": [
+        36.100952,
+        20.1
+      ],
+      "box_mm": [
+        35.15,
+        19.356499999999997,
+        37.051905,
+        20.843500000000002
+      ],
+      "angle_deg": 0.0,
+      "layer": "F.Silkscreen",
+      "font_mm": 0.8,
+      "uuid": "1f0ca49e-dafb-460a-923c-35e56b76ebc5"
+    },
+    {
+      "owner": "D3",
+      "kind": "front_reference",
+      "text": "D3",
+      "at_mm": [
+        48.349047,
+        2.2
+      ],
+      "box_mm": [
+        47.398095,
+        1.4565,
+        49.300000000000004,
+        2.9435000000000002
+      ],
+      "angle_deg": 0.0,
+      "layer": "F.Silkscreen",
+      "font_mm": 0.8,
+      "uuid": "235cb00f-d891-4984-acfe-1548512f6687"
+    },
+    {
+      "owner": "J12",
+      "kind": "front_reference",
+      "text": "J12",
+      "at_mm": [
+        39.0,
+        12.853499
+      ],
+      "box_mm": [
+        37.763332999999996,
+        12.109999,
+        40.236667000000004,
+        13.596999
+      ],
+      "angle_deg": 0.0,
+      "layer": "F.Silkscreen",
+      "font_mm": 0.8,
+      "uuid": "2b2cadcc-ed7b-453d-87a9-35f957d4c197"
+    },
+    {
+      "owner": "J7",
+      "kind": "front_reference",
+      "text": "J7",
+      "at_mm": [
+        7.634285,
+        5.85
+      ],
+      "box_mm": [
+        6.778571,
+        5.1065000000000005,
+        8.49,
+        6.5935
+      ],
+      "angle_deg": 0.0,
+      "layer": "F.Silkscreen",
+      "font_mm": 0.8,
+      "uuid": "2080a948-84fb-4353-82ff-b72341d9f0df"
+    },
+    {
+      "owner": "J8",
+      "kind": "front_reference",
+      "text": "J8",
+      "at_mm": [
+        19.034285,
+        5.85
+      ],
+      "box_mm": [
+        18.178570999999998,
+        5.1065000000000005,
+        19.89,
+        6.5935
+      ],
+      "angle_deg": 0.0,
+      "layer": "F.Silkscreen",
+      "font_mm": 0.8,
+      "uuid": "04e16989-bb20-416b-bc68-fabaf4991db3"
+    },
+    {
+      "owner": "L2",
+      "kind": "front_reference",
+      "text": "L2",
+      "at_mm": [
+        49.5135,
+        20.5
+      ],
+      "box_mm": [
+        48.769999999999996,
+        19.625238,
+        50.257,
+        21.374762
+      ],
+      "angle_deg": 90.0,
+      "layer": "F.Silkscreen",
+      "font_mm": 0.8,
+      "uuid": "dbc1b6eb-5f4c-4138-bc59-04e7f4b878b3"
+    },
+    {
+      "owner": "L3",
+      "kind": "front_reference",
+      "text": "L3",
+      "at_mm": [
+        58.0,
+        15.425237
+      ],
+      "box_mm": [
+        57.256499999999996,
+        14.550475,
+        58.743500000000004,
+        16.299999
+      ],
+      "angle_deg": 90.0,
+      "layer": "F.Silkscreen",
+      "font_mm": 0.8,
+      "uuid": "6d43f2c0-70c7-42e7-a12d-9c76cb8a8d9d"
+    },
+    {
+      "owner": "L4",
+      "kind": "front_reference",
+      "text": "L4",
+      "at_mm": [
+        72.0,
+        15.425237
+      ],
+      "box_mm": [
+        71.2565,
+        14.550475,
+        72.7435,
+        16.299999
+      ],
+      "angle_deg": 90.0,
+      "layer": "F.Silkscreen",
+      "font_mm": 0.8,
+      "uuid": "fb6eb962-3569-49b1-a216-bb7e7b5f26cf"
+    },
+    {
+      "owner": "Q5",
+      "kind": "front_reference",
+      "text": "Q5",
+      "at_mm": [
+        37.5,
+        53.793499
+      ],
+      "box_mm": [
+        36.53,
+        53.049999,
+        38.47,
+        54.536999
+      ],
+      "angle_deg": 0.0,
+      "layer": "F.Silkscreen",
+      "font_mm": 0.8,
+      "uuid": "6cafcbdc-3e00-4ed7-8c0c-c88bfadc4347"
+    },
+    {
+      "owner": "R10",
+      "kind": "front_reference",
+      "text": "R10",
+      "at_mm": [
+        51.0,
+        8.7885
+      ],
+      "box_mm": [
+        49.668095,
+        8.045,
+        52.331905,
+        9.532
+      ],
+      "angle_deg": 0.0,
+      "layer": "F.Silkscreen",
+      "font_mm": 0.8,
+      "uuid": "3db1e856-038d-4d50-a4e5-e99ca1000575"
+    },
+    {
+      "owner": "R11",
+      "kind": "front_reference",
+      "text": "R11",
+      "at_mm": [
+        56.0,
+        8.7885
+      ],
+      "box_mm": [
+        54.668095,
+        8.045,
+        57.331905,
+        9.532
+      ],
+      "angle_deg": 0.0,
+      "layer": "F.Silkscreen",
+      "font_mm": 0.8,
+      "uuid": "c0e0e15d-fcb3-479c-8f04-833482aa864a"
+    },
+    {
+      "owner": "R13",
+      "kind": "front_reference",
+      "text": "R13",
+      "at_mm": [
+        38.5,
+        20.8115
+      ],
+      "box_mm": [
+        37.168095,
+        20.067999999999998,
+        39.831905,
+        21.555
+      ],
+      "angle_deg": 0.0,
+      "layer": "F.Silkscreen",
+      "font_mm": 0.8,
+      "uuid": "37d59cc0-8bd6-4c1b-922a-eac5fc08bfbd"
+    },
+    {
+      "owner": "R15",
+      "kind": "front_reference",
+      "text": "R15",
+      "at_mm": [
+        36.4,
+        14.111499
+      ],
+      "box_mm": [
+        35.068095,
+        13.367999000000001,
+        37.731905000000005,
+        14.854999
+      ],
+      "angle_deg": 0.0,
+      "layer": "F.Silkscreen",
+      "font_mm": 0.8,
+      "uuid": "404602d6-70d1-4f48-8f24-80ad87eb3dc7"
+    },
+    {
+      "owner": "R4",
+      "kind": "front_reference",
+      "text": "R4",
+      "at_mm": [
+        17.499999,
+        37.0115
+      ],
+      "box_mm": [
+        16.549046999999998,
+        36.268,
+        18.450952,
+        37.755
+      ],
+      "angle_deg": 0.0,
+      "layer": "F.Silkscreen",
+      "font_mm": 0.8,
+      "uuid": "3796f941-a108-48d5-a311-455769715b9b"
+    },
+    {
+      "owner": "R40",
+      "kind": "front_reference",
+      "text": "R40",
+      "at_mm": [
+        57.5,
+        30.3265
+      ],
+      "box_mm": [
+        56.168095,
+        29.583,
+        58.831905,
+        31.07
+      ],
+      "angle_deg": 0.0,
+      "layer": "F.Silkscreen",
+      "font_mm": 0.8,
+      "uuid": "cc3c5ae7-4293-4474-b6d6-f1b6c21018c7"
+    },
+    {
+      "owner": "R41",
+      "kind": "front_reference",
+      "text": "R41",
+      "at_mm": [
+        75.5,
+        30.3265
+      ],
+      "box_mm": [
+        74.16809500000001,
+        29.583,
+        76.83190499999999,
+        31.07
+      ],
+      "angle_deg": 0.0,
+      "layer": "F.Silkscreen",
+      "font_mm": 0.8,
+      "uuid": "ca2b7327-4a38-4340-be52-39f80894edd6"
+    },
+    {
+      "owner": "R47",
+      "kind": "front_reference",
+      "text": "R47",
+      "at_mm": [
+        17.7,
+        16.7885
+      ],
+      "box_mm": [
+        16.368095,
+        16.044999999999998,
+        19.031905000000002,
+        17.532
+      ],
+      "angle_deg": 0.0,
+      "layer": "F.Silkscreen",
+      "font_mm": 0.8,
+      "uuid": "f9a41932-60bc-4f5f-b1aa-9483d0958f5b"
+    },
+    {
+      "owner": "R5",
+      "kind": "front_reference",
+      "text": "R5",
+      "at_mm": [
+        13.899999,
+        32.7115
+      ],
+      "box_mm": [
+        12.949047,
+        31.967999999999996,
+        14.850952,
+        33.455
+      ],
+      "angle_deg": 0.0,
+      "layer": "F.Silkscreen",
+      "font_mm": 0.8,
+      "uuid": "47674351-1489-4f07-a0bd-44132872feff"
+    },
+    {
+      "owner": "R51",
+      "kind": "front_reference",
+      "text": "R51",
+      "at_mm": [
+        15.831905,
+        45.0
+      ],
+      "box_mm": [
+        14.5,
+        44.256499999999996,
+        17.16381,
+        45.743500000000004
+      ],
+      "angle_deg": 0.0,
+      "layer": "F.Silkscreen",
+      "font_mm": 0.8,
+      "uuid": "5672637f-992c-4afc-b79b-293082415d42"
+    },
+    {
+      "owner": "R52",
+      "kind": "front_reference",
+      "text": "R52",
+      "at_mm": [
+        18.5,
+        45.5115
+      ],
+      "box_mm": [
+        17.168094999999997,
+        44.768,
+        19.831905000000003,
+        46.255
+      ],
+      "angle_deg": 0.0,
+      "layer": "F.Silkscreen",
+      "font_mm": 0.8,
+      "uuid": "d6615b16-0029-4856-9670-09109f905dc2"
+    },
+    {
+      "owner": "R53",
+      "kind": "front_reference",
+      "text": "R53",
+      "at_mm": [
+        21.1,
+        49.088499
+      ],
+      "box_mm": [
+        19.768095,
+        48.344999,
+        22.431905,
+        49.831999
+      ],
+      "angle_deg": 0.0,
+      "layer": "F.Silkscreen",
+      "font_mm": 0.8,
+      "uuid": "0059a3bf-8547-4e37-8dbf-5beaf3550e96"
+    },
+    {
+      "owner": "R54",
+      "kind": "front_reference",
+      "text": "R54",
+      "at_mm": [
+        18.5,
+        52.088499
+      ],
+      "box_mm": [
+        17.168094999999997,
+        51.344999,
+        19.831905000000003,
+        52.831999
+      ],
+      "angle_deg": 0.0,
+      "layer": "F.Silkscreen",
+      "font_mm": 0.8,
+      "uuid": "05d04613-af32-47ba-9ea9-28b9a8594b1e"
+    },
+    {
+      "owner": "R57",
+      "kind": "front_reference",
+      "text": "R57",
+      "at_mm": [
+        28.531905,
+        45.0
+      ],
+      "box_mm": [
+        27.2,
+        44.256499999999996,
+        29.86381,
+        45.743500000000004
+      ],
+      "angle_deg": 0.0,
+      "layer": "F.Silkscreen",
+      "font_mm": 0.8,
+      "uuid": "cf9ac4bc-4e50-4df1-b5fe-dfae65ff612f"
+    },
+    {
+      "owner": "R59",
+      "kind": "front_reference",
+      "text": "R59",
+      "at_mm": [
+        45.5,
+        43.7115
+      ],
+      "box_mm": [
+        44.168095,
+        42.967999999999996,
+        46.831905,
+        44.455
+      ],
+      "angle_deg": 0.0,
+      "layer": "F.Silkscreen",
+      "font_mm": 0.8,
+      "uuid": "94cf31b2-23d9-4fe0-b01e-9284f202d05a"
+    },
+    {
+      "owner": "R61",
+      "kind": "front_reference",
+      "text": "R61",
+      "at_mm": [
+        42.0,
+        43.7115
+      ],
+      "box_mm": [
+        40.668095,
+        42.967999999999996,
+        43.331905,
+        44.455
+      ],
+      "angle_deg": 0.0,
+      "layer": "F.Silkscreen",
+      "font_mm": 0.8,
+      "uuid": "670f8af5-7263-41ff-af1b-a85092238da7"
+    },
+    {
+      "owner": "R64",
+      "kind": "front_reference",
+      "text": "R64",
+      "at_mm": [
+        48.1115,
+        47.9
+      ],
+      "box_mm": [
+        47.368,
+        46.568095,
+        48.855000000000004,
+        49.231905000000005
+      ],
+      "angle_deg": 90.0,
+      "layer": "F.Silkscreen",
+      "font_mm": 0.8,
+      "uuid": "6d678650-9225-41fe-bab4-c0cc756184ab"
+    },
+    {
+      "owner": "R7",
+      "kind": "front_reference",
+      "text": "R7",
+      "at_mm": [
+        7.449047,
+        32.299999
+      ],
+      "box_mm": [
+        6.498095,
+        31.556499,
+        8.4,
+        33.043499000000004
+      ],
+      "angle_deg": 0.0,
+      "layer": "F.Silkscreen",
+      "font_mm": 0.8,
+      "uuid": "d3741bb0-5ee0-42c7-affb-ab3bb1a576cd"
+    },
+    {
+      "owner": "R70",
+      "kind": "front_reference",
+      "text": "R70",
+      "at_mm": [
+        45.5,
+        50.2885
+      ],
+      "box_mm": [
+        44.168095,
+        49.545,
+        46.831905,
+        51.032000000000004
+      ],
+      "angle_deg": 0.0,
+      "layer": "F.Silkscreen",
+      "font_mm": 0.8,
+      "uuid": "344d4932-8c09-48bb-ae53-0782f0e47d97"
+    },
+    {
+      "owner": "TH1",
+      "kind": "front_reference",
+      "text": "TH1",
+      "at_mm": [
+        46.27,
+        56.2985
+      ],
+      "box_mm": [
+        44.995238,
+        55.555,
+        47.544762,
+        57.042
+      ],
+      "angle_deg": 0.0,
+      "layer": "F.Silkscreen",
+      "font_mm": 0.8,
+      "uuid": "e982dba9-c552-47ed-8c17-1abfc6791640"
+    },
+    {
+      "owner": "TP1",
+      "kind": "front_reference",
+      "text": "TP1",
+      "at_mm": [
+        1.999999,
+        42.9965
+      ],
+      "box_mm": [
+        0.744285,
+        42.253,
+        3.255714,
+        43.74
+      ],
+      "angle_deg": 0.0,
+      "layer": "F.Silkscreen",
+      "font_mm": 0.8,
+      "uuid": "10d26c27-6c08-49eb-b9d1-e08426c57c73"
+    },
+    {
+      "owner": "TP3",
+      "kind": "front_reference",
+      "text": "TP3",
+      "at_mm": [
+        49.499999,
+        32.5035
+      ],
+      "box_mm": [
+        48.244285,
+        31.759999999999998,
+        50.755714000000005,
+        33.247
+      ],
+      "angle_deg": 0.0,
+      "layer": "F.Silkscreen",
+      "font_mm": 0.8,
+      "uuid": "d86d1114-8a6a-48d8-a9b6-7e2cb384abad"
+    },
+    {
+      "owner": "TP6",
+      "kind": "front_reference",
+      "text": "TP6",
+      "at_mm": [
+        3.999999,
+        37.9965
+      ],
+      "box_mm": [
+        2.744285,
+        37.253,
+        5.255713999999999,
+        38.74
+      ],
+      "angle_deg": 0.0,
+      "layer": "F.Silkscreen",
+      "font_mm": 0.8,
+      "uuid": "a4def5e1-2148-4633-8dfb-27db2ac54b1d"
+    },
+    {
+      "owner": "TP8",
+      "kind": "front_reference",
+      "text": "TP8",
+      "at_mm": [
+        64.999999,
+        33.003499
+      ],
+      "box_mm": [
+        63.744285,
+        32.259999,
+        66.255714,
+        33.746999
+      ],
+      "angle_deg": 0.0,
+      "layer": "F.Silkscreen",
+      "font_mm": 0.8,
+      "uuid": "a17b3a39-9763-4e0b-81e2-56eaa3781838"
+    },
+    {
+      "owner": "TP9",
+      "kind": "front_reference",
+      "text": "TP9",
+      "at_mm": [
+        3.799999,
+        13.4965
+      ],
+      "box_mm": [
+        2.544285,
+        12.753,
+        5.055714,
+        14.24
+      ],
+      "angle_deg": 0.0,
+      "layer": "F.Silkscreen",
+      "font_mm": 0.8,
+      "uuid": "7be9206a-a562-4106-969c-d829a0a0a0e1"
+    },
+    {
+      "owner": "U1",
+      "kind": "front_reference",
+      "text": "U1",
+      "at_mm": [
+        12.479999,
+        28.0
+      ],
+      "box_mm": [
+        11.509999,
+        27.2565,
+        13.449999,
+        28.7435
+      ],
+      "angle_deg": 0.0,
+      "layer": "F.Silkscreen",
+      "font_mm": 0.8,
+      "uuid": "c237bbea-5dc0-4f29-95eb-f961d4aa2808"
+    },
+    {
+      "owner": "U8",
+      "kind": "front_reference",
+      "text": "U8",
+      "at_mm": [
+        30.5,
+        12.0565
+      ],
+      "box_mm": [
+        29.529999999999998,
+        11.313,
+        31.470000000000002,
+        12.799999999999999
+      ],
+      "angle_deg": 0.0,
+      "layer": "F.Silkscreen",
+      "font_mm": 0.8,
+      "uuid": "9648e5a7-d332-448c-83ce-ac23dbdda43c"
+    },
+    {
+      "owner": "U9",
+      "kind": "front_reference",
+      "text": "U9",
+      "at_mm": [
+        9.679999,
+        49.5
+      ],
+      "box_mm": [
+        8.709999,
+        48.756499999999996,
+        10.649999,
+        50.243500000000004
+      ],
+      "angle_deg": 0.0,
+      "layer": "F.Silkscreen",
+      "font_mm": 0.8,
+      "uuid": "9c51d58a-43e0-40c1-85a5-b95c28b7b931"
+    }
+  ],
+  "footprint_silk_transferred_to_fab": [],
+  "option_boundaries_clipped": [
+    {
+      "source_uuid": "e4e77455-b345-44c3-ad69-531305a4b6ab",
+      "source_from_mm": [
+        10.85,
+        47.38
+      ],
+      "source_to_mm": [
+        10.85,
+        43.305
+      ],
+      "retained_segments_mm": [
+        [
+          [
+            10.85,
+            47.38
+          ],
+          [
+            10.85,
+            43.305
+          ]
+        ]
+      ],
+      "reason": "solder_mask_and_component_silk_clearance"
+    },
+    {
+      "source_uuid": "9204cfab-85e9-4dc7-a158-ef452a3c187c",
+      "source_from_mm": [
+        10.85,
+        54.195
+      ],
+      "source_to_mm": [
+        10.85,
+        50.62
+      ],
+      "retained_segments_mm": [
+        [
+          [
+            10.85,
+            54.195
+          ],
+          [
+            10.85,
+            50.62
+          ]
+        ]
+      ],
+      "reason": "solder_mask_and_component_silk_clearance"
+    },
+    {
+      "source_uuid": "4f30592d-725f-4c2f-bc3c-6c3219618316",
+      "source_from_mm": [
+        14.055563,
+        19.095
+      ],
+      "source_to_mm": [
+        13.17,
+        19.095
+      ],
+      "retained_segments_mm": [
+        [
+          [
+            14.055563,
+            19.095
+          ],
+          [
+            13.170000000000002,
+            19.095
+          ]
+        ]
+      ],
+      "reason": "solder_mask_and_component_silk_clearance"
+    },
+    {
+      "source_uuid": "bc6fef8c-39d5-4bda-8a25-45dcf1a89a3a",
+      "source_from_mm": [
+        23.8,
+        43.15
+      ],
+      "source_to_mm": [
+        27.21,
+        43.15
+      ],
+      "retained_segments_mm": [
+        [
+          [
+            23.8,
+            43.15
+          ],
+          [
+            27.21,
+            43.15
+          ]
+        ]
+      ],
+      "reason": "solder_mask_and_component_silk_clearance"
+    },
+    {
+      "source_uuid": "c2410772-dee3-4497-8638-b1b667fc8972",
+      "source_from_mm": [
+        23.8,
+        43.93
+      ],
+      "source_to_mm": [
+        23.8,
+        43.15
+      ],
+      "retained_segments_mm": [
+        [
+          [
+            23.8,
+            43.93
+          ],
+          [
+            23.8,
+            43.15
+          ]
+        ]
+      ],
+      "reason": "solder_mask_and_component_silk_clearance"
+    },
+    {
+      "source_uuid": "60a9cba5-8a49-42ad-aadb-be11b8a41ba7",
+      "source_from_mm": [
+        23.8,
+        55.195
+      ],
+      "source_to_mm": [
+        23.8,
+        46.07
+      ],
+      "retained_segments_mm": [
+        [
+          [
+            23.8,
+            55.195
+          ],
+          [
+            23.8,
+            46.07
+          ]
+        ]
+      ],
+      "reason": "solder_mask_and_component_silk_clearance"
+    },
+    {
+      "source_uuid": "9fa49752-532f-4e18-a993-ad37a160bf9f",
+      "source_from_mm": [
+        27.23,
+        19.095
+      ],
+      "source_to_mm": [
+        15.7,
+        19.095
+      ],
+      "retained_segments_mm": [
+        [
+          [
+            27.23,
+            19.095
+          ],
+          [
+            15.700000000000001,
+            19.095
+          ]
+        ]
+      ],
+      "reason": "solder_mask_and_component_silk_clearance"
+    },
+    {
+      "source_uuid": "62deba95-447e-4877-a66d-0a1562fb2604",
+      "source_from_mm": [
+        27.79,
+        43.15
+      ],
+      "source_to_mm": [
+        30.68,
+        43.15
+      ],
+      "retained_segments_mm": [
+        [
+          [
+            27.79,
+            43.15
+          ],
+          [
+            30.68,
+            43.15
+          ]
+        ]
+      ],
+      "reason": "solder_mask_and_component_silk_clearance"
+    },
+    {
+      "source_uuid": "b45ac0e7-98a2-4146-9bf7-1c1e416c1036",
+      "source_from_mm": [
+        31.529999,
+        19.095
+      ],
+      "source_to_mm": [
+        30.47,
+        19.095
+      ],
+      "retained_segments_mm": [
+        [
+          [
+            31.529999,
+            19.095
+          ],
+          [
+            30.470000000000002,
+            19.095
+          ]
+        ]
+      ],
+      "reason": "solder_mask_and_component_silk_clearance"
+    },
+    {
+      "source_uuid": "f04deb5f-2f40-4d91-96d6-27762a6e9a5e",
+      "source_from_mm": [
+        32.25,
+        15.32
+      ],
+      "source_to_mm": [
+        32.25,
+        15.879999
+      ],
+      "retained_segments_mm": [
+        [
+          [
+            32.25,
+            15.32
+          ],
+          [
+            32.25,
+            15.879999
+          ]
+        ]
+      ],
+      "reason": "solder_mask_and_component_silk_clearance"
+    },
+    {
+      "source_uuid": "bd942add-d834-41ec-bf5f-04a94c47e573",
+      "source_from_mm": [
+        34.949999,
+        26.35
+      ],
+      "source_to_mm": [
+        42.15,
+        26.35
+      ],
+      "retained_segments_mm": [
+        [
+          [
+            34.949999999999996,
+            26.35
+          ],
+          [
+            42.15,
+            26.35
+          ]
+        ]
+      ],
+      "reason": "solder_mask_and_component_silk_clearance"
+    },
+    {
+      "source_uuid": "a3bdf13f-84cd-4bf2-92ba-8beb45003109",
+      "source_from_mm": [
+        36.92,
+        43.15
+      ],
+      "source_to_mm": [
+        39.81,
+        43.15
+      ],
+      "retained_segments_mm": [
+        [
+          [
+            36.92,
+            43.15
+          ],
+          [
+            39.81,
+            43.15
+          ]
+        ]
+      ],
+      "reason": "solder_mask_and_component_silk_clearance"
+    },
+    {
+      "source_uuid": "eeb5a99d-ca1a-4382-96e7-61ec9cdd2340",
+      "source_from_mm": [
+        40.45,
+        32.549999
+      ],
+      "source_to_mm": [
+        40.93,
+        32.549999
+      ],
+      "retained_segments_mm": [
+        [
+          [
+            40.45,
+            32.549999
+          ],
+          [
+            40.93,
+            32.549999
+          ]
+        ]
+      ],
+      "reason": "solder_mask_and_component_silk_clearance"
+    },
+    {
+      "source_uuid": "3bdd533f-9b9c-497a-82bc-1cb98daac262",
+      "source_from_mm": [
+        42.15,
+        26.35
+      ],
+      "source_to_mm": [
+        42.15,
+        28.08
+      ],
+      "retained_segments_mm": [
+        [
+          [
+            42.15,
+            26.35
+          ],
+          [
+            42.15,
+            28.08
+          ]
+        ]
+      ],
+      "reason": "solder_mask_and_component_silk_clearance"
+    },
+    {
+      "source_uuid": "5aa7e577-d7c2-4e56-ba7a-53d325f24fdb",
+      "source_from_mm": [
+        42.15,
+        29.42
+      ],
+      "source_to_mm": [
+        42.15,
+        31.0
+      ],
+      "retained_segments_mm": [
+        [
+          [
+            42.15,
+            29.42
+          ],
+          [
+            42.15,
+            31.0
+          ]
+        ]
+      ],
+      "reason": "solder_mask_and_component_silk_clearance"
+    },
+    {
+      "source_uuid": "d4a3483a-237e-4a7d-9451-0ea4c88c3159",
+      "source_from_mm": [
+        42.15,
+        31.0
+      ],
+      "source_to_mm": [
+        40.389999,
+        31.0
+      ],
+      "retained_segments_mm": [
+        [
+          [
+            42.15,
+            31.0
+          ],
+          [
+            40.38999999999999,
+            31.0
+          ]
+        ]
+      ],
+      "reason": "solder_mask_and_component_silk_clearance"
+    },
+    {
+      "source_uuid": "943faf67-0aa6-46cf-b52d-b081c7abc85a",
+      "source_from_mm": [
+        49.75,
+        36.75
+      ],
+      "source_to_mm": [
+        50.88,
+        36.75
+      ],
+      "retained_segments_mm": [
+        [
+          [
+            49.75,
+            36.75
+          ],
+          [
+            50.88,
+            36.75
+          ]
+        ]
+      ],
+      "reason": "solder_mask_and_component_silk_clearance"
+    }
+  ],
+  "unplaced_secondary_front_refs": [
+    "C12",
+    "C30",
+    "C35",
+    "C37",
+    "C39",
+    "C44",
+    "C46",
+    "C48",
+    "D2",
+    "D4",
+    "J101",
+    "L1",
+    "Q1",
+    "Q4",
+    "Q6",
+    "Q7",
+    "R1",
+    "R14",
+    "R16",
+    "R3",
+    "R48",
+    "R49",
+    "R50",
+    "R55",
+    "R56",
+    "R58",
+    "R6",
+    "R60",
+    "R62",
+    "R63",
+    "R65",
+    "R66",
+    "R68",
+    "R69",
+    "U10",
+    "U11",
+    "U2"
+  ],
+  "pcb_sha256": "dd40232294bc3bfd88565f6843400ad10a68220e472d3d6cb3d7ac200152cf64"
+}

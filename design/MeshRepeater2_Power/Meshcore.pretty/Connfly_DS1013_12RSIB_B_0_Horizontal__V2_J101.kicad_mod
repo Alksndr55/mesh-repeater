@@ -1,0 +1,376 @@
+(footprint "Connfly_DS1013_12RSIB_B_0_Horizontal__V2_J101"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "Connfly DS1013-12RSIB-B-0. Drawing: https://en.connfly.com/static/upload/file/pdf/DS1013.pdf#page=1. Simplified envelope STEP model.")
+	(property "Reference" "REF**"
+		(at 9.4 -6.07 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "4bd26010-8afe-46ba-86c7-ce07ed43e860")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.12)
+			)
+		)
+	)
+	(property "Value" "Connfly_DS1013_12RSIB_B_0_Horizontal__V2_J101"
+		(at 9.4 18.77 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "71abed6f-ebfc-4cf9-837e-55dd0be8aa3d")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.12)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "b21fcac4-8c4d-4d8e-8be1-563e34121d22")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" "R/A drawing rotated to solder tails down.13.8mm is plan reach;9.1mm is assembled height. Body depth8.8mm. Hole1.02±0.05. Mechanical v2 package; original functional pin numbers retained."
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "9b4a5046-0f04-4ceb-9b49-980392e020c9")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "MPN" "Connfly DS1013-12RSIB-B-0"
+		(at 0 0 270)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "b3fb0424-d4b9-4b4c-82a8-76cb9f741300")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "LCSC" ""
+		(at 0 0 270)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "418f2168-8a57-46e1-a14f-5a82ec8bef94")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Vendor" "Danomsk"
+		(at 0 0 270)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "6c00a81a-9ead-4c9a-ac0f-0474f8145946")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Vendor URL" "https://www.danomsk.ru/shop/7-kommutatsiya/121-razemy/306-soediniteli-pryamougolnye/134861-idc-12mr-ds1013-12rsib-b-0-vilka-uglovaya-shag-2-54mm-maks-dopust-tok-1a-connfly/"
+		(at 0 0 270)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "355acc8d-5fff-476c-9d68-40536c54b72c")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Fit_NaIon" "yes"
+		(at 0 0 270)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "a8db1cf7-b818-4ef3-ac79-05677e8e919f")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Fit_LTO_2S" "yes"
+		(at 0 0 270)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "772d88df-3206-4e04-947c-d4e7f4c6d848")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value_NaIon" "INTERBOARD 12P"
+		(at 0 0 270)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "4a3e90a1-3d35-4aa9-ac5f-313f4e9f319f")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value_LTO_2S" "INTERBOARD 12P"
+		(at 0 0 270)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "ce5242c1-5769-4363-8184-14d5f3a513d3")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Assembly" "All variants: FIT"
+		(at 0 0 270)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "2067b745-b5b6-4730-8e4e-fbb003c97ff6")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Nominal" "INTERBOARD"
+		(at 0 0 270)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "cdd757f9-ab4a-4b95-b301-fa71b06245a7")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "MPN_NaIon" "Connfly DS1013-12RSIB-B-0"
+		(at 0 0 270)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "e57bc035-25ae-45ea-ad6b-103ab61d0ba3")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "MPN_LTO_2S" "Connfly DS1013-12RSIB-B-0"
+		(at 0 0 270)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "d3c60383-c7dc-4017-aa95-b409e34928ac")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Fit_NaIon_NoCold" "yes"
+		(at 0 0 270)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "9612b937-f92b-4e26-afbd-34d1e3ae08de")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value_NaIon_NoCold" "INTERBOARD 12P"
+		(at 0 0 270)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "39d76304-d820-4fab-ae4d-b9bf3a7fc89d")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "MPN_NaIon_NoCold" "Connfly DS1013-12RSIB-B-0"
+		(at 0 0 270)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "af875f66-606a-4db7-a208-d170edff5184")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr through_hole)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_rect
+		(start -1.4 -5.32)
+		(end 14.05 18.02)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "e75c01ed-1d41-4647-9f77-b58b14c30ce7")
+	)
+	(fp_rect
+		(start 4.9 -5.17)
+		(end 13.9 17.87)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "9cb09b5c-bef9-462a-bb95-d9f08a5307e4")
+	)
+	(fp_rect
+		(start 5 -5.07)
+		(end 13.8 17.77)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "0b09dfac-60a9-42a8-99b4-7cfc7cbe5df9")
+	)
+	(pad "1" thru_hole rect
+		(at 0 0)
+		(size 1.8 1.8)
+		(drill 1.02)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "570abf72-abb0-422a-bae3-cb7bac6763a2")
+	)
+	(pad "2" thru_hole circle
+		(at 2.54 0)
+		(size 1.8 1.8)
+		(drill 1.02)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "d654b0dd-8dcc-442f-947c-d65e72dc9030")
+	)
+	(pad "3" thru_hole circle
+		(at 0 2.54)
+		(size 1.8 1.8)
+		(drill 1.02)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "a668637b-afcf-4699-a72c-709a0f5822cd")
+	)
+	(pad "4" thru_hole circle
+		(at 2.54 2.54)
+		(size 1.8 1.8)
+		(drill 1.02)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "6b0249d7-9afa-492b-bb05-52a54f772a22")
+	)
+	(pad "5" thru_hole circle
+		(at 0 5.08)
+		(size 1.8 1.8)
+		(drill 1.02)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "c810ca69-d6c3-43c1-9e93-8d257fa092cf")
+	)
+	(pad "6" thru_hole circle
+		(at 2.54 5.08)
+		(size 1.8 1.8)
+		(drill 1.02)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "dd885e26-5bf3-4b9e-ad90-a37fa8d7c32d")
+	)
+	(pad "7" thru_hole circle
+		(at 0 7.62)
+		(size 1.8 1.8)
+		(drill 1.02)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "a9cd9428-243b-4170-b86a-c3614bb1e57e")
+	)
+	(pad "8" thru_hole circle
+		(at 2.54 7.62)
+		(size 1.8 1.8)
+		(drill 1.02)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "3cfb1dc3-e2d9-45d1-a1c6-498f8a954212")
+	)
+	(pad "9" thru_hole circle
+		(at 0 10.16)
+		(size 1.8 1.8)
+		(drill 1.02)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "2908bfe5-7ca0-4f4d-8170-159667df698b")
+	)
+	(pad "10" thru_hole circle
+		(at 2.54 10.16)
+		(size 1.8 1.8)
+		(drill 1.02)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "9f4271d6-7e94-46ed-ae6b-1523a39f0a6e")
+	)
+	(pad "11" thru_hole circle
+		(at 0 12.7)
+		(size 1.8 1.8)
+		(drill 1.02)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "a715b546-bfe3-4c7a-87c6-851a9e39808f")
+	)
+	(pad "12" thru_hole circle
+		(at 2.54 12.7)
+		(size 1.8 1.8)
+		(drill 1.02)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "972e2915-0e21-452f-9a99-4a9aa1ffa35c")
+	)
+	(embedded_fonts no)
+	(model "${KIPRJMOD}/3dmodels/Connfly_DS1013_12RSIB_B_0_Horizontal.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

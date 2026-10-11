@@ -1,0 +1,51 @@
+{
+  "changes": [
+    {
+      "connector_shift": "J101",
+      "from": [
+        65.15,
+        11.0
+      ],
+      "to": [
+        64.15,
+        11
+      ],
+      "clearance_reason": "1mm added to washer/hex-standoff clearance"
+    },
+    {
+      "remove_obsolete_stub_or_conflicting_ground_stitch": "ad320701-4705-4d3c-b48c-9e2b9a280056",
+      "net": "GND",
+      "position": [
+        61.5,
+        19.5
+      ]
+    },
+    {
+      "remove_obsolete_stub_or_conflicting_ground_stitch": "42667ed4-a711-42e8-9063-b46c2b835233",
+      "net": "GND",
+      "position": [
+        79.5,
+        52.5
+      ]
+    },
+    {
+      "remove_obsolete_stub_or_conflicting_ground_stitch": "5ea5e858-1401-4a5f-80f2-e50300379084",
+      "net": "GND",
+      "position": [
+        79.5,
+        40.5
+      ]
+    },
+    {
+      "remove_obsolete_stub_or_conflicting_ground_stitch": "761baf7c-d479-43ed-b6bb-ccd7f988b061",
+      "net": "GND",
+      "position": [
+        13.5,
+        52.5
+      ]
+    }
+  ],
+  "final_report": "audit\\routing_power\\drc_refine_1.json",
+  "unconnected": 0,
+  "parity": 0
+}

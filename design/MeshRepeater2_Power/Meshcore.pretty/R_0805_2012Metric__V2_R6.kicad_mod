@@ -1,0 +1,327 @@
+(footprint "R_0805_2012Metric__V2_R6"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "Resistor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf)")
+	(tags "resistor")
+	(property "Reference" "REF**"
+		(at -2.550952 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "31299c2e-b87f-4f5d-93b4-a27362394699")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Value" "R_0805_2012Metric__V2_R6"
+		(at 0 1.65 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "18a2bf42-3d16-4be1-9bfd-a5090d3609b6")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "0c6cc96e-7f2a-44fc-9c45-134185ebd4ed")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" "Danomsk S4.6 approved substitution. 120Ω, 0805, 1%; Yageo вместо Uni-Ohm. Покупка кратно 10 шт."
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "f6206fa4-dcf3-452d-a32e-b1738439b07a")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "KiLib_Generator" "SMD_2terminal_chip_molded"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "d0b01c0e-e5ab-4a5a-a754-2cae1af13023")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "MPN" "RC0805FR-07120RL"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "515574d6-fe1e-4343-b3c4-528b2966b99c")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "LCSC" ""
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "02bb597a-301d-49ac-8f79-5179434a8a40")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Vendor" "Danomsk"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "6b89ba88-2648-46f6-9026-bb29273da9f2")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Vendor URL" "https://www.danomsk.ru/shop/6-rezistory/86-rezistory-postoyannye/268-rezistory-chip-0805/134728-chip-0805-120-1-rc0805fr-07120r-yageo/"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "0b859500-7e84-4ba8-8468-5ec02d836950")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Fit_NaIon" "yes"
+		(at 0 0 270)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "37dfadd5-5e8b-4524-9a85-4f5efd92ec11")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Fit_LTO_2S" "yes"
+		(at 0 0 270)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "a2579cbe-6f06-4ed7-ad52-9d0c74a42b63")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value_NaIon" "120R"
+		(at 0 0 270)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "72e25ebd-c980-4797-85af-baef5cd1f7c4")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value_LTO_2S" "120R"
+		(at 0 0 270)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "eb6bbf00-e132-467f-be56-e10deb9c8c44")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Assembly" "Na-ion: FIT; LTO 2S: FIT"
+		(at 0 0 270)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "eba1b86e-2f00-48de-8d11-c1141be6a0c5")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Nominal" "120R"
+		(at -5.414761 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "e8b5c420-04b7-456e-8512-eaa9ccef23e1")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "MPN_NaIon" "RC0805FR-07120RL"
+		(at 0 0 270)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "538b358e-9799-4bdc-8a88-9c1457a982a0")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "MPN_LTO_2S" "RC0805FR-07120RL"
+		(at 0 0 270)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "03f26cca-d180-4e82-acf7-c22399857197")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Fit_NaIon_NoCold" "yes"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "e9fe2967-1484-44f5-a680-fae31dbff1a0")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value_NaIon_NoCold" "120R"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "0bd2bf5b-9fb2-4db1-80cc-fe246f9399df")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "MPN_NaIon_NoCold" "RC0805FR-07120RL"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "0d951d8c-9c8f-4055-ba8c-a368ec6567b6")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_rect
+		(start -1.68 -0.95)
+		(end 1.68 0.95)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "8b3f1719-8542-4edf-87e6-15ae3fed17b3")
+	)
+	(fp_line
+		(start -0.227064 -0.735)
+		(end 0.227064 -0.735)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "fc058823-3a67-4f62-8ccc-9d046adf7d4e")
+	)
+	(fp_line
+		(start -0.227064 0.735)
+		(end 0.227064 0.735)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "18867193-f1ef-4f75-83db-f484d6e0381b")
+	)
+	(fp_rect
+		(start -1 -0.625)
+		(end 1 0.625)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "75955a11-6d32-4b0a-a92d-9b65b797878f")
+	)
+	(fp_text user ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(uuid "10f64dab-33b5-4752-9228-3e83043db187")
+		(effects
+			(font
+				(size 0.5 0.5)
+				(thickness 0.08)
+			)
+		)
+	)
+	(pad "1" smd roundrect
+		(at -0.9125 0)
+		(size 1.025 1.4)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.243902)
+		(uuid "7181223a-fafd-49e2-a55d-2e8337514c9e")
+	)
+	(pad "2" smd roundrect
+		(at 0.9125 0)
+		(size 1.025 1.4)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.243902)
+		(uuid "4bb2815d-e97c-4d8b-b056-8fd6d2949f3b")
+	)
+	(embedded_fonts no)
+	(model "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

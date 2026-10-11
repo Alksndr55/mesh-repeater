@@ -1,0 +1,327 @@
+(footprint "C_1812_4532Metric__V2_C35"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "Capacitor SMD 1812 (4532 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf)")
+	(tags "capacitor")
+	(property "Reference" "REF**"
+		(at 0 0 270)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "d1fdb07b-9b56-4e64-bbe5-199de7360e7b")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Value" "C_1812_4532Metric__V2_C35"
+		(at 0 2.65 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "fe65bf3a-3ad9-4f2a-90a9-39931dd017c4")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "6e3544f0-f5e9-42ca-ad59-2b23ac48f5b2")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" "TDK100uF10V X5R +/-20%,1812. Ten parallel parts per stage provide1000uF nominal. Ceff>=330uF at3.3V is an acceptance requirement, not verified by a guaranteed bias limit. Procurement through China authorized distribution; no confirmed JLC stock."
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "0416a74a-cd28-46e8-abde-88829a4961ad")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "KiLib_Generator" "SMD_2terminal_chip_molded"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "406f73d9-a14d-44d2-8cbb-79bfff56c6cd")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "MPN" "C4532X5R1A107M280KC"
+		(at 0 0 270)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "8b5179a5-9584-4404-aacf-41a19ead239e")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "LCSC" ""
+		(at 0 0 270)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "e3051885-fe5c-4d21-8c1c-c6b8e6521ab0")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Vendor" ""
+		(at 0 0 180)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "aa13b9f8-21a7-4305-a85f-d21428e22e23")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Vendor URL" ""
+		(at 0 0 180)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "13cfa321-4ba2-41b4-95e1-07f288a5994c")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Fit_NaIon" "yes"
+		(at 0 0 180)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "0700530c-b5ec-4d28-a351-4af2ab62cfde")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Fit_LTO_2S" "yes"
+		(at 0 0 180)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "db0d116c-2237-4f3b-bcd3-c1469d50b6b4")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value_NaIon" "100uF"
+		(at 0 0 180)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "c4baec6b-0d44-4f0f-b470-dec603c23e27")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value_LTO_2S" "100uF"
+		(at 0 0 180)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "81870811-0b08-43fd-a222-48f792f8fe92")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Assembly" "Na-ion: FIT; LTO 2S: FIT"
+		(at 0 0 180)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "63200de1-140c-4b7c-8005-b131ab796883")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Nominal" "100uF"
+		(at 0 0 180)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "18adcafc-0170-4e12-b8ad-8861ce8fc727")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "MPN_NaIon" "C4532X5R1A107M280KC"
+		(at 0 0 180)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "8a1e5697-a8bc-490e-a93f-f26797302c3d")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "MPN_LTO_2S" "C4532X5R1A107M280KC"
+		(at 0 0 180)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "90da94ad-2d64-4874-9c0b-548ece678308")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Fit_NaIon_NoCold" "yes"
+		(at 0 0 180)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "088c6bd3-87cb-4890-ba80-59f3a6ff1c84")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value_NaIon_NoCold" "100uF"
+		(at 0 0 180)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "65f66476-d86b-4d74-9ed4-7a1f96a56a45")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "MPN_NaIon_NoCold" "C4532X5R1A107M280KC"
+		(at 0 0 180)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "1c3ece49-1802-4861-ae14-153670f0467c")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_rect
+		(start -3 -1.95)
+		(end 3 1.95)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "e2d9c4c3-c41d-489c-a1a5-e5eb7ad5ee47")
+	)
+	(fp_line
+		(start -1.161252 -1.71)
+		(end 1.161252 -1.71)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "95ffc48c-55ad-4fa4-81aa-061cc1e78b69")
+	)
+	(fp_line
+		(start -1.161252 1.71)
+		(end 1.161252 1.71)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "7fe14308-3ab1-48ed-8114-ea0f95172353")
+	)
+	(fp_rect
+		(start -2.25 -1.6)
+		(end 2.25 1.6)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "ad831418-cdd4-4257-8eac-3540ab0ece5e")
+	)
+	(fp_text user ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(uuid "4a6347f0-75e1-4558-855e-604716979c6a")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" smd roundrect
+		(at -2.05 0)
+		(size 1.4 3.4)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.178571)
+		(uuid "103d6390-d9d0-4e71-b905-8daa9176a0da")
+	)
+	(pad "2" smd roundrect
+		(at 2.05 0)
+		(size 1.4 3.4)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.178571)
+		(uuid "e507dafc-8bf1-497a-ac98-d59feb73ae28")
+	)
+	(embedded_fonts no)
+	(model "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_1812_4532Metric.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

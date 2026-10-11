@@ -16,3 +16,27 @@ __pycache__/
 *.map
 .DS_Store
 Thumbs.db
+# V2 intermediate renders and exploratory reports; final native checks retained.
+audit/manual/
+audit/routing_power/drc_*.json
+audit/routing_logic/drc_*.json
+audit/shield_singlelayer_probe.kicad_pro
+docs/mechanics/*.mesh.json.gz
+docs/mechanics/*_native_mesh.json.gz
+audit/routing_logic_star/before_*.kicad_pcb
+audit/routing_logic_star/drc_*.json
+!audit/routing_logic_star/drc_*_final.json
+# Промежуточные результаты
+
+audit/ground_diagnosis/
+audit/markings_logic/
+audit/markings_power/
+audit/library_variant_probe/
+audit/power_layout_candidate.png
+.publication_tmp/
+/tmp/
+# Large exported STEP transported losslessly as .step.gz; native libraries stay tracked.
+/output/POWER/MeshRepeater2_Power.step
+/output/LOGIC/MeshRepeater2_Logic.step
+/docs/mechanics/MeshRepeater2_assembly.step
+/docs/mechanics/MeshRepeater2_exploded.step

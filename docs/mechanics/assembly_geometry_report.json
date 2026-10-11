@@ -1,0 +1,259 @@
+{
+  "date": "2026-10-11",
+  "inputs": {
+    "POWER": {
+      "path": "output\\POWER\\MeshRepeater2_Power.step",
+      "sha256": "67aa28f699dc4103f7e43c1d614be31374268b69f1a675dbe16a995202efecd7",
+      "board_bbox": [
+        0.0,
+        -60.0,
+        0.0,
+        90.0,
+        0.0,
+        1.43
+      ],
+      "normalization": [
+        -0.0,
+        -0.0,
+        -1.475
+      ],
+      "measured_dielectric_thickness": 1.43,
+      "nominal_total_pcb_thickness": 1.52,
+      "physical_screen_core_plus_foil_thickness": null,
+      "anchoring_note": "Dielectric center plus half nominal PCB thickness defines the F outer plane. Native STEP component offset above copper is preserved; mask is not a STEP solid.",
+      "verified_pcb_source": {
+        "path": "design\\MeshRepeater2_Power\\MeshRepeater2_Power.kicad_pcb",
+        "sha256": "dd40232294bc3bfd88565f6843400ad10a68220e472d3d6cb3d7ac200152cf64",
+        "export_manifest": "output\\POWER\\MeshRepeater2_Power_exports.json"
+      }
+    },
+    "SHIELD": {
+      "path": "output\\SHIELD\\MeshRepeater2_Shield.step",
+      "sha256": "8c23e9ee3fb08ea45e552653249f9a4261b22061e22852d5904f20af8a7991f3",
+      "board_bbox": [
+        0.0,
+        -60.0,
+        0.0,
+        90.0,
+        0.0,
+        1.475
+      ],
+      "normalization": [
+        -0.0,
+        -0.0,
+        -1.51
+      ],
+      "measured_dielectric_thickness": 1.475,
+      "nominal_total_pcb_thickness": 1.52,
+      "physical_screen_core_plus_foil_thickness": 1.51,
+      "anchoring_note": "Front foil outer face anchored to the lower screen contact plane. Body plus single foil thickness measured from STEP.",
+      "verified_pcb_source": {
+        "path": "design\\MeshRepeater2_Shield\\MeshRepeater2_Shield.kicad_pcb",
+        "sha256": "4ba1d2a7b47dd392b2ac79fa9a7e10fbf8e98be6b8a3423c813d8530ddb25147",
+        "export_manifest": "output\\SHIELD\\MeshRepeater2_Shield_exports.json"
+      }
+    },
+    "LOGIC": {
+      "path": "output\\LOGIC\\MeshRepeater2_Logic.step",
+      "sha256": "6b95ca0d3273b60041c162ddf4f14cf0976e5a3b6bd86e3361059c5c1a33d8b7",
+      "board_bbox": [
+        0.0,
+        -60.0,
+        0.0,
+        90.0,
+        0.0,
+        1.43
+      ],
+      "normalization": [
+        -0.0,
+        -0.0,
+        -1.475
+      ],
+      "measured_dielectric_thickness": 1.43,
+      "nominal_total_pcb_thickness": 1.52,
+      "physical_screen_core_plus_foil_thickness": null,
+      "anchoring_note": "Dielectric center plus half nominal PCB thickness defines the F outer plane. Native STEP component offset above copper is preserved; mask is not a STEP solid.",
+      "verified_pcb_source": {
+        "path": "design\\MeshRepeater2_Logic\\MeshRepeater2_Logic.kicad_pcb",
+        "sha256": "2750624dc6c2c7e8b50089e66e5d9eef9c29aa3ee28541f72f54186b58dc9ceb",
+        "export_manifest": "output\\LOGIC\\MeshRepeater2_Logic_exports.json"
+      }
+    }
+  },
+  "coordinate_convention": "CAD X = native PCB X; CAD Y = \u2212physical PCB Y; CAD Z points up. LOGIC and SHIELD rotate 180\u00b0 about X.",
+  "stack_source": "docs/mechanical_selection.json",
+  "stack_contract_sha256": "199dfe4daebb9bd490bc6c704a8e08ce3ab3097e215a2fc8edaa3e331190e962",
+  "artifacts": {
+    "MeshRepeater2_assembly": {
+      "bbox_mm": [
+        -4.75,
+        -67.21000000000001,
+        -3.48,
+        93.25,
+        2.8000000000000025,
+        42.080000000000005
+      ],
+      "pcb_intersections": [
+        {
+          "a": "POWER",
+          "b": "SHIELD",
+          "intersecting_volume_mm3": 0.0,
+          "pass": true,
+          "method": "Disjoint axis-aligned bounding boxes prove no intersection."
+        },
+        {
+          "a": "SHIELD",
+          "b": "LOGIC",
+          "intersecting_volume_mm3": 0.0,
+          "pass": true,
+          "method": "Disjoint axis-aligned bounding boxes prove no intersection."
+        },
+        {
+          "a": "POWER",
+          "b": "LOGIC",
+          "intersecting_volume_mm3": 0.0,
+          "pass": true,
+          "method": "Disjoint axis-aligned bounding boxes prove no intersection."
+        }
+      ],
+      "vertical_envelope_clearances": {
+        "power_max_native_component_height_mm": 12.540000000000001,
+        "power_envelope_to_screen_mm": 5.959999999999992,
+        "logic_max_native_component_height_mm": 10.739999999999995,
+        "logic_envelope_to_screen_mm": 5.270000000000003,
+        "note": "Whole-export vertical envelope gaps are conservative. Values apply to the supplied models; undocumented NiceNano, SMA and modem models remain approximate."
+      },
+      "hardware_to_component_clearances": [
+        {
+          "pcb": "POWER",
+          "corner": 1,
+          "hardware_envelope": "Circumscribed M3 hex cylinder: valid for arbitrary angle. Ground contact planes and thread mating excluded.",
+          "minimum_component_distance_mm": null,
+          "proven_minimum_mm": 2.0,
+          "nearest": null,
+          "pass": true
+        },
+        {
+          "pcb": "POWER",
+          "corner": 2,
+          "hardware_envelope": "Circumscribed M3 hex cylinder: valid for arbitrary angle. Ground contact planes and thread mating excluded.",
+          "minimum_component_distance_mm": 1.4045735194570597,
+          "proven_minimum_mm": 1.4045735194570597,
+          "nearest": {
+            "component_solid": 70,
+            "distance_mm": 1.4045735194570597,
+            "component_bbox_mm": [
+              59.08,
+              -6.000000000000002,
+              1.5599999999999998,
+              81.92,
+              2.8000000000000016,
+              10.66
+            ]
+          },
+          "pass": true
+        },
+        {
+          "pcb": "POWER",
+          "corner": 3,
+          "hardware_envelope": "Circumscribed M3 hex cylinder: valid for arbitrary angle. Ground contact planes and thread mating excluded.",
+          "minimum_component_distance_mm": null,
+          "proven_minimum_mm": 2.0,
+          "nearest": null,
+          "pass": true
+        },
+        {
+          "pcb": "POWER",
+          "corner": 4,
+          "hardware_envelope": "Circumscribed M3 hex cylinder: valid for arbitrary angle. Ground contact planes and thread mating excluded.",
+          "minimum_component_distance_mm": null,
+          "proven_minimum_mm": 2.0,
+          "nearest": null,
+          "pass": true
+        },
+        {
+          "pcb": "LOGIC",
+          "corner": 1,
+          "hardware_envelope": "Circumscribed M3 hex cylinder: valid for arbitrary angle. Ground contact planes and thread mating excluded.",
+          "minimum_component_distance_mm": null,
+          "proven_minimum_mm": 2.0,
+          "nearest": null,
+          "pass": true
+        },
+        {
+          "pcb": "LOGIC",
+          "corner": 2,
+          "hardware_envelope": "Circumscribed M3 hex cylinder: valid for arbitrary angle. Ground contact planes and thread mating excluded.",
+          "minimum_component_distance_mm": 1.4045735194570597,
+          "proven_minimum_mm": 1.4045735194570597,
+          "nearest": {
+            "component_solid": 73,
+            "distance_mm": 1.4045735194570597,
+            "component_bbox_mm": [
+              59.08,
+              -6.000000000000002,
+              28.39999999999999,
+              81.92,
+              2.8000000000000025,
+              37.49999999999999
+            ]
+          },
+          "pass": true
+        },
+        {
+          "pcb": "LOGIC",
+          "corner": 3,
+          "hardware_envelope": "Circumscribed M3 hex cylinder: valid for arbitrary angle. Ground contact planes and thread mating excluded.",
+          "minimum_component_distance_mm": null,
+          "proven_minimum_mm": 2.0,
+          "nearest": null,
+          "pass": true
+        },
+        {
+          "pcb": "LOGIC",
+          "corner": 4,
+          "hardware_envelope": "Circumscribed M3 hex cylinder: valid for arbitrary angle. Ground contact planes and thread mating excluded.",
+          "minimum_component_distance_mm": null,
+          "proven_minimum_mm": 2.0,
+          "nearest": null,
+          "pass": true
+        }
+      ],
+      "edge_svg_requested": false,
+      "edge_svg_error": null,
+      "includes": [
+        "Native PCB STEP components",
+        "Standoff, washer, screw and nut outer envelopes"
+      ],
+      "excludes": [
+        "External harness and female connector mating",
+        "Thread profiles and unmeasured usable female thread depth"
+      ],
+      "qualification": "Native PCB geometry and a nominal mechanical stack only. Actual modules, threaded fasteners and harness mating are not qualified by these models."
+    },
+    "MeshRepeater2_exploded": {
+      "bbox_mm": [
+        -4.75,
+        -67.21000000000001,
+        -3.48,
+        93.25,
+        2.8000000000000025,
+        92.08
+      ],
+      "pcb_intersections": [],
+      "vertical_envelope_clearances": null,
+      "hardware_to_component_clearances": [],
+      "edge_svg_requested": false,
+      "edge_svg_error": null,
+      "includes": [
+        "Native PCB STEP components",
+        "Standoff, washer, screw and nut outer envelopes"
+      ],
+      "excludes": [
+        "External harness and female connector mating",
+        "Thread profiles and unmeasured usable female thread depth"
+      ],
+      "qualification": "Native PCB geometry and a nominal mechanical stack only. Actual modules, threaded fasteners and harness mating are not qualified by these models."
+    }
+  }
+}

@@ -1,0 +1,328 @@
+(footprint "C_0805_2012Metric__V2_C24"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(locked yes)
+	(layer "F.Cu")
+	(descr "Capacitor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf, https://docs.google.com/spreadsheets/d/1BsfQQcO9C6DZCsRaXUlFlo91Tg2WpOkGARC1WS5S8t0/edit?usp=sharing)")
+	(tags "capacitor")
+	(property "Reference" "REF**"
+		(at -4.5 -0.500001 270)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "6a906f9c-ce6d-4ff2-a7ce-aa09b03bc2b9")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Value" "C_0805_2012Metric__V2_C24"
+		(at 0 1.68 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "1dc7c953-cfdc-4bef-9d2b-cc49a589a387")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "d2339ca8-5b25-42df-a92e-1e45b0b87281")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" "Local100nF radio bypass directly between M2 VCC/GND, afterFB1."
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "723df83f-7e45-4dc4-91ef-21b3af8563c8")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "KiLib_Generator" "SMD_2terminal_chip_molded"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "2124b6af-b0c8-489b-9b47-c2fe4bf49965")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "MPN" "CL21B104KBCNNNC"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "96b1bfd2-895e-431a-af49-cad3f1cf2925")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "LCSC" ""
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "033fcd70-d1b7-483d-9992-65c7e0056c8a")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Vendor" "Danomsk"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "eec0fe9e-1932-4a6b-9af5-3fb49c032608")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Vendor URL" "https://www.danomsk.ru/shop/5-kondensatory/89-kondensatory-keramicheskie/732-kondensatory-smd-0805/196705-chip-kond-0805-x7r-0-10uf-10-50v-cl21b104kbcnnnc-cc0805-sam/"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "4a1bd2ff-5619-427f-9ed0-6cab419d9f4e")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Fit_NaIon" "yes"
+		(at 0 0 90)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "065ac5aa-ddc6-4de1-b1f4-96366e0752a6")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Fit_LTO_2S" "yes"
+		(at 0 0 90)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "81a993a8-a934-4ef9-ba48-b6c7b95621cf")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value_NaIon" "100nF 50V X7R"
+		(at 0 0 90)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "cadf6949-9d60-4d3a-af2b-4a104d683e83")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value_LTO_2S" "100nF 50V X7R"
+		(at 0 0 90)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "54a74e68-c384-4534-b999-bedcfe662953")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Assembly" "Na-ion: FIT; LTO 2S: FIT"
+		(at 0 0 90)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "ac7fabc7-21f5-42a1-bf70-137e2ab2f271")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Nominal" "100nF"
+		(at -8.020024 -0.500001 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "1ec9c5d9-cea7-4af2-9731-6a5e3ad901be")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "MPN_NaIon" "CL21B104KBCNNNC"
+		(at 0 0 90)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "6c35fc8d-ff79-428e-85db-a169a6f1042e")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "MPN_LTO_2S" "CL21B104KBCNNNC"
+		(at 0 0 90)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "f9f23d83-d525-4d29-ace9-25b6ec29d2ad")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Fit_NaIon_NoCold" "yes"
+		(at 0 0 270)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "ac9e0b12-928d-4cf5-adee-f5e17b0963c2")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value_NaIon_NoCold" "100nF 50V X7R"
+		(at 0 0 270)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "caa74382-0684-4b2d-8a89-6ac8e18eacfb")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "MPN_NaIon_NoCold" "CL21B104KBCNNNC"
+		(at 0 0 270)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "90deff81-19e5-47a2-90a3-1fd9bb999819")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_rect
+		(start -1.7 -0.98)
+		(end 1.7 0.98)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "1fc2910c-4593-465c-9188-45f44d643c71")
+	)
+	(fp_line
+		(start -0.261252 -0.735)
+		(end 0.261252 -0.735)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "7fba0e4d-2586-4716-8706-27d792e6e011")
+	)
+	(fp_line
+		(start -0.261252 0.735)
+		(end 0.261252 0.735)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "d505109a-29f7-4107-b96d-7584d92ffd7c")
+	)
+	(fp_rect
+		(start -1 -0.625)
+		(end 1 0.625)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "acfe4464-6ef5-4bc8-b87e-8ec86a1d2650")
+	)
+	(fp_text user ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(uuid "725a7f74-d2d1-4964-a78f-ced249b5c609")
+		(effects
+			(font
+				(size 0.5 0.5)
+				(thickness 0.08)
+			)
+		)
+	)
+	(pad "1" smd roundrect
+		(at -0.95 0)
+		(size 1 1.45)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.25)
+		(uuid "c79afbf7-f91e-4c28-927a-246b81ab7fb2")
+	)
+	(pad "2" smd roundrect
+		(at 0.95 0)
+		(size 1 1.45)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.25)
+		(uuid "a940e4af-ab3b-4d9e-b17f-d1d783da8633")
+	)
+	(embedded_fonts no)
+	(model "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

@@ -1,0 +1,41 @@
+{
+  "stage": "SAVED_MODEL_COMPONENT_INVENTORY_NOT_FULL_PROCUREMENT_RELEASE",
+  "date": "2026-10-11",
+  "baseline_commit": "cf54f9970e716272d477afdb252b4e195d595cb6",
+  "inputs": {
+    "design/v2_electrical_contract.json": "478b416c5fa28fbe4cebbc594eb1b519e90cb6c393aba6f58130b6fecffdac08",
+    "docs/mechanical_selection.json": "199dfe4daebb9bd490bc6c704a8e08ce3ab3097e215a2fc8edaa3e331190e962",
+    "design/MeshRepeater2_Power/model.json": "4ae809f8dabec401a68c193432beecf15771c0c0392094c52c7d423df961b07b",
+    "audit/MeshRepeater2_Power_footprint_variants.json": "3a5ccefd8bf259c2c61afbfdc73906a9878f15504cfa7df9b0e89055b8e35239",
+    "design/MeshRepeater2_Logic/model.json": "ef66e50d9971793f8a913534b8ea54fcb36d475d0f10a778d47b498b215070db",
+    "audit/MeshRepeater2_Logic_footprint_variants.json": "961b078f28e8b18ff2f62245e6ca12cac8e33d88da08eb229b6c036f85454bd9"
+  },
+  "snapshot_stable": true,
+  "changed_inputs": [],
+  "rows": 172,
+  "baseline_original_positions": 167,
+  "original_positions_retained": 166,
+  "explicit_removed_mechanical_positions": [
+    {
+      "baseline_reference": "SH1",
+      "kind": "mechanical_frame",
+      "decision": "removed_after_independent_geometry_review",
+      "fit_all_variants": "no",
+      "buy_all_variants": "no",
+      "proof": "audit/v2_frame_mount_review.json",
+      "electrical_scope": "No functional circuit/variant change; original four GND frame lands removed with the mechanical frame"
+    }
+  ],
+  "baseline_positions_fully_accounted": true,
+  "bom_sha256": "a16dc5dc76ce541ad15de3193ce359ae23a9f02d0c275ba0d78183dfc0ec6dc8",
+  "excludes": [
+    "external cable housings and contacts",
+    "ribbon cable and strain relief",
+    "shunt",
+    "spacers/bolts/nuts/washers",
+    "separate battery cell purchase",
+    "SH1 removed by explicit mechanical decision"
+  ],
+  "additional_procurement_list": "DAN_NEW_PARTS (prepared by mechanical selection task)",
+  "model_selection_sync_pending_refs": []
+}

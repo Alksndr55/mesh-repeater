@@ -1,0 +1,214 @@
+{
+  "final_pcb_sha256": "dd40232294bc3bfd88565f6843400ad10a68220e472d3d6cb3d7ac200152cf64",
+  "native_drc_sha256": "83c9ded6c0deeef688a8c017ab31f103c207c98502cc294cf86828d963cfa99e",
+  "native_drc": {
+    "violations": 0,
+    "unconnected_items": 0,
+    "schematic_parity": 0,
+    "ignored": []
+  },
+  "C53_final_pose_mm": [
+    48.0,
+    11.9
+  ],
+  "main_feed": {
+    "start": [
+      "J8",
+      "1"
+    ],
+    "end": [
+      "U2",
+      "10"
+    ],
+    "found_without_zones": true,
+    "route_segment_length_mm": 38.271068,
+    "widths_mm": [
+      0.25,
+      0.6,
+      0.8
+    ],
+    "via_drills_mm": [
+      0.3,
+      0.3,
+      0.3,
+      0.3
+    ],
+    "assumed_current_A": 1.25,
+    "one_route_R20_mohm": 30.933022070666034,
+    "one_route_drop20_mV": 38.66627758833254,
+    "one_route_copper_loss20_mW": 48.33284698541568,
+    "track_UUIDs": [
+      "fb73ff6d-5e0d-4212-ac24-95ebc086f348",
+      "685a5e6f-a2f7-48da-a56b-33a91d711988",
+      "1ea03e15-f0fb-4168-92b8-c1672299b68a",
+      "0eeaa0eb-fe94-415e-a674-d88a91c6d1f1",
+      "5b92603b-06b4-4b8b-b5d2-c2ca720839e7",
+      "eb68f086-d778-48fe-a0fd-302372523454",
+      "55a2391d-3243-4c98-9835-012d191b9220",
+      "5eeb2e38-822a-4c38-9f94-b7035e7da144",
+      "dd9f5f6b-57bb-4c0d-892a-4510d76dad3e",
+      "62bf42ee-3359-4c3f-99e9-c328fbb07184",
+      "858b3f6c-d2ea-4e08-addc-62efddd817aa",
+      "326ae40f-eeb0-4196-9a5e-bb2cdc785f95",
+      "1fc2e57b-3ecf-490a-b885-d4be15b8fd18",
+      "3a4abe5d-dbb2-46d5-8fbd-35415c7bab5f"
+    ],
+    "via_UUIDs": [
+      "8fb87779-262e-4d72-b875-d02a1bff57f4",
+      "638d1eae-bbf4-4341-a942-6f0c841a813b",
+      "0e1fe8ee-59e1-4b3e-9264-9202bf408f0b",
+      "6b44c926-7d7e-44e5-8a94-390d34b93dbd"
+    ],
+    "pads_traversed": [
+      [
+        "J8",
+        "1"
+      ],
+      [
+        "C53",
+        "1"
+      ],
+      [
+        "U2",
+        "10"
+      ]
+    ]
+  },
+  "J8_to_C53": {
+    "start": [
+      "J8",
+      "1"
+    ],
+    "end": [
+      "C53",
+      "1"
+    ],
+    "found_without_zones": true,
+    "route_segment_length_mm": 27.796068,
+    "widths_mm": [
+      0.8
+    ],
+    "via_drills_mm": [
+      0.3,
+      0.3
+    ],
+    "assumed_current_A": 1.25,
+    "one_route_R20_mohm": 19.894851673604933,
+    "one_route_drop20_mV": 24.86856459200617,
+    "one_route_copper_loss20_mW": 31.08570574000771,
+    "track_UUIDs": [
+      "fb73ff6d-5e0d-4212-ac24-95ebc086f348",
+      "685a5e6f-a2f7-48da-a56b-33a91d711988",
+      "1ea03e15-f0fb-4168-92b8-c1672299b68a",
+      "0eeaa0eb-fe94-415e-a674-d88a91c6d1f1",
+      "5b92603b-06b4-4b8b-b5d2-c2ca720839e7",
+      "eb68f086-d778-48fe-a0fd-302372523454",
+      "55a2391d-3243-4c98-9835-012d191b9220",
+      "5eeb2e38-822a-4c38-9f94-b7035e7da144"
+    ],
+    "via_UUIDs": [
+      "8fb87779-262e-4d72-b875-d02a1bff57f4",
+      "638d1eae-bbf4-4341-a942-6f0c841a813b"
+    ],
+    "pads_traversed": [
+      [
+        "J8",
+        "1"
+      ],
+      [
+        "C53",
+        "1"
+      ]
+    ]
+  },
+  "C53_to_TPS": {
+    "start": [
+      "C53",
+      "1"
+    ],
+    "end": [
+      "U2",
+      "10"
+    ],
+    "found_without_zones": true,
+    "route_segment_length_mm": 10.475,
+    "widths_mm": [
+      0.25,
+      0.6,
+      0.8
+    ],
+    "via_drills_mm": [
+      0.3,
+      0.3
+    ],
+    "assumed_current_A": 1.25,
+    "one_route_R20_mohm": 11.038170397061096,
+    "one_route_drop20_mV": 13.79771299632637,
+    "one_route_copper_loss20_mW": 17.247141245407963,
+    "track_UUIDs": [
+      "dd9f5f6b-57bb-4c0d-892a-4510d76dad3e",
+      "62bf42ee-3359-4c3f-99e9-c328fbb07184",
+      "858b3f6c-d2ea-4e08-addc-62efddd817aa",
+      "326ae40f-eeb0-4196-9a5e-bb2cdc785f95",
+      "1fc2e57b-3ecf-490a-b885-d4be15b8fd18",
+      "3a4abe5d-dbb2-46d5-8fbd-35415c7bab5f"
+    ],
+    "via_UUIDs": [
+      "0e1fe8ee-59e1-4b3e-9264-9202bf408f0b",
+      "6b44c926-7d7e-44e5-8a94-390d34b93dbd"
+    ],
+    "pads_traversed": [
+      [
+        "C53",
+        "1"
+      ],
+      [
+        "U2",
+        "10"
+      ]
+    ]
+  },
+  "sense_feed": {
+    "start": [
+      "J8",
+      "1"
+    ],
+    "end": [
+      "J101",
+      "9"
+    ],
+    "found_without_zones": true,
+    "route_segment_length_mm": 54.856349,
+    "widths_mm": [
+      0.25
+    ],
+    "via_drills_mm": [],
+    "assumed_current_A": 1.25e-06,
+    "one_route_R20_mohm": 108.08268113924962,
+    "one_route_drop20_mV": 0.00013510335142406202,
+    "one_route_copper_loss20_mW": 1.6887918928007755e-10,
+    "track_UUIDs": [
+      "6d0dd9a8-0e63-4812-92b2-79c6ceca2d1c",
+      "15bdf507-9833-4f8e-95bd-fedd79c5fcaf",
+      "0e73f8a4-5bea-4fbf-b7d4-022c91af8d29",
+      "362cdd9f-6179-47c5-bdcc-c018dfe4ea35",
+      "84f8fe5d-8845-4278-91ec-c3bbc69ca13f",
+      "df5f3291-26e7-4159-8ebc-ec8bf3ebe4dd",
+      "9af4b1c7-6d0e-49c4-ab09-77e37beaedb5"
+    ],
+    "via_UUIDs": [],
+    "pads_traversed": [
+      [
+        "J8",
+        "1"
+      ],
+      [
+        "J101",
+        "9"
+      ]
+    ]
+  },
+  "main_route_touches_C53_1": true,
+  "shared_main_and_kelvin_track_UUIDs": [],
+  "assumptions": "One complete native segment route,35umCu,20C; contact and cable resistance excluded; not transient/EMI certification."
+}

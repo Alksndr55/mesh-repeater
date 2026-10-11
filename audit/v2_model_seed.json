@@ -1,0 +1,34 @@
+{
+  "stage": "INITIAL_NOT_FINAL_CAD",
+  "source_pcb_sha256": "742ae27bb1d13893f6dc368e5c67f5c41b35a3e6765331fc7e9871297d23dec6",
+  "projects": {
+    "POWER": {
+      "project": "MeshRepeater2_Power",
+      "original_parts": 115,
+      "total_parts": 116,
+      "interboard": "J101",
+      "position_status": "provisional",
+      "model_sha256": "351ace2ae8979e4abcbdb90320e8debe009d8a8a69573d3f4ddbaba3ec0bfd98"
+    },
+    "LOGIC": {
+      "project": "MeshRepeater2_Logic",
+      "original_parts": 52,
+      "total_parts": 57,
+      "interboard": "J201",
+      "position_status": "provisional",
+      "model_sha256": "a308ad256e48e61491a7f6009d80127c821b8896547a84e737135e1eaec7c38e"
+    }
+  },
+  "original_refs_allocated": 167,
+  "original_default_values_changed": [],
+  "mechanical_replacements_pending": [
+    "J7",
+    "J8",
+    "J12",
+    "J11",
+    "SW1",
+    "SW2",
+    "J101",
+    "J201"
+  ]
+}

@@ -1,0 +1,8 @@
+(footprint "Shield_Foil_GND_Anchor" (version 20260206) (generator "pcbnew")
+ (layer "F.Cu") (descr "Hidden copper-only GND anchor; not an electronic part; no mask or paste aperture")
+ (attr board_only exclude_from_pos_files exclude_from_bom)
+ (fp_text reference "GF1" (at 0 0) (layer "F.Fab") hide (effects (font (size 1 1) (thickness 0.1))))
+ (fp_text value "Shield_Foil_GND_Anchor" (at 0 0) (layer "F.Fab") hide (effects (font (size 1 1) (thickness 0.1))))
+ (fp_rect (start -0.2 -0.2) (end 0.2 0.2) (stroke (width 0.05) (type default)) (fill none) (layer "F.CrtYd"))
+ (pad "1" smd rect (at 0 0) (size 0.2 0.2) (layers "F.Cu") (zone_connect 2))
+)

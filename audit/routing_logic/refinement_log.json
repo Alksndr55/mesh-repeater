@@ -1,0 +1,67 @@
+{
+  "changes": [
+    {
+      "connector_shift": "J201",
+      "from": [
+        77.85,
+        49.0
+      ],
+      "to": [
+        76.85,
+        49
+      ],
+      "clearance_reason": "1mm added to washer/hex-standoff clearance"
+    },
+    {
+      "remove_obsolete_stub_or_conflicting_ground_stitch": "e224961c-9ce3-498a-9587-031ef8cf2214",
+      "net": "/RADIO_RXEN",
+      "position": [
+        55.1,
+        26.3
+      ]
+    },
+    {
+      "remove_obsolete_stub_or_conflicting_ground_stitch": "274a6842-1227-4d9a-b0b7-f7b005e82203",
+      "net": "MODE",
+      "position": [
+        48.3262,
+        46.4266
+      ]
+    },
+    {
+      "remove_obsolete_stub_or_conflicting_ground_stitch": "a5a3715d-a2a9-4061-9e43-60f82a0ddde8",
+      "net": "SYS_3V3",
+      "position": [
+        31.5,
+        14.45
+      ]
+    },
+    {
+      "remove_obsolete_stub_or_conflicting_ground_stitch": "2e7cbf4a-d433-404a-adeb-32736631feb6",
+      "net": "/RADIO_RXEN",
+      "position": [
+        9.3,
+        16.0
+      ]
+    },
+    {
+      "remove_obsolete_stub_or_conflicting_ground_stitch": "1982fc62-0179-4dd8-bbfc-f25fc01bc4a1",
+      "net": "/RADIO_RXEN",
+      "position": [
+        57.5,
+        23.9
+      ]
+    },
+    {
+      "remove_obsolete_stub_or_conflicting_ground_stitch": "8d049dac-71a0-4a52-850a-1bc08aed10d5",
+      "net": "/RADIO_RXEN",
+      "position": [
+        10.4,
+        16.0
+      ]
+    }
+  ],
+  "final_report": "audit\\routing_logic\\drc_refine_2.json",
+  "unconnected": 2,
+  "parity": 0
+}

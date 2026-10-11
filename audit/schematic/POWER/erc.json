@@ -1,0 +1,40 @@
+{
+    "$schema": "https://schemas.kicad.org/erc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-10-11T23:30:38",
+    "ignored_checks": [],
+    "included_severities": [
+        "error",
+        "warning",
+        "exclusion"
+    ],
+    "kicad_version": "10.0.6",
+    "sheets": [
+        {
+            "path": "/",
+            "uuid_path": "/4936dedf-697f-5d13-9744-01d670b7457a",
+            "violations": []
+        },
+        {
+            "path": "/2. Converter/",
+            "uuid_path": "/4936dedf-697f-5d13-9744-01d670b7457a/c6347a5b-cf03-5861-98ac-e2c1a7088209",
+            "violations": []
+        },
+        {
+            "path": "/3. LTO_Balancer/",
+            "uuid_path": "/4936dedf-697f-5d13-9744-01d670b7457a/b94b0400-37ec-5d3b-b4f2-af41f4a10e9c",
+            "violations": []
+        },
+        {
+            "path": "/4. Thermal/",
+            "uuid_path": "/4936dedf-697f-5d13-9744-01d670b7457a/e2d8a33e-0cfd-53b0-af40-1bc9c9cc1820",
+            "violations": []
+        },
+        {
+            "path": "/5. Interconnect/",
+            "uuid_path": "/4936dedf-697f-5d13-9744-01d670b7457a/ee8c890a-b94c-5d31-a2d6-e6deaf06236d",
+            "violations": []
+        }
+    ],
+    "source": "MeshRepeater2_Power.kicad_sch"
+}

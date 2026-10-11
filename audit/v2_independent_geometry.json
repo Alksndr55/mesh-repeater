@@ -1,0 +1,238 @@
+{
+  "stage": "FINAL_READ_ONLY_NATIVE_GEOMETRY",
+  "PCB_modified": false,
+  "boards": {
+    "Power": {
+      "source_sha256": "dd40232294bc3bfd88565f6843400ad10a68220e472d3d6cb3d7ac200152cf64",
+      "source_stable": true,
+      "raw_edge_bounds_mm": [
+        0.0,
+        0.0,
+        90.0,
+        60.0
+      ],
+      "dimension_mm": [
+        90.0,
+        60.0
+      ],
+      "copper_layers_container": 2,
+      "native_total_mm": 1.52,
+      "mount_holes": [
+        {
+          "ref": "H1",
+          "xy_mm": [
+            3.5,
+            3.5
+          ],
+          "net": "GND",
+          "pad_size_mm": [
+            6.0,
+            6.0
+          ],
+          "mask_front": true,
+          "mask_back": true
+        },
+        {
+          "ref": "H4",
+          "xy_mm": [
+            86.5,
+            56.5
+          ],
+          "net": "GND",
+          "pad_size_mm": [
+            6.0,
+            6.0
+          ],
+          "mask_front": true,
+          "mask_back": true
+        },
+        {
+          "ref": "H2",
+          "xy_mm": [
+            86.5,
+            3.5
+          ],
+          "net": "GND",
+          "pad_size_mm": [
+            6.0,
+            6.0
+          ],
+          "mask_front": true,
+          "mask_back": true
+        },
+        {
+          "ref": "H3",
+          "xy_mm": [
+            3.5,
+            56.5
+          ],
+          "net": "GND",
+          "pad_size_mm": [
+            6.0,
+            6.0
+          ],
+          "mask_front": true,
+          "mask_back": true
+        }
+      ],
+      "functional_component_sides": [
+        "F.Cu"
+      ]
+    },
+    "Logic": {
+      "source_sha256": "2750624dc6c2c7e8b50089e66e5d9eef9c29aa3ee28541f72f54186b58dc9ceb",
+      "source_stable": true,
+      "raw_edge_bounds_mm": [
+        0.0,
+        0.0,
+        90.0,
+        60.0
+      ],
+      "dimension_mm": [
+        90.0,
+        60.0
+      ],
+      "copper_layers_container": 2,
+      "native_total_mm": 1.52,
+      "mount_holes": [
+        {
+          "ref": "H203",
+          "xy_mm": [
+            3.5,
+            56.5
+          ],
+          "net": "GND",
+          "pad_size_mm": [
+            6.0,
+            6.0
+          ],
+          "mask_front": true,
+          "mask_back": true
+        },
+        {
+          "ref": "H201",
+          "xy_mm": [
+            3.5,
+            3.5
+          ],
+          "net": "GND",
+          "pad_size_mm": [
+            6.0,
+            6.0
+          ],
+          "mask_front": true,
+          "mask_back": true
+        },
+        {
+          "ref": "H204",
+          "xy_mm": [
+            86.5,
+            56.5
+          ],
+          "net": "GND",
+          "pad_size_mm": [
+            6.0,
+            6.0
+          ],
+          "mask_front": true,
+          "mask_back": true
+        },
+        {
+          "ref": "H202",
+          "xy_mm": [
+            86.5,
+            3.5
+          ],
+          "net": "GND",
+          "pad_size_mm": [
+            6.0,
+            6.0
+          ],
+          "mask_front": true,
+          "mask_back": true
+        }
+      ],
+      "functional_component_sides": [
+        "F.Cu"
+      ]
+    },
+    "Shield": {
+      "source_sha256": "4ba1d2a7b47dd392b2ac79fa9a7e10fbf8e98be6b8a3423c813d8530ddb25147",
+      "source_stable": true,
+      "raw_edge_bounds_mm": [
+        0.0,
+        0.0,
+        90.0,
+        60.0
+      ],
+      "dimension_mm": [
+        90.0,
+        60.0
+      ],
+      "copper_layers_container": 2,
+      "native_total_mm": 1.52,
+      "mount_holes": [
+        {
+          "ref": "H304",
+          "xy_mm": [
+            86.5,
+            56.5
+          ],
+          "net": "",
+          "pad_size_mm": [
+            3.2,
+            3.2
+          ],
+          "mask_front": true,
+          "mask_back": true
+        },
+        {
+          "ref": "H303",
+          "xy_mm": [
+            3.5,
+            56.5
+          ],
+          "net": "",
+          "pad_size_mm": [
+            3.2,
+            3.2
+          ],
+          "mask_front": true,
+          "mask_back": true
+        },
+        {
+          "ref": "H302",
+          "xy_mm": [
+            86.5,
+            3.5
+          ],
+          "net": "",
+          "pad_size_mm": [
+            3.2,
+            3.2
+          ],
+          "mask_front": true,
+          "mask_back": true
+        },
+        {
+          "ref": "H301",
+          "xy_mm": [
+            3.5,
+            3.5
+          ],
+          "net": "",
+          "pad_size_mm": [
+            3.2,
+            3.2
+          ],
+          "mask_front": true,
+          "mask_back": true
+        }
+      ],
+      "functional_component_sides": []
+    }
+  },
+  "all_dimensions_90x60": true,
+  "all_holes_aligned": true,
+  "scope_limit": "Physical connector/body clearance, module dimensions, LED views, labels and thread engagement require separate final assembly/source QA; no actual assembled sample checked."
+}

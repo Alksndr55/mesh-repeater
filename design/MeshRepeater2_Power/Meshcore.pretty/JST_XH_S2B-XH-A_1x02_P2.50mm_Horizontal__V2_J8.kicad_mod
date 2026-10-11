@@ -1,0 +1,296 @@
+(footprint "JST_XH_S2B-XH-A_1x02_P2.50mm_Horizontal__V2_J8"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "JST S2B-XH-A(LF)(SN). Drawing: https://www.danomsk.ru/upload/iblock/11a/167075_e8e7acdd79497cc6a7262e2649317f11.pdf#page=3. Simplified envelope STEP model.")
+	(property "Reference" "REF**"
+		(at 1.25 -10.2 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "fe6c34a6-8894-4c71-92d4-34ceec02fe17")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.12)
+			)
+		)
+	)
+	(property "Value" "JST_XH_S2B-XH-A_1x02_P2.50mm_Horizontal__V2_J8"
+		(at 1.25 3.3 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "878cbb2a-3fa4-42ec-9c4b-75fc9e575efa")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.12)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "24518db8-3d6c-4807-a802-7ae591f465c3")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" "Mechanical v2 package; original functional pin numbers retained."
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "5774e153-db70-4d58-9d22-ae786a360d32")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "MPN" "JST S2B-XH-A(LF)(SN)"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "0005ac83-735e-46d6-931d-232b1e514f47")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "LCSC" ""
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "ffe6dd9b-3db1-4e69-8263-d7d8814b0c93")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Vendor" "Danomsk"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "c016266f-65b4-47f5-ab9c-ed3ef2b75f21")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Vendor URL" "https://www.danomsk.ru/shop/7-kommutatsiya/121-razemy/306-soediniteli-pryamougolnye/167075-cwf-2r-xh-02mr-s2b-xh-a-lf-sn-vilka-na-platu-uglovaya-2-50mm-uglovaya-zakrytaya-jst/"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "3bff393e-374a-4643-a868-823736675aa9")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Fit_NaIon" "yes"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "af995907-77a2-48b0-b924-be08fea1d107")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Fit_LTO_2S" "yes"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "f65232fe-d18a-4fd1-96b5-3a5f822ff40b")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value_NaIon" "Na-ion 1S"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "ea178e36-d5b0-4b49-b7fc-4be20b22e69b")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value_LTO_2S" "Na-ion 1S"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "679e7bdc-29e9-4193-8906-665750f6f94c")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Assembly" "Na-ion: FIT; LTO 2S: FIT"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "c027f69d-dcc4-4101-8ff9-b8236a56420a")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Nominal" "BAT"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "285615b2-3456-4c7f-aab1-e932cf64f6c5")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "MPN_NaIon" "JST S2B-XH-A(LF)(SN)"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "c2f1a897-f70d-49e0-ba08-9e87dee23d6a")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "MPN_LTO_2S" "JST S2B-XH-A(LF)(SN)"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "9ceb0105-76e0-4b0c-b97a-fe74c1cad470")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Fit_NaIon_NoCold" "yes"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "96720341-130d-4f2f-98e5-86e51eef01ad")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value_NaIon_NoCold" "Na-ion 1S"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "98226815-5a01-4c02-a79b-3cb9773990a6")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "MPN_NaIon_NoCold" "JST S2B-XH-A(LF)(SN)"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "1b76c801-ca74-437d-ae17-1433bf9569a5")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr through_hole)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_rect
+		(start -2.7 -9.45)
+		(end 5.2 2.55)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "8fe35695-a727-47d6-a2df-87565665d6b3")
+	)
+	(fp_rect
+		(start -2.55 -9.3)
+		(end 5.05 2.4)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "3499d32a-5df8-4ebd-8118-dcaace353c97")
+	)
+	(fp_rect
+		(start -2.45 -9.2)
+		(end 4.95 2.3)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "bb21000d-f424-4373-a530-93adef6376d4")
+	)
+	(pad "1" thru_hole rect
+		(at 0 0)
+		(size 1.8 1.8)
+		(drill 1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "a2a81d19-8c4c-4e25-ae6a-b6752d8e1d00")
+	)
+	(pad "2" thru_hole circle
+		(at 2.5 0)
+		(size 1.8 1.8)
+		(drill 1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "c995c0d2-dced-4ec7-aec2-f42a50cc4b51")
+	)
+	(embedded_fonts no)
+	(model "${KIPRJMOD}/3dmodels/JST_XH_S2B-XH-A_1x02_P2.50mm_Horizontal.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

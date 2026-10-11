@@ -1,0 +1,155 @@
+{
+  "project": "Mesh Repeater2.0",
+  "revision": "V2_CABLE_A2",
+  "status": "ELECTRICAL_AND_HEADER_GEOMETRY_FIXED_SAMPLE_MATING_PENDING",
+  "date": "2026-10-11",
+  "connector_POWER": "J101",
+  "connector_LOGIC": "J201",
+  "contacts": 12,
+  "cable_route": "North/common physical edge; harness outside continuous90x60 shield. Planned loop envelope Y<=-23mm; no shield opening. Both headers shifted1mm left for standoff clearance.",
+  "geometry_status": "Header footprints match manufacturer drawings; complete mate depth/strain-relief and120mm harness length require sample. Upper board X180; explicitly verify all12wires1:1.",
+  "connections": [
+    {
+      "net": "FILTER_OUT",
+      "power": {
+        "ref": "J101",
+        "pin": "1"
+      },
+      "logic": {
+        "ref": "J201",
+        "pin": "1"
+      }
+    },
+    {
+      "net": "GND",
+      "power": {
+        "ref": "J101",
+        "pin": "2"
+      },
+      "logic": {
+        "ref": "J201",
+        "pin": "2"
+      }
+    },
+    {
+      "net": "FILTER_OUT",
+      "power": {
+        "ref": "J101",
+        "pin": "3"
+      },
+      "logic": {
+        "ref": "J201",
+        "pin": "3"
+      }
+    },
+    {
+      "net": "GND",
+      "power": {
+        "ref": "J101",
+        "pin": "4"
+      },
+      "logic": {
+        "ref": "J201",
+        "pin": "4"
+      }
+    },
+    {
+      "net": "FILTER_OUT",
+      "power": {
+        "ref": "J101",
+        "pin": "5"
+      },
+      "logic": {
+        "ref": "J201",
+        "pin": "5"
+      }
+    },
+    {
+      "net": "GND",
+      "power": {
+        "ref": "J101",
+        "pin": "6"
+      },
+      "logic": {
+        "ref": "J201",
+        "pin": "6"
+      }
+    },
+    {
+      "net": "FILTER_OUT",
+      "power": {
+        "ref": "J101",
+        "pin": "7"
+      },
+      "logic": {
+        "ref": "J201",
+        "pin": "7"
+      }
+    },
+    {
+      "net": "GND",
+      "power": {
+        "ref": "J101",
+        "pin": "8"
+      },
+      "logic": {
+        "ref": "J201",
+        "pin": "8"
+      }
+    },
+    {
+      "net": "BAT",
+      "power": {
+        "ref": "J101",
+        "pin": "9"
+      },
+      "logic": {
+        "ref": "J201",
+        "pin": "9"
+      }
+    },
+    {
+      "net": "GND",
+      "power": {
+        "ref": "J101",
+        "pin": "10"
+      },
+      "logic": {
+        "ref": "J201",
+        "pin": "10"
+      }
+    },
+    {
+      "net": "MODE",
+      "power": {
+        "ref": "J101",
+        "pin": "11"
+      },
+      "logic": {
+        "ref": "J201",
+        "pin": "11"
+      }
+    },
+    {
+      "net": "GND",
+      "power": {
+        "ref": "J101",
+        "pin": "12"
+      },
+      "logic": {
+        "ref": "J201",
+        "pin": "12"
+      }
+    }
+  ],
+  "current_design_A": 0.5,
+  "qualification": "Every individual FILTER_OUT/GND contact rated for full0.5A design load. Four parallel power contacts do not automatically multiply rated current. Check start/load pulse/drop on finished cable.",
+  "SYS_3V3_contact_present": false,
+  "J11": {
+    "board": "LOGIC",
+    "pin1": "FILTER_OUT",
+    "pin2": "SYS_3V3",
+    "no_bypass": true
+  },
+  "supersedes": "Ten-contact J14/J15 suggestion in electrical partition revision01. Original four logical boundary networks unchanged."
+}

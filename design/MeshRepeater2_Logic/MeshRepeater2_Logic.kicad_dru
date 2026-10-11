@@ -1,0 +1,2 @@
+(version 1)
+(rule "RF GND gap 0.25 mm" (layer F.Cu) (condition "((A.NetName == '/ANT_RF' || A.NetName == '/ANT_SMA') && B.NetName == 'GND') || ((B.NetName == '/ANT_RF' || B.NetName == '/ANT_SMA') && A.NetName == 'GND')") (constraint clearance (min 0.25mm)))

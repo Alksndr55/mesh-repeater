@@ -1,0 +1,103 @@
+{
+  "source_pcb_sha256": "8ad2923dc8547d0b42d863e763d6596edf1160c49440616024c42c923dd339ca",
+  "pcb_sha256": "2750624dc6c2c7e8b50089e66e5d9eef9c29aa3ee28541f72f54186b58dc9ceb",
+  "invariant_before": "5b83c0c9efa3e560dba1dac8b0d30c37292ee80a11267062c8c92ca887237dab",
+  "invariant_after": "5b83c0c9efa3e560dba1dac8b0d30c37292ee80a11267062c8c92ca887237dab",
+  "change": "Four exterior B.SilkS PCB_TEXT objects only",
+  "unchanged_copper_footprints_placement_models": true,
+  "labels": [
+    {
+      "text": "USB",
+      "at_mm": [
+        18.0,
+        4.0
+      ],
+      "box_mm": [
+        16.375,
+        3.15175,
+        19.625,
+        4.84825
+      ],
+      "font_mm": 1.0,
+      "angle_deg": 180.0,
+      "mirrored": true,
+      "layer": "B.Silkscreen",
+      "uuid": "d53880d1-8ef0-4c94-a579-59330a00e791",
+      "kind": "operator_label"
+    },
+    {
+      "text": "J5\nUART",
+      "at_mm": [
+        5.5,
+        20.8
+      ],
+      "box_mm": [
+        3.715,
+        19.285775,
+        7.285,
+        22.314225
+      ],
+      "font_mm": 0.9,
+      "angle_deg": 180.0,
+      "mirrored": true,
+      "layer": "B.Silkscreen",
+      "uuid": "d9376cdd-8936-4551-b6aa-bad614858afa",
+      "kind": "operator_label"
+    },
+    {
+      "text": "SW1\nUSER",
+      "at_mm": [
+        29.0,
+        54.7
+      ],
+      "box_mm": [
+        27.107857,
+        53.185775,
+        30.892143,
+        56.214225
+      ],
+      "font_mm": 0.9,
+      "angle_deg": 180.0,
+      "mirrored": true,
+      "layer": "B.Silkscreen",
+      "uuid": "8eb2d319-321b-49cf-bd9c-95b534935d87",
+      "kind": "operator_label"
+    },
+    {
+      "text": "SW2\nRESET",
+      "at_mm": [
+        41.0,
+        54.7
+      ],
+      "box_mm": [
+        38.829285,
+        53.185775,
+        43.170714,
+        56.214225
+      ],
+      "font_mm": 0.9,
+      "angle_deg": 180.0,
+      "mirrored": true,
+      "layer": "B.Silkscreen",
+      "uuid": "c4bcaf51-f2d7-4dfd-b6d5-0f1aeb5b68b0",
+      "kind": "operator_label"
+    }
+  ],
+  "schematic_xml_change": false,
+  "strict_native_drc": {
+    "violations": 0,
+    "unconnected": 0,
+    "parity": 0,
+    "ignored_checks": [],
+    "report_sha256": "792589c588ea65f59fc42ed70be735feae7e8e6bf866a8a3a6941cbea7ffda5c"
+  },
+  "step_sha256": "6b95ca0d3273b60041c162ddf4f14cf0976e5a3b6bd86e3361059c5c1a33d8b7",
+  "step_gzip_sha256": "4ddd351ff0dfd9726585bd141bdd468775e9627f1e39b3cd2f075dcb5fb2285d",
+  "final_export_manifest_sha256": "d5091a3faca8119d1e91bc1987d4dae38b615e8558cd4f9f273efa241f526201",
+  "operator_view_visual_review": {
+    "image": "output/LOGIC/MeshRepeater2_Logic_operator_top.png",
+    "sha256": "0a42f86a776ce03034f83bd1f99ee7340c54015b9e66c2345af939c61b90f03b",
+    "all_four_labels_readable_and_at_corresponding_ports": true,
+    "view_transform": "Native mirrored B view followed by 180-degree image rotation; physical assembly X180"
+  }
+}

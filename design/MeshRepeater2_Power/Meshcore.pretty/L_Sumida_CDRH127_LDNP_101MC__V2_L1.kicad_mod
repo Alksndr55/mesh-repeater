@@ -1,0 +1,422 @@
+(footprint "L_Sumida_CDRH127_LDNP_101MC__V2_L1"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "Sumida CDRH127/LD; manufacturer two-land pattern 5.4x2.9mm, centers 9.9mm; 12.3x12.3x8.0mm max. F.Cu coil keepout; stencil windows are an engineering choice.")
+	(tags "inductor Sumida CDRH127 LD 101MC shielded")
+	(property "Reference" "REF**"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "e7ec6300-44b4-4e4e-a076-9a48dd85edb7")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Value" "L_Sumida_CDRH127_LDNP_101MC__V2_L1"
+		(at 0 7.8 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "7f1ea47b-6f5a-4f8d-9d9d-05444e062789")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "c6321f42-3e5b-45c0-89a8-9f4992ebd6b9")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" "Sumida CDRH127/LDNP-101MC, shielded100uH +/-20%. Maximum body12.3x12.3x8mm. DCRmax151mohm; table Isat2.1A at25% inductance drop. Verify temperature rise under shield. Approved Danomsk S4.6 substitution."
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "5b48084b-4c29-4e54-8815-15c74ffb03af")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "MPN" "CDRH127/LDNP-101MC"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "6434c89c-98e1-402f-8bed-ee374a6d333e")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "LCSC" ""
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "73bfff69-c7c9-4029-9382-9e207b964a96")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Vendor" "Danomsk"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "2d7dafc4-552e-484e-a298-1bc1d090616d")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Vendor URL" "https://www.danomsk.ru/shop/8-ustanovochnye/97-induktivnye-komponenty/281-drosseli-induktivnosti/138307-cdrh127-ldnp-101mc-100-mkgn-20-2-1-a-sumida/"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "7a45dbb9-1271-485e-a339-b4dcb9b16538")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Fit_NaIon" "yes"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "59db3132-8a21-450f-9e9b-fa52da136c63")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Fit_LTO_2S" "yes"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "304f052c-1292-49af-a40b-349c6d351ac9")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value_NaIon" "100uH"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "d27ae78b-bbd5-4098-8a6e-adfb767ff4d7")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value_LTO_2S" "100uH"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "b072ee02-a715-447e-a7ea-774d021c629d")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Assembly" "Na-ion: FIT; LTO 2S: FIT"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "20a0bbee-0fff-4f91-a584-2da518e98444")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Nominal" "100uH"
+		(at 0 -1.921 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "8f68b4c0-16e9-4a95-a100-42ff2028e92b")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "MPN_NaIon" "CDRH127/LDNP-101MC"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "77ba6dae-b3da-49b4-b818-7510e9fa8722")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "MPN_LTO_2S" "CDRH127/LDNP-101MC"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "387f332c-7a08-4c20-ae3c-cb4cc0381d72")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Fit_NaIon_NoCold" "yes"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "c380f269-efe4-4acd-9152-8a1f28f9a03e")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value_NaIon_NoCold" "100uH"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "96bfab64-021b-4dff-b2ac-4c7eb74dd2ac")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "MPN_NaIon_NoCold" "CDRH127/LDNP-101MC"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "439e8b6f-6535-47c7-bbf5-5009315bbabb")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_line
+		(start -6.3 -6.3)
+		(end -6.3 6.3)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "71d98844-2790-4619-bf80-8342873814b1")
+	)
+	(fp_line
+		(start -6.3 -6.3)
+		(end -3.05 -6.3)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "d793789c-b21d-4e73-8ae7-82c9af6251f0")
+	)
+	(fp_line
+		(start -6.3 6.3)
+		(end -3.05 6.3)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "a8d3b591-620e-4dd0-83fa-804b2814872d")
+	)
+	(fp_line
+		(start 3.05 -6.3)
+		(end 6.3 -6.3)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "c03fa203-c66f-4cd2-a102-4ae8d6534e2f")
+	)
+	(fp_line
+		(start 3.05 6.3)
+		(end 6.3 6.3)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "e3894523-51e5-4977-9099-a1dd01b599dc")
+	)
+	(fp_line
+		(start 6.3 -6.3)
+		(end 6.3 6.3)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "1e71c123-cf4b-45d0-81a8-8e09a78e562d")
+	)
+	(fp_rect
+		(start -6.45 -6.7)
+		(end 6.45 6.7)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "7d0a23b4-c56f-446d-b874-2037bff8e98c")
+	)
+	(fp_rect
+		(start -6 -6)
+		(end 6 6)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "1dc1e643-87ac-4843-8f92-d3b0d3918f8d")
+	)
+	(pad "" smd rect
+		(at -1.35 -5.65)
+		(size 2.45 1.2)
+		(layers "F.Paste")
+		(uuid "97470618-8309-4ee7-96fe-6c1e9ddda5e4")
+	)
+	(pad "" smd rect
+		(at -1.35 -4.25)
+		(size 2.45 1.2)
+		(layers "F.Paste")
+		(uuid "a8d7c8fc-b8e4-479f-adeb-ac5ae2e452a6")
+	)
+	(pad "" smd rect
+		(at -1.35 4.25)
+		(size 2.45 1.2)
+		(layers "F.Paste")
+		(uuid "1e5c0173-f589-40cc-b78a-01f450882983")
+	)
+	(pad "" smd rect
+		(at -1.35 5.65)
+		(size 2.45 1.2)
+		(layers "F.Paste")
+		(uuid "9250d5fd-03e3-429a-948f-e45e4af78a4e")
+	)
+	(pad "" smd rect
+		(at 1.35 -5.65)
+		(size 2.45 1.2)
+		(layers "F.Paste")
+		(uuid "8e787d81-5a27-4a24-8dc2-24b4ed5f72f9")
+	)
+	(pad "" smd rect
+		(at 1.35 -4.25)
+		(size 2.45 1.2)
+		(layers "F.Paste")
+		(uuid "fcc0b613-5cf1-4503-9d10-eeaea180fff5")
+	)
+	(pad "" smd rect
+		(at 1.35 4.25)
+		(size 2.45 1.2)
+		(layers "F.Paste")
+		(uuid "85740bdd-222c-4c00-a81a-26597702cfdd")
+	)
+	(pad "" smd rect
+		(at 1.35 5.65)
+		(size 2.45 1.2)
+		(layers "F.Paste")
+		(uuid "611e9f6d-c614-42dc-a3f1-4670d265ab26")
+	)
+	(pad "1" smd rect
+		(at 0 -4.95)
+		(size 5.4 2.9)
+		(layers "F.Cu" "F.Mask")
+		(solder_mask_margin 0.05)
+		(uuid "e1a6270c-de0b-4424-b58b-f73fdcb82662")
+	)
+	(pad "2" smd rect
+		(at 0 4.95)
+		(size 5.4 2.9)
+		(layers "F.Cu" "F.Mask")
+		(solder_mask_margin 0.05)
+		(uuid "42f9eb11-1083-45b3-be3b-9145aa8bf2c2")
+	)
+	(zone
+		(layer "F.Cu")
+		(uuid "f5fe4516-506c-4230-8e23-1bc405b1131b")
+		(hatch edge 0.5)
+		(connect_pads
+			(clearance 0)
+		)
+		(min_thickness 0.25)
+		(keepout
+			(tracks not_allowed)
+			(vias not_allowed)
+			(pads allowed)
+			(copperpour not_allowed)
+			(footprints allowed)
+		)
+		(placement
+			(enabled no)
+			(sheetname "")
+		)
+		(fill
+			(thermal_gap 0.5)
+			(thermal_bridge_width 0.5)
+			(island_removal_mode 0)
+		)
+		(polygon
+			(pts
+				(xy -6.15 -3.5) (xy 6.15 -3.5) (xy 6.15 3.5) (xy -6.15 3.5)
+			)
+		)
+	)
+	(embedded_fonts no)
+	(model "${KIPRJMOD}/3dmodels/Sumida_CDRH127_LD_101.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

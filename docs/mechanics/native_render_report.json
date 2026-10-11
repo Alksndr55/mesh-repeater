@@ -1,0 +1,271 @@
+{
+  "renders": [
+    {
+      "source": "docs\\mechanics\\MeshRepeater2_assembly_native_mesh.json.gz",
+      "image": "docs\\mechanics\\MeshRepeater2_assembly_native_3D.png",
+      "triangles_drawn": 167996,
+      "image_sha256": "d90644153516313c1f60d209e0a604292f45bdbc58f92ef12f8a1908eea9061c",
+      "verified_native_inputs": {
+        "POWER": {
+          "path": "output\\POWER\\MeshRepeater2_Power.step",
+          "sha256": "67aa28f699dc4103f7e43c1d614be31374268b69f1a675dbe16a995202efecd7",
+          "board_bbox": [
+            0.0,
+            -60.0,
+            0.0,
+            90.0,
+            0.0,
+            1.43
+          ],
+          "normalization": [
+            -0.0,
+            -0.0,
+            -1.475
+          ],
+          "measured_dielectric_thickness": 1.43,
+          "nominal_total_pcb_thickness": 1.52,
+          "physical_screen_core_plus_foil_thickness": null,
+          "anchoring_note": "Dielectric center plus half nominal PCB thickness defines the F outer plane. Native STEP component offset above copper is preserved; mask is not a STEP solid.",
+          "verified_pcb_source": {
+            "path": "design\\MeshRepeater2_Power\\MeshRepeater2_Power.kicad_pcb",
+            "sha256": "dd40232294bc3bfd88565f6843400ad10a68220e472d3d6cb3d7ac200152cf64",
+            "export_manifest": "output\\POWER\\MeshRepeater2_Power_exports.json"
+          }
+        },
+        "SHIELD": {
+          "path": "output\\SHIELD\\MeshRepeater2_Shield.step",
+          "sha256": "8c23e9ee3fb08ea45e552653249f9a4261b22061e22852d5904f20af8a7991f3",
+          "board_bbox": [
+            0.0,
+            -60.0,
+            0.0,
+            90.0,
+            0.0,
+            1.475
+          ],
+          "normalization": [
+            -0.0,
+            -0.0,
+            -1.51
+          ],
+          "measured_dielectric_thickness": 1.475,
+          "nominal_total_pcb_thickness": 1.52,
+          "physical_screen_core_plus_foil_thickness": 1.51,
+          "anchoring_note": "Front foil outer face anchored to the lower screen contact plane. Body plus single foil thickness measured from STEP.",
+          "verified_pcb_source": {
+            "path": "design\\MeshRepeater2_Shield\\MeshRepeater2_Shield.kicad_pcb",
+            "sha256": "4ba1d2a7b47dd392b2ac79fa9a7e10fbf8e98be6b8a3423c813d8530ddb25147",
+            "export_manifest": "output\\SHIELD\\MeshRepeater2_Shield_exports.json"
+          }
+        },
+        "LOGIC": {
+          "path": "output\\LOGIC\\MeshRepeater2_Logic.step",
+          "sha256": "6b95ca0d3273b60041c162ddf4f14cf0976e5a3b6bd86e3361059c5c1a33d8b7",
+          "board_bbox": [
+            0.0,
+            -60.0,
+            0.0,
+            90.0,
+            0.0,
+            1.43
+          ],
+          "normalization": [
+            -0.0,
+            -0.0,
+            -1.475
+          ],
+          "measured_dielectric_thickness": 1.43,
+          "nominal_total_pcb_thickness": 1.52,
+          "physical_screen_core_plus_foil_thickness": null,
+          "anchoring_note": "Dielectric center plus half nominal PCB thickness defines the F outer plane. Native STEP component offset above copper is preserved; mask is not a STEP solid.",
+          "verified_pcb_source": {
+            "path": "design\\MeshRepeater2_Logic\\MeshRepeater2_Logic.kicad_pcb",
+            "sha256": "2750624dc6c2c7e8b50089e66e5d9eef9c29aa3ee28541f72f54186b58dc9ceb",
+            "export_manifest": "output\\LOGIC\\MeshRepeater2_Logic_exports.json"
+          }
+        }
+      },
+      "view_elevation_deg": 18,
+      "geometry": "Native CAD tessellation, not an invented component rendering."
+    },
+    {
+      "source": "docs\\mechanics\\MeshRepeater2_exploded_native_mesh.json.gz",
+      "image": "docs\\mechanics\\MeshRepeater2_exploded_native_3D.png",
+      "triangles_drawn": 121720,
+      "image_sha256": "6692601b291ce09d5b51a12aacb32ec0fcfa50b2efb308526debbff5701c8b8c",
+      "verified_native_inputs": {
+        "POWER": {
+          "path": "output\\POWER\\MeshRepeater2_Power.step",
+          "sha256": "67aa28f699dc4103f7e43c1d614be31374268b69f1a675dbe16a995202efecd7",
+          "board_bbox": [
+            0.0,
+            -60.0,
+            0.0,
+            90.0,
+            0.0,
+            1.43
+          ],
+          "normalization": [
+            -0.0,
+            -0.0,
+            -1.475
+          ],
+          "measured_dielectric_thickness": 1.43,
+          "nominal_total_pcb_thickness": 1.52,
+          "physical_screen_core_plus_foil_thickness": null,
+          "anchoring_note": "Dielectric center plus half nominal PCB thickness defines the F outer plane. Native STEP component offset above copper is preserved; mask is not a STEP solid.",
+          "verified_pcb_source": {
+            "path": "design\\MeshRepeater2_Power\\MeshRepeater2_Power.kicad_pcb",
+            "sha256": "dd40232294bc3bfd88565f6843400ad10a68220e472d3d6cb3d7ac200152cf64",
+            "export_manifest": "output\\POWER\\MeshRepeater2_Power_exports.json"
+          }
+        },
+        "SHIELD": {
+          "path": "output\\SHIELD\\MeshRepeater2_Shield.step",
+          "sha256": "8c23e9ee3fb08ea45e552653249f9a4261b22061e22852d5904f20af8a7991f3",
+          "board_bbox": [
+            0.0,
+            -60.0,
+            0.0,
+            90.0,
+            0.0,
+            1.475
+          ],
+          "normalization": [
+            -0.0,
+            -0.0,
+            -1.51
+          ],
+          "measured_dielectric_thickness": 1.475,
+          "nominal_total_pcb_thickness": 1.52,
+          "physical_screen_core_plus_foil_thickness": 1.51,
+          "anchoring_note": "Front foil outer face anchored to the lower screen contact plane. Body plus single foil thickness measured from STEP.",
+          "verified_pcb_source": {
+            "path": "design\\MeshRepeater2_Shield\\MeshRepeater2_Shield.kicad_pcb",
+            "sha256": "4ba1d2a7b47dd392b2ac79fa9a7e10fbf8e98be6b8a3423c813d8530ddb25147",
+            "export_manifest": "output\\SHIELD\\MeshRepeater2_Shield_exports.json"
+          }
+        },
+        "LOGIC": {
+          "path": "output\\LOGIC\\MeshRepeater2_Logic.step",
+          "sha256": "6b95ca0d3273b60041c162ddf4f14cf0976e5a3b6bd86e3361059c5c1a33d8b7",
+          "board_bbox": [
+            0.0,
+            -60.0,
+            0.0,
+            90.0,
+            0.0,
+            1.43
+          ],
+          "normalization": [
+            -0.0,
+            -0.0,
+            -1.475
+          ],
+          "measured_dielectric_thickness": 1.43,
+          "nominal_total_pcb_thickness": 1.52,
+          "physical_screen_core_plus_foil_thickness": null,
+          "anchoring_note": "Dielectric center plus half nominal PCB thickness defines the F outer plane. Native STEP component offset above copper is preserved; mask is not a STEP solid.",
+          "verified_pcb_source": {
+            "path": "design\\MeshRepeater2_Logic\\MeshRepeater2_Logic.kicad_pcb",
+            "sha256": "2750624dc6c2c7e8b50089e66e5d9eef9c29aa3ee28541f72f54186b58dc9ceb",
+            "export_manifest": "output\\LOGIC\\MeshRepeater2_Logic_exports.json"
+          }
+        }
+      },
+      "view_elevation_deg": 30,
+      "geometry": "Native CAD tessellation, not an invented component rendering."
+    },
+    {
+      "source": "docs\\mechanics\\MeshRepeater2_exploded_native_mesh.json.gz",
+      "image": "docs\\mechanics\\MeshRepeater2_exploded_below_native_3D.png",
+      "triangles_drawn": 117561,
+      "image_sha256": "c7e7b58261d30f49411e1e1eaf619063037f786f0d8b7d007281414f508f13b3",
+      "verified_native_inputs": {
+        "POWER": {
+          "path": "output\\POWER\\MeshRepeater2_Power.step",
+          "sha256": "67aa28f699dc4103f7e43c1d614be31374268b69f1a675dbe16a995202efecd7",
+          "board_bbox": [
+            0.0,
+            -60.0,
+            0.0,
+            90.0,
+            0.0,
+            1.43
+          ],
+          "normalization": [
+            -0.0,
+            -0.0,
+            -1.475
+          ],
+          "measured_dielectric_thickness": 1.43,
+          "nominal_total_pcb_thickness": 1.52,
+          "physical_screen_core_plus_foil_thickness": null,
+          "anchoring_note": "Dielectric center plus half nominal PCB thickness defines the F outer plane. Native STEP component offset above copper is preserved; mask is not a STEP solid.",
+          "verified_pcb_source": {
+            "path": "design\\MeshRepeater2_Power\\MeshRepeater2_Power.kicad_pcb",
+            "sha256": "dd40232294bc3bfd88565f6843400ad10a68220e472d3d6cb3d7ac200152cf64",
+            "export_manifest": "output\\POWER\\MeshRepeater2_Power_exports.json"
+          }
+        },
+        "SHIELD": {
+          "path": "output\\SHIELD\\MeshRepeater2_Shield.step",
+          "sha256": "8c23e9ee3fb08ea45e552653249f9a4261b22061e22852d5904f20af8a7991f3",
+          "board_bbox": [
+            0.0,
+            -60.0,
+            0.0,
+            90.0,
+            0.0,
+            1.475
+          ],
+          "normalization": [
+            -0.0,
+            -0.0,
+            -1.51
+          ],
+          "measured_dielectric_thickness": 1.475,
+          "nominal_total_pcb_thickness": 1.52,
+          "physical_screen_core_plus_foil_thickness": 1.51,
+          "anchoring_note": "Front foil outer face anchored to the lower screen contact plane. Body plus single foil thickness measured from STEP.",
+          "verified_pcb_source": {
+            "path": "design\\MeshRepeater2_Shield\\MeshRepeater2_Shield.kicad_pcb",
+            "sha256": "4ba1d2a7b47dd392b2ac79fa9a7e10fbf8e98be6b8a3423c813d8530ddb25147",
+            "export_manifest": "output\\SHIELD\\MeshRepeater2_Shield_exports.json"
+          }
+        },
+        "LOGIC": {
+          "path": "output\\LOGIC\\MeshRepeater2_Logic.step",
+          "sha256": "6b95ca0d3273b60041c162ddf4f14cf0976e5a3b6bd86e3361059c5c1a33d8b7",
+          "board_bbox": [
+            0.0,
+            -60.0,
+            0.0,
+            90.0,
+            0.0,
+            1.43
+          ],
+          "normalization": [
+            -0.0,
+            -0.0,
+            -1.475
+          ],
+          "measured_dielectric_thickness": 1.43,
+          "nominal_total_pcb_thickness": 1.52,
+          "physical_screen_core_plus_foil_thickness": null,
+          "anchoring_note": "Dielectric center plus half nominal PCB thickness defines the F outer plane. Native STEP component offset above copper is preserved; mask is not a STEP solid.",
+          "verified_pcb_source": {
+            "path": "design\\MeshRepeater2_Logic\\MeshRepeater2_Logic.kicad_pcb",
+            "sha256": "2750624dc6c2c7e8b50089e66e5d9eef9c29aa3ee28541f72f54186b58dc9ceb",
+            "export_manifest": "output\\LOGIC\\MeshRepeater2_Logic_exports.json"
+          }
+        }
+      },
+      "view_elevation_deg": -28,
+      "geometry": "Native CAD tessellation, not an invented component rendering."
+    }
+  ],
+  "dimensions": "docs\\mechanics\\MeshRepeater2_stack_dimensions.svg",
+  "harness_plan": "docs\\mechanics\\MeshRepeater2_harness_routing_plan.svg",
+  "colors": "Illustrative. Source STEP geometry is retained."
+}

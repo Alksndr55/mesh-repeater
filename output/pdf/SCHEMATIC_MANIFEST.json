@@ -1,0 +1,40 @@
+{
+  "projects": [
+    {
+      "board": "POWER",
+      "pages": 5,
+      "native_netlist": {
+        "path": "audit\\schematic\\POWER\\netlist.xml",
+        "sha256": "c8b60e49b3b2217d2867cb1e5f104f25c931c6770672cb5b75b5289562da571e"
+      },
+      "strict_erc": {
+        "path": "audit\\schematic\\POWER\\erc.json",
+        "sha256": "d2841a17c874a9b4404e5088236a0437b07f018d3277e800b96c50615a9bd000"
+      },
+      "pdf": {
+        "path": "output\\pdf\\MeshRepeater2_Power_schematic.pdf",
+        "sha256": "a1128b7649ffc89a3157f543983ea42bbaa943ea847b3c6c64972f91507b98bf"
+      }
+    },
+    {
+      "board": "LOGIC",
+      "pages": 4,
+      "native_netlist": {
+        "path": "audit\\schematic\\LOGIC\\netlist.xml",
+        "sha256": "d3539ba04100f9a10fb11c8b6d47c73252f1791b81f412a0323a5eaeec0a894d"
+      },
+      "strict_erc": {
+        "path": "audit\\schematic\\LOGIC\\erc.json",
+        "sha256": "2e05c77e6034a6ec92a6357b97bfe3a1cb80ff30393bac0b1c6369ae38c6a7ab"
+      },
+      "pdf": {
+        "path": "output\\pdf\\MeshRepeater2_Logic_schematic.pdf",
+        "sha256": "6afd1b47a19e1aae6bc64db81af80e66d139c1fd49e0881873441674d16a0186"
+      }
+    }
+  ],
+  "visual_qa": {
+    "path": "audit\\schematic\\final_schematic_output_manifest.json",
+    "sha256": "5df726561da5826bf25a4db68fbeeb4b563d2d5bddf315f69ad2a48ab0313d0d"
+  }
+}

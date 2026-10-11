@@ -1,0 +1,8 @@
+(version 1)
+
+# Enforce the RF coplanar gap against every front-layer GND copper object,
+# including GND_TOP where it overlaps the dedicated RF_CPW_GND zone.
+(rule "RF coplanar GND gap 0.25 mm"
+  (layer F.Cu)
+  (condition "(A.NetName == '/3. Modules/ANT_RF' || A.NetName == '/3. Modules/ANT_SMA') && B.NetName == 'GND'")
+  (constraint clearance (min 0.25mm)))

@@ -1,0 +1,1275 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-10-11T23:10:24",
+    "ignored_checks": [],
+    "included_severities": [
+        "error",
+        "warning",
+        "exclusion"
+    ],
+    "kicad_version": "10.0.6",
+    "schematic_parity": [],
+    "source": "MeshRepeater2_Logic.kicad_pcb",
+    "unconnected_items": [],
+    "violations": [
+        {
+            "description": "Шелкография обрезана контуром платы (ограничения настроек платы зазор 0,1000 mm; текущий 0,0000 mm)",
+            "items": [
+                {
+                    "description": "Сегмент на Edge.Cuts",
+                    "pos": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "uuid": "b43e65f9-d98e-4f4e-a478-27c8801df6e5"
+                },
+                {
+                    "description": "Надпись на плате 'FL1 S869M000S003' на B.Silkscreen",
+                    "pos": {
+                        "x": 40.7,
+                        "y": 4.25
+                    },
+                    "uuid": "2edb9639-9a6c-4055-b037-2f64c7a0f3f6"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_edge_clearance"
+        },
+        {
+            "description": "Шелкография обрезана контуром платы (ограничения настроек платы зазор 0,1000 mm; текущий 0,0000 mm)",
+            "items": [
+                {
+                    "description": "Сегмент на Edge.Cuts",
+                    "pos": {
+                        "x": 90.0,
+                        "y": 60.0
+                    },
+                    "uuid": "b6b30bc6-1c4c-4dbf-87f5-65904db4da7d"
+                },
+                {
+                    "description": "Прямоугольник от SW2 на F.Silkscreen",
+                    "pos": {
+                        "x": 44.655,
+                        "y": 60.79
+                    },
+                    "uuid": "c68a8f90-7266-4574-a6c2-627e1b1f4848"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_edge_clearance"
+        },
+        {
+            "description": "Шелкография обрезана контуром платы (ограничения настроек платы зазор 0,1000 mm; текущий 0,0000 mm)",
+            "items": [
+                {
+                    "description": "Сегмент на Edge.Cuts",
+                    "pos": {
+                        "x": 90.0,
+                        "y": 60.0
+                    },
+                    "uuid": "b6b30bc6-1c4c-4dbf-87f5-65904db4da7d"
+                },
+                {
+                    "description": "Прямоугольник от SW1 на F.Silkscreen",
+                    "pos": {
+                        "x": 32.655,
+                        "y": 60.79
+                    },
+                    "uuid": "e98a865d-8993-4844-9ec6-62c7167db9b1"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_edge_clearance"
+        },
+        {
+            "description": "Шелкография обрезана контуром платы (ограничения настроек платы зазор 0,1000 mm; текущий 0,0000 mm)",
+            "items": [
+                {
+                    "description": "Сегмент на Edge.Cuts",
+                    "pos": {
+                        "x": 90.0,
+                        "y": 60.0
+                    },
+                    "uuid": "b6b30bc6-1c4c-4dbf-87f5-65904db4da7d"
+                },
+                {
+                    "description": "Прямоугольник от J201 на F.Silkscreen",
+                    "pos": {
+                        "x": 82.02,
+                        "y": 53.9
+                    },
+                    "uuid": "23d20020-2ddf-49e9-8f2a-613f6141d621"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_edge_clearance"
+        },
+        {
+            "description": "Высота текста вне допустимого диапазона (высота текста шелкографии из настроек ограничений платы мин. высота 0,8000 mm; текущая 0,7500 mm)",
+            "items": [
+                {
+                    "description": "Надпись на плате 'C26 100nF' на B.Silkscreen",
+                    "pos": {
+                        "x": 6.7,
+                        "y": 27.5
+                    },
+                    "uuid": "93ce551f-837a-48c8-bf5d-f01017ba1070"
+                }
+            ],
+            "severity": "warning",
+            "type": "text_height"
+        },
+        {
+            "description": "Высота текста вне допустимого диапазона (высота текста шелкографии из настроек ограничений платы мин. высота 0,8000 mm; текущая 0,7500 mm)",
+            "items": [
+                {
+                    "description": "Надпись на плате 'R31 10k' на B.Silkscreen",
+                    "pos": {
+                        "x": 6.7,
+                        "y": 30.5
+                    },
+                    "uuid": "cacb104b-a379-4ff8-8fcf-dc8f8df83020"
+                }
+            ],
+            "severity": "warning",
+            "type": "text_height"
+        },
+        {
+            "description": "Высота текста вне допустимого диапазона (высота текста шелкографии из настроек ограничений платы мин. высота 0,8000 mm; текущая 0,7500 mm)",
+            "items": [
+                {
+                    "description": "Надпись на плате 'SW1 USER' на B.Silkscreen",
+                    "pos": {
+                        "x": 29.0,
+                        "y": 58.2
+                    },
+                    "uuid": "6fd416c4-eaf4-4051-b7be-7ed7af1124a0"
+                }
+            ],
+            "severity": "warning",
+            "type": "text_height"
+        },
+        {
+            "description": "Высота текста вне допустимого диапазона (высота текста шелкографии из настроек ограничений платы мин. высота 0,8000 mm; текущая 0,7500 mm)",
+            "items": [
+                {
+                    "description": "Надпись на плате 'R24 33R' на B.Silkscreen",
+                    "pos": {
+                        "x": 30.0,
+                        "y": 23.58
+                    },
+                    "uuid": "aaae02be-1330-4061-a482-3a90ebd43eda"
+                }
+            ],
+            "severity": "warning",
+            "type": "text_height"
+        },
+        {
+            "description": "Высота текста вне допустимого диапазона (высота текста шелкографии из настроек ограничений платы мин. высота 0,8000 mm; текущая 0,7500 mm)",
+            "items": [
+                {
+                    "description": "Надпись на плате 'R25 33R' на B.Silkscreen",
+                    "pos": {
+                        "x": 30.0,
+                        "y": 26.12
+                    },
+                    "uuid": "b3ee26fa-81f4-4efd-817f-a05cafc5e3f0"
+                }
+            ],
+            "severity": "warning",
+            "type": "text_height"
+        },
+        {
+            "description": "Высота текста вне допустимого диапазона (высота текста шелкографии из настроек ограничений платы мин. высота 0,8000 mm; текущая 0,7500 mm)",
+            "items": [
+                {
+                    "description": "Надпись на плате 'R23 33R' на B.Silkscreen",
+                    "pos": {
+                        "x": 30.0,
+                        "y": 28.66
+                    },
+                    "uuid": "f923f998-47ed-4744-b803-741befa69c91"
+                }
+            ],
+            "severity": "warning",
+            "type": "text_height"
+        },
+        {
+            "description": "Высота текста вне допустимого диапазона (высота текста шелкографии из настроек ограничений платы мин. высота 0,8000 mm; текущая 0,7500 mm)",
+            "items": [
+                {
+                    "description": "Надпись на плате 'C25 100nF' на B.Silkscreen",
+                    "pos": {
+                        "x": 33.0,
+                        "y": 17.3
+                    },
+                    "uuid": "cbe7fab4-7d36-46d9-bdd5-2c5c0123768d"
+                }
+            ],
+            "severity": "warning",
+            "type": "text_height"
+        },
+        {
+            "description": "Высота текста вне допустимого диапазона (высота текста шелкографии из настроек ограничений платы мин. высота 0,8000 mm; текущая 0,7500 mm)",
+            "items": [
+                {
+                    "description": "Надпись на плате 'FB1 60R@100MHz' на B.Silkscreen",
+                    "pos": {
+                        "x": 33.8,
+                        "y": 14.45
+                    },
+                    "uuid": "088761e1-d8ad-439e-b205-7b51a0e04cb5"
+                }
+            ],
+            "severity": "warning",
+            "type": "text_height"
+        },
+        {
+            "description": "Высота текста вне допустимого диапазона (высота текста шелкографии из настроек ограничений платы мин. высота 0,8000 mm; текущая 0,7500 mm)",
+            "items": [
+                {
+                    "description": "Надпись на плате 'NT1 Cu' на B.Silkscreen",
+                    "pos": {
+                        "x": 40.7,
+                        "y": 4.25
+                    },
+                    "uuid": "a6385077-762e-46f6-bb1c-9e3e88fe7ebe"
+                }
+            ],
+            "severity": "warning",
+            "type": "text_height"
+        },
+        {
+            "description": "Высота текста вне допустимого диапазона (высота текста шелкографии из настроек ограничений платы мин. высота 0,8000 mm; текущая 0,7500 mm)",
+            "items": [
+                {
+                    "description": "Надпись на плате 'SW2 RESET' на B.Silkscreen",
+                    "pos": {
+                        "x": 41.0,
+                        "y": 58.2
+                    },
+                    "uuid": "e082791a-6b2b-4327-8089-357ef7eb73bb"
+                }
+            ],
+            "severity": "warning",
+            "type": "text_height"
+        },
+        {
+            "description": "Высота текста вне допустимого диапазона (высота текста шелкографии из настроек ограничений платы мин. высота 0,8000 mm; текущая 0,7500 mm)",
+            "items": [
+                {
+                    "description": "Надпись на плате 'R37 0R' на B.Silkscreen",
+                    "pos": {
+                        "x": 42.5,
+                        "y": 28.67
+                    },
+                    "uuid": "eb254698-5f14-43d2-aa0a-78831391f3b9"
+                }
+            ],
+            "severity": "warning",
+            "type": "text_height"
+        },
+        {
+            "description": "Высота текста вне допустимого диапазона (высота текста шелкографии из настроек ограничений платы мин. высота 0,8000 mm; текущая 0,7500 mm)",
+            "items": [
+                {
+                    "description": "Надпись на плате 'U6 ATtiny13A-SSU' на B.Silkscreen",
+                    "pos": {
+                        "x": 44.0,
+                        "y": 34.0
+                    },
+                    "uuid": "9a23a9db-2577-42a5-b274-87ebb8add91e"
+                }
+            ],
+            "severity": "warning",
+            "type": "text_height"
+        },
+        {
+            "description": "Высота текста вне допустимого диапазона (высота текста шелкографии из настроек ограничений платы мин. высота 0,8000 mm; текущая 0,7500 mm)",
+            "items": [
+                {
+                    "description": "Надпись на плате 'R21 1k' на B.Silkscreen",
+                    "pos": {
+                        "x": 48.0,
+                        "y": 45.0
+                    },
+                    "uuid": "e7b06d94-bd6c-4f22-8526-c669ab3e9ba0"
+                }
+            ],
+            "severity": "warning",
+            "type": "text_height"
+        },
+        {
+            "description": "Высота текста вне допустимого диапазона (высота текста шелкографии из настроек ограничений платы мин. высота 0,8000 mm; текущая 0,7500 mm)",
+            "items": [
+                {
+                    "description": "Надпись на плате 'R39 100k' на B.Silkscreen",
+                    "pos": {
+                        "x": 50.0,
+                        "y": 31.235
+                    },
+                    "uuid": "3f10e376-4231-4086-8565-cc5cc90f0d62"
+                }
+            ],
+            "severity": "warning",
+            "type": "text_height"
+        },
+        {
+            "description": "Высота текста вне допустимого диапазона (высота текста шелкографии из настроек ограничений платы мин. высота 0,8000 mm; текущая 0,7500 mm)",
+            "items": [
+                {
+                    "description": "Надпись на плате 'R38 1k' на B.Silkscreen",
+                    "pos": {
+                        "x": 50.0,
+                        "y": 34.635
+                    },
+                    "uuid": "1ea5fb1e-214e-4a05-9876-a17f547d5d95"
+                }
+            ],
+            "severity": "warning",
+            "type": "text_height"
+        },
+        {
+            "description": "Высота текста вне допустимого диапазона (высота текста шелкографии из настроек ограничений платы мин. высота 0,8000 mm; текущая 0,7500 mm)",
+            "items": [
+                {
+                    "description": "Надпись на плате 'R36 10k' на B.Silkscreen",
+                    "pos": {
+                        "x": 50.0,
+                        "y": 38.035
+                    },
+                    "uuid": "ac2e62f5-2d03-4cf1-9ad9-3e784ed695fa"
+                }
+            ],
+            "severity": "warning",
+            "type": "text_height"
+        },
+        {
+            "description": "Высота текста вне допустимого диапазона (высота текста шелкографии из настроек ограничений платы мин. высота 0,8000 mm; текущая 0,7500 mm)",
+            "items": [
+                {
+                    "description": "Надпись на плате 'R46 100k' на B.Silkscreen",
+                    "pos": {
+                        "x": 59.4,
+                        "y": 9.675
+                    },
+                    "uuid": "532dc34b-b9cd-4eed-a4d3-a1da34f9a66b"
+                }
+            ],
+            "severity": "warning",
+            "type": "text_height"
+        },
+        {
+            "description": "Высота текста вне допустимого диапазона (высота текста шелкографии из настроек ограничений платы мин. высота 0,8000 mm; текущая 0,7500 mm)",
+            "items": [
+                {
+                    "description": "Надпись на плате 'R35 100k' на B.Silkscreen",
+                    "pos": {
+                        "x": 59.4,
+                        "y": 16.5
+                    },
+                    "uuid": "5d9c85bc-3ce1-4852-9e65-2aa3841b85d3"
+                }
+            ],
+            "severity": "warning",
+            "type": "text_height"
+        },
+        {
+            "description": "Высота текста вне допустимого диапазона (высота текста шелкографии из настроек ограничений платы мин. высота 0,8000 mm; текущая 0,7500 mm)",
+            "items": [
+                {
+                    "description": "Надпись на плате 'R26 33R' на B.Silkscreen",
+                    "pos": {
+                        "x": 59.4,
+                        "y": 18.8
+                    },
+                    "uuid": "915eaf07-f0f8-4737-a3b0-663b9e5b49a7"
+                }
+            ],
+            "severity": "warning",
+            "type": "text_height"
+        },
+        {
+            "description": "Высота текста вне допустимого диапазона (высота текста шелкографии из настроек ограничений платы мин. высота 0,8000 mm; текущая 0,7500 mm)",
+            "items": [
+                {
+                    "description": "Надпись на плате 'C57 10uF' на B.Silkscreen",
+                    "pos": {
+                        "x": 63.5,
+                        "y": 3.2
+                    },
+                    "uuid": "3b6743b2-10a2-48e6-bd7f-b0dc8899ee3a"
+                }
+            ],
+            "severity": "warning",
+            "type": "text_height"
+        },
+        {
+            "description": "Высота текста вне допустимого диапазона (высота текста шелкографии из настроек ограничений платы мин. высота 0,8000 mm; текущая 0,7500 mm)",
+            "items": [
+                {
+                    "description": "Надпись на плате 'C56 100nF' на B.Silkscreen",
+                    "pos": {
+                        "x": 63.5,
+                        "y": 6.3
+                    },
+                    "uuid": "be2a4f14-1f14-45b6-b868-44f905cc6d93"
+                }
+            ],
+            "severity": "warning",
+            "type": "text_height"
+        },
+        {
+            "description": "Высота текста вне допустимого диапазона (высота текста шелкографии из настроек ограничений платы мин. высота 0,8000 mm; текущая 0,7500 mm)",
+            "items": [
+                {
+                    "description": "Надпись на плате 'Q2 AO3401A' на B.Silkscreen",
+                    "pos": {
+                        "x": 63.5,
+                        "y": 17.0
+                    },
+                    "uuid": "db5ced39-7d06-4bc3-a687-5048d14baf38"
+                }
+            ],
+            "severity": "warning",
+            "type": "text_height"
+        },
+        {
+            "description": "Высота текста вне допустимого диапазона (высота текста шелкографии из настроек ограничений платы мин. высота 0,8000 mm; текущая 0,7500 mm)",
+            "items": [
+                {
+                    "description": "Надпись на плате 'U7 SN74LVC2G125' на B.Silkscreen",
+                    "pos": {
+                        "x": 64.0,
+                        "y": 10.0
+                    },
+                    "uuid": "7098abe5-2f50-432d-be33-fdabff05ea0d"
+                }
+            ],
+            "severity": "warning",
+            "type": "text_height"
+        },
+        {
+            "description": "Высота текста вне допустимого диапазона (высота текста шелкографии из настроек ограничений платы мин. высота 0,8000 mm; текущая 0,7500 mm)",
+            "items": [
+                {
+                    "description": "Надпись на плате 'R42 100k' на B.Silkscreen",
+                    "pos": {
+                        "x": 64.5,
+                        "y": 20.8
+                    },
+                    "uuid": "bb42cb60-3047-470e-8ee0-f5a0da088ae8"
+                }
+            ],
+            "severity": "warning",
+            "type": "text_height"
+        },
+        {
+            "description": "Высота текста вне допустимого диапазона (высота текста шелкографии из настроек ограничений платы мин. высота 0,8000 mm; текущая 0,7500 mm)",
+            "items": [
+                {
+                    "description": "Надпись на плате 'Q3 2N7002K' на B.Silkscreen",
+                    "pos": {
+                        "x": 68.0,
+                        "y": 17.0
+                    },
+                    "uuid": "aacd8d90-24f5-4a20-ab16-aed1abe117e0"
+                }
+            ],
+            "severity": "warning",
+            "type": "text_height"
+        },
+        {
+            "description": "Высота текста вне допустимого диапазона (высота текста шелкографии из настроек ограничений платы мин. высота 0,8000 mm; текущая 0,7500 mm)",
+            "items": [
+                {
+                    "description": "Надпись на плате 'R45 100k' на B.Silkscreen",
+                    "pos": {
+                        "x": 68.8,
+                        "y": 10.9
+                    },
+                    "uuid": "55c4437e-01fa-44a7-b6ae-0e8ad7224abf"
+                }
+            ],
+            "severity": "warning",
+            "type": "text_height"
+        },
+        {
+            "description": "Высота текста вне допустимого диапазона (высота текста шелкографии из настроек ограничений платы мин. высота 0,8000 mm; текущая 0,7500 mm)",
+            "items": [
+                {
+                    "description": "Надпись на плате 'C27 100nF' на B.Silkscreen",
+                    "pos": {
+                        "x": 71.5,
+                        "y": 7.365
+                    },
+                    "uuid": "20e16dd9-12f5-42a0-abd3-b0a8a3b384c6"
+                }
+            ],
+            "severity": "warning",
+            "type": "text_height"
+        },
+        {
+            "description": "Высота текста вне допустимого диапазона (высота текста шелкографии из настроек ограничений платы мин. высота 0,8000 mm; текущая 0,7500 mm)",
+            "items": [
+                {
+                    "description": "Надпись на плате 'R43 100k' на B.Silkscreen",
+                    "pos": {
+                        "x": 71.5,
+                        "y": 20.8
+                    },
+                    "uuid": "7902de1e-1ba2-4814-a5b3-034db5307d78"
+                }
+            ],
+            "severity": "warning",
+            "type": "text_height"
+        },
+        {
+            "description": "Высота текста вне допустимого диапазона (высота текста шелкографии из настроек ограничений платы мин. высота 0,8000 mm; текущая 0,7500 mm)",
+            "items": [
+                {
+                    "description": "Надпись на плате 'BT1 CR2032' на B.Silkscreen",
+                    "pos": {
+                        "x": 72.0,
+                        "y": 35.0
+                    },
+                    "uuid": "9d6118a8-b563-4bb3-84d2-9c407781ba6d"
+                }
+            ],
+            "severity": "warning",
+            "type": "text_height"
+        },
+        {
+            "description": "Высота текста вне допустимого диапазона (высота текста шелкографии из настроек ограничений платы мин. высота 0,8000 mm; текущая 0,7500 mm)",
+            "items": [
+                {
+                    "description": "Надпись на плате 'U4 DS3231MZ+TRL' на B.Silkscreen",
+                    "pos": {
+                        "x": 77.0,
+                        "y": 8.0
+                    },
+                    "uuid": "55b6e166-c4af-484e-8dc6-5b3eb10d4408"
+                }
+            ],
+            "severity": "warning",
+            "type": "text_height"
+        },
+        {
+            "description": "Высота текста вне допустимого диапазона (высота текста шелкографии из настроек ограничений платы мин. высота 0,8000 mm; текущая 0,7500 mm)",
+            "items": [
+                {
+                    "description": "Надпись на плате 'R30 4.7k' на B.Silkscreen",
+                    "pos": {
+                        "x": 80.8,
+                        "y": 14.4
+                    },
+                    "uuid": "ae99a9de-fc2e-464f-b546-f4950f9c4a38"
+                }
+            ],
+            "severity": "warning",
+            "type": "text_height"
+        },
+        {
+            "description": "Высота текста вне допустимого диапазона (высота текста шелкографии из настроек ограничений платы мин. высота 0,8000 mm; текущая 0,7500 mm)",
+            "items": [
+                {
+                    "description": "Надпись на плате 'R29 4.7k' на B.Silkscreen",
+                    "pos": {
+                        "x": 80.8,
+                        "y": 17.2
+                    },
+                    "uuid": "732d15a9-9fdf-4745-91d2-34e047021d34"
+                }
+            ],
+            "severity": "warning",
+            "type": "text_height"
+        },
+        {
+            "description": "Высота текста вне допустимого диапазона (высота текста шелкографии из настроек ограничений платы мин. высота 0,8000 mm; текущая 0,7500 mm)",
+            "items": [
+                {
+                    "description": "Надпись на плате 'R33 10k' на B.Silkscreen",
+                    "pos": {
+                        "x": 28.7,
+                        "y": 7.5
+                    },
+                    "uuid": "8126fd4e-11a0-4821-b8d3-90ced16bddeb"
+                }
+            ],
+            "severity": "warning",
+            "type": "text_height"
+        },
+        {
+            "description": "Высота текста вне допустимого диапазона (высота текста шелкографии из настроек ограничений платы мин. высота 0,8000 mm; текущая 0,7500 mm)",
+            "items": [
+                {
+                    "description": "Надпись на плате 'C21 10uF' на B.Silkscreen",
+                    "pos": {
+                        "x": 29.05,
+                        "y": 11.3
+                    },
+                    "uuid": "3c72328b-6cc0-462c-8711-430d6e7d9354"
+                }
+            ],
+            "severity": "warning",
+            "type": "text_height"
+        },
+        {
+            "description": "Высота текста вне допустимого диапазона (высота текста шелкографии из настроек ограничений платы мин. высота 0,8000 mm; текущая 0,7500 mm)",
+            "items": [
+                {
+                    "description": "Надпись на плате 'R28 2.2M' на B.Silkscreen",
+                    "pos": {
+                        "x": 29.8,
+                        "y": 15.6
+                    },
+                    "uuid": "612c0498-2734-4915-a7fe-123d52b4494f"
+                }
+            ],
+            "severity": "warning",
+            "type": "text_height"
+        },
+        {
+            "description": "Высота текста вне допустимого диапазона (высота текста шелкографии из настроек ограничений платы мин. высота 0,8000 mm; текущая 0,7500 mm)",
+            "items": [
+                {
+                    "description": "Надпись на плате 'R27 2.2M' на B.Silkscreen",
+                    "pos": {
+                        "x": 29.8,
+                        "y": 19.0
+                    },
+                    "uuid": "c8d767e6-585c-4f21-84f7-fe14b3c2d83a"
+                }
+            ],
+            "severity": "warning",
+            "type": "text_height"
+        },
+        {
+            "description": "Высота текста вне допустимого диапазона (высота текста шелкографии из настроек ограничений платы мин. высота 0,8000 mm; текущая 0,7500 mm)",
+            "items": [
+                {
+                    "description": "Надпись на плате 'C22 100nF' на B.Silkscreen",
+                    "pos": {
+                        "x": 32.1,
+                        "y": 11.3
+                    },
+                    "uuid": "9b7bdcd3-a0a8-4151-a9f6-48714afa4123"
+                }
+            ],
+            "severity": "warning",
+            "type": "text_height"
+        },
+        {
+            "description": "Высота текста вне допустимого диапазона (высота текста шелкографии из настроек ограничений платы мин. высота 0,8000 mm; текущая 0,7500 mm)",
+            "items": [
+                {
+                    "description": "Надпись на плате 'C23 22uF' на B.Silkscreen",
+                    "pos": {
+                        "x": 35.6,
+                        "y": 11.65
+                    },
+                    "uuid": "c7f261f2-b38d-4118-a2ab-876bccb222df"
+                }
+            ],
+            "severity": "warning",
+            "type": "text_height"
+        },
+        {
+            "description": "Высота текста вне допустимого диапазона (высота текста шелкографии из настроек ограничений платы мин. высота 0,8000 mm; текущая 0,7500 mm)",
+            "items": [
+                {
+                    "description": "Надпись на плате 'C24 100nF' на B.Silkscreen",
+                    "pos": {
+                        "x": 37.6,
+                        "y": 14.05
+                    },
+                    "uuid": "67628c2a-b2f6-4127-a53f-20c477d72f62"
+                }
+            ],
+            "severity": "warning",
+            "type": "text_height"
+        },
+        {
+            "description": "Высота текста вне допустимого диапазона (высота текста шелкографии из настроек ограничений платы мин. высота 0,8000 mm; текущая 0,7500 mm)",
+            "items": [
+                {
+                    "description": "Надпись на плате 'FL1 S869M000S003' на B.Silkscreen",
+                    "pos": {
+                        "x": 40.7,
+                        "y": 4.25
+                    },
+                    "uuid": "2edb9639-9a6c-4055-b037-2f64c7a0f3f6"
+                }
+            ],
+            "severity": "warning",
+            "type": "text_height"
+        },
+        {
+            "description": "Высота текста вне допустимого диапазона (высота текста шелкографии из настроек ограничений платы мин. высота 0,8000 mm; текущая 0,7500 mm)",
+            "items": [
+                {
+                    "description": "Надпись на плате 'C33 100nF' на B.Silkscreen",
+                    "pos": {
+                        "x": 41.525,
+                        "y": 39.2
+                    },
+                    "uuid": "e4ac9a0b-d886-4dfc-8763-262f12a1cf90"
+                }
+            ],
+            "severity": "warning",
+            "type": "text_height"
+        },
+        {
+            "description": "Высота текста вне допустимого диапазона (высота текста шелкографии из настроек ограничений платы мин. высота 0,8000 mm; текущая 0,7500 mm)",
+            "items": [
+                {
+                    "description": "Надпись на плате 'R44 1k' на B.Silkscreen",
+                    "pos": {
+                        "x": 68.0,
+                        "y": 20.8
+                    },
+                    "uuid": "055835cf-6718-431e-940e-fada4872e41a"
+                }
+            ],
+            "severity": "warning",
+            "type": "text_height"
+        },
+        {
+            "description": "Высота текста вне допустимого диапазона (высота текста шелкографии из настроек ограничений платы мин. высота 0,8000 mm; текущая 0,7500 mm)",
+            "items": [
+                {
+                    "description": "Надпись на плате 'D3 CHARGE' на B.Silkscreen",
+                    "pos": {
+                        "x": 51.0,
+                        "y": 56.0
+                    },
+                    "uuid": "c4c0d0d2-01af-4a10-b183-50904e02c759"
+                }
+            ],
+            "severity": "warning",
+            "type": "text_height"
+        },
+        {
+            "description": "Высота текста вне допустимого диапазона (высота текста шелкографии из настроек ограничений платы мин. высота 0,8000 mm; текущая 0,7500 mm)",
+            "items": [
+                {
+                    "description": "Надпись на плате 'D4 DONE' на B.Silkscreen",
+                    "pos": {
+                        "x": 56.0,
+                        "y": 56.0
+                    },
+                    "uuid": "5f1034f2-6835-4d27-87f3-52ecd4fe3a94"
+                }
+            ],
+            "severity": "warning",
+            "type": "text_height"
+        },
+        {
+            "description": "Зазор шелкографии (ограничения настроек платы зазор 0,1000 mm; текущий 0,0948 mm)",
+            "items": [
+                {
+                    "description": "Надпись на плате 'FB1 60R@100MHz' на B.Silkscreen",
+                    "pos": {
+                        "x": 33.8,
+                        "y": 14.45
+                    },
+                    "uuid": "088761e1-d8ad-439e-b205-7b51a0e04cb5"
+                },
+                {
+                    "description": "Надпись на плате 'C22 100nF' на B.Silkscreen",
+                    "pos": {
+                        "x": 32.1,
+                        "y": 11.3
+                    },
+                    "uuid": "9b7bdcd3-a0a8-4151-a9f6-48714afa4123"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Зазор шелкографии (ограничения настроек платы зазор 0,1000 mm; текущий 0,0000 mm)",
+            "items": [
+                {
+                    "description": "Надпись на плате 'FB1 60R@100MHz' на B.Silkscreen",
+                    "pos": {
+                        "x": 33.8,
+                        "y": 14.45
+                    },
+                    "uuid": "088761e1-d8ad-439e-b205-7b51a0e04cb5"
+                },
+                {
+                    "description": "Надпись на плате 'R28 2.2M' на B.Silkscreen",
+                    "pos": {
+                        "x": 29.8,
+                        "y": 15.6
+                    },
+                    "uuid": "612c0498-2734-4915-a7fe-123d52b4494f"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Зазор шелкографии (ограничения настроек платы зазор 0,1000 mm; текущий 0,0000 mm)",
+            "items": [
+                {
+                    "description": "Надпись на плате 'R28 2.2M' на B.Silkscreen",
+                    "pos": {
+                        "x": 29.8,
+                        "y": 15.6
+                    },
+                    "uuid": "612c0498-2734-4915-a7fe-123d52b4494f"
+                },
+                {
+                    "description": "Надпись на плате 'C25 100nF' на B.Silkscreen",
+                    "pos": {
+                        "x": 33.0,
+                        "y": 17.3
+                    },
+                    "uuid": "cbe7fab4-7d36-46d9-bdd5-2c5c0123768d"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Зазор шелкографии (ограничения настроек платы зазор 0,1000 mm; текущий 0,0000 mm)",
+            "items": [
+                {
+                    "description": "Надпись на плате 'R27 2.2M' на B.Silkscreen",
+                    "pos": {
+                        "x": 29.8,
+                        "y": 19.0
+                    },
+                    "uuid": "c8d767e6-585c-4f21-84f7-fe14b3c2d83a"
+                },
+                {
+                    "description": "Надпись на плате 'C25 100nF' на B.Silkscreen",
+                    "pos": {
+                        "x": 33.0,
+                        "y": 17.3
+                    },
+                    "uuid": "cbe7fab4-7d36-46d9-bdd5-2c5c0123768d"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Зазор шелкографии (ограничения настроек платы зазор 0,1000 mm; текущий 0,0000 mm)",
+            "items": [
+                {
+                    "description": "Надпись на плате 'R28 2.2M' на B.Silkscreen",
+                    "pos": {
+                        "x": 29.8,
+                        "y": 15.6
+                    },
+                    "uuid": "612c0498-2734-4915-a7fe-123d52b4494f"
+                },
+                {
+                    "description": "Надпись на плате 'R27 2.2M' на B.Silkscreen",
+                    "pos": {
+                        "x": 29.8,
+                        "y": 19.0
+                    },
+                    "uuid": "c8d767e6-585c-4f21-84f7-fe14b3c2d83a"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Зазор шелкографии (ограничения настроек платы зазор 0,1000 mm; текущий 0,0192 mm)",
+            "items": [
+                {
+                    "description": "Надпись на плате 'R38 1k' на B.Silkscreen",
+                    "pos": {
+                        "x": 50.0,
+                        "y": 34.635
+                    },
+                    "uuid": "1ea5fb1e-214e-4a05-9876-a17f547d5d95"
+                },
+                {
+                    "description": "Надпись на плате 'U6 ATtiny13A-SSU' на B.Silkscreen",
+                    "pos": {
+                        "x": 44.0,
+                        "y": 34.0
+                    },
+                    "uuid": "9a23a9db-2577-42a5-b274-87ebb8add91e"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Зазор шелкографии (ограничения настроек платы зазор 0,1000 mm; текущий 0,0529 mm)",
+            "items": [
+                {
+                    "description": "Надпись на плате 'R35 100k' на B.Silkscreen",
+                    "pos": {
+                        "x": 59.4,
+                        "y": 16.5
+                    },
+                    "uuid": "5d9c85bc-3ce1-4852-9e65-2aa3841b85d3"
+                },
+                {
+                    "description": "Надпись на плате 'Q2 AO3401A' на B.Silkscreen",
+                    "pos": {
+                        "x": 63.5,
+                        "y": 17.0
+                    },
+                    "uuid": "db5ced39-7d06-4bc3-a687-5048d14baf38"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Зазор шелкографии (ограничения настроек платы зазор 0,1000 mm; текущий 0,0850 mm)",
+            "items": [
+                {
+                    "description": "Надпись на плате 'Q3 2N7002K' на B.Silkscreen",
+                    "pos": {
+                        "x": 68.0,
+                        "y": 17.0
+                    },
+                    "uuid": "aacd8d90-24f5-4a20-ab16-aed1abe117e0"
+                },
+                {
+                    "description": "Надпись на плате 'Q2 AO3401A' на B.Silkscreen",
+                    "pos": {
+                        "x": 63.5,
+                        "y": 17.0
+                    },
+                    "uuid": "db5ced39-7d06-4bc3-a687-5048d14baf38"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Зазор шелкографии (ограничения настроек платы зазор 0,1000 mm; текущий 0,0000 mm)",
+            "items": [
+                {
+                    "description": "Надпись на плате 'R46 100k' на B.Silkscreen",
+                    "pos": {
+                        "x": 59.4,
+                        "y": 9.675
+                    },
+                    "uuid": "532dc34b-b9cd-4eed-a4d3-a1da34f9a66b"
+                },
+                {
+                    "description": "Надпись на плате 'U7 SN74LVC2G125' на B.Silkscreen",
+                    "pos": {
+                        "x": 64.0,
+                        "y": 10.0
+                    },
+                    "uuid": "7098abe5-2f50-432d-be33-fdabff05ea0d"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Зазор шелкографии (ограничения настроек платы зазор 0,1000 mm; текущий 0,0747 mm)",
+            "items": [
+                {
+                    "description": "Надпись на плате 'R45 100k' на B.Silkscreen",
+                    "pos": {
+                        "x": 68.8,
+                        "y": 10.9
+                    },
+                    "uuid": "55c4437e-01fa-44a7-b6ae-0e8ad7224abf"
+                },
+                {
+                    "description": "Надпись на плате 'U7 SN74LVC2G125' на B.Silkscreen",
+                    "pos": {
+                        "x": 64.0,
+                        "y": 10.0
+                    },
+                    "uuid": "7098abe5-2f50-432d-be33-fdabff05ea0d"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Зазор шелкографии (ограничения настроек платы зазор 0,1000 mm; текущий 0,0000 mm)",
+            "items": [
+                {
+                    "description": "Надпись на плате 'C27 100nF' на B.Silkscreen",
+                    "pos": {
+                        "x": 71.5,
+                        "y": 7.365
+                    },
+                    "uuid": "20e16dd9-12f5-42a0-abd3-b0a8a3b384c6"
+                },
+                {
+                    "description": "Надпись на плате 'U4 DS3231MZ+TRL' на B.Silkscreen",
+                    "pos": {
+                        "x": 77.0,
+                        "y": 8.0
+                    },
+                    "uuid": "55b6e166-c4af-484e-8dc6-5b3eb10d4408"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Зазор шелкографии (ограничения настроек платы зазор 0,1000 mm; текущий 0,0155 mm)",
+            "items": [
+                {
+                    "description": "Надпись на плате 'FB1 60R@100MHz' на B.Silkscreen",
+                    "pos": {
+                        "x": 33.8,
+                        "y": 14.45
+                    },
+                    "uuid": "088761e1-d8ad-439e-b205-7b51a0e04cb5"
+                },
+                {
+                    "description": "Надпись на плате 'C24 100nF' на B.Silkscreen",
+                    "pos": {
+                        "x": 37.6,
+                        "y": 14.05
+                    },
+                    "uuid": "67628c2a-b2f6-4127-a53f-20c477d72f62"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Зазор шелкографии (ограничения настроек платы зазор 0,1000 mm; текущий 0,0102 mm)",
+            "items": [
+                {
+                    "description": "Надпись на плате 'FB1 60R@100MHz' на B.Silkscreen",
+                    "pos": {
+                        "x": 33.8,
+                        "y": 14.45
+                    },
+                    "uuid": "088761e1-d8ad-439e-b205-7b51a0e04cb5"
+                },
+                {
+                    "description": "Надпись на плате 'C23 22uF' на B.Silkscreen",
+                    "pos": {
+                        "x": 35.6,
+                        "y": 11.65
+                    },
+                    "uuid": "c7f261f2-b38d-4118-a2ab-876bccb222df"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Зазор шелкографии (ограничения настроек платы зазор 0,1000 mm; текущий 0,0055 mm)",
+            "items": [
+                {
+                    "description": "Надпись на плате 'C21 10uF' на B.Silkscreen",
+                    "pos": {
+                        "x": 29.05,
+                        "y": 11.3
+                    },
+                    "uuid": "3c72328b-6cc0-462c-8711-430d6e7d9354"
+                },
+                {
+                    "description": "Надпись на плате 'R33 10k' на B.Silkscreen",
+                    "pos": {
+                        "x": 28.7,
+                        "y": 7.5
+                    },
+                    "uuid": "8126fd4e-11a0-4821-b8d3-90ced16bddeb"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Зазор шелкографии (ограничения настроек платы зазор 0,1000 mm; текущий 0,0752 mm)",
+            "items": [
+                {
+                    "description": "Надпись на плате 'C21 10uF' на B.Silkscreen",
+                    "pos": {
+                        "x": 29.05,
+                        "y": 11.3
+                    },
+                    "uuid": "3c72328b-6cc0-462c-8711-430d6e7d9354"
+                },
+                {
+                    "description": "Надпись на плате 'R28 2.2M' на B.Silkscreen",
+                    "pos": {
+                        "x": 29.8,
+                        "y": 15.6
+                    },
+                    "uuid": "612c0498-2734-4915-a7fe-123d52b4494f"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Зазор шелкографии (ограничения настроек платы зазор 0,1000 mm; текущий 0,0000 mm)",
+            "items": [
+                {
+                    "description": "Надпись на плате 'FL1 S869M000S003' на B.Silkscreen",
+                    "pos": {
+                        "x": 40.7,
+                        "y": 4.25
+                    },
+                    "uuid": "2edb9639-9a6c-4055-b037-2f64c7a0f3f6"
+                },
+                {
+                    "description": "Надпись на плате 'NT1 Cu' на B.Silkscreen",
+                    "pos": {
+                        "x": 40.7,
+                        "y": 4.25
+                    },
+                    "uuid": "a6385077-762e-46f6-bb1c-9e3e88fe7ebe"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Зазор шелкографии (ограничения настроек платы зазор 0,1000 mm; текущий 0,0000 mm)",
+            "items": [
+                {
+                    "description": "Надпись на плате 'D4 DONE' на B.Silkscreen",
+                    "pos": {
+                        "x": 56.0,
+                        "y": 56.0
+                    },
+                    "uuid": "5f1034f2-6835-4d27-87f3-52ecd4fe3a94"
+                },
+                {
+                    "description": "Надпись на плате 'D3 CHARGE' на B.Silkscreen",
+                    "pos": {
+                        "x": 51.0,
+                        "y": 56.0
+                    },
+                    "uuid": "c4c0d0d2-01af-4a10-b183-50904e02c759"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Надпись на плате 'U6 ATtiny13A-SSU' на B.Silkscreen",
+                    "pos": {
+                        "x": 44.0,
+                        "y": 34.0
+                    },
+                    "uuid": "9a23a9db-2577-42a5-b274-87ebb8add91e"
+                },
+                {
+                    "description": "PTH конт. пл. 4 [WDT_MOSI_RESET] у J10",
+                    "pos": {
+                        "x": 38.24,
+                        "y": 33.84
+                    },
+                    "uuid": "24aad3bd-63ab-4f34-8eff-cfa07a448b55"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Надпись на плате 'SW1 USER' на B.Silkscreen",
+                    "pos": {
+                        "x": 29.0,
+                        "y": 58.2
+                    },
+                    "uuid": "6fd416c4-eaf4-4051-b7be-7ed7af1124a0"
+                },
+                {
+                    "description": "PTH конт. пл. 1 [USER_BTN] у SW1",
+                    "pos": {
+                        "x": 31.25,
+                        "y": 58.2
+                    },
+                    "uuid": "869f8ae6-0a3f-4c8d-a07b-600fb80a17cc"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Надпись на плате 'SW2 RESET' на B.Silkscreen",
+                    "pos": {
+                        "x": 41.0,
+                        "y": 58.2
+                    },
+                    "uuid": "e082791a-6b2b-4327-8089-357ef7eb73bb"
+                },
+                {
+                    "description": "PTH конт. пл. 1 [MCU_RESET] у SW2",
+                    "pos": {
+                        "x": 43.25,
+                        "y": 58.2
+                    },
+                    "uuid": "d2a33878-c056-4795-ac71-4c051cf22122"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Надпись на плате 'SW2 RESET' на B.Silkscreen",
+                    "pos": {
+                        "x": 41.0,
+                        "y": 58.2
+                    },
+                    "uuid": "e082791a-6b2b-4327-8089-357ef7eb73bb"
+                },
+                {
+                    "description": "PTH конт. пл. 2 [GND] у SW2",
+                    "pos": {
+                        "x": 38.75,
+                        "y": 58.2
+                    },
+                    "uuid": "62dc35cd-8f49-461c-a51b-198846a0794e"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Надпись на плате 'SW1 USER' на B.Silkscreen",
+                    "pos": {
+                        "x": 29.0,
+                        "y": 58.2
+                    },
+                    "uuid": "6fd416c4-eaf4-4051-b7be-7ed7af1124a0"
+                },
+                {
+                    "description": "PTH конт. пл. 2 [GND] у SW1",
+                    "pos": {
+                        "x": 26.75,
+                        "y": 58.2
+                    },
+                    "uuid": "58e9bb0a-dd8d-4ca4-a145-7f63b5e2456c"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        }
+    ]
+}

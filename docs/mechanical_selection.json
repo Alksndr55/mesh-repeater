@@ -1,0 +1,743 @@
+{
+  "date": "2026-10-11",
+  "units": "mm",
+  "project": "Mesh Repeater ver2.0",
+  "status": "dimensioned library; actual hardware fit and electrical current qualification pending",
+  "board": {
+    "width": 90,
+    "height": 60,
+    "thickness_nominal": 1.5,
+    "native_thickness": 1.52,
+    "layers": 2
+  },
+  "shield": {
+    "width": 90,
+    "height": 60,
+    "thickness": 1.52,
+    "copper_face": "DOWN",
+    "continuous_foil": true,
+    "no_copper_letter_cuts": true,
+    "manufacturing_copper_layers": 1,
+    "native_cad_copper_layer_container": 2,
+    "unused_native_layer": "B.Cu",
+    "stackup_mm": {
+      "F.Mask": 0.01,
+      "F.Cu": 0.035,
+      "FR4_core": 1.475,
+      "B.Cu": 0.0,
+      "B.Mask": 0.0
+    },
+    "expected_step_core_plus_foil_mm": 1.51,
+    "cad_note": "KiCad uses a two-copper-layer container. B.Cu is empty and has zero stackup thickness. The manufactured shield has copper on one side only. The native nominal total is 1.52 mm; STEP omits the 0.01 mm front mask."
+  },
+  "mounting": {
+    "centres": [
+      [
+        3.5,
+        3.5
+      ],
+      [
+        86.5,
+        3.5
+      ],
+      [
+        3.5,
+        56.5
+      ],
+      [
+        86.5,
+        56.5
+      ]
+    ],
+    "drill": 3.2,
+    "gnd_contact_od": 6.0,
+    "mechanical_keepout_od": 6.5,
+    "frame": {
+      "reference": "SH1",
+      "fitted": false,
+      "status": "Removed by final frame/mount review; the continuous middle shield is retained."
+    },
+    "hex_note": "M3 standoffs have 5.5 mm across flats and a 6.35 mm circumscribed circle. The lower SH1 frame is removed."
+  },
+  "parts": [
+    {
+      "mpn": "JST S2B-XH-A(LF)(SN)",
+      "refs": [
+        "J7",
+        "J8"
+      ],
+      "article": 167075,
+      "pads": [
+        [
+          "1",
+          0.0,
+          0,
+          1.0,
+          "THT"
+        ],
+        [
+          "2",
+          2.5,
+          0,
+          1.0,
+          "THT"
+        ]
+      ],
+      "bbox": [
+        -2.45,
+        -9.2,
+        4.95,
+        2.3
+      ],
+      "height": 6.1,
+      "tail": 3.4,
+      "mating": [
+        0,
+        -1
+      ],
+      "source": "https://www.danomsk.ru/upload/iblock/11a/167075_e8e7acdd79497cc6a7262e2649317f11.pdf#page=3",
+      "footprint": "Meshcore:JST_XH_S2B-XH-A_1x02_P2.50mm_Horizontal",
+      "dan_url": "https://www.danomsk.ru/shop/7-kommutatsiya/121-razemy/306-soediniteli-pryamougolnye/167075-cwf-2r-xh-02mr-s2b-xh-a-lf-sn-vilka-na-platu-uglovaya-2-50mm-uglovaya-zakrytaya-jst/",
+      "stock": 47,
+      "stock_checked": "2026-10-11"
+    },
+    {
+      "mpn": "KLS L-KLS1-2.50-04-R",
+      "refs": [
+        "J12"
+      ],
+      "article": 38160,
+      "pads": [
+        [
+          "1",
+          0.0,
+          0,
+          1.0,
+          "THT"
+        ],
+        [
+          "2",
+          2.5,
+          0,
+          1.0,
+          "THT"
+        ],
+        [
+          "3",
+          5.0,
+          0,
+          1.0,
+          "THT"
+        ],
+        [
+          "4",
+          7.5,
+          0,
+          1.0,
+          "THT"
+        ]
+      ],
+      "bbox": [
+        -2.5,
+        -9.2,
+        10.0,
+        2.4
+      ],
+      "height": 5.8,
+      "tail": 3.4,
+      "mating": [
+        0,
+        -1
+      ],
+      "source": "https://img.klsele.com/admin/product_upload/20250303165321L-KLS1-2.50.pdf#page=6",
+      "note": "4 positions: pins1..3 preserve former LTO nets; pin4 is NC. Matching4pole cable housing required.",
+      "footprint": "Meshcore:KLS_XH_L_KLS1_2_50_04_R_Horizontal",
+      "dan_url": "https://www.danomsk.ru/shop/7-kommutatsiya/121-razemy/306-soediniteli-pryamougolnye/38160-cwf-4r-l-kls1-2-50-04-r-vilka-na-platu-uglovaya-tip-a-2-50mm-zakrytaya-kls/",
+      "stock": 70,
+      "stock_checked": "2026-10-11"
+    },
+    {
+      "mpn": "Connfly DS1013-12RSIB-B-0",
+      "refs": [
+        "J101",
+        "J201"
+      ],
+      "article": 134861,
+      "pads": [
+        [
+          "1",
+          0.0,
+          0.0,
+          1.02,
+          "THT"
+        ],
+        [
+          "2",
+          2.54,
+          0.0,
+          1.02,
+          "THT"
+        ],
+        [
+          "3",
+          0.0,
+          2.54,
+          1.02,
+          "THT"
+        ],
+        [
+          "4",
+          2.54,
+          2.54,
+          1.02,
+          "THT"
+        ],
+        [
+          "5",
+          0.0,
+          5.08,
+          1.02,
+          "THT"
+        ],
+        [
+          "6",
+          2.54,
+          5.08,
+          1.02,
+          "THT"
+        ],
+        [
+          "7",
+          0.0,
+          7.62,
+          1.02,
+          "THT"
+        ],
+        [
+          "8",
+          2.54,
+          7.62,
+          1.02,
+          "THT"
+        ],
+        [
+          "9",
+          0.0,
+          10.16,
+          1.02,
+          "THT"
+        ],
+        [
+          "10",
+          2.54,
+          10.16,
+          1.02,
+          "THT"
+        ],
+        [
+          "11",
+          0.0,
+          12.7,
+          1.02,
+          "THT"
+        ],
+        [
+          "12",
+          2.54,
+          12.7,
+          1.02,
+          "THT"
+        ]
+      ],
+      "bbox": [
+        5.0,
+        -5.07,
+        13.8,
+        17.77
+      ],
+      "height": 9.1,
+      "tail": 2.9,
+      "mating": [
+        1,
+        0
+      ],
+      "source": "https://en.connfly.com/static/upload/file/pdf/DS1013.pdf#page=1",
+      "note": "R/A drawing rotated to solder tails down.13.8mm is plan reach;9.1mm is assembled height. Body depth8.8mm. Hole1.02±0.05.",
+      "footprint": "Meshcore:Connfly_DS1013_12RSIB_B_0_Horizontal",
+      "dan_url": "https://www.danomsk.ru/shop/7-kommutatsiya/121-razemy/306-soediniteli-pryamougolnye/134861-idc-12mr-ds1013-12rsib-b-0-vilka-uglovaya-shag-2-54mm-maks-dopust-tok-1a-connfly/",
+      "stock": 21,
+      "stock_checked": "2026-10-11"
+    },
+    {
+      "mpn": "Connfly DS1022-1x40RUF11-B cut to2pins",
+      "refs": [
+        "J11"
+      ],
+      "article": 202688,
+      "pads": [
+        [
+          "1",
+          0,
+          0,
+          1.02,
+          "THT"
+        ],
+        [
+          "2",
+          0,
+          2.54,
+          1.02,
+          "THT"
+        ]
+      ],
+      "bbox": [
+        -1.25,
+        -1.27,
+        1.25,
+        3.81
+      ],
+      "height": 2.5,
+      "tail": 3.0,
+      "overall_height": 6.07,
+      "mating_length": 6.0,
+      "mating": [
+        1,
+        0
+      ],
+      "source": "https://en.connfly.com/static/upload/file/pdf/DS1022.pdf#page=1",
+      "note": "U type1, A3.00 solder tail,B6.00 mating length,C6.07 abovePCB. Do not subtractAfromC.",
+      "footprint": "Meshcore:Connfly_DS1022_1x02RUF11_B_Horizontal",
+      "dan_url": "https://www.danomsk.ru/shop/7-kommutatsiya/121-razemy/306-soediniteli-pryamougolnye/202688-pls-40r2-ds1022-1x40ruf11-b-vilka-uglovaya-2-54mm-connfly/",
+      "stock": 470,
+      "stock_checked": "2026-10-11"
+    },
+    {
+      "mpn": "TE1825027-2 / FSMRA1JH04",
+      "refs": [
+        "SW1",
+        "SW2"
+      ],
+      "article": 199312,
+      "pads": [
+        [
+          "1",
+          -2.25,
+          0,
+          0.99,
+          "THT"
+        ],
+        [
+          "2",
+          2.25,
+          0,
+          0.99,
+          "THT"
+        ],
+        [
+          "",
+          -3.505,
+          2.49,
+          1.3,
+          "NPTH"
+        ],
+        [
+          "",
+          3.505,
+          2.49,
+          1.3,
+          "NPTH"
+        ]
+      ],
+      "bbox": [
+        -3.555,
+        -2.49,
+        3.555,
+        1.19
+      ],
+      "courtyard_bbox": [
+        -4.455,
+        -3.3,
+        4.455,
+        4.26
+      ],
+      "height": 7.01,
+      "tail": 3.51,
+      "mating": [
+        0,
+        -1
+      ],
+      "actuator_projection": 0.56,
+      "source": "https://www.te.com/en/product-1825027-2.html",
+      "drawing_mirror": "https://www.danomsk.ru/upload/iblock/51a/199312_5a706f693299daa97f0862bd57db70e9.pdf",
+      "note": "Electrical hole pitch4.50mm; bracket pitch7.01mm, not7.11bodywidth. Row separation2.49mm. Bracket width8.41mm and rearreach4.01 from electrical row included in courtyard. Bracket holes are non-electrical.",
+      "footprint": "Meshcore:SW_TE_1825027_2_Side",
+      "dan_url": "https://www.danomsk.ru/shop/7-kommutatsiya/120-pereklyuchateli/587-mikroknopki/199312-mikroknopka-1825027-2-fsmra1jh04-kan0631n-0431b010-42-uglovaya-bez-fiksatsii-7-11-7-01-3-68mm-off-on/",
+      "stock": 127,
+      "stock_checked": "2026-10-11"
+    },
+    {
+      "mpn": "Connfly DS1022-1x40RUF11-B cut to4pins",
+      "refs": [
+        "J3",
+        "J5"
+      ],
+      "article": 202688,
+      "pads": [
+        [
+          "1",
+          0,
+          0.0,
+          1.02,
+          "THT"
+        ],
+        [
+          "2",
+          0,
+          2.54,
+          1.02,
+          "THT"
+        ],
+        [
+          "3",
+          0,
+          5.08,
+          1.02,
+          "THT"
+        ],
+        [
+          "4",
+          0,
+          7.62,
+          1.02,
+          "THT"
+        ]
+      ],
+      "bbox": [
+        -1.25,
+        -1.27,
+        1.25,
+        8.89
+      ],
+      "height": 2.5,
+      "tail": 3.0,
+      "overall_height": 6.07,
+      "mating_length": 6.0,
+      "mating": [
+        1,
+        0
+      ],
+      "source": "https://en.connfly.com/static/upload/file/pdf/DS1022.pdf#page=1",
+      "note": "U type1, A3.00 solder tail,B6.00 mating length,C6.07 abovePCB. Do not subtractAfromC.",
+      "footprint": "Meshcore:Connfly_DS1022_1x04RUF11_B_Horizontal",
+      "dan_url": "https://www.danomsk.ru/shop/7-kommutatsiya/121-razemy/306-soediniteli-pryamougolnye/202688-pls-40r2-ds1022-1x40ruf11-b-vilka-uglovaya-2-54mm-connfly/",
+      "stock": 470,
+      "stock_checked": "2026-10-11"
+    },
+    {
+      "refs": [
+        "W1_END_POWER",
+        "W1_END_LOGIC"
+      ],
+      "mpn": "Connfly DS1016-12MA2BB",
+      "article": 195394,
+      "dan_url": "https://www.danomsk.ru/shop/7-kommutatsiya/121-razemy/306-soediniteli-pryamougolnye/195394-idc-12f-ds1016-12ma2bb-rozetka-shag-2-54mm-maks-dopust-tok-1a-connfly/",
+      "stock": 230,
+      "stock_checked": "2026-10-11",
+      "body_length": 19.9,
+      "body_width": 6.0,
+      "top_cover_dimension": 13.3,
+      "assembled_axial_size": null,
+      "mated_axial_extension": null,
+      "dimension_note": "13.3 mm is the separate Top cover dimension in DS1016, not a dimensioned final mated assembly. Validate the final socket size and mating depth on an actual pair.",
+      "source": "https://en.connfly.com/static/upload/file/pdf/DS1016.pdf",
+      "note": "Female key/strain relief,12positions2.54mm. Cable conductor pitch1.27mm."
+    },
+    {
+      "refs": [
+        "STAND_POWER_SCREEN_X4"
+      ],
+      "mpn": "RUICHI PCHSN-18",
+      "article": 206757,
+      "dan_url": "https://www.danomsk.ru/shop/8-ustanovochnye/109-krepezh-aksessuary/291-stoyki-pribornye/206757-stoyka-pchsn-18-shestigrannaya-18-mm-m3-latun-ruichi/",
+      "stock": 52,
+      "stock_checked": "2026-10-11",
+      "body_length": 18,
+      "thread": "M3",
+      "across_flats": 5.5,
+      "male_stud": 5.0,
+      "female_hole_depth": 6.0,
+      "source": "https://www.danomsk.ru/upload/iblock/a02/110251_1e32ecf705accb191cd05713b8059f9d.pdf",
+      "note": "Family drawing explicitly listsPCHSN-18. Acrossflats/stud/femalehole areapproximate; incoming inspectionrequired. Male5mm faces lower retainingnut; upperConnfly6mmstud entersRUICHI femalehole."
+    },
+    {
+      "refs": [
+        "STAND_SCREEN_LOGIC_X4"
+      ],
+      "mpn": "Connfly H-L1500-2100-5-03-1N1W / PCHSN-15",
+      "article": 188548,
+      "dan_url": "https://www.danomsk.ru/shop/8-ustanovochnye/109-krepezh-aksessuary/291-stoyki-pribornye/188548-stoyka-h-l-1500-2100-5-03-1n1w-da5m3-15-pchsn-15-shestigrannaya-15mm-m3-nikel-connfly/",
+      "stock": 168,
+      "stock_checked": "2026-10-11",
+      "body_length": 15,
+      "thread": "M3",
+      "across_flats": 5.5,
+      "male_stud": 6.0,
+      "source": "https://www.danomsk.ru/upload/iblock/1b1/188548_e44317379783c17effab280d052a68cb.pdf",
+      "note": "6.0±0.2mm male; usable female thread depth unspecified. Measure before tightening top6mm screw."
+    }
+  ],
+  "accessories": [
+    {
+      "refs": [
+        "W1_CABLE"
+      ],
+      "mpn": "Connfly DS1057-16A282R-30.5",
+      "article": 200351,
+      "quantity": 0.12,
+      "unit": "m",
+      "dan_url": "https://www.danomsk.ru/shop/425-kabeli-provoda-shnury/427-kabeli-provoda/789-shleyfy/200351-shleyf-16-zhil-1-27mm-ds1057-16a282r-30-5-connfly/",
+      "stock": 72,
+      "stock_checked": "2026-10-11",
+      "source": "https://en.connfly.com/static/upload/file/pdf/DS1057.pdf",
+      "note": "Buy required sale length; separate12conductors retaining red pin1 stripe. AWG28,7x0.127mm, conductor resistance<=0.237ohm/m20C, PVC thickness0.9±0.15mm, ratedambient-20..70C. A120mmlengthisslacktarget, confirmonassembly."
+    },
+    {
+      "refs": [
+        "J12_HARNESS"
+      ],
+      "mpn": "KLS L-KLS1-2.50-04-H",
+      "article": 205451,
+      "quantity": 1,
+      "unit": "pc",
+      "dan_url": "https://www.danomsk.ru/shop/7-kommutatsiya/121-razemy/306-soediniteli-pryamougolnye/205451-chu-4-xh-04f-l-kls1-2-50-04-h-rozetka-kabelnaya-bez-kontaktov-kontakty-203549-203367-2-5mm-kls/",
+      "stock": 413,
+      "stock_checked": "2026-10-11",
+      "source": "https://img.klsele.com/admin/product_upload/20250303165321L-KLS1-2.50.pdf#page=2",
+      "note": "Same KLS family as J12. Populate only pins1..3; leave pin4 empty."
+    },
+    {
+      "refs": [
+        "J12_CONTACTS"
+      ],
+      "mpn": "KLS KLS1-2.50-T",
+      "article": 203367,
+      "quantity": 3,
+      "unit": "pc",
+      "dan_url": "https://www.danomsk.ru/shop/7-kommutatsiya/121-razemy/306-soediniteli-pryamougolnye/203367-kontakty-dlya-rozetok-chu-xh-cwf-kls1-2-50-t-kls/",
+      "stock": 5490,
+      "stock_checked": "2026-10-11",
+      "source": "https://img.klsele.com/admin/product_upload/20250303165321L-KLS1-2.50.pdf#page=1",
+      "note": "Crimp with matched wire size and tool; verify retention."
+    },
+    {
+      "refs": [
+        "J7_J8_CONTACTS"
+      ],
+      "mpn": "JST SXH-001T-P0.6",
+      "article": 204874,
+      "quantity": 4,
+      "unit": "pc",
+      "dan_url": "https://www.danomsk.ru/shop/7-kommutatsiya/121-razemy/306-soediniteli-pryamougolnye/204874-kontakty-dlya-rozetok-xhp-sxh-001t-p0-6-jst/",
+      "stock": 150,
+      "stock_checked": "2026-10-11",
+      "source": "https://www.danomsk.ru/upload/iblock/11a/167075_e8e7acdd79497cc6a7262e2649317f11.pdf#page=2",
+      "note": "Matching original JST terminal for XHP-2; AWG28..22."
+    },
+    {
+      "refs": [
+        "J11_SHUNT"
+      ],
+      "mpn": "Connfly DS1027-2BBN1",
+      "article": 128935,
+      "quantity": 1,
+      "unit": "pc",
+      "dan_url": "https://www.danomsk.ru/shop/7-kommutatsiya/121-razemy/306-soediniteli-pryamougolnye/128935-dzhamper-mj-c-6-5-ds1027-2bbn1-connfly/",
+      "stock": 724,
+      "stock_checked": "2026-10-11",
+      "source": "https://en.connfly.com/static/upload/file/pdf/DS1027.pdf",
+      "note": "Closed6.5mm shunt,2.54pitch. Remove forUSBservice; provide finger/pinceraccess."
+    },
+    {
+      "refs": [
+        "J7_J8_HOUSINGS"
+      ],
+      "mpn": "JST XHP-2",
+      "quantity": 2,
+      "unit": "pc",
+      "supplier": "TMElectronics/LCSC",
+      "supplier_url": "https://tmelectronics.ru/product/XHP-2/",
+      "alternate_url": "https://lcsc.com/product-detail/Rectangular-Connectors-Housings_JST-Sales-America_XHP-2_JST-Sales-America-XHP-2_C144401.html",
+      "stock": null,
+      "stock_checked": "searchindex only; directcard403",
+      "source": "https://www.danomsk.ru/upload/iblock/11a/167075_e8e7acdd79497cc6a7262e2649317f11.pdf#page=2",
+      "note": "Original JST matching housing. Dan has Connfly2pole alternatives; crossbrandmateisnotmanufacturer-qualified. LCSClistedstock42050/MOQ50 insearchindex; recheck beforepurchase."
+    },
+    {
+      "refs": [
+        "WASHERS_ALL"
+      ],
+      "mpn": "metal DIN433 M3 3.2x6x0.5mm",
+      "quantity": 20,
+      "unit": "pc",
+      "supplier": "Завод Купцова",
+      "supplier_url": "https://www.kuptsov-zavod.ru/catalog/shayby-umenshennye/shayba-umenshennaya-otsinkovannaya-m3-din-433/",
+      "stock": "In stock oncard",
+      "stock_checked": "2026-10-11",
+      "source": "https://www.kuptsov-zavod.ru/catalog/shayby-umenshennye/shayba-umenshennaya-otsinkovannaya-m3-din-433/",
+      "note": "Metal DIN433 washers: OD 6 mm, ID 3.2 mm, thickness 0.5 mm. Keep the selected dimensions for the documented thread stack."
+    },
+    {
+      "refs": [
+        "NUTS_POWER_X4"
+      ],
+      "mpn": "metal M3 DIN934 A2",
+      "quantity": 4,
+      "unit": "pc",
+      "supplier": "Darxton",
+      "supplier_url": "https://darxton.ru/catalog_item/gayka-m3-a2-din-934/",
+      "stock": "Available; sellerupdate2026-08-05",
+      "stock_checked": "2026-10-11",
+      "source": "https://darxton.ru/catalog_item/gayka-m3-a2-din-934/",
+      "note": "Acrossflats5.5, nominalheight2.4. Retains lowerRUICHIstud."
+    },
+    {
+      "refs": [
+        "SCREWS_LOGIC_X4"
+      ],
+      "mpn": "metal M3x6 DIN7985",
+      "quantity": 4,
+      "unit": "pc",
+      "supplier": "Все инструменты/Стройметиз",
+      "supplier_url": "https://www.vseinstrumenti.ru/product/vint-strojmetiz-m3h6-din-7985-polukruglaya-golovka-tsink-up-40-sht-3100821-1527042/",
+      "stock": "Ordering available insearchresult; pack40",
+      "stock_checked": "2026-10-11",
+      "source": "https://purelogic.ru/docs/mekhanika/vinty_din_7985_chernye_draw.pdf",
+      "note": "Nominal6mm underhead. Headmodel uses conservative6mmOD/2.52mmhigh; exactorderedheadmayvary. Prove usablefemale depth beforetightening. Do not substitute25mm screw fromDan."
+    }
+  ],
+  "interboard": {
+    "headers": [
+      "J101",
+      "J201"
+    ],
+    "pin_map": {
+      "1": "FILTER_OUT",
+      "2": "GND",
+      "3": "FILTER_OUT",
+      "4": "GND",
+      "5": "FILTER_OUT",
+      "6": "GND",
+      "7": "FILTER_OUT",
+      "8": "GND",
+      "9": "BAT",
+      "10": "GND",
+      "11": "MODE",
+      "12": "GND"
+    },
+    "connection": "1:1; test every pin before power.",
+    "forbidden_crossnet": "SYS_3V3",
+    "cable": "Connfly DS1057-16A282R-30.5: separate 12 conductors, retain the red stripe; provisional length 120 mm including slack.",
+    "assembly_current_limit": "Dan specifies 1 A/contact. Board continuous current 0.5 A is an unmeasured design assumption. Qualify the cable, peak current and voltage drop; parallel contacts do not prove a multiplied assembly rating.",
+    "cable_temperature_limit_C": [
+      -20,
+      70
+    ],
+    "cable_resistance_max_ohm_per_m20C": 0.237,
+    "ideal_wire_only_drop_at0_5A_120mm_V": 0.005925,
+    "route": "Around the north screen edge; planned external cable loop physical Y <= -23 mm, design bend radius >= 5 mm. These provisional dimensions require assembly validation.",
+    "header_power": {
+      "first_pin": [
+        64.15,
+        11.0
+      ],
+      "rotation_kicad": 90
+    },
+    "header_logic": {
+      "first_pin": [
+        76.85,
+        49.0
+      ],
+      "rotation_kicad": 270
+    },
+    "header_physical_body_xy": [
+      59.08,
+      -2.8,
+      81.92,
+      6.0
+    ],
+    "header_mount_clearance_note": "The headers were shifted left to preserve clearance to the north-east washers and arbitrarily rotated M3 hex standoffs. Physical center X is 70.5 mm.",
+    "orientation_warning": "After LOGIC rotates about X, both keyed headers face north but pin 1 is at opposite physical X. A correctly oriented half-twist of the ribbon or a custom 1:1 wire harness is necessary. The key alone does not prove 1:1 wiring."
+  },
+  "assembly": {
+    "lower_components": "F up",
+    "upper_components": "F down via 180 degrees about X",
+    "visible_upper_silk": "B",
+    "isp": "Baseline native location; service after disassembly."
+  },
+  "stack": {
+    "pcb_thickness": 1.52,
+    "washer_thickness": 0.5,
+    "lower_stand_body": 18.0,
+    "upper_stand_body": 15.0,
+    "washer_count_per_corner": 5,
+    "washer_od": 6.0,
+    "washer_id": 3.2,
+    "sequence_bottom_to_top": [
+      "M3 DIN934 nut",
+      "Metal DIN433 washer 0.5 mm",
+      "POWER PCB 1.52 mm",
+      "RUICHI PCHSN-18 body directly on the POWER GND land",
+      "Metal DIN433 washer 0.5 mm",
+      "SHIELD PCB 1.52 mm, foil down",
+      "Metal DIN433 washer 0.5 mm",
+      "Connfly PCHSN-15 body",
+      "Metal DIN433 washer 0.5 mm",
+      "LOGIC PCB 1.52 mm, components down",
+      "Metal DIN433 washer 0.5 mm",
+      "M3x6 screw head"
+    ],
+    "power_pcb_bottom_z": 0.0,
+    "power_pcb_top_z": 1.52,
+    "lower_stand_bottom_z": 1.52,
+    "lower_stand_top_z": 19.52,
+    "shield_bottom_z": 20.02,
+    "shield_top_z": 21.54,
+    "upper_stand_bottom_z": 22.04,
+    "upper_stand_top_z": 37.04,
+    "logic_component_face_z": 37.54,
+    "logic_outside_face_z": 39.06,
+    "lower_face_clearance": 18.5,
+    "upper_face_clearance": 16.0,
+    "outer_pcb_surface_height": 39.06,
+    "nominal_nut_to_screw_head_height": 44.98,
+    "nominal_upper_stud_engagement": 3.48,
+    "nominal_top_screw_engagement": 3.48,
+    "nominal_lower_nut_available_thread": 2.98,
+    "qualification": "Nominal dimension chain only. Measure the usable female thread depth and actual PCB, washer and stud dimensions. Confirm at least 3.0 mm engagement in upper joints, no bottoming and full lower nut engagement. Both metal washer faces must contact GND only."
+  },
+  "unresolved": [
+    "Measure the NiceNano clone and actual Type-C plug.",
+    "Incoming inspection: usable female thread depth and approximate RUICHI stud dimensions.",
+    "Check all connector footprints against the actual ordered MPNs before fabrication.",
+    "Validate the cable, thread stack and connector access on an assembly.",
+    "Selected IDC cable is specified for -20 to +70 C. Lower ambient temperatures require another qualified cable.",
+    "Original JST XHP-2 direct stock is not verified; supplier alternatives have qualified availability notes."
+  ],
+  "assembly_cad_dimensions": {
+    "uncabled_bbox_mm": [
+      -4.75,
+      -67.21000000000001,
+      -3.48,
+      93.25,
+      2.8000000000000025,
+      42.080000000000005
+    ],
+    "uncabled_dimensions_mm": [
+      98.0,
+      70.01,
+      45.56
+    ],
+    "source": "docs/mechanics/assembly_geometry_report.json",
+    "note": "The complete CAD envelope includes projecting connector bodies and the lower M3 stud. The 44.98 mm nut-to-head chain is not the complete height. Cable outside the screen and actual connector mating remain provisional; with the native southern connector at physical Y=67.21 mm, a planned northern cable loop Y <= -23 mm makes the complete Y envelope at least about 90.21 mm before actual mating and slack allowances."
+  }
+}

@@ -1,0 +1,5434 @@
+{
+  "source": "design\\MeshRepeater2_Logic\\MeshRepeater2_Logic.kicad_pcb",
+  "destination": "design\\MeshRepeater2_Logic\\MeshRepeater2_Logic.kicad_pcb",
+  "source_pcb_sha256": "02c17a7c5846a43b60143acde56f511a83e27f2cf101cda04b4273c5bfc00a04",
+  "model_sha256": "ef66e50d9971793f8a913534b8ea54fcb36d475d0f10a778d47b498b215070db",
+  "board": "LOGIC",
+  "dry_run": false,
+  "invariant_before": "5b83c0c9efa3e560dba1dac8b0d30c37292ee80a11267062c8c92ca887237dab",
+  "invariant_after": "5b83c0c9efa3e560dba1dac8b0d30c37292ee80a11267062c8c92ca887237dab",
+  "unchanged_electrical_and_placement": true,
+  "primary_count": 57,
+  "expected_count": 57,
+  "minimum_font_mm": 0.8,
+  "label_edge_gap_mm": 0.4,
+  "reserved_mask_gap_mm": 0.16,
+  "assembly_flip": "X180",
+  "associations": [
+    {
+      "ref": "FB1",
+      "mode": "projected_body",
+      "real_body_center_mm": [
+        33.8,
+        14.45
+      ],
+      "label": {
+        "owner": "FB1",
+        "kind": "projected_body",
+        "text": "FB1\n60R@100MHz",
+        "at_mm": [
+          33.8,
+          14.45
+        ],
+        "box_mm": [
+          28.53619,
+          12.689428,
+          39.063809,
+          16.210572
+        ],
+        "angle_deg": 180.0,
+        "layer": "B.Silkscreen",
+        "font_mm": 1.0,
+        "uuid": "e9f9a791-8fd5-4075-b750-c7ab410349a6"
+      }
+    },
+    {
+      "ref": "M1",
+      "mode": "projected_body",
+      "real_body_center_mm": [
+        18.0,
+        18.0
+      ],
+      "label": {
+        "owner": "M1",
+        "kind": "projected_body",
+        "text": "M1\nNiceNano",
+        "at_mm": [
+          18.0,
+          18.0
+        ],
+        "box_mm": [
+          14.26,
+          16.239428,
+          21.74,
+          19.760572
+        ],
+        "angle_deg": 180.0,
+        "layer": "B.Silkscreen",
+        "font_mm": 1.0,
+        "uuid": "136f9b5b-e914-44c6-97ce-a345ac38cd89"
+      }
+    },
+    {
+      "ref": "M2",
+      "mode": "projected_body",
+      "real_body_center_mm": [
+        48.0,
+        18.0
+      ],
+      "label": {
+        "owner": "M2",
+        "kind": "projected_body",
+        "text": "M2\nHT-RA62",
+        "at_mm": [
+          48.0,
+          18.0
+        ],
+        "box_mm": [
+          44.355238,
+          16.239428,
+          51.644762,
+          19.760572
+        ],
+        "angle_deg": 180.0,
+        "layer": "B.Silkscreen",
+        "font_mm": 1.0,
+        "uuid": "c10775c9-b898-481e-a82f-13565867e8fe"
+      }
+    },
+    {
+      "ref": "Q2",
+      "mode": "projected_body",
+      "real_body_center_mm": [
+        63.5,
+        17.0
+      ],
+      "label": {
+        "owner": "Q2",
+        "kind": "projected_body",
+        "text": "Q2\nAO3401A",
+        "at_mm": [
+          63.5,
+          17.0
+        ],
+        "box_mm": [
+          59.974285,
+          15.239428,
+          67.025714,
+          18.760572
+        ],
+        "angle_deg": 180.0,
+        "layer": "B.Silkscreen",
+        "font_mm": 1.0,
+        "uuid": "1f3dff0f-d9f2-4064-a39f-194b1bda4c9b"
+      }
+    },
+    {
+      "ref": "U4",
+      "mode": "projected_body",
+      "real_body_center_mm": [
+        77.0,
+        8.0
+      ],
+      "label": {
+        "owner": "U4",
+        "kind": "projected_body",
+        "text": "U4\nDS3231M",
+        "at_mm": [
+          77.0,
+          8.0
+        ],
+        "box_mm": [
+          73.307619,
+          6.239428,
+          80.692381,
+          9.760572
+        ],
+        "angle_deg": 180.0,
+        "layer": "B.Silkscreen",
+        "font_mm": 1.0,
+        "uuid": "c40b3189-2d98-40bd-88f7-d3bbaf5a38bc"
+      }
+    },
+    {
+      "ref": "C26",
+      "mode": "projected_body",
+      "real_body_center_mm": [
+        6.7,
+        27.5
+      ],
+      "label": {
+        "owner": "C26",
+        "kind": "projected_body",
+        "text": "C26\n100nF",
+        "at_mm": [
+          6.7,
+          27.5
+        ],
+        "box_mm": [
+          4.150476,
+          25.739428,
+          9.249524000000001,
+          29.260572
+        ],
+        "angle_deg": 180.0,
+        "layer": "B.Silkscreen",
+        "font_mm": 1.0,
+        "uuid": "bd01d389-2a6c-4f5d-87a6-bdcfaf51a539"
+      }
+    },
+    {
+      "ref": "C56",
+      "mode": "projected_body",
+      "real_body_center_mm": [
+        63.5,
+        6.3
+      ],
+      "label": {
+        "owner": "C56",
+        "kind": "projected_body",
+        "text": "C56\n100nF",
+        "at_mm": [
+          63.5,
+          6.3
+        ],
+        "box_mm": [
+          60.950476,
+          4.539428,
+          66.04952399999999,
+          8.060572
+        ],
+        "angle_deg": 180.0,
+        "layer": "B.Silkscreen",
+        "font_mm": 1.0,
+        "uuid": "bfed6c18-a2a5-4ecc-8328-1155c703385b"
+      }
+    },
+    {
+      "ref": "R27",
+      "mode": "projected_body",
+      "real_body_center_mm": [
+        29.799999999999997,
+        19.0
+      ],
+      "label": {
+        "owner": "R27",
+        "kind": "projected_body",
+        "text": "R27\n2.2M",
+        "at_mm": [
+          29.799999,
+          18.999999
+        ],
+        "box_mm": [
+          28.039427,
+          16.998095,
+          31.560571,
+          21.001904
+        ],
+        "angle_deg": 270.0,
+        "layer": "B.Silkscreen",
+        "font_mm": 1.0,
+        "uuid": "b65cd038-460b-4625-a8b5-2003b009f0ae"
+      }
+    },
+    {
+      "ref": "R39",
+      "mode": "projected_body",
+      "real_body_center_mm": [
+        50.0,
+        31.235
+      ],
+      "label": {
+        "owner": "R39",
+        "kind": "projected_body",
+        "text": "R39\n100k",
+        "at_mm": [
+          50.0,
+          31.235
+        ],
+        "box_mm": [
+          47.926666000000004,
+          29.474428,
+          52.073333,
+          32.995571999999996
+        ],
+        "angle_deg": 180.0,
+        "layer": "B.Silkscreen",
+        "font_mm": 1.0,
+        "uuid": "0932d072-893c-40cd-afd7-eeaa5d78b317"
+      }
+    },
+    {
+      "ref": "R42",
+      "mode": "projected_body",
+      "real_body_center_mm": [
+        64.5,
+        20.799999999999997
+      ],
+      "label": {
+        "owner": "R42",
+        "kind": "projected_body",
+        "text": "R42\n100k",
+        "at_mm": [
+          64.5,
+          20.799999
+        ],
+        "box_mm": [
+          62.426666000000004,
+          19.039427,
+          66.57333299999999,
+          22.560571
+        ],
+        "angle_deg": 180.0,
+        "layer": "B.Silkscreen",
+        "font_mm": 1.0,
+        "uuid": "e05ea2b2-5324-4b60-b60a-7c4bc53b731a"
+      }
+    },
+    {
+      "ref": "R43",
+      "mode": "projected_body",
+      "real_body_center_mm": [
+        71.5,
+        20.799999999999997
+      ],
+      "label": {
+        "owner": "R43",
+        "kind": "projected_body",
+        "text": "R43\n100k",
+        "at_mm": [
+          71.5,
+          20.799999
+        ],
+        "box_mm": [
+          69.426666,
+          19.039427,
+          73.57333299999999,
+          22.560571
+        ],
+        "angle_deg": 180.0,
+        "layer": "B.Silkscreen",
+        "font_mm": 1.0,
+        "uuid": "fbd2ceae-bc08-4b00-a1d8-ffd2949ca89d"
+      }
+    },
+    {
+      "ref": "R23",
+      "mode": "projected_body",
+      "real_body_center_mm": [
+        30.0,
+        28.659999999999997
+      ],
+      "label": {
+        "owner": "R23",
+        "kind": "projected_body",
+        "text": "R23\n33R",
+        "at_mm": [
+          30.0,
+          28.659999
+        ],
+        "box_mm": [
+          28.307619,
+          26.899427,
+          31.692381,
+          30.420571
+        ],
+        "angle_deg": 180.0,
+        "layer": "B.Silkscreen",
+        "font_mm": 1.0,
+        "uuid": "cb37e9d8-b07d-48db-8d8a-723adc32af2f"
+      }
+    },
+    {
+      "ref": "R24",
+      "mode": "projected_body",
+      "real_body_center_mm": [
+        30.0,
+        23.58
+      ],
+      "label": {
+        "owner": "R24",
+        "kind": "projected_body",
+        "text": "R24\n33R",
+        "at_mm": [
+          30.0,
+          23.58
+        ],
+        "box_mm": [
+          28.307619,
+          21.819428,
+          31.692381,
+          25.340572
+        ],
+        "angle_deg": 180.0,
+        "layer": "B.Silkscreen",
+        "font_mm": 1.0,
+        "uuid": "8e7dfed0-1bf4-4004-bd9e-f0838a48cd56"
+      }
+    },
+    {
+      "ref": "R33",
+      "mode": "projected_body",
+      "real_body_center_mm": [
+        28.700000000000003,
+        7.5
+      ],
+      "label": {
+        "owner": "R33",
+        "kind": "projected_body",
+        "text": "R33\n10k",
+        "at_mm": [
+          28.7,
+          7.5
+        ],
+        "box_mm": [
+          26.939428,
+          5.807619,
+          30.460572,
+          9.192381000000001
+        ],
+        "angle_deg": 270.0,
+        "layer": "B.Silkscreen",
+        "font_mm": 1.0,
+        "uuid": "7462c276-b019-4893-943f-665311d39b12"
+      }
+    },
+    {
+      "ref": "R36",
+      "mode": "projected_body",
+      "real_body_center_mm": [
+        50.0,
+        38.035
+      ],
+      "label": {
+        "owner": "R36",
+        "kind": "projected_body",
+        "text": "R36\n10k",
+        "at_mm": [
+          50.0,
+          38.035
+        ],
+        "box_mm": [
+          48.307619,
+          36.274428,
+          51.692381,
+          39.795572
+        ],
+        "angle_deg": 180.0,
+        "layer": "B.Silkscreen",
+        "font_mm": 1.0,
+        "uuid": "de9ec36d-3248-4fb8-9d83-1872334eb4a0"
+      }
+    },
+    {
+      "ref": "J4",
+      "mode": "projected_body",
+      "real_body_center_mm": [
+        52.0,
+        2.4400000000000004
+      ],
+      "label": {
+        "owner": "J4",
+        "kind": "projected_body",
+        "text": "J4\nGPS",
+        "at_mm": [
+          52.0,
+          2.44
+        ],
+        "box_mm": [
+          50.283809000000005,
+          0.6794279999999999,
+          53.71619,
+          4.200572
+        ],
+        "angle_deg": 180.0,
+        "layer": "B.Silkscreen",
+        "font_mm": 1.0,
+        "uuid": "70795717-96b4-4bbb-b1c2-dd77ed81ae2f"
+      }
+    },
+    {
+      "ref": "R38",
+      "mode": "projected_body",
+      "real_body_center_mm": [
+        50.0,
+        34.635000000000005
+      ],
+      "label": {
+        "owner": "R38",
+        "kind": "projected_body",
+        "text": "R38\n1k",
+        "at_mm": [
+          50.0,
+          34.635
+        ],
+        "box_mm": [
+          48.472857000000005,
+          33.048525000000005,
+          51.527142999999995,
+          36.221475
+        ],
+        "angle_deg": 180.0,
+        "layer": "B.Silkscreen",
+        "font_mm": 0.9,
+        "uuid": "7555824a-7f69-49a3-b294-8b29e78ae325"
+      }
+    },
+    {
+      "ref": "J11",
+      "mode": "adjacent_front",
+      "real_body_center_mm": [
+        86.0,
+        24.27
+      ],
+      "label": {
+        "owner": "J11",
+        "kind": "adjacent_front",
+        "text": "J11\nLC/SYS",
+        "at_mm": [
+          81.591428,
+          24.27
+        ],
+        "box_mm": [
+          78.84285700000001,
+          22.683525,
+          84.34,
+          25.856475
+        ],
+        "angle_deg": 0.0,
+        "layer": "F.Silkscreen",
+        "font_mm": 0.9,
+        "uuid": "f84a4575-f220-481b-9ea9-6c563f0071a0"
+      }
+    },
+    {
+      "ref": "Q3",
+      "mode": "adjacent_front",
+      "real_body_center_mm": [
+        68.0,
+        17.0
+      ],
+      "label": {
+        "owner": "Q3",
+        "kind": "adjacent_front",
+        "text": "Q3\n2N7002K",
+        "at_mm": [
+          68.0,
+          13.663525
+        ],
+        "box_mm": [
+          64.715714,
+          12.07705,
+          71.284286,
+          15.25
+        ],
+        "angle_deg": 0.0,
+        "layer": "F.Silkscreen",
+        "font_mm": 0.9,
+        "uuid": "94ba1ba6-a45a-4ce7-a894-6a41b853c49c"
+      }
+    },
+    {
+      "ref": "C24",
+      "mode": "adjacent_front",
+      "real_body_center_mm": [
+        37.6,
+        14.05
+      ],
+      "label": {
+        "owner": "C24",
+        "kind": "adjacent_front",
+        "text": "C24\n100nF",
+        "at_mm": [
+          37.1,
+          18.048572
+        ],
+        "box_mm": [
+          35.513525,
+          15.75,
+          38.686474999999994,
+          20.347144
+        ],
+        "angle_deg": 90.0,
+        "layer": "F.Silkscreen",
+        "font_mm": 0.9,
+        "uuid": "eea70e01-e7bd-4881-90bb-946f0709b190"
+      }
+    },
+    {
+      "ref": "C25",
+      "mode": "adjacent_front",
+      "real_body_center_mm": [
+        33.0,
+        17.299999999999997
+      ],
+      "label": {
+        "owner": "C25",
+        "kind": "adjacent_front",
+        "text": "C25\n100nF",
+        "at_mm": [
+          34.0,
+          22.181475
+        ],
+        "box_mm": [
+          31.701428,
+          20.595,
+          36.298572,
+          23.76795
+        ],
+        "angle_deg": 0.0,
+        "layer": "F.Silkscreen",
+        "font_mm": 0.9,
+        "uuid": "cb67626a-0775-4ba4-9488-11fc7debeba2"
+      }
+    },
+    {
+      "ref": "C27",
+      "mode": "adjacent_front",
+      "real_body_center_mm": [
+        71.5,
+        7.365
+      ],
+      "label": {
+        "owner": "C27",
+        "kind": "adjacent_front",
+        "text": "C27\n100nF",
+        "at_mm": [
+          71.0,
+          4.733525
+        ],
+        "box_mm": [
+          68.701428,
+          3.1470499999999997,
+          73.298572,
+          6.32
+        ],
+        "angle_deg": 0.0,
+        "layer": "F.Silkscreen",
+        "font_mm": 0.9,
+        "uuid": "a8fa098c-a22b-4cf4-8695-9c4da9e6cb47"
+      }
+    },
+    {
+      "ref": "C33",
+      "mode": "adjacent_front",
+      "real_body_center_mm": [
+        41.525,
+        39.2
+      ],
+      "label": {
+        "owner": "C33",
+        "kind": "adjacent_front",
+        "text": "C33\n100nF",
+        "at_mm": [
+          44.156475,
+          39.2
+        ],
+        "box_mm": [
+          42.57,
+          36.901428,
+          45.74294999999999,
+          41.498571999999996
+        ],
+        "angle_deg": 90.0,
+        "layer": "F.Silkscreen",
+        "font_mm": 0.9,
+        "uuid": "b8d5f885-7acd-4435-b0e8-83f32a1824b2"
+      }
+    },
+    {
+      "ref": "SW2",
+      "mode": "adjacent_front",
+      "real_body_center_mm": [
+        41.0,
+        58.85
+      ],
+      "label": {
+        "owner": "SW2",
+        "kind": "adjacent_front",
+        "text": "SW2\nRESET",
+        "at_mm": [
+          40.999999,
+          55.013525
+        ],
+        "box_mm": [
+          38.744285000000005,
+          53.42705,
+          43.255714,
+          56.599999999999994
+        ],
+        "angle_deg": 0.0,
+        "layer": "F.Silkscreen",
+        "font_mm": 0.9,
+        "uuid": "52ebed43-5f54-4640-ad37-23bdd909c19f"
+      }
+    },
+    {
+      "ref": "C57",
+      "mode": "adjacent_front",
+      "real_body_center_mm": [
+        63.5,
+        3.2
+      ],
+      "label": {
+        "owner": "C57",
+        "kind": "adjacent_front",
+        "text": "C57\n10uF",
+        "at_mm": [
+          66.896667,
+          3.199999
+        ],
+        "box_mm": [
+          65.2,
+          1.7525220000000001,
+          68.593334,
+          4.647477
+        ],
+        "angle_deg": 0.0,
+        "layer": "F.Silkscreen",
+        "font_mm": 0.8,
+        "uuid": "36f82aad-902e-47ea-bcee-dfe7ba6dfcc8"
+      }
+    },
+    {
+      "ref": "R29",
+      "mode": "adjacent_front",
+      "real_body_center_mm": [
+        80.8,
+        17.200000000000003
+      ],
+      "label": {
+        "owner": "R29",
+        "kind": "adjacent_front",
+        "text": "R29\n4.7k",
+        "at_mm": [
+          80.8,
+          19.831475
+        ],
+        "box_mm": [
+          79.14428600000001,
+          18.245,
+          82.455714,
+          21.41795
+        ],
+        "angle_deg": 0.0,
+        "layer": "F.Silkscreen",
+        "font_mm": 0.9,
+        "uuid": "0cd06fdf-1ad4-4835-aa3d-32a12cb91915"
+      }
+    },
+    {
+      "ref": "R30",
+      "mode": "adjacent_front",
+      "real_body_center_mm": [
+        80.8,
+        14.4
+      ],
+      "label": {
+        "owner": "R30",
+        "kind": "adjacent_front",
+        "text": "R30\n4.7k",
+        "at_mm": [
+          77.444285,
+          14.4
+        ],
+        "box_mm": [
+          75.788571,
+          12.813525,
+          79.099999,
+          15.986475
+        ],
+        "angle_deg": 0.0,
+        "layer": "F.Silkscreen",
+        "font_mm": 0.9,
+        "uuid": "400ac33d-80a7-40eb-a6d6-d3feb2eb043f"
+      }
+    },
+    {
+      "ref": "R35",
+      "mode": "adjacent_front",
+      "real_body_center_mm": [
+        59.400000000000006,
+        16.5
+      ],
+      "label": {
+        "owner": "R35",
+        "kind": "adjacent_front",
+        "text": "R35\n100k",
+        "at_mm": [
+          59.4,
+          13.868525
+        ],
+        "box_mm": [
+          57.53,
+          12.28205,
+          61.269999999999996,
+          15.455
+        ],
+        "angle_deg": 0.0,
+        "layer": "F.Silkscreen",
+        "font_mm": 0.9,
+        "uuid": "116c40b5-58f5-4f10-92dd-51d1cfc086a9"
+      }
+    },
+    {
+      "ref": "R46",
+      "mode": "adjacent_front",
+      "real_body_center_mm": [
+        59.400000000000006,
+        9.675
+      ],
+      "label": {
+        "owner": "R46",
+        "kind": "adjacent_front",
+        "text": "R46\n100k",
+        "at_mm": [
+          59.4,
+          7.043525
+        ],
+        "box_mm": [
+          57.53,
+          5.45705,
+          61.269999999999996,
+          8.63
+        ],
+        "angle_deg": 0.0,
+        "layer": "F.Silkscreen",
+        "font_mm": 0.9,
+        "uuid": "a3d1fb6a-4d71-429e-b702-46791ca6cd46"
+      }
+    },
+    {
+      "ref": "SW1",
+      "mode": "adjacent_front",
+      "real_body_center_mm": [
+        29.0,
+        58.85
+      ],
+      "label": {
+        "owner": "SW1",
+        "kind": "adjacent_front",
+        "text": "SW1\nUSER",
+        "at_mm": [
+          29.0,
+          55.013525
+        ],
+        "box_mm": [
+          27.022857,
+          53.42705,
+          30.977143,
+          56.599999999999994
+        ],
+        "angle_deg": 0.0,
+        "layer": "F.Silkscreen",
+        "font_mm": 0.9,
+        "uuid": "9a95bcb2-009b-4f16-9c83-1a9b78c70f71"
+      }
+    },
+    {
+      "ref": "H201",
+      "mode": "adjacent_front",
+      "real_body_center_mm": [
+        3.5,
+        3.5
+      ],
+      "label": {
+        "owner": "H201",
+        "kind": "adjacent_front",
+        "text": "H201 M3",
+        "at_mm": [
+          4.0,
+          7.612
+        ],
+        "box_mm": [
+          0.737143,
+          6.75,
+          7.262857,
+          8.474
+        ],
+        "angle_deg": 0.0,
+        "layer": "F.Silkscreen",
+        "font_mm": 0.9,
+        "uuid": "719dc4a9-9307-4783-a33b-92dabdf46e5a"
+      }
+    },
+    {
+      "ref": "H202",
+      "mode": "adjacent_front",
+      "real_body_center_mm": [
+        86.5,
+        3.5
+      ],
+      "label": {
+        "owner": "H202",
+        "kind": "adjacent_front",
+        "text": "H202 M3",
+        "at_mm": [
+          79.987143,
+          3.5
+        ],
+        "box_mm": [
+          76.724286,
+          2.638,
+          83.25,
+          4.362
+        ],
+        "angle_deg": 0.0,
+        "layer": "F.Silkscreen",
+        "font_mm": 0.9,
+        "uuid": "2308f05b-4c92-40e7-b5b2-72d043525e00"
+      }
+    },
+    {
+      "ref": "H203",
+      "mode": "adjacent_front",
+      "real_body_center_mm": [
+        3.5,
+        56.5
+      ],
+      "label": {
+        "owner": "H203",
+        "kind": "adjacent_front",
+        "text": "H203 M3",
+        "at_mm": [
+          10.012857,
+          56.5
+        ],
+        "box_mm": [
+          6.75,
+          55.638000000000005,
+          13.275714,
+          57.361999999999995
+        ],
+        "angle_deg": 0.0,
+        "layer": "F.Silkscreen",
+        "font_mm": 0.9,
+        "uuid": "a5206e9d-fb13-4f2f-9bb7-387a326b9014"
+      }
+    },
+    {
+      "ref": "J10",
+      "mode": "adjacent_front",
+      "real_body_center_mm": [
+        36.97,
+        33.84
+      ],
+      "label": {
+        "owner": "J10",
+        "kind": "adjacent_front",
+        "text": "J10\nISP",
+        "at_mm": [
+          36.97,
+          28.143525
+        ],
+        "box_mm": [
+          35.550000000000004,
+          26.55705,
+          38.38999999999999,
+          29.73
+        ],
+        "angle_deg": 0.0,
+        "layer": "F.Silkscreen",
+        "font_mm": 0.9,
+        "uuid": "951620fe-2463-4f41-8f0f-4a2b1649e4f7"
+      }
+    },
+    {
+      "ref": "J5",
+      "mode": "adjacent_front",
+      "real_body_center_mm": [
+        2.5,
+        14.31
+      ],
+      "label": {
+        "owner": "J5",
+        "kind": "adjacent_front",
+        "text": "J5\nUART",
+        "at_mm": [
+          2.5,
+          21.386475
+        ],
+        "box_mm": [
+          0.63,
+          19.8,
+          4.37,
+          22.97295
+        ],
+        "angle_deg": 0.0,
+        "layer": "F.Silkscreen",
+        "font_mm": 0.9,
+        "uuid": "f4afcae1-e0ab-41ca-b456-d2ea7d654263"
+      }
+    },
+    {
+      "ref": "R25",
+      "mode": "adjacent_front",
+      "real_body_center_mm": [
+        30.0,
+        26.119999999999997
+      ],
+      "label": {
+        "owner": "R25",
+        "kind": "adjacent_front",
+        "text": "R25\n33R",
+        "at_mm": [
+          33.227142,
+          26.119999
+        ],
+        "box_mm": [
+          31.699999,
+          24.533524,
+          34.754284999999996,
+          27.706474
+        ],
+        "angle_deg": 0.0,
+        "layer": "F.Silkscreen",
+        "font_mm": 0.9,
+        "uuid": "22ead78b-5ad4-4b7f-979c-5ac9a3f838e4"
+      }
+    },
+    {
+      "ref": "R26",
+      "mode": "adjacent_front",
+      "real_body_center_mm": [
+        59.400000000000006,
+        18.799999999999997
+      ],
+      "label": {
+        "owner": "R26",
+        "kind": "adjacent_front",
+        "text": "R26\n33R",
+        "at_mm": [
+          59.4,
+          21.431475
+        ],
+        "box_mm": [
+          57.872857,
+          19.845,
+          60.927142999999994,
+          23.01795
+        ],
+        "angle_deg": 0.0,
+        "layer": "F.Silkscreen",
+        "font_mm": 0.9,
+        "uuid": "7868c0fa-7059-4007-a432-aebd90691f23"
+      }
+    },
+    {
+      "ref": "R31",
+      "mode": "adjacent_front",
+      "real_body_center_mm": [
+        6.7,
+        30.5
+      ],
+      "label": {
+        "owner": "R31",
+        "kind": "adjacent_front",
+        "text": "R31\n10k",
+        "at_mm": [
+          6.7,
+          33.131475
+        ],
+        "box_mm": [
+          5.172857,
+          31.544999999999998,
+          8.227143,
+          34.717949999999995
+        ],
+        "angle_deg": 0.0,
+        "layer": "F.Silkscreen",
+        "font_mm": 0.9,
+        "uuid": "1844e2f0-d10c-4e18-ac7c-e867b3e4fbb4"
+      }
+    },
+    {
+      "ref": "R21",
+      "mode": "adjacent_front",
+      "real_body_center_mm": [
+        48.0,
+        45.0
+      ],
+      "label": {
+        "owner": "R21",
+        "kind": "adjacent_front",
+        "text": "R21\n1k",
+        "at_mm": [
+          48.0,
+          42.368525
+        ],
+        "box_mm": [
+          46.472857000000005,
+          40.782050000000005,
+          49.527142999999995,
+          43.955
+        ],
+        "angle_deg": 0.0,
+        "layer": "F.Silkscreen",
+        "font_mm": 0.9,
+        "uuid": "ffb22452-4b2f-40b6-8065-63f4cc710a4a"
+      }
+    },
+    {
+      "ref": "R44",
+      "mode": "adjacent_front",
+      "real_body_center_mm": [
+        68.0,
+        20.8
+      ],
+      "label": {
+        "owner": "R44",
+        "kind": "adjacent_front",
+        "text": "R44\n1k",
+        "at_mm": [
+          68.0,
+          24.027143
+        ],
+        "box_mm": [
+          66.413525,
+          22.5,
+          69.586475,
+          25.554286
+        ],
+        "angle_deg": 90.0,
+        "layer": "F.Silkscreen",
+        "font_mm": 0.9,
+        "uuid": "925c42c0-9906-499c-8e37-a7dac7a7dcee"
+      }
+    },
+    {
+      "ref": "NT1",
+      "mode": "adjacent_front",
+      "real_body_center_mm": [
+        40.7,
+        4.25
+      ],
+      "label": {
+        "owner": "NT1",
+        "kind": "adjacent_front",
+        "text": "NT1",
+        "at_mm": [
+          40.7,
+          1.288
+        ],
+        "box_mm": [
+          39.237143,
+          0.42599999999999993,
+          42.162856999999995,
+          2.15
+        ],
+        "angle_deg": 0.0,
+        "layer": "F.Silkscreen",
+        "font_mm": 0.9,
+        "uuid": "ab303378-4e7f-429f-96b0-00c3a241fc9e"
+      }
+    },
+    {
+      "ref": "C21",
+      "mode": "spatial_group",
+      "group": "G1",
+      "real_body_center_mm": [
+        29.049999999999997,
+        11.3
+      ],
+      "label": {
+        "owner": "C21",
+        "kind": "spatial_group",
+        "text": "C21\n10uF",
+        "at_mm": [
+          33.912499,
+          21.724999
+        ],
+        "box_mm": [
+          32.151927,
+          19.651666,
+          35.67307099999999,
+          23.798333
+        ],
+        "angle_deg": 270.0,
+        "layer": "B.Silkscreen",
+        "font_mm": 1.0,
+        "uuid": "c2197028-5b92-4b89-b2be-6fcdebeaad07"
+      }
+    },
+    {
+      "ref": "C22",
+      "mode": "spatial_group",
+      "group": "G1",
+      "real_body_center_mm": [
+        32.1,
+        11.3
+      ],
+      "label": {
+        "owner": "C22",
+        "kind": "spatial_group",
+        "text": "C22\n100nF",
+        "at_mm": [
+          38.4875,
+          21.725
+        ],
+        "box_mm": [
+          36.726928,
+          19.175476,
+          40.24807199999999,
+          24.274524
+        ],
+        "angle_deg": 270.0,
+        "layer": "B.Silkscreen",
+        "font_mm": 1.0,
+        "uuid": "3a175244-5b69-48bf-88e2-655d8b40f1ac"
+      }
+    },
+    {
+      "ref": "R28",
+      "mode": "spatial_group",
+      "group": "G1",
+      "real_body_center_mm": [
+        29.799999999999997,
+        15.6
+      ],
+      "label": {
+        "owner": "R28",
+        "kind": "spatial_group",
+        "text": "R28\n2.2M",
+        "at_mm": [
+          35.037499,
+          28.174999
+        ],
+        "box_mm": [
+          33.276927,
+          26.173095,
+          36.79807099999999,
+          30.176904
+        ],
+        "angle_deg": 270.0,
+        "layer": "B.Silkscreen",
+        "font_mm": 1.0,
+        "uuid": "a8d0e101-edd1-487d-ac48-9ba87acfc862"
+      }
+    },
+    {
+      "ref": "C23",
+      "mode": "spatial_group",
+      "group": "G1",
+      "real_body_center_mm": [
+        35.6,
+        11.649999999999999
+      ],
+      "label": {
+        "owner": "C23",
+        "kind": "spatial_group",
+        "text": "C23\n22uF",
+        "at_mm": [
+          43.7375,
+          22.249999
+        ],
+        "box_mm": [
+          41.976928,
+          20.176666,
+          45.49807199999999,
+          24.323333
+        ],
+        "angle_deg": 270.0,
+        "layer": "B.Silkscreen",
+        "font_mm": 1.0,
+        "uuid": "5d0d1b88-d32d-4364-87a4-617ea4aea767"
+      }
+    },
+    {
+      "ref": "FL1",
+      "mode": "spatial_group",
+      "group": "G2",
+      "real_body_center_mm": [
+        40.7,
+        4.25
+      ],
+      "label": {
+        "owner": "FL1",
+        "kind": "spatial_group",
+        "text": "FL1\nS869M000S003",
+        "at_mm": [
+          59.25,
+          28.307499
+        ],
+        "box_mm": [
+          57.489428000000004,
+          22.257975,
+          61.010571999999996,
+          34.357023
+        ],
+        "angle_deg": 270.0,
+        "layer": "B.Silkscreen",
+        "font_mm": 1.0,
+        "uuid": "f017fb61-7697-4044-8e24-3789e7e0f042"
+      }
+    },
+    {
+      "ref": "J13",
+      "mode": "spatial_group",
+      "group": "G2",
+      "real_body_center_mm": [
+        34.5,
+        0.020000000000000018
+      ],
+      "label": {
+        "owner": "J13",
+        "kind": "spatial_group",
+        "text": "J13\nSMA",
+        "at_mm": [
+          49.95,
+          21.9625
+        ],
+        "box_mm": [
+          48.233809,
+          20.201928,
+          51.66618999999999,
+          23.723072
+        ],
+        "angle_deg": 180.0,
+        "layer": "B.Silkscreen",
+        "font_mm": 1.0,
+        "uuid": "0c1bc8ae-d810-4230-b953-439f7b616669"
+      }
+    },
+    {
+      "ref": "R45",
+      "mode": "spatial_group",
+      "group": "G3",
+      "real_body_center_mm": [
+        68.8,
+        10.9
+      ],
+      "label": {
+        "owner": "R45",
+        "kind": "spatial_group",
+        "text": "R45\n100k",
+        "at_mm": [
+          75.2,
+          11.85
+        ],
+        "box_mm": [
+          73.126666,
+          10.089428,
+          77.273333,
+          13.610572
+        ],
+        "angle_deg": 180.0,
+        "layer": "B.Silkscreen",
+        "font_mm": 1.0,
+        "uuid": "54a1862e-1ade-4564-8ce6-f6b24d855d18"
+      }
+    },
+    {
+      "ref": "U7",
+      "mode": "spatial_group",
+      "group": "G3",
+      "real_body_center_mm": [
+        64.0,
+        10.0
+      ],
+      "label": {
+        "owner": "U7",
+        "kind": "spatial_group",
+        "text": "U7\nSN74LVC2G125",
+        "at_mm": [
+          65.6,
+          10.05
+        ],
+        "box_mm": [
+          59.669523000000005,
+          8.289428,
+          71.530476,
+          11.810572
+        ],
+        "angle_deg": 180.0,
+        "layer": "B.Silkscreen",
+        "font_mm": 1.0,
+        "uuid": "cf530e3d-737d-47a8-85be-46dbb7006634"
+      }
+    },
+    {
+      "ref": "J201",
+      "mode": "spatial_group",
+      "group": "G4",
+      "real_body_center_mm": [
+        70.5,
+        58.400000000000006
+      ],
+      "label": {
+        "owner": "J201",
+        "kind": "spatial_group",
+        "text": "J201\nIDC 12P",
+        "at_mm": [
+          70.125,
+          39.249999
+        ],
+        "box_mm": [
+          68.364428,
+          35.938571,
+          71.885572,
+          42.561428
+        ],
+        "angle_deg": 270.0,
+        "layer": "B.Silkscreen",
+        "font_mm": 1.0,
+        "uuid": "cc4b6eb5-bf19-488a-b3d4-3c950a2dbabc"
+      }
+    },
+    {
+      "ref": "BT1",
+      "mode": "spatial_group",
+      "group": "G4",
+      "real_body_center_mm": [
+        72.0,
+        35.0
+      ],
+      "label": {
+        "owner": "BT1",
+        "kind": "spatial_group",
+        "text": "BT1\nCR2032",
+        "at_mm": [
+          72.375,
+          4.149999
+        ],
+        "box_mm": [
+          69.230238,
+          2.389427,
+          75.519762,
+          5.910571
+        ],
+        "angle_deg": 180.0,
+        "layer": "B.Silkscreen",
+        "font_mm": 1.0,
+        "uuid": "e6daf799-6046-49ab-a160-5e0a501b61bc"
+      }
+    },
+    {
+      "ref": "U6",
+      "mode": "spatial_group",
+      "group": "G5",
+      "real_body_center_mm": [
+        44.0,
+        34.0
+      ],
+      "label": {
+        "owner": "U6",
+        "kind": "spatial_group",
+        "text": "U6\nATtiny13A",
+        "at_mm": [
+          31.375,
+          49.332499
+        ],
+        "box_mm": [
+          27.58738,
+          47.571927,
+          35.162619,
+          51.093070999999995
+        ],
+        "angle_deg": 180.0,
+        "layer": "B.Silkscreen",
+        "font_mm": 1.0,
+        "uuid": "faa879af-6a79-4ea6-9e51-90d26105ee26"
+      }
+    },
+    {
+      "ref": "R37",
+      "mode": "spatial_group",
+      "group": "G5",
+      "real_body_center_mm": [
+        42.5,
+        28.67
+      ],
+      "label": {
+        "owner": "R37",
+        "kind": "spatial_group",
+        "text": "R37\n0R",
+        "at_mm": [
+          29.125,
+          41.3375
+        ],
+        "box_mm": [
+          27.432619,
+          39.576928,
+          30.817381,
+          43.098071999999995
+        ],
+        "angle_deg": 180.0,
+        "layer": "B.Silkscreen",
+        "font_mm": 1.0,
+        "uuid": "3df0c640-9081-4c65-b8f4-1030a560b1e8"
+      }
+    },
+    {
+      "ref": "H204",
+      "mode": "spatial_group",
+      "group": "G6",
+      "real_body_center_mm": [
+        86.5,
+        56.5
+      ],
+      "label": {
+        "owner": "H204",
+        "kind": "spatial_group",
+        "text": "H204 M3",
+        "at_mm": [
+          85.875,
+          52.125
+        ],
+        "box_mm": [
+          82.254047,
+          51.1694,
+          89.495952,
+          53.0806
+        ],
+        "angle_deg": 180.0,
+        "layer": "B.Silkscreen",
+        "font_mm": 1.0,
+        "uuid": "734fb2a6-2d28-4b20-b852-f07c03450bcb"
+      }
+    },
+    {
+      "ref": "TP7",
+      "mode": "spatial_group",
+      "group": "G6",
+      "real_body_center_mm": [
+        87.0,
+        52.0
+      ],
+      "label": {
+        "owner": "TP7",
+        "kind": "spatial_group",
+        "text": "TP7",
+        "at_mm": [
+          86.625,
+          45.375
+        ],
+        "box_mm": [
+          85.027857,
+          44.4194,
+          88.222143,
+          46.3306
+        ],
+        "angle_deg": 180.0,
+        "layer": "B.Silkscreen",
+        "font_mm": 1.0,
+        "uuid": "20670de9-99ac-48c4-b91e-db79405c22a1"
+      }
+    },
+    {
+      "ref": "TP4",
+      "mode": "spatial_group",
+      "group": "G7",
+      "real_body_center_mm": [
+        88.4,
+        8.5
+      ],
+      "label": {
+        "owner": "TP4",
+        "kind": "spatial_group",
+        "text": "TP4",
+        "at_mm": [
+          81.5,
+          5.172499
+        ],
+        "box_mm": [
+          79.902857,
+          4.216899,
+          83.097143,
+          6.128099
+        ],
+        "angle_deg": 180.0,
+        "layer": "B.Silkscreen",
+        "font_mm": 1.0,
+        "uuid": "793d02d6-699a-4087-a3e8-8b9d46b67a31"
+      }
+    },
+    {
+      "ref": "J3",
+      "mode": "spatial_group",
+      "group": "G7",
+      "real_body_center_mm": [
+        86.0,
+        15.81
+      ],
+      "label": {
+        "owner": "J3",
+        "kind": "spatial_group",
+        "text": "J3\nI2C",
+        "at_mm": [
+          77.9,
+          16.1375
+        ],
+        "box_mm": [
+          76.44571400000001,
+          14.376928,
+          79.35428499999999,
+          17.898072
+        ],
+        "angle_deg": 180.0,
+        "layer": "B.Silkscreen",
+        "font_mm": 1.0,
+        "uuid": "4166809b-4e59-4131-b1db-bef75f044302"
+      }
+    }
+  ],
+  "spatial_groups": [
+    {
+      "id": "G1",
+      "refs": [
+        "C21",
+        "C22",
+        "R28",
+        "C23"
+      ],
+      "scale": 1.5,
+      "origin_mm": [
+        32.325,
+        13.45
+      ],
+      "translation_mm": [
+        -9.662500000000001,
+        4.775000000000002
+      ],
+      "preserves_orientation": true
+    },
+    {
+      "id": "G2",
+      "refs": [
+        "FL1",
+        "J13"
+      ],
+      "scale": 1.5,
+      "origin_mm": [
+        37.6,
+        2.135
+      ],
+      "translation_mm": [
+        -1.8000000000000043,
+        21.932499999999997
+      ],
+      "preserves_orientation": true
+    },
+    {
+      "id": "G3",
+      "refs": [
+        "R45",
+        "U7"
+      ],
+      "scale": 2.0,
+      "origin_mm": [
+        66.4,
+        10.45
+      ],
+      "translation_mm": [
+        -62.400000000000006,
+        -9.95
+      ],
+      "preserves_orientation": true
+    },
+    {
+      "id": "G4",
+      "refs": [
+        "J201",
+        "BT1"
+      ],
+      "scale": 1.5,
+      "origin_mm": [
+        71.25,
+        46.7
+      ],
+      "translation_mm": [
+        -35.625,
+        -48.35000000000001
+      ],
+      "preserves_orientation": true
+    },
+    {
+      "id": "G5",
+      "refs": [
+        "U6",
+        "R37"
+      ],
+      "scale": 1.5,
+      "origin_mm": [
+        43.25,
+        31.335
+      ],
+      "translation_mm": [
+        -34.625,
+        -1.6674999999999969
+      ],
+      "preserves_orientation": true
+    },
+    {
+      "id": "G6",
+      "refs": [
+        "H204",
+        "TP7"
+      ],
+      "scale": 1.5,
+      "origin_mm": [
+        86.75,
+        54.25
+      ],
+      "translation_mm": [
+        -43.875,
+        -32.625
+      ],
+      "preserves_orientation": true
+    },
+    {
+      "id": "G7",
+      "refs": [
+        "TP4",
+        "J3"
+      ],
+      "scale": 1.5,
+      "origin_mm": [
+        87.2,
+        12.155000000000001
+      ],
+      "translation_mm": [
+        -51.10000000000001,
+        -7.577500000000001
+      ],
+      "preserves_orientation": true
+    }
+  ],
+  "pinouts": [
+    {
+      "ref": "J10",
+      "pins": [
+        {
+          "pin": "1",
+          "net": "WDT_MISO",
+          "pad_at_mm": [
+            35.7,
+            31.3
+          ],
+          "label": {
+            "owner": "J10",
+            "kind": "pin_aligned",
+            "text": "1 MISO",
+            "at_mm": [
+              31.836667,
+              31.3
+            ],
+            "box_mm": [
+              29.473333,
+              30.4965,
+              34.199999999999996,
+              32.1035
+            ],
+            "angle_deg": 180.0,
+            "layer": "B.Silkscreen",
+            "font_mm": 0.8,
+            "uuid": "f98e66bd-1bca-4a41-a925-13723815dd24"
+          }
+        },
+        {
+          "pin": "2",
+          "net": "SYS_3V3",
+          "pad_at_mm": [
+            38.24,
+            31.3
+          ],
+          "label": {
+            "owner": "J10",
+            "kind": "pin_aligned",
+            "text": "2 VIN",
+            "at_mm": [
+              41.608095,
+              31.3
+            ],
+            "box_mm": [
+              39.74,
+              30.4965,
+              43.476189999999995,
+              32.1035
+            ],
+            "angle_deg": 180.0,
+            "layer": "B.Silkscreen",
+            "font_mm": 0.8,
+            "uuid": "4baa23c3-ef63-4ad3-a2a6-8273e90fedb9"
+          }
+        },
+        {
+          "pin": "3",
+          "net": "WDT_SCK",
+          "pad_at_mm": [
+            35.7,
+            33.84
+          ],
+          "label": {
+            "owner": "J10",
+            "kind": "pin_aligned",
+            "text": "3 SCK",
+            "at_mm": [
+              32.103333,
+              33.84
+            ],
+            "box_mm": [
+              30.006666,
+              33.036500000000004,
+              34.199999999999996,
+              34.643499999999996
+            ],
+            "angle_deg": 180.0,
+            "layer": "B.Silkscreen",
+            "font_mm": 0.8,
+            "uuid": "f7fd9b66-c2b3-45c9-83e7-c093b543f70f"
+          }
+        },
+        {
+          "pin": "4",
+          "net": "WDT_MOSI_RESET",
+          "pad_at_mm": [
+            38.24,
+            33.84
+          ],
+          "label": {
+            "owner": "J10",
+            "kind": "pin_aligned",
+            "text": "4 MOSI",
+            "at_mm": [
+              42.103334,
+              33.84
+            ],
+            "box_mm": [
+              39.74,
+              33.036500000000004,
+              44.466666999999994,
+              34.643499999999996
+            ],
+            "angle_deg": 180.0,
+            "layer": "B.Silkscreen",
+            "font_mm": 0.8,
+            "uuid": "af32575b-56b8-40ab-bb3b-63c919a60c48"
+          }
+        },
+        {
+          "pin": "5",
+          "net": "WDT_RESET",
+          "pad_at_mm": [
+            35.7,
+            36.38
+          ],
+          "label": {
+            "owner": "J10",
+            "kind": "pin_aligned",
+            "text": "5 RESET",
+            "at_mm": [
+              31.474761,
+              36.38
+            ],
+            "box_mm": [
+              28.749522,
+              35.5765,
+              34.199999999999996,
+              37.183499999999995
+            ],
+            "angle_deg": 180.0,
+            "layer": "B.Silkscreen",
+            "font_mm": 0.8,
+            "uuid": "d346ec25-e902-43ed-8b66-53c3e262b282"
+          }
+        },
+        {
+          "pin": "6",
+          "net": "GND",
+          "pad_at_mm": [
+            38.24,
+            36.38
+          ],
+          "label": {
+            "owner": "J10",
+            "kind": "pin_aligned",
+            "text": "6 GND",
+            "at_mm": [
+              41.874762,
+              36.38
+            ],
+            "box_mm": [
+              39.74,
+              35.5765,
+              44.009524,
+              37.183499999999995
+            ],
+            "angle_deg": 180.0,
+            "layer": "B.Silkscreen",
+            "font_mm": 0.8,
+            "uuid": "b557c99b-8427-4a7c-bc5f-94d54a81af07"
+          }
+        }
+      ],
+      "source": "actual native numbered pads",
+      "view": "native B exterior, assembly X180",
+      "name": "ISP"
+    },
+    {
+      "ref": "J11",
+      "pins": [
+        {
+          "pin": "1",
+          "net": "FILTER_OUT",
+          "pad_at_mm": [
+            86.0,
+            23.0
+          ]
+        },
+        {
+          "pin": "2",
+          "net": "SYS_3V3",
+          "pad_at_mm": [
+            86.0,
+            25.54
+          ]
+        }
+      ],
+      "source": "actual native numbered pads",
+      "view": "native B exterior, assembly X180",
+      "name": "LC / SYS",
+      "legend": {
+        "owner": "J11",
+        "kind": "function",
+        "text": "J11 LC / SYS\n1 LC_OUT\n2 SYS_3V3",
+        "at_mm": [
+          85.0,
+          28.77
+        ],
+        "box_mm": [
+          80.54142800000001,
+          26.678545,
+          89.45857199999999,
+          30.861455
+        ],
+        "angle_deg": 180.0,
+        "layer": "B.Silkscreen",
+        "font_mm": 0.8,
+        "uuid": "f5c9335e-b373-4e7f-bdc7-1ee53bdf9fe3"
+      }
+    },
+    {
+      "ref": "J13",
+      "pins": [
+        {
+          "pin": "1",
+          "net": "/ANT_SMA",
+          "pad_at_mm": [
+            34.5,
+            4.25
+          ]
+        },
+        {
+          "pin": "2",
+          "net": "GND",
+          "pad_at_mm": [
+            31.96,
+            1.71
+          ]
+        }
+      ],
+      "source": "actual native numbered pads",
+      "view": "native B exterior, assembly X180",
+      "name": "SMA",
+      "legend": {
+        "owner": "J13",
+        "kind": "function",
+        "text": "J13 SMA\n1 RF\n2 GND",
+        "at_mm": [
+          41.5,
+          2.52
+        ],
+        "box_mm": [
+          38.717618,
+          0.42854499999999995,
+          44.282380999999994,
+          4.611455
+        ],
+        "angle_deg": 180.0,
+        "layer": "B.Silkscreen",
+        "font_mm": 0.8,
+        "uuid": "f28ee41a-ee61-4dd3-be8d-62100b5091fe"
+      }
+    },
+    {
+      "ref": "J201",
+      "pins": [
+        {
+          "pin": "1",
+          "net": "FILTER_OUT",
+          "pad_at_mm": [
+            76.85,
+            49.0
+          ],
+          "label": {
+            "owner": "J201",
+            "kind": "pin_aligned",
+            "text": "1 3V3",
+            "at_mm": [
+              76.85,
+              45.429523
+            ],
+            "box_mm": [
+              76.04650000000001,
+              43.409047,
+              77.6535,
+              47.449999999999996
+            ],
+            "angle_deg": 270.0,
+            "layer": "B.Silkscreen",
+            "font_mm": 0.8,
+            "uuid": "7bfb2d76-3a20-464d-a361-5c9c9a6fa37e"
+          }
+        },
+        {
+          "pin": "2",
+          "net": "GND",
+          "pad_at_mm": [
+            76.85,
+            51.54
+          ],
+          "label": {
+            "owner": "J201",
+            "kind": "pin_aligned",
+            "text": "2 GND",
+            "at_mm": [
+              76.85,
+              55.224762
+            ],
+            "box_mm": [
+              76.04650000000001,
+              53.09,
+              77.6535,
+              57.35952399999999
+            ],
+            "angle_deg": 270.0,
+            "layer": "B.Silkscreen",
+            "font_mm": 0.8,
+            "uuid": "c60caabf-1425-419c-988a-49f073225322"
+          }
+        },
+        {
+          "pin": "3",
+          "net": "FILTER_OUT",
+          "pad_at_mm": [
+            74.31,
+            49.0
+          ],
+          "label": {
+            "owner": "J201",
+            "kind": "pin_aligned",
+            "text": "3 3V3",
+            "at_mm": [
+              74.31,
+              45.429523
+            ],
+            "box_mm": [
+              73.5065,
+              43.409047,
+              75.1135,
+              47.449999999999996
+            ],
+            "angle_deg": 270.0,
+            "layer": "B.Silkscreen",
+            "font_mm": 0.8,
+            "uuid": "93285808-8b52-43a6-91eb-354ec78bb7a4"
+          }
+        },
+        {
+          "pin": "4",
+          "net": "GND",
+          "pad_at_mm": [
+            74.31,
+            51.54
+          ],
+          "label": {
+            "owner": "J201",
+            "kind": "pin_aligned",
+            "text": "4 GND",
+            "at_mm": [
+              74.31,
+              55.224762
+            ],
+            "box_mm": [
+              73.5065,
+              53.09,
+              75.1135,
+              57.35952399999999
+            ],
+            "angle_deg": 270.0,
+            "layer": "B.Silkscreen",
+            "font_mm": 0.8,
+            "uuid": "6a8b42e9-657d-45e2-aa5f-bcf6220f5cb3"
+          }
+        },
+        {
+          "pin": "5",
+          "net": "FILTER_OUT",
+          "pad_at_mm": [
+            71.77,
+            49.0
+          ],
+          "label": {
+            "owner": "J201",
+            "kind": "pin_aligned",
+            "text": "5 3V3",
+            "at_mm": [
+              71.77,
+              45.429523
+            ],
+            "box_mm": [
+              70.9665,
+              43.409047,
+              72.5735,
+              47.449999999999996
+            ],
+            "angle_deg": 270.0,
+            "layer": "B.Silkscreen",
+            "font_mm": 0.8,
+            "uuid": "8ae4fcad-f477-4bd1-ac0a-bde45ecfab1c"
+          }
+        },
+        {
+          "pin": "6",
+          "net": "GND",
+          "pad_at_mm": [
+            71.77,
+            51.54
+          ],
+          "label": {
+            "owner": "J201",
+            "kind": "pin_aligned",
+            "text": "6 GND",
+            "at_mm": [
+              71.77,
+              55.224762
+            ],
+            "box_mm": [
+              70.9665,
+              53.09,
+              72.5735,
+              57.35952399999999
+            ],
+            "angle_deg": 270.0,
+            "layer": "B.Silkscreen",
+            "font_mm": 0.8,
+            "uuid": "8a838f99-417a-4a23-9deb-5ba40d14b284"
+          }
+        },
+        {
+          "pin": "7",
+          "net": "FILTER_OUT",
+          "pad_at_mm": [
+            69.23,
+            49.0
+          ],
+          "label": {
+            "owner": "J201",
+            "kind": "pin_aligned",
+            "text": "7 3V3",
+            "at_mm": [
+              69.23,
+              45.429523
+            ],
+            "box_mm": [
+              68.4265,
+              43.409047,
+              70.0335,
+              47.449999999999996
+            ],
+            "angle_deg": 270.0,
+            "layer": "B.Silkscreen",
+            "font_mm": 0.8,
+            "uuid": "e7fb0113-c7ac-4891-8cad-66d00e889ef0"
+          }
+        },
+        {
+          "pin": "8",
+          "net": "GND",
+          "pad_at_mm": [
+            69.23,
+            51.54
+          ],
+          "label": {
+            "owner": "J201",
+            "kind": "pin_aligned",
+            "text": "8 GND",
+            "at_mm": [
+              69.23,
+              55.224762
+            ],
+            "box_mm": [
+              68.4265,
+              53.09,
+              70.0335,
+              57.35952399999999
+            ],
+            "angle_deg": 270.0,
+            "layer": "B.Silkscreen",
+            "font_mm": 0.8,
+            "uuid": "c2e14cb4-eb7c-4ebe-9ab1-142b8cc4297a"
+          }
+        },
+        {
+          "pin": "9",
+          "net": "BAT",
+          "pad_at_mm": [
+            66.69,
+            49.0
+          ],
+          "label": {
+            "owner": "J201",
+            "kind": "pin_aligned",
+            "text": "9 BAT",
+            "at_mm": [
+              66.69,
+              45.486666
+            ],
+            "box_mm": [
+              65.8865,
+              43.523333,
+              67.4935,
+              47.449999999999996
+            ],
+            "angle_deg": 270.0,
+            "layer": "B.Silkscreen",
+            "font_mm": 0.8,
+            "uuid": "111c34f9-bbe9-4cdf-a75b-0fc126f2bcfa"
+          }
+        },
+        {
+          "pin": "10",
+          "net": "GND",
+          "pad_at_mm": [
+            66.69,
+            51.54
+          ],
+          "label": {
+            "owner": "J201",
+            "kind": "pin_aligned",
+            "text": "10 GND",
+            "at_mm": [
+              66.69,
+              55.605714
+            ],
+            "box_mm": [
+              65.8865,
+              53.09,
+              67.4935,
+              58.121429
+            ],
+            "angle_deg": 270.0,
+            "layer": "B.Silkscreen",
+            "font_mm": 0.8,
+            "uuid": "809703d1-4d80-49c0-b4fa-543b12a57385"
+          }
+        },
+        {
+          "pin": "11",
+          "net": "MODE",
+          "pad_at_mm": [
+            64.15,
+            49.0
+          ],
+          "label": {
+            "owner": "J201",
+            "kind": "pin_aligned",
+            "text": "11 MODE",
+            "at_mm": [
+              64.15,
+              44.515237
+            ],
+            "box_mm": [
+              63.346500000000006,
+              41.58047500000001,
+              64.95349999999999,
+              47.449999999999996
+            ],
+            "angle_deg": 270.0,
+            "layer": "B.Silkscreen",
+            "font_mm": 0.8,
+            "uuid": "2f51d898-4516-4da4-b037-16ed999b5d7a"
+          }
+        },
+        {
+          "pin": "12",
+          "net": "GND",
+          "pad_at_mm": [
+            64.15,
+            51.54
+          ],
+          "label": {
+            "owner": "J201",
+            "kind": "pin_aligned",
+            "text": "12 GND",
+            "at_mm": [
+              64.15,
+              55.605714
+            ],
+            "box_mm": [
+              63.346500000000006,
+              53.09,
+              64.95349999999999,
+              58.121429
+            ],
+            "angle_deg": 270.0,
+            "layer": "B.Silkscreen",
+            "font_mm": 0.8,
+            "uuid": "0eddd617-3723-4a57-8074-be8ed7cc91c2"
+          }
+        }
+      ],
+      "source": "actual native numbered pads",
+      "view": "native B exterior, assembly X180",
+      "name": "POWER / LOGIC"
+    },
+    {
+      "ref": "J3",
+      "pins": [
+        {
+          "pin": "1",
+          "net": "SYS_3V3",
+          "pad_at_mm": [
+            86.0,
+            12.0
+          ],
+          "label": {
+            "owner": "J3",
+            "kind": "pin_aligned",
+            "text": "1 VIN",
+            "at_mm": [
+              82.581905,
+              12.0
+            ],
+            "box_mm": [
+              80.71381000000001,
+              11.1965,
+              84.45,
+              12.8035
+            ],
+            "angle_deg": 180.0,
+            "layer": "B.Silkscreen",
+            "font_mm": 0.8,
+            "uuid": "7223ffe7-ee6a-49c9-9239-09a569056373"
+          }
+        },
+        {
+          "pin": "2",
+          "net": "GND",
+          "pad_at_mm": [
+            86.0,
+            14.54
+          ],
+          "label": {
+            "owner": "J3",
+            "kind": "pin_aligned",
+            "text": "2 GND",
+            "at_mm": [
+              82.315238,
+              14.54
+            ],
+            "box_mm": [
+              80.180476,
+              13.7365,
+              84.45,
+              15.3435
+            ],
+            "angle_deg": 180.0,
+            "layer": "B.Silkscreen",
+            "font_mm": 0.8,
+            "uuid": "e4c53655-900f-458b-98d4-ce47b7301061"
+          }
+        },
+        {
+          "pin": "3",
+          "net": "SCL",
+          "pad_at_mm": [
+            86.0,
+            17.08
+          ],
+          "label": {
+            "owner": "J3",
+            "kind": "pin_aligned",
+            "text": "3 SCL",
+            "at_mm": [
+              82.429524,
+              17.08
+            ],
+            "box_mm": [
+              80.409047,
+              16.2765,
+              84.45,
+              17.8835
+            ],
+            "angle_deg": 180.0,
+            "layer": "B.Silkscreen",
+            "font_mm": 0.8,
+            "uuid": "16913a6e-f9c3-497b-b09b-33db1cc2cdba"
+          }
+        },
+        {
+          "pin": "4",
+          "net": "SDA",
+          "pad_at_mm": [
+            86.0,
+            19.62
+          ],
+          "label": {
+            "owner": "J3",
+            "kind": "pin_aligned",
+            "text": "4 SDA",
+            "at_mm": [
+              82.410476,
+              19.62
+            ],
+            "box_mm": [
+              80.370952,
+              18.8165,
+              84.45,
+              20.4235
+            ],
+            "angle_deg": 180.0,
+            "layer": "B.Silkscreen",
+            "font_mm": 0.8,
+            "uuid": "29edb528-7290-4d89-84b6-3a199174be97"
+          }
+        }
+      ],
+      "source": "actual native numbered pads",
+      "view": "native B exterior, assembly X180",
+      "name": "I2C"
+    },
+    {
+      "ref": "J4",
+      "pins": [
+        {
+          "pin": "1",
+          "net": "unconnected-(J4-RESET_N-Pad1)",
+          "label": {
+            "owner": "J4",
+            "kind": "pin_number",
+            "text": "1",
+            "at_mm": [
+              56.375,
+              5.4
+            ],
+            "box_mm": [
+              55.764047000000005,
+              4.5965,
+              56.985952,
+              6.2035
+            ],
+            "angle_deg": 180.0,
+            "layer": "B.Silkscreen",
+            "font_mm": 0.8,
+            "uuid": "7451534b-032b-48fb-95a5-104eea2a39f0"
+          }
+        },
+        {
+          "pin": "2",
+          "net": "unconnected-(J4-PPS-Pad2)",
+          "label": {
+            "owner": "J4",
+            "kind": "pin_number",
+            "text": "2",
+            "at_mm": [
+              55.125,
+              5.4
+            ],
+            "box_mm": [
+              54.514047000000005,
+              4.5965,
+              55.735952,
+              6.2035
+            ],
+            "angle_deg": 180.0,
+            "layer": "B.Silkscreen",
+            "font_mm": 0.8,
+            "uuid": "d733e2f2-427e-4472-8d2f-133ec3804196"
+          }
+        },
+        {
+          "pin": "3",
+          "net": "unconnected-(J4-WAKE_UP-Pad3)",
+          "label": {
+            "owner": "J4",
+            "kind": "pin_number",
+            "text": "3",
+            "at_mm": [
+              53.875,
+              5.4
+            ],
+            "box_mm": [
+              53.264047000000005,
+              4.5965,
+              54.485952,
+              6.2035
+            ],
+            "angle_deg": 180.0,
+            "layer": "B.Silkscreen",
+            "font_mm": 0.8,
+            "uuid": "913a805f-6b69-4e23-8350-7bdd2f002415"
+          }
+        },
+        {
+          "pin": "4",
+          "net": "GPS_RX_EXT",
+          "label": {
+            "owner": "J4",
+            "kind": "pin_number",
+            "text": "4",
+            "at_mm": [
+              52.625,
+              5.4
+            ],
+            "box_mm": [
+              52.014047000000005,
+              4.5965,
+              53.235952,
+              6.2035
+            ],
+            "angle_deg": 180.0,
+            "layer": "B.Silkscreen",
+            "font_mm": 0.8,
+            "uuid": "36aaa9a2-3159-4165-9f9e-64abffa845f0"
+          }
+        },
+        {
+          "pin": "5",
+          "net": "GPS_TX_EXT",
+          "label": {
+            "owner": "J4",
+            "kind": "pin_number",
+            "text": "5",
+            "at_mm": [
+              51.375,
+              5.4
+            ],
+            "box_mm": [
+              50.764047000000005,
+              4.5965,
+              51.985952,
+              6.2035
+            ],
+            "angle_deg": 180.0,
+            "layer": "B.Silkscreen",
+            "font_mm": 0.8,
+            "uuid": "ac1523d9-6b6d-4ea3-a4cb-e26abaf67203"
+          }
+        },
+        {
+          "pin": "6",
+          "net": "SYS_3V3",
+          "label": {
+            "owner": "J4",
+            "kind": "pin_number",
+            "text": "6",
+            "at_mm": [
+              50.125,
+              5.4
+            ],
+            "box_mm": [
+              49.514047000000005,
+              4.5965,
+              50.735952,
+              6.2035
+            ],
+            "angle_deg": 180.0,
+            "layer": "B.Silkscreen",
+            "font_mm": 0.8,
+            "uuid": "19d6289b-4700-4d0e-b149-3712be272a74"
+          }
+        },
+        {
+          "pin": "7",
+          "net": "GPS_3V3",
+          "label": {
+            "owner": "J4",
+            "kind": "pin_number",
+            "text": "7",
+            "at_mm": [
+              48.875,
+              5.4
+            ],
+            "box_mm": [
+              48.264047000000005,
+              4.5965,
+              49.485952,
+              6.2035
+            ],
+            "angle_deg": 180.0,
+            "layer": "B.Silkscreen",
+            "font_mm": 0.8,
+            "uuid": "53e114e8-abd7-4906-8601-96f3333e481c"
+          }
+        },
+        {
+          "pin": "8",
+          "net": "GND",
+          "label": {
+            "owner": "J4",
+            "kind": "pin_number",
+            "text": "8",
+            "at_mm": [
+              47.625,
+              5.4
+            ],
+            "box_mm": [
+              47.014047000000005,
+              4.5965,
+              48.235952,
+              6.2035
+            ],
+            "angle_deg": 180.0,
+            "layer": "B.Silkscreen",
+            "font_mm": 0.8,
+            "uuid": "3358b49a-1879-45c0-b28b-f75794712058"
+          }
+        }
+      ],
+      "source": "actual native numbered pads",
+      "view": "native B exterior, assembly X180",
+      "name": "GPS",
+      "legend": {
+        "owner": "J4",
+        "kind": "function",
+        "text": "J4 GPS\n1 NC/RST  2 NC/PPS\n3 NC/WAKE  4 RX\n5 TX  6 BACKUP\n7 POWER  8 GND",
+        "at_mm": [
+          52.0,
+          10.44
+        ],
+        "box_mm": [
+          45.04619,
+          7.060589,
+          58.95381,
+          13.81941
+        ],
+        "angle_deg": 180.0,
+        "layer": "B.Silkscreen",
+        "font_mm": 0.8,
+        "uuid": "c668e41c-fc27-4800-aa44-370c58545108"
+      }
+    },
+    {
+      "ref": "J5",
+      "pins": [
+        {
+          "pin": "1",
+          "net": "GND",
+          "pad_at_mm": [
+            2.5,
+            18.12
+          ],
+          "label": {
+            "owner": "J5",
+            "kind": "pin_aligned",
+            "text": "1 GND",
+            "at_mm": [
+              6.184762,
+              18.12
+            ],
+            "box_mm": [
+              4.05,
+              17.3165,
+              8.319524,
+              18.9235
+            ],
+            "angle_deg": 180.0,
+            "layer": "B.Silkscreen",
+            "font_mm": 0.8,
+            "uuid": "202215bf-846b-48a1-bb5b-b0bdae11f79b"
+          }
+        },
+        {
+          "pin": "2",
+          "net": "SYS_3V3",
+          "pad_at_mm": [
+            2.5,
+            15.58
+          ],
+          "label": {
+            "owner": "J5",
+            "kind": "pin_aligned",
+            "text": "2 VIN",
+            "at_mm": [
+              5.918095,
+              15.58
+            ],
+            "box_mm": [
+              4.05,
+              14.7765,
+              7.78619,
+              16.3835
+            ],
+            "angle_deg": 180.0,
+            "layer": "B.Silkscreen",
+            "font_mm": 0.8,
+            "uuid": "7e295fa7-1f9c-4850-af43-76759610142d"
+          }
+        },
+        {
+          "pin": "3",
+          "net": "UART_TX",
+          "pad_at_mm": [
+            2.5,
+            13.04
+          ],
+          "label": {
+            "owner": "J5",
+            "kind": "pin_aligned",
+            "text": "3 TX",
+            "at_mm": [
+              5.651429,
+              13.04
+            ],
+            "box_mm": [
+              4.05,
+              12.2365,
+              7.252858,
+              13.8435
+            ],
+            "angle_deg": 180.0,
+            "layer": "B.Silkscreen",
+            "font_mm": 0.8,
+            "uuid": "1af9ce8b-37e0-4330-97cf-3c3fbdbb345d"
+          }
+        },
+        {
+          "pin": "4",
+          "net": "UART_RX",
+          "pad_at_mm": [
+            2.5,
+            10.5
+          ],
+          "label": {
+            "owner": "J5",
+            "kind": "pin_aligned",
+            "text": "4 RX",
+            "at_mm": [
+              5.746667,
+              10.5
+            ],
+            "box_mm": [
+              4.05,
+              9.6965,
+              7.443334,
+              11.3035
+            ],
+            "angle_deg": 180.0,
+            "layer": "B.Silkscreen",
+            "font_mm": 0.8,
+            "uuid": "dd016520-4c48-41c9-80de-b56308a6195e"
+          }
+        }
+      ],
+      "source": "actual native numbered pads",
+      "view": "native B exterior, assembly X180",
+      "name": "UART"
+    }
+  ],
+  "all_text": [
+    {
+      "owner": "PRODUCT",
+      "kind": "function",
+      "text": "Mesh Repeater ver 2.0",
+      "at_mm": [
+        48.0,
+        50.0
+      ],
+      "box_mm": [
+        35.526665,
+        48.5296,
+        60.473333999999994,
+        51.4704
+      ],
+      "angle_deg": 180.0,
+      "layer": "B.Silkscreen",
+      "font_mm": 1.4,
+      "uuid": "a8ac2dd8-5fb3-4c56-94ae-1db307f8919f"
+    },
+    {
+      "owner": "DESIGNER",
+      "kind": "function",
+      "text": "Designed by @Alksndritm",
+      "at_mm": [
+        48.0,
+        46.5
+      ],
+      "box_mm": [
+        38.259999,
+        45.5444,
+        57.740001,
+        47.4556
+      ],
+      "angle_deg": 180.0,
+      "layer": "B.Silkscreen",
+      "font_mm": 1.0,
+      "uuid": "b02917df-8e67-4923-96b6-e62f9bbb983a"
+    },
+    {
+      "owner": "USB_SHUNT",
+      "kind": "function",
+      "text": "REMOVE J11 BEFORE USB",
+      "at_mm": [
+        75.0,
+        24.27
+      ],
+      "box_mm": [
+        65.994285,
+        23.408,
+        84.005714,
+        25.132
+      ],
+      "angle_deg": 180.0,
+      "layer": "B.Silkscreen",
+      "font_mm": 0.9,
+      "uuid": "c3a624fb-f7f4-4a4e-bdd5-171f8f07b0f0"
+    },
+    {
+      "owner": "LED_NAMES",
+      "kind": "function",
+      "text": "D3 CHARGE    D4 DONE",
+      "at_mm": [
+        54.0,
+        56.0
+      ],
+      "box_mm": [
+        45.551429000000006,
+        55.138000000000005,
+        62.448570999999994,
+        56.861999999999995
+      ],
+      "angle_deg": 180.0,
+      "layer": "B.Silkscreen",
+      "font_mm": 0.9,
+      "uuid": "c96b1854-d546-4202-b07a-1abdccec6934"
+    },
+    {
+      "owner": "J10",
+      "kind": "pin_aligned",
+      "text": "1 MISO",
+      "at_mm": [
+        31.836667,
+        31.3
+      ],
+      "box_mm": [
+        29.473333,
+        30.4965,
+        34.199999999999996,
+        32.1035
+      ],
+      "angle_deg": 180.0,
+      "layer": "B.Silkscreen",
+      "font_mm": 0.8,
+      "uuid": "f98e66bd-1bca-4a41-a925-13723815dd24"
+    },
+    {
+      "owner": "J10",
+      "kind": "pin_aligned",
+      "text": "2 VIN",
+      "at_mm": [
+        41.608095,
+        31.3
+      ],
+      "box_mm": [
+        39.74,
+        30.4965,
+        43.476189999999995,
+        32.1035
+      ],
+      "angle_deg": 180.0,
+      "layer": "B.Silkscreen",
+      "font_mm": 0.8,
+      "uuid": "4baa23c3-ef63-4ad3-a2a6-8273e90fedb9"
+    },
+    {
+      "owner": "J10",
+      "kind": "pin_aligned",
+      "text": "3 SCK",
+      "at_mm": [
+        32.103333,
+        33.84
+      ],
+      "box_mm": [
+        30.006666,
+        33.036500000000004,
+        34.199999999999996,
+        34.643499999999996
+      ],
+      "angle_deg": 180.0,
+      "layer": "B.Silkscreen",
+      "font_mm": 0.8,
+      "uuid": "f7fd9b66-c2b3-45c9-83e7-c093b543f70f"
+    },
+    {
+      "owner": "J10",
+      "kind": "pin_aligned",
+      "text": "4 MOSI",
+      "at_mm": [
+        42.103334,
+        33.84
+      ],
+      "box_mm": [
+        39.74,
+        33.036500000000004,
+        44.466666999999994,
+        34.643499999999996
+      ],
+      "angle_deg": 180.0,
+      "layer": "B.Silkscreen",
+      "font_mm": 0.8,
+      "uuid": "af32575b-56b8-40ab-bb3b-63c919a60c48"
+    },
+    {
+      "owner": "J10",
+      "kind": "pin_aligned",
+      "text": "5 RESET",
+      "at_mm": [
+        31.474761,
+        36.38
+      ],
+      "box_mm": [
+        28.749522,
+        35.5765,
+        34.199999999999996,
+        37.183499999999995
+      ],
+      "angle_deg": 180.0,
+      "layer": "B.Silkscreen",
+      "font_mm": 0.8,
+      "uuid": "d346ec25-e902-43ed-8b66-53c3e262b282"
+    },
+    {
+      "owner": "J10",
+      "kind": "pin_aligned",
+      "text": "6 GND",
+      "at_mm": [
+        41.874762,
+        36.38
+      ],
+      "box_mm": [
+        39.74,
+        35.5765,
+        44.009524,
+        37.183499999999995
+      ],
+      "angle_deg": 180.0,
+      "layer": "B.Silkscreen",
+      "font_mm": 0.8,
+      "uuid": "b557c99b-8427-4a7c-bc5f-94d54a81af07"
+    },
+    {
+      "owner": "J11",
+      "kind": "function",
+      "text": "J11 LC / SYS\n1 LC_OUT\n2 SYS_3V3",
+      "at_mm": [
+        85.0,
+        28.77
+      ],
+      "box_mm": [
+        80.54142800000001,
+        26.678545,
+        89.45857199999999,
+        30.861455
+      ],
+      "angle_deg": 180.0,
+      "layer": "B.Silkscreen",
+      "font_mm": 0.8,
+      "uuid": "f5c9335e-b373-4e7f-bdc7-1ee53bdf9fe3"
+    },
+    {
+      "owner": "J13",
+      "kind": "function",
+      "text": "J13 SMA\n1 RF\n2 GND",
+      "at_mm": [
+        41.5,
+        2.52
+      ],
+      "box_mm": [
+        38.717618,
+        0.42854499999999995,
+        44.282380999999994,
+        4.611455
+      ],
+      "angle_deg": 180.0,
+      "layer": "B.Silkscreen",
+      "font_mm": 0.8,
+      "uuid": "f28ee41a-ee61-4dd3-be8d-62100b5091fe"
+    },
+    {
+      "owner": "J201",
+      "kind": "pin_aligned",
+      "text": "1 3V3",
+      "at_mm": [
+        76.85,
+        45.429523
+      ],
+      "box_mm": [
+        76.04650000000001,
+        43.409047,
+        77.6535,
+        47.449999999999996
+      ],
+      "angle_deg": 270.0,
+      "layer": "B.Silkscreen",
+      "font_mm": 0.8,
+      "uuid": "7bfb2d76-3a20-464d-a361-5c9c9a6fa37e"
+    },
+    {
+      "owner": "J201",
+      "kind": "pin_aligned",
+      "text": "2 GND",
+      "at_mm": [
+        76.85,
+        55.224762
+      ],
+      "box_mm": [
+        76.04650000000001,
+        53.09,
+        77.6535,
+        57.35952399999999
+      ],
+      "angle_deg": 270.0,
+      "layer": "B.Silkscreen",
+      "font_mm": 0.8,
+      "uuid": "c60caabf-1425-419c-988a-49f073225322"
+    },
+    {
+      "owner": "J201",
+      "kind": "pin_aligned",
+      "text": "3 3V3",
+      "at_mm": [
+        74.31,
+        45.429523
+      ],
+      "box_mm": [
+        73.5065,
+        43.409047,
+        75.1135,
+        47.449999999999996
+      ],
+      "angle_deg": 270.0,
+      "layer": "B.Silkscreen",
+      "font_mm": 0.8,
+      "uuid": "93285808-8b52-43a6-91eb-354ec78bb7a4"
+    },
+    {
+      "owner": "J201",
+      "kind": "pin_aligned",
+      "text": "4 GND",
+      "at_mm": [
+        74.31,
+        55.224762
+      ],
+      "box_mm": [
+        73.5065,
+        53.09,
+        75.1135,
+        57.35952399999999
+      ],
+      "angle_deg": 270.0,
+      "layer": "B.Silkscreen",
+      "font_mm": 0.8,
+      "uuid": "6a8b42e9-657d-45e2-aa5f-bcf6220f5cb3"
+    },
+    {
+      "owner": "J201",
+      "kind": "pin_aligned",
+      "text": "5 3V3",
+      "at_mm": [
+        71.77,
+        45.429523
+      ],
+      "box_mm": [
+        70.9665,
+        43.409047,
+        72.5735,
+        47.449999999999996
+      ],
+      "angle_deg": 270.0,
+      "layer": "B.Silkscreen",
+      "font_mm": 0.8,
+      "uuid": "8ae4fcad-f477-4bd1-ac0a-bde45ecfab1c"
+    },
+    {
+      "owner": "J201",
+      "kind": "pin_aligned",
+      "text": "6 GND",
+      "at_mm": [
+        71.77,
+        55.224762
+      ],
+      "box_mm": [
+        70.9665,
+        53.09,
+        72.5735,
+        57.35952399999999
+      ],
+      "angle_deg": 270.0,
+      "layer": "B.Silkscreen",
+      "font_mm": 0.8,
+      "uuid": "8a838f99-417a-4a23-9deb-5ba40d14b284"
+    },
+    {
+      "owner": "J201",
+      "kind": "pin_aligned",
+      "text": "7 3V3",
+      "at_mm": [
+        69.23,
+        45.429523
+      ],
+      "box_mm": [
+        68.4265,
+        43.409047,
+        70.0335,
+        47.449999999999996
+      ],
+      "angle_deg": 270.0,
+      "layer": "B.Silkscreen",
+      "font_mm": 0.8,
+      "uuid": "e7fb0113-c7ac-4891-8cad-66d00e889ef0"
+    },
+    {
+      "owner": "J201",
+      "kind": "pin_aligned",
+      "text": "8 GND",
+      "at_mm": [
+        69.23,
+        55.224762
+      ],
+      "box_mm": [
+        68.4265,
+        53.09,
+        70.0335,
+        57.35952399999999
+      ],
+      "angle_deg": 270.0,
+      "layer": "B.Silkscreen",
+      "font_mm": 0.8,
+      "uuid": "c2e14cb4-eb7c-4ebe-9ab1-142b8cc4297a"
+    },
+    {
+      "owner": "J201",
+      "kind": "pin_aligned",
+      "text": "9 BAT",
+      "at_mm": [
+        66.69,
+        45.486666
+      ],
+      "box_mm": [
+        65.8865,
+        43.523333,
+        67.4935,
+        47.449999999999996
+      ],
+      "angle_deg": 270.0,
+      "layer": "B.Silkscreen",
+      "font_mm": 0.8,
+      "uuid": "111c34f9-bbe9-4cdf-a75b-0fc126f2bcfa"
+    },
+    {
+      "owner": "J201",
+      "kind": "pin_aligned",
+      "text": "10 GND",
+      "at_mm": [
+        66.69,
+        55.605714
+      ],
+      "box_mm": [
+        65.8865,
+        53.09,
+        67.4935,
+        58.121429
+      ],
+      "angle_deg": 270.0,
+      "layer": "B.Silkscreen",
+      "font_mm": 0.8,
+      "uuid": "809703d1-4d80-49c0-b4fa-543b12a57385"
+    },
+    {
+      "owner": "J201",
+      "kind": "pin_aligned",
+      "text": "11 MODE",
+      "at_mm": [
+        64.15,
+        44.515237
+      ],
+      "box_mm": [
+        63.346500000000006,
+        41.58047500000001,
+        64.95349999999999,
+        47.449999999999996
+      ],
+      "angle_deg": 270.0,
+      "layer": "B.Silkscreen",
+      "font_mm": 0.8,
+      "uuid": "2f51d898-4516-4da4-b037-16ed999b5d7a"
+    },
+    {
+      "owner": "J201",
+      "kind": "pin_aligned",
+      "text": "12 GND",
+      "at_mm": [
+        64.15,
+        55.605714
+      ],
+      "box_mm": [
+        63.346500000000006,
+        53.09,
+        64.95349999999999,
+        58.121429
+      ],
+      "angle_deg": 270.0,
+      "layer": "B.Silkscreen",
+      "font_mm": 0.8,
+      "uuid": "0eddd617-3723-4a57-8074-be8ed7cc91c2"
+    },
+    {
+      "owner": "J3",
+      "kind": "pin_aligned",
+      "text": "1 VIN",
+      "at_mm": [
+        82.581905,
+        12.0
+      ],
+      "box_mm": [
+        80.71381000000001,
+        11.1965,
+        84.45,
+        12.8035
+      ],
+      "angle_deg": 180.0,
+      "layer": "B.Silkscreen",
+      "font_mm": 0.8,
+      "uuid": "7223ffe7-ee6a-49c9-9239-09a569056373"
+    },
+    {
+      "owner": "J3",
+      "kind": "pin_aligned",
+      "text": "2 GND",
+      "at_mm": [
+        82.315238,
+        14.54
+      ],
+      "box_mm": [
+        80.180476,
+        13.7365,
+        84.45,
+        15.3435
+      ],
+      "angle_deg": 180.0,
+      "layer": "B.Silkscreen",
+      "font_mm": 0.8,
+      "uuid": "e4c53655-900f-458b-98d4-ce47b7301061"
+    },
+    {
+      "owner": "J3",
+      "kind": "pin_aligned",
+      "text": "3 SCL",
+      "at_mm": [
+        82.429524,
+        17.08
+      ],
+      "box_mm": [
+        80.409047,
+        16.2765,
+        84.45,
+        17.8835
+      ],
+      "angle_deg": 180.0,
+      "layer": "B.Silkscreen",
+      "font_mm": 0.8,
+      "uuid": "16913a6e-f9c3-497b-b09b-33db1cc2cdba"
+    },
+    {
+      "owner": "J3",
+      "kind": "pin_aligned",
+      "text": "4 SDA",
+      "at_mm": [
+        82.410476,
+        19.62
+      ],
+      "box_mm": [
+        80.370952,
+        18.8165,
+        84.45,
+        20.4235
+      ],
+      "angle_deg": 180.0,
+      "layer": "B.Silkscreen",
+      "font_mm": 0.8,
+      "uuid": "29edb528-7290-4d89-84b6-3a199174be97"
+    },
+    {
+      "owner": "J4",
+      "kind": "pin_number",
+      "text": "1",
+      "at_mm": [
+        56.375,
+        5.4
+      ],
+      "box_mm": [
+        55.764047000000005,
+        4.5965,
+        56.985952,
+        6.2035
+      ],
+      "angle_deg": 180.0,
+      "layer": "B.Silkscreen",
+      "font_mm": 0.8,
+      "uuid": "7451534b-032b-48fb-95a5-104eea2a39f0"
+    },
+    {
+      "owner": "J4",
+      "kind": "pin_number",
+      "text": "2",
+      "at_mm": [
+        55.125,
+        5.4
+      ],
+      "box_mm": [
+        54.514047000000005,
+        4.5965,
+        55.735952,
+        6.2035
+      ],
+      "angle_deg": 180.0,
+      "layer": "B.Silkscreen",
+      "font_mm": 0.8,
+      "uuid": "d733e2f2-427e-4472-8d2f-133ec3804196"
+    },
+    {
+      "owner": "J4",
+      "kind": "pin_number",
+      "text": "3",
+      "at_mm": [
+        53.875,
+        5.4
+      ],
+      "box_mm": [
+        53.264047000000005,
+        4.5965,
+        54.485952,
+        6.2035
+      ],
+      "angle_deg": 180.0,
+      "layer": "B.Silkscreen",
+      "font_mm": 0.8,
+      "uuid": "913a805f-6b69-4e23-8350-7bdd2f002415"
+    },
+    {
+      "owner": "J4",
+      "kind": "pin_number",
+      "text": "4",
+      "at_mm": [
+        52.625,
+        5.4
+      ],
+      "box_mm": [
+        52.014047000000005,
+        4.5965,
+        53.235952,
+        6.2035
+      ],
+      "angle_deg": 180.0,
+      "layer": "B.Silkscreen",
+      "font_mm": 0.8,
+      "uuid": "36aaa9a2-3159-4165-9f9e-64abffa845f0"
+    },
+    {
+      "owner": "J4",
+      "kind": "pin_number",
+      "text": "5",
+      "at_mm": [
+        51.375,
+        5.4
+      ],
+      "box_mm": [
+        50.764047000000005,
+        4.5965,
+        51.985952,
+        6.2035
+      ],
+      "angle_deg": 180.0,
+      "layer": "B.Silkscreen",
+      "font_mm": 0.8,
+      "uuid": "ac1523d9-6b6d-4ea3-a4cb-e26abaf67203"
+    },
+    {
+      "owner": "J4",
+      "kind": "pin_number",
+      "text": "6",
+      "at_mm": [
+        50.125,
+        5.4
+      ],
+      "box_mm": [
+        49.514047000000005,
+        4.5965,
+        50.735952,
+        6.2035
+      ],
+      "angle_deg": 180.0,
+      "layer": "B.Silkscreen",
+      "font_mm": 0.8,
+      "uuid": "19d6289b-4700-4d0e-b149-3712be272a74"
+    },
+    {
+      "owner": "J4",
+      "kind": "pin_number",
+      "text": "7",
+      "at_mm": [
+        48.875,
+        5.4
+      ],
+      "box_mm": [
+        48.264047000000005,
+        4.5965,
+        49.485952,
+        6.2035
+      ],
+      "angle_deg": 180.0,
+      "layer": "B.Silkscreen",
+      "font_mm": 0.8,
+      "uuid": "53e114e8-abd7-4906-8601-96f3333e481c"
+    },
+    {
+      "owner": "J4",
+      "kind": "pin_number",
+      "text": "8",
+      "at_mm": [
+        47.625,
+        5.4
+      ],
+      "box_mm": [
+        47.014047000000005,
+        4.5965,
+        48.235952,
+        6.2035
+      ],
+      "angle_deg": 180.0,
+      "layer": "B.Silkscreen",
+      "font_mm": 0.8,
+      "uuid": "3358b49a-1879-45c0-b28b-f75794712058"
+    },
+    {
+      "owner": "J4",
+      "kind": "function",
+      "text": "J4 GPS\n1 NC/RST  2 NC/PPS\n3 NC/WAKE  4 RX\n5 TX  6 BACKUP\n7 POWER  8 GND",
+      "at_mm": [
+        52.0,
+        10.44
+      ],
+      "box_mm": [
+        45.04619,
+        7.060589,
+        58.95381,
+        13.81941
+      ],
+      "angle_deg": 180.0,
+      "layer": "B.Silkscreen",
+      "font_mm": 0.8,
+      "uuid": "c668e41c-fc27-4800-aa44-370c58545108"
+    },
+    {
+      "owner": "J5",
+      "kind": "pin_aligned",
+      "text": "1 GND",
+      "at_mm": [
+        6.184762,
+        18.12
+      ],
+      "box_mm": [
+        4.05,
+        17.3165,
+        8.319524,
+        18.9235
+      ],
+      "angle_deg": 180.0,
+      "layer": "B.Silkscreen",
+      "font_mm": 0.8,
+      "uuid": "202215bf-846b-48a1-bb5b-b0bdae11f79b"
+    },
+    {
+      "owner": "J5",
+      "kind": "pin_aligned",
+      "text": "2 VIN",
+      "at_mm": [
+        5.918095,
+        15.58
+      ],
+      "box_mm": [
+        4.05,
+        14.7765,
+        7.78619,
+        16.3835
+      ],
+      "angle_deg": 180.0,
+      "layer": "B.Silkscreen",
+      "font_mm": 0.8,
+      "uuid": "7e295fa7-1f9c-4850-af43-76759610142d"
+    },
+    {
+      "owner": "J5",
+      "kind": "pin_aligned",
+      "text": "3 TX",
+      "at_mm": [
+        5.651429,
+        13.04
+      ],
+      "box_mm": [
+        4.05,
+        12.2365,
+        7.252858,
+        13.8435
+      ],
+      "angle_deg": 180.0,
+      "layer": "B.Silkscreen",
+      "font_mm": 0.8,
+      "uuid": "1af9ce8b-37e0-4330-97cf-3c3fbdbb345d"
+    },
+    {
+      "owner": "J5",
+      "kind": "pin_aligned",
+      "text": "4 RX",
+      "at_mm": [
+        5.746667,
+        10.5
+      ],
+      "box_mm": [
+        4.05,
+        9.6965,
+        7.443334,
+        11.3035
+      ],
+      "angle_deg": 180.0,
+      "layer": "B.Silkscreen",
+      "font_mm": 0.8,
+      "uuid": "dd016520-4c48-41c9-80de-b56308a6195e"
+    },
+    {
+      "owner": "FB1",
+      "kind": "projected_body",
+      "text": "FB1\n60R@100MHz",
+      "at_mm": [
+        33.8,
+        14.45
+      ],
+      "box_mm": [
+        28.53619,
+        12.689428,
+        39.063809,
+        16.210572
+      ],
+      "angle_deg": 180.0,
+      "layer": "B.Silkscreen",
+      "font_mm": 1.0,
+      "uuid": "e9f9a791-8fd5-4075-b750-c7ab410349a6"
+    },
+    {
+      "owner": "M1",
+      "kind": "projected_body",
+      "text": "M1\nNiceNano",
+      "at_mm": [
+        18.0,
+        18.0
+      ],
+      "box_mm": [
+        14.26,
+        16.239428,
+        21.74,
+        19.760572
+      ],
+      "angle_deg": 180.0,
+      "layer": "B.Silkscreen",
+      "font_mm": 1.0,
+      "uuid": "136f9b5b-e914-44c6-97ce-a345ac38cd89"
+    },
+    {
+      "owner": "M2",
+      "kind": "projected_body",
+      "text": "M2\nHT-RA62",
+      "at_mm": [
+        48.0,
+        18.0
+      ],
+      "box_mm": [
+        44.355238,
+        16.239428,
+        51.644762,
+        19.760572
+      ],
+      "angle_deg": 180.0,
+      "layer": "B.Silkscreen",
+      "font_mm": 1.0,
+      "uuid": "c10775c9-b898-481e-a82f-13565867e8fe"
+    },
+    {
+      "owner": "Q2",
+      "kind": "projected_body",
+      "text": "Q2\nAO3401A",
+      "at_mm": [
+        63.5,
+        17.0
+      ],
+      "box_mm": [
+        59.974285,
+        15.239428,
+        67.025714,
+        18.760572
+      ],
+      "angle_deg": 180.0,
+      "layer": "B.Silkscreen",
+      "font_mm": 1.0,
+      "uuid": "1f3dff0f-d9f2-4064-a39f-194b1bda4c9b"
+    },
+    {
+      "owner": "U4",
+      "kind": "projected_body",
+      "text": "U4\nDS3231M",
+      "at_mm": [
+        77.0,
+        8.0
+      ],
+      "box_mm": [
+        73.307619,
+        6.239428,
+        80.692381,
+        9.760572
+      ],
+      "angle_deg": 180.0,
+      "layer": "B.Silkscreen",
+      "font_mm": 1.0,
+      "uuid": "c40b3189-2d98-40bd-88f7-d3bbaf5a38bc"
+    },
+    {
+      "owner": "C26",
+      "kind": "projected_body",
+      "text": "C26\n100nF",
+      "at_mm": [
+        6.7,
+        27.5
+      ],
+      "box_mm": [
+        4.150476,
+        25.739428,
+        9.249524000000001,
+        29.260572
+      ],
+      "angle_deg": 180.0,
+      "layer": "B.Silkscreen",
+      "font_mm": 1.0,
+      "uuid": "bd01d389-2a6c-4f5d-87a6-bdcfaf51a539"
+    },
+    {
+      "owner": "C56",
+      "kind": "projected_body",
+      "text": "C56\n100nF",
+      "at_mm": [
+        63.5,
+        6.3
+      ],
+      "box_mm": [
+        60.950476,
+        4.539428,
+        66.04952399999999,
+        8.060572
+      ],
+      "angle_deg": 180.0,
+      "layer": "B.Silkscreen",
+      "font_mm": 1.0,
+      "uuid": "bfed6c18-a2a5-4ecc-8328-1155c703385b"
+    },
+    {
+      "owner": "R27",
+      "kind": "projected_body",
+      "text": "R27\n2.2M",
+      "at_mm": [
+        29.799999,
+        18.999999
+      ],
+      "box_mm": [
+        28.039427,
+        16.998095,
+        31.560571,
+        21.001904
+      ],
+      "angle_deg": 270.0,
+      "layer": "B.Silkscreen",
+      "font_mm": 1.0,
+      "uuid": "b65cd038-460b-4625-a8b5-2003b009f0ae"
+    },
+    {
+      "owner": "R39",
+      "kind": "projected_body",
+      "text": "R39\n100k",
+      "at_mm": [
+        50.0,
+        31.235
+      ],
+      "box_mm": [
+        47.926666000000004,
+        29.474428,
+        52.073333,
+        32.995571999999996
+      ],
+      "angle_deg": 180.0,
+      "layer": "B.Silkscreen",
+      "font_mm": 1.0,
+      "uuid": "0932d072-893c-40cd-afd7-eeaa5d78b317"
+    },
+    {
+      "owner": "R42",
+      "kind": "projected_body",
+      "text": "R42\n100k",
+      "at_mm": [
+        64.5,
+        20.799999
+      ],
+      "box_mm": [
+        62.426666000000004,
+        19.039427,
+        66.57333299999999,
+        22.560571
+      ],
+      "angle_deg": 180.0,
+      "layer": "B.Silkscreen",
+      "font_mm": 1.0,
+      "uuid": "e05ea2b2-5324-4b60-b60a-7c4bc53b731a"
+    },
+    {
+      "owner": "R43",
+      "kind": "projected_body",
+      "text": "R43\n100k",
+      "at_mm": [
+        71.5,
+        20.799999
+      ],
+      "box_mm": [
+        69.426666,
+        19.039427,
+        73.57333299999999,
+        22.560571
+      ],
+      "angle_deg": 180.0,
+      "layer": "B.Silkscreen",
+      "font_mm": 1.0,
+      "uuid": "fbd2ceae-bc08-4b00-a1d8-ffd2949ca89d"
+    },
+    {
+      "owner": "R23",
+      "kind": "projected_body",
+      "text": "R23\n33R",
+      "at_mm": [
+        30.0,
+        28.659999
+      ],
+      "box_mm": [
+        28.307619,
+        26.899427,
+        31.692381,
+        30.420571
+      ],
+      "angle_deg": 180.0,
+      "layer": "B.Silkscreen",
+      "font_mm": 1.0,
+      "uuid": "cb37e9d8-b07d-48db-8d8a-723adc32af2f"
+    },
+    {
+      "owner": "R24",
+      "kind": "projected_body",
+      "text": "R24\n33R",
+      "at_mm": [
+        30.0,
+        23.58
+      ],
+      "box_mm": [
+        28.307619,
+        21.819428,
+        31.692381,
+        25.340572
+      ],
+      "angle_deg": 180.0,
+      "layer": "B.Silkscreen",
+      "font_mm": 1.0,
+      "uuid": "8e7dfed0-1bf4-4004-bd9e-f0838a48cd56"
+    },
+    {
+      "owner": "R33",
+      "kind": "projected_body",
+      "text": "R33\n10k",
+      "at_mm": [
+        28.7,
+        7.5
+      ],
+      "box_mm": [
+        26.939428,
+        5.807619,
+        30.460572,
+        9.192381000000001
+      ],
+      "angle_deg": 270.0,
+      "layer": "B.Silkscreen",
+      "font_mm": 1.0,
+      "uuid": "7462c276-b019-4893-943f-665311d39b12"
+    },
+    {
+      "owner": "R36",
+      "kind": "projected_body",
+      "text": "R36\n10k",
+      "at_mm": [
+        50.0,
+        38.035
+      ],
+      "box_mm": [
+        48.307619,
+        36.274428,
+        51.692381,
+        39.795572
+      ],
+      "angle_deg": 180.0,
+      "layer": "B.Silkscreen",
+      "font_mm": 1.0,
+      "uuid": "de9ec36d-3248-4fb8-9d83-1872334eb4a0"
+    },
+    {
+      "owner": "J4",
+      "kind": "projected_body",
+      "text": "J4\nGPS",
+      "at_mm": [
+        52.0,
+        2.44
+      ],
+      "box_mm": [
+        50.283809000000005,
+        0.6794279999999999,
+        53.71619,
+        4.200572
+      ],
+      "angle_deg": 180.0,
+      "layer": "B.Silkscreen",
+      "font_mm": 1.0,
+      "uuid": "70795717-96b4-4bbb-b1c2-dd77ed81ae2f"
+    },
+    {
+      "owner": "R38",
+      "kind": "projected_body",
+      "text": "R38\n1k",
+      "at_mm": [
+        50.0,
+        34.635
+      ],
+      "box_mm": [
+        48.472857000000005,
+        33.048525000000005,
+        51.527142999999995,
+        36.221475
+      ],
+      "angle_deg": 180.0,
+      "layer": "B.Silkscreen",
+      "font_mm": 0.9,
+      "uuid": "7555824a-7f69-49a3-b294-8b29e78ae325"
+    },
+    {
+      "owner": "J11",
+      "kind": "adjacent_front",
+      "text": "J11\nLC/SYS",
+      "at_mm": [
+        81.591428,
+        24.27
+      ],
+      "box_mm": [
+        78.84285700000001,
+        22.683525,
+        84.34,
+        25.856475
+      ],
+      "angle_deg": 0.0,
+      "layer": "F.Silkscreen",
+      "font_mm": 0.9,
+      "uuid": "f84a4575-f220-481b-9ea9-6c563f0071a0"
+    },
+    {
+      "owner": "Q3",
+      "kind": "adjacent_front",
+      "text": "Q3\n2N7002K",
+      "at_mm": [
+        68.0,
+        13.663525
+      ],
+      "box_mm": [
+        64.715714,
+        12.07705,
+        71.284286,
+        15.25
+      ],
+      "angle_deg": 0.0,
+      "layer": "F.Silkscreen",
+      "font_mm": 0.9,
+      "uuid": "94ba1ba6-a45a-4ce7-a894-6a41b853c49c"
+    },
+    {
+      "owner": "C24",
+      "kind": "adjacent_front",
+      "text": "C24\n100nF",
+      "at_mm": [
+        37.1,
+        18.048572
+      ],
+      "box_mm": [
+        35.513525,
+        15.75,
+        38.686474999999994,
+        20.347144
+      ],
+      "angle_deg": 90.0,
+      "layer": "F.Silkscreen",
+      "font_mm": 0.9,
+      "uuid": "eea70e01-e7bd-4881-90bb-946f0709b190"
+    },
+    {
+      "owner": "C25",
+      "kind": "adjacent_front",
+      "text": "C25\n100nF",
+      "at_mm": [
+        34.0,
+        22.181475
+      ],
+      "box_mm": [
+        31.701428,
+        20.595,
+        36.298572,
+        23.76795
+      ],
+      "angle_deg": 0.0,
+      "layer": "F.Silkscreen",
+      "font_mm": 0.9,
+      "uuid": "cb67626a-0775-4ba4-9488-11fc7debeba2"
+    },
+    {
+      "owner": "C27",
+      "kind": "adjacent_front",
+      "text": "C27\n100nF",
+      "at_mm": [
+        71.0,
+        4.733525
+      ],
+      "box_mm": [
+        68.701428,
+        3.1470499999999997,
+        73.298572,
+        6.32
+      ],
+      "angle_deg": 0.0,
+      "layer": "F.Silkscreen",
+      "font_mm": 0.9,
+      "uuid": "a8fa098c-a22b-4cf4-8695-9c4da9e6cb47"
+    },
+    {
+      "owner": "C33",
+      "kind": "adjacent_front",
+      "text": "C33\n100nF",
+      "at_mm": [
+        44.156475,
+        39.2
+      ],
+      "box_mm": [
+        42.57,
+        36.901428,
+        45.74294999999999,
+        41.498571999999996
+      ],
+      "angle_deg": 90.0,
+      "layer": "F.Silkscreen",
+      "font_mm": 0.9,
+      "uuid": "b8d5f885-7acd-4435-b0e8-83f32a1824b2"
+    },
+    {
+      "owner": "SW2",
+      "kind": "adjacent_front",
+      "text": "SW2\nRESET",
+      "at_mm": [
+        40.999999,
+        55.013525
+      ],
+      "box_mm": [
+        38.744285000000005,
+        53.42705,
+        43.255714,
+        56.599999999999994
+      ],
+      "angle_deg": 0.0,
+      "layer": "F.Silkscreen",
+      "font_mm": 0.9,
+      "uuid": "52ebed43-5f54-4640-ad37-23bdd909c19f"
+    },
+    {
+      "owner": "C57",
+      "kind": "adjacent_front",
+      "text": "C57\n10uF",
+      "at_mm": [
+        66.896667,
+        3.199999
+      ],
+      "box_mm": [
+        65.2,
+        1.7525220000000001,
+        68.593334,
+        4.647477
+      ],
+      "angle_deg": 0.0,
+      "layer": "F.Silkscreen",
+      "font_mm": 0.8,
+      "uuid": "36f82aad-902e-47ea-bcee-dfe7ba6dfcc8"
+    },
+    {
+      "owner": "R29",
+      "kind": "adjacent_front",
+      "text": "R29\n4.7k",
+      "at_mm": [
+        80.8,
+        19.831475
+      ],
+      "box_mm": [
+        79.14428600000001,
+        18.245,
+        82.455714,
+        21.41795
+      ],
+      "angle_deg": 0.0,
+      "layer": "F.Silkscreen",
+      "font_mm": 0.9,
+      "uuid": "0cd06fdf-1ad4-4835-aa3d-32a12cb91915"
+    },
+    {
+      "owner": "R30",
+      "kind": "adjacent_front",
+      "text": "R30\n4.7k",
+      "at_mm": [
+        77.444285,
+        14.4
+      ],
+      "box_mm": [
+        75.788571,
+        12.813525,
+        79.099999,
+        15.986475
+      ],
+      "angle_deg": 0.0,
+      "layer": "F.Silkscreen",
+      "font_mm": 0.9,
+      "uuid": "400ac33d-80a7-40eb-a6d6-d3feb2eb043f"
+    },
+    {
+      "owner": "R35",
+      "kind": "adjacent_front",
+      "text": "R35\n100k",
+      "at_mm": [
+        59.4,
+        13.868525
+      ],
+      "box_mm": [
+        57.53,
+        12.28205,
+        61.269999999999996,
+        15.455
+      ],
+      "angle_deg": 0.0,
+      "layer": "F.Silkscreen",
+      "font_mm": 0.9,
+      "uuid": "116c40b5-58f5-4f10-92dd-51d1cfc086a9"
+    },
+    {
+      "owner": "R46",
+      "kind": "adjacent_front",
+      "text": "R46\n100k",
+      "at_mm": [
+        59.4,
+        7.043525
+      ],
+      "box_mm": [
+        57.53,
+        5.45705,
+        61.269999999999996,
+        8.63
+      ],
+      "angle_deg": 0.0,
+      "layer": "F.Silkscreen",
+      "font_mm": 0.9,
+      "uuid": "a3d1fb6a-4d71-429e-b702-46791ca6cd46"
+    },
+    {
+      "owner": "SW1",
+      "kind": "adjacent_front",
+      "text": "SW1\nUSER",
+      "at_mm": [
+        29.0,
+        55.013525
+      ],
+      "box_mm": [
+        27.022857,
+        53.42705,
+        30.977143,
+        56.599999999999994
+      ],
+      "angle_deg": 0.0,
+      "layer": "F.Silkscreen",
+      "font_mm": 0.9,
+      "uuid": "9a95bcb2-009b-4f16-9c83-1a9b78c70f71"
+    },
+    {
+      "owner": "H201",
+      "kind": "adjacent_front",
+      "text": "H201 M3",
+      "at_mm": [
+        4.0,
+        7.612
+      ],
+      "box_mm": [
+        0.737143,
+        6.75,
+        7.262857,
+        8.474
+      ],
+      "angle_deg": 0.0,
+      "layer": "F.Silkscreen",
+      "font_mm": 0.9,
+      "uuid": "719dc4a9-9307-4783-a33b-92dabdf46e5a"
+    },
+    {
+      "owner": "H202",
+      "kind": "adjacent_front",
+      "text": "H202 M3",
+      "at_mm": [
+        79.987143,
+        3.5
+      ],
+      "box_mm": [
+        76.724286,
+        2.638,
+        83.25,
+        4.362
+      ],
+      "angle_deg": 0.0,
+      "layer": "F.Silkscreen",
+      "font_mm": 0.9,
+      "uuid": "2308f05b-4c92-40e7-b5b2-72d043525e00"
+    },
+    {
+      "owner": "H203",
+      "kind": "adjacent_front",
+      "text": "H203 M3",
+      "at_mm": [
+        10.012857,
+        56.5
+      ],
+      "box_mm": [
+        6.75,
+        55.638000000000005,
+        13.275714,
+        57.361999999999995
+      ],
+      "angle_deg": 0.0,
+      "layer": "F.Silkscreen",
+      "font_mm": 0.9,
+      "uuid": "a5206e9d-fb13-4f2f-9bb7-387a326b9014"
+    },
+    {
+      "owner": "J10",
+      "kind": "adjacent_front",
+      "text": "J10\nISP",
+      "at_mm": [
+        36.97,
+        28.143525
+      ],
+      "box_mm": [
+        35.550000000000004,
+        26.55705,
+        38.38999999999999,
+        29.73
+      ],
+      "angle_deg": 0.0,
+      "layer": "F.Silkscreen",
+      "font_mm": 0.9,
+      "uuid": "951620fe-2463-4f41-8f0f-4a2b1649e4f7"
+    },
+    {
+      "owner": "J5",
+      "kind": "adjacent_front",
+      "text": "J5\nUART",
+      "at_mm": [
+        2.5,
+        21.386475
+      ],
+      "box_mm": [
+        0.63,
+        19.8,
+        4.37,
+        22.97295
+      ],
+      "angle_deg": 0.0,
+      "layer": "F.Silkscreen",
+      "font_mm": 0.9,
+      "uuid": "f4afcae1-e0ab-41ca-b456-d2ea7d654263"
+    },
+    {
+      "owner": "R25",
+      "kind": "adjacent_front",
+      "text": "R25\n33R",
+      "at_mm": [
+        33.227142,
+        26.119999
+      ],
+      "box_mm": [
+        31.699999,
+        24.533524,
+        34.754284999999996,
+        27.706474
+      ],
+      "angle_deg": 0.0,
+      "layer": "F.Silkscreen",
+      "font_mm": 0.9,
+      "uuid": "22ead78b-5ad4-4b7f-979c-5ac9a3f838e4"
+    },
+    {
+      "owner": "R26",
+      "kind": "adjacent_front",
+      "text": "R26\n33R",
+      "at_mm": [
+        59.4,
+        21.431475
+      ],
+      "box_mm": [
+        57.872857,
+        19.845,
+        60.927142999999994,
+        23.01795
+      ],
+      "angle_deg": 0.0,
+      "layer": "F.Silkscreen",
+      "font_mm": 0.9,
+      "uuid": "7868c0fa-7059-4007-a432-aebd90691f23"
+    },
+    {
+      "owner": "R31",
+      "kind": "adjacent_front",
+      "text": "R31\n10k",
+      "at_mm": [
+        6.7,
+        33.131475
+      ],
+      "box_mm": [
+        5.172857,
+        31.544999999999998,
+        8.227143,
+        34.717949999999995
+      ],
+      "angle_deg": 0.0,
+      "layer": "F.Silkscreen",
+      "font_mm": 0.9,
+      "uuid": "1844e2f0-d10c-4e18-ac7c-e867b3e4fbb4"
+    },
+    {
+      "owner": "R21",
+      "kind": "adjacent_front",
+      "text": "R21\n1k",
+      "at_mm": [
+        48.0,
+        42.368525
+      ],
+      "box_mm": [
+        46.472857000000005,
+        40.782050000000005,
+        49.527142999999995,
+        43.955
+      ],
+      "angle_deg": 0.0,
+      "layer": "F.Silkscreen",
+      "font_mm": 0.9,
+      "uuid": "ffb22452-4b2f-40b6-8065-63f4cc710a4a"
+    },
+    {
+      "owner": "R44",
+      "kind": "adjacent_front",
+      "text": "R44\n1k",
+      "at_mm": [
+        68.0,
+        24.027143
+      ],
+      "box_mm": [
+        66.413525,
+        22.5,
+        69.586475,
+        25.554286
+      ],
+      "angle_deg": 90.0,
+      "layer": "F.Silkscreen",
+      "font_mm": 0.9,
+      "uuid": "925c42c0-9906-499c-8e37-a7dac7a7dcee"
+    },
+    {
+      "owner": "NT1",
+      "kind": "adjacent_front",
+      "text": "NT1",
+      "at_mm": [
+        40.7,
+        1.288
+      ],
+      "box_mm": [
+        39.237143,
+        0.42599999999999993,
+        42.162856999999995,
+        2.15
+      ],
+      "angle_deg": 0.0,
+      "layer": "F.Silkscreen",
+      "font_mm": 0.9,
+      "uuid": "ab303378-4e7f-429f-96b0-00c3a241fc9e"
+    },
+    {
+      "owner": "C21",
+      "kind": "spatial_group",
+      "text": "C21\n10uF",
+      "at_mm": [
+        33.912499,
+        21.724999
+      ],
+      "box_mm": [
+        32.151927,
+        19.651666,
+        35.67307099999999,
+        23.798333
+      ],
+      "angle_deg": 270.0,
+      "layer": "B.Silkscreen",
+      "font_mm": 1.0,
+      "uuid": "c2197028-5b92-4b89-b2be-6fcdebeaad07"
+    },
+    {
+      "owner": "C22",
+      "kind": "spatial_group",
+      "text": "C22\n100nF",
+      "at_mm": [
+        38.4875,
+        21.725
+      ],
+      "box_mm": [
+        36.726928,
+        19.175476,
+        40.24807199999999,
+        24.274524
+      ],
+      "angle_deg": 270.0,
+      "layer": "B.Silkscreen",
+      "font_mm": 1.0,
+      "uuid": "3a175244-5b69-48bf-88e2-655d8b40f1ac"
+    },
+    {
+      "owner": "R28",
+      "kind": "spatial_group",
+      "text": "R28\n2.2M",
+      "at_mm": [
+        35.037499,
+        28.174999
+      ],
+      "box_mm": [
+        33.276927,
+        26.173095,
+        36.79807099999999,
+        30.176904
+      ],
+      "angle_deg": 270.0,
+      "layer": "B.Silkscreen",
+      "font_mm": 1.0,
+      "uuid": "a8d0e101-edd1-487d-ac48-9ba87acfc862"
+    },
+    {
+      "owner": "C23",
+      "kind": "spatial_group",
+      "text": "C23\n22uF",
+      "at_mm": [
+        43.7375,
+        22.249999
+      ],
+      "box_mm": [
+        41.976928,
+        20.176666,
+        45.49807199999999,
+        24.323333
+      ],
+      "angle_deg": 270.0,
+      "layer": "B.Silkscreen",
+      "font_mm": 1.0,
+      "uuid": "5d0d1b88-d32d-4364-87a4-617ea4aea767"
+    },
+    {
+      "owner": "G1",
+      "kind": "group_heading",
+      "text": "G1 x1.5",
+      "at_mm": [
+        38.825,
+        17.975476
+      ],
+      "box_mm": [
+        36.233095000000006,
+        17.171976,
+        41.416905,
+        18.778976
+      ],
+      "angle_deg": 180.0,
+      "layer": "B.Silkscreen",
+      "font_mm": 0.8,
+      "uuid": "bd8d9e51-c90d-41c5-a3c6-b3831b095236"
+    },
+    {
+      "owner": "FL1",
+      "kind": "spatial_group",
+      "text": "FL1\nS869M000S003",
+      "at_mm": [
+        59.25,
+        28.307499
+      ],
+      "box_mm": [
+        57.489428000000004,
+        22.257975,
+        61.010571999999996,
+        34.357023
+      ],
+      "angle_deg": 270.0,
+      "layer": "B.Silkscreen",
+      "font_mm": 1.0,
+      "uuid": "f017fb61-7697-4044-8e24-3789e7e0f042"
+    },
+    {
+      "owner": "J13",
+      "kind": "spatial_group",
+      "text": "J13\nSMA",
+      "at_mm": [
+        49.95,
+        21.9625
+      ],
+      "box_mm": [
+        48.233809,
+        20.201928,
+        51.66618999999999,
+        23.723072
+      ],
+      "angle_deg": 180.0,
+      "layer": "B.Silkscreen",
+      "font_mm": 1.0,
+      "uuid": "0c1bc8ae-d810-4230-b953-439f7b616669"
+    },
+    {
+      "owner": "G2",
+      "kind": "group_heading",
+      "text": "G2 x1.5",
+      "at_mm": [
+        54.62219,
+        19.001928
+      ],
+      "box_mm": [
+        52.030285000000006,
+        18.198428,
+        57.21409499999999,
+        19.805428
+      ],
+      "angle_deg": 180.0,
+      "layer": "B.Silkscreen",
+      "font_mm": 0.8,
+      "uuid": "11ceb372-21f6-4ea1-949d-a94044e77947"
+    },
+    {
+      "owner": "R45",
+      "kind": "spatial_group",
+      "text": "R45\n100k",
+      "at_mm": [
+        75.2,
+        11.85
+      ],
+      "box_mm": [
+        73.126666,
+        10.089428,
+        77.273333,
+        13.610572
+      ],
+      "angle_deg": 180.0,
+      "layer": "B.Silkscreen",
+      "font_mm": 1.0,
+      "uuid": "54a1862e-1ade-4564-8ce6-f6b24d855d18"
+    },
+    {
+      "owner": "U7",
+      "kind": "spatial_group",
+      "text": "U7\nSN74LVC2G125",
+      "at_mm": [
+        65.6,
+        10.05
+      ],
+      "box_mm": [
+        59.669523000000005,
+        8.289428,
+        71.530476,
+        11.810572
+      ],
+      "angle_deg": 180.0,
+      "layer": "B.Silkscreen",
+      "font_mm": 1.0,
+      "uuid": "cf530e3d-737d-47a8-85be-46dbb7006634"
+    },
+    {
+      "owner": "G3",
+      "kind": "group_heading",
+      "text": "G3 x2",
+      "at_mm": [
+        68.47143,
+        7.089428
+      ],
+      "box_mm": [
+        66.450953,
+        6.285928,
+        70.491906,
+        7.892928
+      ],
+      "angle_deg": 180.0,
+      "layer": "B.Silkscreen",
+      "font_mm": 0.8,
+      "uuid": "18c3bafa-1c84-42e9-9aa6-9af260c30eee"
+    },
+    {
+      "owner": "J201",
+      "kind": "spatial_group",
+      "text": "J201\nIDC 12P",
+      "at_mm": [
+        70.125,
+        39.249999
+      ],
+      "box_mm": [
+        68.364428,
+        35.938571,
+        71.885572,
+        42.561428
+      ],
+      "angle_deg": 270.0,
+      "layer": "B.Silkscreen",
+      "font_mm": 1.0,
+      "uuid": "cc4b6eb5-bf19-488a-b3d4-3c950a2dbabc"
+    },
+    {
+      "owner": "BT1",
+      "kind": "spatial_group",
+      "text": "BT1\nCR2032",
+      "at_mm": [
+        72.375,
+        4.149999
+      ],
+      "box_mm": [
+        69.230238,
+        2.389427,
+        75.519762,
+        5.910571
+      ],
+      "angle_deg": 180.0,
+      "layer": "B.Silkscreen",
+      "font_mm": 1.0,
+      "uuid": "e6daf799-6046-49ab-a160-5e0a501b61bc"
+    },
+    {
+      "owner": "G4",
+      "kind": "group_heading",
+      "text": "G4 x1.5",
+      "at_mm": [
+        71.942094,
+        1.189428
+      ],
+      "box_mm": [
+        69.350189,
+        0.38592799999999994,
+        74.533999,
+        1.9929279999999998
+      ],
+      "angle_deg": 180.0,
+      "layer": "B.Silkscreen",
+      "font_mm": 0.8,
+      "uuid": "8d35bc83-54fd-4ad7-9b66-ed6221b4d277"
+    },
+    {
+      "owner": "U6",
+      "kind": "spatial_group",
+      "text": "U6\nATtiny13A",
+      "at_mm": [
+        31.375,
+        49.332499
+      ],
+      "box_mm": [
+        27.58738,
+        47.571927,
+        35.162619,
+        51.093070999999995
+      ],
+      "angle_deg": 180.0,
+      "layer": "B.Silkscreen",
+      "font_mm": 1.0,
+      "uuid": "faa879af-6a79-4ea6-9e51-90d26105ee26"
+    },
+    {
+      "owner": "R37",
+      "kind": "spatial_group",
+      "text": "R37\n0R",
+      "at_mm": [
+        29.125,
+        41.3375
+      ],
+      "box_mm": [
+        27.432619,
+        39.576928,
+        30.817381,
+        43.098071999999995
+      ],
+      "angle_deg": 180.0,
+      "layer": "B.Silkscreen",
+      "font_mm": 1.0,
+      "uuid": "3df0c640-9081-4c65-b8f4-1030a560b1e8"
+    },
+    {
+      "owner": "G5",
+      "kind": "group_heading",
+      "text": "G5 x1.5",
+      "at_mm": [
+        31.297619,
+        38.376929
+      ],
+      "box_mm": [
+        28.705714,
+        37.573429000000004,
+        33.889523999999994,
+        39.180429
+      ],
+      "angle_deg": 180.0,
+      "layer": "B.Silkscreen",
+      "font_mm": 0.8,
+      "uuid": "7af78039-7f79-4948-b3c0-df2e0357770c"
+    },
+    {
+      "owner": "H204",
+      "kind": "spatial_group",
+      "text": "H204 M3",
+      "at_mm": [
+        85.875,
+        52.125
+      ],
+      "box_mm": [
+        82.254047,
+        51.1694,
+        89.495952,
+        53.0806
+      ],
+      "angle_deg": 180.0,
+      "layer": "B.Silkscreen",
+      "font_mm": 1.0,
+      "uuid": "734fb2a6-2d28-4b20-b852-f07c03450bcb"
+    },
+    {
+      "owner": "TP7",
+      "kind": "spatial_group",
+      "text": "TP7",
+      "at_mm": [
+        86.625,
+        45.375
+      ],
+      "box_mm": [
+        85.027857,
+        44.4194,
+        88.222143,
+        46.3306
+      ],
+      "angle_deg": 180.0,
+      "layer": "B.Silkscreen",
+      "font_mm": 1.0,
+      "uuid": "20670de9-99ac-48c4-b91e-db79405c22a1"
+    },
+    {
+      "owner": "G6",
+      "kind": "group_heading",
+      "text": "G6 x1.5",
+      "at_mm": [
+        85.875001,
+        43.2194
+      ],
+      "box_mm": [
+        83.283096,
+        42.4159,
+        88.466906,
+        44.0229
+      ],
+      "angle_deg": 180.0,
+      "layer": "B.Silkscreen",
+      "font_mm": 0.8,
+      "uuid": "1900ee8e-733b-475a-86c2-bd9b8c9ce88c"
+    },
+    {
+      "owner": "TP4",
+      "kind": "spatial_group",
+      "text": "TP4",
+      "at_mm": [
+        81.5,
+        5.172499
+      ],
+      "box_mm": [
+        79.902857,
+        4.216899,
+        83.097143,
+        6.128099
+      ],
+      "angle_deg": 180.0,
+      "layer": "B.Silkscreen",
+      "font_mm": 1.0,
+      "uuid": "793d02d6-699a-4087-a3e8-8b9d46b67a31"
+    },
+    {
+      "owner": "J3",
+      "kind": "spatial_group",
+      "text": "J3\nI2C",
+      "at_mm": [
+        77.9,
+        16.1375
+      ],
+      "box_mm": [
+        76.44571400000001,
+        14.376928,
+        79.35428499999999,
+        17.898072
+      ],
+      "angle_deg": 180.0,
+      "layer": "B.Silkscreen",
+      "font_mm": 1.0,
+      "uuid": "4166809b-4e59-4131-b1db-bef75f044302"
+    },
+    {
+      "owner": "G7",
+      "kind": "group_heading",
+      "text": "G7 x1.5",
+      "at_mm": [
+        79.771428,
+        3.0169
+      ],
+      "box_mm": [
+        77.179523,
+        2.2134,
+        82.363333,
+        3.8204000000000002
+      ],
+      "angle_deg": 180.0,
+      "layer": "B.Silkscreen",
+      "font_mm": 0.8,
+      "uuid": "014a03b6-da5a-4580-83da-20e5f0d9998a"
+    },
+    {
+      "owner": "BT1",
+      "kind": "front_reference",
+      "text": "BT1",
+      "at_mm": [
+        71.999999,
+        25.4965
+      ],
+      "box_mm": [
+        70.684285,
+        24.693,
+        73.315714,
+        26.3
+      ],
+      "angle_deg": 0.0,
+      "layer": "F.Silkscreen",
+      "font_mm": 0.8,
+      "uuid": "ec845ed6-b344-4160-9ad7-2e705e5474e1"
+    },
+    {
+      "owner": "C21",
+      "kind": "front_reference",
+      "text": "C21",
+      "at_mm": [
+        28.049999,
+        14.391905
+      ],
+      "box_mm": [
+        27.246499,
+        13.0,
+        28.853499,
+        15.78381
+      ],
+      "angle_deg": 90.0,
+      "layer": "F.Silkscreen",
+      "font_mm": 0.8,
+      "uuid": "5d2323d9-d9cc-468d-9362-6d633cd89388"
+    },
+    {
+      "owner": "C23",
+      "kind": "front_reference",
+      "text": "C23",
+      "at_mm": [
+        37.4485,
+        10.649999
+      ],
+      "box_mm": [
+        36.645,
+        9.258094,
+        38.251999999999995,
+        12.041904
+      ],
+      "angle_deg": 90.0,
+      "layer": "F.Silkscreen",
+      "font_mm": 0.8,
+      "uuid": "1be811e2-4d59-4d00-978b-25bdbade6049"
+    },
+    {
+      "owner": "C26",
+      "kind": "front_reference",
+      "text": "C26",
+      "at_mm": [
+        6.7,
+        25.6515
+      ],
+      "box_mm": [
+        5.308095,
+        24.848,
+        8.091905,
+        26.455000000000002
+      ],
+      "angle_deg": 0.0,
+      "layer": "F.Silkscreen",
+      "font_mm": 0.8,
+      "uuid": "e74ebf41-0a14-437e-ab5f-d21bd0022d46"
+    },
+    {
+      "owner": "C56",
+      "kind": "front_reference",
+      "text": "C56",
+      "at_mm": [
+        66.591905,
+        6.3
+      ],
+      "box_mm": [
+        65.2,
+        5.4965,
+        67.98380999999999,
+        7.1035
+      ],
+      "angle_deg": 0.0,
+      "layer": "F.Silkscreen",
+      "font_mm": 0.8,
+      "uuid": "a3ef97cb-0a12-4cd4-862e-82dd75e222e3"
+    },
+    {
+      "owner": "FL1",
+      "kind": "front_reference",
+      "text": "FL1",
+      "at_mm": [
+        40.7,
+        7.727619
+      ],
+      "box_mm": [
+        39.8965,
+        6.45,
+        41.503499999999995,
+        9.005238
+      ],
+      "angle_deg": 90.0,
+      "layer": "F.Silkscreen",
+      "font_mm": 0.8,
+      "uuid": "2f9f92c8-d4d5-40e5-86bf-ee4257db3606"
+    },
+    {
+      "owner": "J13",
+      "kind": "front_reference",
+      "text": "J13",
+      "at_mm": [
+        34.5,
+        9.0035
+      ],
+      "box_mm": [
+        33.203333,
+        8.2,
+        35.796667,
+        9.807
+      ],
+      "angle_deg": 0.0,
+      "layer": "F.Silkscreen",
+      "font_mm": 0.8,
+      "uuid": "44e9fbd5-fc49-44b6-a167-a1b4e4162e1d"
+    },
+    {
+      "owner": "J201",
+      "kind": "front_reference",
+      "text": "J201",
+      "at_mm": [
+        57.8665,
+        57.9
+      ],
+      "box_mm": [
+        57.063,
+        56.22238,
+        58.669999999999995,
+        59.577619
+      ],
+      "angle_deg": 90.0,
+      "layer": "F.Silkscreen",
+      "font_mm": 0.8,
+      "uuid": "ffc4a5f4-fdff-48ee-a1ec-1900103927f3"
+    },
+    {
+      "owner": "J3",
+      "kind": "front_reference",
+      "text": "J3",
+      "at_mm": [
+        85.999999,
+        9.5165
+      ],
+      "box_mm": [
+        85.08428500000001,
+        8.713,
+        86.915714,
+        10.32
+      ],
+      "angle_deg": 0.0,
+      "layer": "F.Silkscreen",
+      "font_mm": 0.8,
+      "uuid": "969704a3-25c6-4253-9ca2-2afe889e775f"
+    },
+    {
+      "owner": "J4",
+      "kind": "front_reference",
+      "text": "J4",
+      "at_mm": [
+        61.190714,
+        1.44
+      ],
+      "box_mm": [
+        60.275000000000006,
+        0.6365,
+        62.106429,
+        2.2435
+      ],
+      "angle_deg": 0.0,
+      "layer": "F.Silkscreen",
+      "font_mm": 0.8,
+      "uuid": "6c61a925-813c-4586-a1d1-b78d463dfa92"
+    },
+    {
+      "owner": "M1",
+      "kind": "front_reference",
+      "text": "M1",
+      "at_mm": [
+        17.999999,
+        37.1035
+      ],
+      "box_mm": [
+        16.931904,
+        36.300000000000004,
+        19.068095,
+        37.907
+      ],
+      "angle_deg": 0.0,
+      "layer": "F.Silkscreen",
+      "font_mm": 0.8,
+      "uuid": "a34a5147-b0f9-449e-b467-fcf5ae6037b1"
+    },
+    {
+      "owner": "M2",
+      "kind": "front_reference",
+      "text": "M2",
+      "at_mm": [
+        47.999999,
+        8.3965
+      ],
+      "box_mm": [
+        46.931904,
+        7.593,
+        49.068095,
+        9.2
+      ],
+      "angle_deg": 0.0,
+      "layer": "F.Silkscreen",
+      "font_mm": 0.8,
+      "uuid": "d9f89109-6af3-4460-97c6-4f623ad979fc"
+    },
+    {
+      "owner": "Q2",
+      "kind": "front_reference",
+      "text": "Q2",
+      "at_mm": [
+        63.5,
+        14.4465
+      ],
+      "box_mm": [
+        62.470000000000006,
+        13.643,
+        64.53,
+        15.25
+      ],
+      "angle_deg": 0.0,
+      "layer": "F.Silkscreen",
+      "font_mm": 0.8,
+      "uuid": "a93f30c3-806d-43ee-845e-da347133153f"
+    },
+    {
+      "owner": "R23",
+      "kind": "front_reference",
+      "text": "R23",
+      "at_mm": [
+        30.0,
+        30.508499
+      ],
+      "box_mm": [
+        28.608095,
+        29.704999,
+        31.391905,
+        31.311999
+      ],
+      "angle_deg": 0.0,
+      "layer": "F.Silkscreen",
+      "font_mm": 0.8,
+      "uuid": "e625294f-ddc6-4ebb-b1b4-c5fc2dc1107e"
+    },
+    {
+      "owner": "R24",
+      "kind": "front_reference",
+      "text": "R24",
+      "at_mm": [
+        30.0,
+        21.7315
+      ],
+      "box_mm": [
+        28.608095,
+        20.928,
+        31.391905,
+        22.535
+      ],
+      "angle_deg": 0.0,
+      "layer": "F.Silkscreen",
+      "font_mm": 0.8,
+      "uuid": "9e189727-8e2e-433a-b738-33eaf0769581"
+    },
+    {
+      "owner": "R33",
+      "kind": "front_reference",
+      "text": "R33",
+      "at_mm": [
+        28.7,
+        4.408094
+      ],
+      "box_mm": [
+        27.8965,
+        3.016189,
+        29.5035,
+        5.799999000000001
+      ],
+      "angle_deg": 90.0,
+      "layer": "F.Silkscreen",
+      "font_mm": 0.8,
+      "uuid": "b3c8b9bb-4298-432c-973f-f1a38637fdc8"
+    },
+    {
+      "owner": "R36",
+      "kind": "front_reference",
+      "text": "R36",
+      "at_mm": [
+        50.0,
+        39.8835
+      ],
+      "box_mm": [
+        48.608095000000006,
+        39.080000000000005,
+        51.391904999999994,
+        40.687
+      ],
+      "angle_deg": 0.0,
+      "layer": "F.Silkscreen",
+      "font_mm": 0.8,
+      "uuid": "87f72490-c02a-4da5-8b47-6f4da56e0564"
+    },
+    {
+      "owner": "R37",
+      "kind": "front_reference",
+      "text": "R37",
+      "at_mm": [
+        45.591905,
+        28.67
+      ],
+      "box_mm": [
+        44.2,
+        27.8665,
+        46.98381,
+        29.4735
+      ],
+      "angle_deg": 0.0,
+      "layer": "F.Silkscreen",
+      "font_mm": 0.8,
+      "uuid": "9d911859-57f7-40ac-bfb6-5d9f7cf36dd6"
+    },
+    {
+      "owner": "R38",
+      "kind": "front_reference",
+      "text": "R38",
+      "at_mm": [
+        53.091905,
+        34.635
+      ],
+      "box_mm": [
+        51.7,
+        33.831500000000005,
+        54.48381,
+        35.4385
+      ],
+      "angle_deg": 0.0,
+      "layer": "F.Silkscreen",
+      "font_mm": 0.8,
+      "uuid": "102ef854-3931-4e50-9c11-23a53c4f4e41"
+    },
+    {
+      "owner": "R39",
+      "kind": "front_reference",
+      "text": "R39",
+      "at_mm": [
+        50.0,
+        29.3865
+      ],
+      "box_mm": [
+        48.608095000000006,
+        28.583,
+        51.391904999999994,
+        30.19
+      ],
+      "angle_deg": 0.0,
+      "layer": "F.Silkscreen",
+      "font_mm": 0.8,
+      "uuid": "08efbbe9-8a0e-4c91-a18e-b4fcc214926e"
+    },
+    {
+      "owner": "R42",
+      "kind": "front_reference",
+      "text": "R42",
+      "at_mm": [
+        64.5,
+        22.6485
+      ],
+      "box_mm": [
+        63.108095000000006,
+        21.845,
+        65.891905,
+        23.452
+      ],
+      "angle_deg": 0.0,
+      "layer": "F.Silkscreen",
+      "font_mm": 0.8,
+      "uuid": "e7bcd861-cb4a-4182-91d4-1fb504c3b3f7"
+    },
+    {
+      "owner": "R43",
+      "kind": "front_reference",
+      "text": "R43",
+      "at_mm": [
+        71.5,
+        18.9515
+      ],
+      "box_mm": [
+        70.108095,
+        18.148,
+        72.891905,
+        19.755
+      ],
+      "angle_deg": 0.0,
+      "layer": "F.Silkscreen",
+      "font_mm": 0.8,
+      "uuid": "17da414b-0aae-4828-9272-c0f5727deca4"
+    },
+    {
+      "owner": "R45",
+      "kind": "front_reference",
+      "text": "R45",
+      "at_mm": [
+        68.3,
+        9.0515
+      ],
+      "box_mm": [
+        66.908095,
+        8.248,
+        69.69190499999999,
+        9.855
+      ],
+      "angle_deg": 0.0,
+      "layer": "F.Silkscreen",
+      "font_mm": 0.8,
+      "uuid": "4a0525dc-9227-4fcd-8086-c8b2fe314817"
+    },
+    {
+      "owner": "TP4",
+      "kind": "front_reference",
+      "text": "TP4",
+      "at_mm": [
+        85.824285,
+        7.5
+      ],
+      "box_mm": [
+        84.508571,
+        6.6964999999999995,
+        87.14,
+        8.3035
+      ],
+      "angle_deg": 0.0,
+      "layer": "F.Silkscreen",
+      "font_mm": 0.8,
+      "uuid": "b549f2f7-12c6-4381-9b9d-c2677d0f127b"
+    },
+    {
+      "owner": "TP7",
+      "kind": "front_reference",
+      "text": "TP7",
+      "at_mm": [
+        86.999999,
+        49.9365
+      ],
+      "box_mm": [
+        85.684285,
+        49.133,
+        88.315714,
+        50.739999999999995
+      ],
+      "angle_deg": 0.0,
+      "layer": "F.Silkscreen",
+      "font_mm": 0.8,
+      "uuid": "819505de-de0a-4ff1-99e9-70237e7006a1"
+    },
+    {
+      "owner": "U4",
+      "kind": "front_reference",
+      "text": "U4",
+      "at_mm": [
+        77.0,
+        11.5535
+      ],
+      "box_mm": [
+        75.97,
+        10.75,
+        78.03,
+        12.357
+      ],
+      "angle_deg": 0.0,
+      "layer": "F.Silkscreen",
+      "font_mm": 0.8,
+      "uuid": "6eb2bfe9-d24e-4faa-8adb-99d770c508e2"
+    },
+    {
+      "owner": "U6",
+      "kind": "front_reference",
+      "text": "U6",
+      "at_mm": [
+        44.0,
+        30.4465
+      ],
+      "box_mm": [
+        42.970000000000006,
+        29.643,
+        45.029999999999994,
+        31.25
+      ],
+      "angle_deg": 0.0,
+      "layer": "F.Silkscreen",
+      "font_mm": 0.8,
+      "uuid": "b67d6e2a-0741-49f5-8b16-24b9213efc95"
+    },
+    {
+      "owner": "U7",
+      "kind": "front_reference",
+      "text": "U7",
+      "at_mm": [
+        63.5,
+        12.7535
+      ],
+      "box_mm": [
+        62.470000000000006,
+        11.95,
+        64.53,
+        13.557
+      ],
+      "angle_deg": 0.0,
+      "layer": "F.Silkscreen",
+      "font_mm": 0.8,
+      "uuid": "8faa0773-7a39-4633-b63d-3bd94b6f476c"
+    },
+    {
+      "text": "USB",
+      "at_mm": [
+        18.0,
+        4.0
+      ],
+      "box_mm": [
+        16.375,
+        3.15175,
+        19.625,
+        4.84825
+      ],
+      "font_mm": 1.0,
+      "angle_deg": 180.0,
+      "mirrored": true,
+      "layer": "B.Silkscreen",
+      "uuid": "d53880d1-8ef0-4c94-a579-59330a00e791",
+      "kind": "operator_label",
+      "owner": "USB"
+    },
+    {
+      "text": "J5\nUART",
+      "at_mm": [
+        5.5,
+        20.8
+      ],
+      "box_mm": [
+        3.715,
+        19.285775,
+        7.285,
+        22.314225
+      ],
+      "font_mm": 0.9,
+      "angle_deg": 180.0,
+      "mirrored": true,
+      "layer": "B.Silkscreen",
+      "uuid": "d9376cdd-8936-4551-b6aa-bad614858afa",
+      "kind": "operator_label",
+      "owner": "J5"
+    },
+    {
+      "text": "SW1\nUSER",
+      "at_mm": [
+        29.0,
+        54.7
+      ],
+      "box_mm": [
+        27.107857,
+        53.185775,
+        30.892143,
+        56.214225
+      ],
+      "font_mm": 0.9,
+      "angle_deg": 180.0,
+      "mirrored": true,
+      "layer": "B.Silkscreen",
+      "uuid": "8eb2d319-321b-49cf-bd9c-95b534935d87",
+      "kind": "operator_label",
+      "owner": "SW1"
+    },
+    {
+      "text": "SW2\nRESET",
+      "at_mm": [
+        41.0,
+        54.7
+      ],
+      "box_mm": [
+        38.829285,
+        53.185775,
+        43.170714,
+        56.214225
+      ],
+      "font_mm": 0.9,
+      "angle_deg": 180.0,
+      "mirrored": true,
+      "layer": "B.Silkscreen",
+      "uuid": "c4bcaf51-f2d7-4dfd-b6d5-0f1aeb5b68b0",
+      "kind": "operator_label",
+      "owner": "SW2"
+    }
+  ],
+  "footprint_silk_transferred_to_fab": [],
+  "option_boundaries_clipped": [],
+  "unplaced_secondary_front_refs": [
+    "C22",
+    "FB1",
+    "H204",
+    "R27",
+    "R28"
+  ],
+  "pcb_sha256": "2750624dc6c2c7e8b50089e66e5d9eef9c29aa3ee28541f72f54186b58dc9ceb",
+  "final_operator_label_validation": {
+    "proof": "audit/logic_operator_labels.json",
+    "pcb_sha256": "2750624dc6c2c7e8b50089e66e5d9eef9c29aa3ee28541f72f54186b58dc9ceb",
+    "unchanged_geometry_invariant": "5b83c0c9efa3e560dba1dac8b0d30c37292ee80a11267062c8c92ca887237dab",
+    "source_synchronization_sha256_preserved_as_history": true,
+    "only_four_board_texts_added": true
+  },
+  "operator_labels": [
+    {
+      "text": "USB",
+      "at_mm": [
+        18.0,
+        4.0
+      ],
+      "box_mm": [
+        16.375,
+        3.15175,
+        19.625,
+        4.84825
+      ],
+      "font_mm": 1.0,
+      "angle_deg": 180.0,
+      "mirrored": true,
+      "layer": "B.Silkscreen",
+      "uuid": "d53880d1-8ef0-4c94-a579-59330a00e791",
+      "kind": "operator_label"
+    },
+    {
+      "text": "J5\nUART",
+      "at_mm": [
+        5.5,
+        20.8
+      ],
+      "box_mm": [
+        3.715,
+        19.285775,
+        7.285,
+        22.314225
+      ],
+      "font_mm": 0.9,
+      "angle_deg": 180.0,
+      "mirrored": true,
+      "layer": "B.Silkscreen",
+      "uuid": "d9376cdd-8936-4551-b6aa-bad614858afa",
+      "kind": "operator_label"
+    },
+    {
+      "text": "SW1\nUSER",
+      "at_mm": [
+        29.0,
+        54.7
+      ],
+      "box_mm": [
+        27.107857,
+        53.185775,
+        30.892143,
+        56.214225
+      ],
+      "font_mm": 0.9,
+      "angle_deg": 180.0,
+      "mirrored": true,
+      "layer": "B.Silkscreen",
+      "uuid": "8eb2d319-321b-49cf-bd9c-95b534935d87",
+      "kind": "operator_label"
+    },
+    {
+      "text": "SW2\nRESET",
+      "at_mm": [
+        41.0,
+        54.7
+      ],
+      "box_mm": [
+        38.829285,
+        53.185775,
+        43.170714,
+        56.214225
+      ],
+      "font_mm": 0.9,
+      "angle_deg": 180.0,
+      "mirrored": true,
+      "layer": "B.Silkscreen",
+      "uuid": "c4bcaf51-f2d7-4dfd-b6d5-0f1aeb5b68b0",
+      "kind": "operator_label"
+    }
+  ]
+}

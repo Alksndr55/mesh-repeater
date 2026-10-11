@@ -1,0 +1,227 @@
+{
+  "source_sha256": "c2e8a3a7e6f12580bd7e8d28a8f68f4cea303955c4e02e6eb0fa6f874b9884bb",
+  "changes": [
+    {
+      "label": "C21_GND",
+      "net": "GND",
+      "width_mm": 0.5,
+      "start": [
+        28,
+        10.35
+      ],
+      "end": [
+        1.5,
+        1.5
+      ],
+      "segments": 3,
+      "vias": [
+        [
+          30.200000000000003,
+          10.5
+        ]
+      ],
+      "visited": 2504
+    },
+    {
+      "label": "R28_GND",
+      "net": "GND",
+      "width_mm": 0.5,
+      "start": [
+        29.9,
+        14.6
+      ],
+      "end": [
+        1.5,
+        1.5
+      ],
+      "segments": 4,
+      "vias": [
+        [
+          28.200000000000003,
+          15.3
+        ]
+      ],
+      "visited": 2103
+    }
+  ],
+  "new_gnd_copper_uuids": [
+    "42acc1d5-7fb1-4ce7-a3a5-ccf8b5b6e4cc",
+    "615a9cd9-676c-4616-91db-a0b6f9abf0b6",
+    "928298e6-66d3-4698-a467-65be2f5de50d",
+    "a3d9389a-7b49-4f4d-a0ca-c322b2040626",
+    "faff2252-50e7-48ec-b491-efcb504d3adf",
+    "a0580115-25fd-412a-b244-07746d89a719",
+    "27a30534-999e-438a-bab3-82ab9a855003",
+    "6fa8207d-a987-417b-970e-a1e34a21b493",
+    "8dc23369-a286-4d81-a489-240fe254ea57"
+  ],
+  "existing_functional_copper_unchanged": true,
+  "counts": {
+    "violations": 70,
+    "unconnected_items": 0,
+    "ignored_checks": 0
+  },
+  "non_marking_violations": [],
+  "applied": true,
+  "result_sha256": "36cd17bb2b19e14a8116e8dacb7ec3d86158ca3db23296bb473400eeec89b64f",
+  "added_ground_geometry": [
+    {
+      "uuid": "6fa8207d-a987-417b-970e-a1e34a21b493",
+      "kind": "track",
+      "layer": "F.Cu",
+      "from_mm": [
+        30.0,
+        10.3
+      ],
+      "to_mm": [
+        30.2,
+        10.5
+      ],
+      "width_mm": 0.5,
+      "length_mm": 0.282842712474618,
+      "angle_deg": 45.0
+    },
+    {
+      "uuid": "8dc23369-a286-4d81-a489-240fe254ea57",
+      "kind": "track",
+      "layer": "F.Cu",
+      "from_mm": [
+        28.0,
+        10.3
+      ],
+      "to_mm": [
+        30.0,
+        10.3
+      ],
+      "width_mm": 0.5,
+      "length_mm": 2.0,
+      "angle_deg": 0.0
+    },
+    {
+      "uuid": "a3d9389a-7b49-4f4d-a0ca-c322b2040626",
+      "kind": "track",
+      "layer": "F.Cu",
+      "from_mm": [
+        28.9,
+        14.6
+      ],
+      "to_mm": [
+        28.2,
+        15.3
+      ],
+      "width_mm": 0.5,
+      "length_mm": 0.9899494936611668,
+      "angle_deg": 134.99999999999991
+    },
+    {
+      "uuid": "faff2252-50e7-48ec-b491-efcb504d3adf",
+      "kind": "track",
+      "layer": "F.Cu",
+      "from_mm": [
+        29.9,
+        14.6
+      ],
+      "to_mm": [
+        28.9,
+        14.6
+      ],
+      "width_mm": 0.5,
+      "length_mm": 1.0,
+      "angle_deg": 180.0
+    },
+    {
+      "uuid": "42acc1d5-7fb1-4ce7-a3a5-ccf8b5b6e4cc",
+      "kind": "via",
+      "xy_mm": [
+        28.2,
+        15.3
+      ],
+      "diameter_mm": 0.6,
+      "drill_mm": 0.3
+    },
+    {
+      "uuid": "a0580115-25fd-412a-b244-07746d89a719",
+      "kind": "via",
+      "xy_mm": [
+        30.2,
+        10.5
+      ],
+      "diameter_mm": 0.6,
+      "drill_mm": 0.3
+    },
+    {
+      "uuid": "27a30534-999e-438a-bab3-82ab9a855003",
+      "kind": "track",
+      "layer": "B.Cu",
+      "from_mm": [
+        30.2,
+        10.5
+      ],
+      "to_mm": [
+        34.5,
+        10.5
+      ],
+      "width_mm": 0.5,
+      "length_mm": 4.300000000000001,
+      "angle_deg": 0.0
+    },
+    {
+      "uuid": "615a9cd9-676c-4616-91db-a0b6f9abf0b6",
+      "kind": "track",
+      "layer": "B.Cu",
+      "from_mm": [
+        28.2,
+        16.2
+      ],
+      "to_mm": [
+        31.5,
+        19.5
+      ],
+      "width_mm": 0.5,
+      "length_mm": 4.666904755831214,
+      "angle_deg": 45.0
+    },
+    {
+      "uuid": "928298e6-66d3-4698-a467-65be2f5de50d",
+      "kind": "track",
+      "layer": "B.Cu",
+      "from_mm": [
+        28.2,
+        15.3
+      ],
+      "to_mm": [
+        28.2,
+        16.2
+      ],
+      "width_mm": 0.5,
+      "length_mm": 0.8999999999999986,
+      "angle_deg": 90.0
+    }
+  ],
+  "sum_added_ground_track_length_mm": 14.139696961966997,
+  "all_new_tracks_45_90_degree": true,
+  "native_strict_schematic_parity_report": "audit/routing_logic/drc_ground_fixed.json",
+  "diagnosed_before": {
+    "distinct_ground_components": 3,
+    "orphan_1": {
+      "F": "GND_TOP island7",
+      "B": "GND_REFERENCE island9",
+      "RF": "RF_CPW_GND_1 island1",
+      "functional_ground": "C21.2",
+      "existing_local_via_xy_mm": [
+        28,
+        10.35
+      ]
+    },
+    "orphan_2": {
+      "F": "GND_TOP island5",
+      "B": "GND_REFERENCE island7",
+      "functional_ground": "R28.2",
+      "existing_local_via_xy_mm": [
+        29.9,
+        14.6
+      ]
+    },
+    "cause": "each existing via connected only the two local islands, with neither side connected to the main ground component"
+  }
+}

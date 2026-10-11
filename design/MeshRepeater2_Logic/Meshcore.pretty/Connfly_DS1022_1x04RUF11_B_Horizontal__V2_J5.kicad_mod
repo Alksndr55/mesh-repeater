@@ -1,0 +1,312 @@
+(footprint "Connfly_DS1022_1x04RUF11_B_Horizontal__V2_J5"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "Connfly DS1022-1x40RUF11-B cut to4pins. Drawing: https://en.connfly.com/static/upload/file/pdf/DS1022.pdf#page=1. Simplified envelope STEP model.")
+	(property "Reference" "REF**"
+		(at 0 -2.27 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "585021de-9d88-43fd-a609-fb82e0c5c482")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.12)
+			)
+		)
+	)
+	(property "Value" "Connfly_DS1022_1x04RUF11_B_Horizontal__V2_J5"
+		(at 0 9.89 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "307e1e10-55c7-4187-bab2-2bc2628ab974")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.12)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "3bcdc921-5a62-49d3-b4ee-2b1d55c426d2")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" "U type1, A3.00 solder tail,B6.00 mating length,C6.07 abovePCB. Do not subtractAfromC. Mechanical v2 package; original functional pin numbers retained."
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "0c28dbdc-d1d5-409c-bf22-cbbd2b42e203")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "MPN" "DS1022-1x40RUF11-B cut to4pins"
+		(at 0 0 180)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "65158d1d-289e-4f32-add8-1c9cc11072d9")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "LCSC" ""
+		(at 0 0 180)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "cbd4693b-de96-41c2-8acc-6edab32ab801")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Vendor" "Danomsk"
+		(at 0 0 180)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "e292eb99-6283-4eef-9b87-f271ebdbcf58")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Vendor URL" "https://www.danomsk.ru/shop/7-kommutatsiya/121-razemy/306-soediniteli-pryamougolnye/202688-pls-40r2-ds1022-1x40ruf11-b-vilka-uglovaya-2-54mm-connfly/"
+		(at 0 0 180)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "1c9f6259-d0ef-428e-b6b3-bd0b5d12ea0e")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Fit_NaIon" "yes"
+		(at 0 0 180)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "bb47d9ce-702a-4cf2-9fcc-60d80ff4ad9c")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Fit_LTO_2S" "yes"
+		(at 0 0 180)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "40f34492-ef53-45d9-91d0-49ddb512ddab")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value_NaIon" "UART3V3"
+		(at 0 0 180)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "1c3f6d2f-5032-454e-874d-50f6fa2f995b")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value_LTO_2S" "UART3V3"
+		(at 0 0 180)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "a3f081a1-faad-4e77-b296-fc13cffa42d1")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Assembly" "Na-ion: FIT; LTO 2S: FIT"
+		(at 0 0 180)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "ad07ecf0-0b98-470f-9aef-ef2154ae338f")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Nominal" "UART"
+		(at 0 0 180)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "872f989c-7b06-4e45-b093-398bbcb4a507")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "MPN_NaIon" "DS1022-1x40RUF11-B cut to4pins"
+		(at 0 0 180)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "6df37ce0-145d-4719-a895-1ccffff792a8")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "MPN_LTO_2S" "DS1022-1x40RUF11-B cut to4pins"
+		(at 0 0 180)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "a5a345f3-ddbe-41dc-898a-ed4b55e02b17")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Fit_NaIon_NoCold" "yes"
+		(at 0 0 180)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "791ba1d2-c801-480e-9338-5fd1ae597860")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value_NaIon_NoCold" "UART3V3"
+		(at 0 0 180)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "b4ec294d-c3c1-49e0-b744-74f8975a749f")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "MPN_NaIon_NoCold" "DS1022-1x40RUF11-B cut to4pins"
+		(at 0 0 180)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "8afe0df1-d827-41fa-b825-994c72ac5c88")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr through_hole)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_rect
+		(start -1.5 -1.52)
+		(end 7.5 9.14)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "94bf4285-5a10-4594-bc19-762c073473e9")
+	)
+	(fp_rect
+		(start -1.35 -1.37)
+		(end 1.35 8.99)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "8f22e565-66cd-4e96-a763-b7ec474edb64")
+	)
+	(fp_rect
+		(start -1.25 -1.27)
+		(end 1.25 8.89)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "cbe3c3f6-1c86-4d64-9125-4d9350e9ee95")
+	)
+	(pad "1" thru_hole rect
+		(at 0 0)
+		(size 1.8 1.8)
+		(drill 1.02)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "f79bcb6c-aadd-4548-b235-b50db3e00b8e")
+	)
+	(pad "2" thru_hole circle
+		(at 0 2.54)
+		(size 1.8 1.8)
+		(drill 1.02)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "f2087d1b-45f1-4614-8281-1d4fa027355d")
+	)
+	(pad "3" thru_hole circle
+		(at 0 5.08)
+		(size 1.8 1.8)
+		(drill 1.02)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "da277da5-155e-432d-a466-007b2d9b2751")
+	)
+	(pad "4" thru_hole circle
+		(at 0 7.62)
+		(size 1.8 1.8)
+		(drill 1.02)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "590e9c54-aeb2-4c89-8891-a0832fddbede")
+	)
+	(embedded_fonts no)
+	(model "${KIPRJMOD}/3dmodels/Connfly_DS1022_1x04RUF11_B_Horizontal.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

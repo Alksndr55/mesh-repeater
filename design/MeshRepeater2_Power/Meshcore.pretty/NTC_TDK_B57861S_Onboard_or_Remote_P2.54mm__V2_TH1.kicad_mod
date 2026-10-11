@@ -1,0 +1,325 @@
+(footprint "NTC_TDK_B57861S_Onboard_or_Remote_P2.54mm__V2_TH1"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "TDK B57861S0103F040; formed flexible leads P2.54; body diameter <=2.41mm, body length <=6.5mm, vertical assembly <=12.5mm; keep4.5mm straight at body and bend radius>=0.75mm. Fit ONE sensor onboard or ONE remote sensor to these pads. Board pitch is assembly choice, not native factory lead pitch.")
+	(property "Reference" "REF**"
+		(at 3.27 -2.5 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "c48c0c11-0066-4186-8036-bd748adbfc29")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Value" "NTC_TDK_B57861S_Onboard_or_Remote_P2.54mm__V2_TH1"
+		(at 1.27 2.5 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "b3ce90d6-7511-4b49-b7fa-8532c042cc5e")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" "https://www.tdk-electronics.tdk.com/inf/50/db/ntc/NTC_Mini_sensors_S861.pdf"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "f7fb423d-6b3a-4680-8bbe-3f9366e92d77")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" "Fit ONE B57861S0103F040 onboard below the continuous intermediate shield or ONE remote sensor at the cell to these pads. No parallel sensors. Body diameter<=2.41mm and length<=6.5mm. Form/cut flexible leads toP2.54; keep>=4.5mm straight near body and bend radius>=0.75mm. Vertical assembly height<=12.5mm; nominal lower face clearance18.5mm leaves6.0mm reserve, verify formed sample and actual stack. SH1 frame and former cover are removed. Onboard measures local POWER/shield temperature, not cell temperature."
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "04f79e2a-fe44-4556-93f7-93a078522d4e")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "MPN" "B57861S0103F040"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "9e7f802e-9f54-4953-9866-e63ca5b43950")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Vendor" "Danomsk / TDK/EPCOS"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "595343ba-7348-447e-b032-aa43b1a3860d")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Vendor URL" "https://www.danomsk.ru/shop/6-rezistory/87-rezistory-nelineynye/272-termorezistory/153655-b57861s0103f040-ntc-termistor-10kom-0-06vt-1-2-41mm-epcos/"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "a02c416f-f8c7-43d5-8015-89cddbe3c424")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Fit_NaIon" "yes"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "966d0002-278b-41d7-8efd-5153278b8a5b")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Fit_LTO_2S" "no"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "3e0f955e-12d2-4c5d-8a74-57b946a6e70d")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value_NaIon" "10k NTC 1% B3988"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "b5a21f02-6be3-4cab-8059-0524658dd701")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value_LTO_2S" "10k NTC 1% B3988"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "4eade977-3e05-4978-871c-24637b5cdb33")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Assembly" "Na-ion cold option: FIT; LTO 2S: DNP"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "260bdb5d-c253-4de5-b6c4-f18fd81bec99")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Nominal" "10k NTC"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "4876cb68-5820-48cd-bf89-10696b96d965")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "MPN_NaIon" "B57861S0103F040"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "9c529b65-684e-4304-a072-cc08304ebb72")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "MPN_LTO_2S" "B57861S0103F040"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "1fee3578-20ef-46c8-b176-3504e5726fe9")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "LCSC" ""
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "be9368a7-47ba-4324-a2f4-9d95a22e6a62")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Fit_NaIon_NoCold" "no"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "3949dbd0-3130-42b8-a6ac-19193895190b")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value_NaIon_NoCold" "10k NTC 1% B3988"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "a61a6647-547c-4a87-8ea0-efe331f342c8")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "MPN_NaIon_NoCold" "B57861S0103F040"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "78dbc255-5962-46f6-9bec-e08aa7247afa")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr through_hole)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_line
+		(start -0.95 -1.4)
+		(end 3.49 -1.4)
+		(stroke
+			(width 0.12)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "a2237233-d11a-4b01-824d-e14b44e5eafa")
+	)
+	(fp_line
+		(start -0.95 1.4)
+		(end 3.49 1.4)
+		(stroke
+			(width 0.12)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "543e77af-6c0f-4133-b8c6-3fb58a86e431")
+	)
+	(fp_rect
+		(start -1.15 -1.55)
+		(end 3.69 1.55)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "0426152f-07e1-4ad7-9930-673b73478c92")
+	)
+	(fp_line
+		(start 0 0)
+		(end 0.9 0)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.Fab")
+		(uuid "f787d9c9-ae47-4876-92cb-5622bc102904")
+	)
+	(fp_line
+		(start 1.64 0)
+		(end 2.54 0)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.Fab")
+		(uuid "3354f011-f68b-4c78-81ec-76896679f77b")
+	)
+	(fp_circle
+		(center 1.27 0)
+		(end 2.475 0)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "851f1f3b-bc3e-4518-ad9f-182d088cc3a9")
+	)
+	(pad "1" thru_hole rect
+		(at 0 0)
+		(size 1.8 1.8)
+		(drill 0.8)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "bdf4a273-960c-44ea-b80c-b889b4d2091a")
+	)
+	(pad "2" thru_hole circle
+		(at 2.54 0)
+		(size 1.8 1.8)
+		(drill 0.8)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "50df09b3-905f-4404-9358-1eca0f5409ca")
+	)
+	(embedded_fonts no)
+	(model "${KIPRJMOD}/3dmodels/TDK_B57861S_Vertical_Approx.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

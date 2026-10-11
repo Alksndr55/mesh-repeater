@@ -1,0 +1,307 @@
+(footprint "Ferrite_Murata_BLM21PG__V2_FB1"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(locked yes)
+	(layer "F.Cu")
+	(descr "BLM21PG 0805; Murata C31E6 printed p60: a1.2mm, b3.0-4.0mm, d1.2mm for35um. Cu pads1.1x1.2 centres+-1.15 gives a1.2,b3.4. NSMD mask+0.05 is engineering assembly choice.")
+	(tags "ferrite bead BLM21PG0805")
+	(property "Reference" "REF**"
+		(at 2.5 2.25 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "5593b517-6b20-4fb5-b4cd-222e0c4eb7b5")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Value" "Ferrite_Murata_BLM21PG__V2_FB1"
+		(at 0 1.6 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "9cc176b2-4158-4a4e-9904-3345ca617268")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "48493ccd-a793-47b5-85f9-c9267ec04299")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" "Separate radio supply branch. Ferrite60ohm at100MHz, conservative3A rating, DCRmax20mohm specifiedbyMurata. Nominal3mVdropat150mA. CustomCu lands per archivedMurataC31E6; mask/paste engineering choices. Prototype load-step/noise/resonance qualification required."
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "2d5ee7ff-c2e2-4616-a50f-c4c44f163746")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "MPN" "BLM21PG600SN1D"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "710dfdab-c191-4911-a2d6-ac16200a7e3e")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "LCSC" ""
+		(at 0 0 270)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "f66a53dc-f476-4f92-940f-4d8867982b99")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Vendor" "Other supplier; Danomsk exact stock not confirmed"
+		(at 0 0 270)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "a037b0fb-e9c8-45d4-b069-0deafc5655a6")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Vendor URL" "https://www.murata.com/en-eu/products/productdetail?partno=BLM21PG600SN1%23"
+		(at 0 0 270)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "262375ea-54d1-4833-b9f3-566b1a0625e1")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Fit_NaIon" "yes"
+		(at 0 0 270)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "ad91f61d-2349-4ee9-827c-37d2719b3fe2")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Fit_LTO_2S" "yes"
+		(at 0 0 270)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "a8384f36-5665-4393-96f6-cc022a870caa")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value_NaIon" "60R@100MHz / 3A"
+		(at 0 0 270)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "459ece84-0760-4672-9add-5a1afe6b85bc")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value_LTO_2S" "60R@100MHz / 3A"
+		(at 0 0 270)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "14890c8b-2c7b-4f30-bc39-812d7f046685")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Assembly" "Na-ion: FIT; LTO 2S: FIT"
+		(at 0 0 270)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "e6f40887-cdc4-483e-ae60-801aa96cf0a7")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Nominal" "60R@100MHz"
+		(at 4.998262 2.25 90)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "1901b74d-7ac6-4b07-9379-8844c43a56c1")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "MPN_NaIon" "BLM21PG600SN1D"
+		(at 0 0 270)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "0ac2347f-ff83-4245-a8dc-f8c7e7e0cdc1")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "MPN_LTO_2S" "BLM21PG600SN1D"
+		(at 0 0 270)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "232b627a-6b45-446f-a15c-6797bedaa81a")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Fit_NaIon_NoCold" "yes"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "1a78139b-3da6-42ec-8c37-dcf331c62334")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value_NaIon_NoCold" "60R@100MHz / 3A"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "21a0fe0d-5d8b-4ffc-90a3-cccaaaf6ffa4")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "MPN_NaIon_NoCold" "BLM21PG600SN1D"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "bf7b870f-ed94-4f20-9ac0-f1f0fbc09393")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_line
+		(start -0.25 -0.745)
+		(end 0.25 -0.745)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "e2a12f3e-a5d1-4c15-bbb1-7b31c196dcf2")
+	)
+	(fp_line
+		(start -0.25 0.745)
+		(end 0.25 0.745)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "1136e467-b0d3-4e79-8189-d8fde52ffeb0")
+	)
+	(fp_rect
+		(start -1.95 -0.95)
+		(end 1.95 0.95)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "507eb339-639a-45df-9651-230a55bfede7")
+	)
+	(fp_rect
+		(start -1 -0.625)
+		(end 1 0.625)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "754622e2-a5fa-46bc-971a-d6133ccde81f")
+	)
+	(pad "1" smd roundrect
+		(at -1.15 0)
+		(size 1.1 1.2)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.15)
+		(solder_mask_margin 0.05)
+		(uuid "dd5c048f-2a4f-4723-9e17-e6a190add3d5")
+	)
+	(pad "2" smd roundrect
+		(at 1.15 0)
+		(size 1.1 1.2)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.15)
+		(solder_mask_margin 0.05)
+		(uuid "117af7d7-a1cb-4396-9139-a334ed269281")
+	)
+	(embedded_fonts no)
+	(model "${KIPRJMOD}/3dmodels/FB1_BLM21_0805.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

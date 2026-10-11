@@ -1,0 +1,21 @@
+{
+  "before_pcb_sha256": "62fcfd3736295a18bae5d323fd1a9e2126c45e84ed7bc4a159ae7158c2790a91",
+  "after_pcb_sha256": "6bafb2460cde9a1802fc2350756ad16e16f717d624c703f94eed1495b0b75aa9",
+  "removed": {
+    "uuid": "d5854ce5-c7f2-4d14-bc95-6994ace6fa8a",
+    "net": "BAT",
+    "layer": "F.Cu",
+    "from_mm": [
+      44.425,
+      12.8
+    ],
+    "to_mm": [
+      44.825,
+      13.2
+    ],
+    "width_mm": 0.8,
+    "reason": "native DRC dangling tail at former C53 pad; new C53 pose48/11.9 has independent real connection"
+  },
+  "all_other_electrical_placement_geometry_unchanged": true,
+  "expected_retained_geometry_sha256": "f70000510d7c716222369f2efc12713390da3456e8b350cf3ee7ed7c782472d1"
+}

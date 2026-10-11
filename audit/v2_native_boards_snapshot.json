@@ -1,0 +1,1412 @@
+{
+  "stage": "SNAPSHOT_NATIVE_ASSIGNED_NET_IDENTITY_ONLY",
+  "ok": true,
+  "source_commit": "cf54f9970e716272d477afdb252b4e195d595cb6",
+  "scope": "Saved native component/pad/ref/value/variant/GPIO/assigned-net identity against model, native XML and frozen S4.16. No routing-continuity, DRC, thermal, EMI or physical-mating claim.",
+  "CAD_files_modified": false,
+  "summary": {
+    "POWER": {
+      "parts": 115,
+      "numbered_physical_pads": 273,
+      "unique_ref_pin_pairs": 273,
+      "logical_local_groups": 54,
+      "native_PCB_groups": 54
+    },
+    "LOGIC": {
+      "parts": 57,
+      "numbered_physical_pads": 199,
+      "unique_ref_pin_pairs": 195,
+      "logical_local_groups": 53,
+      "native_PCB_groups": 53
+    }
+  },
+  "checks": [
+    {
+      "name": "original native XML matches frozen hash",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "POWER model references unique",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "POWER PCB references unique",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "POWER XML references unique",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "POWER exact model/PCB/XML reference set",
+      "pass": true,
+      "detail": {
+        "model_only_PCB": [],
+        "PCB_only": [],
+        "XML_missing": [],
+        "XML_extra": []
+      }
+    },
+    {
+      "name": "POWER original allocation U1",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "POWER original allocation Q1",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "POWER original allocation D1",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "POWER original allocation D2",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "POWER original allocation L1",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "POWER original allocation R1",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "POWER original allocation C1",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "POWER original allocation C2",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "POWER original allocation C3",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "POWER original allocation C4",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "POWER original allocation R3",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "POWER original allocation R4",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "POWER original allocation C5",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "POWER original allocation R5",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "POWER original allocation R6",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "POWER original allocation C6",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "POWER original allocation C7",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "POWER original allocation R7",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "POWER original allocation R8",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "POWER original allocation R9",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "POWER original allocation C8",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "POWER original allocation R10",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "POWER original allocation D3",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "POWER original allocation R11",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "POWER original allocation D4",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "POWER original allocation U2",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "POWER original allocation L2",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "POWER original allocation C12",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "POWER original allocation C13",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "POWER original allocation C14",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "POWER original allocation C52",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "POWER original allocation C53",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "POWER original allocation C54",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "POWER original allocation C55",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "POWER original allocation R13",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "POWER original allocation R14",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "POWER original allocation R15",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "POWER original allocation R16",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "POWER original allocation R17",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "POWER original allocation L3",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "POWER original allocation L4",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "POWER original allocation C15",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "POWER original allocation C34",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "POWER original allocation C35",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "POWER original allocation C36",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "POWER original allocation C37",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "POWER original allocation C38",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "POWER original allocation C39",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "POWER original allocation C40",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "POWER original allocation C41",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "POWER original allocation C42",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "POWER original allocation C16",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "POWER original allocation C43",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "POWER original allocation C44",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "POWER original allocation C45",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "POWER original allocation C46",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "POWER original allocation C47",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "POWER original allocation C48",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "POWER original allocation C49",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "POWER original allocation C50",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "POWER original allocation C51",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "POWER original allocation R40",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "POWER original allocation R41",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "POWER original allocation J7",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "POWER original allocation J8",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "POWER original allocation TP1",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "POWER original allocation TP3",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "POWER original allocation TP6",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "POWER original allocation C30",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "POWER original allocation H1",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "POWER original allocation H2",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "POWER original allocation H3",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "POWER original allocation H4",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "POWER original allocation R47",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "POWER original allocation R48",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "POWER original allocation R49",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "POWER original allocation R50",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "POWER original allocation U8",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "POWER original allocation C58",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "POWER original allocation R51",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "POWER original allocation R52",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "POWER original allocation R53",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "POWER original allocation R54",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "POWER original allocation U9",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "POWER original allocation C59",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "POWER original allocation J12",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "POWER original allocation TP8",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "POWER original allocation TP9",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "POWER original allocation R55",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "POWER original allocation R56",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "POWER original allocation Q4",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "POWER original allocation Q6",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "POWER original allocation Q7",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "POWER original allocation R58",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "POWER original allocation U10",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "POWER original allocation U11",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "POWER original allocation Q5",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "POWER original allocation R57",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "POWER original allocation R59",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "POWER original allocation R60",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "POWER original allocation R69",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "POWER original allocation R61",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "POWER original allocation R62",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "POWER original allocation R70",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "POWER original allocation R63",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "POWER original allocation R64",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "POWER original allocation R65",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "POWER original allocation R66",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "POWER original allocation R67",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "POWER original allocation R68",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "POWER original allocation C60",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "POWER original allocation C61",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "POWER original allocation C62",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "POWER original allocation TH1",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "POWER numbered pad identities and original pins",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "POWER exact footprint/value/layer/pose vs model",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "POWER native XML footprint/value vs model",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "POWER all original variant Fit/Value/MPN fields",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "POWER PCB assigned endpoint graph vs model",
+      "pass": true,
+      "detail": {
+        "missing_groups": [],
+        "extra_groups": []
+      }
+    },
+    {
+      "name": "POWER PCB endpoint graph vs native XML",
+      "pass": true,
+      "detail": {
+        "missing_groups": [],
+        "extra_groups": [],
+        "missing_XML_pins": [],
+        "extra_XML_pins": []
+      }
+    },
+    {
+      "name": "LOGIC model references unique",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "LOGIC PCB references unique",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "LOGIC XML references unique",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "LOGIC exact model/PCB/XML reference set",
+      "pass": true,
+      "detail": {
+        "model_only_PCB": [],
+        "PCB_only": [],
+        "XML_missing": [],
+        "XML_extra": []
+      }
+    },
+    {
+      "name": "LOGIC original allocation J11",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "LOGIC original allocation R21",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "LOGIC original allocation M1",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "LOGIC original allocation C21",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "LOGIC original allocation C22",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "LOGIC original allocation M2",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "LOGIC original allocation R23",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "LOGIC original allocation R24",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "LOGIC original allocation R25",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "LOGIC original allocation R26",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "LOGIC original allocation C23",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "LOGIC original allocation C24",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "LOGIC original allocation R27",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "LOGIC original allocation R28",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "LOGIC original allocation C25",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "LOGIC original allocation R29",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "LOGIC original allocation R30",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "LOGIC original allocation J3",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "LOGIC original allocation J4",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "LOGIC original allocation J5",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "LOGIC original allocation SW1",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "LOGIC original allocation SW2",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "LOGIC original allocation R31",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "LOGIC original allocation C26",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "LOGIC original allocation TP4",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "LOGIC original allocation TP7",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "LOGIC original allocation U4",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "LOGIC original allocation BT1",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "LOGIC original allocation C27",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "LOGIC original allocation R33",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "LOGIC original allocation R35",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "LOGIC original allocation U6",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "LOGIC original allocation C33",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "LOGIC original allocation R36",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "LOGIC original allocation R37",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "LOGIC original allocation R38",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "LOGIC original allocation R39",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "LOGIC original allocation J10",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "LOGIC original allocation Q2",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "LOGIC original allocation Q3",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "LOGIC original allocation R42",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "LOGIC original allocation R43",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "LOGIC original allocation R44",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "LOGIC original allocation R45",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "LOGIC original allocation R46",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "LOGIC original allocation U7",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "LOGIC original allocation C56",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "LOGIC original allocation C57",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "LOGIC original allocation FB1",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "LOGIC original allocation J13",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "LOGIC original allocation FL1",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "LOGIC original allocation NT1",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "LOGIC numbered pad identities and original pins",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "LOGIC exact footprint/value/layer/pose vs model",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "LOGIC native XML footprint/value vs model",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "LOGIC all original variant Fit/Value/MPN fields",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "LOGIC PCB assigned endpoint graph vs model",
+      "pass": true,
+      "detail": {
+        "missing_groups": [],
+        "extra_groups": []
+      }
+    },
+    {
+      "name": "LOGIC PCB endpoint graph vs native XML",
+      "pass": true,
+      "detail": {
+        "missing_groups": [],
+        "extra_groups": [],
+        "missing_XML_pins": [],
+        "extra_XML_pins": []
+      }
+    },
+    {
+      "name": "exact documented SH1 mechanical removal",
+      "pass": true,
+      "detail": [
+        "SH1"
+      ]
+    },
+    {
+      "name": "retained original references allocated once",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "no SH1 footprint on either final board",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "exact twelve-pin 1:1 cable",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "cable endpoints native assigned nets",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "PCB functional assigned net graph equals S4.16 across cable",
+      "pass": true,
+      "detail": {
+        "missing_groups": [],
+        "extra_groups": []
+      }
+    },
+    {
+      "name": "FakeTec unchanged physical pin/GPIO names M1",
+      "pass": true,
+      "detail": {
+        "baseline": {
+          "1": {
+            "name": "P0.09_/_RADIO_RST",
+            "type": "passive"
+          },
+          "2": {
+            "name": "P0.10_/_DIO1",
+            "type": "passive"
+          },
+          "3": {
+            "name": "P1.11_/_SCK",
+            "type": "passive"
+          },
+          "4": {
+            "name": "P1.13_/_NSS",
+            "type": "passive"
+          },
+          "5": {
+            "name": "P1.15_/_MOSI",
+            "type": "passive"
+          },
+          "6": {
+            "name": "P0.02_/_MISO",
+            "type": "passive"
+          },
+          "7": {
+            "name": "P0.29_/_BUSY",
+            "type": "passive"
+          },
+          "8": {
+            "name": "P0.31_/_BAT_ADC",
+            "type": "passive"
+          },
+          "9": {
+            "name": "VCC_/_MOD_3V3",
+            "type": "passive"
+          },
+          "10": {
+            "name": "RESET",
+            "type": "passive"
+          },
+          "11": {
+            "name": "GND",
+            "type": "passive"
+          },
+          "12": {
+            "name": "RAW_-_NC",
+            "type": "passive"
+          },
+          "13": {
+            "name": "BAT_-_NC",
+            "type": "passive"
+          },
+          "14": {
+            "name": "P1.06_/_spare",
+            "type": "passive"
+          },
+          "15": {
+            "name": "P1.04_/_SDA",
+            "type": "passive"
+          },
+          "16": {
+            "name": "P0.11_/_SCL",
+            "type": "passive"
+          },
+          "17": {
+            "name": "P1.00_/_USER_BTN",
+            "type": "passive"
+          },
+          "18": {
+            "name": "P0.24_/_GPS_EN_/_DIGITAL_OUT",
+            "type": "passive"
+          },
+          "19": {
+            "name": "P0.22_/_GPS_RX",
+            "type": "passive"
+          },
+          "20": {
+            "name": "P0.20_/_GPS_TX",
+            "type": "passive"
+          },
+          "21": {
+            "name": "P0.17_/_RXEN",
+            "type": "passive"
+          },
+          "22": {
+            "name": "GND",
+            "type": "passive"
+          },
+          "23": {
+            "name": "GND",
+            "type": "passive"
+          },
+          "24": {
+            "name": "P0.08_/_UART_RX",
+            "type": "passive"
+          },
+          "25": {
+            "name": "P0.06_/_UART_TX",
+            "type": "passive"
+          },
+          "26": {
+            "name": "GND",
+            "type": "passive"
+          }
+        },
+        "V2_native_XML": {
+          "1": {
+            "name": "P0.09_/_RADIO_RST",
+            "type": "passive"
+          },
+          "2": {
+            "name": "P0.10_/_DIO1",
+            "type": "passive"
+          },
+          "3": {
+            "name": "P1.11_/_SCK",
+            "type": "passive"
+          },
+          "4": {
+            "name": "P1.13_/_NSS",
+            "type": "passive"
+          },
+          "5": {
+            "name": "P1.15_/_MOSI",
+            "type": "passive"
+          },
+          "6": {
+            "name": "P0.02_/_MISO",
+            "type": "passive"
+          },
+          "7": {
+            "name": "P0.29_/_BUSY",
+            "type": "passive"
+          },
+          "8": {
+            "name": "P0.31_/_BAT_ADC",
+            "type": "passive"
+          },
+          "9": {
+            "name": "VCC_/_MOD_3V3",
+            "type": "passive"
+          },
+          "10": {
+            "name": "RESET",
+            "type": "passive"
+          },
+          "11": {
+            "name": "GND",
+            "type": "passive"
+          },
+          "12": {
+            "name": "RAW_-_NC",
+            "type": "passive"
+          },
+          "13": {
+            "name": "BAT_-_NC",
+            "type": "passive"
+          },
+          "14": {
+            "name": "P1.06_/_spare",
+            "type": "passive"
+          },
+          "15": {
+            "name": "P1.04_/_SDA",
+            "type": "passive"
+          },
+          "16": {
+            "name": "P0.11_/_SCL",
+            "type": "passive"
+          },
+          "17": {
+            "name": "P1.00_/_USER_BTN",
+            "type": "passive"
+          },
+          "18": {
+            "name": "P0.24_/_GPS_EN_/_DIGITAL_OUT",
+            "type": "passive"
+          },
+          "19": {
+            "name": "P0.22_/_GPS_RX",
+            "type": "passive"
+          },
+          "20": {
+            "name": "P0.20_/_GPS_TX",
+            "type": "passive"
+          },
+          "21": {
+            "name": "P0.17_/_RXEN",
+            "type": "passive"
+          },
+          "22": {
+            "name": "GND",
+            "type": "passive"
+          },
+          "23": {
+            "name": "GND",
+            "type": "passive"
+          },
+          "24": {
+            "name": "P0.08_/_UART_RX",
+            "type": "passive"
+          },
+          "25": {
+            "name": "P0.06_/_UART_TX",
+            "type": "passive"
+          },
+          "26": {
+            "name": "GND",
+            "type": "passive"
+          }
+        }
+      }
+    },
+    {
+      "name": "FakeTec unchanged physical pin/GPIO names M2",
+      "pass": true,
+      "detail": {
+        "baseline": {
+          "1": {
+            "name": "ANT",
+            "type": "passive"
+          },
+          "2": {
+            "name": "GND",
+            "type": "passive"
+          },
+          "3": {
+            "name": "3V3",
+            "type": "passive"
+          },
+          "4": {
+            "name": "RST",
+            "type": "passive"
+          },
+          "5": {
+            "name": "TXEN_=_DIO2",
+            "type": "passive"
+          },
+          "6": {
+            "name": "DIO1",
+            "type": "passive"
+          },
+          "7": {
+            "name": "DIO2_=_TXEN",
+            "type": "passive"
+          },
+          "8": {
+            "name": "DIO3",
+            "type": "passive"
+          },
+          "9": {
+            "name": "GND",
+            "type": "passive"
+          },
+          "10": {
+            "name": "BUSY",
+            "type": "passive"
+          },
+          "11": {
+            "name": "RXEN",
+            "type": "passive"
+          },
+          "12": {
+            "name": "SCK",
+            "type": "passive"
+          },
+          "13": {
+            "name": "MISO",
+            "type": "passive"
+          },
+          "14": {
+            "name": "MOSI",
+            "type": "passive"
+          },
+          "15": {
+            "name": "NSS",
+            "type": "passive"
+          },
+          "16": {
+            "name": "GND",
+            "type": "passive"
+          }
+        },
+        "V2_native_XML": {
+          "1": {
+            "name": "ANT",
+            "type": "passive"
+          },
+          "2": {
+            "name": "GND",
+            "type": "passive"
+          },
+          "3": {
+            "name": "3V3",
+            "type": "passive"
+          },
+          "4": {
+            "name": "RST",
+            "type": "passive"
+          },
+          "5": {
+            "name": "TXEN_=_DIO2",
+            "type": "passive"
+          },
+          "6": {
+            "name": "DIO1",
+            "type": "passive"
+          },
+          "7": {
+            "name": "DIO2_=_TXEN",
+            "type": "passive"
+          },
+          "8": {
+            "name": "DIO3",
+            "type": "passive"
+          },
+          "9": {
+            "name": "GND",
+            "type": "passive"
+          },
+          "10": {
+            "name": "BUSY",
+            "type": "passive"
+          },
+          "11": {
+            "name": "RXEN",
+            "type": "passive"
+          },
+          "12": {
+            "name": "SCK",
+            "type": "passive"
+          },
+          "13": {
+            "name": "MISO",
+            "type": "passive"
+          },
+          "14": {
+            "name": "MOSI",
+            "type": "passive"
+          },
+          "15": {
+            "name": "NSS",
+            "type": "passive"
+          },
+          "16": {
+            "name": "GND",
+            "type": "passive"
+          }
+        }
+      }
+    },
+    {
+      "name": "J11 assigned FILTER_OUT remains distinct from SYS_3V3",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "J10 original ISP pose and footprint retained",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "both board copper counts and thickness match models",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "input snapshot remained unchanged during read-only review",
+      "pass": true,
+      "detail": []
+    }
+  ],
+  "inputs": {
+    "design\\v2_electrical_contract.json": "478b416c5fa28fbe4cebbc594eb1b519e90cb6c393aba6f58130b6fecffdac08",
+    "design\\interboard_cable.json": "ea2adf5f40b6fe0f24a96dca62f56eaf2342ea37cff84eb25c885d9bcce21edb",
+    "audit\\source_s4_16\\native_netlist.xml": "14b479e30ab779ca2c8af2465e6ccee1ccf8aeb26e435c4c3a84bb1cc51662d3",
+    "design\\MeshRepeater2_Power\\model.json": "5d98f85c21638bc182b7c7243b0ed44101a300d9fe8bbe93597e95208d3ce15f",
+    "design\\MeshRepeater2_Power\\MeshRepeater2_Power.kicad_pcb": "18c43e6c178ef2f82c6a3126f905c5a4f71e710768c02f1d6944082204d9da7f",
+    "audit\\schematic\\POWER\\netlist.xml": "c434b72a42c0741112fa1294f3ed826713edd9b8346d6b8892d1ba09275df33f",
+    "design\\MeshRepeater2_Logic\\model.json": "6991f1210088ab9be762de41730805855d568759bbad404bbae4a137dc21ba91",
+    "design\\MeshRepeater2_Logic\\MeshRepeater2_Logic.kicad_pcb": "5cc19721f70b7a85746c0b06fc73c84fc4f11d006085110146293e00b7a6575e",
+    "audit\\schematic\\LOGIC\\netlist.xml": "254fb47f050b79d2de5e5e47ec9eba4cb9796c14b49b8920111928636ccb68c1"
+  },
+  "mechanical_removal_proof": {
+    "path": "audit\\v2_frame_mount_review.json",
+    "sha256": "4b3b26a8870cf8f8f5e9ea89d922a1ed1d355c4f8d6655f96ae58c8e02c22ed1"
+  }
+}

@@ -1,0 +1,275 @@
+(footprint "RF_Cut_Link_0p6__V2_NT1"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "Permanent copper net-tie bypass under optional FL1. Cut central bar before fitting SAW. Not a purchased part. 0.6mm square pads, centres 1mm; 0.6mm copper bar with exposed cut window.")
+	(property "Reference" "REF**"
+		(at 0 3 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "812ee653-08c3-4219-a061-dbe1eefbaa26")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Value" "RF_Cut_Link_0p6__V2_NT1"
+		(at 0 1.2 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "72f552ef-456d-40b0-9f6a-2ce7a79e55a7")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "4122ac96-cb0d-4923-b24e-d10ffe497da6")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" "Permanent RF copper bypass under optional FL1. Not a purchased component. Leave continuous when FL1 is absent; cut central bar before fitting FL1. Inspect complete isolation before soldering the filter."
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "093bf1e3-9349-45d4-a366-2ad67111fb69")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "MPN" "PCB copper / not purchased"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "72cd4635-6cfb-4944-b4b6-d5b2d3d6f774")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "LCSC" ""
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "0bf63ec2-815d-4723-8ec5-2d0916dd6ccf")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Vendor" ""
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "d54ec655-3080-405b-9bff-f126ca9647f5")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Vendor URL" ""
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "129fda5c-90a3-4c25-af85-d1489f91fd0c")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Fit_NaIon" "yes"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "1551fa1d-f3b2-40c3-95a9-6b6e75166b23")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Fit_LTO_2S" "yes"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "4fa4ed3c-d17c-4618-9a06-32118445d78b")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value_NaIon" "Cu link / cut for FL1"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "bb6fe3ec-09da-4e05-8779-cdbd8e9dae76")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value_LTO_2S" "Cu link / cut for FL1"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "3bf2502b-849c-4638-bc82-170d17988f5c")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Assembly" "Na-ion: PCB copper; LTO 2S: PCB copper"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "80f83ad9-9bdb-4aee-83b1-98bc8523bf91")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Nominal" ""
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "93ae7a79-f904-45a6-8aff-70c765e0201e")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "MPN_NaIon" "PCB copper / not purchased"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "9dec335d-5b4a-482a-8636-c299f7791b7f")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "MPN_LTO_2S" "PCB copper / not purchased"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "97dee7e2-5676-4e3d-b3d0-442bafd7a5bf")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Fit_NaIon_NoCold" "yes"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "30996c94-30a8-42a3-8d79-24d8f9d99614")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value_NaIon_NoCold" "Cu link / cut for FL1"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "17463851-0eb2-4d9b-bebf-4c9b7c0fdd25")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "MPN_NaIon_NoCold" "PCB copper / not purchased"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "1ce06021-a858-4064-86cd-14c518676ee3")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr exclude_from_pos_files exclude_from_bom allow_missing_courtyard)
+	(net_tie_pad_groups "1, 2")
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_poly
+		(pts
+			(xy -0.5 -0.3) (xy 0.5 -0.3) (xy 0.5 0.3) (xy -0.5 0.3)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill yes)
+		(layer "F.Cu")
+		(uuid "e0fd29dd-b40e-4c03-ae79-21e07b9a83ea")
+	)
+	(fp_poly
+		(pts
+			(xy -0.09 -0.35) (xy 0.09 -0.35) (xy 0.09 0.35) (xy -0.09 0.35)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill yes)
+		(layer "F.Mask")
+		(uuid "12040eaa-47f7-4132-85ba-f9363a61abb8")
+	)
+	(pad "1" smd rect
+		(at 0.5 0)
+		(size 0.6 0.6)
+		(layers "F.Cu" "F.Mask")
+		(clearance 0.25)
+		(uuid "63909316-40af-4b5f-b956-c60629204eb8")
+	)
+	(pad "2" smd rect
+		(at -0.5 0)
+		(size 0.6 0.6)
+		(layers "F.Cu" "F.Mask")
+		(clearance 0.25)
+		(uuid "3ecfdad2-89c4-4a2d-9feb-661f9c945b11")
+	)
+	(embedded_fonts no)
+)

@@ -1,0 +1,428 @@
+(footprint "TI_DCT0008A__V2_U7"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(locked yes)
+	(layer "F.Cu")
+	(descr "TI DCT0008A, 4220784/D 10/2025: body max3.1x3.1, lead span4.25, H1.3; pads1.1x0.4, centres +/-1.9, pitch0.65.")
+	(tags "SOT TO_SOT_SMD")
+	(property "Reference" "REF**"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "bfb62dfc-0574-4ed0-b529-45bd2dd1dedf")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Value" "TI_DCT0008A__V2_U7"
+		(at 0 2.4 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "0c80e806-9b05-49ce-ac43-8828d74e57b0")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "148b39ce-c406-4347-9a2c-7c69777a70c4")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" "Both UART directions buffered from switched GPS supply. TI Ioff partial-power-down protection prevents UART back-power; DCT pinout: 1 OE1, 2 A1, 3 Y2, 4 GND, 5 A2, 6 Y1, 7 OE2, 8 VCC."
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "ffee4a49-06a1-4dc8-a83a-050baa0c6f85")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "KiLib_Generator" "package/gullwing"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "ee7e3689-7555-4f22-b471-779ba2b1d86b")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "MPN" "SN74LVC2G125DCTR"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "00ca08d9-67f9-4309-a96c-42c53743109b")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "LCSC" ""
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "7b5d9e2b-ee7d-4e7b-8276-f18e0d417660")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Vendor" "Other supplier"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "a16008b5-cc3f-4e24-9450-d28426a7b0f6")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Vendor URL" "https://www.ti.com/product/SN74LVC2G125"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "c88bfa15-7da4-435e-835f-ed6a69353da8")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Fit_NaIon" "yes"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "83eca7fb-7b0f-4507-89d9-1113d3ded727")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Fit_LTO_2S" "yes"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "c2ca4154-c22e-43a3-9e06-5fc6801950fc")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value_NaIon" "SN74LVC2G125"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "de9c0995-35c9-4d90-a9f2-728c67564d1c")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value_LTO_2S" "SN74LVC2G125"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "fb640198-c9fd-437b-83de-22368adb21c9")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Assembly" "Na-ion: FIT; LTO 2S: FIT"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "849336f0-9ede-4b12-a91f-16ca01a43ba8")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Nominal" "SN74LVC2G125"
+		(at 1.5 -7.572382 90)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "1e69ed83-5d08-477c-9517-71be5bd4a110")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "MPN_NaIon" "SN74LVC2G125DCTR"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "7cb71d1c-ca46-455f-8a7c-02f2d47bf051")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "MPN_LTO_2S" "SN74LVC2G125DCTR"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "81a93c38-b38f-4d6f-92fa-b3309e185e36")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Fit_NaIon_NoCold" "yes"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "d43519fe-f2df-47d9-964e-349d6fc67f1b")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value_NaIon_NoCold" "SN74LVC2G125"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "1055dc5f-706f-4daf-afce-1b0a43e76c85")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "MPN_NaIon_NoCold" "SN74LVC2G125DCTR"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "ad7f5d20-64d4-44bd-9972-ac7670d33e23")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_line
+		(start -1.5 -1.7)
+		(end 1.5 -1.7)
+		(stroke
+			(width 0.12)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "53729502-1994-41a7-affd-8ed33b9e7d6a")
+	)
+	(fp_line
+		(start -1.5 1.7)
+		(end 1.5 1.7)
+		(stroke
+			(width 0.12)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "cfafa5b9-b7ca-4a84-a9be-f28c9d1e70c1")
+	)
+	(fp_line
+		(start -2.7 -1.8)
+		(end 2.7 -1.8)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "F.CrtYd")
+		(uuid "c17c4272-7d13-4122-b043-bec7a8f3ad11")
+	)
+	(fp_line
+		(start -2.7 1.8)
+		(end -2.7 -1.8)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "F.CrtYd")
+		(uuid "8c70d2c8-7ffa-43e0-be26-83b260eb5f21")
+	)
+	(fp_line
+		(start 2.7 -1.8)
+		(end 2.7 1.8)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "F.CrtYd")
+		(uuid "3c79b679-c28e-4db9-9b96-c5503409f4d7")
+	)
+	(fp_line
+		(start 2.7 1.8)
+		(end -2.7 1.8)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "F.CrtYd")
+		(uuid "54c48b66-33b4-43af-a090-8e545dcbeedc")
+	)
+	(fp_line
+		(start -1.5 -0.9)
+		(end -0.9 -1.5)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.Fab")
+		(uuid "76a4612a-7828-4db1-9aa1-5e7c0cd8ca3d")
+	)
+	(fp_line
+		(start -1.5 1.5)
+		(end -1.5 -0.9)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.Fab")
+		(uuid "58f10158-e7d1-4239-a256-6293f75a78ea")
+	)
+	(fp_line
+		(start -0.9 -1.5)
+		(end 1.5 -1.5)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.Fab")
+		(uuid "01321246-827d-4c4c-8cf0-4cbb7ccbd4f0")
+	)
+	(fp_line
+		(start 1.5 -1.5)
+		(end 1.5 1.5)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.Fab")
+		(uuid "bcc63419-29bd-4aab-97b7-8b683c0b33c0")
+	)
+	(fp_line
+		(start 1.5 1.5)
+		(end -1.5 1.5)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.Fab")
+		(uuid "b47a87d2-f01d-4916-a991-946c427c1c7a")
+	)
+	(pad "1" smd roundrect
+		(at -1.9 -0.975)
+		(size 1.1 0.4)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.125)
+		(uuid "5c20814a-310b-4af1-a0ef-3f3599c40c23")
+	)
+	(pad "2" smd roundrect
+		(at -1.9 -0.325)
+		(size 1.1 0.4)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.125)
+		(uuid "916da497-f97a-41a0-97d6-3a29709d64c7")
+	)
+	(pad "3" smd roundrect
+		(at -1.9 0.325)
+		(size 1.1 0.4)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.125)
+		(uuid "6c78e709-641f-4c4f-a9d1-cc4b715c3311")
+	)
+	(pad "4" smd roundrect
+		(at -1.9 0.975)
+		(size 1.1 0.4)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.125)
+		(uuid "8fe142f1-ed48-472c-9d96-f70727979acb")
+	)
+	(pad "5" smd roundrect
+		(at 1.9 0.975)
+		(size 1.1 0.4)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.125)
+		(uuid "b068692f-1d3b-47e0-9a14-dd29931ce415")
+	)
+	(pad "6" smd roundrect
+		(at 1.9 0.325)
+		(size 1.1 0.4)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.125)
+		(uuid "f9af41d7-71f8-4e05-a4a2-fdd79b03ea3d")
+	)
+	(pad "7" smd roundrect
+		(at 1.9 -0.325)
+		(size 1.1 0.4)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.125)
+		(zone_connect 2)
+		(uuid "f5592aec-5b2f-48c9-8dc9-91e3a44c576d")
+	)
+	(pad "8" smd roundrect
+		(at 1.9 -0.975)
+		(size 1.1 0.4)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.125)
+		(uuid "d2d46c93-3842-4d52-8d4a-62a7e76fb2c4")
+	)
+	(embedded_fonts no)
+	(model "${KIPRJMOD}/3dmodels/TI_DCT0008A.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

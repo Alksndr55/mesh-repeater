@@ -1,0 +1,5525 @@
+{
+  "board": "POWER",
+  "revision": "V2.0-A1",
+  "project": "MeshRepeater2_Power",
+  "parts": 115,
+  "baseline_pcb_sha256": "742ae27bb1d13893f6dc368e5c67f5c41b35a3e6765331fc7e9871297d23dec6",
+  "sheets": [
+    {
+      "name": "Charger",
+      "page": 1,
+      "refs": [
+        "J7",
+        "Q1",
+        "D1",
+        "L1",
+        "R56",
+        "R1",
+        "C1",
+        "C2",
+        "C8",
+        "D2",
+        "C4",
+        "J8",
+        "TP9",
+        "U1",
+        "C3",
+        "R3",
+        "R4",
+        "C30",
+        "R7",
+        "R8",
+        "R5",
+        "C5",
+        "R6",
+        "C6",
+        "C7",
+        "R9",
+        "R10",
+        "R11",
+        "D3",
+        "D4"
+      ],
+      "annotations": [
+        {
+          "ref": "J7",
+          "mpn": "S2B-XH-A(LF)(SN)",
+          "package": "XH 1x2 / 2.50 / 90deg",
+          "at": [
+            25.4,
+            57.15
+          ],
+          "font_mm": 1.05,
+          "lines": [
+            "S2B-XH-A(LF)(SN)",
+            "XH 1x2 / 2.50 / 90deg"
+          ],
+          "placement": "below symbol; lower-right for vertical passive"
+        },
+        {
+          "ref": "Q1",
+          "mpn": "AO3401A",
+          "package": "SOT-23",
+          "at": [
+            125.72999999999999,
+            54.61
+          ],
+          "font_mm": 0.95,
+          "lines": [
+            "AO3401A",
+            "SOT-23"
+          ],
+          "placement": "below symbol; lower-right for vertical passive"
+        },
+        {
+          "ref": "D1",
+          "mpn": "SS24",
+          "package": "SMB / DO-214AA",
+          "at": [
+            148.59,
+            50.8
+          ],
+          "font_mm": 0.95,
+          "lines": [
+            "SS24",
+            "SMB / DO-214AA"
+          ],
+          "placement": "below symbol; lower-right for vertical passive"
+        },
+        {
+          "ref": "L1",
+          "mpn": "CDRH127/LDNP-101MC",
+          "package": "12.3 x 12.3 x 8 mm",
+          "at": [
+            177.8,
+            50.8
+          ],
+          "font_mm": 0.95,
+          "lines": [
+            "CDRH127/LDNP-101MC",
+            "12.3 x 12.3 x 8 mm"
+          ],
+          "placement": "below symbol; lower-right for vertical passive"
+        },
+        {
+          "ref": "R56",
+          "mpn": "RC0805FR-071R8L",
+          "package": "0805",
+          "at": [
+            207.01,
+            50.8
+          ],
+          "font_mm": 0.95,
+          "lines": [
+            "RC0805FR-071R8L",
+            "0805"
+          ],
+          "placement": "below symbol; lower-right for vertical passive"
+        },
+        {
+          "ref": "R1",
+          "mpn": "PT1206FR-7W0R28L",
+          "package": "1206",
+          "at": [
+            257.81,
+            50.8
+          ],
+          "font_mm": 0.95,
+          "lines": [
+            "PT1206FR-",
+            "7W0R28L",
+            "1206"
+          ],
+          "placement": "below symbol; lower-right for vertical passive"
+        },
+        {
+          "ref": "C1",
+          "mpn": "CL31B106KBHNNNE",
+          "package": "1206",
+          "at": [
+            46.99,
+            69.85
+          ],
+          "font_mm": 0.95,
+          "lines": [
+            "CL31B106KBHNNNE",
+            "1206"
+          ],
+          "placement": "below symbol; lower-right for vertical passive"
+        },
+        {
+          "ref": "C2",
+          "mpn": "CL21B104KBCNNNC",
+          "package": "0805",
+          "at": [
+            72.39,
+            72.39
+          ],
+          "font_mm": 0.95,
+          "lines": [
+            "CL21B104KBCNNNC",
+            "0805"
+          ],
+          "placement": "below symbol; lower-right for vertical passive"
+        },
+        {
+          "ref": "C8",
+          "mpn": "EEEFK1V470P",
+          "package": "SMD / D6.3 x 5.8 mm",
+          "at": [
+            95.25,
+            69.85
+          ],
+          "font_mm": 0.95,
+          "lines": [
+            "EEEFK1V470P",
+            "SMD / D6.3 x 5.8 mm"
+          ],
+          "placement": "below symbol; lower-right for vertical passive"
+        },
+        {
+          "ref": "D2",
+          "mpn": "SS24",
+          "package": "SMB / DO-214AA",
+          "at": [
+            160.02,
+            69.85
+          ],
+          "font_mm": 0.95,
+          "lines": [
+            "SS24",
+            "SMB / DO-214AA"
+          ],
+          "placement": "below symbol; lower-right for vertical passive"
+        },
+        {
+          "ref": "C4",
+          "mpn": "CL21A226MAQNNNE",
+          "package": "0805",
+          "at": [
+            331.47,
+            64.77
+          ],
+          "font_mm": 0.95,
+          "lines": [
+            "CL21A226MAQNNNE",
+            "0805"
+          ],
+          "placement": "below symbol; lower-right for vertical passive"
+        },
+        {
+          "ref": "J8",
+          "mpn": "S2B-XH-A(LF)(SN)",
+          "package": "XH 1x2 / 2.50 / 90deg",
+          "at": [
+            328.93,
+            107.95000000000002
+          ],
+          "font_mm": 1.05,
+          "lines": [
+            "S2B-XH-A(LF)(SN)",
+            "XH 1x2 / 2.50 / 90deg"
+          ],
+          "placement": "below symbol; lower-right for vertical passive"
+        },
+        {
+          "ref": "U1",
+          "mpn": "CN3722",
+          "package": "TSSOP-16, 4.4x5 mm",
+          "at": [
+            154.94,
+            132.08
+          ],
+          "font_mm": 1.05,
+          "lines": [
+            "CN3722",
+            "TSSOP-16, 4.4x5 mm"
+          ],
+          "placement": "below symbol; lower-right for vertical passive"
+        },
+        {
+          "ref": "C3",
+          "mpn": "CL21B104KBCNNNC",
+          "package": "0805",
+          "at": [
+            92.71,
+            106.67999999999999
+          ],
+          "font_mm": 0.95,
+          "lines": [
+            "CL21B104KBCNNNC",
+            "0805"
+          ],
+          "placement": "below symbol; lower-right for vertical passive"
+        },
+        {
+          "ref": "R3",
+          "mpn": "RT0805BRD0761K9L",
+          "package": "0805",
+          "at": [
+            279.4,
+            104.14
+          ],
+          "font_mm": 0.95,
+          "lines": [
+            "RT0805BRD0761K9L",
+            "0805"
+          ],
+          "placement": "below symbol; lower-right for vertical passive"
+        },
+        {
+          "ref": "R4",
+          "mpn": "RT0805BRD07100KL",
+          "package": "0805",
+          "at": [
+            279.4,
+            127.0
+          ],
+          "font_mm": 0.95,
+          "lines": [
+            "RT0805BRD07100KL",
+            "0805"
+          ],
+          "placement": "below symbol; lower-right for vertical passive"
+        },
+        {
+          "ref": "C30",
+          "mpn": "CC0805JRNPO9BN120",
+          "package": "0805",
+          "at": [
+            302.26,
+            109.22
+          ],
+          "font_mm": 0.95,
+          "lines": [
+            "CC0805JRNPO9BN120",
+            "0805"
+          ],
+          "placement": "below symbol; lower-right for vertical passive"
+        },
+        {
+          "ref": "R7",
+          "mpn": "AT0805BRD07105KL",
+          "package": "0805",
+          "at": [
+            49.53,
+            111.76
+          ],
+          "font_mm": 0.95,
+          "lines": [
+            "AT0805BRD07105KL",
+            "0805"
+          ],
+          "placement": "below symbol; lower-right for vertical passive"
+        },
+        {
+          "ref": "R8",
+          "mpn": "RT0805BRE0710KL",
+          "package": "0805",
+          "at": [
+            49.53,
+            132.08
+          ],
+          "font_mm": 0.95,
+          "lines": [
+            "RT0805BRE0710KL",
+            "0805"
+          ],
+          "placement": "below symbol; lower-right for vertical passive"
+        },
+        {
+          "ref": "R5",
+          "mpn": "RT0805BRD071ML",
+          "package": "0805",
+          "at": [
+            99.06,
+            157.48000000000002
+          ],
+          "font_mm": 0.95,
+          "lines": [
+            "RT0805BRD071ML",
+            "0805"
+          ],
+          "placement": "below symbol; lower-right for vertical passive"
+        },
+        {
+          "ref": "C5",
+          "mpn": "CC0805JRNPO9BN471",
+          "package": "0805",
+          "at": [
+            127.0,
+            157.48000000000002
+          ],
+          "font_mm": 0.95,
+          "lines": [
+            "CC0805JRNPO9",
+            "BN471",
+            "0805"
+          ],
+          "placement": "below symbol; lower-right for vertical passive"
+        },
+        {
+          "ref": "R6",
+          "mpn": "RC0805FR-07120RL",
+          "package": "0805",
+          "at": [
+            143.51,
+            158.75
+          ],
+          "font_mm": 0.95,
+          "lines": [
+            "RC0805FR-07120RL",
+            "0805"
+          ],
+          "placement": "below symbol; lower-right for vertical passive"
+        },
+        {
+          "ref": "C6",
+          "mpn": "CC0805KKX7R9BB224",
+          "package": "0805",
+          "at": [
+            143.51,
+            170.18
+          ],
+          "font_mm": 0.95,
+          "lines": [
+            "CC0805KKX7R9BB224",
+            "0805"
+          ],
+          "placement": "below symbol; lower-right for vertical passive"
+        },
+        {
+          "ref": "C7",
+          "mpn": "CL21B104KBCNNNC",
+          "package": "0805",
+          "at": [
+            175.26,
+            157.48000000000002
+          ],
+          "font_mm": 0.95,
+          "lines": [
+            "CL21B104KBCNNNC",
+            "0805"
+          ],
+          "placement": "below symbol; lower-right for vertical passive"
+        },
+        {
+          "ref": "R9",
+          "mpn": "RC0805FR-0710KL",
+          "package": "0805",
+          "at": [
+            194.31,
+            128.27
+          ],
+          "font_mm": 0.95,
+          "lines": [
+            "RC0805FR-0710KL",
+            "0805"
+          ],
+          "placement": "below symbol; lower-right for vertical passive"
+        },
+        {
+          "ref": "R10",
+          "mpn": "RC0805FR-0710KL",
+          "package": "0805",
+          "at": [
+            283.21,
+            152.4
+          ],
+          "font_mm": 0.95,
+          "lines": [
+            "RC0805FR-0710KL",
+            "0805"
+          ],
+          "placement": "below symbol; lower-right for vertical passive"
+        },
+        {
+          "ref": "R11",
+          "mpn": "RC0805FR-0710KL",
+          "package": "0805",
+          "at": [
+            311.15000000000003,
+            152.4
+          ],
+          "font_mm": 0.95,
+          "lines": [
+            "RC0805FR-0710KL",
+            "0805"
+          ],
+          "placement": "below symbol; lower-right for vertical passive"
+        },
+        {
+          "ref": "D3",
+          "mpn": "FYLS-0805BURC",
+          "package": "0805 (2012)",
+          "at": [
+            283.21,
+            172.72
+          ],
+          "font_mm": 0.95,
+          "lines": [
+            "FYLS-0805BURC",
+            "0805 (2012)"
+          ],
+          "placement": "below symbol; lower-right for vertical passive"
+        },
+        {
+          "ref": "D4",
+          "mpn": "FYLS-0805BUGC",
+          "package": "0805 (2012)",
+          "at": [
+            311.15000000000003,
+            172.72
+          ],
+          "font_mm": 0.95,
+          "lines": [
+            "FYLS-0805BUGC",
+            "0805 (2012)"
+          ],
+          "placement": "below symbol; lower-right for vertical passive"
+        }
+      ],
+      "global_labels": [
+        {
+          "name": "SOLAR",
+          "at": [
+            76.2,
+            33.02
+          ],
+          "angle": 0
+        },
+        {
+          "name": "CHG_CS_M",
+          "at": [
+            228.6,
+            33.02
+          ],
+          "angle": 0
+        },
+        {
+          "name": "BAT",
+          "at": [
+            303.53,
+            33.02
+          ],
+          "angle": 0
+        },
+        {
+          "name": "SOLAR",
+          "at": [
+            111.76,
+            86.36
+          ],
+          "angle": 0
+        },
+        {
+          "name": "SOLAR",
+          "at": [
+            78.74,
+            101.6
+          ],
+          "angle": 0
+        },
+        {
+          "name": "CS_P",
+          "at": [
+            189.23,
+            66.04
+          ],
+          "angle": 0
+        },
+        {
+          "name": "SOLAR",
+          "at": [
+            40.64,
+            93.98
+          ],
+          "angle": 0
+        },
+        {
+          "name": "SOLAR",
+          "at": [
+            327.66,
+            137.16
+          ],
+          "angle": 180
+        },
+        {
+          "name": "CHRG",
+          "at": [
+            167.64,
+            116.84
+          ],
+          "angle": 180
+        },
+        {
+          "name": "DONE",
+          "at": [
+            167.64,
+            121.92
+          ],
+          "angle": 180
+        },
+        {
+          "name": "CHRG",
+          "at": [
+            274.32,
+            179.07
+          ],
+          "angle": 0
+        },
+        {
+          "name": "DONE",
+          "at": [
+            302.26,
+            179.07
+          ],
+          "angle": 0
+        },
+        {
+          "name": "SOLAR",
+          "at": [
+            25.4,
+            181.60999999999999
+          ],
+          "angle": 0
+        },
+        {
+          "name": "BAT",
+          "at": [
+            53.34,
+            181.60999999999999
+          ],
+          "angle": 0
+        }
+      ],
+      "wire_segments": [
+        [
+          [
+            35.56,
+            40.64
+          ],
+          [
+            38.1,
+            40.64
+          ]
+        ],
+        [
+          [
+            38.1,
+            40.64
+          ],
+          [
+            38.1,
+            45.72
+          ]
+        ],
+        [
+          [
+            38.1,
+            45.72
+          ],
+          [
+            109.22,
+            45.72
+          ]
+        ],
+        [
+          [
+            86.36,
+            45.72
+          ],
+          [
+            86.36,
+            33.02
+          ]
+        ],
+        [
+          [
+            86.36,
+            33.02
+          ],
+          [
+            76.2,
+            33.02
+          ]
+        ],
+        [
+          [
+            35.56,
+            45.72
+          ],
+          [
+            35.56,
+            50.8
+          ]
+        ],
+        [
+          [
+            43.18,
+            45.72
+          ],
+          [
+            43.18,
+            59.69
+          ]
+        ],
+        [
+          [
+            43.18,
+            69.85
+          ],
+          [
+            43.18,
+            74.93
+          ]
+        ],
+        [
+          [
+            68.58,
+            45.72
+          ],
+          [
+            68.58,
+            59.69
+          ]
+        ],
+        [
+          [
+            68.58,
+            69.85
+          ],
+          [
+            68.58,
+            74.93
+          ]
+        ],
+        [
+          [
+            91.44,
+            45.72
+          ],
+          [
+            91.44,
+            59.69
+          ]
+        ],
+        [
+          [
+            91.44,
+            69.85
+          ],
+          [
+            91.44,
+            74.93
+          ]
+        ],
+        [
+          [
+            55.88,
+            40.64
+          ],
+          [
+            55.88,
+            45.72
+          ]
+        ],
+        [
+          [
+            129.54,
+            45.72
+          ],
+          [
+            143.51,
+            45.72
+          ]
+        ],
+        [
+          [
+            153.67,
+            45.72
+          ],
+          [
+            172.72,
+            45.72
+          ]
+        ],
+        [
+          [
+            182.88,
+            45.72
+          ],
+          [
+            201.93,
+            45.72
+          ]
+        ],
+        [
+          [
+            212.09,
+            45.72
+          ],
+          [
+            252.73,
+            45.72
+          ]
+        ],
+        [
+          [
+            238.76,
+            45.72
+          ],
+          [
+            238.76,
+            33.02
+          ]
+        ],
+        [
+          [
+            238.76,
+            33.02
+          ],
+          [
+            228.6,
+            33.02
+          ]
+        ],
+        [
+          [
+            262.89,
+            45.72
+          ],
+          [
+            346.71,
+            45.72
+          ]
+        ],
+        [
+          [
+            346.71,
+            45.72
+          ],
+          [
+            346.71,
+            91.44
+          ]
+        ],
+        [
+          [
+            346.71,
+            91.44
+          ],
+          [
+            339.09,
+            91.44
+          ]
+        ],
+        [
+          [
+            313.69,
+            45.72
+          ],
+          [
+            313.69,
+            33.02
+          ]
+        ],
+        [
+          [
+            313.69,
+            33.02
+          ],
+          [
+            303.53,
+            33.02
+          ]
+        ],
+        [
+          [
+            339.09,
+            96.52
+          ],
+          [
+            339.09,
+            101.6
+          ]
+        ],
+        [
+          [
+            163.83,
+            45.72
+          ],
+          [
+            163.83,
+            59.69
+          ]
+        ],
+        [
+          [
+            163.83,
+            69.85
+          ],
+          [
+            163.83,
+            74.93
+          ]
+        ],
+        [
+          [
+            327.66,
+            45.72
+          ],
+          [
+            327.66,
+            54.61
+          ]
+        ],
+        [
+          [
+            327.66,
+            64.77
+          ],
+          [
+            327.66,
+            69.85
+          ]
+        ],
+        [
+          [
+            119.38,
+            86.36
+          ],
+          [
+            111.76,
+            86.36
+          ]
+        ],
+        [
+          [
+            119.38,
+            96.52
+          ],
+          [
+            104.14,
+            96.52
+          ]
+        ],
+        [
+          [
+            104.14,
+            96.52
+          ],
+          [
+            104.14,
+            76.2
+          ]
+        ],
+        [
+          [
+            104.14,
+            76.2
+          ],
+          [
+            119.38,
+            76.2
+          ]
+        ],
+        [
+          [
+            119.38,
+            76.2
+          ],
+          [
+            119.38,
+            53.34
+          ]
+        ],
+        [
+          [
+            87.63,
+            101.6
+          ],
+          [
+            78.74,
+            101.6
+          ]
+        ],
+        [
+          [
+            97.79,
+            101.6
+          ],
+          [
+            107.95,
+            101.6
+          ]
+        ],
+        [
+          [
+            107.95,
+            101.6
+          ],
+          [
+            107.95,
+            106.68
+          ]
+        ],
+        [
+          [
+            107.95,
+            106.68
+          ],
+          [
+            119.38,
+            106.68
+          ]
+        ],
+        [
+          [
+            201.93,
+            45.72
+          ],
+          [
+            201.93,
+            71.12
+          ]
+        ],
+        [
+          [
+            201.93,
+            71.12
+          ],
+          [
+            171.45,
+            71.12
+          ]
+        ],
+        [
+          [
+            171.45,
+            71.12
+          ],
+          [
+            171.45,
+            86.36
+          ]
+        ],
+        [
+          [
+            171.45,
+            86.36
+          ],
+          [
+            160.02,
+            86.36
+          ]
+        ],
+        [
+          [
+            201.93,
+            66.04
+          ],
+          [
+            189.23,
+            66.04
+          ]
+        ],
+        [
+          [
+            262.89,
+            45.72
+          ],
+          [
+            262.89,
+            76.2
+          ]
+        ],
+        [
+          [
+            262.89,
+            76.2
+          ],
+          [
+            179.07,
+            76.2
+          ]
+        ],
+        [
+          [
+            179.07,
+            76.2
+          ],
+          [
+            179.07,
+            93.98
+          ]
+        ],
+        [
+          [
+            179.07,
+            93.98
+          ],
+          [
+            160.02,
+            93.98
+          ]
+        ],
+        [
+          [
+            275.59,
+            45.72
+          ],
+          [
+            275.59,
+            93.98
+          ]
+        ],
+        [
+          [
+            275.59,
+            104.14
+          ],
+          [
+            275.59,
+            110.49
+          ]
+        ],
+        [
+          [
+            275.59,
+            110.49
+          ],
+          [
+            275.59,
+            116.84
+          ]
+        ],
+        [
+          [
+            298.45,
+            45.72
+          ],
+          [
+            298.45,
+            99.06
+          ]
+        ],
+        [
+          [
+            298.45,
+            109.22
+          ],
+          [
+            298.45,
+            110.49
+          ]
+        ],
+        [
+          [
+            298.45,
+            110.49
+          ],
+          [
+            275.59,
+            110.49
+          ]
+        ],
+        [
+          [
+            160.02,
+            101.6
+          ],
+          [
+            266.7,
+            101.6
+          ]
+        ],
+        [
+          [
+            266.7,
+            101.6
+          ],
+          [
+            266.7,
+            107.95
+          ]
+        ],
+        [
+          [
+            266.7,
+            107.95
+          ],
+          [
+            275.59,
+            107.95
+          ]
+        ],
+        [
+          [
+            275.59,
+            127.0
+          ],
+          [
+            275.59,
+            132.08
+          ]
+        ],
+        [
+          [
+            45.72,
+            101.6
+          ],
+          [
+            45.72,
+            93.98
+          ]
+        ],
+        [
+          [
+            45.72,
+            93.98
+          ],
+          [
+            40.64,
+            93.98
+          ]
+        ],
+        [
+          [
+            45.72,
+            111.76
+          ],
+          [
+            45.72,
+            116.84
+          ]
+        ],
+        [
+          [
+            45.72,
+            116.84
+          ],
+          [
+            45.72,
+            121.92
+          ]
+        ],
+        [
+          [
+            119.38,
+            116.84
+          ],
+          [
+            45.72,
+            116.84
+          ]
+        ],
+        [
+          [
+            45.72,
+            132.08
+          ],
+          [
+            45.72,
+            137.16
+          ]
+        ],
+        [
+          [
+            129.54,
+            142.24
+          ],
+          [
+            95.25,
+            142.24
+          ]
+        ],
+        [
+          [
+            95.25,
+            142.24
+          ],
+          [
+            95.25,
+            147.32
+          ]
+        ],
+        [
+          [
+            123.19,
+            142.24
+          ],
+          [
+            123.19,
+            147.32
+          ]
+        ],
+        [
+          [
+            95.25,
+            157.48
+          ],
+          [
+            95.25,
+            162.56
+          ]
+        ],
+        [
+          [
+            123.19,
+            157.48
+          ],
+          [
+            123.19,
+            162.56
+          ]
+        ],
+        [
+          [
+            139.7,
+            142.24
+          ],
+          [
+            139.7,
+            147.32
+          ]
+        ],
+        [
+          [
+            139.7,
+            157.48
+          ],
+          [
+            139.7,
+            160.02
+          ]
+        ],
+        [
+          [
+            139.7,
+            170.18
+          ],
+          [
+            139.7,
+            175.26
+          ]
+        ],
+        [
+          [
+            149.86,
+            142.24
+          ],
+          [
+            171.45,
+            142.24
+          ]
+        ],
+        [
+          [
+            171.45,
+            142.24
+          ],
+          [
+            171.45,
+            147.32
+          ]
+        ],
+        [
+          [
+            171.45,
+            157.48
+          ],
+          [
+            171.45,
+            162.56
+          ]
+        ],
+        [
+          [
+            134.62,
+            132.08
+          ],
+          [
+            134.62,
+            137.16
+          ]
+        ],
+        [
+          [
+            144.78,
+            132.08
+          ],
+          [
+            144.78,
+            137.16
+          ]
+        ],
+        [
+          [
+            160.02,
+            109.22
+          ],
+          [
+            190.5,
+            109.22
+          ]
+        ],
+        [
+          [
+            190.5,
+            109.22
+          ],
+          [
+            190.5,
+            118.11
+          ]
+        ],
+        [
+          [
+            190.5,
+            128.27
+          ],
+          [
+            190.5,
+            133.35
+          ]
+        ],
+        [
+          [
+            279.4,
+            142.24
+          ],
+          [
+            279.4,
+            137.16
+          ]
+        ],
+        [
+          [
+            279.4,
+            137.16
+          ],
+          [
+            307.34,
+            137.16
+          ]
+        ],
+        [
+          [
+            307.34,
+            137.16
+          ],
+          [
+            307.34,
+            142.24
+          ]
+        ],
+        [
+          [
+            307.34,
+            137.16
+          ],
+          [
+            327.66,
+            137.16
+          ]
+        ],
+        [
+          [
+            279.4,
+            152.4
+          ],
+          [
+            279.4,
+            162.56
+          ]
+        ],
+        [
+          [
+            307.34,
+            152.4
+          ],
+          [
+            307.34,
+            162.56
+          ]
+        ],
+        [
+          [
+            160.02,
+            116.84
+          ],
+          [
+            167.64,
+            116.84
+          ]
+        ],
+        [
+          [
+            160.02,
+            121.92
+          ],
+          [
+            167.64,
+            121.92
+          ]
+        ],
+        [
+          [
+            279.4,
+            172.72
+          ],
+          [
+            279.4,
+            179.07
+          ]
+        ],
+        [
+          [
+            279.4,
+            179.07
+          ],
+          [
+            274.32,
+            179.07
+          ]
+        ],
+        [
+          [
+            307.34,
+            172.72
+          ],
+          [
+            307.34,
+            179.07
+          ]
+        ],
+        [
+          [
+            307.34,
+            179.07
+          ],
+          [
+            302.26,
+            179.07
+          ]
+        ],
+        [
+          [
+            30.48,
+            181.61
+          ],
+          [
+            25.4,
+            181.61
+          ]
+        ],
+        [
+          [
+            58.42,
+            181.61
+          ],
+          [
+            53.34,
+            181.61
+          ]
+        ],
+        [
+          [
+            86.36,
+            181.61
+          ],
+          [
+            86.36,
+            185.42
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "Converter",
+      "page": 2,
+      "refs": [
+        "U2",
+        "L2",
+        "C12",
+        "C13",
+        "R15",
+        "R16",
+        "R17",
+        "C14",
+        "R13",
+        "R14",
+        "TP3",
+        "C52",
+        "C53",
+        "C54",
+        "C55",
+        "R55",
+        "L3",
+        "L4",
+        "TP6",
+        "TP1",
+        "TP8",
+        "R40",
+        "C15",
+        "C34",
+        "C35",
+        "C36",
+        "C37",
+        "C38",
+        "C39",
+        "C40",
+        "C41",
+        "C42",
+        "R41",
+        "C16",
+        "C43",
+        "C44",
+        "C45",
+        "C46",
+        "C47",
+        "C48",
+        "C49",
+        "C50",
+        "C51"
+      ],
+      "annotations": [
+        {
+          "ref": "U2",
+          "mpn": "TPS63802DLAR",
+          "package": "VSON-HR-10 / DLA, 2x3 mm",
+          "at": [
+            91.44,
+            121.92
+          ],
+          "font_mm": 1.05,
+          "lines": [
+            "TPS63802DLAR",
+            "VSON-HR-10 / DLA, 2x3 mm"
+          ],
+          "placement": "below symbol; lower-right for vertical passive"
+        },
+        {
+          "ref": "L2",
+          "mpn": "XGL4020-471MEC",
+          "package": "XGL4020, 4x4 mm; H<=2.1",
+          "at": [
+            87.63,
+            44.449999999999996
+          ],
+          "font_mm": 0.95,
+          "lines": [
+            "XGL4020-471MEC",
+            "4 x 4 mm",
+            "H max 2.1 mm"
+          ],
+          "placement": "below symbol; lower-right for vertical passive"
+        },
+        {
+          "ref": "C12",
+          "mpn": "CL21B106KOQNNNE",
+          "package": "0805",
+          "at": [
+            31.75,
+            81.28
+          ],
+          "font_mm": 0.95,
+          "lines": [
+            "CL21B106KOQNNNE",
+            "0805"
+          ],
+          "placement": "below symbol; lower-right for vertical passive"
+        },
+        {
+          "ref": "C13",
+          "mpn": "CL10B104KB8NNNC",
+          "package": "0603",
+          "at": [
+            53.34,
+            81.28
+          ],
+          "font_mm": 0.95,
+          "lines": [
+            "CL10B104KB8NNNC",
+            "0603"
+          ],
+          "placement": "below symbol; lower-right for vertical passive"
+        },
+        {
+          "ref": "R15",
+          "mpn": "RT0805BRD0740K2L",
+          "package": "0805",
+          "at": [
+            24.13,
+            101.6
+          ],
+          "font_mm": 0.95,
+          "lines": [
+            "RT0805BRD0740K2L",
+            "0805"
+          ],
+          "placement": "below symbol; lower-right for vertical passive"
+        },
+        {
+          "ref": "R16",
+          "mpn": "RT0805BRD0749K9L",
+          "package": "0805",
+          "at": [
+            24.13,
+            119.38
+          ],
+          "font_mm": 0.95,
+          "lines": [
+            "RT0805BRD0749K9L",
+            "0805"
+          ],
+          "placement": "below symbol; lower-right for vertical passive"
+        },
+        {
+          "ref": "R17",
+          "mpn": "RC0805FR-07100KL",
+          "package": "0805",
+          "at": [
+            43.18,
+            119.38
+          ],
+          "font_mm": 0.95,
+          "lines": [
+            "RC0805FR-07100KL",
+            "0805"
+          ],
+          "placement": "below symbol; lower-right for vertical passive"
+        },
+        {
+          "ref": "C14",
+          "mpn": "CL21A226MAQNNNE",
+          "package": "0805",
+          "at": [
+            123.19,
+            87.63
+          ],
+          "font_mm": 0.95,
+          "lines": [
+            "CL21A226",
+            "MAQNNNE",
+            "0805"
+          ],
+          "placement": "below symbol; lower-right for vertical passive"
+        },
+        {
+          "ref": "R13",
+          "mpn": "RNCF0805BKE56K0",
+          "package": "0805",
+          "at": [
+            139.7,
+            86.36
+          ],
+          "font_mm": 0.95,
+          "lines": [
+            "RNCF0805BKE56K0",
+            "0805"
+          ],
+          "placement": "below symbol; lower-right for vertical passive"
+        },
+        {
+          "ref": "R14",
+          "mpn": "RT0805BRE0710KL",
+          "package": "0805",
+          "at": [
+            139.7,
+            109.22
+          ],
+          "font_mm": 0.95,
+          "lines": [
+            "RT0805BRE0710KL",
+            "0805"
+          ],
+          "placement": "below symbol; lower-right for vertical passive"
+        },
+        {
+          "ref": "C52",
+          "mpn": "CL21B106KOQNNNE",
+          "package": "0805",
+          "at": [
+            31.75,
+            48.26
+          ],
+          "font_mm": 0.95,
+          "lines": [
+            "CL21B106KOQNNNE",
+            "0805"
+          ],
+          "placement": "below symbol; lower-right for vertical passive"
+        },
+        {
+          "ref": "C53",
+          "mpn": "DNP; MPN не выбран",
+          "package": "1206",
+          "at": [
+            53.34,
+            48.26
+          ],
+          "font_mm": 0.95,
+          "lines": [
+            "DNP; MPN не выбран",
+            "1206"
+          ],
+          "placement": "below symbol; lower-right for vertical passive"
+        },
+        {
+          "ref": "C54",
+          "mpn": "DNP; MPN не выбран",
+          "package": "1206",
+          "at": [
+            123.19,
+            48.26
+          ],
+          "font_mm": 0.95,
+          "lines": [
+            "DNP; MPN не выбран",
+            "1206"
+          ],
+          "placement": "below symbol; lower-right for vertical passive"
+        },
+        {
+          "ref": "C55",
+          "mpn": "DNP; MPN не выбран",
+          "package": "1206",
+          "at": [
+            146.05,
+            48.26
+          ],
+          "font_mm": 0.95,
+          "lines": [
+            "DNP; MPN не выбран",
+            "1206"
+          ],
+          "placement": "below symbol; lower-right for vertical passive"
+        },
+        {
+          "ref": "R55",
+          "mpn": "WSL1206R0470FEA",
+          "package": "1206 / 0.25 W",
+          "at": [
+            158.75,
+            76.2
+          ],
+          "font_mm": 0.95,
+          "lines": [
+            "WSL1206",
+            "R0470FEA",
+            "1206 / 0.25 W"
+          ],
+          "placement": "below symbol; lower-right for vertical passive"
+        },
+        {
+          "ref": "L3",
+          "mpn": "CDRH127/LDNP-2R4NC",
+          "package": "12.3 x 12.3 x 8 mm",
+          "at": [
+            175.26,
+            76.2
+          ],
+          "font_mm": 0.95,
+          "lines": [
+            "CDRH127/LDNP-2R4NC",
+            "12.3 x 12.3 x 8 mm"
+          ],
+          "placement": "below symbol; lower-right for vertical passive"
+        },
+        {
+          "ref": "L4",
+          "mpn": "CDRH127/LDNP-2R4NC",
+          "package": "12.3 x 12.3 x 8 mm",
+          "at": [
+            279.4,
+            76.2
+          ],
+          "font_mm": 0.95,
+          "lines": [
+            "CDRH127/LDNP-2R4NC",
+            "12.3 x 12.3 x 8 mm"
+          ],
+          "placement": "below symbol; lower-right for vertical passive"
+        },
+        {
+          "ref": "R40",
+          "mpn": "WSL1206R0220FEA",
+          "package": "WSL1206, 1206 (3216)",
+          "at": [
+            189.23,
+            93.98
+          ],
+          "font_mm": 0.95,
+          "lines": [
+            "WSL1206R0220FEA",
+            "WSL1206, 1206 (3216)"
+          ],
+          "placement": "below symbol; lower-right for vertical passive"
+        },
+        {
+          "ref": "C15",
+          "mpn": "C4532X5R1A107M280KC",
+          "package": "1812",
+          "at": [
+            193.04,
+            130.81
+          ],
+          "font_mm": 0.95,
+          "lines": [
+            "C4532X5R",
+            "1A107M280KC",
+            "1812"
+          ],
+          "placement": "below symbol; lower-right for vertical passive"
+        },
+        {
+          "ref": "C34",
+          "mpn": "C4532X5R1A107M280KC",
+          "package": "1812",
+          "at": [
+            209.54999999999998,
+            130.81
+          ],
+          "font_mm": 0.95,
+          "lines": [
+            "C4532X5R",
+            "1A107M280KC",
+            "1812"
+          ],
+          "placement": "below symbol; lower-right for vertical passive"
+        },
+        {
+          "ref": "C35",
+          "mpn": "C4532X5R1A107M280KC",
+          "package": "1812",
+          "at": [
+            226.06,
+            130.81
+          ],
+          "font_mm": 0.95,
+          "lines": [
+            "C4532X5R",
+            "1A107M280KC",
+            "1812"
+          ],
+          "placement": "below symbol; lower-right for vertical passive"
+        },
+        {
+          "ref": "C36",
+          "mpn": "C4532X5R1A107M280KC",
+          "package": "1812",
+          "at": [
+            242.57,
+            130.81
+          ],
+          "font_mm": 0.95,
+          "lines": [
+            "C4532X5R",
+            "1A107M280KC",
+            "1812"
+          ],
+          "placement": "below symbol; lower-right for vertical passive"
+        },
+        {
+          "ref": "C37",
+          "mpn": "C4532X5R1A107M280KC",
+          "package": "1812",
+          "at": [
+            259.08,
+            130.81
+          ],
+          "font_mm": 0.95,
+          "lines": [
+            "C4532X5R",
+            "1A107M280KC",
+            "1812"
+          ],
+          "placement": "below symbol; lower-right for vertical passive"
+        },
+        {
+          "ref": "C38",
+          "mpn": "C4532X5R1A107M280KC",
+          "package": "1812",
+          "at": [
+            193.04,
+            163.83
+          ],
+          "font_mm": 0.95,
+          "lines": [
+            "C4532X5R",
+            "1A107M280KC",
+            "1812"
+          ],
+          "placement": "below symbol; lower-right for vertical passive"
+        },
+        {
+          "ref": "C39",
+          "mpn": "C4532X5R1A107M280KC",
+          "package": "1812",
+          "at": [
+            209.54999999999998,
+            163.83
+          ],
+          "font_mm": 0.95,
+          "lines": [
+            "C4532X5R",
+            "1A107M280KC",
+            "1812"
+          ],
+          "placement": "below symbol; lower-right for vertical passive"
+        },
+        {
+          "ref": "C40",
+          "mpn": "C4532X5R1A107M280KC",
+          "package": "1812",
+          "at": [
+            226.06,
+            163.83
+          ],
+          "font_mm": 0.95,
+          "lines": [
+            "C4532X5R",
+            "1A107M280KC",
+            "1812"
+          ],
+          "placement": "below symbol; lower-right for vertical passive"
+        },
+        {
+          "ref": "C41",
+          "mpn": "C4532X5R1A107M280KC",
+          "package": "1812",
+          "at": [
+            242.57,
+            163.83
+          ],
+          "font_mm": 0.95,
+          "lines": [
+            "C4532X5R",
+            "1A107M280KC",
+            "1812"
+          ],
+          "placement": "below symbol; lower-right for vertical passive"
+        },
+        {
+          "ref": "C42",
+          "mpn": "C4532X5R1A107M280KC",
+          "package": "1812",
+          "at": [
+            259.08,
+            163.83
+          ],
+          "font_mm": 0.95,
+          "lines": [
+            "C4532X5R",
+            "1A107M280KC",
+            "1812"
+          ],
+          "placement": "below symbol; lower-right for vertical passive"
+        },
+        {
+          "ref": "R41",
+          "mpn": "WSL1206R0220FEA",
+          "package": "WSL1206, 1206 (3216)",
+          "at": [
+            303.53000000000003,
+            93.98
+          ],
+          "font_mm": 0.95,
+          "lines": [
+            "WSL1206R0220FEA",
+            "WSL1206, 1206 (3216)"
+          ],
+          "placement": "below symbol; lower-right for vertical passive"
+        },
+        {
+          "ref": "C16",
+          "mpn": "C4532X5R1A107M280KC",
+          "package": "1812",
+          "at": [
+            307.34000000000003,
+            130.81
+          ],
+          "font_mm": 0.95,
+          "lines": [
+            "C4532X5R",
+            "1A107M280KC",
+            "1812"
+          ],
+          "placement": "below symbol; lower-right for vertical passive"
+        },
+        {
+          "ref": "C43",
+          "mpn": "C4532X5R1A107M280KC",
+          "package": "1812",
+          "at": [
+            323.85,
+            130.81
+          ],
+          "font_mm": 0.95,
+          "lines": [
+            "C4532X5R",
+            "1A107M280KC",
+            "1812"
+          ],
+          "placement": "below symbol; lower-right for vertical passive"
+        },
+        {
+          "ref": "C44",
+          "mpn": "C4532X5R1A107M280KC",
+          "package": "1812",
+          "at": [
+            340.36,
+            130.81
+          ],
+          "font_mm": 0.95,
+          "lines": [
+            "C4532X5R",
+            "1A107M280KC",
+            "1812"
+          ],
+          "placement": "below symbol; lower-right for vertical passive"
+        },
+        {
+          "ref": "C45",
+          "mpn": "C4532X5R1A107M280KC",
+          "package": "1812",
+          "at": [
+            356.87,
+            130.81
+          ],
+          "font_mm": 0.95,
+          "lines": [
+            "C4532X5R",
+            "1A107M280KC",
+            "1812"
+          ],
+          "placement": "below symbol; lower-right for vertical passive"
+        },
+        {
+          "ref": "C46",
+          "mpn": "C4532X5R1A107M280KC",
+          "package": "1812",
+          "at": [
+            373.38000000000005,
+            130.81
+          ],
+          "font_mm": 0.95,
+          "lines": [
+            "C4532X5R",
+            "1A107M280KC",
+            "1812"
+          ],
+          "placement": "below symbol; lower-right for vertical passive"
+        },
+        {
+          "ref": "C47",
+          "mpn": "C4532X5R1A107M280KC",
+          "package": "1812",
+          "at": [
+            307.34000000000003,
+            163.83
+          ],
+          "font_mm": 0.95,
+          "lines": [
+            "C4532X5R",
+            "1A107M280KC",
+            "1812"
+          ],
+          "placement": "below symbol; lower-right for vertical passive"
+        },
+        {
+          "ref": "C48",
+          "mpn": "C4532X5R1A107M280KC",
+          "package": "1812",
+          "at": [
+            323.85,
+            163.83
+          ],
+          "font_mm": 0.95,
+          "lines": [
+            "C4532X5R",
+            "1A107M280KC",
+            "1812"
+          ],
+          "placement": "below symbol; lower-right for vertical passive"
+        },
+        {
+          "ref": "C49",
+          "mpn": "C4532X5R1A107M280KC",
+          "package": "1812",
+          "at": [
+            340.36,
+            163.83
+          ],
+          "font_mm": 0.95,
+          "lines": [
+            "C4532X5R",
+            "1A107M280KC",
+            "1812"
+          ],
+          "placement": "below symbol; lower-right for vertical passive"
+        },
+        {
+          "ref": "C50",
+          "mpn": "C4532X5R1A107M280KC",
+          "package": "1812",
+          "at": [
+            356.87,
+            163.83
+          ],
+          "font_mm": 0.95,
+          "lines": [
+            "C4532X5R",
+            "1A107M280KC",
+            "1812"
+          ],
+          "placement": "below symbol; lower-right for vertical passive"
+        },
+        {
+          "ref": "C51",
+          "mpn": "C4532X5R1A107M280KC",
+          "package": "1812",
+          "at": [
+            373.38000000000005,
+            163.83
+          ],
+          "font_mm": 0.95,
+          "lines": [
+            "C4532X5R",
+            "1A107M280KC",
+            "1812"
+          ],
+          "placement": "below symbol; lower-right for vertical passive"
+        }
+      ],
+      "global_labels": [
+        {
+          "name": "BAT",
+          "at": [
+            59.69,
+            33.02
+          ],
+          "angle": 180
+        },
+        {
+          "name": "FILTER_OUT",
+          "at": [
+            318.77,
+            71.12
+          ],
+          "angle": 180
+        },
+        {
+          "name": "MODE",
+          "at": [
+            50.8,
+            139.7
+          ],
+          "angle": 0
+        },
+        {
+          "name": "FILTER_OUT",
+          "at": [
+            355.6,
+            182.88
+          ],
+          "angle": 0
+        }
+      ],
+      "wire_segments": [
+        [
+          [
+            27.94,
+            48.26
+          ],
+          [
+            27.94,
+            50.8
+          ]
+        ],
+        [
+          [
+            49.53,
+            48.26
+          ],
+          [
+            49.53,
+            50.8
+          ]
+        ],
+        [
+          [
+            119.38,
+            48.26
+          ],
+          [
+            119.38,
+            50.8
+          ]
+        ],
+        [
+          [
+            142.24,
+            48.26
+          ],
+          [
+            142.24,
+            50.8
+          ]
+        ],
+        [
+          [
+            20.32,
+            66.04
+          ],
+          [
+            20.32,
+            33.02
+          ]
+        ],
+        [
+          [
+            20.32,
+            33.02
+          ],
+          [
+            49.53,
+            33.02
+          ]
+        ],
+        [
+          [
+            27.94,
+            38.1
+          ],
+          [
+            27.94,
+            33.02
+          ]
+        ],
+        [
+          [
+            49.53,
+            38.1
+          ],
+          [
+            49.53,
+            33.02
+          ]
+        ],
+        [
+          [
+            119.38,
+            33.02
+          ],
+          [
+            152.4,
+            33.02
+          ]
+        ],
+        [
+          [
+            152.4,
+            33.02
+          ],
+          [
+            152.4,
+            71.12
+          ]
+        ],
+        [
+          [
+            119.38,
+            38.1
+          ],
+          [
+            119.38,
+            33.02
+          ]
+        ],
+        [
+          [
+            142.24,
+            38.1
+          ],
+          [
+            142.24,
+            33.02
+          ]
+        ],
+        [
+          [
+            20.32,
+            66.04
+          ],
+          [
+            63.5,
+            66.04
+          ]
+        ],
+        [
+          [
+            63.5,
+            66.04
+          ],
+          [
+            63.5,
+            71.12
+          ]
+        ],
+        [
+          [
+            63.5,
+            71.12
+          ],
+          [
+            67.31,
+            71.12
+          ]
+        ],
+        [
+          [
+            49.53,
+            33.02
+          ],
+          [
+            59.69,
+            33.02
+          ]
+        ],
+        [
+          [
+            27.94,
+            71.12
+          ],
+          [
+            27.94,
+            66.04
+          ]
+        ],
+        [
+          [
+            27.94,
+            81.28
+          ],
+          [
+            27.94,
+            83.82
+          ]
+        ],
+        [
+          [
+            49.53,
+            71.12
+          ],
+          [
+            49.53,
+            66.04
+          ]
+        ],
+        [
+          [
+            49.53,
+            81.28
+          ],
+          [
+            49.53,
+            83.82
+          ]
+        ],
+        [
+          [
+            20.32,
+            91.44
+          ],
+          [
+            20.32,
+            66.04
+          ]
+        ],
+        [
+          [
+            20.32,
+            101.6
+          ],
+          [
+            20.32,
+            104.14
+          ]
+        ],
+        [
+          [
+            20.32,
+            104.14
+          ],
+          [
+            20.32,
+            109.22
+          ]
+        ],
+        [
+          [
+            67.31,
+            83.82
+          ],
+          [
+            59.69,
+            83.82
+          ]
+        ],
+        [
+          [
+            59.69,
+            83.82
+          ],
+          [
+            59.69,
+            104.14
+          ]
+        ],
+        [
+          [
+            59.69,
+            104.14
+          ],
+          [
+            20.32,
+            104.14
+          ]
+        ],
+        [
+          [
+            20.32,
+            119.38
+          ],
+          [
+            20.32,
+            121.92
+          ]
+        ],
+        [
+          [
+            80.01,
+            58.42
+          ],
+          [
+            80.01,
+            39.37
+          ]
+        ],
+        [
+          [
+            80.01,
+            39.37
+          ],
+          [
+            82.55,
+            39.37
+          ]
+        ],
+        [
+          [
+            95.25,
+            58.42
+          ],
+          [
+            95.25,
+            39.37
+          ]
+        ],
+        [
+          [
+            95.25,
+            39.37
+          ],
+          [
+            92.71,
+            39.37
+          ]
+        ],
+        [
+          [
+            107.95,
+            71.12
+          ],
+          [
+            153.67,
+            71.12
+          ]
+        ],
+        [
+          [
+            119.38,
+            76.2
+          ],
+          [
+            119.38,
+            71.12
+          ]
+        ],
+        [
+          [
+            119.38,
+            86.36
+          ],
+          [
+            119.38,
+            88.9
+          ]
+        ],
+        [
+          [
+            149.86,
+            68.58
+          ],
+          [
+            149.86,
+            71.12
+          ]
+        ],
+        [
+          [
+            135.89,
+            76.2
+          ],
+          [
+            135.89,
+            71.12
+          ]
+        ],
+        [
+          [
+            135.89,
+            86.36
+          ],
+          [
+            135.89,
+            93.98
+          ]
+        ],
+        [
+          [
+            135.89,
+            93.98
+          ],
+          [
+            135.89,
+            99.06
+          ]
+        ],
+        [
+          [
+            107.95,
+            83.82
+          ],
+          [
+            111.76,
+            83.82
+          ]
+        ],
+        [
+          [
+            111.76,
+            83.82
+          ],
+          [
+            111.76,
+            93.98
+          ]
+        ],
+        [
+          [
+            111.76,
+            93.98
+          ],
+          [
+            135.89,
+            93.98
+          ]
+        ],
+        [
+          [
+            135.89,
+            109.22
+          ],
+          [
+            135.89,
+            111.76
+          ]
+        ],
+        [
+          [
+            82.55,
+            109.22
+          ],
+          [
+            82.55,
+            114.3
+          ]
+        ],
+        [
+          [
+            92.71,
+            109.22
+          ],
+          [
+            92.71,
+            114.3
+          ]
+        ],
+        [
+          [
+            82.55,
+            114.3
+          ],
+          [
+            92.71,
+            114.3
+          ]
+        ],
+        [
+          [
+            87.63,
+            114.3
+          ],
+          [
+            87.63,
+            116.84
+          ]
+        ],
+        [
+          [
+            49.53,
+            63.5
+          ],
+          [
+            49.53,
+            66.04
+          ]
+        ],
+        [
+          [
+            163.83,
+            71.12
+          ],
+          [
+            170.18,
+            71.12
+          ]
+        ],
+        [
+          [
+            165.1,
+            71.12
+          ],
+          [
+            165.1,
+            53.34
+          ]
+        ],
+        [
+          [
+            165.1,
+            53.34
+          ],
+          [
+            171.45,
+            53.34
+          ]
+        ],
+        [
+          [
+            180.34,
+            71.12
+          ],
+          [
+            274.32,
+            71.12
+          ]
+        ],
+        [
+          [
+            228.6,
+            66.04
+          ],
+          [
+            228.6,
+            71.12
+          ]
+        ],
+        [
+          [
+            284.48,
+            71.12
+          ],
+          [
+            318.77,
+            71.12
+          ]
+        ],
+        [
+          [
+            153.67,
+            146.05
+          ],
+          [
+            153.67,
+            148.59
+          ]
+        ],
+        [
+          [
+            185.42,
+            71.12
+          ],
+          [
+            185.42,
+            83.82
+          ]
+        ],
+        [
+          [
+            185.42,
+            93.98
+          ],
+          [
+            185.42,
+            106.68
+          ]
+        ],
+        [
+          [
+            185.42,
+            106.68
+          ],
+          [
+            259.08,
+            106.68
+          ]
+        ],
+        [
+          [
+            193.04,
+            106.68
+          ],
+          [
+            193.04,
+            111.76
+          ]
+        ],
+        [
+          [
+            193.04,
+            121.92
+          ],
+          [
+            193.04,
+            127.0
+          ]
+        ],
+        [
+          [
+            209.55,
+            106.68
+          ],
+          [
+            209.55,
+            111.76
+          ]
+        ],
+        [
+          [
+            209.55,
+            121.92
+          ],
+          [
+            209.55,
+            127.0
+          ]
+        ],
+        [
+          [
+            226.06,
+            106.68
+          ],
+          [
+            226.06,
+            111.76
+          ]
+        ],
+        [
+          [
+            226.06,
+            121.92
+          ],
+          [
+            226.06,
+            127.0
+          ]
+        ],
+        [
+          [
+            242.57,
+            106.68
+          ],
+          [
+            242.57,
+            111.76
+          ]
+        ],
+        [
+          [
+            242.57,
+            121.92
+          ],
+          [
+            242.57,
+            127.0
+          ]
+        ],
+        [
+          [
+            259.08,
+            106.68
+          ],
+          [
+            259.08,
+            111.76
+          ]
+        ],
+        [
+          [
+            259.08,
+            121.92
+          ],
+          [
+            259.08,
+            127.0
+          ]
+        ],
+        [
+          [
+            193.04,
+            127.0
+          ],
+          [
+            259.08,
+            127.0
+          ]
+        ],
+        [
+          [
+            259.08,
+            127.0
+          ],
+          [
+            266.7,
+            127.0
+          ]
+        ],
+        [
+          [
+            266.7,
+            127.0
+          ],
+          [
+            266.7,
+            129.54
+          ]
+        ],
+        [
+          [
+            185.42,
+            106.68
+          ],
+          [
+            185.42,
+            139.7
+          ]
+        ],
+        [
+          [
+            185.42,
+            139.7
+          ],
+          [
+            259.08,
+            139.7
+          ]
+        ],
+        [
+          [
+            193.04,
+            139.7
+          ],
+          [
+            193.04,
+            144.78
+          ]
+        ],
+        [
+          [
+            193.04,
+            154.94
+          ],
+          [
+            193.04,
+            160.02
+          ]
+        ],
+        [
+          [
+            209.55,
+            139.7
+          ],
+          [
+            209.55,
+            144.78
+          ]
+        ],
+        [
+          [
+            209.55,
+            154.94
+          ],
+          [
+            209.55,
+            160.02
+          ]
+        ],
+        [
+          [
+            226.06,
+            139.7
+          ],
+          [
+            226.06,
+            144.78
+          ]
+        ],
+        [
+          [
+            226.06,
+            154.94
+          ],
+          [
+            226.06,
+            160.02
+          ]
+        ],
+        [
+          [
+            242.57,
+            139.7
+          ],
+          [
+            242.57,
+            144.78
+          ]
+        ],
+        [
+          [
+            242.57,
+            154.94
+          ],
+          [
+            242.57,
+            160.02
+          ]
+        ],
+        [
+          [
+            259.08,
+            139.7
+          ],
+          [
+            259.08,
+            144.78
+          ]
+        ],
+        [
+          [
+            259.08,
+            154.94
+          ],
+          [
+            259.08,
+            160.02
+          ]
+        ],
+        [
+          [
+            193.04,
+            160.02
+          ],
+          [
+            259.08,
+            160.02
+          ]
+        ],
+        [
+          [
+            259.08,
+            160.02
+          ],
+          [
+            266.7,
+            160.02
+          ]
+        ],
+        [
+          [
+            266.7,
+            160.02
+          ],
+          [
+            266.7,
+            162.56
+          ]
+        ],
+        [
+          [
+            299.72,
+            71.12
+          ],
+          [
+            299.72,
+            83.82
+          ]
+        ],
+        [
+          [
+            299.72,
+            93.98
+          ],
+          [
+            299.72,
+            106.68
+          ]
+        ],
+        [
+          [
+            299.72,
+            106.68
+          ],
+          [
+            373.38,
+            106.68
+          ]
+        ],
+        [
+          [
+            307.34,
+            106.68
+          ],
+          [
+            307.34,
+            111.76
+          ]
+        ],
+        [
+          [
+            307.34,
+            121.92
+          ],
+          [
+            307.34,
+            127.0
+          ]
+        ],
+        [
+          [
+            323.85,
+            106.68
+          ],
+          [
+            323.85,
+            111.76
+          ]
+        ],
+        [
+          [
+            323.85,
+            121.92
+          ],
+          [
+            323.85,
+            127.0
+          ]
+        ],
+        [
+          [
+            340.36,
+            106.68
+          ],
+          [
+            340.36,
+            111.76
+          ]
+        ],
+        [
+          [
+            340.36,
+            121.92
+          ],
+          [
+            340.36,
+            127.0
+          ]
+        ],
+        [
+          [
+            356.87,
+            106.68
+          ],
+          [
+            356.87,
+            111.76
+          ]
+        ],
+        [
+          [
+            356.87,
+            121.92
+          ],
+          [
+            356.87,
+            127.0
+          ]
+        ],
+        [
+          [
+            373.38,
+            106.68
+          ],
+          [
+            373.38,
+            111.76
+          ]
+        ],
+        [
+          [
+            373.38,
+            121.92
+          ],
+          [
+            373.38,
+            127.0
+          ]
+        ],
+        [
+          [
+            307.34,
+            127.0
+          ],
+          [
+            373.38,
+            127.0
+          ]
+        ],
+        [
+          [
+            373.38,
+            127.0
+          ],
+          [
+            381.0,
+            127.0
+          ]
+        ],
+        [
+          [
+            381.0,
+            127.0
+          ],
+          [
+            381.0,
+            129.54
+          ]
+        ],
+        [
+          [
+            299.72,
+            106.68
+          ],
+          [
+            299.72,
+            139.7
+          ]
+        ],
+        [
+          [
+            299.72,
+            139.7
+          ],
+          [
+            373.38,
+            139.7
+          ]
+        ],
+        [
+          [
+            307.34,
+            139.7
+          ],
+          [
+            307.34,
+            144.78
+          ]
+        ],
+        [
+          [
+            307.34,
+            154.94
+          ],
+          [
+            307.34,
+            160.02
+          ]
+        ],
+        [
+          [
+            323.85,
+            139.7
+          ],
+          [
+            323.85,
+            144.78
+          ]
+        ],
+        [
+          [
+            323.85,
+            154.94
+          ],
+          [
+            323.85,
+            160.02
+          ]
+        ],
+        [
+          [
+            340.36,
+            139.7
+          ],
+          [
+            340.36,
+            144.78
+          ]
+        ],
+        [
+          [
+            340.36,
+            154.94
+          ],
+          [
+            340.36,
+            160.02
+          ]
+        ],
+        [
+          [
+            356.87,
+            139.7
+          ],
+          [
+            356.87,
+            144.78
+          ]
+        ],
+        [
+          [
+            356.87,
+            154.94
+          ],
+          [
+            356.87,
+            160.02
+          ]
+        ],
+        [
+          [
+            373.38,
+            139.7
+          ],
+          [
+            373.38,
+            144.78
+          ]
+        ],
+        [
+          [
+            373.38,
+            154.94
+          ],
+          [
+            373.38,
+            160.02
+          ]
+        ],
+        [
+          [
+            307.34,
+            160.02
+          ],
+          [
+            373.38,
+            160.02
+          ]
+        ],
+        [
+          [
+            373.38,
+            160.02
+          ],
+          [
+            381.0,
+            160.02
+          ]
+        ],
+        [
+          [
+            381.0,
+            160.02
+          ],
+          [
+            381.0,
+            162.56
+          ]
+        ],
+        [
+          [
+            60.96,
+            139.7
+          ],
+          [
+            60.96,
+            96.52
+          ]
+        ],
+        [
+          [
+            60.96,
+            96.52
+          ],
+          [
+            67.31,
+            96.52
+          ]
+        ],
+        [
+          [
+            60.96,
+            139.7
+          ],
+          [
+            50.8,
+            139.7
+          ]
+        ],
+        [
+          [
+            39.37,
+            109.22
+          ],
+          [
+            39.37,
+            106.68
+          ]
+        ],
+        [
+          [
+            39.37,
+            106.68
+          ],
+          [
+            60.96,
+            106.68
+          ]
+        ],
+        [
+          [
+            39.37,
+            119.38
+          ],
+          [
+            39.37,
+            121.92
+          ]
+        ],
+        [
+          [
+            360.68,
+            182.88
+          ],
+          [
+            355.6,
+            182.88
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "LTO_Balancer",
+      "page": 3,
+      "refs": [
+        "U8",
+        "R47",
+        "R48",
+        "R49",
+        "R50",
+        "C58",
+        "U9",
+        "R51",
+        "R52",
+        "R53",
+        "R54",
+        "C59",
+        "J12"
+      ],
+      "annotations": [
+        {
+          "ref": "U8",
+          "mpn": "LMV431AIM5/NOPB / LTO only",
+          "package": "SOT-23-5",
+          "at": [
+            107.94999999999999,
+            123.19
+          ],
+          "font_mm": 1.05,
+          "lines": [
+            "LMV431AIM5/NOPB",
+            "SOT-23-5"
+          ],
+          "placement": "below symbol; lower-right for vertical passive"
+        },
+        {
+          "ref": "R47",
+          "mpn": "RC0805FR-072RL / LTO only",
+          "package": "0805",
+          "at": [
+            100.33,
+            66.04
+          ],
+          "font_mm": 0.95,
+          "lines": [
+            "RC0805FR-072RL / LTO only",
+            "0805"
+          ],
+          "placement": "below symbol; lower-right for vertical passive"
+        },
+        {
+          "ref": "R48",
+          "mpn": "MPN TBD / 120k 0.1% / LTO only",
+          "package": "0805",
+          "at": [
+            57.15,
+            83.82
+          ],
+          "font_mm": 0.95,
+          "lines": [
+            "MPN TBD / 120k 0.1% / LTO only",
+            "0805"
+          ],
+          "placement": "below symbol; lower-right for vertical passive"
+        },
+        {
+          "ref": "R49",
+          "mpn": "MPN TBD / 2.49k 0.1% / LTO only",
+          "package": "0805",
+          "at": [
+            57.15,
+            101.6
+          ],
+          "font_mm": 0.95,
+          "lines": [
+            "MPN TBD / 2.49k 0.1% / LTO only",
+            "0805"
+          ],
+          "placement": "below symbol; lower-right for vertical passive"
+        },
+        {
+          "ref": "R50",
+          "mpn": "MPN TBD / 100k 0.1% / LTO only",
+          "package": "0805",
+          "at": [
+            57.15,
+            125.73
+          ],
+          "font_mm": 0.95,
+          "lines": [
+            "MPN TBD / 100k 0.1% / LTO only",
+            "0805"
+          ],
+          "placement": "below symbol; lower-right for vertical passive"
+        },
+        {
+          "ref": "C58",
+          "mpn": "MPN TBD / 47nF X7R 16V / LTO only",
+          "package": "0805",
+          "at": [
+            135.89,
+            101.6
+          ],
+          "font_mm": 0.95,
+          "lines": [
+            "MPN TBD / 47nF X7R 16V / LTO only",
+            "0805"
+          ],
+          "placement": "below symbol; lower-right for vertical passive"
+        },
+        {
+          "ref": "U9",
+          "mpn": "LMV431AIM5/NOPB / LTO only",
+          "package": "SOT-23-5",
+          "at": [
+            270.51,
+            123.19
+          ],
+          "font_mm": 1.05,
+          "lines": [
+            "LMV431AIM5/NOPB",
+            "SOT-23-5"
+          ],
+          "placement": "below symbol; lower-right for vertical passive"
+        },
+        {
+          "ref": "R51",
+          "mpn": "RC0805FR-072RL / LTO only",
+          "package": "0805",
+          "at": [
+            262.89,
+            66.04
+          ],
+          "font_mm": 0.95,
+          "lines": [
+            "RC0805FR-072RL / LTO only",
+            "0805"
+          ],
+          "placement": "below symbol; lower-right for vertical passive"
+        },
+        {
+          "ref": "R52",
+          "mpn": "MPN TBD / 120k 0.1% / LTO only",
+          "package": "0805",
+          "at": [
+            219.70999999999998,
+            83.82
+          ],
+          "font_mm": 0.95,
+          "lines": [
+            "MPN TBD / 120k 0.1% / LTO only",
+            "0805"
+          ],
+          "placement": "below symbol; lower-right for vertical passive"
+        },
+        {
+          "ref": "R53",
+          "mpn": "MPN TBD / 2.49k 0.1% / LTO only",
+          "package": "0805",
+          "at": [
+            219.70999999999998,
+            101.6
+          ],
+          "font_mm": 0.95,
+          "lines": [
+            "MPN TBD / 2.49k 0.1% / LTO only",
+            "0805"
+          ],
+          "placement": "below symbol; lower-right for vertical passive"
+        },
+        {
+          "ref": "R54",
+          "mpn": "MPN TBD / 100k 0.1% / LTO only",
+          "package": "0805",
+          "at": [
+            219.70999999999998,
+            125.73
+          ],
+          "font_mm": 0.95,
+          "lines": [
+            "MPN TBD / 100k 0.1% / LTO only",
+            "0805"
+          ],
+          "placement": "below symbol; lower-right for vertical passive"
+        },
+        {
+          "ref": "C59",
+          "mpn": "MPN TBD / 47nF X7R 16V / LTO only",
+          "package": "0805",
+          "at": [
+            298.45,
+            101.6
+          ],
+          "font_mm": 0.95,
+          "lines": [
+            "MPN TBD / 47nF X7R 16V / LTO only",
+            "0805"
+          ],
+          "placement": "below symbol; lower-right for vertical passive"
+        },
+        {
+          "ref": "J12",
+          "mpn": "L-KLS1-2.50-04-R / LTO only",
+          "package": "XH 1x4 / 2.50 / 90deg",
+          "at": [
+            30.48,
+            194.31
+          ],
+          "font_mm": 1.05,
+          "lines": [
+            "L-KLS1-2.50-04-R / LTO only",
+            "XH 1x4 / 2.50 / 90deg"
+          ],
+          "placement": "below symbol; lower-right for vertical passive"
+        }
+      ],
+      "global_labels": [
+        {
+          "name": "BAT",
+          "at": [
+            91.44,
+            48.26
+          ],
+          "angle": 0
+        },
+        {
+          "name": "LTO_MID",
+          "at": [
+            127.0,
+            147.32
+          ],
+          "angle": 0
+        },
+        {
+          "name": "LTO_MID",
+          "at": [
+            254.0,
+            48.26
+          ],
+          "angle": 0
+        },
+        {
+          "name": "BAT",
+          "at": [
+            48.26,
+            167.64
+          ],
+          "angle": 180
+        },
+        {
+          "name": "LTO_MID",
+          "at": [
+            48.26,
+            172.72
+          ],
+          "angle": 180
+        }
+      ],
+      "wire_segments": [
+        [
+          [
+            96.52,
+            55.88
+          ],
+          [
+            96.52,
+            48.26
+          ]
+        ],
+        [
+          [
+            96.52,
+            48.26
+          ],
+          [
+            91.44,
+            48.26
+          ]
+        ],
+        [
+          [
+            96.52,
+            66.04
+          ],
+          [
+            96.52,
+            73.66
+          ]
+        ],
+        [
+          [
+            96.52,
+            73.66
+          ],
+          [
+            96.52,
+            86.36
+          ]
+        ],
+        [
+          [
+            96.52,
+            73.66
+          ],
+          [
+            53.34,
+            73.66
+          ]
+        ],
+        [
+          [
+            53.34,
+            83.82
+          ],
+          [
+            53.34,
+            91.44
+          ]
+        ],
+        [
+          [
+            53.34,
+            101.6
+          ],
+          [
+            53.34,
+            110.49
+          ]
+        ],
+        [
+          [
+            53.34,
+            110.49
+          ],
+          [
+            53.34,
+            115.57
+          ]
+        ],
+        [
+          [
+            53.34,
+            110.49
+          ],
+          [
+            71.12,
+            110.49
+          ]
+        ],
+        [
+          [
+            71.12,
+            110.49
+          ],
+          [
+            71.12,
+            96.52
+          ]
+        ],
+        [
+          [
+            71.12,
+            96.52
+          ],
+          [
+            83.82,
+            96.52
+          ]
+        ],
+        [
+          [
+            96.52,
+            81.28
+          ],
+          [
+            132.08,
+            81.28
+          ]
+        ],
+        [
+          [
+            132.08,
+            81.28
+          ],
+          [
+            132.08,
+            91.44
+          ]
+        ],
+        [
+          [
+            96.52,
+            106.68
+          ],
+          [
+            96.52,
+            139.7
+          ]
+        ],
+        [
+          [
+            104.14,
+            106.68
+          ],
+          [
+            104.14,
+            139.7
+          ]
+        ],
+        [
+          [
+            132.08,
+            101.6
+          ],
+          [
+            132.08,
+            139.7
+          ]
+        ],
+        [
+          [
+            53.34,
+            125.73
+          ],
+          [
+            53.34,
+            139.7
+          ]
+        ],
+        [
+          [
+            53.34,
+            139.7
+          ],
+          [
+            96.52,
+            139.7
+          ]
+        ],
+        [
+          [
+            96.52,
+            139.7
+          ],
+          [
+            104.14,
+            139.7
+          ]
+        ],
+        [
+          [
+            104.14,
+            139.7
+          ],
+          [
+            132.08,
+            139.7
+          ]
+        ],
+        [
+          [
+            132.08,
+            139.7
+          ],
+          [
+            132.08,
+            147.32
+          ]
+        ],
+        [
+          [
+            132.08,
+            147.32
+          ],
+          [
+            127.0,
+            147.32
+          ]
+        ],
+        [
+          [
+            259.08,
+            55.88
+          ],
+          [
+            259.08,
+            48.26
+          ]
+        ],
+        [
+          [
+            259.08,
+            48.26
+          ],
+          [
+            254.0,
+            48.26
+          ]
+        ],
+        [
+          [
+            259.08,
+            66.04
+          ],
+          [
+            259.08,
+            73.66
+          ]
+        ],
+        [
+          [
+            259.08,
+            73.66
+          ],
+          [
+            259.08,
+            86.36
+          ]
+        ],
+        [
+          [
+            259.08,
+            73.66
+          ],
+          [
+            215.9,
+            73.66
+          ]
+        ],
+        [
+          [
+            215.9,
+            83.82
+          ],
+          [
+            215.9,
+            91.44
+          ]
+        ],
+        [
+          [
+            215.9,
+            101.6
+          ],
+          [
+            215.9,
+            110.49
+          ]
+        ],
+        [
+          [
+            215.9,
+            110.49
+          ],
+          [
+            215.9,
+            115.57
+          ]
+        ],
+        [
+          [
+            215.9,
+            110.49
+          ],
+          [
+            233.68,
+            110.49
+          ]
+        ],
+        [
+          [
+            233.68,
+            110.49
+          ],
+          [
+            233.68,
+            96.52
+          ]
+        ],
+        [
+          [
+            233.68,
+            96.52
+          ],
+          [
+            246.38,
+            96.52
+          ]
+        ],
+        [
+          [
+            259.08,
+            81.28
+          ],
+          [
+            294.64,
+            81.28
+          ]
+        ],
+        [
+          [
+            294.64,
+            81.28
+          ],
+          [
+            294.64,
+            91.44
+          ]
+        ],
+        [
+          [
+            259.08,
+            106.68
+          ],
+          [
+            259.08,
+            139.7
+          ]
+        ],
+        [
+          [
+            266.7,
+            106.68
+          ],
+          [
+            266.7,
+            139.7
+          ]
+        ],
+        [
+          [
+            294.64,
+            101.6
+          ],
+          [
+            294.64,
+            139.7
+          ]
+        ],
+        [
+          [
+            215.9,
+            125.73
+          ],
+          [
+            215.9,
+            139.7
+          ]
+        ],
+        [
+          [
+            215.9,
+            139.7
+          ],
+          [
+            259.08,
+            139.7
+          ]
+        ],
+        [
+          [
+            259.08,
+            139.7
+          ],
+          [
+            266.7,
+            139.7
+          ]
+        ],
+        [
+          [
+            266.7,
+            139.7
+          ],
+          [
+            294.64,
+            139.7
+          ]
+        ],
+        [
+          [
+            294.64,
+            139.7
+          ],
+          [
+            294.64,
+            142.24
+          ]
+        ],
+        [
+          [
+            40.64,
+            167.64
+          ],
+          [
+            48.26,
+            167.64
+          ]
+        ],
+        [
+          [
+            40.64,
+            172.72
+          ],
+          [
+            48.26,
+            172.72
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "Thermal",
+      "page": 4,
+      "refs": [
+        "R57",
+        "U11",
+        "R59",
+        "TH1",
+        "C61",
+        "R60",
+        "R69",
+        "R61",
+        "U10",
+        "R64",
+        "R65",
+        "R70",
+        "R62",
+        "R63",
+        "C62",
+        "C60",
+        "R66",
+        "Q5",
+        "R67",
+        "R68",
+        "Q4",
+        "Q6",
+        "Q7",
+        "R58"
+      ],
+      "annotations": [
+        {
+          "ref": "R57",
+          "mpn": "RC0805FR-0747KL",
+          "package": "0805",
+          "at": [
+            41.910000000000004,
+            49.53
+          ],
+          "font_mm": 0.95,
+          "lines": [
+            "RC0805FR-0747KL",
+            "0805"
+          ],
+          "placement": "below symbol; lower-right for vertical passive"
+        },
+        {
+          "ref": "U11",
+          "mpn": "LM285Z-2.5G",
+          "package": "TO-92 / шаг 1.27 mm",
+          "at": [
+            38.1,
+            109.22
+          ],
+          "font_mm": 1.05,
+          "lines": [
+            "LM285Z-2.5G",
+            "TO-92 / шаг 1.27 mm"
+          ],
+          "placement": "below symbol; lower-right for vertical passive"
+        },
+        {
+          "ref": "R59",
+          "mpn": "RC0805FR-07100KL",
+          "package": "0805",
+          "at": [
+            99.06,
+            93.98
+          ],
+          "font_mm": 0.95,
+          "lines": [
+            "RC0805FR-07100KL",
+            "0805"
+          ],
+          "placement": "below symbol; lower-right for vertical passive"
+        },
+        {
+          "ref": "TH1",
+          "mpn": "B57861S0103F040",
+          "package": "NTC ø2.41 / P2.54",
+          "at": [
+            99.06,
+            168.91
+          ],
+          "font_mm": 1.05,
+          "lines": [
+            "B57861S0103F040",
+            "NTC ø2.41 / P2.54"
+          ],
+          "placement": "below symbol; lower-right for vertical passive"
+        },
+        {
+          "ref": "C61",
+          "mpn": "CC0805JRNPO0BN102",
+          "package": "0805",
+          "at": [
+            132.08,
+            163.83
+          ],
+          "font_mm": 0.95,
+          "lines": [
+            "CC0805JRNPO0BN102",
+            "0805"
+          ],
+          "placement": "below symbol; lower-right for vertical passive"
+        },
+        {
+          "ref": "R60",
+          "mpn": "RC0805FR-07100KL",
+          "package": "0805",
+          "at": [
+            186.69,
+            82.55
+          ],
+          "font_mm": 0.95,
+          "lines": [
+            "RC0805FR-07100KL",
+            "0805"
+          ],
+          "placement": "below symbol; lower-right for vertical passive"
+        },
+        {
+          "ref": "R69",
+          "mpn": "RC0805FR-0730KL",
+          "package": "0805",
+          "at": [
+            194.31,
+            96.52
+          ],
+          "font_mm": 0.95,
+          "lines": [
+            "RC0805FR-0730KL",
+            "0805"
+          ],
+          "placement": "below symbol; lower-right for vertical passive"
+        },
+        {
+          "ref": "R61",
+          "mpn": "RC0805FR-07100KL",
+          "package": "0805",
+          "at": [
+            166.36999999999998,
+            106.67999999999999
+          ],
+          "font_mm": 0.95,
+          "lines": [
+            "RC0805FR-07100KL",
+            "0805"
+          ],
+          "placement": "below symbol; lower-right for vertical passive"
+        },
+        {
+          "ref": "U10",
+          "mpn": "LM393XK",
+          "package": "SOIC-8 / 3.9 mm",
+          "at": [
+            251.46,
+            166.37
+          ],
+          "font_mm": 1.05,
+          "lines": [
+            "LM393XK",
+            "SOIC-8 / 3.9 mm"
+          ],
+          "placement": "below symbol; lower-right for vertical passive"
+        },
+        {
+          "ref": "R64",
+          "mpn": "RC0805FR-071M2L",
+          "package": "0805",
+          "at": [
+            72.39,
+            160.02
+          ],
+          "font_mm": 0.95,
+          "lines": [
+            "RC0805FR-071M2L",
+            "0805"
+          ],
+          "placement": "below symbol; lower-right for vertical passive"
+        },
+        {
+          "ref": "R65",
+          "mpn": "RC0805FR-0710KL",
+          "package": "0805",
+          "at": [
+            80.01,
+            184.15
+          ],
+          "font_mm": 0.95,
+          "lines": [
+            "RC0805FR-0710KL",
+            "0805"
+          ],
+          "placement": "below symbol; lower-right for vertical passive"
+        },
+        {
+          "ref": "R70",
+          "mpn": "RC0805FR-07150KL",
+          "package": "0805",
+          "at": [
+            232.41,
+            74.92999999999999
+          ],
+          "font_mm": 0.95,
+          "lines": [
+            "RC0805FR-07150KL",
+            "0805"
+          ],
+          "placement": "below symbol; lower-right for vertical passive"
+        },
+        {
+          "ref": "R62",
+          "mpn": "RC0805FR-071ML",
+          "package": "0805",
+          "at": [
+            265.43,
+            78.74
+          ],
+          "font_mm": 0.95,
+          "lines": [
+            "RC0805FR-071ML",
+            "0805"
+          ],
+          "placement": "below symbol; lower-right for vertical passive"
+        },
+        {
+          "ref": "R63",
+          "mpn": "RC0805FR-07100KL",
+          "package": "0805",
+          "at": [
+            304.8,
+            93.98
+          ],
+          "font_mm": 0.95,
+          "lines": [
+            "RC0805FR-07100KL",
+            "0805"
+          ],
+          "placement": "below symbol; lower-right for vertical passive"
+        },
+        {
+          "ref": "C62",
+          "mpn": "CC0805KKX7R0BB104",
+          "package": "0805",
+          "at": [
+            304.8,
+            163.83
+          ],
+          "font_mm": 0.95,
+          "lines": [
+            "CC0805KKX7R0BB104",
+            "0805"
+          ],
+          "placement": "below symbol; lower-right for vertical passive"
+        },
+        {
+          "ref": "C60",
+          "mpn": "CC0805KKX7R0BB104",
+          "package": "0805",
+          "at": [
+            325.12,
+            88.89999999999999
+          ],
+          "font_mm": 0.95,
+          "lines": [
+            "CC0805KKX7R0BB104",
+            "0805"
+          ],
+          "placement": "below symbol; lower-right for vertical passive"
+        },
+        {
+          "ref": "R66",
+          "mpn": "RC0805FR-071KL",
+          "package": "0805",
+          "at": [
+            328.93,
+            116.84
+          ],
+          "font_mm": 0.95,
+          "lines": [
+            "RC0805FR-071KL",
+            "0805"
+          ],
+          "placement": "below symbol; lower-right for vertical passive"
+        },
+        {
+          "ref": "Q5",
+          "mpn": "BSS138",
+          "package": "SOT-23",
+          "at": [
+            359.41,
+            130.81
+          ],
+          "font_mm": 1.05,
+          "lines": [
+            "BSS138",
+            "SOT-23"
+          ],
+          "placement": "below symbol; lower-right for vertical passive"
+        },
+        {
+          "ref": "R67",
+          "mpn": "RC0805FR-071ML",
+          "package": "0805",
+          "at": [
+            346.71,
+            151.13000000000002
+          ],
+          "font_mm": 0.95,
+          "lines": [
+            "RC0805FR-071ML",
+            "0805"
+          ],
+          "placement": "below symbol; lower-right for vertical passive"
+        },
+        {
+          "ref": "R68",
+          "mpn": "RC0805FR-071KL",
+          "package": "0805",
+          "at": [
+            365.76,
+            93.98
+          ],
+          "font_mm": 0.95,
+          "lines": [
+            "RC0805FR-071KL",
+            "0805"
+          ],
+          "placement": "below symbol; lower-right for vertical passive"
+        },
+        {
+          "ref": "Q4",
+          "mpn": "AO3401A",
+          "package": "SOT-23",
+          "at": [
+            40.64,
+            242.57
+          ],
+          "font_mm": 1.05,
+          "lines": [
+            "AO3401A",
+            "SOT-23"
+          ],
+          "placement": "below symbol; lower-right for vertical passive"
+        },
+        {
+          "ref": "Q6",
+          "mpn": "AO3401A",
+          "package": "SOT-23",
+          "at": [
+            82.55,
+            242.57
+          ],
+          "font_mm": 1.05,
+          "lines": [
+            "AO3401A",
+            "SOT-23"
+          ],
+          "placement": "below symbol; lower-right for vertical passive"
+        },
+        {
+          "ref": "Q7",
+          "mpn": "AO3401A",
+          "package": "SOT-23",
+          "at": [
+            124.46,
+            242.57
+          ],
+          "font_mm": 1.05,
+          "lines": [
+            "AO3401A",
+            "SOT-23"
+          ],
+          "placement": "below symbol; lower-right for vertical passive"
+        },
+        {
+          "ref": "R58",
+          "mpn": "RC0805FR-07100KL",
+          "package": "0805",
+          "at": [
+            179.07,
+            251.46
+          ],
+          "font_mm": 0.95,
+          "lines": [
+            "RC0805FR-07100KL",
+            "0805"
+          ],
+          "placement": "below symbol; lower-right for vertical passive"
+        }
+      ],
+      "global_labels": [
+        {
+          "name": "SOLAR",
+          "at": [
+            33.02,
+            31.75
+          ],
+          "angle": 0
+        },
+        {
+          "name": "SOLAR",
+          "at": [
+            340.36,
+            74.93
+          ],
+          "angle": 180
+        },
+        {
+          "name": "CHG_G_SHUNT",
+          "at": [
+            356.87,
+            78.74
+          ],
+          "angle": 0
+        },
+        {
+          "name": "CS_P",
+          "at": [
+            17.78,
+            198.12
+          ],
+          "angle": 0
+        },
+        {
+          "name": "CHG_CS_M",
+          "at": [
+            147.32,
+            219.71
+          ],
+          "angle": 180
+        },
+        {
+          "name": "CHG_G_SHUNT",
+          "at": [
+            147.32,
+            232.41
+          ],
+          "angle": 180
+        },
+        {
+          "name": "CS_P",
+          "at": [
+            170.18,
+            237.49
+          ],
+          "angle": 0
+        },
+        {
+          "name": "CHG_G_SHUNT",
+          "at": [
+            170.18,
+            255.27
+          ],
+          "angle": 0
+        }
+      ],
+      "wire_segments": [
+        [
+          [
+            38.1,
+            39.37
+          ],
+          [
+            38.1,
+            31.75
+          ]
+        ],
+        [
+          [
+            38.1,
+            31.75
+          ],
+          [
+            33.02,
+            31.75
+          ]
+        ],
+        [
+          [
+            38.1,
+            49.53
+          ],
+          [
+            38.1,
+            81.28
+          ]
+        ],
+        [
+          [
+            38.1,
+            96.52
+          ],
+          [
+            38.1,
+            101.6
+          ]
+        ],
+        [
+          [
+            38.1,
+            57.15
+          ],
+          [
+            300.99,
+            57.15
+          ]
+        ],
+        [
+          [
+            95.25,
+            57.15
+          ],
+          [
+            95.25,
+            83.82
+          ]
+        ],
+        [
+          [
+            95.25,
+            93.98
+          ],
+          [
+            95.25,
+            115.57
+          ]
+        ],
+        [
+          [
+            95.25,
+            115.57
+          ],
+          [
+            95.25,
+            153.67
+          ]
+        ],
+        [
+          [
+            95.25,
+            163.83
+          ],
+          [
+            95.25,
+            168.91
+          ]
+        ],
+        [
+          [
+            128.27,
+            163.83
+          ],
+          [
+            128.27,
+            168.91
+          ]
+        ],
+        [
+          [
+            190.5,
+            57.15
+          ],
+          [
+            190.5,
+            72.39
+          ]
+        ],
+        [
+          [
+            190.5,
+            82.55
+          ],
+          [
+            190.5,
+            85.09
+          ]
+        ],
+        [
+          [
+            190.5,
+            95.25
+          ],
+          [
+            171.45,
+            95.25
+          ]
+        ],
+        [
+          [
+            171.45,
+            95.25
+          ],
+          [
+            171.45,
+            96.52
+          ]
+        ],
+        [
+          [
+            171.45,
+            106.68
+          ],
+          [
+            171.45,
+            109.22
+          ]
+        ],
+        [
+          [
+            190.5,
+            95.25
+          ],
+          [
+            190.5,
+            107.95
+          ]
+        ],
+        [
+          [
+            190.5,
+            107.95
+          ],
+          [
+            219.71,
+            107.95
+          ]
+        ],
+        [
+          [
+            95.25,
+            115.57
+          ],
+          [
+            219.71,
+            115.57
+          ]
+        ],
+        [
+          [
+            95.25,
+            133.35
+          ],
+          [
+            219.71,
+            133.35
+          ]
+        ],
+        [
+          [
+            128.27,
+            133.35
+          ],
+          [
+            128.27,
+            153.67
+          ]
+        ],
+        [
+          [
+            76.2,
+            57.15
+          ],
+          [
+            76.2,
+            149.86
+          ]
+        ],
+        [
+          [
+            76.2,
+            160.02
+          ],
+          [
+            76.2,
+            167.64
+          ]
+        ],
+        [
+          [
+            76.2,
+            167.64
+          ],
+          [
+            76.2,
+            173.99
+          ]
+        ],
+        [
+          [
+            76.2,
+            184.15
+          ],
+          [
+            76.2,
+            189.23
+          ]
+        ],
+        [
+          [
+            76.2,
+            167.64
+          ],
+          [
+            200.66,
+            167.64
+          ]
+        ],
+        [
+          [
+            200.66,
+            167.64
+          ],
+          [
+            200.66,
+            140.97
+          ]
+        ],
+        [
+          [
+            200.66,
+            140.97
+          ],
+          [
+            219.71,
+            140.97
+          ]
+        ],
+        [
+          [
+            218.44,
+            107.95
+          ],
+          [
+            218.44,
+            69.85
+          ]
+        ],
+        [
+          [
+            218.44,
+            69.85
+          ],
+          [
+            227.33,
+            69.85
+          ]
+        ],
+        [
+          [
+            237.49,
+            69.85
+          ],
+          [
+            260.35,
+            69.85
+          ]
+        ],
+        [
+          [
+            270.51,
+            69.85
+          ],
+          [
+            285.75,
+            69.85
+          ]
+        ],
+        [
+          [
+            285.75,
+            69.85
+          ],
+          [
+            285.75,
+            111.76
+          ]
+        ],
+        [
+          [
+            270.51,
+            111.76
+          ],
+          [
+            300.99,
+            111.76
+          ]
+        ],
+        [
+          [
+            300.99,
+            111.76
+          ],
+          [
+            300.99,
+            137.16
+          ]
+        ],
+        [
+          [
+            300.99,
+            137.16
+          ],
+          [
+            270.51,
+            137.16
+          ]
+        ],
+        [
+          [
+            300.99,
+            57.15
+          ],
+          [
+            300.99,
+            83.82
+          ]
+        ],
+        [
+          [
+            300.99,
+            93.98
+          ],
+          [
+            300.99,
+            101.6
+          ]
+        ],
+        [
+          [
+            300.99,
+            101.6
+          ],
+          [
+            293.37,
+            101.6
+          ]
+        ],
+        [
+          [
+            293.37,
+            101.6
+          ],
+          [
+            293.37,
+            111.76
+          ]
+        ],
+        [
+          [
+            300.99,
+            137.16
+          ],
+          [
+            300.99,
+            153.67
+          ]
+        ],
+        [
+          [
+            300.99,
+            163.83
+          ],
+          [
+            300.99,
+            168.91
+          ]
+        ],
+        [
+          [
+            245.11,
+            85.09
+          ],
+          [
+            245.11,
+            74.93
+          ]
+        ],
+        [
+          [
+            245.11,
+            74.93
+          ],
+          [
+            321.31,
+            74.93
+          ]
+        ],
+        [
+          [
+            321.31,
+            74.93
+          ],
+          [
+            321.31,
+            78.74
+          ]
+        ],
+        [
+          [
+            321.31,
+            74.93
+          ],
+          [
+            340.36,
+            74.93
+          ]
+        ],
+        [
+          [
+            321.31,
+            88.9
+          ],
+          [
+            321.31,
+            93.98
+          ]
+        ],
+        [
+          [
+            245.11,
+            156.21
+          ],
+          [
+            245.11,
+            161.29
+          ]
+        ],
+        [
+          [
+            300.99,
+            111.76
+          ],
+          [
+            323.85,
+            111.76
+          ]
+        ],
+        [
+          [
+            334.01,
+            111.76
+          ],
+          [
+            351.79,
+            111.76
+          ]
+        ],
+        [
+          [
+            342.9,
+            111.76
+          ],
+          [
+            342.9,
+            140.97
+          ]
+        ],
+        [
+          [
+            342.9,
+            151.13
+          ],
+          [
+            342.9,
+            156.21
+          ]
+        ],
+        [
+          [
+            361.95,
+            119.38
+          ],
+          [
+            361.95,
+            124.46
+          ]
+        ],
+        [
+          [
+            361.95,
+            93.98
+          ],
+          [
+            361.95,
+            104.14
+          ]
+        ],
+        [
+          [
+            361.95,
+            83.82
+          ],
+          [
+            361.95,
+            78.74
+          ]
+        ],
+        [
+          [
+            361.95,
+            78.74
+          ],
+          [
+            356.87,
+            78.74
+          ]
+        ],
+        [
+          [
+            30.48,
+            215.9
+          ],
+          [
+            30.48,
+            198.12
+          ]
+        ],
+        [
+          [
+            50.8,
+            215.9
+          ],
+          [
+            50.8,
+            219.71
+          ]
+        ],
+        [
+          [
+            40.64,
+            223.52
+          ],
+          [
+            40.64,
+            232.41
+          ]
+        ],
+        [
+          [
+            72.39,
+            215.9
+          ],
+          [
+            72.39,
+            198.12
+          ]
+        ],
+        [
+          [
+            92.71,
+            215.9
+          ],
+          [
+            92.71,
+            219.71
+          ]
+        ],
+        [
+          [
+            82.55,
+            223.52
+          ],
+          [
+            82.55,
+            232.41
+          ]
+        ],
+        [
+          [
+            114.3,
+            215.9
+          ],
+          [
+            114.3,
+            198.12
+          ]
+        ],
+        [
+          [
+            134.62,
+            215.9
+          ],
+          [
+            134.62,
+            219.71
+          ]
+        ],
+        [
+          [
+            124.46,
+            223.52
+          ],
+          [
+            124.46,
+            232.41
+          ]
+        ],
+        [
+          [
+            114.3,
+            198.12
+          ],
+          [
+            17.78,
+            198.12
+          ]
+        ],
+        [
+          [
+            50.8,
+            219.71
+          ],
+          [
+            147.32,
+            219.71
+          ]
+        ],
+        [
+          [
+            40.64,
+            232.41
+          ],
+          [
+            147.32,
+            232.41
+          ]
+        ],
+        [
+          [
+            175.26,
+            241.3
+          ],
+          [
+            175.26,
+            237.49
+          ]
+        ],
+        [
+          [
+            175.26,
+            237.49
+          ],
+          [
+            170.18,
+            237.49
+          ]
+        ],
+        [
+          [
+            175.26,
+            251.46
+          ],
+          [
+            175.26,
+            255.27
+          ]
+        ],
+        [
+          [
+            175.26,
+            255.27
+          ],
+          [
+            170.18,
+            255.27
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "Interconnect",
+      "page": 5,
+      "refs": [
+        "H1",
+        "H2",
+        "H3",
+        "H4",
+        "J101"
+      ],
+      "annotations": [
+        {
+          "ref": "J101",
+          "mpn": "DS1013-12RSIB-B-0",
+          "package": "IDC 2x6 / 2.54 / 90deg",
+          "at": [
+            220.98,
+            119.38
+          ],
+          "font_mm": 1.05,
+          "lines": [
+            "DS1013-12RSIB-B-0",
+            "IDC 2x6 / 2.54 / 90deg"
+          ],
+          "placement": "below symbol; lower-right for vertical passive"
+        }
+      ],
+      "global_labels": [
+        {
+          "name": "FILTER_OUT",
+          "at": [
+            241.3,
+            52.07
+          ],
+          "angle": 180
+        },
+        {
+          "name": "FILTER_OUT",
+          "at": [
+            241.3,
+            62.23
+          ],
+          "angle": 180
+        },
+        {
+          "name": "FILTER_OUT",
+          "at": [
+            241.3,
+            72.39
+          ],
+          "angle": 180
+        },
+        {
+          "name": "FILTER_OUT",
+          "at": [
+            241.3,
+            82.55
+          ],
+          "angle": 180
+        },
+        {
+          "name": "BAT",
+          "at": [
+            241.3,
+            92.71
+          ],
+          "angle": 180
+        },
+        {
+          "name": "MODE",
+          "at": [
+            241.3,
+            102.87
+          ],
+          "angle": 180
+        }
+      ],
+      "wire_segments": [
+        [
+          [
+            177.8,
+            175.26
+          ],
+          [
+            177.8,
+            179.07
+          ]
+        ],
+        [
+          [
+            208.28,
+            175.26
+          ],
+          [
+            208.28,
+            179.07
+          ]
+        ],
+        [
+          [
+            238.76,
+            175.26
+          ],
+          [
+            238.76,
+            179.07
+          ]
+        ],
+        [
+          [
+            269.24,
+            175.26
+          ],
+          [
+            269.24,
+            179.07
+          ]
+        ],
+        [
+          [
+            233.68,
+            52.07
+          ],
+          [
+            241.3,
+            52.07
+          ]
+        ],
+        [
+          [
+            233.68,
+            62.23
+          ],
+          [
+            241.3,
+            62.23
+          ]
+        ],
+        [
+          [
+            233.68,
+            72.39
+          ],
+          [
+            241.3,
+            72.39
+          ]
+        ],
+        [
+          [
+            233.68,
+            82.55
+          ],
+          [
+            241.3,
+            82.55
+          ]
+        ],
+        [
+          [
+            233.68,
+            92.71
+          ],
+          [
+            241.3,
+            92.71
+          ]
+        ],
+        [
+          [
+            233.68,
+            102.87
+          ],
+          [
+            241.3,
+            102.87
+          ]
+        ]
+      ]
+    }
+  ]
+}

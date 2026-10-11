@@ -1,0 +1,296 @@
+(footprint "Connfly_DS1022_1x02RUF11_B_Horizontal__V2_J11"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "Connfly DS1022-1x40RUF11-B cut to2pins. Drawing: https://en.connfly.com/static/upload/file/pdf/DS1022.pdf#page=1. Simplified envelope STEP model.")
+	(property "Reference" "REF**"
+		(at 0 -2.27 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "0b01486c-1f99-4185-a839-9886817f8841")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.12)
+			)
+		)
+	)
+	(property "Value" "Connfly_DS1022_1x02RUF11_B_Horizontal__V2_J11"
+		(at 0 4.81 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "13904dbc-46c0-415b-988d-f12cf9593d63")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.12)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "b78a0e64-0542-492b-8076-140984184388")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" "U type1, A3.00 solder tail,B6.00 mating length,C6.07 abovePCB. Do not subtractAfromC. Mechanical v2 package; original functional pin numbers retained."
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "cfdafe2f-eafa-4322-8306-2720feffaad5")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "MPN" "Connfly DS1022-1x40RUF11-B cut to2pins"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "3c656a90-df12-41ff-9681-0316f1e4ea66")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "LCSC" ""
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "398bf03a-6d76-4863-88e5-edd5e22f8ebd")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Vendor" "Danomsk"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "e65f061a-0d9f-41ed-977d-d8a2f8df89f3")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Vendor URL" "https://www.danomsk.ru/shop/7-kommutatsiya/121-razemy/306-soediniteli-pryamougolnye/202688-pls-40r2-ds1022-1x40ruf11-b-vilka-uglovaya-2-54mm-connfly/"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "402b7395-03a9-4935-abe6-452ddd80b82a")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Fit_NaIon" "yes"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "ebcfc109-734f-4dc7-bc6d-f6f7738cf379")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Fit_LTO_2S" "yes"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "f792f243-0094-41ca-a1a2-583387480a89")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value_NaIon" "LC OUT - SYS 3V3"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "92994b46-f1d6-42a6-a5b4-4804879e6f6c")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value_LTO_2S" "LC OUT - SYS 3V3"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "3f29a9a4-50b3-45f1-8289-f3828b2f54d2")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Assembly" "Na-ion: FIT; LTO 2S: FIT"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "9d6335e1-4ae2-47e8-8312-c7cb0335ffe3")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Nominal" "LC/SYS"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "6a80ed2f-202f-46a0-8061-96365479918f")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "MPN_NaIon" "Connfly DS1022-1x40RUF11-B cut to2pins"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "4105aa89-7187-4080-82f1-c25c11886649")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "MPN_LTO_2S" "Connfly DS1022-1x40RUF11-B cut to2pins"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "40bd5c4b-29a9-4c00-804c-9ca2690b770c")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Fit_NaIon_NoCold" "yes"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "e131f2a2-5999-4549-9e15-4f6f4bd8bd48")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value_NaIon_NoCold" "LC OUT - SYS 3V3"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "6bf5e28f-16e4-42b6-ba78-27c0e79ddec9")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "MPN_NaIon_NoCold" "Connfly DS1022-1x40RUF11-B cut to2pins"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "9d3d9c37-3794-4e62-857e-2e2b2afe763a")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr through_hole)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_rect
+		(start -1.5 -1.52)
+		(end 7.5 4.06)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "5242ccbd-5293-41f1-b329-7e4f47a04993")
+	)
+	(fp_rect
+		(start -1.35 -1.37)
+		(end 1.35 3.91)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "c7920f07-3bbc-4709-a22b-c8c077cb96cc")
+	)
+	(fp_rect
+		(start -1.25 -1.27)
+		(end 1.25 3.81)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "6cbfb026-9c9d-42c3-800f-b31ae723e5b0")
+	)
+	(pad "1" thru_hole rect
+		(at 0 0)
+		(size 1.8 1.8)
+		(drill 1.02)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "39925531-10d6-452a-861c-6024a349d21e")
+	)
+	(pad "2" thru_hole circle
+		(at 0 2.54)
+		(size 1.8 1.8)
+		(drill 1.02)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "21a34cc0-95b0-4e64-b881-48e30930f6f2")
+	)
+	(embedded_fonts no)
+	(model "${KIPRJMOD}/3dmodels/Connfly_DS1022_1x02RUF11_B_Horizontal.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

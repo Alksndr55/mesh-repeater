@@ -1,0 +1,232 @@
+{
+  "project": "Mesh Repeater2.0",
+  "date": "2026-10-11",
+  "review_scope": "Independent nominal mechanical and courtyard-definition review; no PCB or library mutations; not a final DRC or bench qualification",
+  "inputs": {
+    "pcb": "design/MeshRepeater2_Power/MeshRepeater2_Power.kicad_pcb",
+    "sha256_at_read": "c3824b8739a131178f774b651faf046862d659602f11725b59de9953ff23f8ec",
+    "file_unchanged_during_review": true,
+    "SH1_geometry_source": "baseline/S4_16/Meshcore_NaIon.kicad_pcb"
+  },
+  "native_snapshot": {
+    "SH1_present_in_current_PCB": false,
+    "SH1_position_in_geometry_source": [
+      45.0,
+      71.5
+    ],
+    "SH1_pads_in_geometry_source": [
+      {
+        "pin": "1",
+        "x": 45.0,
+        "y": 50.0,
+        "size_x": 76.0,
+        "size_y": 1.0,
+        "net": "GND"
+      },
+      {
+        "pin": "2",
+        "x": 83.0,
+        "y": 71.5,
+        "size_x": 1.0,
+        "size_y": 42.0,
+        "net": "GND"
+      },
+      {
+        "pin": "3",
+        "x": 45.0,
+        "y": 93.0,
+        "size_x": 76.0,
+        "size_y": 1.0,
+        "net": "GND"
+      },
+      {
+        "pin": "4",
+        "x": 7.0,
+        "y": 71.5,
+        "size_x": 1.0,
+        "size_y": 42.0,
+        "net": "GND"
+      }
+    ],
+    "SH1_native_courtyard_offset_nominal_mm": 0.8,
+    "ground_land_OD_mm": 6,
+    "mounting_centres": [
+      [
+        3.5,
+        3.5
+      ],
+      [
+        86.5,
+        3.5
+      ],
+      [
+        3.5,
+        56.5
+      ],
+      [
+        86.5,
+        56.5
+      ]
+    ]
+  },
+  "normative_reference": {
+    "url": "https://klc.kicad.org/footprint/f5/f5.3/",
+    "retrieved": "2026-10-11",
+    "interpretation": "A footprint courtyard accounts for both physical body and land pattern, with normally0.25mm clearance. A contoured polygon is allowed. Removing pad coverage or simply omitting modeled hardware does not establish conformity."
+  },
+  "rejected_wall_only_court": {
+    "frame_offset_mm": 0.35,
+    "wall_half_width_mm": 0.1,
+    "actual_land_half_width_mm": 0.5,
+    "pad_extension_beyond_wall_only_court_mm": 0.15,
+    "required_pad_aware_half_offset_with_0_25_margin_mm": 0.75,
+    "proposed_mount_margin_mm": 0.1,
+    "nominal_wall_and_hardware_bodies_fit": true,
+    "KLC_courtyard_conformity": false,
+    "reason": "The wall-only courtyard omits0.15mm of each real solderland, even before adding courtyard clearance.0.1mm mounting reserve is not the normal0.25mm KLC clearance. No checks should be disabled to conceal this."
+  },
+  "nominal_body_clearance_original_76x43_at_45_34_5": {
+    "wall_outer_bounds": [
+      6.9,
+      12.9,
+      83.1,
+      56.1
+    ],
+    "lower_left_6mm_washer_to_frame_min_mm": 0.4234485537247381,
+    "lower_right_6mm_washer_to_frame_min_mm": 0.42344855372474344,
+    "aligned_hex_flat_to_vertical_wall_min_mm": 0.6500000000000004,
+    "hex_vertex_radius_mm": 3.1754264805429417,
+    "washer_plus_aligned_hex_profile_max_y_with0_25_margin_mm": 3.4254264805429417,
+    "existing_circle_R3_25_margin_at_hex_vertex_mm": 0.07457351945705826,
+    "conditional": "Nominal fit only; actual washer, hex orientation, frame width/tolerance and solder fillet need qualification. A full0.25mm buffered hardware profile is slightly taller than the existingR3.25circle."
+  },
+  "alternative_A_hardware_external_to_contact_footprint": {
+    "assessment": "Not independently accepted as a route to zero DRC. A PCB contact can be a board feature, but all actual spacers/washers must still be represented by honest assembly/courtyard/keepout geometry. Removing the only hardware boundary would hide the conflict rather than resolve it.",
+    "conditional_acceptance": "Only with an explicit composite assembly footprint or equivalent complete geometry review that preserves the hardware/body/land coverage; no disabled courtyard checks and no claim that an omitted body was checked."
+  },
+  "alternative_B_74x43_new_custom_frame": {
+    "assessment": "Mechanically feasible with documented new custom frame and local rerouting; not a drop-in substitution for76x43.",
+    "centre": [
+      45,
+      34.5
+    ],
+    "wall_centerlines": [
+      8,
+      13,
+      82,
+      56
+    ],
+    "wall_outer_bounds": [
+      7.9,
+      12.9,
+      82.1,
+      56.1
+    ],
+    "courtyard_bands": [
+      [
+        7.2,
+        12.2,
+        82.8,
+        13.8
+      ],
+      [
+        7.2,
+        13.85,
+        8.8,
+        55.15
+      ],
+      [
+        7.2,
+        55.2,
+        82.8,
+        56.8
+      ],
+      [
+        81.2,
+        13.85,
+        82.8,
+        55.15
+      ]
+    ],
+    "mount_to_frame_courtyard_horizontal_gap_mm": 0.4500000000000002,
+    "lower_left_washer_to_frame_min_mm": 1.4181444068749043,
+    "actual_native_component_courtyard_intersections": [
+      {
+        "reference": "C43",
+        "intersection_mm2": 3.09255
+      },
+      {
+        "reference": "C45",
+        "intersection_mm2": 3.09255
+      },
+      {
+        "reference": "C47",
+        "intersection_mm2": 3.09255
+      },
+      {
+        "reference": "C49",
+        "intersection_mm2": 3.09255
+      },
+      {
+        "reference": "C51",
+        "intersection_mm2": 3.09255
+      },
+      {
+        "reference": "C8",
+        "intersection_mm2": 2.10982266
+      },
+      {
+        "reference": "J101",
+        "intersection_mm2": 4.478175
+      },
+      {
+        "reference": "R7",
+        "intersection_mm2": 0.70875
+      },
+      {
+        "reference": "R8",
+        "intersection_mm2": 0.70875
+      },
+      {
+        "reference": "R9",
+        "intersection_mm2": 0.70875
+      }
+    ],
+    "minimum_displacement_guidance": {
+      "C8_R7_R8_R9": "Shift inward right by about0.5mm, then reroute and recheck",
+      "C43_C45_C47_C49_C51": "Shift left by about0.85mm, then reroute and recheck",
+      "J101": "Top strip courtyard must clear correctedframey13; nominal existing pad-aware court still intersects in this snapshot"
+    },
+    "requirements": [
+      "Revise custom frame procurement/drawing/STEP/footprint to74x43; cannot order former76x43 frame",
+      "Keep fourGND solderland electrical functions; mechanical pad resizing/movement and rerouting documented",
+      "Update schematic/model/BOM and verify native final DRC; new pad locations may contact non-GND tracks",
+      "Do not claim measured EMI equivalence"
+    ]
+  },
+  "alternative_C_explicit_removal_of_SH1": {
+    "assessment": "Recommended if a new custom frame is unnecessary: explicit mechanical removal while retaining the grounded continuous intermediate90x60screen and full cableGND.",
+    "benefits": [
+      "No frame/mount courtyard conflict",
+      "Avoids custom74x43part and unnecessary movement of charger/LC parts",
+      "Existing working power and return do not rely on the frame",
+      "The prompt allows an explicit frame decision; removal is not implied merely by removing old lid"
+    ],
+    "constraints": [
+      "Record removedSH1 as mechanical reference mapping; do not silently omit it",
+      "Remove old frame footprint/model/BOM/drawing/instructions consistently",
+      "Keep COLD/balancer grouping and surface markings",
+      "Preserve continuous intermediate screen and electricalGND standoff contacts",
+      "Loss of vertical sidewalls changes field confinement; EMI/thermal behavior remains unqualified and cannot be claimed equivalent"
+    ]
+  },
+  "verdict": "Wall-only courtyard rejected. Prefer explicitSH1removal if no mechanical need for sidewallframe; otherwise use documented74x43customframe and reposition/reroute the listed parts. Keep all DRC checks active.",
+  "accepted_decision": {
+    "choice": "C",
+    "SH1": "removed",
+    "authorized_by": "Parent accepted independent review on2026-10-11 within the prompt's explicit frame-decision scope",
+    "rationale": "Retain continuous grounded intermediate screen and full cableGND without hiding any physical geometry or reducing courtyard coverage. No new custom frame, no additional component displacement, no claim of measured EMI equivalence.",
+    "standoffs": "18mm lower and15mm upper retained; nominal inner spaces18.5mm and16mm per mechanical selection. Lower THERM12.5mm leaves6.0mm nominal vertical reserve."
+  },
+  "PCB_or_library_modified": false
+}

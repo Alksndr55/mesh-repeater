@@ -1,0 +1,16 @@
+{
+  "source_pcb_sha256": "5112887d764c1f7b499388069a31ce57a9db6a2e4a81a75df4e7b921e468c769",
+  "pcb_sha256": "ba1a4b14fb74e31d1ff870d8522506dafab903c2f8694050a3ae005726c74a89",
+  "netlist": "audit\\schematic\\POWER\\netlist.xml",
+  "netlist_sha256": "a4d0279f98d9800dd04050b9ffacdb35b0e3a27fe380b8f013f9eb971cd05fb1",
+  "description_changes": [
+    {
+      "reference": "TH1",
+      "field": "Description",
+      "old": "Fit ONE B57861S0103F040 onboard under SH1 or ONE remote sensor at the cell to these pads. No parallel sensors. Body diameter<=2.41mm and length<=6.5mm. Form/cut flexible leads toP2.54; keep>=4.5mm straight near body and bend radius>=0.75mm. Vertical assembly height<=12.5mm, check formed sample against14mm cover. Onboard measures shield interior, not cell temperature.",
+      "new": "Fit ONE B57861S0103F040 onboard below the continuous intermediate shield or ONE remote sensor at the cell to these pads. No parallel sensors. Body diameter<=2.41mm and length<=6.5mm. Form/cut flexible leads toP2.54; keep>=4.5mm straight near body and bend radius>=0.75mm. Vertical assembly height<=12.5mm; nominal lower face clearance18.5mm leaves6.0mm reserve, verify formed sample and actual stack. SH1 frame and former cover are removed. Onboard measures local POWER/shield temperature, not cell temperature."
+    }
+  ],
+  "non_description_electrical_and_placement_unchanged": true,
+  "exact_footprint_variants_resync_required": true
+}

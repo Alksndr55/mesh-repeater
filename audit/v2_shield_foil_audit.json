@@ -1,0 +1,447 @@
+{
+  "project": "MeshRepeater2_Shield",
+  "pcb_sha256": "4ba1d2a7b47dd392b2ac79fa9a7e10fbf8e98be6b8a3423c813d8530ddb25147",
+  "variants_csv_sha256": "0bd6e07934ff43afe863390921fbc0a408fda380e6b0be5e385cbcee41dab91a",
+  "checks": {
+    "native_container_copper_layers": 2,
+    "manufacturing_copper_layers": 1,
+    "filled_outline_count": 1,
+    "filled_holes": 4
+  },
+  "native_one_layer_limitation": "KiCad10 SetCopperLayerCount(1) reports1 only in memory; SaveBoard/reload restores2 and an F-only layers stanza is rejected. Valid native project uses minimum2-layer container, but all manufacturing copper is F.Cu; B.Cu has no features and must not be manufactured.",
+  "outline_segments_mm": [
+    [
+      0.0,
+      0.0,
+      90.0,
+      0.0
+    ],
+    [
+      0.0,
+      60.0,
+      0.0,
+      0.0
+    ],
+    [
+      90.0,
+      0.0,
+      90.0,
+      60.0
+    ],
+    [
+      90.0,
+      60.0,
+      0.0,
+      60.0
+    ]
+  ],
+  "nominal_size_mm": [
+    90,
+    60
+  ],
+  "board_thickness_mm": 1.52,
+  "assembly_flip": "X180",
+  "assembled_copper_face": "DOWN",
+  "continuous_foil": true,
+  "four_contact_rings": [
+    {
+      "ref": "H301",
+      "xy_mm": [
+        3.5,
+        3.5
+      ],
+      "drill_mm": 3.2,
+      "open_mask_od_mm": 6,
+      "foil_gap_to_drill_mm": 0.3,
+      "metal_contact_annulus_id_mm": 3.8,
+      "ring_360deg_connected": true
+    },
+    {
+      "ref": "H302",
+      "xy_mm": [
+        86.5,
+        3.5
+      ],
+      "drill_mm": 3.2,
+      "open_mask_od_mm": 6,
+      "foil_gap_to_drill_mm": 0.3,
+      "metal_contact_annulus_id_mm": 3.8,
+      "ring_360deg_connected": true
+    },
+    {
+      "ref": "H303",
+      "xy_mm": [
+        3.5,
+        56.5
+      ],
+      "drill_mm": 3.2,
+      "open_mask_od_mm": 6,
+      "foil_gap_to_drill_mm": 0.3,
+      "metal_contact_annulus_id_mm": 3.8,
+      "ring_360deg_connected": true
+    },
+    {
+      "ref": "H304",
+      "xy_mm": [
+        86.5,
+        56.5
+      ],
+      "drill_mm": 3.2,
+      "open_mask_od_mm": 6,
+      "foil_gap_to_drill_mm": 0.3,
+      "metal_contact_annulus_id_mm": 3.8,
+      "ring_360deg_connected": true
+    }
+  ],
+  "island_removal": "NEVER",
+  "copper_anchor": "GF1: hidden 0.2mm copper-only pad, no electronic BOM/assembly part",
+  "no_copper_text_or_slots": true,
+  "all_markings": [
+    {
+      "text": "J8 BAT: 1 + / 2 GND. J12 LTO: 1 BAT / 2 MID / 3 GND / 4 NC.",
+      "layer": "F.Silkscreen",
+      "font_mm": 0.88,
+      "box_mm": [
+        22.677525,
+        24.1746,
+        67.322475,
+        25.6254
+      ]
+    },
+    {
+      "text": "Cable supplies power/GND; metal stands are for shield contact.",
+      "layer": "F.Silkscreen",
+      "font_mm": 0.9,
+      "box_mm": [
+        22.645712,
+        33.7629,
+        67.354289,
+        35.2371
+      ]
+    },
+    {
+      "text": "Keep all four foil contacts clean. Use metal DIN433 M3 washers.",
+      "layer": "F.Silkscreen",
+      "font_mm": 0.9,
+      "box_mm": [
+        22.238569,
+        41.9629,
+        67.761431,
+        43.4371
+      ]
+    },
+    {
+      "text": "No SH1 frame/lid. Continuous foil: no slots or cut-out letters.",
+      "layer": "F.Silkscreen",
+      "font_mm": 0.9,
+      "box_mm": [
+        22.902855,
+        44.6629,
+        67.097145,
+        46.1371
+      ]
+    },
+    {
+      "text": "M3 holes 3.2mm / washer OD6 / PCB 1.52mm / foil one face",
+      "layer": "F.Silkscreen",
+      "font_mm": 0.9,
+      "box_mm": [
+        22.902857,
+        48.8629,
+        67.097143,
+        50.3371
+      ]
+    },
+    {
+      "text": "Before USB: REMOVE J11. Refit only after USB is disconnected.",
+      "layer": "F.Silkscreen",
+      "font_mm": 0.9,
+      "box_mm": [
+        22.855713,
+        37.8576,
+        67.144287,
+        39.5424
+      ]
+    },
+    {
+      "text": "Disconnect solar + battery + USB before disassembly.",
+      "layer": "F.Silkscreen",
+      "font_mm": 0.9,
+      "box_mm": [
+        25.834284,
+        51.4576,
+        64.165716,
+        53.1424
+      ]
+    },
+    {
+      "text": "POWER below: CN3722 + TPS63802 + 2-stage LC",
+      "layer": "F.Silkscreen",
+      "font_mm": 0.95,
+      "box_mm": [
+        26.389998,
+        14.73365,
+        63.610003,
+        16.26635
+      ]
+    },
+    {
+      "text": "LOGIC above: NiceNano + HT-RA62 + RTC + watchdog",
+      "layer": "F.Silkscreen",
+      "font_mm": 0.95,
+      "box_mm": [
+        24.716187,
+        17.43365,
+        65.283813,
+        18.96635
+      ]
+    },
+    {
+      "text": "J7 SOLAR: 1 + / 2 GND. Panel 12V; Voc <=24V.",
+      "layer": "F.Silkscreen",
+      "font_mm": 0.95,
+      "box_mm": [
+        26.887616,
+        21.43365,
+        63.112385,
+        22.96635
+      ]
+    },
+    {
+      "text": "J101 <-> J201: cable pins 1:1; route around screen edge.",
+      "layer": "F.Silkscreen",
+      "font_mm": 0.95,
+      "box_mm": [
+        22.974519,
+        28.33365,
+        67.025481,
+        29.86635
+      ]
+    },
+    {
+      "text": "1/3/5/7 FILTER_OUT   all even GND   9 BAT   11 MODE",
+      "layer": "F.Silkscreen",
+      "font_mm": 0.95,
+      "box_mm": [
+        24.014995,
+        31.03365,
+        65.985006,
+        32.56635
+      ]
+    },
+    {
+      "text": "COPPER SIDE DOWN / GND CONTACT OD6",
+      "layer": "F.Silkscreen",
+      "font_mm": 1.0,
+      "box_mm": [
+        28.966666,
+        10.264,
+        61.033334,
+        12.136
+      ]
+    },
+    {
+      "text": "Mesh Repeater 2.0 / SHIELD / V2.0-A1",
+      "layer": "F.Silkscreen",
+      "font_mm": 1.2,
+      "box_mm": [
+        26.274286,
+        6.8768,
+        63.725714,
+        9.1232
+      ]
+    },
+    {
+      "text": "Full assembly instructions / cable / variants: project docs.",
+      "layer": "B.Silkscreen",
+      "font_mm": 0.9,
+      "box_mm": [
+        24.059998,
+        5.3629,
+        65.940001,
+        6.8371
+      ]
+    },
+    {
+      "text": "Metal washers DIN433 3.2 x 6 x 0.5mm; 5 per corner.",
+      "layer": "B.Silkscreen",
+      "font_mm": 0.9,
+      "box_mm": [
+        26.01,
+        8.062899,
+        63.989999,
+        9.537099
+      ]
+    },
+    {
+      "text": "Below: stand 18mm + washer. Above: washer + stand 15mm.",
+      "layer": "B.Silkscreen",
+      "font_mm": 0.9,
+      "box_mm": [
+        23.545713,
+        10.7629,
+        66.454286,
+        12.2371
+      ]
+    },
+    {
+      "text": "RTC: CR2032 primary cell. D3 CHARGE / D4 DONE on POWER.",
+      "layer": "B.Silkscreen",
+      "font_mm": 0.9,
+      "box_mm": [
+        23.46,
+        14.9629,
+        66.539999,
+        16.4371
+      ]
+    },
+    {
+      "text": "GPS: J4 Heltec T114 pinout; power enable nRF P0.24.",
+      "layer": "B.Silkscreen",
+      "font_mm": 0.9,
+      "box_mm": [
+        26.202855,
+        17.6629,
+        63.797144,
+        19.1371
+      ]
+    },
+    {
+      "text": "USB / firmware: REMOVE J11. ISP J10 is on LOGIC.",
+      "layer": "B.Silkscreen",
+      "font_mm": 0.9,
+      "box_mm": [
+        26.905716,
+        20.2576,
+        63.094283,
+        21.9424
+      ]
+    },
+    {
+      "text": "R15 130k   R16 49.9k",
+      "layer": "B.Silkscreen",
+      "font_mm": 0.95,
+      "box_mm": [
+        36.636426,
+        24.533649,
+        53.363573,
+        26.066349
+      ]
+    },
+    {
+      "text": "R3 121k   R4 100k   C30 6.8pF",
+      "layer": "B.Silkscreen",
+      "font_mm": 0.95,
+      "box_mm": [
+        32.972139,
+        27.23365,
+        57.02786,
+        28.76635
+      ]
+    },
+    {
+      "text": "LTO 2S: fit BAL1/BAL2; omit COLD. R56 0R",
+      "layer": "B.Silkscreen",
+      "font_mm": 0.95,
+      "box_mm": [
+        29.14952,
+        29.93365,
+        60.850479,
+        31.46635
+      ]
+    },
+    {
+      "text": "Na-ion without COLD: omit cold parts; R56 0R",
+      "layer": "B.Silkscreen",
+      "font_mm": 0.95,
+      "box_mm": [
+        27.74714,
+        34.13365,
+        62.25286,
+        35.66635
+      ]
+    },
+    {
+      "text": "R15 40.2k   R16 49.9k",
+      "layer": "B.Silkscreen",
+      "font_mm": 0.95,
+      "box_mm": [
+        36.410236,
+        38.33365,
+        53.589764,
+        39.86635
+      ]
+    },
+    {
+      "text": "R3 61.9k   R4 100k   C30 12pF",
+      "layer": "B.Silkscreen",
+      "font_mm": 0.95,
+      "box_mm": [
+        32.972139,
+        41.03365,
+        57.02786,
+        42.56635
+      ]
+    },
+    {
+      "text": "Na-ion 1S: fit COLD; omit BAL1/BAL2. R56 1.8R",
+      "layer": "B.Silkscreen",
+      "font_mm": 0.95,
+      "box_mm": [
+        27.113806,
+        43.73365,
+        62.886193,
+        45.26635
+      ]
+    },
+    {
+      "text": "UPPER FACE / ASSEMBLY QUICK GUIDE",
+      "layer": "B.Silkscreen",
+      "font_mm": 1.0,
+      "box_mm": [
+        29.847618,
+        47.864,
+        60.152381,
+        49.736
+      ]
+    },
+    {
+      "text": "Mesh Repeater 2.0 / SHIELD / V2.0-A1",
+      "layer": "B.Silkscreen",
+      "font_mm": 1.2,
+      "box_mm": [
+        26.274286,
+        50.8768,
+        63.725714,
+        53.1232
+      ]
+    }
+  ],
+  "minimum_font_mm": 0.88,
+  "drc_counts": {
+    "violations": 0,
+    "unconnected_items": 0,
+    "schematic_parity": 0
+  },
+  "drc_ignored_checks": [],
+  "project_sha256": "4b087e5c4579739dd6c14019e736b3ac1a5f048358220b056733443014cd28df",
+  "physical_stackup": {
+    "source_sha256": "4761c58fb73900b6f7c345706e5004552f6d748beb38383a7ae832ddfa9504f0",
+    "pcb_sha256": "4ba1d2a7b47dd392b2ac79fa9a7e10fbf8e98be6b8a3423c813d8530ddb25147",
+    "native_reload_has_explicit_stackup": true,
+    "physical_manufacturing_copper_layers": 1,
+    "native_container_copper_layers": 2,
+    "layers_mm": {
+      "F.Mask": 0.01,
+      "F.Cu": 0.035,
+      "dielectric_FR4": 1.475,
+      "B.Cu": 0,
+      "B.Mask": 0
+    },
+    "nominal_total_thickness_mm": 1.52,
+    "step_expected_core_foil_thickness_mm": 1.51,
+    "step_excludes_mask_thickness_mm": 0.01,
+    "back_surface": "bare_FR4_with_silkscreen_guide",
+    "minimum_thickness_is_nominal_not_tolerance": true
+  }
+}

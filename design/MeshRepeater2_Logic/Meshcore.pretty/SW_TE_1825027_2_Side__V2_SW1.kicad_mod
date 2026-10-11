@@ -1,0 +1,310 @@
+(footprint "SW_TE_1825027_2_Side__V2_SW1"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "TE1825027-2 / FSMRA1JH04. Drawing: https://www.te.com/en/product-1825027-2.html. Simplified envelope STEP model.")
+	(property "Reference" "REF**"
+		(at 0 -3.49 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "c57510d9-c9f3-430e-870a-aaeaa9c7bc48")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.12)
+			)
+		)
+	)
+	(property "Value" "SW_TE_1825027_2_Side__V2_SW1"
+		(at 0 2.19 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "9cb740b7-a6f9-47d9-8582-63b6410a36bf")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.12)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "7f74ab7d-cda9-4e84-a6dd-808d7079e0b2")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" "Electrical hole pitch4.50mm; bracket pitch7.01mm, not7.11bodywidth. Row separation2.49mm. Bracket width8.41mm and rearreach4.01 from electrical row included in courtyard. Bracket holes are non-electrical. Mechanical v2 package; original functional pin numbers retained."
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "686915a6-79c5-44ce-a921-0508d0429b52")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "MPN" "TE1825027-2 / FSMRA1JH04"
+		(at 0 0 180)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "c934f2ae-8a9a-4bfe-a3c2-8e87dfe97f44")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "LCSC" ""
+		(at 0 0 180)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "df7783e4-a314-46c8-a792-219ae63d346f")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Vendor" "Danomsk"
+		(at 0 0 180)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "db5f67cb-aeb2-4e34-b526-c6e9249d18fe")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Vendor URL" "https://www.danomsk.ru/shop/7-kommutatsiya/120-pereklyuchateli/587-mikroknopki/199312-mikroknopka-1825027-2-fsmra1jh04-kan0631n-0431b010-42-uglovaya-bez-fiksatsii-7-11-7-01-3-68mm-off-on/"
+		(at 0 0 180)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "b7f08c05-898b-49b4-aed0-cb18ea171d00")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Fit_NaIon" "yes"
+		(at 0 0 180)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "3d108eeb-8ab1-4a80-a8a5-6005682bcb87")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Fit_LTO_2S" "yes"
+		(at 0 0 180)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "d7bd9c39-9411-44fb-8240-1eec8a812874")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value_NaIon" "USER"
+		(at 0 0 180)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "b6472c13-5ef5-44ec-9eea-a364b2d3851e")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value_LTO_2S" "USER"
+		(at 0 0 180)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "9aa0a1cb-5ff3-446c-ba1e-3024cf900db6")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Assembly" "Na-ion: FIT; LTO 2S: FIT"
+		(at 0 0 180)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "b13928ad-f19f-4e92-855e-4f652113160b")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Nominal" "USER"
+		(at 0 0 180)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "1da46630-3c31-4960-97b6-ea7934956b7a")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "MPN_NaIon" "TE1825027-2 / FSMRA1JH04"
+		(at 0 0 180)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "a4168ebc-edbb-4790-91fa-b0d1d077a988")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "MPN_LTO_2S" "TE1825027-2 / FSMRA1JH04"
+		(at 0 0 180)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "83095a34-2bc6-4e94-8ffb-8eb51ef0201b")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Fit_NaIon_NoCold" "yes"
+		(at 0 0 180)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "39e6a801-5cb8-4174-87dc-eb92ccd11f84")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value_NaIon_NoCold" "USER"
+		(at 0 0 180)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "0be7e8ae-d163-4de6-8b6e-d2fcbce1fe1a")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "MPN_NaIon_NoCold" "TE1825027-2 / FSMRA1JH04"
+		(at 0 0 180)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "aeb046af-7922-4873-9e56-0261f8df8d59")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr through_hole)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_rect
+		(start -4.455 -3.3)
+		(end 4.455 4.26)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "7b0f54a3-b21b-4742-9b55-46472f39cd9a")
+	)
+	(fp_rect
+		(start -3.655 -2.59)
+		(end 3.655 1.29)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "cea7d4c6-b7c0-4d21-bd2c-55f1b16ddc9a")
+	)
+	(fp_rect
+		(start -3.555 -2.49)
+		(end 3.555 1.19)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "043808a9-035e-4f47-8893-6b9d0b844590")
+	)
+	(pad "" np_thru_hole circle
+		(at -3.505 2.49)
+		(size 1.3 1.3)
+		(drill 1.3)
+		(layers "*.Cu" "*.Mask")
+		(uuid "6ab6456b-0eaf-4821-af48-b0b3e0b31a72")
+	)
+	(pad "" np_thru_hole circle
+		(at 3.505 2.49)
+		(size 1.3 1.3)
+		(drill 1.3)
+		(layers "*.Cu" "*.Mask")
+		(uuid "3688e526-1503-4f1d-b2a0-9fc6ca263e85")
+	)
+	(pad "1" thru_hole rect
+		(at -2.25 0)
+		(size 1.8 1.8)
+		(drill 0.99)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "4fb5b8e4-7811-4c23-a336-2e4e82a4668a")
+	)
+	(pad "2" thru_hole circle
+		(at 2.25 0)
+		(size 1.8 1.8)
+		(drill 0.99)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "57f676ad-6742-41ac-a054-5b5644fe268d")
+	)
+	(embedded_fonts no)
+	(model "${KIPRJMOD}/3dmodels/SW_TE_1825027_2_Side.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)
