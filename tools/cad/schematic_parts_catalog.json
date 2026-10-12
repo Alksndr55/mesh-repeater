@@ -9,8 +9,8 @@
     "Meshcore:L_Sunltech_SLW8040S": "SLW8040S, 8x8 mm; H<=4.2",
     "Meshcore:R_1206_3216Metric": "1206 (3216)",
     "Meshcore:C_1206_3216Metric": "1206 (3216)",
-    "Meshcore:C_0805_2012Metric": "0805 (2012)",
-    "Meshcore:R_0805_2012Metric": "0805 (2012)",
+    "Meshcore:C_0805_2012Metric": "0805",
+    "Meshcore:R_0805_2012Metric": "0805",
     "Meshcore:CP_Elec_6.3x7.7": "SMD D6.3x7.7 mm",
     "Meshcore:LED_0805_2012Metric": "0805 (2012)",
     "Meshcore:TPS63802_DLA0010A": "VSON-HR-10 / DLA, 2x3 mm",
@@ -27,10 +27,13 @@
     "Meshcore:TestPoint_Pad_D1.5mm": "PCB pad D1.5 mm",
     "Meshcore:SOIC-16W_7.5x10.3mm_P1.27mm": "SOIC-16W, 7.5x10.3 mm",
     "Meshcore:BatteryHolder_Keystone_1060_1x2032": "CR2032 holder, SMD",
-    "Meshcore:SOIC-8_3.9x4.9mm_P1.27mm": "SOIC-8, 3.9x4.9 mm",
+    "Meshcore:SOIC-8_3.9x4.9mm_P1.27mm": "SOIC-8 / 3.9x4.9 / P1.27",
     "Meshcore:PinHeader_2x03_P2.54mm_Vertical": "2x03, P2.54, THT",
     "Meshcore:MountingHole_3.2mm_M3": "PCB NPTH D3.2, M3",
-    "Meshcore:Shield_Frame_76x43": "custom frame76x43; H14"
+    "Meshcore:Shield_Frame_76x43": "custom frame76x43; H14",
+    "Meshcore:Ali_PinHeader_2x06_P2.54_L35_A3C6": "THT 2x6 / 2.54 / vertical",
+    "Meshcore:R_2512_6332Metric": "2512 / 1W",
+    "Meshcore:Ali_PinSocket_2x06_P2.54_H8.5_v2_mirror": "THT 2x6 / 2.54 / vertical"
   },
   "parts": [
     {
@@ -1162,6 +1165,86 @@
       "package": "1x02, P2.54, THT",
       "footprint": "Meshcore:PinHeader_1x02_P2.54mm_Vertical",
       "package_basis": "current local footprint; special inductor/TPS dimensions crosschecked with existing qualification evidence"
+    },
+    {
+      "ref": "J101",
+      "value": "INTERBOARD 2x6 VERTICAL",
+      "original_mpn": "E-SIMPO L35mm A3C6 2x6P",
+      "display_mpn": "E-SIMPO L35mm A3C6 2x6P",
+      "mpn_status": "assigned_in_model",
+      "package": "THT 2x6 / 2.54 / vertical",
+      "footprint": "Meshcore:Ali_PinHeader_2x06_P2.54_L35_A3C6",
+      "package_basis": "INA219 SOIC-8 / Yageo RL2512 or selected Ali exact-SKU engineering drawings"
+    },
+    {
+      "ref": "U12",
+      "value": "INA219AIDR",
+      "original_mpn": "INA219AIDR",
+      "display_mpn": "INA219AIDR",
+      "mpn_status": "assigned_in_model",
+      "package": "SOIC-8 / 3.9x4.9 / P1.27",
+      "footprint": "Meshcore:SOIC-8_3.9x4.9mm_P1.27mm",
+      "package_basis": "INA219 SOIC-8 / Yageo RL2512 or selected Ali exact-SKU engineering drawings"
+    },
+    {
+      "ref": "R71",
+      "value": "0.1R 1% 1W",
+      "original_mpn": "RL2512FK-070R1L",
+      "display_mpn": "RL2512FK-070R1L",
+      "mpn_status": "assigned_in_model",
+      "package": "2512 / 1W",
+      "footprint": "Meshcore:R_2512_6332Metric",
+      "package_basis": "INA219 SOIC-8 / Yageo RL2512 or selected Ali exact-SKU engineering drawings"
+    },
+    {
+      "ref": "R72",
+      "value": "10R 1%",
+      "original_mpn": "RC0805FR-0710RL",
+      "display_mpn": "RC0805FR-0710RL",
+      "mpn_status": "assigned_in_model",
+      "package": "0805",
+      "footprint": "Meshcore:R_0805_2012Metric",
+      "package_basis": "INA219 SOIC-8 / Yageo RL2512 or selected Ali exact-SKU engineering drawings"
+    },
+    {
+      "ref": "R73",
+      "value": "10R 1%",
+      "original_mpn": "RC0805FR-0710RL",
+      "display_mpn": "RC0805FR-0710RL",
+      "mpn_status": "assigned_in_model",
+      "package": "0805",
+      "footprint": "Meshcore:R_0805_2012Metric",
+      "package_basis": "INA219 SOIC-8 / Yageo RL2512 or selected Ali exact-SKU engineering drawings"
+    },
+    {
+      "ref": "C63",
+      "value": "100nF 50V X7R",
+      "original_mpn": "CC0805KRX7R9BB104",
+      "display_mpn": "CC0805KRX7R9BB104",
+      "mpn_status": "assigned_in_model",
+      "package": "0805",
+      "footprint": "Meshcore:C_0805_2012Metric",
+      "package_basis": "INA219 SOIC-8 / Yageo RL2512 or selected Ali exact-SKU engineering drawings"
+    },
+    {
+      "ref": "C64",
+      "value": "100nF 50V X7R",
+      "original_mpn": "CC0805KRX7R9BB104",
+      "display_mpn": "CC0805KRX7R9BB104",
+      "mpn_status": "assigned_in_model",
+      "package": "0805",
+      "footprint": "Meshcore:C_0805_2012Metric",
+      "package_basis": "INA219 SOIC-8 / Yageo RL2512 or selected Ali exact-SKU engineering drawings"
+    },
+    {
+      "ref": "J201",
+      "value": "INTERBOARD 2x6 VERTICAL",
+      "original_mpn": "MTJ H8.5 2X6P 10PCS",
+      "display_mpn": "MTJ H8.5 2X6P 10PCS",
+      "mpn_status": "assigned_in_model",
+      "package": "THT 2x6 / 2.54 / vertical",
+      "footprint": "Meshcore:Ali_PinSocket_2x06_P2.54_H8.5_v2_mirror",
+      "package_basis": "INA219 SOIC-8 / Yageo RL2512 or selected Ali exact-SKU engineering drawings"
     }
   ],
   "reserve_proposal": {
@@ -1183,5 +1266,6 @@
     "M1 footprint is a socket arrangement, not a verified mechanical dimension of the actual user clone.",
     "BT1 MPN1060 identifies holder, not coin-cell manufacturer or cell ordering code.",
     "SS24 is the assigned device designation; manufacturer/source qualification is not added by display labels."
-  ]
+  ],
+  "feature_addition": "INA219 0.1 ohm and direct vertical Ali 2x6, 2026-10-12"
 }

@@ -1,0 +1,96 @@
+{
+  "date": "2026-10-12",
+  "scope": "Mesh Repeater 2.0 only",
+  "findings": [
+    {
+      "id": "M-01",
+      "status": "FIXED_CAD_AND_PROCUREMENT_DOCUMENTS",
+      "change": "Selected two original Connfly I-DS1071-SCB01x4 cable housings and eight T-DS1071-SC600 contacts. Added all-variant quantities, supplier URLs/current stock, manufacturer family compatibility, pin map and conservative housing envelope.",
+      "proof": [
+        "bom/DAN_NEW_PARTS.csv",
+        "docs/mechanical_selection.json",
+        "docs/V2_ASSEMBLY_INSTRUCTIONS_RU.md",
+        "audit/fixes_2026_10_12/mechanics_sources/Connfly_DS1071.pdf",
+        "audit/fixes_2026_10_12/mechanics.models.json"
+      ],
+      "availability_checked": "2026-10-12",
+      "stock_housings": 170,
+      "stock_contacts": 6746,
+      "per_full_assembly": {
+        "housings": 2,
+        "contacts": 8
+      },
+      "quantity_for_five_full_assemblies": {
+        "housings": 10,
+        "contacts": 40
+      },
+      "hardware_mating_proven": false
+    },
+    {
+      "id": "M-02",
+      "status": "FIXED_MODEL",
+      "change": "TE switch nominal bracket envelope widened from 7.66 to 8.41 mm, 0.375 mm per side. Both actively used local STEP libraries match. No footprint/pad/courtyard change.",
+      "proof": [
+        "docs/mechanical_model_checks.json",
+        "docs/mechanical_library_checks.json",
+        "audit/fixes_2026_10_12/mechanics.models.json",
+        "audit/fixes_2026_10_12/mechanics.footprint_checks.json"
+      ]
+    },
+    {
+      "id": "DOC-01",
+      "status": "FIXED_BOM_AND_GENERATOR",
+      "change": "H1–H4 values in all three BOM variants now match current model/native M3 GND contact. Their existing Note explicitly says plated mounting hole. BOM generator now uses current MountingHole value rather than historical S4.16 NPTH variant labels.",
+      "proof": [
+        "bom/V2_COMPONENT_BOM.csv",
+        "tools/build_v2_component_bom.py"
+      ],
+      "physical_position_rows": 172
+    }
+  ],
+  "all_library_footprint_files_hash_unchanged": 305,
+  "fresh_mechanical_base_footprints_loaded": 12,
+  "switch_width_after_mm": 8.41,
+  "mate_envelope_dimensions_max_mm": [
+    10.41,
+    2.79,
+    14.25
+  ],
+  "mate_min_stand_clearance_mm": {
+    "J3": 3.999601,
+    "J5": 2.961839
+  },
+  "model_checks_previous_copy": "audit/fixes_2026_10_12/mechanical_model_checks.before.json",
+  "footprint_checks_previous_copy": "audit/fixes_2026_10_12/mechanical_library_checks.before.json",
+  "before_sha256": {
+    "bom/V2_COMPONENT_BOM.csv": "a16dc5dc76ce541ad15de3193ce359ae23a9f02d0c275ba0d78183dfc0ec6dc8",
+    "bom/DAN_NEW_PARTS.csv": "b4314c1d2d55fe533317e2fe48b41dd5a28a24d6a33e4a88eb74604cf00450e6",
+    "docs/mechanical_selection.json": "199dfe4daebb9bd490bc6c704a8e08ce3ab3097e215a2fc8edaa3e331190e962",
+    "docs/V2_ASSEMBLY_INSTRUCTIONS_RU.md": "6d517fbef9497ee2d32eedb1db46ce8861ed53f685adf0311109dbc6db121162",
+    "tools/cad/build_v2_mechanical_library.py": "3007d3c44f742292f6350aa5e0b5c9eb0c0f813d970425b0cb37f32f60589a88",
+    "design/MeshRepeater2_Logic/3dmodels/SW_TE_1825027_2_Side.step": "297a6ba7fe53424bfe435e65a83d8663187f7c1670102c126dced69059ba8174",
+    "design/MeshRepeater2_Power/3dmodels/SW_TE_1825027_2_Side.step": "297a6ba7fe53424bfe435e65a83d8663187f7c1670102c126dced69059ba8174",
+    "docs/mechanical_model_checks.json": "e9c841fbe1200ee04683bd021dc987f521f616a8ef10b352b0f97c4b9ea18ad1",
+    "docs/mechanical_library_checks.json": "3d8164cc1fefa79eb2e9f5f13be31abed9aeeef827971ee551faf9b461285162",
+    "docs/mechanics_findings_RU.md": "9b775faa255c7c8fa97ace5cd8dead06fcae52f7bbd268dc0ea3248fb692a797",
+    "tools/build_v2_component_bom.py": "4937b5770e6ddee9b462fee56d78e1e32bfb64feaeb40933e9d8759ba3857992",
+    "docs/mechanics/Connfly_DS1071_SCB01x4_Mated_Envelope.step": null
+  },
+  "after_sha256": {
+    "bom/V2_COMPONENT_BOM.csv": "8ebf0bee2e3f157999fb040c64bbbf6e6956a051b998a8027d2cf128c1b67375",
+    "bom/DAN_NEW_PARTS.csv": "d5e59633736c90cd8279d296a32212a6329c672209772fe6d0345781222fc9de",
+    "docs/mechanical_selection.json": "ac69509daa7b0aefad4abbf67d7ee25863fed51248f7abc692825f20c4f44fc6",
+    "docs/V2_ASSEMBLY_INSTRUCTIONS_RU.md": "e76ddd899824097a22a92118283e7ab3c1e969ba50b85685180c0dcf992a8ba6",
+    "tools/cad/build_v2_mechanical_library.py": "61ccbd341a6d46afb029bb79c54e4f1572acff06e484d5bf25b512083f23cac2",
+    "design/MeshRepeater2_Logic/3dmodels/SW_TE_1825027_2_Side.step": "d53707421560c16fdad511f3a99bb7216d5d0036c81b053b67006d0c5dc47316",
+    "design/MeshRepeater2_Power/3dmodels/SW_TE_1825027_2_Side.step": "d53707421560c16fdad511f3a99bb7216d5d0036c81b053b67006d0c5dc47316",
+    "docs/mechanical_model_checks.json": "dac2ef8b5c2d8f96c71df64273725b8e619e5053dcfa1be26155d2ca63eedefb",
+    "docs/mechanical_library_checks.json": "ef55f83f8909bf4fee9f27a19143518876ca598ad3570d6005480aa4d82763a9",
+    "docs/mechanics_findings_RU.md": "681cbd70c855d957efbee37439ed4f997f219308e6c4a9358060f575b0a00fb1",
+    "tools/build_v2_component_bom.py": "b76fd917dd94beec86bb45dd05de43c1211e9ad733e63c02dc550ab5b909d253",
+    "docs/mechanics/Connfly_DS1071_SCB01x4_Mated_Envelope.step": "bd810ede45261816766910da74ab05e4ba8ee911671be819ff504827df317e44"
+  },
+  "native_cad_written_by_this_task": false,
+  "version1_changed_by_this_task": false,
+  "remaining_measurements": "Physical crimp, housing stop/mating depth, cable retention, pin polarity and actual hardware access; none claimed as measured or proven by an envelope model."
+}

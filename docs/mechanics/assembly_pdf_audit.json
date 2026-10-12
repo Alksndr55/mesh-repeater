@@ -1,11 +1,11 @@
 {
   "pdf": "output\\pdf\\MeshRepeater2_assembly_dimensions.pdf",
-  "pdf_sha256": "8d1d3188ca50ef90130a42437570400afc5d56482b502e681c1048fb730fa50e",
+  "pdf_sha256": "9cba381ef110c5b56dc8f3714ab5dbb307b71b9d3e1a4628a42d0f50559784d9",
   "pages": 4,
   "native_step_inputs": {
     "POWER": {
       "path": "output\\POWER\\MeshRepeater2_Power.step",
-      "sha256": "67aa28f699dc4103f7e43c1d614be31374268b69f1a675dbe16a995202efecd7",
+      "sha256": "2d9c918ee043136dfaef1e14b60d5290a0680b530e72f640735c68fcc2529180",
       "board_bbox": [
         0.0,
         -60.0,
@@ -25,7 +25,7 @@
       "anchoring_note": "Dielectric center plus half nominal PCB thickness defines the F outer plane. Native STEP component offset above copper is preserved; mask is not a STEP solid.",
       "verified_pcb_source": {
         "path": "design\\MeshRepeater2_Power\\MeshRepeater2_Power.kicad_pcb",
-        "sha256": "dd40232294bc3bfd88565f6843400ad10a68220e472d3d6cb3d7ac200152cf64",
+        "sha256": "c4efced02420f48fea993d166091e3ba3ec7be7cf9bc30feec164d067077cc3b",
         "export_manifest": "output\\POWER\\MeshRepeater2_Power_exports.json"
       }
     },
@@ -57,7 +57,7 @@
     },
     "LOGIC": {
       "path": "output\\LOGIC\\MeshRepeater2_Logic.step",
-      "sha256": "6b95ca0d3273b60041c162ddf4f14cf0976e5a3b6bd86e3361059c5c1a33d8b7",
+      "sha256": "ef4dcec5bde1ae790ecb1ea946c77f794a2e094711ad20e696f5d3c87b4663c3",
       "board_bbox": [
         0.0,
         -60.0,
@@ -77,73 +77,19 @@
       "anchoring_note": "Dielectric center plus half nominal PCB thickness defines the F outer plane. Native STEP component offset above copper is preserved; mask is not a STEP solid.",
       "verified_pcb_source": {
         "path": "design\\MeshRepeater2_Logic\\MeshRepeater2_Logic.kicad_pcb",
-        "sha256": "2750624dc6c2c7e8b50089e66e5d9eef9c29aa3ee28541f72f54186b58dc9ceb",
+        "sha256": "6cbd7850caa14163ebe4d40aba4435ac8fe17f327d68419dfb94e0a1bc361bc8",
         "export_manifest": "output\\LOGIC\\MeshRepeater2_Logic_exports.json"
       }
     }
   },
-  "assembly_report_sha256": "d8e008256af04d0c602990f179ec958bfda2f19b83cde2267276ef1d642c93e3",
+  "assembly_report_sha256": "6b45f0f29cbaf8a380880b6e0b3681284d7b7c6f93611ef4484bb69c4e1ee2e6",
   "qualification": "A native CAD review and nominal mechanical drawing; actual hardware fit is not qualified.",
-  "font_validation": {
-    "method": "pypdf inspection of every page FontDescriptor; per-page Poppler actual rendering",
-    "fonts": {
-      "/Helvetica": {
-        "subtype": "/Type1",
-        "embedded": false
-      },
-      "/AAAAAA+Arial-BoldMT": {
-        "subtype": "/TrueType",
-        "embedded": true
-      },
-      "/AAAAAA+ArialMT": {
-        "subtype": "/TrueType",
-        "embedded": true
-      }
-    },
-    "all_nonstandard_fonts_embedded": true,
-    "hash_text_font": "embedded Arial, size 8.6; Courier removed",
-    "per_page_poppler": [
-      {
-        "page": 1,
-        "dpi": 90,
-        "exit_code": 0,
-        "stdout": "",
-        "stderr": "",
-        "image": "tmp\\pdfs\\assembly\\page-1.png"
-      },
-      {
-        "page": 2,
-        "dpi": 90,
-        "exit_code": 0,
-        "stdout": "",
-        "stderr": "",
-        "image": "tmp\\pdfs\\assembly\\page-2.png"
-      },
-      {
-        "page": 3,
-        "dpi": 90,
-        "exit_code": 0,
-        "stdout": "",
-        "stderr": "",
-        "image": "tmp\\pdfs\\assembly\\page-3.png"
-      },
-      {
-        "page": 4,
-        "dpi": 90,
-        "exit_code": 0,
-        "stdout": "",
-        "stderr": "",
-        "image": "tmp\\pdfs\\assembly\\page-4.png"
-      }
-    ],
-    "all_pages_without_warnings": true,
-    "note": "Previous claim about absence of warnings applied only to page 1. The final PDF is checked on all four pages."
+  "all_pages_visually_inspected": true,
+  "visual_review_evidence": {
+    "path": "audit\\fixes_2026_10_12\\root_pdf_dimensions.json",
+    "sha256": "bc3128331e4d94bfa3111c78dc497c4d157310a9c20929253b2d6d69f20e0d20"
   },
-  "visual_qa": {
-    "pages_rendered": 4,
-    "render_dpi": 90,
-    "result": "All four regenerated final pages visually reviewed: no clipping, overlap, unreadable glyphs or missing text. Page 3 SHA strings use embedded Arial 8.6 and fit the original layout.",
-    "render_source_pdf_sha256": "8d1d3188ca50ef90130a42437570400afc5d56482b502e681c1048fb730fa50e",
-    "pages_reviewed": 4
+  "source_sha256": {
+    "tools/cad/build_v2_assembly_pdf.py": "3ab8b87b58971b3b489fea444b939b4743165f5011afd0af6b0b7e6b99e992a3"
   }
 }

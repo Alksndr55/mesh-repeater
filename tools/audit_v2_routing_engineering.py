@@ -106,6 +106,7 @@ class TraceGraph:
 
 def main():
     inputs, boards = {}, {}
+    feature = (ROOT / 'design/feature_ina219_vertical.json').is_file()
     for name in ["POWER", "LOGIC"]:
         project = "MeshRepeater2_" + name.title()
         folder = ROOT / "design" / project
@@ -131,7 +132,7 @@ def main():
             else:
                 track_summary[logical].append({"uuid": uid(t), "width_mm": k.ToMM(t.GetWidth()), "length_mm": k.ToMM(t.GetLength()), "layer": b.GetLayerName(t.GetLayer()), "start": mm(t.GetStart()), "end": mm(t.GetEnd())})
         summaries = {}
-        for net in ["SOLAR", "BAT", "SYS_PRE", "SYS_LC_IN", "FILTER_MID", "FILTER_OUT", "SYS_3V3", "RADIO_3V3", "BAT_ADC", "ANT_RF", "ANT_SMA", "LX1", "LX2", "SW_CHG"]:
+        for net in ["SOLAR", "BAT", "BAT_SYS", "INA_VIN_P", "INA_VIN_M", "SDA", "SCL", "SYS_PRE", "SYS_LC_IN", "FILTER_MID", "FILTER_OUT", "SYS_3V3", "RADIO_3V3", "BAT_ADC", "ANT_RF", "ANT_SMA", "LX1", "LX2", "SW_CHG"]:
             if net not in track_summary:
                 continue
             ts = track_summary[net]
@@ -139,22 +140,39 @@ def main():
             summaries[net] = {"tracks": ts, "total_drawn_segment_length_mm": sum(t["length_mm"] for t in ts), "length_by_width_mm": {str(w): sum(t["length_mm"] for t in ts if t["width_mm"] == w) for w in widths}, "vias": via_summary[net]}
         connector = "J101" if name == "POWER" else "J201"
         ground_contacts = []
-        for number in [2, 4, 6, 8, 10, 12]:
+        for number in ([2, 4, 6, 8] if feature else [2, 4, 6, 8, 10, 12]):
             pad = next(p for p in footprints[connector].Pads() if p.GetNumber() == str(number))
             linked = b.GetConnectivity().GetConnectedItems(pad)
             ground_contacts.append({"pin": number, "net": pad.GetNetname(), "connected_items": len(linked), "ground_zones_in_native_connected_group": len({uid(z) for z in linked if isinstance(z, k.ZONE) and not z.GetIsRuleArea() and z.GetNetname() == "GND"}), "working_return_not_dependent_on_external_standoff": any(isinstance(z, k.ZONE) and z.GetNetname() == "GND" for z in linked)})
         board_result = {"dimensions_model_mm": [model["board"]["width"], model["board"]["height"]], "thickness_native_mm": k.ToMM(b.GetDesignSettings().GetBoardThickness()), "copper_layers": b.GetCopperLayerCount(), "design_copper_um": model["board"].get("copper_thickness_um"), "native_unconnected_count": b.GetConnectivity().GetUnconnectedCount(False), "connector_ground_contacts": ground_contacts, "nets": summaries, "paths": {}, "model_current_envelope": model.get("current_budget")}
         if name == "POWER":
             pairs = {"solar_to_bulk": (["J7", "1"], ["C8", "1"], 0.8), "solar_bulk_to_switch": (["C8", "1"], ["Q1", "2"], 0.8), "battery_to_TPS": (["J8", "1"], ["U2", "10"], 1.25), "battery_to_C53": (["J8", "1"], ["C53", "1"], 1.25), "C53_to_TPS": (["C53", "1"], ["U2", "10"], 1.25), "battery_to_sense_cable": (["J8", "1"], ["J101", "9"], 1.25e-6), "TPS_to_C12": (["U2", "10"], ["C12", "1"], 1.25), "TPS_to_C14": (["U2", "6"], ["C14", "1"], 0.5), "TPS_to_R55": (["U2", "6"], ["R55", "1"], 0.5), "R55_to_L3": (["R55", "2"], ["L3", "1"], 0.5), "L3_to_L4": (["L3", "2"], ["L4", "1"], 0.5)}
-            for pin in [1, 3, 5, 7]:
+            if feature:
+                del pairs['battery_to_TPS'];del pairs['battery_to_C53']
+                pairs.update({'battery_to_R71_RAW':(['J8','1'],['R71','2'],1.25),'R71_SYS_to_TPS':(['R71','1'],['U2','10'],1.25),'R71_SYS_to_C53':(['R71','1'],['C53','1'],1.25),'Kelvin_positive':(['R71','1'],['R72','1'],0),'Kelvin_negative':(['R71','2'],['R73','1'],0),'VS_return_to_bypass':(['J101','7'],['C63','1'],.001),'VS_bypass_to_INA':(['C63','1'],['U12','5'],.001),'SDA_to_INA':(['J101','10'],['U12','3'],0),'SCL_to_INA':(['J101','12'],['U12','4'],0)})
+            for pin in ([1, 3, 5] if feature else [1, 3, 5, 7]):
                 pairs["L4_to_cable_" + str(pin)] = (["L4", "2"], ["J101", str(pin)], 0.5)
         else:
             pairs = {"J11_to_MCU": (["J11", "2"], ["M1", "9"], 0.5), "J11_to_FB1": (["J11", "2"], ["FB1", "1"], 0.5), "J11_to_C21": (["J11", "2"], ["C21", "1"], 0.5), "FB1_to_modem": (["FB1", "2"], ["M2", "3"], 0.5), "modem_to_C23": (["M2", "3"], ["C23", "1"], 0.5), "modem_to_C24": (["M2", "3"], ["C24", "1"], 0.5), "battery_sense_to_divider": (["J201", "9"], ["R27", "1"], 1.25e-6), "ADC_to_MCU": (["R27", "2"], ["M1", "8"], 0), "SMA_trace": (["J13", "1"], ["FL1", "5"], 0), "RF_input_trace": (["M2", "1"], ["FL1", "2"], 0)}
-            for pin in [1, 3, 5, 7]:
+            if feature:
+                pairs.update({'SYS_return_to_pin7':(['J11','2'],['J201','7'],.001),'SDA_interboard_branch':(['M1','15'],['J201','10'],0),'SCL_interboard_branch':(['M1','16'],['J201','12'],0)})
+            for pin in ([1, 3, 5] if feature else [1, 3, 5, 7]):
                 pairs["cable_" + str(pin) + "_to_J11"] = (["J201", str(pin)], ["J11", "1"], 0.5)
         for title, (start, end, current) in pairs.items():
             board_result["paths"][title] = graph.path(start, end, current)
         if name == "POWER":
+            if feature:
+                # Separate actual copper routes and the real resistor between
+                # them; no virtual short is added to the native trace graph.
+                for target in ['TPS','C53']:
+                    left=board_result['paths']['battery_to_R71_RAW'];right=board_result['paths']['R71_SYS_to_'+target]
+                    total={'start':['J8','1'],'end':right['end'],'found_without_zones':left['found_without_zones'] and right['found_without_zones'],'series_component':{'reference':'R71','nominal_ohm':.1,'drop_at1_25A_mV':125,'copper_paths_only_below':True}}
+                    if total['found_without_zones']:
+                        for field in ['route_segment_length_mm','one_route_R20_mohm','one_route_drop20_mV','one_route_copper_loss20_mW']:total[field]=left[field]+right[field]
+                        for field in ['track_UUIDs','via_UUIDs','via_drills_mm','pads_traversed']:total[field]=left[field]+right[field]
+                        total['widths_mm']=sorted(set(left['widths_mm']+right['widths_mm']))
+                        total['assumed_current_A']=1.25;total['including_R71_drop20_mV']=total['one_route_drop20_mV']+125
+                    board_result['paths']['battery_to_'+target]=total
             main = board_result["paths"]["battery_to_TPS"]
             sense = board_result["paths"]["battery_to_sense_cable"]
             board_result["battery_sense_shared_native_track_UUIDs"] = sorted(set(main.get("track_UUIDs", [])) & set(sense.get("track_UUIDs", [])))
@@ -178,8 +196,11 @@ def main():
                             area = intersection_area(outline, copper_zone.GetFilledPolysList(layer))
                             if area > 1e-9:
                                 overlaps.append({"net": copper_zone.GetNetname(), "layer": b.GetLayerName(layer), "area_mm2": area})
-                keepouts.append({"outline": [mm(outline.CVertex(i)) for i in range(outline.TotalVertices())], "layer_set": zone.GetLayerSet().FmtHex(), "forbid_tracks": zone.GetDoNotAllowTracks(), "forbid_vias": zone.GetDoNotAllowVias(), "forbid_pads": zone.GetDoNotAllowPads(), "forbid_zone_fills": zone.GetDoNotAllowZoneFills(), "filled_zone_overlap": overlaps})
-            board_result["BLE_native_rule_areas"] = keepouts
+                keepouts.append({"name": zone.GetZoneName(), "uuid": uid(zone), "outline": [mm(outline.CVertex(i)) for i in range(outline.TotalVertices())], "layer_set": zone.GetLayerSet().FmtHex(), "forbid_tracks": zone.GetDoNotAllowTracks(), "forbid_vias": zone.GetDoNotAllowVias(), "forbid_pads": zone.GetDoNotAllowPads(), "forbid_zone_fills": zone.GetDoNotAllowZoneFills(), "filled_zone_overlap": overlaps})
+            board_result["native_rule_areas"] = keepouts
+            # The RF ground guard deliberately permits zone fills. Only the
+            # antenna copper-exclusion area forbids them on this LOGIC board.
+            board_result["BLE_native_rule_areas"] = [area for area in keepouts if area["forbid_zone_fills"]]
             rf_samples = []
             gnd_polys = [z.GetFilledPolysList(k.F_Cu) for z in b.Zones() if not z.GetIsRuleArea() and z.GetNetname() == "GND" and z.HasFilledPolysForLayer(k.F_Cu)]
             for net in ["ANT_RF", "ANT_SMA"]:
@@ -204,6 +225,12 @@ def main():
     inputs[selection_path] = sha(selection_path)
     changed = [str(p.relative_to(ROOT)) for p in inputs if sha(p) != inputs[p]]
     out = {"stage": "INDEPENDENT_READ_ONLY_ROUTING_ENGINEERING_SNAPSHOT", "snapshot_stable": not changed, "changed_inputs": changed, "CAD_modified": False, "thermal_or_EMI_tests_performed": False, "method": "Native tracks/pads/vias and direct local connectivity. One complete-segment shortest resistive route excludes plane conduction; it is an engineering estimate, not a full parallel-network resistance solve. Native unconnected count is separate. No IPC2152 temperature/ampacity claim.", "assumptions": {"copper_rho20_ohm_m": RHO20, "finished_copper_um": 35, "minimum_via_plating_um": 20, "resistance_temperature_multiplier_at60C": 1 + 0.00393 * 40, "connector_continuous_design_A": 0.5, "BAT_input_design_A": 1.25, "SOLAR_path_test_envelope_A": 0.8, "wire_length_provisional_m": 0.12}, "boards": boards, "cable": selection["interboard"], "stack": selection.get("stack"), "sources": {"TPS_layout": "https://www.ti.com/lit/ds/symlink/tps63802.pdf#page=28", "IDC_header": "https://en.connfly.com/static/upload/file/pdf/DS1013.pdf", "IDC_socket": "docs/mechanical_sources/DS1016.pdf", "socket_catalogue_rating": "1A from previously checked Dan article195394; DS1016 manufacturer drawing does not state ampacity", "cable": "docs/mechanical_sources/DS1057.pdf"}, "inputs": {str(p.relative_to(ROOT)): digest for p, digest in inputs.items()}}
+    if feature:
+        out['assumptions'].pop('wire_length_provisional_m')
+        out['interboard']=out.pop('cable')
+        out['sources']={'TPS_layout':'https://www.ti.com/lit/ds/symlink/tps63802.pdf#page=28','INA219':'https://www.ti.com/lit/ds/symlink/ina219.pdf','vertical_pair':'docs/vertical_interconnect_selection.json','contact_rating_scope':'Male exact-SKU rating unqualified; no summed ampacity claim.'}
+        out['INA219_measurement_shunt']={'reference':'R71','nominal_ohm':.1,'current_positive':'charge','current_negative':'discharge','charge800mA_drop_mV':80,'discharge1_25A_drop_mV':125,'charge800mA_loss_mW':64,'discharge1_25A_loss_mW':156.25,'continuous_supply_typ_mA':.7,'continuous_supply_max_mA':1,'balancer_current_excluded':True}
+        out['inputs']['design/feature_ina219_vertical.json']=sha(ROOT/'design/feature_ina219_vertical.json')
     destination = ROOT / "audit" / "v2_routing_engineering.json"
     destination.write_text(json.dumps(out, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     concise = {name: {"unconnected": d["native_unconnected_count"], "paths": {n: {field: p.get(field) for field in ["found_without_zones", "route_segment_length_mm", "widths_mm", "one_route_R20_mohm", "one_route_drop20_mV"]} for n, p in d["paths"].items()}, "common_SYS": d.get("MCU_modem_common_SYS_feed"), "BATsense_shared": d.get("battery_sense_shared_native_track_UUIDs"), "BLE_overlap": [x["filled_zone_overlap"] for x in d.get("BLE_native_rule_areas", [])], "RF_gap_min": min((x["sampled_min_F_zone_edge_gap_mm"] for x in d.get("RF_to_F_GND_zone_gap_samples", []) if x["sampled_min_F_zone_edge_gap_mm"] is not None), default=None)} for name, d in boards.items()}

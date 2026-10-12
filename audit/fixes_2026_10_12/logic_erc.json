@@ -1,0 +1,35 @@
+{
+    "$schema": "https://schemas.kicad.org/erc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-10-12T01:13:58",
+    "ignored_checks": [],
+    "included_severities": [
+        "error",
+        "warning",
+        "exclusion"
+    ],
+    "kicad_version": "10.0.6",
+    "sheets": [
+        {
+            "path": "/",
+            "uuid_path": "/105ad8a7-7e6b-542d-bfd4-ec797b1696df",
+            "violations": []
+        },
+        {
+            "path": "/2. RTC_IO/",
+            "uuid_path": "/105ad8a7-7e6b-542d-bfd4-ec797b1696df/36fe1213-2f27-532f-a671-158c04b54ac0",
+            "violations": []
+        },
+        {
+            "path": "/3. Watchdog/",
+            "uuid_path": "/105ad8a7-7e6b-542d-bfd4-ec797b1696df/028fb4c6-10e2-5047-ac36-6e7a4a84eab0",
+            "violations": []
+        },
+        {
+            "path": "/4. Interconnect/",
+            "uuid_path": "/105ad8a7-7e6b-542d-bfd4-ec797b1696df/f41cb747-67df-583a-8b1a-9bd19e8f35ea",
+            "violations": []
+        }
+    ],
+    "source": "MeshRepeater2_Logic.kicad_sch"
+}

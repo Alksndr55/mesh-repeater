@@ -30,7 +30,7 @@ for board in ['Power','Logic']:
   if ref in ['J3','J5']:
    p.update(footprint='Meshcore:Connfly_DS1022_1x04RUF11_B_Horizontal',mpn='DS1022-1x40RUF11-B cut to4pins',vendor='Danomsk',procurement_package='THT right angle P2.54 1x4',vendor_url=by_ref['J11']['dan_url'])
   if ref in positions:p['x'],p['y'],p['rotation']=positions[ref]
-  if p['kind']=='MountingHole':p.update(footprint='Meshcore:'+hole_fp,mpn='PCB land M3 GND OD6 drill3.2',procurement_package='PCB conductive mounting land')
+  if p['kind']=='MountingHole':p.update(footprint='Meshcore:'+hole_fp,mpn='PCB land M3 GND OD6 drill3.2',procurement_package='PCB conductive mounting land',value='M3 GND contact',value_lto2s='M3 GND contact',value_naion_no_cold='M3 GND contact')
   if ref=='SH1':p['note']='S4.16 frame retained; lid removed. Clearance to continuous shield checked separately.'
  model['revision']='V2.0-A1_LAYOUT';model['mechanical_selection']='docs/mechanical_selection.json';model['board']['mounting_keepout_od_mm']=6.5
  (project/'model.json').write_text(json.dumps(model,ensure_ascii=False,indent=2),encoding='utf-8')

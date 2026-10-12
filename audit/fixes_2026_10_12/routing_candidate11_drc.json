@@ -1,0 +1,1258 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-10-12T00:58:35",
+    "ignored_checks": [
+        {
+            "description": "Footprint has no courtyard defined",
+            "key": "missing_courtyard"
+        },
+        {
+            "description": "Track endpoint not centered on via",
+            "key": "track_not_centered_on_via"
+        },
+        {
+            "description": "Tuning profile track geometries",
+            "key": "tuning_profile_track_geometries"
+        },
+        {
+            "description": "Footprint doesn't match symbol's footprint filters",
+            "key": "footprint_filters_mismatch"
+        },
+        {
+            "description": "Footprint component type doesn't match footprint pads",
+            "key": "footprint_type_mismatch"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning",
+        "exclusion"
+    ],
+    "kicad_version": "10.0.6",
+    "schematic_parity": [],
+    "source": "routing_candidate11.kicad_pcb",
+    "unconnected_items": [
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Зона 'GND_REFERENCE' [GND] на B.Cu, приоритет 0",
+                    "pos": {
+                        "x": 0.4,
+                        "y": 0.4
+                    },
+                    "uuid": "ea134844-3180-40ec-879f-9967ac403446"
+                },
+                {
+                    "description": "Перех. отв. [GND] на F.Cu - B.Cu",
+                    "pos": {
+                        "x": 36.0,
+                        "y": 28.3
+                    },
+                    "uuid": "c8cfbe6c-fa26-466d-a963-1563162fadf6"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Перех. отв. [GND] на F.Cu - B.Cu",
+                    "pos": {
+                        "x": 36.0,
+                        "y": 21.2
+                    },
+                    "uuid": "3c9c923b-3098-485d-b644-9b2867a323c6"
+                },
+                {
+                    "description": "Зона 'GND_TOP' [GND] на F.Cu, приоритет 0",
+                    "pos": {
+                        "x": 0.4,
+                        "y": 0.4
+                    },
+                    "uuid": "5989b2e1-22a1-44ff-bb18-b5c6fed99116"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Перех. отв. [GND] на F.Cu - B.Cu",
+                    "pos": {
+                        "x": 36.0,
+                        "y": 21.2
+                    },
+                    "uuid": "3c9c923b-3098-485d-b644-9b2867a323c6"
+                },
+                {
+                    "description": "Перех. отв. [GND] на F.Cu - B.Cu",
+                    "pos": {
+                        "x": 42.8,
+                        "y": 22.1
+                    },
+                    "uuid": "94cad2b3-4d57-46a4-90a6-ab235ed7ca7b"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Перех. отв. [GND] на F.Cu - B.Cu",
+                    "pos": {
+                        "x": 37.5,
+                        "y": 28.5
+                    },
+                    "uuid": "a765aa46-732a-4a5d-b10d-736e8b4d5487"
+                },
+                {
+                    "description": "Перех. отв. [GND] на F.Cu - B.Cu",
+                    "pos": {
+                        "x": 36.0,
+                        "y": 28.3
+                    },
+                    "uuid": "c8cfbe6c-fa26-466d-a963-1563162fadf6"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Дорожка [GPS_TX_MCU] на B.Cu, длина 0,7778 mm",
+                    "pos": {
+                        "x": 36.1,
+                        "y": 22.0
+                    },
+                    "uuid": "90ca6670-5ca7-4e6a-972f-99edbfe00f2f"
+                },
+                {
+                    "description": "Дорожка [GPS_TX_MCU] на B.Cu, длина 8,4000 mm",
+                    "pos": {
+                        "x": 38.7,
+                        "y": 19.6
+                    },
+                    "uuid": "ca37cf67-5d6d-4b5d-997b-c6646c619eba"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Дорожка [WDT_MOSI_RESET] на F.Cu, длина 2,0380 mm",
+                    "pos": {
+                        "x": 39.397,
+                        "y": 32.005
+                    },
+                    "uuid": "e3c0f42a-0555-4296-9da4-aab66232cb27"
+                },
+                {
+                    "description": "PTH конт. пл. 4 [WDT_MOSI_RESET] у J10",
+                    "pos": {
+                        "x": 38.24,
+                        "y": 33.84
+                    },
+                    "uuid": "24aad3bd-63ab-4f34-8eff-cfa07a448b55"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Дорожка [Net-(M2-SCK)] на B.Cu, длина 2,5000 mm",
+                    "pos": {
+                        "x": 39.1,
+                        "y": 24.2
+                    },
+                    "uuid": "f8324752-800d-4198-8ff6-b7ffc08e0d29"
+                },
+                {
+                    "description": "Дорожка [Net-(M2-SCK)] на F.Cu, длина 3,7000 mm",
+                    "pos": {
+                        "x": 31.5,
+                        "y": 28.1
+                    },
+                    "uuid": "e7e7bf98-3aba-48f7-9e27-54374a472ec5"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Дорожка [/RADIO_DIO1] на B.Cu, длина 2,1000 mm",
+                    "pos": {
+                        "x": 39.5,
+                        "y": 25.1
+                    },
+                    "uuid": "9f2386fc-0909-4f80-b20f-fd2e29640e9e"
+                },
+                {
+                    "description": "Дорожка [/RADIO_DIO1] на F.Cu, длина 4,5000 mm",
+                    "pos": {
+                        "x": 33.4,
+                        "y": 26.7
+                    },
+                    "uuid": "111c4c71-7df7-494b-9e6d-c451242c1c05"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        }
+    ],
+    "violations": [
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "Перех. отв. [GND] на F.Cu - B.Cu",
+                    "pos": {
+                        "x": 36.0,
+                        "y": 21.2
+                    },
+                    "uuid": "3c9c923b-3098-485d-b644-9b2867a323c6"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "Перех. отв. [GND] на F.Cu - B.Cu",
+                    "pos": {
+                        "x": 42.8,
+                        "y": 22.1
+                    },
+                    "uuid": "94cad2b3-4d57-46a4-90a6-ab235ed7ca7b"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "Перех. отв. [GND] на F.Cu - B.Cu",
+                    "pos": {
+                        "x": 37.5,
+                        "y": 28.5
+                    },
+                    "uuid": "a765aa46-732a-4a5d-b10d-736e8b4d5487"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "Перех. отв. [GND] на F.Cu - B.Cu",
+                    "pos": {
+                        "x": 36.0,
+                        "y": 28.3
+                    },
+                    "uuid": "c8cfbe6c-fa26-466d-a963-1563162fadf6"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "Дорожка [GPS_TX_MCU] на B.Cu, длина 0,1000 mm",
+                    "pos": {
+                        "x": 36.4,
+                        "y": 21.8
+                    },
+                    "uuid": "5dce3d9c-f5ee-4020-8f0b-7aab90f25eaf"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "Дорожка [GPS_TX_MCU] на B.Cu, длина 0,7778 mm",
+                    "pos": {
+                        "x": 36.1,
+                        "y": 22.0
+                    },
+                    "uuid": "90ca6670-5ca7-4e6a-972f-99edbfe00f2f"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "Дорожка [GPS_TX_MCU] на B.Cu, длина 8,4000 mm",
+                    "pos": {
+                        "x": 38.7,
+                        "y": 19.6
+                    },
+                    "uuid": "ca37cf67-5d6d-4b5d-997b-c6646c619eba"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "Дорожка [WDT_MOSI_RESET] на F.Cu, длина 2,0380 mm",
+                    "pos": {
+                        "x": 39.397,
+                        "y": 32.005
+                    },
+                    "uuid": "e3c0f42a-0555-4296-9da4-aab66232cb27"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "Перех. отв. [Net-(M2-SCK)] на F.Cu - B.Cu",
+                    "pos": {
+                        "x": 35.2,
+                        "y": 28.1
+                    },
+                    "uuid": "8d708bb7-946b-491e-b259-6c91f3763eb6"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "Дорожка [Net-(M2-SCK)] на B.Cu, длина 2,5000 mm",
+                    "pos": {
+                        "x": 39.1,
+                        "y": 24.2
+                    },
+                    "uuid": "f8324752-800d-4198-8ff6-b7ffc08e0d29"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "Дорожка [/RADIO_DIO1] на F.Cu, длина 4,5000 mm",
+                    "pos": {
+                        "x": 33.4,
+                        "y": 26.7
+                    },
+                    "uuid": "111c4c71-7df7-494b-9e6d-c451242c1c05"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "Дорожка [/RADIO_DIO1] на B.Cu, длина 2,1000 mm",
+                    "pos": {
+                        "x": 39.5,
+                        "y": 25.1
+                    },
+                    "uuid": "9f2386fc-0909-4f80-b20f-fd2e29640e9e"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Текущая конфигурация не включает библиотеку посадочных мест 'Meshcore'",
+            "items": [
+                {
+                    "description": "Посад. место U7",
+                    "pos": {
+                        "x": 64.0,
+                        "y": 10.0
+                    },
+                    "uuid": "0438377d-3752-44c9-9074-70a283e189e4"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "Текущая конфигурация не включает библиотеку посадочных мест 'Meshcore'",
+            "items": [
+                {
+                    "description": "Посад. место FB1",
+                    "pos": {
+                        "x": 33.8,
+                        "y": 14.45
+                    },
+                    "uuid": "075214a1-b814-4ed7-864f-31c6488bd69e"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "Текущая конфигурация не включает библиотеку посадочных мест 'Meshcore'",
+            "items": [
+                {
+                    "description": "Посад. место R21",
+                    "pos": {
+                        "x": 48.0,
+                        "y": 45.0
+                    },
+                    "uuid": "14bf8459-f5f4-496b-a819-bd546aa317cb"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "Текущая конфигурация не включает библиотеку посадочных мест 'Meshcore'",
+            "items": [
+                {
+                    "description": "Посад. место R44",
+                    "pos": {
+                        "x": 68.0,
+                        "y": 20.8
+                    },
+                    "uuid": "18d3d26d-081e-4139-89de-ee269f7fe158"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "Текущая конфигурация не включает библиотеку посадочных мест 'Meshcore'",
+            "items": [
+                {
+                    "description": "Посад. место C26",
+                    "pos": {
+                        "x": 6.7,
+                        "y": 27.5
+                    },
+                    "uuid": "191cbe79-da31-4c9e-bc59-0a8e61d18630"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "Текущая конфигурация не включает библиотеку посадочных мест 'Meshcore'",
+            "items": [
+                {
+                    "description": "Посад. место R33",
+                    "pos": {
+                        "x": 28.7,
+                        "y": 7.5
+                    },
+                    "uuid": "19554527-bef1-4652-910b-a87e8a93466f"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "Текущая конфигурация не включает библиотеку посадочных мест 'Meshcore'",
+            "items": [
+                {
+                    "description": "Посад. место Q2",
+                    "pos": {
+                        "x": 63.5,
+                        "y": 17.0
+                    },
+                    "uuid": "1a1ae55b-c09b-4559-ae18-f4eefe1144c0"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "Текущая конфигурация не включает библиотеку посадочных мест 'Meshcore'",
+            "items": [
+                {
+                    "description": "Посад. место R30",
+                    "pos": {
+                        "x": 80.8,
+                        "y": 14.4
+                    },
+                    "uuid": "1a4df941-e439-4b04-a10e-4bb6ec441005"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "Текущая конфигурация не включает библиотеку посадочных мест 'Meshcore'",
+            "items": [
+                {
+                    "description": "Посад. место C25",
+                    "pos": {
+                        "x": 33.0,
+                        "y": 17.3
+                    },
+                    "uuid": "1b0c9538-45f1-4cc4-8a71-cfbe046cbac3"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "Текущая конфигурация не включает библиотеку посадочных мест 'Meshcore'",
+            "items": [
+                {
+                    "description": "Посад. место R36",
+                    "pos": {
+                        "x": 50.0,
+                        "y": 38.035
+                    },
+                    "uuid": "1b5dcb76-b976-4ca1-a42b-7f496873164d"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "Текущая конфигурация не включает библиотеку посадочных мест 'Meshcore'",
+            "items": [
+                {
+                    "description": "Посад. место R24",
+                    "pos": {
+                        "x": 30.0,
+                        "y": 23.58
+                    },
+                    "uuid": "1d8046d0-15d0-4b0f-9a22-b614bc1518b3"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "Текущая конфигурация не включает библиотеку посадочных мест 'Meshcore'",
+            "items": [
+                {
+                    "description": "Посад. место SW2",
+                    "pos": {
+                        "x": 41.0,
+                        "y": 58.2
+                    },
+                    "uuid": "1f79e8cf-8155-4a89-96d0-7e298244e201"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "Текущая конфигурация не включает библиотеку посадочных мест 'Meshcore'",
+            "items": [
+                {
+                    "description": "Посад. место C57",
+                    "pos": {
+                        "x": 63.5,
+                        "y": 3.2
+                    },
+                    "uuid": "23417f48-9337-4efe-8e9d-6de8bc8fbc66"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "Текущая конфигурация не включает библиотеку посадочных мест 'Meshcore'",
+            "items": [
+                {
+                    "description": "Посад. место J13",
+                    "pos": {
+                        "x": 34.5,
+                        "y": 4.25
+                    },
+                    "uuid": "273ea148-97f9-402b-8e51-1948dd0f166a"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "Текущая конфигурация не включает библиотеку посадочных мест 'Meshcore'",
+            "items": [
+                {
+                    "description": "Посад. место TP4",
+                    "pos": {
+                        "x": 88.4,
+                        "y": 8.5
+                    },
+                    "uuid": "34696bad-ba54-4122-8121-9f38e0340d54"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "Текущая конфигурация не включает библиотеку посадочных мест 'Meshcore'",
+            "items": [
+                {
+                    "description": "Посад. место J10",
+                    "pos": {
+                        "x": 35.7,
+                        "y": 31.3
+                    },
+                    "uuid": "39f09937-e3d1-4dc3-8b77-3ebd6a6e8e4c"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "Текущая конфигурация не включает библиотеку посадочных мест 'Meshcore'",
+            "items": [
+                {
+                    "description": "Посад. место C33",
+                    "pos": {
+                        "x": 41.525,
+                        "y": 39.2
+                    },
+                    "uuid": "3a2a57ef-2d1f-40c1-b82b-de238ac9b0cc"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "Текущая конфигурация не включает библиотеку посадочных мест 'Meshcore'",
+            "items": [
+                {
+                    "description": "Посад. место R27",
+                    "pos": {
+                        "x": 29.8,
+                        "y": 19.0
+                    },
+                    "uuid": "42f1d288-843f-45b9-8909-e24d2db73824"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "Текущая конфигурация не включает библиотеку посадочных мест 'Meshcore'",
+            "items": [
+                {
+                    "description": "Посад. место R45",
+                    "pos": {
+                        "x": 68.8,
+                        "y": 10.9
+                    },
+                    "uuid": "48f4c9a7-074b-4a67-b9da-90cb86c4f57d"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "Текущая конфигурация не включает библиотеку посадочных мест 'Meshcore'",
+            "items": [
+                {
+                    "description": "Посад. место Q3",
+                    "pos": {
+                        "x": 68.0,
+                        "y": 17.0
+                    },
+                    "uuid": "4e0d8791-c046-40e8-b9f0-8515fc6ec6bc"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "Текущая конфигурация не включает библиотеку посадочных мест 'Meshcore'",
+            "items": [
+                {
+                    "description": "Посад. место C27",
+                    "pos": {
+                        "x": 71.5,
+                        "y": 7.365
+                    },
+                    "uuid": "4ed14330-eea1-4152-b3c5-710be73c4ac7"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "Текущая конфигурация не включает библиотеку посадочных мест 'Meshcore'",
+            "items": [
+                {
+                    "description": "Посад. место R37",
+                    "pos": {
+                        "x": 42.5,
+                        "y": 28.67
+                    },
+                    "uuid": "5712764c-470e-42b1-a394-8a3b8d1b58b5"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "Текущая конфигурация не включает библиотеку посадочных мест 'Meshcore'",
+            "items": [
+                {
+                    "description": "Посад. место R42",
+                    "pos": {
+                        "x": 64.5,
+                        "y": 20.8
+                    },
+                    "uuid": "5c48736c-b347-4dd3-878e-fdcf94b145dd"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "Текущая конфигурация не включает библиотеку посадочных мест 'Meshcore'",
+            "items": [
+                {
+                    "description": "Посад. место J4",
+                    "pos": {
+                        "x": 52.0,
+                        "y": 3.0
+                    },
+                    "uuid": "5e799371-9700-43eb-94f8-cb440c260145"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "Текущая конфигурация не включает библиотеку посадочных мест 'Meshcore'",
+            "items": [
+                {
+                    "description": "Посад. место J5",
+                    "pos": {
+                        "x": 2.5,
+                        "y": 18.12
+                    },
+                    "uuid": "62c3cec5-7a9b-451c-a3a8-87cc18b17d95"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "Текущая конфигурация не включает библиотеку посадочных мест 'Meshcore'",
+            "items": [
+                {
+                    "description": "Посад. место R28",
+                    "pos": {
+                        "x": 29.8,
+                        "y": 15.6
+                    },
+                    "uuid": "664d1265-cf97-42a0-a741-de99b11b4069"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "Текущая конфигурация не включает библиотеку посадочных мест 'Meshcore'",
+            "items": [
+                {
+                    "description": "Посад. место NT1",
+                    "pos": {
+                        "x": 40.7,
+                        "y": 4.25
+                    },
+                    "uuid": "7820ace3-90e9-452f-a3b2-1d28d6195ecd"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "Текущая конфигурация не включает библиотеку посадочных мест 'Meshcore'",
+            "items": [
+                {
+                    "description": "Посад. место SW1",
+                    "pos": {
+                        "x": 29.0,
+                        "y": 58.2
+                    },
+                    "uuid": "7a127486-6a90-4f66-8ccd-927369b5a73e"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "Текущая конфигурация не включает библиотеку посадочных мест 'Meshcore'",
+            "items": [
+                {
+                    "description": "Посад. место R46",
+                    "pos": {
+                        "x": 59.4,
+                        "y": 9.675
+                    },
+                    "uuid": "7f2670d2-4d60-4f77-921b-e5df39744f56"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "Текущая конфигурация не включает библиотеку посадочных мест 'Meshcore'",
+            "items": [
+                {
+                    "description": "Посад. место R23",
+                    "pos": {
+                        "x": 30.0,
+                        "y": 28.66
+                    },
+                    "uuid": "80615182-8bd5-4434-92a5-aebf8f84dccb"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "Текущая конфигурация не включает библиотеку посадочных мест 'Meshcore'",
+            "items": [
+                {
+                    "description": "Посад. место J201",
+                    "pos": {
+                        "x": 76.85,
+                        "y": 49.0
+                    },
+                    "uuid": "865b2a79-1399-4337-972a-f5f57041996d"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "Текущая конфигурация не включает библиотеку посадочных мест 'Meshcore'",
+            "items": [
+                {
+                    "description": "Посад. место R31",
+                    "pos": {
+                        "x": 6.7,
+                        "y": 30.5
+                    },
+                    "uuid": "8d2c82e8-24f5-47ea-9a76-3e502806d179"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "Текущая конфигурация не включает библиотеку посадочных мест 'Meshcore'",
+            "items": [
+                {
+                    "description": "Посад. место J11",
+                    "pos": {
+                        "x": 86.0,
+                        "y": 23.0
+                    },
+                    "uuid": "96769247-23bf-4912-830c-c9acfbf62043"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "Текущая конфигурация не включает библиотеку посадочных мест 'Meshcore'",
+            "items": [
+                {
+                    "description": "Посад. место C24",
+                    "pos": {
+                        "x": 37.6,
+                        "y": 14.05
+                    },
+                    "uuid": "a347f4f2-2ade-49dc-b979-4e2a4d215979"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "Текущая конфигурация не включает библиотеку посадочных мест 'Meshcore'",
+            "items": [
+                {
+                    "description": "Посад. место C21",
+                    "pos": {
+                        "x": 29.05,
+                        "y": 11.3
+                    },
+                    "uuid": "a4acf851-49f0-473e-bcb2-1b5bdeb0879d"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "Текущая конфигурация не включает библиотеку посадочных мест 'Meshcore'",
+            "items": [
+                {
+                    "description": "Посад. место TP7",
+                    "pos": {
+                        "x": 87.0,
+                        "y": 52.0
+                    },
+                    "uuid": "a5880427-49a9-424a-95fb-dc4a440b9ebc"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "Текущая конфигурация не включает библиотеку посадочных мест 'Meshcore'",
+            "items": [
+                {
+                    "description": "Посад. место R35",
+                    "pos": {
+                        "x": 59.4,
+                        "y": 16.5
+                    },
+                    "uuid": "ab1eb457-7639-42b5-b217-b175cc56b5a0"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "Текущая конфигурация не включает библиотеку посадочных мест 'Meshcore'",
+            "items": [
+                {
+                    "description": "Посад. место BT1",
+                    "pos": {
+                        "x": 72.0,
+                        "y": 35.0
+                    },
+                    "uuid": "b13f0bfc-a816-4fce-9e0d-c00967696ec8"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "Текущая конфигурация не включает библиотеку посадочных мест 'Meshcore'",
+            "items": [
+                {
+                    "description": "Посад. место R25",
+                    "pos": {
+                        "x": 30.0,
+                        "y": 26.12
+                    },
+                    "uuid": "b26d73b0-b770-4988-a78d-72c095f9ba86"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "Текущая конфигурация не включает библиотеку посадочных мест 'Meshcore'",
+            "items": [
+                {
+                    "description": "Посад. место H203",
+                    "pos": {
+                        "x": 3.5,
+                        "y": 56.5
+                    },
+                    "uuid": "b281dde2-7119-4903-bec9-41f1130c0b1a"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "Текущая конфигурация не включает библиотеку посадочных мест 'Meshcore'",
+            "items": [
+                {
+                    "description": "Посад. место R29",
+                    "pos": {
+                        "x": 80.8,
+                        "y": 17.2
+                    },
+                    "uuid": "b616344f-0a7c-44c9-bd68-e9cc6b398590"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "Текущая конфигурация не включает библиотеку посадочных мест 'Meshcore'",
+            "items": [
+                {
+                    "description": "Посад. место H201",
+                    "pos": {
+                        "x": 3.5,
+                        "y": 3.5
+                    },
+                    "uuid": "b83c6b10-afb6-4b40-9746-19d5a81cdbee"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "Текущая конфигурация не включает библиотеку посадочных мест 'Meshcore'",
+            "items": [
+                {
+                    "description": "Посад. место FL1",
+                    "pos": {
+                        "x": 40.7,
+                        "y": 4.25
+                    },
+                    "uuid": "c15de10d-4c76-486a-836d-1fcc11722662"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "Текущая конфигурация не включает библиотеку посадочных мест 'Meshcore'",
+            "items": [
+                {
+                    "description": "Посад. место U6",
+                    "pos": {
+                        "x": 44.0,
+                        "y": 34.0
+                    },
+                    "uuid": "c693aef2-3e0a-4995-b6ca-f9e11bf3b1a9"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "Текущая конфигурация не включает библиотеку посадочных мест 'Meshcore'",
+            "items": [
+                {
+                    "description": "Посад. место R39",
+                    "pos": {
+                        "x": 50.0,
+                        "y": 31.235
+                    },
+                    "uuid": "cf59a077-6272-4d38-9383-ba9737f65994"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "Текущая конфигурация не включает библиотеку посадочных мест 'Meshcore'",
+            "items": [
+                {
+                    "description": "Посад. место C56",
+                    "pos": {
+                        "x": 63.5,
+                        "y": 6.3
+                    },
+                    "uuid": "d2a6e723-434f-4169-b34a-1066638d825b"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "Текущая конфигурация не включает библиотеку посадочных мест 'Meshcore'",
+            "items": [
+                {
+                    "description": "Посад. место C22",
+                    "pos": {
+                        "x": 32.1,
+                        "y": 11.3
+                    },
+                    "uuid": "d3926c6b-3260-4b37-9535-8c73541b98f2"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "Текущая конфигурация не включает библиотеку посадочных мест 'Meshcore'",
+            "items": [
+                {
+                    "description": "Посад. место R38",
+                    "pos": {
+                        "x": 50.0,
+                        "y": 34.635
+                    },
+                    "uuid": "d3f6d4a8-9d32-438a-8939-b316a9137030"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "Текущая конфигурация не включает библиотеку посадочных мест 'Meshcore'",
+            "items": [
+                {
+                    "description": "Посад. место H204",
+                    "pos": {
+                        "x": 86.5,
+                        "y": 56.5
+                    },
+                    "uuid": "d4d5c891-fe2a-4afe-acfe-b7801d6ae89d"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "Текущая конфигурация не включает библиотеку посадочных мест 'Meshcore'",
+            "items": [
+                {
+                    "description": "Посад. место M2",
+                    "pos": {
+                        "x": 48.0,
+                        "y": 18.0
+                    },
+                    "uuid": "da48bc72-f595-46fb-ae7c-12d6a5c28369"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "Текущая конфигурация не включает библиотеку посадочных мест 'Meshcore'",
+            "items": [
+                {
+                    "description": "Посад. место M1",
+                    "pos": {
+                        "x": 18.0,
+                        "y": 18.5
+                    },
+                    "uuid": "de7a8474-7db6-4057-8230-6ac29f62af00"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "Текущая конфигурация не включает библиотеку посадочных мест 'Meshcore'",
+            "items": [
+                {
+                    "description": "Посад. место U4",
+                    "pos": {
+                        "x": 77.0,
+                        "y": 8.0
+                    },
+                    "uuid": "df374ae8-09ee-4788-9a83-b530f8deac41"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "Текущая конфигурация не включает библиотеку посадочных мест 'Meshcore'",
+            "items": [
+                {
+                    "description": "Посад. место R43",
+                    "pos": {
+                        "x": 71.5,
+                        "y": 20.8
+                    },
+                    "uuid": "e1bc77af-c08c-4eba-b651-d590a5fb618e"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "Текущая конфигурация не включает библиотеку посадочных мест 'Meshcore'",
+            "items": [
+                {
+                    "description": "Посад. место J3",
+                    "pos": {
+                        "x": 86.0,
+                        "y": 12.0
+                    },
+                    "uuid": "e1c625b5-2d42-46f6-a301-8ee86f19292c"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "Текущая конфигурация не включает библиотеку посадочных мест 'Meshcore'",
+            "items": [
+                {
+                    "description": "Посад. место C23",
+                    "pos": {
+                        "x": 35.6,
+                        "y": 11.65
+                    },
+                    "uuid": "ef2330b0-c87b-4a66-8a34-1bd21583e8f8"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "Текущая конфигурация не включает библиотеку посадочных мест 'Meshcore'",
+            "items": [
+                {
+                    "description": "Посад. место R26",
+                    "pos": {
+                        "x": 59.4,
+                        "y": 18.8
+                    },
+                    "uuid": "f124809b-7be9-4918-8e98-bbe8aa0b4168"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "Текущая конфигурация не включает библиотеку посадочных мест 'Meshcore'",
+            "items": [
+                {
+                    "description": "Посад. место H202",
+                    "pos": {
+                        "x": 86.5,
+                        "y": 3.5
+                    },
+                    "uuid": "fec321fb-8d57-463f-879b-187f45318145"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        }
+    ]
+}

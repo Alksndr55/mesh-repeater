@@ -1,6 +1,6 @@
 """Verify final saved artifacts and their provenance without modifying CAD."""
 from pathlib import Path
-import hashlib,json,sys
+import gzip,hashlib,json,sys
 ROOT=Path(__file__).resolve().parents[1]
 BASE='cf54f9970e716272d477afdb252b4e195d595cb6'
 
@@ -9,6 +9,9 @@ def sha(p):return hashlib.sha256(p.read_bytes()).hexdigest()
 def resolve(p):return ROOT/str(p).replace('\\','/')
 
 def main():
+ if (ROOT/'design/feature_ina219_vertical.json').is_file():
+  from verify_v2_a2_feature_artifacts import main as a2_main
+  return a2_main()
  checks=[];inputs={}
  def check(name,ok,detail=None):checks.append({'name':name,'pass':bool(ok),'detail':detail})
  def bound(path,expected):
@@ -24,6 +27,11 @@ def main():
   doc=load('audit/'+name+'.json')
   check(name+' all conditions',doc.get('ok') and all(x.get('pass') for x in doc['checks']),len(doc['checks']))
   for p,h in doc.get('inputs',{}).items():bound(p,h)
+ review=load('audit/fixes_2026_10_12/reviewer.json')
+ check('Independent review: five V2 corrections',review['status']=='PASS_FIVE_CORRECTIONS_WITH_INHERITED_OPEN_RISKS' and not review['additional_confirmed_P2_in_corrected_areas'])
+ bound('design/MeshRepeater2_Logic/MeshRepeater2_Logic.kicad_pcb',review['native_LOGIC_sha256'])
+ for p,h in review['evidence_sha256'].items():bound('audit/fixes_2026_10_12/'+p,h)
+ objects(load('audit/v2_independent_final_review.json'))
  for board in ('POWER','LOGIC','SHIELD'):
   d=load(f'output/{board}/MeshRepeater2_{board.title()}_drc.json')
   counts={k:len(d.get(k,[])) for k in ('violations','unconnected_items','schematic_parity','ignored_checks')}
@@ -50,6 +58,12 @@ def main():
  frozen=load('baseline/S4_16/freeze_manifest.json')
  for p,h in frozen['files'].items():bound('baseline/S4_16/'+p,h)
  check('Frozen S4.16 commit',frozen['published_commit']==BASE)
+ for transport in load('docs/step_transport.json')['files']:
+  bound(transport['original_path'],transport['original_sha256'])
+  bound(transport['transport_path'],transport['gzip_sha256'])
+  with gzip.open(resolve(transport['transport_path']),'rb') as stream:
+   recovered=hashlib.file_digest(stream,'sha256').hexdigest()
+  check('Lossless STEP transport '+transport['transport_path'],recovered==transport['verified_decompressed_sha256']==transport['original_sha256'])
  required=['output/pdf/MeshRepeater2_assembly_manual_RU.pdf','output/pdf/MeshRepeater2_assembly_dimensions.pdf','output/V2_OVERVIEW_RU.html','bom/V2_COMPONENT_BOM.csv','bom/DAN_NEW_PARTS.csv']
  for p in required:check('Present '+p,(ROOT/p).is_file() and (ROOT/p).stat().st_size>0)
  for p in ('README.md','docs/V2_ASSEMBLY_INSTRUCTIONS_RU.md','docs/V2_LIMITATIONS_RU.md','audit/v2_native_boards_final.json','audit/v2_schematic_equivalence.json','audit/v2_routing_engineering.json','audit/v2_independent_final_review.json','docs/step_transport.json',*required):

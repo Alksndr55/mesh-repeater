@@ -2,7 +2,7 @@
 
 Only MeshRepeater2_Shield is written. The foil is native F.Cu and faces down
 after the X180 assembly flip. The GND label assigns only the foil/contact
-assembly; power and signal return use the separate interboard cable.
+assembly; power and signal return use the separate vertical interboard pins.
 """
 from pathlib import Path
 import argparse, csv, hashlib, json, subprocess
@@ -41,6 +41,8 @@ def local_libraries():
  (fp_rect (start -0.2 -0.2) (end 0.2 0.2) (stroke (width 0.05) (type default)) (fill none) (layer "F.CrtYd"))
  (pad "1" smd rect (at 0 0) (size 0.2 0.2) (layers "F.Cu") (zone_connect 2))
 )\n''',encoding='utf8')
+    from update_v2_vertical_interconnect import SHIELD_HOLES,shield_footprint
+    (lib/(SHIELD_HOLES+'.kicad_mod')).write_text(shield_footprint(),encoding='utf8')
     (DIR/'fp-lib-table').write_text('(fp_lib_table (version 7) (lib (name "Shield")(type "KiCad")(uri "${KIPRJMOD}/Shield.pretty")(options "")(descr "Local mechanical shield library")))\n',encoding='utf8')
     (DIR/'sym-lib-table').write_text('(sym_lib_table (version 7))\n',encoding='utf8')
     return lib,hole,anchor
@@ -66,23 +68,23 @@ def artwork(b,rows):
     vals=lambda variant:'   '.join(r+' '+short(rows[r],variant) for r in ('R3','R4','C30'))
     ens=lambda variant:'   '.join(r+' '+short(rows[r],variant) for r in ('R15','R16'))
     texts=[]
-    def add(s,y,layer,font=.95,bold=False):texts.append(text(b,s,45,y,layer,font,bold))
+    def add(s,y,layer,font=.95,bold=False,x=45):texts.append(text(b,s,x,y,layer,font,bold))
     add('Mesh Repeater 2.0 / SHIELD / V2.0-A1',8,f,1.2,True)
     add('COPPER SIDE DOWN / GND CONTACT OD6',11.2,f,1.,True)
     add('POWER below: CN3722 + TPS63802 + 2-stage LC',15.5,f)
     add('LOGIC above: NiceNano + HT-RA62 + RTC + watchdog',18.2,f)
     add('J7 SOLAR: 1 + / 2 GND. Panel 12V; Voc <=24V.',22.2,f)
     add('J8 BAT: 1 + / 2 GND. J12 LTO: 1 BAT / 2 MID / 3 GND / 4 NC.',24.9,f,.88)
-    add('J101 <-> J201: cable pins 1:1; route around screen edge.',29.1,f)
-    add('1/3/5/7 FILTER_OUT   all even GND   9 BAT   11 MODE',31.8,f)
-    add('Cable supplies power/GND; metal stands are for shield contact.',34.5,f,.9)
+    add('J101 <-> J201: straight 2x6 pins THROUGH screen holes.',29.1,f)
+    add('1/3/5 FILTER_OUT; 2/4/6/8 GND; 7 SYS_3V3; 9 BAT',31.8,f)
+    add('10 SDA; 11 MODE; 12 SCL. Stands connect shield foil.',34.5,f,.9)
     add('Before USB: REMOVE J11. Refit only after USB is disconnected.',38.7,f,.9,True)
     add('Keep all four foil contacts clean. Use metal DIN433 M3 washers.',42.7,f,.9)
-    add('No SH1 frame/lid. Continuous foil: no slots or cut-out letters.',45.4,f,.9)
-    add('M3 holes 3.2mm / washer OD6 / PCB 1.52mm / foil one face',49.6,f,.9)
-    add('Disconnect solar + battery + USB before disassembly.',52.3,f,.9,True)
+    add('12 x NPTH2.0mm / drill-to-foil gap0.50mm. Inspect pin fit.',45.4,f,.9)
+    add('M3 3.2mm / contact OD6 / PCB1.52mm',49.6,f,.85,x=35)
+    add('DISCONNECT ALL POWER BEFORE DISASSEMBLY',55.2,f,.8,True,x=42)
 
-    add('Mesh Repeater 2.0 / SHIELD / V2.0-A1',8,back,1.2,True)
+    add('Mesh Repeater 2.0 / SHIELD / V2.0-A1',8,back,1.2,True,x=35)
     add('UPPER FACE / ASSEMBLY QUICK GUIDE',11.2,back,1.,True)
     add('Na-ion 1S: fit COLD; omit BAL1/BAL2. R56 '+short(rows['R56'],'NaIon'),15.5,back)
     add(vals('NaIon'),18.2,back)
@@ -96,7 +98,7 @@ def artwork(b,rows):
     add('RTC: CR2032 primary cell. D3 CHARGE / D4 DONE on POWER.',44.3,back,.9)
     add('Below: stand 18mm + washer. Above: washer + stand 15mm.',48.5,back,.9)
     add('Metal washers DIN433 3.2 x 6 x 0.5mm; 5 per corner.',51.2,back,.9)
-    add('Full assembly instructions / cable / variants: project docs.',53.9,back,.9)
+    add('Pin35mm / socket8.5mm / nominal engagement4.48mm.',53.9,back,.9)
     return texts
 
 def write_settings():
@@ -117,9 +119,9 @@ def audit(b,texts,path,csvpath):
     z=zones[0];filled=k.SHAPE_POLY_SET(z.GetFilledPolysList(k.F_Cu));filled.Unfracture()
     counts={'native_container_copper_layers':b.GetCopperLayerCount(),'manufacturing_copper_layers':1,'filled_outline_count':filled.OutlineCount(),'filled_holes':sum(filled.HoleCount(i) for i in range(filled.OutlineCount()))}
     assert counts['filled_outline_count']==1,'Foil must be a single connected region'
-    assert counts['filled_holes']==4,'Only the four mounting drill clearances may remove foil'
+    assert counts['filled_holes']==5,'Four M3 clearances plus one copper-only pin-array clearance'
     assert z.GetIslandRemovalMode()==k.ISLAND_REMOVAL_MODE_NEVER
-    assert len(list(b.GetTracks()))==0 and len(list(b.GetFootprints()))==5
+    assert len(list(b.GetTracks()))==0 and len(list(b.GetFootprints()))==6
     assert not any(g.GetLayer() in (k.F_Cu,k.B_Cu) for g in b.GetDrawings()),'Text/graphics must not cut or add copper'
     edge=b.GetBoardEdgesBoundingBox();size=[mm(edge.GetWidth()),mm(edge.GetHeight())]
     # Edge.Cuts line widths expand bounding box; pad coordinate outline is exact.
@@ -141,7 +143,9 @@ def audit(b,texts,path,csvpath):
         assert box[0]>=bounds[0] and box[1]>=bounds[1] and box[2]<=bounds[2] and box[3]<=bounds[3],'Text outside physical screen'
         textrows.append(dict(text=t.GetText(),layer=k.LayerName(t.GetLayer()),font_mm=mm(t.GetTextHeight()),box_mm=box))
     assert not any(p.IsOnLayer(k.B_Cu) and p.GetAttribute()!=k.PAD_ATTRIB_NPTH for f in b.GetFootprints() for p in f.Pads()),'Back must have no copper pad'
-    return {'project':NAME,'pcb_sha256':digest(path),'variants_csv_sha256':digest(csvpath),'checks':counts,'native_one_layer_limitation':'KiCad10 SetCopperLayerCount(1) reports1 only in memory; SaveBoard/reload restores2 and an F-only layers stanza is rejected. Valid native project uses minimum2-layer container, but all manufacturing copper is F.Cu; B.Cu has no features and must not be manufactured.','outline_segments_mm':outline,'nominal_size_mm':[90,60],'board_thickness_mm':mm(b.GetDesignSettings().GetBoardThickness()),'assembly_flip':'X180','assembled_copper_face':'DOWN','continuous_foil':True,'four_contact_rings':contact,'island_removal':'NEVER','copper_anchor':'GF1: hidden 0.2mm copper-only pad, no electronic BOM/assembly part','no_copper_text_or_slots':True,'all_markings':textrows,'minimum_font_mm':min(t['font_mm'] for t in textrows)}
+    pinholes=footprints['HS1'];assert len(list(pinholes.Pads()))==12
+    assert all(p.GetAttribute()==k.PAD_ATTRIB_NPTH and abs(mm(p.GetDrillSize().x)-2)<1e-6 for p in pinholes.Pads())
+    return {'project':NAME,'pcb_sha256':digest(path),'variants_csv_sha256':digest(csvpath),'checks':counts,'native_one_layer_limitation':'KiCad10 SetCopperLayerCount(1) reports1 only in memory; SaveBoard/reload restores2 and an F-only layers stanza is rejected. Valid native project uses minimum2-layer container, but all manufacturing copper is F.Cu; B.Cu has no features and must not be manufactured.','outline_segments_mm':outline,'nominal_size_mm':[90,60],'board_thickness_mm':mm(b.GetDesignSettings().GetBoardThickness()),'assembly_flip':'X180','assembled_copper_face':'DOWN','continuous_foil':True,'four_contact_rings':contact,'vertical_pin_holes':{'count':12,'drill_mm':2.0,'drill_to_foil_gap_mm':.5,'native_origin_mm':[64.15,49],'native_pitch_mm':2.54,'copper_only_array_void_mm':[62.65,47.5,78.35,53.04],'sample_fit_required':True},'island_removal':'NEVER','copper_anchor':'GF1: hidden 0.2mm copper-only pad, no electronic BOM/assembly part','no_copper_text_or_physical_slots':True,'all_markings':textrows,'minimum_font_mm':min(t['font_mm'] for t in textrows)}
 
 def main():
     ap=argparse.ArgumentParser();ap.add_argument('--cli',type=Path,default=Path('C:/Program Files/KiCad/10.0/bin/kicad-cli.exe'));args=ap.parse_args()
@@ -156,10 +160,14 @@ def main():
     for i,(x,y) in enumerate(HOLES,301):
         f=k.FootprintLoad(str(lib),hole);f.SetReference('H'+str(i));f.SetFPID(k.LIB_ID('Shield',hole));f.SetPosition(vec(x,y));f.Reference().SetVisible(False);f.Value().SetVisible(False);b.Add(f)
     f=k.FootprintLoad(str(lib),anchor);f.SetReference('GF1');f.SetFPID(k.LIB_ID('Shield',anchor));f.SetPosition(vec(45,30));next(iter(f.Pads())).SetNet(net);f.Reference().SetVisible(False);f.Value().SetVisible(False);b.Add(f)
+    from update_v2_vertical_interconnect import SHIELD_HOLES
+    f=k.FootprintLoad(str(lib),SHIELD_HOLES);f.SetReference('HS1');f.SetFPID(k.LIB_ID('Shield',SHIELD_HOLES));f.SetPosition(vec(64.15,49));b.Add(f)
     for a,c in [((0,0),(90,0)),((90,0),(90,60)),((90,60),(0,60)),((0,60),(0,0))]:
         g=k.PCB_SHAPE(b);g.SetShape(k.SHAPE_T_SEGMENT);g.SetLayer(k.Edge_Cuts);g.SetStart(vec(*a));g.SetEnd(vec(*c));g.SetWidth(k.FromMM(.05));b.Add(g)
     z=k.ZONE(b);z.SetLayer(k.F_Cu);z.SetNet(net);z.SetZoneName('CONTINUOUS_GND_FOIL');z.SetLocalClearance(k.FromMM(.3));z.SetMinThickness(k.FromMM(.1));z.SetPadConnection(k.ZONE_CONNECTION_FULL);z.SetIslandRemovalMode(k.ISLAND_REMOVAL_MODE_NEVER);z.Outline().NewOutline()
     for x,y in [(0.3,0.3),(89.7,0.3),(89.7,59.7),(.3,59.7)]:z.Outline().Append(*vec(x,y))
+    void=z.Outline().NewHole(0)
+    for x,y in [(62.65,47.5),(78.35,47.5),(78.35,53.04),(62.65,53.04)]:z.Outline().Append(vec(x,y),0,void)
     b.Add(z);texts=artwork(b,rows);k.ZONE_FILLER(b).Fill(b.Zones());path=DIR/(NAME+'.kicad_pcb');k.SaveBoard(str(path),b)
     # SaveBoard may serialise default project settings from pcbnew's in-memory
     # context. Restore the explicit strict settings after it, before native DRC.

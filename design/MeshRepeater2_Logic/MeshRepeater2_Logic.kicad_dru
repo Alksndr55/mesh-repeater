@@ -1,2 +1,9 @@
 (version 1)
-(rule "RF GND gap 0.25 mm" (layer F.Cu) (condition "((A.NetName == '/ANT_RF' || A.NetName == '/ANT_SMA') && B.NetName == 'GND') || ((B.NetName == '/ANT_RF' || B.NetName == '/ANT_SMA') && A.NetName == 'GND')") (constraint clearance (min 0.25mm)))
+(rule "RF GND gap 0.25 mm"
+ (layer F.Cu)
+ (condition "((A.NetName == '/ANT_RF' || A.NetName == '/ANT_SMA') && B.NetName == 'GND') || ((B.NetName == '/ANT_RF' || B.NetName == '/ANT_SMA') && A.NetName == 'GND')")
+ (constraint clearance (min 0.25mm)))
+(rule "RF opposite layer permits GND and RF only"
+ (layer B.Cu)
+ (condition "A.intersectsArea('RF_GROUND_GUARD') && A.NetName != 'GND' && A.NetName != '/ANT_RF' && A.NetName != '/ANT_SMA'")
+ (constraint disallow track via))

@@ -1,0 +1,346 @@
+{
+  "reviewer": "Independent reviewer of corrections; did not author or modify native CAD. Controlled negative probe written only to disposable reviewer subdirectory.",
+  "date": "2026-10-12",
+  "scope": "Five new findings from audit/independent_2026_10_12. Read-only focused acceptance, not a fresh complete electronics qualification.",
+  "status": "PASS_FIVE_CORRECTIONS_WITH_INHERITED_OPEN_RISKS",
+  "native_LOGIC_sha256": "6cbd7850caa14163ebe4d40aba4435ac8fe17f327d68419dfb94e0a1bc361bc8",
+  "findings": [
+    {
+      "id": "R1",
+      "status": "FIXED_FOCUSED_SCOPE",
+      "reason": "The independently confirmed long MOSI/MISO/RESET detours and remote SPI layer returns are removed. Short remaining opposite-layer voids are bounded and have nearby connected same-layer GND; this is not a continuous opposite plane or measured signal-integrity guarantee.",
+      "metrics": [
+        {
+          "net": "MOSI_RF",
+          "exact_all_net_segment_sum_before_mm": 185.25595709376952,
+          "exact_all_net_segment_sum_after_mm": 30.916652224137046,
+          "all_net_vias_before": 11,
+          "all_net_vias_after": 2,
+          "longest_opposite_ground_gap_before_mm": 9.1,
+          "longest_opposite_ground_gap_after_mm": 3.125,
+          "opposite_GND_uncovered_estimate_after_mm": 15.22810537197547,
+          "closest_lateral_GND_on_uncovered_samples_mm": {
+            "sample_count": 617,
+            "median": 0.3005,
+            "p95": 1.0005,
+            "maximum": 1.0005
+          },
+          "selected_path_return_barrels": [
+            {
+              "signal": [
+                35.9,
+                15.8
+              ],
+              "nearest_GND_barrel_mm": 1.9416487838947583
+            },
+            {
+              "signal": [
+                54.6,
+                15.3
+              ],
+              "nearest_GND_barrel_mm": 1.3010764773832486
+            }
+          ],
+          "max_selected_path_return_barrel_mm": 1.9416487838947583,
+          "selected_whole_segment_path_sum_after_mm": 29.726702730475886
+        },
+        {
+          "net": "MISO_MCU",
+          "exact_all_net_segment_sum_before_mm": 121.65858291274932,
+          "exact_all_net_segment_sum_after_mm": 42.76345596729059,
+          "all_net_vias_before": 11,
+          "all_net_vias_after": 4,
+          "longest_opposite_ground_gap_before_mm": 6.9,
+          "longest_opposite_ground_gap_after_mm": 3.094632030604655,
+          "opposite_GND_uncovered_estimate_after_mm": 25.021573971327847,
+          "closest_lateral_GND_on_uncovered_samples_mm": {
+            "sample_count": 1025,
+            "median": 0.3005,
+            "p95": 0.483,
+            "maximum": 1.085021
+          },
+          "selected_path_return_barrels": [
+            {
+              "signal": [
+                57.6,
+                20.2
+              ],
+              "nearest_GND_barrel_mm": 0.8508818954473084
+            },
+            {
+              "signal": [
+                54.4,
+                19.7
+              ],
+              "nearest_GND_barrel_mm": 0.848528137423859
+            },
+            {
+              "signal": [
+                48.6,
+                14.4
+              ],
+              "nearest_GND_barrel_mm": 0.8500000000000014
+            },
+            {
+              "signal": [
+                35.0,
+                15.7
+              ],
+              "nearest_GND_barrel_mm": 1.3036103712382792
+            }
+          ],
+          "max_selected_path_return_barrel_mm": 1.3036103712382792,
+          "selected_whole_segment_path_sum_after_mm": 40.74924240491749
+        },
+        {
+          "net": "RADIO_RST",
+          "exact_all_net_segment_sum_before_mm": 105.14697828518779,
+          "exact_all_net_segment_sum_after_mm": 33.35006276123159,
+          "all_net_vias_before": 6,
+          "all_net_vias_after": 1,
+          "longest_opposite_ground_gap_before_mm": 9.075,
+          "longest_opposite_ground_gap_after_mm": 4.694709193245779,
+          "opposite_GND_uncovered_estimate_after_mm": 19.777975465100308,
+          "closest_lateral_GND_on_uncovered_samples_mm": {
+            "sample_count": 799,
+            "median": 0.320409,
+            "p95": 1.470069,
+            "maximum": 1.957541
+          },
+          "selected_path_return_barrels": [
+            {
+              "signal": [
+                37.5,
+                19.6
+              ],
+              "nearest_GND_barrel_mm": 1.5306207890918015
+            }
+          ],
+          "max_selected_path_return_barrel_mm": 1.5306207890918015,
+          "selected_whole_segment_path_sum_after_mm": 33.3500627612316
+        }
+      ]
+    },
+    {
+      "id": "R2",
+      "status": "FIXED",
+      "ANT_RF_old_axis_gap_mm": 0.899954085146515,
+      "ANT_RF_new_axis_gap_mm": 0,
+      "negative_rule_regression": "PASS: items_not_allowed error names RF opposite layer permits GND and RF only and targets controlled old RXEN segment UUID.",
+      "inherited_SMA_launch_gap_mm": 1.25,
+      "RF_track_geometry_unchanged": true
+    },
+    {
+      "id": "M-01",
+      "status": "PASS_DOCUMENTED_SELECTION",
+      "housing_mpn": "Connfly I-DS1071-SCB01x4",
+      "contact_mpn": "Connfly T-DS1071-SC600",
+      "quantity_per_assembly": [
+        2,
+        8
+      ],
+      "quantity_five_full_assemblies": [
+        10,
+        40
+      ],
+      "saved_stock_observation": [
+        "170",
+        "6746"
+      ],
+      "supplier_cards": [
+        "https://www.danomsk.ru/shop/7-kommutatsiya/121-razemy/306-soediniteli-pryamougolnye/208362-bls-1x04-i-ds1071-scb01x4-rozetka-obzh-bez-kontaktov-kontakty-178228-201995-shag-2-54mm-maks-dopust-/",
+        "https://www.danomsk.ru/shop/7-kommutatsiya/121-razemy/306-soediniteli-pryamougolnye/201995-kontakty-dlya-rozetok-bls-bld-t-ds1071-sc600-2-54mm-connfly/"
+      ],
+      "manufacturer": "https://en.connfly.com/static/upload/file/pdf/DS1071.pdf",
+      "manufacturer_visual_check": "DS1071 sheet lists DS1021/DS1022 male family, SQ 0.64±0.05, pitch 2.54, 4-position B10.16/A7.62, female 2.54×14.00, .XX tolerance ±0.25. SC6 terminal tin; AWG28–22.",
+      "actual_mating_qualified": false
+    },
+    {
+      "id": "M-02",
+      "status": "PASS_MODEL_ENVELOPE_AND_UNCHANGED_FOOTPRINTS",
+      "bracket_width_mm": 8.41,
+      "four_switch_footprints_byte_unchanged": true
+    },
+    {
+      "id": "DOC-01",
+      "status": "PASS",
+      "holes": [
+        {
+          "board": "design\\MeshRepeater2_Power\\MeshRepeater2_Power.kicad_pcb",
+          "reference": "H1",
+          "value": "M3 GND contact",
+          "pads": [
+            {
+              "number": "1",
+              "attribute": 0,
+              "PTH": true,
+              "net": "GND",
+              "drill_mm": [
+                3.2,
+                3.2
+              ],
+              "copper_diameter_mm": [
+                6.0,
+                6.0
+              ]
+            }
+          ],
+          "bom_note": "3.2 mm M3 plated/contact mounting hole; exposed GND on both sides. Working return stays in cable.",
+          "variant_fields": {
+            "Value_LTO_2S": "M3 GND contact",
+            "Value_NaIon_NoCold": "M3 GND contact"
+          },
+          "library_change_only_expected_metadata": true,
+          "library_sha256": "c8da54c66b005707b6f917a8ceaa0bf5b6ce19c5cdb4dcc209dd5782e19a29cf"
+        },
+        {
+          "board": "design\\MeshRepeater2_Power\\MeshRepeater2_Power.kicad_pcb",
+          "reference": "H4",
+          "value": "M3 GND contact",
+          "pads": [
+            {
+              "number": "1",
+              "attribute": 0,
+              "PTH": true,
+              "net": "GND",
+              "drill_mm": [
+                3.2,
+                3.2
+              ],
+              "copper_diameter_mm": [
+                6.0,
+                6.0
+              ]
+            }
+          ],
+          "bom_note": "3.2 mm M3 plated/contact mounting hole; exposed GND on both sides. Working return stays in cable.",
+          "variant_fields": {
+            "Value_LTO_2S": "M3 GND contact",
+            "Value_NaIon_NoCold": "M3 GND contact"
+          },
+          "library_change_only_expected_metadata": true,
+          "library_sha256": "bcf40c6808c173a950611c37db231a0351754ac14678fc556d5975aa0cc00476"
+        },
+        {
+          "board": "design\\MeshRepeater2_Power\\MeshRepeater2_Power.kicad_pcb",
+          "reference": "H2",
+          "value": "M3 GND contact",
+          "pads": [
+            {
+              "number": "1",
+              "attribute": 0,
+              "PTH": true,
+              "net": "GND",
+              "drill_mm": [
+                3.2,
+                3.2
+              ],
+              "copper_diameter_mm": [
+                6.0,
+                6.0
+              ]
+            }
+          ],
+          "bom_note": "3.2 mm M3 plated/contact mounting hole; exposed GND on both sides. Working return stays in cable.",
+          "variant_fields": {
+            "Value_LTO_2S": "M3 GND contact",
+            "Value_NaIon_NoCold": "M3 GND contact"
+          },
+          "library_change_only_expected_metadata": true,
+          "library_sha256": "cba129ecda4377f0af327ae1108744f73b6895906b2e88825854e28e862ef7fb"
+        },
+        {
+          "board": "design\\MeshRepeater2_Power\\MeshRepeater2_Power.kicad_pcb",
+          "reference": "H3",
+          "value": "M3 GND contact",
+          "pads": [
+            {
+              "number": "1",
+              "attribute": 0,
+              "PTH": true,
+              "net": "GND",
+              "drill_mm": [
+                3.2,
+                3.2
+              ],
+              "copper_diameter_mm": [
+                6.0,
+                6.0
+              ]
+            }
+          ],
+          "bom_note": "3.2 mm M3 plated/contact mounting hole; exposed GND on both sides. Working return stays in cable.",
+          "variant_fields": {
+            "Value_LTO_2S": "M3 GND contact",
+            "Value_NaIon_NoCold": "M3 GND contact"
+          },
+          "library_change_only_expected_metadata": true,
+          "library_sha256": "7479081f7eeaa25912945e9656653fd26cde7dc03af3f153e15a21b253a21bff"
+        }
+      ],
+      "generator_all_three_variants_current_mounting_value": true,
+      "model_authoritative_variant_labels_synchronized": true,
+      "schematic_changed_only_expected_metadata": true
+    }
+  ],
+  "additional_confirmed_P2_in_corrected_areas": [],
+  "positive_native_LOGIC_DRC": {
+    "violations": 0,
+    "unconnected": 0,
+    "schematic_parity": 0,
+    "ignored_checks": 0,
+    "included_severities": [
+      "error",
+      "warning",
+      "exclusion"
+    ],
+    "native_unchanged_by_all_review_steps": true
+  },
+  "preservation": {
+    "J10_ISP_pose": [
+      35.7,
+      31.3,
+      0
+    ],
+    "M1_M2_J11_J201_R27_all_pad_netnames_and_poses_unchanged": true,
+    "USB_edge_module_pose_unchanged": true,
+    "SYS_MCU_modem_branches_shared_track_uuids": [],
+    "SYS_branches_and_BAT_sense_routes_byte_geometry_unchanged": true,
+    "RF_trace_geometry_unchanged": true,
+    "GND_physical_components": 1,
+    "old_independent_audit_not_written": true
+  },
+  "pending_physical_tests": [
+    "Real mating stops, depth, cable retention, crimp and pin polarity for newly selected J3/J5 cable parts.",
+    "EMI/RF measurements, SPI operation at actual firmware settings and transient modem/MCU supply measurements.",
+    "Manufacturing stack, real module geometry and assembled mechanical access; STEP envelopes alone are not hardware qualification."
+  ],
+  "inherited_open_design_risks": [
+    {
+      "id": "E-I1",
+      "status": "UNCHANGED",
+      "description": "Existing LMV431 balancers with 2 ohm resistors are not guaranteed to stay within cathode current limits. The correction task did not change their circuit; proposed remedies require a distinct design decision under prior user conditions.",
+      "source": "https://www.ti.com/lit/ds/symlink/lmv431.pdf"
+    },
+    {
+      "id": "E-I2",
+      "status": "UNCHANGED",
+      "description": "Existing CN3722 LTO divider does not guarantee TPS63802 VIN<=5.5V in battery-absent charger OVP operation. Divider-only normal-CV tolerance proof does not cover that mode. Separate remedy was not applied in this focused correction review.",
+      "source": [
+        "https://consonance-elec.com/static/upload/file/20231218/1702867485736775.pdf",
+        "https://www.ti.com/lit/ds/symlink/tps63802.pdf"
+      ]
+    }
+  ],
+  "exports_and_assembly_release": "Root regenerates/checks derived exports after native freeze; their yet-in-progress status is not represented as passed by this report.",
+  "evidence_sha256": {
+    "reviewer_mechanics.json": "482bc72d3b29b3a34ee34fd360ae413665b9c4384f2919659b0ab56ccf880aef",
+    "reviewer_models.json": "dc93143991a869a940d2b63979a802222e3106dde17ee7ba77c70d01bc49a6cc",
+    "reviewer_routing_before.json": "87c85bff430dae1830f032d1135e5106c05e6638a1ae67a5c731196824561611",
+    "reviewer_routing.json": "8073745055bf66f4a50bfbbbec827a1e46b7e1cb311165ac55a0c5d3a3ae2613",
+    "reviewer_ground.json": "c147bbc358a1c4b547083422d1502a4669145a938b15dbc8e8b1e0ca6fc1a021",
+    "reviewer_LOGIC_positive_drc.json": "f1259724dad362466e78b8b90f636de8ad9728c132249ddee639b61193439935",
+    "reviewer_RF_negative.json": "0c7b23b95ab49f0d581b1ff013f0e833f35e0aff1a0bba7d814e5b3c5d4aed84",
+    "reviewer_RF_negative_drc.json": "22641526d46bbeb36a1e1566ff74242c6e106ba3af456b22720407a6515ad686"
+  }
+}

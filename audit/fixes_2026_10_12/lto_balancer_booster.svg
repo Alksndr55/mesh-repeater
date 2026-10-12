@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1240" height="770" viewBox="0 0 1240 770">
+<style>text{font-family:Arial,sans-serif;font-size:18px;fill:#203348}.s{font-size:15px}.h{font-size:25px;font-weight:bold}.w{stroke:#187044;stroke-width:3;fill:none}.p{stroke:#203348;stroke-width:2;fill:white}.j{fill:#187044}</style>
+<rect width="1240" height="770" fill="white"/><text x="28" y="38" class="h">E-I1 · PNP усилитель балансира · ПРЕДЛОЖЕНИЕ</text>
+<text x="28" y="68">Один канал. Силовой ток проходит через QBOOST; 2 Ω и старый делитель сохраняются.</text>
+<path class="w" d="M55 135 H160 M240 135 H1100 M340 135 V235 M340 315 V370 M340 450 V600 M680 135 V210 M680 290 V360 M920 135 V260 M920 360 V600 M1100 135 V310 M1100 370 V600 M55 600 H1145 M680 360 H600 M520 360 H460 V410 M460 490 V600 M340 345 H405 V450 H420 M460 360 V310 H570 M650 310 H705 M735 310 H780 V345 H405"/>
+<rect class="p" x="160" y="121" width="80" height="28"/><text x="135" y="103">R47 / R51 · 2 Ω</text><text x="55" y="170">CELL+</text><text x="995" y="115">KREG</text>
+<rect class="p" x="323" y="235" width="34" height="80"/><text x="130" y="253">R48/R52 · 120k</text><text x="130" y="279">+ R49/R53 · 2.49k</text>
+<rect class="p" x="323" y="370" width="34" height="80"/><text x="110" y="410">R50/R54 · 100k</text><text x="365" y="335">REF</text>
+<rect class="p" x="663" y="210" width="34" height="80"/><text x="525" y="225">RBE · 4.7k</text>
+<rect class="p" x="520" y="347" width="80" height="26"/><text x="590" y="396">RB · 390 Ω</text>
+<rect class="p" x="420" y="410" width="110" height="80"/><text x="431" y="438">U8 / U9</text><text x="430" y="463">LMV431A</text>
+<text x="462" y="405" class="s">3 K / CTRL</text><text x="398" y="465" class="s">4</text><text x="470" y="515" class="s">2/5 A</text>
+<rect class="p" x="570" y="297" width="80" height="26"/><text x="520" y="278" class="s">RCOMP · 47k</text>
+<path d="M705 296 V324 M735 296 V324" stroke="#203348" stroke-width="3"/><text x="705" y="250" class="s">CCOMP · 100nF</text>
+<circle class="p" cx="920" cy="310" r="50"/>
+<path d="M890 280 V340 M890 294 L920 270 M890 326 L920 350 M903 283 L917 286 L911 272 Z" stroke="#203348" stroke-width="2" fill="#203348"/>
+<path class="w" d="M680 360 H810 V310 H890 M920 260 V270 M920 350 V360"/>
+<text x="945" y="242">1 E</text><text x="830" y="294">3 B</text><text x="945" y="384">2 C</text><text x="960" y="470">BCX53-16,115</text><text x="960" y="494" class="s">SOT89 · QBOOST</text>
+
+<path class="w" d="M1100 310 V325 M1100 355 V370"/><path d="M1084 325 H1116 M1084 355 H1116" stroke="#203348" stroke-width="3"/><text x="1130" y="340" class="s">C58/C59</text><text x="1130" y="364" class="s">47nF</text>
+<path d="M670 345 H690" stroke="white" stroke-width="7" fill="none"/><path class="w" d="M680 330 V360"/><path d="M670 345 Q680 326 690 345" stroke="white" stroke-width="7" fill="none"/><path d="M670 345 Q680 326 690 345" class="w"/><circle class="j" cx="340" cy="135" r="5"/><circle class="j" cx="680" cy="135" r="5"/><circle class="j" cx="920" cy="135" r="5"/><circle class="j" cx="340" cy="345" r="5"/><circle class="j" cx="460" cy="360" r="5"/><circle class="j" cx="680" cy="360" r="5"/>
+<text x="55" y="635">CELL−: верхний канал = LTO_MID; нижний = GND.</text>
+<text x="28" y="679" class="s">Верхний коллектор и его медь изолированы от GND. Делитель измеряет KREG после 2 Ω, как в прежней схеме.</text>
+<text x="28" y="706" class="s">Компенсация 47k + 100nF — начальная версия для квалификации. Точные сети обоих каналов: lto_options.json.</text>
+<text x="28" y="733" class="s">CAD и BOM не изменены. Это не защита ячейки от перенапряжения и не испытанная схема.</text></svg>

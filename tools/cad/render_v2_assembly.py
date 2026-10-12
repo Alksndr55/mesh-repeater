@@ -97,8 +97,8 @@ def render(source, destination, elevation, caption):
                           (1080,(23,71,133),'LOGIC · компоненты вниз')]:
         draw.rectangle((x,76,x+22,94),fill=color)
         draw.text((x+32,72),label,font=small_font,fill=(55,65,75))
-    draw.text((45, height - 78), 'Геометрия: native STEP плат и габариты крепежа. Цвета условные; кабель и ответные части не показаны.', font=small_font, fill=(55, 65, 75))
-    draw.text((45, height - 43), 'Резьба, действительные модули и сопряжение кабеля требуют проверки на образце.', font=small_font, fill=(55, 65, 75))
+    draw.text((45, height - 78), 'Геометрия: native STEP плат, номинальные разъёмы и габариты крепежа. Цвета условные.', font=small_font, fill=(55, 65, 75))
+    draw.text((45, height - 43), 'Резьба, действительные модули и сопряжение штырей с розеткой требуют проверки на образце.', font=small_font, fill=(55, 65, 75))
     image.save(destination)
     return {'source':str(source.relative_to(ROOT)), 'image':str(destination.relative_to(ROOT)), 'triangles_drawn':triangle_count,
             'image_sha256':hashlib.sha256(destination.read_bytes()).hexdigest(),'verified_native_inputs':data['verified_native_inputs'],
@@ -227,9 +227,18 @@ def main():
         if mesh.is_file():
             suffix='_below' if elevation<0 else''
             outputs.append(render(mesh,directory/f'MeshRepeater2_{stem}{suffix}_native_3D.png',elevation,caption))
-    dimensions=stack_drawing(directory)
-    harness=harness_drawing(directory)
-    report={'renders':outputs,'dimensions':str(dimensions.relative_to(ROOT)), 'harness_plan':str(harness.relative_to(ROOT)), 'colors':'Illustrative. Source STEP geometry is retained.'}
+    # A1 drawings describe the former IDC cable. Retain them as history instead
+    # of regenerating them beside the current direct vertical interconnect.
+    if (ROOT/'design/feature_ina219_vertical.json').is_file():
+        report={'renders':outputs,'revision':'V2.0-A2','dimensions':None,
+                'harness_plan':None,'current_instructions':'docs/V2_ASSEMBLY_INSTRUCTIONS_RU.md',
+                'historical_A1_drawings':['MeshRepeater2_assembly_dimensions.svg',
+                                          'MeshRepeater2_harness_routing_plan.svg'],
+                'colors':'Illustrative. Source STEP geometry is retained.'}
+    else:
+        dimensions=stack_drawing(directory)
+        harness=harness_drawing(directory)
+        report={'renders':outputs,'dimensions':str(dimensions.relative_to(ROOT)), 'harness_plan':str(harness.relative_to(ROOT)), 'colors':'Illustrative. Source STEP geometry is retained.'}
     (directory/'native_render_report.json').write_text(json.dumps(report,ensure_ascii=False,indent=2),encoding='utf-8')
     print(json.dumps(report,ensure_ascii=False,indent=2))
 

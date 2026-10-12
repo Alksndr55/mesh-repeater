@@ -1,0 +1,52 @@
+{
+  "source_commit": "547740fee937f891568f18485c7a6a3733c234c9",
+  "changes_scope": "V2 only; fix R1,R2,M-01,M-02,DOC-01 from independent audit, retain previously explicit electrical conditions pending user selection",
+  "preserved_reports": [
+    {
+      "path": "audit/V2_FINAL_ACCEPTANCE.json",
+      "sha256": "867ff21be3e91aa3596f0ae0195e1d49a3408ed1aa04e6416440b28fd2a7c389",
+      "copy": "audit\\fixes_2026_10_12\\published_before\\audit\\V2_FINAL_ACCEPTANCE.json"
+    },
+    {
+      "path": "audit/v2_native_boards_final.json",
+      "sha256": "5df39c85daf43735c8a321f924090e2d15ef5836d789ede0d8b8b38819f7d67c",
+      "copy": "audit\\fixes_2026_10_12\\published_before\\audit\\v2_native_boards_final.json"
+    },
+    {
+      "path": "audit/v2_schematic_equivalence.json",
+      "sha256": "91725b71f7933ceed5791dbd87a054b95b5fd68811a6c9260f57b01346080461",
+      "copy": "audit\\fixes_2026_10_12\\published_before\\audit\\v2_schematic_equivalence.json"
+    },
+    {
+      "path": "audit/v2_routing_engineering.json",
+      "sha256": "2f23fb4be8a435693be9580dfdb8051e05a4057fddc55efcd25e18e951cd2d1e",
+      "copy": "audit\\fixes_2026_10_12\\published_before\\audit\\v2_routing_engineering.json"
+    },
+    {
+      "path": "audit/v2_independent_final_review.json",
+      "sha256": "c705d88d82706bf254201ee999061644de02bcc62d761452d66e46fb3da62b13",
+      "copy": "audit\\fixes_2026_10_12\\published_before\\audit\\v2_independent_final_review.json"
+    },
+    {
+      "path": "audit/v2_manual_pdf_audit.json",
+      "sha256": "80d89021550bcb64be291445742cf6e0dc647a584bdb75376dbd2343f3b780fe",
+      "copy": "audit\\fixes_2026_10_12\\published_before\\audit\\v2_manual_pdf_audit.json"
+    },
+    {
+      "path": "docs/mechanics/assembly_geometry_report.json",
+      "sha256": "d8e008256af04d0c602990f179ec958bfda2f19b83cde2267276ef1d642c93e3",
+      "copy": "audit\\fixes_2026_10_12\\published_before\\docs\\mechanics\\assembly_geometry_report.json"
+    },
+    {
+      "path": "docs/mechanics/native_render_report.json",
+      "sha256": "67371af48a4c29fb1484b6332e55f37e40b68d4fae66287469e79b115e092354",
+      "copy": "audit\\fixes_2026_10_12\\published_before\\docs\\mechanics\\native_render_report.json"
+    },
+    {
+      "path": "docs/mechanics/assembly_pdf_audit.json",
+      "sha256": "e8336da76e7b8a68cf95f1978aaa0367f4befa553fe3424da359c2dadbbd7fad",
+      "copy": "audit\\fixes_2026_10_12\\published_before\\docs\\mechanics\\assembly_pdf_audit.json"
+    }
+  ],
+  "baseline_native_pcb_sha256": "742ae27bb1d13893f6dc368e5c67f5c41b35a3e6765331fc7e9871297d23dec6"
+}

@@ -1,0 +1,211 @@
+{
+  "status": "BOARD_ROUND_ACCEPTED_STRICT_DRC_ZERO",
+  "before_sha256": "6ad30bec4cc2ba9c11b2814c066009eddd6b9c3b0b84dce0c1abc02057fd4e86",
+  "after_sha256": "24e7f986b5367bad9b9b7b468f39a2237bb83569585871b9a056a6da6072e729",
+  "before": {
+    "segments": 809,
+    "total_segment_length_mm": 1584.6353240116252,
+    "vias": 523,
+    "GND_vias": 455,
+    "non_0_45_90_UUIDs": []
+  },
+  "after": {
+    "segments": 806,
+    "total_segment_length_mm": 1583.346593848846,
+    "vias": 523,
+    "GND_vias": 455,
+    "non_0_45_90_UUIDs": []
+  },
+  "changes": [
+    {
+      "net": "BAT",
+      "layer": "F.Cu",
+      "width_mm": 0.8,
+      "old_UUIDs": [
+        "f8bad7f6-81ec-4658-a321-2141752ef427",
+        "341750b4-244f-44fd-8b88-d8b02ece0a56",
+        "57926987-30f2-44f6-b7aa-8e0289599533"
+      ],
+      "before_path_mm": [
+        [
+          22.8,
+          8.9
+        ],
+        [
+          25.2,
+          6.5
+        ],
+        [
+          41.4,
+          6.5
+        ],
+        [
+          41.9,
+          6.0
+        ]
+      ],
+      "after_path_mm": [
+        [
+          22.8,
+          8.9
+        ],
+        [
+          25.7,
+          6.0
+        ],
+        [
+          41.9,
+          6.0
+        ]
+      ],
+      "before_segments": 3,
+      "after_segments": 2,
+      "before_turns": 2,
+      "after_turns": 1,
+      "before_length_mm": 20.301219330881974,
+      "after_length_mm": 20.301219330881974,
+      "anchors_unchanged": true,
+      "native_foreign_clearance_mm": 0.205,
+      "new_UUIDs": [
+        "31395165-92a4-4f86-8f46-2d7f03be7546",
+        "58cd72fd-6cb9-4443-b28b-aa5fccf518a8"
+      ]
+    },
+    {
+      "net": "BAT",
+      "layer": "F.Cu",
+      "width_mm": 0.8,
+      "old_UUIDs": [
+        "75f048cf-7e95-4bff-ae33-a83e53a35dde",
+        "55b5e471-538b-489b-a42f-0eb6b22e0ab0",
+        "18335827-dc97-4e95-9c56-5cda650935bf",
+        "02ba3751-0b11-4132-9684-632b2abd887c"
+      ],
+      "before_path_mm": [
+        [
+          33.9,
+          14.5
+        ],
+        [
+          33.9,
+          13.4
+        ],
+        [
+          34.0,
+          13.3
+        ],
+        [
+          34.0,
+          10.5
+        ],
+        [
+          35.2,
+          9.3
+        ]
+      ],
+      "after_path_mm": [
+        [
+          33.9,
+          14.5
+        ],
+        [
+          34.0,
+          14.4
+        ],
+        [
+          34.0,
+          10.5
+        ],
+        [
+          35.2,
+          9.3
+        ]
+      ],
+      "before_segments": 4,
+      "after_segments": 3,
+      "before_turns": 3,
+      "after_turns": 2,
+      "before_length_mm": 5.738477631085026,
+      "after_length_mm": 5.738477631085026,
+      "anchors_unchanged": true,
+      "native_foreign_clearance_mm": 0.205,
+      "new_UUIDs": [
+        "1c9e92e7-6ead-4f66-be35-83ad1cbb7435",
+        "4179cbe1-971c-4d02-9f66-591329b55504",
+        "01623f39-49a1-48de-839d-13d693b5f63b"
+      ]
+    },
+    {
+      "net": "MODE",
+      "layer": "B.Cu",
+      "width_mm": 0.25,
+      "old_UUIDs": [
+        "00c51ecc-058d-4fec-84f9-cc7c633171fe",
+        "8ec8e80b-b702-4f39-98c8-a06ce1a73955",
+        "1b0503a3-a243-4be3-b5d3-dc63afbcb867"
+      ],
+      "before_path_mm": [
+        [
+          53.0,
+          14.5
+        ],
+        [
+          76.5,
+          14.5
+        ],
+        [
+          77.7,
+          13.3
+        ],
+        [
+          77.7,
+          11.1
+        ]
+      ],
+      "after_path_mm": [
+        [
+          53.0,
+          14.5
+        ],
+        [
+          74.3,
+          14.5
+        ],
+        [
+          77.7,
+          11.1
+        ]
+      ],
+      "before_segments": 3,
+      "after_segments": 2,
+      "before_turns": 2,
+      "after_turns": 1,
+      "before_length_mm": 27.397056274847714,
+      "after_length_mm": 26.108326112068525,
+      "anchors_unchanged": true,
+      "native_foreign_clearance_mm": 0.205,
+      "new_UUIDs": [
+        "10925984-6063-4667-871b-764c702a0195",
+        "dd2e2a21-42c1-4370-82bd-c3878c1b0198"
+      ]
+    }
+  ],
+  "ground_moves": [],
+  "DRC": {
+    "path": "audit/routing_geometry_2026_10_12/POWER_strict_drc_round2.json",
+    "sha256": "d39374ab0e43275b805cb9bc14a32a5f53ebfb37476249c0d8af57ffd0ef3992",
+    "counts": {
+      "violations": 0,
+      "unconnected_items": 0,
+      "schematic_parity": 0,
+      "ignored_violations": 0
+    }
+  },
+  "immutable_scope": {
+    "unchanged_payload_except_segments_GND_via_at_and_zone_fill": true,
+    "footprints_fields_3D_pads_nets_drawings_keepouts_settings_unchanged": true,
+    "kicad_pro_bytes_unchanged": true,
+    "kicad_pro_sha256": "0f8bb143c5b5bbc5c07a14ef9e8cf618edd894778c6a6f8fb581836a9bd21e89"
+  },
+  "manufacturing_or_EMI_physical_tests_performed": false
+}

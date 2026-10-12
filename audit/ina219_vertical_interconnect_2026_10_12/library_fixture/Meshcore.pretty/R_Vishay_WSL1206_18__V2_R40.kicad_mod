@@ -1,0 +1,325 @@
+(footprint "R_Vishay_WSL1206_18__V2_R40"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(locked yes)
+	(layer "F.Cu")
+	(descr "Vishay WSL1206 for 0.006..0.20 ohm; manufacturer lands a=1.65mm b=1.93mm l=1.80mm, document30100 revision23-Nov-2023 page2. Full paste apertures are an engineering choice.")
+	(tags "resistor Vishay WSL1206 current sense metal strip 22mohm")
+	(property "Reference" "REF**"
+		(at -2.5 2 180)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "290794cf-9156-4271-99d7-05f0d5833b57")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Value" "R_Vishay_WSL1206_18__V2_R40"
+		(at 0 1.9 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "a2ec8b78-d14b-4f6a-a18e-0695fc074d65")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "e5d4824d-6cec-491e-a083-800518c96c80")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" "22mOhm series with the whole capacitor bank, not with load current."
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "bcae5c2f-3a92-443d-8da2-7f35d78d408b")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "MPN" "WSL1206R0220FEA"
+		(at 0 0 90)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "7474b414-742d-4db4-bf55-0af58aae4293")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "LCSC" "C4041551"
+		(at 0 0 90)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "beb780b8-c32c-4a3c-aedb-35e175d69ad7")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Vendor" ""
+		(at 0 0 90)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "13be8b67-81a3-4d40-abcc-0ebad51879b9")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Vendor URL" ""
+		(at 0 0 90)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "0a81da9f-4f23-4046-970f-40fc26d8bac8")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Fit_NaIon" "yes"
+		(at 0 0 180)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "1162cb6b-1d09-4b65-b8d1-a9bf3c6dd605")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Fit_LTO_2S" "yes"
+		(at 0 0 180)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "e22b62af-b4b3-49b4-a91c-2f61523b02dc")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value_NaIon" "22mR 1%"
+		(at 0 0 180)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "60c2b91e-02f4-4177-beb9-1c1ce07d15eb")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value_LTO_2S" "22mR 1%"
+		(at 0 0 180)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "d5a677b2-8df8-4a43-ab9b-4eaeefe7198a")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Assembly" "Na-ion: FIT; LTO 2S: FIT"
+		(at 0 0 180)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "43222d9c-27ce-44d6-a637-c5ac65f03ac1")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Nominal" "22mR"
+		(at 1 2.1435 180)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "9de62580-592d-408c-85f0-bbc048ef15ac")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "MPN_NaIon" "WSL1206R0220FEA"
+		(at 0 0 180)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "87f27875-3a4d-4bb1-8b95-eb1ed50ecb11")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "MPN_LTO_2S" "WSL1206R0220FEA"
+		(at 0 0 180)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "81ee5ec2-381b-4b2a-9e12-099576d26cae")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Fit_NaIon_NoCold" "yes"
+		(at 0 0 180)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "4b61e92f-00df-45e8-ba47-baff5ef69d2a")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value_NaIon_NoCold" "22mR 1%"
+		(at 0 0 180)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "869f0cc1-1af7-4e78-84b4-84ee458355e7")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "MPN_NaIon_NoCold" "WSL1206R0220FEA"
+		(at 0 0 180)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "cff5ebb9-8ca5-4dc1-a0ef-22a28ba9442b")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_rect
+		(start -2.8 -1.25)
+		(end 2.8 1.25)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "52968c42-8aa1-4b9f-bfed-ed57472b2f25")
+	)
+	(fp_line
+		(start -1.092 -0.8)
+		(end -1.092 0.8)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "0e260595-e9ca-4981-92e1-5ea5d8de7d24")
+	)
+	(fp_line
+		(start -0.65 -1.12)
+		(end 0.65 -1.12)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "607d7885-7285-4664-a142-746fd7812eaa")
+	)
+	(fp_line
+		(start -0.65 1.12)
+		(end 0.65 1.12)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "3b255d5e-5a1a-4653-a139-6e8409bd77af")
+	)
+	(fp_line
+		(start 1.092 -0.8)
+		(end 1.092 0.8)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "6479435c-2f02-42b3-a7b8-b592df27d486")
+	)
+	(fp_rect
+		(start -1.6 -0.8)
+		(end 1.6 0.8)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "3b455f89-a485-487e-b1d9-767641287a8f")
+	)
+	(pad "1" smd rect
+		(at -1.725 0)
+		(size 1.65 1.93)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(solder_mask_margin 0.05)
+		(uuid "a0d80102-a6be-42e3-a007-f4e59807832b")
+	)
+	(pad "2" smd rect
+		(at 1.725 0)
+		(size 1.65 1.93)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(solder_mask_margin 0.05)
+		(uuid "f2224a5e-37bc-4b58-960c-293349a95cbe")
+	)
+	(embedded_fonts no)
+	(model "${KIPRJMOD}/3dmodels/Vishay_WSL1206.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

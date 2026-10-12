@@ -1,0 +1,214 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-10-12T01:02:00",
+    "ignored_checks": [],
+    "included_severities": [
+        "error",
+        "warning",
+        "exclusion"
+    ],
+    "kicad_version": "10.0.6",
+    "schematic_parity": [],
+    "source": "MeshRepeater2_Logic.kicad_pcb",
+    "unconnected_items": [
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Перех. отв. [GND] на F.Cu - B.Cu",
+                    "pos": {
+                        "x": 36.0,
+                        "y": 21.2
+                    },
+                    "uuid": "3c9c923b-3098-485d-b644-9b2867a323c6"
+                },
+                {
+                    "description": "Зона 'GND_TOP' [GND] на F.Cu, приоритет 0",
+                    "pos": {
+                        "x": 0.4,
+                        "y": 0.4
+                    },
+                    "uuid": "5989b2e1-22a1-44ff-bb18-b5c6fed99116"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Перех. отв. [GND] на F.Cu - B.Cu",
+                    "pos": {
+                        "x": 36.0,
+                        "y": 21.2
+                    },
+                    "uuid": "3c9c923b-3098-485d-b644-9b2867a323c6"
+                },
+                {
+                    "description": "Перех. отв. [GND] на F.Cu - B.Cu",
+                    "pos": {
+                        "x": 42.8,
+                        "y": 22.1
+                    },
+                    "uuid": "94cad2b3-4d57-46a4-90a6-ab235ed7ca7b"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        }
+    ],
+    "violations": [
+        {
+            "description": "Элементы запрещены (правило 'RF opposite layer permits GND and RF only')",
+            "items": [
+                {
+                    "description": "Дорожка [/RADIO_RXEN] на B.Cu, длина 14,1000 mm",
+                    "pos": {
+                        "x": 44.3,
+                        "y": 9.3
+                    },
+                    "uuid": "10d82fda-1102-474b-8271-fe3ecc5ceb32"
+                }
+            ],
+            "severity": "error",
+            "type": "items_not_allowed"
+        },
+        {
+            "description": "Элементы запрещены (правило 'RF opposite layer permits GND and RF only')",
+            "items": [
+                {
+                    "description": "Дорожка [/RADIO_RXEN] на B.Cu, длина 0,1000 mm",
+                    "pos": {
+                        "x": 35.2,
+                        "y": 9.0
+                    },
+                    "uuid": "37903859-4c6f-40dc-a531-c523cca5e232"
+                }
+            ],
+            "severity": "error",
+            "type": "items_not_allowed"
+        },
+        {
+            "description": "Элементы запрещены (правило 'RF opposite layer permits GND and RF only')",
+            "items": [
+                {
+                    "description": "Дорожка [/RADIO_RXEN] на B.Cu, длина 9,4000 mm",
+                    "pos": {
+                        "x": 25.2,
+                        "y": 9.6
+                    },
+                    "uuid": "958871e4-9ef2-4e64-b440-e5d42d3fc6aa"
+                }
+            ],
+            "severity": "error",
+            "type": "items_not_allowed"
+        },
+        {
+            "description": "Элементы запрещены (правило 'RF opposite layer permits GND and RF only')",
+            "items": [
+                {
+                    "description": "Дорожка [/RADIO_RXEN] на B.Cu, длина 0,5657 mm",
+                    "pos": {
+                        "x": 43.9,
+                        "y": 8.9
+                    },
+                    "uuid": "99675fcb-773c-4e6d-b8c4-aaf05f6fce00"
+                }
+            ],
+            "severity": "error",
+            "type": "items_not_allowed"
+        },
+        {
+            "description": "Элементы запрещены (правило 'RF opposite layer permits GND and RF only')",
+            "items": [
+                {
+                    "description": "Дорожка [/RADIO_RXEN] на B.Cu, длина 8,5000 mm",
+                    "pos": {
+                        "x": 35.4,
+                        "y": 8.9
+                    },
+                    "uuid": "bf8c96d3-c1d6-48f1-897b-234536b52cb6"
+                }
+            ],
+            "severity": "error",
+            "type": "items_not_allowed"
+        },
+        {
+            "description": "Элементы запрещены (правило 'RF opposite layer permits GND and RF only')",
+            "items": [
+                {
+                    "description": "Дорожка [/RADIO_RXEN] на B.Cu, длина 0,1414 mm",
+                    "pos": {
+                        "x": 35.3,
+                        "y": 9.0
+                    },
+                    "uuid": "cc64dec5-a5b5-40de-aeda-10b2b7708cf8"
+                }
+            ],
+            "severity": "error",
+            "type": "items_not_allowed"
+        },
+        {
+            "description": "Элементы запрещены (правило 'RF opposite layer permits GND and RF only')",
+            "items": [
+                {
+                    "description": "Дорожка [/RADIO_RXEN] на B.Cu, длина 0,8485 mm",
+                    "pos": {
+                        "x": 34.6,
+                        "y": 9.6
+                    },
+                    "uuid": "ea26e6cf-2867-442c-93e1-58926b2704ec"
+                }
+            ],
+            "severity": "error",
+            "type": "items_not_allowed"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "Перех. отв. [GND] на F.Cu - B.Cu",
+                    "pos": {
+                        "x": 36.0,
+                        "y": 21.2
+                    },
+                    "uuid": "3c9c923b-3098-485d-b644-9b2867a323c6"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "Перех. отв. [GND] на F.Cu - B.Cu",
+                    "pos": {
+                        "x": 42.8,
+                        "y": 22.1
+                    },
+                    "uuid": "94cad2b3-4d57-46a4-90a6-ab235ed7ca7b"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "Дорожка [GPS_TX_MCU] на B.Cu, длина 0,1414 mm",
+                    "pos": {
+                        "x": 36.3,
+                        "y": 21.9
+                    },
+                    "uuid": "44f55565-7766-41b7-a7ea-664a5b7b57d3"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        }
+    ]
+}

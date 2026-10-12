@@ -12,9 +12,9 @@ from pathlib import Path
 import xml.etree.ElementTree as ET
 
 ROOT = Path(__file__).resolve().parents[1]
-WORKSPACE = ROOT.parents[1]
-SOURCE = WORKSPACE / "design" / "Meshcore_NaIon"
-NETLIST = WORKSPACE / "audit" / "s4_16_layout_fixes_20261011" / "schematic_netlist.xml"
+WORKSPACE = ROOT.parent.parent if ROOT.parent.name == "projects" else ROOT.parent
+SOURCE = ROOT / "baseline" / "S4_16"
+NETLIST = ROOT / "audit" / "source_s4_16" / "native_netlist.xml"
 EXPECTED_PCB = "742ae27bb1d13893f6dc368e5c67f5c41b35a3e6765331fc7e9871297d23dec6"
 
 
@@ -28,7 +28,7 @@ def write_json(path: Path, content) -> None:
 
 
 def main() -> None:
-    assert ROOT.name == "Mesh_Repeater_2_0", ROOT
+    assert ROOT.name in {"Mesh_Repeater_2_0", "v2"}, ROOT
     assert sha(SOURCE / "Meshcore_NaIon.kicad_pcb") == EXPECTED_PCB
     model = json.loads((SOURCE / "model.json").read_text(encoding="utf-8"))
     manifest = json.loads((SOURCE / "schematic_manifest.json").read_text(encoding="utf-8"))

@@ -1,0 +1,6 @@
+1
+23456781
+2345678A
+BCDEFA
+BCDEFDate: 2026-10-11KiCad E.D.A. 10.0.6Rev: V2.0-A1Size: A3Id: 5/5Title: Межплатное соединение / POWER ↔ LOGICFile: Interconnect.kicad_schSheet: /5. Interconnect/Электрическая принципиальная; прототипGND 1H3M3 GND contactGND1H2M3 GND contactGND1H1M3 GND contactGND1H4M3 GND contactFILTER_OUT
+1GND2FILTER_OUT3GND4FILTER_OUT5GND6FILTER_OUT7GND8BAT9GND10MODE11GND12J101INTERBOARD 12PMODEFILTER_OUTFILTER_OUTFILTER_OUTFILTER_OUTBATЭкран/стойки: только GND/EMI; не обязательный силовой возврат.Полная распиновка и маршрут кабеля — interboard_connections.csv.DS1013-12RSIB-B-0 Основные токи FILTER_OUT и GND идут по кабелю.BAT: отдельный отвод измерения прямо от разъёма батареи.Mesh Repeater 2.0 — POWER / межплатные соединенияMODE: R21 на LOGIC у источника; R17 pull-down на POWER.IDC 2x6 / 2.54 / 90degV2.0-A1 / 2026-10-11 / инженерный прототипD3 CHARGE / D4 DONE находятся только на POWER.J101 INTERBOARD 12PFILTER_OUT1GND2FILTER_OUT3GND4FILTER_OUT5GND6FILTER_OUT7GND8BAT9GND10MODE11GND12

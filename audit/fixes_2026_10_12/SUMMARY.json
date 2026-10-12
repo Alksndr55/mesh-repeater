@@ -1,0 +1,42 @@
+{
+  "date_UTC": "2026-10-12T03:20:32.714455+00:00",
+  "scope": "Five new V2 findings corrected; previous LTO constraints not silently changed",
+  "new_findings_closed": [
+    "R1",
+    "R2",
+    "M-01",
+    "M-02",
+    "DOC-01"
+  ],
+  "routing_paths_after": {
+    "MOSI": {
+      "mm": 29.73,
+      "vias": 2
+    },
+    "MISO": {
+      "mm": 40.75,
+      "vias": 4
+    },
+    "RESET": {
+      "mm": 33.35,
+      "vias": 1
+    }
+  },
+  "inherited_LTO_findings": [
+    "E-I1",
+    "E-I2"
+  ],
+  "inherited_LTO_status": "User selected preservation of existing circuitry and noted limitations; risks unchanged",
+  "publication_asserted": false,
+  "hardware_tests_performed": false,
+  "inputs_sha256": {
+    "audit/V2_FINAL_ACCEPTANCE.json": "5fd321ebaa2dcfb16f04ee0c9e1b998da25996add83961c393a219adbb70f771",
+    "audit/fixes_2026_10_12/user_decision.json": "0cb36bc2eb0812a84a36cfeaa96c2927b2f1772d0198eaed3ef0823d03184930",
+    "audit/fixes_2026_10_12/root_fresh_checks.json": "b59d2b959c8c35ad8e96ce8c994c9dc14f0c23ae3b6c229fc05e1b7c9cc5bea2",
+    "audit/fixes_2026_10_12/root_equivalence.json": "e9f6d426fc1cbe27729b0c73e64ffc13579f5575bb1787cbb0a9c4710468f575",
+    "audit/fixes_2026_10_12/reviewer_routing.json": "8073745055bf66f4a50bfbbbec827a1e46b7e1cb311165ac55a0c5d3a3ae2613",
+    "audit/fixes_2026_10_12/reviewer_mechanics.json": "482bc72d3b29b3a34ee34fd360ae413665b9c4384f2919659b0ab56ccf880aef",
+    "audit/fixes_2026_10_12/root_hole_metadata.json": "1a5ff50ee0cfe3e77fd0344e4fef0885789fe404dc22e61d9a3cb466c467739f",
+    "audit/fixes_2026_10_12/lto_options.json": "ea797bf8d9207238a59ee4d695ca22eb68184a2c3acd080b3a08082964758999"
+  }
+}

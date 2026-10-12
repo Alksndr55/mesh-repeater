@@ -1,0 +1,56 @@
+{
+  "status": "READ_ONLY_POST_USER_0P1R_REVIEW",
+  "shunt_ohm": 0.1,
+  "positive_current": "discharge",
+  "IN_plus": "BAT_raw",
+  "IN_minus": "BAT_SYS",
+  "bus_voltage_reports": "system_voltage_after_shunt",
+  "true_battery_voltage": "Vbus+Vshunt",
+  "current_regulation_R1_retained_ohm": 0.28,
+  "current_max_envelope_A": 0.7781678670961669,
+  "shunt_max_resistance_ohm": 0.101325,
+  "shunt_charge_drop_max_V": 0.07884785913351912,
+  "CN3722_review": [
+    {
+      "R3_ohm": 121000,
+      "battery_cv_typ_V": 5.34541,
+      "battery_cv_max_V": 5.444336182348979,
+      "converter_input_max_V": 5.523184041482499
+    },
+    {
+      "R3_ohm": 120000,
+      "battery_cv_typ_V": 5.3212,
+      "battery_cv_max_V": 5.419506957701467,
+      "converter_input_max_V": 5.498354816834986
+    },
+    {
+      "R3_ohm": 118000,
+      "battery_cv_typ_V": 5.272779999999999,
+      "battery_cv_max_V": 5.369848508406442,
+      "converter_input_max_V": 5.448696367539961
+    },
+    {
+      "R3_ohm": 117000,
+      "battery_cv_typ_V": 5.248569999999999,
+      "battery_cv_max_V": 5.34501928375893,
+      "converter_input_max_V": 5.423867142892449
+    }
+  ],
+  "normal_operation_new_LTO_issue": "Remote raw-battery CV feedback at original R3=121k can exceed TPS63802 recommended5.5V during positive charger current. Reducing R3 to118k restores calculation headroom; alternatively keep CV at BAT_SYS and accept charge droop. This is separate from accepted battery-absent OVP fault.",
+  "INA219_default_limits": "Stock32V2A calibration uses0.1ohm, shunt ADC max320mV=>3.2A, current register overflow3.2767A;4A peaks clip. Project main battery1.25A is125mV/156mW, initial charge0.714A is71.4mV/51mW.",
+  "pinout": {
+    "1": "FILTER_OUT",
+    "2": "GND",
+    "3": "FILTER_OUT",
+    "4": "GND",
+    "5": "FILTER_OUT",
+    "6": "GND",
+    "7": "SYS_3V3",
+    "8": "GND",
+    "9": "BAT",
+    "10": "SDA",
+    "11": "MODE",
+    "12": "SCL"
+  },
+  "source": "audit/independent_2026_10_12/electrical.py:99-107 and actual project model"
+}

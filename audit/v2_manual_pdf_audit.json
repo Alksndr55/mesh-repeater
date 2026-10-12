@@ -1,16 +1,20 @@
 {
   "pdf": {
     "path": "output\\pdf\\MeshRepeater2_assembly_manual_RU.pdf",
-    "sha256": "11a1817278e01b997a61baaa666cc365e57ffe953c1e64ff9300954c9756c0fa"
+    "sha256": "ade163413b518f4bb89ef152108b687b238866be5a6185f9c84e5598a592a61f"
   },
-  "pages": 8,
+  "pages": 9,
   "all_pages_visually_inspected": true,
-  "render_method": "Poppler PNG, full8-page contact sheet and full-size last page",
+  "render_method": "Poppler PNG; all-page contact sheet plus full page 3",
   "empty_or_single_line_pages": false,
   "fonts": "Embedded Arial; searchable Russian text",
   "source_sha256": {
-    "docs\\V2_ASSEMBLY_INSTRUCTIONS_RU.md": "6d517fbef9497ee2d32eedb1db46ce8861ed53f685adf0311109dbc6db121162",
-    "docs\\V2_LIMITATIONS_RU.md": "cca6ed025404f75a4932fc3af73e1e5f6a418679ea2692261439b15114ebb7de",
-    "tools\\cad\\render_v2_manual.py": "099f27d21197c99878ff85d3aa7899d6de185af64f1c2f30ecb069826047d77d"
+    "docs/V2_ASSEMBLY_INSTRUCTIONS_RU.md": "e76ddd899824097a22a92118283e7ab3c1e969ba50b85685180c0dcf992a8ba6",
+    "docs/V2_LIMITATIONS_RU.md": "2f60f6e6100bb7969c51a0644988c54d4ede25becc7643bd6a0be5443fb79e6d",
+    "tools/cad/render_v2_manual.py": "099f27d21197c99878ff85d3aa7899d6de185af64f1c2f30ecb069826047d77d"
+  },
+  "visual_review_evidence": {
+    "path": "audit\\fixes_2026_10_12\\root_pdf_manual.json",
+    "sha256": "77ab20dc384b77ec4ed9a80d6da765df7890b1f5d1b6eaa163a8a51758f46af1"
   }
 }

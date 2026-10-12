@@ -1,0 +1,81 @@
+{
+  "pcb": "design\\MeshRepeater2_Power\\MeshRepeater2_Power.kicad_pcb",
+  "model": "design\\MeshRepeater2_Power\\model.json",
+  "xml": "audit\\schematic\\POWER\\netlist.xml",
+  "input_sha256": {
+    "pcb": "896f7e298de16ba33001a9149709476ee5a3b5f4deee2a16b6d9f5ad8cc2d164",
+    "model": "59e16e07f07cca8d2bd096601bb14d6a517fe9d503368d3df6ee4a9e2519e3c1",
+    "xml": "b9596140183d125cc10606413124ab568d28170198d4463657db577b9bd0896e"
+  },
+  "allowed_mutations": [
+    "footprint property text values",
+    "new hidden property fields",
+    "schematic instance path"
+  ],
+  "unchanged": [
+    "footprint library ID and UUID",
+    "placement and orientation",
+    "existing field style",
+    "pads and nets",
+    "tracks and vias",
+    "zones and filled geometry",
+    "3D models",
+    "all non-property footprint artwork",
+    "project settings"
+  ],
+  "changes": [
+    {
+      "ref": "J8",
+      "fields": {},
+      "path_before": "/4936dedf-697f-5d13-9744-01d670b7457a/d332aa52-79d5-5d41-91ac-8b8721e66fb9",
+      "path_after": "/4936dedf-697f-5d13-9744-01d670b7457a/3e0fda10-9f94-570d-b511-d93b150d3762/d332aa52-79d5-5d41-91ac-8b8721e66fb9",
+      "value_before": "Na-ion 1S",
+      "value_after": "Na-ion 1S"
+    },
+    {
+      "ref": "J101",
+      "fields": {
+        "MPN": {
+          "before": "E-SIMPO 2x6P L35mm A3C6",
+          "after": "E-SIMPO L35mm A3C6 2x6P"
+        },
+        "Value_NaIon": {
+          "before": "INTERBOARD 12P",
+          "after": "INTERBOARD 2x6 VERTICAL"
+        },
+        "Value_LTO_2S": {
+          "before": "INTERBOARD 12P",
+          "after": "INTERBOARD 2x6 VERTICAL"
+        },
+        "MPN_NaIon": {
+          "before": "Connfly DS1013-12RSIB-B-0",
+          "after": "E-SIMPO L35mm A3C6 2x6P"
+        },
+        "MPN_LTO_2S": {
+          "before": "Connfly DS1013-12RSIB-B-0",
+          "after": "E-SIMPO L35mm A3C6 2x6P"
+        },
+        "Value_NaIon_NoCold": {
+          "before": "INTERBOARD 12P",
+          "after": "INTERBOARD 2x6 VERTICAL"
+        },
+        "MPN_NaIon_NoCold": {
+          "before": "Connfly DS1013-12RSIB-B-0",
+          "after": "E-SIMPO L35mm A3C6 2x6P"
+        },
+        "Description": {
+          "before": "Ali E-SIMPO 2x6P L35mm A3C6. Full metal35mm; solder tail3mm; tip32mm above board; lower plastic0..2.5mm, upper plastic23.5..26mm; free tip6mm. Male pin section0.64mm is nominal envelope only, not documented acceptance.",
+          "after": "Direct vertical connection through 12 isolated screen holes. Mirrored female pad grid gives physical 1:1 after LOGIC X180. Pin7 returns SYS_3V3 to INA219 only; remove J11 before USB as before. Exact generic pin section and mating limits require sample check."
+        }
+      },
+      "path_before": "/4936dedf-697f-5d13-9744-01d670b7457a/ee8c890a-b94c-5d31-a2d6-e6deaf06236d/c44f063d-67fd-579d-b4b1-18c353ba57ec",
+      "path_after": "/4936dedf-697f-5d13-9744-01d670b7457a/ee8c890a-b94c-5d31-a2d6-e6deaf06236d/c44f063d-67fd-579d-b4b1-18c353ba57ec",
+      "value_before": "INTERBOARD 12P",
+      "value_after": "INTERBOARD 2x6 VERTICAL"
+    }
+  ],
+  "check_only": false,
+  "status": "SYNCED_WITH_SAVED_GEOMETRY_INVARIANT",
+  "masked_geometry_sha256": "d153a6a68b0eb2932ebf5ead8ce5d8454e42d43916edf6ceeb1aa05afa8ac0ad",
+  "native_sha256": "d9b419763971975f2dade3f9e610a794e562233c87fc5453bc357dda58ca4616"
+}

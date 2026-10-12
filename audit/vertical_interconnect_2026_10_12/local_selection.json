@@ -1,0 +1,212 @@
+{
+  "checked_date": "2026-10-12",
+  "timezone": "Asia/Omsk",
+  "status": "PURCHASABLE_DOCUMENTED_PAIR_PROPOSED; INPUT_DIMENSIONAL_INSPECTION_REQUIRED; CAD_UNCHANGED",
+  "male": {
+    "mpn": "TSW-106-21-L-D",
+    "vendor": "ChipDip",
+    "url": "https://www.chipdip.ru/product/tsw-106-21-l-d-samtec-8068996880",
+    "rub_each": 390,
+    "stock_displayed": 70,
+    "stock_kind": "supplier stock; not local Moscow stock",
+    "lead_time_displayed": "4 weeks",
+    "minimum_order": 25,
+    "buy_button_visible": true
+  },
+  "female": {
+    "mpn": "BCS-106-L-D-TE",
+    "vendor": "ChipDip",
+    "url": "https://www.chipdip.ru/product/bcs-106-l-d-te-samtec-8048163390",
+    "rub_each": 150,
+    "stock_displayed": 7,
+    "stock_kind": "Moscow warehouse",
+    "lead_time_displayed": "2 weeks",
+    "minimum_order": 1,
+    "buy_button_visible": true
+  },
+  "cost": {
+    "consumed_pair_rub": 540,
+    "assemblies_needed": 5,
+    "male_order_qty": 25,
+    "female_order_qty": 5,
+    "order_total_excluding_shipping_rub": 10500,
+    "unused_males": 20
+  },
+  "mechanics": {
+    "date": "2026-10-12",
+    "status": "NOMINAL GEOMETRY PASS; SOCKET STOCK NOT VERIFIED BY THIS AGENT",
+    "male": "TSW-106-21-L-D",
+    "female": "BCS-106-L-D-TE",
+    "native_changed": false,
+    "post_mm": 30.987999999999996,
+    "post_tolerance_mm": 0.2032,
+    "body_ref_mm": 2.54,
+    "female_ref_mm": 7.365999999999999,
+    "F_face_gap_mm": 36.02,
+    "nominal_insertion_mm": 4.873999999999995,
+    "passport_insertion_window_mm": [
+      4.3434,
+      7.238999999999999
+    ],
+    "incoming_acceptance_tolerances_mm": {
+      "male_body_REF": 0.1,
+      "female_height_REF": 0.1,
+      "assembled_F_face_gap": 0.1
+    },
+    "total_budget_mm": 0.5032,
+    "insertion_under_acceptance_mm": [
+      4.370799999999996,
+      5.377199999999995
+    ],
+    "conditions": "REF tolerances are incoming inspection requirements, not manufacturer guaranteed tolerances. Assembly gap measured near connector. Shield pin straightness and openings require separate verification."
+  },
+  "independent_review": {
+    "result": "Nominal mating, current requirement, quoted stock and cost checked against primary sources",
+    "preferred_assembly_acceptance_insertion_mm": [
+      4.5,
+      7.0
+    ],
+    "reason": "The computed worst-case under separate ±0.10 inspection gates has only 0.0274 mm margin above the absolute minimum. Use direct insertion-depth acceptance with margin for all pins. This is an assembly inspection requirement, not a claim that all vendor tolerance combinations fit automatically."
+  },
+  "shield": {
+    "crossed_by_pins": true,
+    "male_body_above_POWER_mm": 2.54,
+    "shield_near_face_above_POWER_mm": 18.5,
+    "shield_far_face_above_POWER_mm": 20.02,
+    "female_bottom_above_POWER_mm": 28.654,
+    "female_to_SHIELD_clearance_mm": 8.634,
+    "holes_are_proposed_not_implemented": true,
+    "condition": "Isolated NPTH apertures and foil clearance; hole size must include pin straightness and board registration. No fixed final drill size certified in this proposal."
+  },
+  "source_documents": {
+    "male": "https://suddendocs.samtec.com/prints/tsw-xxx-xx-xxx-x-xx-xxx-mkt.pdf",
+    "female": "https://suddendocs.samtec.com/prints/bcs-1xx-xxx-x-xx-xxx-mkt.pdf",
+    "mating_window": "https://suddendocs.samtec.com/catalog_english/bcs.pdf"
+  },
+  "cheaper_candidate": {
+    "male": {
+      "date_local": "2026-10-12",
+      "timezone": "Asia/Omsk",
+      "scope": "Read-only connector selection; no CAD edits",
+      "status": "PRICE_AND_STOCK_CONFIRMED_NOMINAL_HEIGHT_FITS_CONTACT_SECTION_UNDOCUMENTED",
+      "shop": "aliexpress.ru",
+      "seller": "ConnPro Factory Supply Store",
+      "seller_store_id": "1105427632",
+      "brand_listed": "E-SIMPO",
+      "product_id": "1005011978353933",
+      "sku_id": "12000057202232448",
+      "url": "https://aliexpress.ru/item/1005011978353933.html?sku_id=12000057202232448",
+      "selected_options": {
+        "color_dimension": "L35mm A3C6",
+        "contact_count": "2x6P"
+      },
+      "purchase": {
+        "currency": "RUB",
+        "lot_price": 1449,
+        "lot_quantity": 50,
+        "calculated_unit_price": 28.98,
+        "stock_text_exact": "Осталось 99+ шт.",
+        "add_to_cart_button_visible": true,
+        "added_to_cart": false,
+        "postal_shipping_price": 363,
+        "postal_delivery_text": "2–8 ноября почтой",
+        "pickup_shipping_price": 478,
+        "pickup_delivery_text": "4 ноября в пункт выдачи",
+        "unit_count_of_stock_is_not_inferred": true
+      },
+      "geometry": {
+        "pin_pitch": 2.54,
+        "row_pitch": 2.54,
+        "rows": 2,
+        "positions_per_row": 6,
+        "metal_total_length_L": 35,
+        "solder_tail_PC": 3,
+        "mating_tip_free_PA": 6,
+        "PB_includes_two_plastic_rows": 26,
+        "plastic_thickness_each": 2.5,
+        "body_length_nominal": 15.24,
+        "body_width_nominal": 5.08,
+        "tip_height_from_power_front_plane": 32,
+        "upper_insulator_top_height_from_power_front_plane": 26,
+        "required_front_plane_gap": 36.02,
+        "female_example_body_height": 8.5,
+        "nominal_mating_insertion_with_example": 4.48,
+        "nominal_upper_insulator_to_female_mouth_clearance": 1.52,
+        "cross_section_dimension_of_exact_sku_documented": false,
+        "cross_section_note": "Square contacts visible in photographs. Exact width and width tolerance are not given in this listing's drawing. Do not claim 0.64 SQ verified from this listing. A related one-row listing has a 0.64 SQ drawing, which is not proof for this exact SKU.",
+        "recommended_pcb_drill_diameter": 1.02,
+        "seller_general_tolerance_text": "+/-0,2 мм",
+        "drawing_general_tolerance_xx": 0.2,
+        "drawing_general_tolerance_x": 0.25,
+        "dimensional_fit_scope": "Nominal axial fit only. Manufacturing, PCB thickness and standoff stack tolerances must be included by the root reviewer; insertion-depth, section-width and pin straightness incoming acceptance remains necessary."
+      },
+      "electrical_and_materials": {
+        "seller_current_rating_A": 3,
+        "drawing_current_rating_A": 3,
+        "seller_contact_material": "Фосфорная бронза",
+        "drawing_contact_material": "Copper Alloy",
+        "seller_finish": "Золотое покрытие",
+        "drawing_contact_resistance_mOhm_max": 30,
+        "seller_operating_temperature_C": [
+          -40,
+          105
+        ],
+        "plating_thickness_for_exact_selected_sku_specified": false
+      },
+      "evidence": {
+        "live_browser_tab": "Codex In-app Browser / tab 6",
+        "live_screenshot_captured": true,
+        "screenshot_contains": [
+          "selected L35mm A3C6",
+          "selected 2x6P",
+          "1449 rubles",
+          "lot 50",
+          "99+ stock",
+          "add to cart",
+          "shipping prices and dates"
+        ],
+        "dimensional_overview": "sources/ali_local_male35_drawing_1.png",
+        "seller_engineering_drawing": "sources/ali_local_male35_drawing_2.png",
+        "seller_engineering_drawing_source": "https://ae-pic-a1.aliexpress-media.com/kf/S899bd0aaf5cb4157b772b786ab13dd72g.jpg?width=1452&height=1000&hash=2452",
+        "photo_pack_quantity_50_for_related_length_30_not_selected_length": "sources/ali_local_male35_details_11.png"
+      },
+      "rejected_related_candidates": [
+        {
+          "product_id": "1005011894771753",
+          "option": "L30mm A3C6 / 1x12P",
+          "reason": "Metal total length 30 mm with 3 mm tail leaves tip 27 mm above PCB; does not reach a normal 8.5 mm socket across 36.02 mm."
+        },
+        {
+          "product_id": "1005012685154719",
+          "reason": "Official seller spacer height choices 11/13.5/16/18.5/21 mm, but only 2x20 contacts and lot/unit ambiguity; no accepted 12-contact exact variant."
+        },
+        {
+          "product_id": "1005013255703196",
+          "reason": "Female height choices stop at 8.5 mm; cannot solve the short L30 male's reach."
+        }
+      ]
+    },
+    "female": "SSW-106-01-G-D",
+    "female_url": "https://www.chipdip.ru/product/ssw-106-01-g-d-2.54mm-double-row-4.7a-gold-12p-samtec-8044793842",
+    "female_price_rub": 570,
+    "female_stock_displayed": 17,
+    "female_lead_time": "5-6 weeks",
+    "nominal_insertion_mm": 4.489,
+    "cost_for5_excluding_shipping_rub": 4299,
+    "not_selected_reason": "Exact Ali SKU pin width and tolerance absent; cross-section compatibility not documented. Do not claim a fully confirmed pair."
+  },
+  "native_sha256": {
+    "Power": {
+      "sha256": "c4efced02420f48fea993d166091e3ba3ec7be7cf9bc30feec164d067077cc3b",
+      "unchanged_from_previous_turn": true
+    },
+    "Logic": {
+      "sha256": "6cbd7850caa14163ebe4d40aba4435ac8fe17f327d68419dfb94e0a1bc361bc8",
+      "unchanged_from_previous_turn": true
+    },
+    "Shield": {
+      "sha256": "4ba1d2a7b47dd392b2ac79fa9a7e10fbf8e98be6b8a3423c813d8530ddb25147",
+      "unchanged_from_previous_turn": true
+    }
+  }
+}

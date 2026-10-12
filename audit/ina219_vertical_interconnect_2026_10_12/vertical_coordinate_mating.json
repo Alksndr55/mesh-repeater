@@ -1,0 +1,352 @@
+{
+  "status": "SAVED_NATIVE_THREE_BOARD_ALIGNMENT_PASS",
+  "inputsha256": {
+    "POWER": "24e7f986b5367bad9b9b7b468f39a2237bb83569585871b9a056a6da6072e729",
+    "LOGIC": "b9e6e4f621f9a685433c9bd22d7af0ff4e1639eb47f94c2509e6de6d401a66ca",
+    "SHIELD": "66854e88ca8ffcfba0514f08ceff8c29d2ea8b6e5262a8d6ed48405f2f0ed8e3"
+  },
+  "input_sha256": {
+    "POWER": "24e7f986b5367bad9b9b7b468f39a2237bb83569585871b9a056a6da6072e729",
+    "LOGIC": "b9e6e4f621f9a685433c9bd22d7af0ff4e1639eb47f94c2509e6de6d401a66ca",
+    "SHIELD": "66854e88ca8ffcfba0514f08ceff8c29d2ea8b6e5262a8d6ed48405f2f0ed8e3"
+  },
+  "native_files": {
+    "POWER": "design\\MeshRepeater2_Power\\MeshRepeater2_Power.kicad_pcb",
+    "LOGIC": "design\\MeshRepeater2_Logic\\MeshRepeater2_Logic.kicad_pcb",
+    "SHIELD": "design\\MeshRepeater2_Shield\\MeshRepeater2_Shield.kicad_pcb"
+  },
+  "matched_pins": [
+    {
+      "pin": "1",
+      "net": "FILTER_OUT",
+      "POWER_actual_xy_mm": [
+        64.15,
+        11.0
+      ],
+      "LOGIC_native_xy_mm": [
+        64.15,
+        49.0
+      ],
+      "physical_LOGIC_xy_mm": [
+        64.15,
+        11.0
+      ],
+      "shield_native_xy_mm": [
+        64.15,
+        49.0
+      ],
+      "physical_hole_xy_mm": [
+        64.15,
+        11.0
+      ],
+      "hole_drill_mm": 2.0,
+      "hole_uuid": "afc41c9b-f218-4b70-bf2c-a4bfab0beb25"
+    },
+    {
+      "pin": "2",
+      "net": "GND",
+      "POWER_actual_xy_mm": [
+        64.15,
+        8.46
+      ],
+      "LOGIC_native_xy_mm": [
+        64.15,
+        51.54
+      ],
+      "physical_LOGIC_xy_mm": [
+        64.15,
+        8.46
+      ],
+      "shield_native_xy_mm": [
+        64.15,
+        51.54
+      ],
+      "physical_hole_xy_mm": [
+        64.15,
+        8.46
+      ],
+      "hole_drill_mm": 2.0,
+      "hole_uuid": "19cc6456-78c8-4904-b4f4-529ab6589c5f"
+    },
+    {
+      "pin": "3",
+      "net": "FILTER_OUT",
+      "POWER_actual_xy_mm": [
+        66.69,
+        11.0
+      ],
+      "LOGIC_native_xy_mm": [
+        66.69,
+        49.0
+      ],
+      "physical_LOGIC_xy_mm": [
+        66.69,
+        11.0
+      ],
+      "shield_native_xy_mm": [
+        66.69,
+        49.0
+      ],
+      "physical_hole_xy_mm": [
+        66.69,
+        11.0
+      ],
+      "hole_drill_mm": 2.0,
+      "hole_uuid": "892c7db9-7f0c-41eb-95c2-a47b1e76285c"
+    },
+    {
+      "pin": "4",
+      "net": "GND",
+      "POWER_actual_xy_mm": [
+        66.69,
+        8.46
+      ],
+      "LOGIC_native_xy_mm": [
+        66.69,
+        51.54
+      ],
+      "physical_LOGIC_xy_mm": [
+        66.69,
+        8.46
+      ],
+      "shield_native_xy_mm": [
+        66.69,
+        51.54
+      ],
+      "physical_hole_xy_mm": [
+        66.69,
+        8.46
+      ],
+      "hole_drill_mm": 2.0,
+      "hole_uuid": "777dd810-402b-4554-b365-cf2f5e7d10f4"
+    },
+    {
+      "pin": "5",
+      "net": "FILTER_OUT",
+      "POWER_actual_xy_mm": [
+        69.23,
+        11.0
+      ],
+      "LOGIC_native_xy_mm": [
+        69.23,
+        49.0
+      ],
+      "physical_LOGIC_xy_mm": [
+        69.23,
+        11.0
+      ],
+      "shield_native_xy_mm": [
+        69.23,
+        49.0
+      ],
+      "physical_hole_xy_mm": [
+        69.23,
+        11.0
+      ],
+      "hole_drill_mm": 2.0,
+      "hole_uuid": "de323fb9-2467-4164-b3ba-07b947c434b1"
+    },
+    {
+      "pin": "6",
+      "net": "GND",
+      "POWER_actual_xy_mm": [
+        69.23,
+        8.46
+      ],
+      "LOGIC_native_xy_mm": [
+        69.23,
+        51.54
+      ],
+      "physical_LOGIC_xy_mm": [
+        69.23,
+        8.46
+      ],
+      "shield_native_xy_mm": [
+        69.23,
+        51.54
+      ],
+      "physical_hole_xy_mm": [
+        69.23,
+        8.46
+      ],
+      "hole_drill_mm": 2.0,
+      "hole_uuid": "1b3d742d-8c33-4ef2-9fc5-6a38a7c3df08"
+    },
+    {
+      "pin": "7",
+      "net": "SYS_3V3",
+      "POWER_actual_xy_mm": [
+        71.77,
+        11.0
+      ],
+      "LOGIC_native_xy_mm": [
+        71.77,
+        49.0
+      ],
+      "physical_LOGIC_xy_mm": [
+        71.77,
+        11.0
+      ],
+      "shield_native_xy_mm": [
+        71.77,
+        49.0
+      ],
+      "physical_hole_xy_mm": [
+        71.77,
+        11.0
+      ],
+      "hole_drill_mm": 2.0,
+      "hole_uuid": "d468306a-b6f4-4361-82dc-6750d6414041"
+    },
+    {
+      "pin": "8",
+      "net": "GND",
+      "POWER_actual_xy_mm": [
+        71.77,
+        8.46
+      ],
+      "LOGIC_native_xy_mm": [
+        71.77,
+        51.54
+      ],
+      "physical_LOGIC_xy_mm": [
+        71.77,
+        8.46
+      ],
+      "shield_native_xy_mm": [
+        71.77,
+        51.54
+      ],
+      "physical_hole_xy_mm": [
+        71.77,
+        8.46
+      ],
+      "hole_drill_mm": 2.0,
+      "hole_uuid": "bed91d8e-ee8c-4c6b-80ad-1766bbf9afe6"
+    },
+    {
+      "pin": "9",
+      "net": "BAT",
+      "POWER_actual_xy_mm": [
+        74.31,
+        11.0
+      ],
+      "LOGIC_native_xy_mm": [
+        74.31,
+        49.0
+      ],
+      "physical_LOGIC_xy_mm": [
+        74.31,
+        11.0
+      ],
+      "shield_native_xy_mm": [
+        74.31,
+        49.0
+      ],
+      "physical_hole_xy_mm": [
+        74.31,
+        11.0
+      ],
+      "hole_drill_mm": 2.0,
+      "hole_uuid": "fd2cadd3-a038-432f-ba93-c02bc9218017"
+    },
+    {
+      "pin": "10",
+      "net": "SDA",
+      "POWER_actual_xy_mm": [
+        74.31,
+        8.46
+      ],
+      "LOGIC_native_xy_mm": [
+        74.31,
+        51.54
+      ],
+      "physical_LOGIC_xy_mm": [
+        74.31,
+        8.46
+      ],
+      "shield_native_xy_mm": [
+        74.31,
+        51.54
+      ],
+      "physical_hole_xy_mm": [
+        74.31,
+        8.46
+      ],
+      "hole_drill_mm": 2.0,
+      "hole_uuid": "9a4717b2-a290-4857-99de-0c6d7b0431ba"
+    },
+    {
+      "pin": "11",
+      "net": "MODE",
+      "POWER_actual_xy_mm": [
+        76.85,
+        11.0
+      ],
+      "LOGIC_native_xy_mm": [
+        76.85,
+        49.0
+      ],
+      "physical_LOGIC_xy_mm": [
+        76.85,
+        11.0
+      ],
+      "shield_native_xy_mm": [
+        76.85,
+        49.0
+      ],
+      "physical_hole_xy_mm": [
+        76.85,
+        11.0
+      ],
+      "hole_drill_mm": 2.0,
+      "hole_uuid": "a36eabef-d332-48ce-b08f-c04895cfa2af"
+    },
+    {
+      "pin": "12",
+      "net": "SCL",
+      "POWER_actual_xy_mm": [
+        76.85,
+        8.46
+      ],
+      "LOGIC_native_xy_mm": [
+        76.85,
+        51.54
+      ],
+      "physical_LOGIC_xy_mm": [
+        76.85,
+        8.46
+      ],
+      "shield_native_xy_mm": [
+        76.85,
+        51.54
+      ],
+      "physical_hole_xy_mm": [
+        76.85,
+        8.46
+      ],
+      "hole_drill_mm": 2.0,
+      "hole_uuid": "d3c2947f-e49e-4422-b965-867543711ef0"
+    }
+  ],
+  "actual_footprints": {
+    "POWER": "Ali_PinHeader_2x06_P2.54_L35_A3C6__V2_J101",
+    "LOGIC": "Ali_PinSocket_2x06_P2.54_H8.5_v2_mirror__V2_J201",
+    "SHIELD": "Shield_Interconnect_2x06_NPTH_D2_CuVoid3"
+  },
+  "all_12_actual_holes_match_actual_pads": true,
+  "all_12_actual_physical_net_roles_match": true,
+  "ISP_J10_native_xy_mm": [
+    35.7,
+    31.3
+  ],
+  "ISP_J10_angle_deg": 0.0,
+  "shield_foil_outline_count": 1,
+  "shield_foil_void_count": 5,
+  "nominal_working_face_gap_mm": 36.02,
+  "male_tip_above_POWER_mm": 32,
+  "socket_body_height_mm": 8.5,
+  "nominal_socket_insertion_mm": 4.48,
+  "sample_contact_fit_required": true,
+  "height_qualification": "Selected sale drawings and fixed nominal stack only; this proves coordinate/net mating, not undocumented spring-contact fit or pin straightness."
+}

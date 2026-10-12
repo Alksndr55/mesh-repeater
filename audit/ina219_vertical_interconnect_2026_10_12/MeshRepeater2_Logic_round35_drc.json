@@ -1,0 +1,217 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-10-12T14:12:51",
+    "ignored_checks": [],
+    "included_severities": [
+        "error",
+        "warning",
+        "exclusion"
+    ],
+    "kicad_version": "10.0.6",
+    "schematic_parity": [],
+    "source": "MeshRepeater2_Logic.kicad_pcb",
+    "unconnected_items": [
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "PTH конт. пл. 7 [SYS_3V3] у J201",
+                    "pos": {
+                        "x": 71.77,
+                        "y": 49.0
+                    },
+                    "uuid": "35927560-453b-4eaf-8be6-67509a265ff5"
+                },
+                {
+                    "description": "Конт. пл. 1 [SYS_3V3] от R36 на F.Cu",
+                    "pos": {
+                        "x": 50.9125,
+                        "y": 38.035
+                    },
+                    "uuid": "8b3b38f3-18e5-442e-88f1-8f994ff57c21"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Конт. пл. 2 [MODE] от R21 на F.Cu",
+                    "pos": {
+                        "x": 48.9125,
+                        "y": 45.0
+                    },
+                    "uuid": "5c2b1981-ae90-491a-a98b-661794875f42"
+                },
+                {
+                    "description": "PTH конт. пл. 11 [MODE] у J201",
+                    "pos": {
+                        "x": 76.85,
+                        "y": 49.0
+                    },
+                    "uuid": "739bfb52-9b4e-4c04-8ccf-c2cdf1f2d14b"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Дорожка [SCL] на B.Cu, длина 1,8000 mm",
+                    "pos": {
+                        "x": 84.7,
+                        "y": 27.9
+                    },
+                    "uuid": "e0951320-9fc6-4fb9-b74d-2b965b0d9a87"
+                },
+                {
+                    "description": "PTH конт. пл. 12 [SCL] у J201",
+                    "pos": {
+                        "x": 76.85,
+                        "y": 51.54
+                    },
+                    "uuid": "197306f1-7653-4736-b077-401d97d6a1e8"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Конт. пл. 1 [BAT] от R27 на F.Cu",
+                    "pos": {
+                        "x": 29.8,
+                        "y": 19.9125
+                    },
+                    "uuid": "79039c46-5b11-44d5-8d99-2a959bd10da5"
+                },
+                {
+                    "description": "PTH конт. пл. 9 [BAT] у J201",
+                    "pos": {
+                        "x": 74.31,
+                        "y": 49.0
+                    },
+                    "uuid": "c89a83a3-87fa-4d0a-90e1-d80310a3c731"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "PTH конт. пл. 1 [FILTER_OUT] у J201",
+                    "pos": {
+                        "x": 64.15,
+                        "y": 49.0
+                    },
+                    "uuid": "c4eeab32-d0a5-43cf-94e5-f4b4ac36babd"
+                },
+                {
+                    "description": "PTH конт. пл. 3 [FILTER_OUT] у J201",
+                    "pos": {
+                        "x": 66.69,
+                        "y": 49.0
+                    },
+                    "uuid": "e51337b4-ebc5-44d6-9930-6a9904c32819"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "PTH конт. пл. 3 [FILTER_OUT] у J201",
+                    "pos": {
+                        "x": 66.69,
+                        "y": 49.0
+                    },
+                    "uuid": "e51337b4-ebc5-44d6-9930-6a9904c32819"
+                },
+                {
+                    "description": "PTH конт. пл. 5 [FILTER_OUT] у J201",
+                    "pos": {
+                        "x": 69.23,
+                        "y": 49.0
+                    },
+                    "uuid": "17df8f73-38ec-4c3c-ba33-faac628ace63"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "PTH конт. пл. 5 [FILTER_OUT] у J201",
+                    "pos": {
+                        "x": 69.23,
+                        "y": 49.0
+                    },
+                    "uuid": "17df8f73-38ec-4c3c-ba33-faac628ace63"
+                },
+                {
+                    "description": "Дорожка [FILTER_OUT] на F.Cu, длина 1,2728 mm",
+                    "pos": {
+                        "x": 86.9,
+                        "y": 23.9
+                    },
+                    "uuid": "2bb2795f-084c-4544-b14a-853af5328e2b"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Дорожка [SDA] на B.Cu, длина 0,1414 mm",
+                    "pos": {
+                        "x": 73.9,
+                        "y": 29.1
+                    },
+                    "uuid": "ae8b701a-8f75-4db9-9ce3-f35712116256"
+                },
+                {
+                    "description": "PTH конт. пл. 10 [SDA] у J201",
+                    "pos": {
+                        "x": 74.31,
+                        "y": 51.54
+                    },
+                    "uuid": "b093c723-0e42-4a43-9e85-43952ed2447a"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        }
+    ],
+    "violations": [
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "Дорожка [BAT] на B.Cu, длина 0,1414 mm",
+                    "pos": {
+                        "x": 12.9,
+                        "y": 26.0
+                    },
+                    "uuid": "7128a638-5f3e-4638-aebc-b4b5afb73065"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        }
+    ]
+}

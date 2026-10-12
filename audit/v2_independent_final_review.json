@@ -1,513 +1,531 @@
 {
-  "stage": "FINAL_CAD_REVIEW_PASSED_WITH_EXPLICIT_SAMPLE_QUALIFICATION_LIMITS",
-  "ok": true,
-  "date_UTC": "2026-10-11T18:04:11.938387+00:00",
-  "reviewer": "v2_final_review",
-  "native_PCB_modified": false,
-  "final_snapshot_authorized": true,
-  "scope": "Original V2 prompt plus latest ISP disassembled-service override. Independent practical review and final artifact acceptance; preserved electronics are not redesigned.",
-  "inputs_sha256": {
-    "AGENTS.md": "2fae0a331fa0fc860fa20e6c06c04a77c55d1d3f34939ef079589d71dae7a5f0",
-    "README.md": "95db97879e16062ded7ffe10ddbc3a12747218f559a9263fbc4ece9994a91ffd",
-    "START_HERE_RU.md": "61ff77f83b10d51b2b040ab25480b567c0abbbc3ad5adf3ba9a5f255f26c5bb4",
-    "audit/independent_angles_snapshot.json": "a5fbee0590e7203cc0b762c8e7c8b8f3518f83929da474f649a2aa33d90054e2",
-    "audit/independent_route_snapshot.json": "bfb22bc2ae8040080062cef7d7f729f503137420d38282525d94df6ca1802da5",
-    "audit/logic_operator_labels.json": "4f593a6cc050aed0883bf34e6bd894a7ee0e2a257e020c9ba8d9b0f73803dcdf",
-    "audit/v2_independent_geometry.json": "7149f1e4a7a00d51ed97380d347aee45a1b57f00922bd6f134fa48a95c203166",
-    "audit/v2_native_boards_final.json": "5df39c85daf43735c8a321f924090e2d15ef5836d789ede0d8b8b38819f7d67c",
-    "audit/v2_schematic_equivalence.json": "91725b71f7933ceed5791dbd87a054b95b5fd68811a6c9260f57b01346080461",
-    "bom/DAN_NEW_PARTS.csv": "b4314c1d2d55fe533317e2fe48b41dd5a28a24d6a33e4a88eb74604cf00450e6",
-    "bom/NOTES_RU.txt": "e8938bfc13241b158fd2b99b6eb945908827fcb08578f1cdca47d646004d058f",
-    "bom/V2_COMPONENT_BOM.csv": "a16dc5dc76ce541ad15de3193ce359ae23a9f02d0c275ba0d78183dfc0ec6dc8",
-    "design/MeshRepeater2_Logic/MeshRepeater2_Logic.kicad_pcb": "2750624dc6c2c7e8b50089e66e5d9eef9c29aa3ee28541f72f54186b58dc9ceb",
-    "design/MeshRepeater2_Power/MeshRepeater2_Power.kicad_pcb": "dd40232294bc3bfd88565f6843400ad10a68220e472d3d6cb3d7ac200152cf64",
-    "design/MeshRepeater2_Shield/MeshRepeater2_Shield.kicad_pcb": "4ba1d2a7b47dd392b2ac79fa9a7e10fbf8e98be6b8a3423c813d8530ddb25147",
-    "design/interboard_cable.json": "f3cbf52237a6257fc11b384e1438703a8363b237d7eaef95db1f8439dfed44ac",
-    "docs/Mesh_repeater_v2_Codex_prompt_RU.txt": "2611cec887ed0c8dc714ca3a3805e4e9f31effc8741a73f838cce86d844e8041",
-    "docs/V2_ASSEMBLY_INSTRUCTIONS_RU.md": "6d517fbef9497ee2d32eedb1db46ce8861ed53f685adf0311109dbc6db121162",
-    "docs/V2_LIMITATIONS_RU.md": "cca6ed025404f75a4932fc3af73e1e5f6a418679ea2692261439b15114ebb7de",
-    "docs/mechanical_selection.json": "199dfe4daebb9bd490bc6c704a8e08ce3ab3097e215a2fc8edaa3e331190e962",
-    "docs/mechanics/MeshRepeater2_assembly.step": "1aa189e1d002ebec6088d391e9ccba31ebd715d6bdfaa627d6fe20c0b9eaf32a",
-    "docs/mechanics/MeshRepeater2_exploded.step": "c1b096b373ffd56e74da9194b5e523b494d9730d72e42bf2ba049fc15e0a7726",
-    "docs/mechanics/assembly_geometry_report.json": "d8e008256af04d0c602990f179ec958bfda2f19b83cde2267276ef1d642c93e3",
-    "docs/mechanics/assembly_pdf_audit.json": "e8336da76e7b8a68cf95f1978aaa0367f4befa553fe3424da359c2dadbbd7fad",
-    "docs/mechanics/native_render_report.json": "67371af48a4c29fb1484b6332e55f37e40b68d4fae66287469e79b115e092354",
-    "docs/mechanics_findings_RU.md": "9b775faa255c7c8fa97ace5cd8dead06fcae52f7bbd268dc0ea3248fb692a797",
-    "docs\\mechanics\\MeshRepeater2_assembly_native_3D.png": "d90644153516313c1f60d209e0a604292f45bdbc58f92ef12f8a1908eea9061c",
-    "docs\\mechanics\\MeshRepeater2_exploded_below_native_3D.png": "c7e7b58261d30f49411e1e1eaf619063037f786f0d8b7d007281414f508f13b3",
-    "docs\\mechanics\\MeshRepeater2_exploded_native_3D.png": "6692601b291ce09d5b51a12aacb32ec0fcfa50b2efb308526debbff5701c8b8c",
-    "output/LOGIC/MeshRepeater2_Logic_operator_top.png": "0a42f86a776ce03034f83bd1f99ee7340c54015b9e66c2345af939c61b90f03b",
-    "output/pdf/MeshRepeater2_assembly_manual_RU.pdf": "11a1817278e01b997a61baaa666cc365e57ffe953c1e64ff9300954c9756c0fa",
-    "output\\pdf\\MeshRepeater2_assembly_dimensions.pdf": "8d1d3188ca50ef90130a42437570400afc5d56482b502e681c1048fb730fa50e"
+  "reviewer": "Independent reviewer of corrections; did not author or modify native CAD. Controlled negative probe written only to disposable reviewer subdirectory.",
+  "date": "2026-10-12",
+  "scope": "Five new findings from audit/independent_2026_10_12. Read-only focused acceptance, not a fresh complete electronics qualification.",
+  "findings": [
+    {
+      "id": "R1",
+      "status": "FIXED_FOCUSED_SCOPE",
+      "reason": "The independently confirmed long MOSI/MISO/RESET detours and remote SPI layer returns are removed. Short remaining opposite-layer voids are bounded and have nearby connected same-layer GND; this is not a continuous opposite plane or measured signal-integrity guarantee.",
+      "metrics": [
+        {
+          "net": "MOSI_RF",
+          "exact_all_net_segment_sum_before_mm": 185.25595709376952,
+          "exact_all_net_segment_sum_after_mm": 30.916652224137046,
+          "all_net_vias_before": 11,
+          "all_net_vias_after": 2,
+          "longest_opposite_ground_gap_before_mm": 9.1,
+          "longest_opposite_ground_gap_after_mm": 3.125,
+          "opposite_GND_uncovered_estimate_after_mm": 15.22810537197547,
+          "closest_lateral_GND_on_uncovered_samples_mm": {
+            "sample_count": 617,
+            "median": 0.3005,
+            "p95": 1.0005,
+            "maximum": 1.0005
+          },
+          "selected_path_return_barrels": [
+            {
+              "signal": [
+                35.9,
+                15.8
+              ],
+              "nearest_GND_barrel_mm": 1.9416487838947583
+            },
+            {
+              "signal": [
+                54.6,
+                15.3
+              ],
+              "nearest_GND_barrel_mm": 1.3010764773832486
+            }
+          ],
+          "max_selected_path_return_barrel_mm": 1.9416487838947583,
+          "selected_whole_segment_path_sum_after_mm": 29.726702730475886
+        },
+        {
+          "net": "MISO_MCU",
+          "exact_all_net_segment_sum_before_mm": 121.65858291274932,
+          "exact_all_net_segment_sum_after_mm": 42.76345596729059,
+          "all_net_vias_before": 11,
+          "all_net_vias_after": 4,
+          "longest_opposite_ground_gap_before_mm": 6.9,
+          "longest_opposite_ground_gap_after_mm": 3.094632030604655,
+          "opposite_GND_uncovered_estimate_after_mm": 25.021573971327847,
+          "closest_lateral_GND_on_uncovered_samples_mm": {
+            "sample_count": 1025,
+            "median": 0.3005,
+            "p95": 0.483,
+            "maximum": 1.085021
+          },
+          "selected_path_return_barrels": [
+            {
+              "signal": [
+                57.6,
+                20.2
+              ],
+              "nearest_GND_barrel_mm": 0.8508818954473084
+            },
+            {
+              "signal": [
+                54.4,
+                19.7
+              ],
+              "nearest_GND_barrel_mm": 0.848528137423859
+            },
+            {
+              "signal": [
+                48.6,
+                14.4
+              ],
+              "nearest_GND_barrel_mm": 0.8500000000000014
+            },
+            {
+              "signal": [
+                35.0,
+                15.7
+              ],
+              "nearest_GND_barrel_mm": 1.3036103712382792
+            }
+          ],
+          "max_selected_path_return_barrel_mm": 1.3036103712382792,
+          "selected_whole_segment_path_sum_after_mm": 40.74924240491749
+        },
+        {
+          "net": "RADIO_RST",
+          "exact_all_net_segment_sum_before_mm": 105.14697828518779,
+          "exact_all_net_segment_sum_after_mm": 33.35006276123159,
+          "all_net_vias_before": 6,
+          "all_net_vias_after": 1,
+          "longest_opposite_ground_gap_before_mm": 9.075,
+          "longest_opposite_ground_gap_after_mm": 4.694709193245779,
+          "opposite_GND_uncovered_estimate_after_mm": 19.777975465100308,
+          "closest_lateral_GND_on_uncovered_samples_mm": {
+            "sample_count": 799,
+            "median": 0.320409,
+            "p95": 1.470069,
+            "maximum": 1.957541
+          },
+          "selected_path_return_barrels": [
+            {
+              "signal": [
+                37.5,
+                19.6
+              ],
+              "nearest_GND_barrel_mm": 1.5306207890918015
+            }
+          ],
+          "max_selected_path_return_barrel_mm": 1.5306207890918015,
+          "selected_whole_segment_path_sum_after_mm": 33.3500627612316
+        }
+      ]
+    },
+    {
+      "id": "R2",
+      "status": "FIXED",
+      "ANT_RF_old_axis_gap_mm": 0.899954085146515,
+      "ANT_RF_new_axis_gap_mm": 0,
+      "negative_rule_regression": "PASS: items_not_allowed error names RF opposite layer permits GND and RF only and targets controlled old RXEN segment UUID.",
+      "inherited_SMA_launch_gap_mm": 1.25,
+      "RF_track_geometry_unchanged": true
+    },
+    {
+      "id": "M-01",
+      "status": "PASS_DOCUMENTED_SELECTION",
+      "housing_mpn": "Connfly I-DS1071-SCB01x4",
+      "contact_mpn": "Connfly T-DS1071-SC600",
+      "quantity_per_assembly": [
+        2,
+        8
+      ],
+      "quantity_five_full_assemblies": [
+        10,
+        40
+      ],
+      "saved_stock_observation": [
+        "170",
+        "6746"
+      ],
+      "supplier_cards": [
+        "https://www.danomsk.ru/shop/7-kommutatsiya/121-razemy/306-soediniteli-pryamougolnye/208362-bls-1x04-i-ds1071-scb01x4-rozetka-obzh-bez-kontaktov-kontakty-178228-201995-shag-2-54mm-maks-dopust-/",
+        "https://www.danomsk.ru/shop/7-kommutatsiya/121-razemy/306-soediniteli-pryamougolnye/201995-kontakty-dlya-rozetok-bls-bld-t-ds1071-sc600-2-54mm-connfly/"
+      ],
+      "manufacturer": "https://en.connfly.com/static/upload/file/pdf/DS1071.pdf",
+      "manufacturer_visual_check": "DS1071 sheet lists DS1021/DS1022 male family, SQ 0.64±0.05, pitch 2.54, 4-position B10.16/A7.62, female 2.54×14.00, .XX tolerance ±0.25. SC6 terminal tin; AWG28–22.",
+      "actual_mating_qualified": false
+    },
+    {
+      "id": "M-02",
+      "status": "PASS_MODEL_ENVELOPE_AND_UNCHANGED_FOOTPRINTS",
+      "bracket_width_mm": 8.41,
+      "four_switch_footprints_byte_unchanged": true
+    },
+    {
+      "id": "DOC-01",
+      "status": "PASS",
+      "holes": [
+        {
+          "board": "design\\MeshRepeater2_Power\\MeshRepeater2_Power.kicad_pcb",
+          "reference": "H1",
+          "value": "M3 GND contact",
+          "pads": [
+            {
+              "number": "1",
+              "attribute": 0,
+              "PTH": true,
+              "net": "GND",
+              "drill_mm": [
+                3.2,
+                3.2
+              ],
+              "copper_diameter_mm": [
+                6.0,
+                6.0
+              ]
+            }
+          ],
+          "bom_note": "3.2 mm M3 plated/contact mounting hole; exposed GND on both sides. Working return stays in cable.",
+          "variant_fields": {
+            "Value_LTO_2S": "M3 GND contact",
+            "Value_NaIon_NoCold": "M3 GND contact"
+          },
+          "library_change_only_expected_metadata": true,
+          "library_sha256": "c8da54c66b005707b6f917a8ceaa0bf5b6ce19c5cdb4dcc209dd5782e19a29cf"
+        },
+        {
+          "board": "design\\MeshRepeater2_Power\\MeshRepeater2_Power.kicad_pcb",
+          "reference": "H4",
+          "value": "M3 GND contact",
+          "pads": [
+            {
+              "number": "1",
+              "attribute": 0,
+              "PTH": true,
+              "net": "GND",
+              "drill_mm": [
+                3.2,
+                3.2
+              ],
+              "copper_diameter_mm": [
+                6.0,
+                6.0
+              ]
+            }
+          ],
+          "bom_note": "3.2 mm M3 plated/contact mounting hole; exposed GND on both sides. Working return stays in cable.",
+          "variant_fields": {
+            "Value_LTO_2S": "M3 GND contact",
+            "Value_NaIon_NoCold": "M3 GND contact"
+          },
+          "library_change_only_expected_metadata": true,
+          "library_sha256": "bcf40c6808c173a950611c37db231a0351754ac14678fc556d5975aa0cc00476"
+        },
+        {
+          "board": "design\\MeshRepeater2_Power\\MeshRepeater2_Power.kicad_pcb",
+          "reference": "H2",
+          "value": "M3 GND contact",
+          "pads": [
+            {
+              "number": "1",
+              "attribute": 0,
+              "PTH": true,
+              "net": "GND",
+              "drill_mm": [
+                3.2,
+                3.2
+              ],
+              "copper_diameter_mm": [
+                6.0,
+                6.0
+              ]
+            }
+          ],
+          "bom_note": "3.2 mm M3 plated/contact mounting hole; exposed GND on both sides. Working return stays in cable.",
+          "variant_fields": {
+            "Value_LTO_2S": "M3 GND contact",
+            "Value_NaIon_NoCold": "M3 GND contact"
+          },
+          "library_change_only_expected_metadata": true,
+          "library_sha256": "cba129ecda4377f0af327ae1108744f73b6895906b2e88825854e28e862ef7fb"
+        },
+        {
+          "board": "design\\MeshRepeater2_Power\\MeshRepeater2_Power.kicad_pcb",
+          "reference": "H3",
+          "value": "M3 GND contact",
+          "pads": [
+            {
+              "number": "1",
+              "attribute": 0,
+              "PTH": true,
+              "net": "GND",
+              "drill_mm": [
+                3.2,
+                3.2
+              ],
+              "copper_diameter_mm": [
+                6.0,
+                6.0
+              ]
+            }
+          ],
+          "bom_note": "3.2 mm M3 plated/contact mounting hole; exposed GND on both sides. Working return stays in cable.",
+          "variant_fields": {
+            "Value_LTO_2S": "M3 GND contact",
+            "Value_NaIon_NoCold": "M3 GND contact"
+          },
+          "library_change_only_expected_metadata": true,
+          "library_sha256": "7479081f7eeaa25912945e9656653fd26cde7dc03af3f153e15a21b253a21bff"
+        }
+      ],
+      "generator_all_three_variants_current_mounting_value": true,
+      "model_authoritative_variant_labels_synchronized": true,
+      "schematic_changed_only_expected_metadata": true
+    }
+  ],
+  "additional_confirmed_P2_in_corrected_areas": [],
+  "preservation": {
+    "J10_ISP_pose": [
+      35.7,
+      31.3,
+      0
+    ],
+    "M1_M2_J11_J201_R27_all_pad_netnames_and_poses_unchanged": true,
+    "USB_edge_module_pose_unchanged": true,
+    "SYS_MCU_modem_branches_shared_track_uuids": [],
+    "SYS_branches_and_BAT_sense_routes_byte_geometry_unchanged": true,
+    "RF_trace_geometry_unchanged": true,
+    "GND_physical_components": 1,
+    "old_independent_audit_not_written": true
   },
-  "requirements": [
+  "inherited_open_design_risks": [
     {
-      "requirement": "published_S4_16_and_v1_preserved",
-      "status": "PASS_REMOTE_REF_READBACK",
-      "evidence_and_limit": "Read-only git ls-remote observed main and v1.0 at cf54f9970e716272d477afdb252b4e195d595cb6. Final V2 publication/read-back is outside this CAD review and remains root-owned."
+      "id": "E-I1",
+      "status": "UNCHANGED",
+      "description": "Existing LMV431 balancers with 2 ohm resistors are not guaranteed to stay within cathode current limits. The correction task did not change their circuit; proposed remedies require a distinct design decision under prior user conditions.",
+      "source": "https://www.ti.com/lit/ds/symlink/lmv431.pdf"
     },
     {
-      "requirement": "two_boards_and_continuous_shield",
-      "status": "PASS_FINAL_NATIVE_AND_ASSEMBLY",
-      "evidence_and_limit": "Independent native Edge.Cuts are 90 x 60 mm for all three PCBs, mounting holes align, components stay on F.Cu. Assembly shows POWER components up, LOGIC rotated X 180 degrees with components down, and full shield between them. Shield physical single foil versus two-layer KiCad container is explicit."
-    },
-    {
-      "requirement": "functional_equivalence_and_three_variants",
-      "status": "PASS_FINAL_201_AND_35_CHECK_PROOFS",
-      "evidence_and_limit": "All current input hashes match 201/201 native checks and 35/35 schematic equivalence checks. GPIO, values, fit policy and NaCOLD/NaNoCold/LTO2S assembly variants are preserved. No firmware or electronics bench test is asserted."
-    },
-    {
-      "requirement": "cable_and_J11",
-      "status": "PASS_NATIVE_AND_DOCUMENTARY",
-      "evidence_and_limit": "J101/J201 are 12 contacts, strict 1:1: 1/3/5/7 FILTER_OUT; 2/4/6/8/10/12 GND; 9 BAT sense; 11 MODE. SYS_3V3 is absent from the cable. J11 on LOGIC is the sole FILTER_OUT to SYS_3V3 link; USB removal requirement is documented."
-    },
-    {
-      "requirement": "ISP_latest_user_override",
-      "status": "PASS_NATIVE_POSITION_AND_DOCUMENTARY",
-      "evidence_and_limit": "J10 remains at native (35.7,31.3) mm, 0 degrees. Access is required only when disassembled; no external access modification was added."
-    },
-    {
-      "requirement": "side_ports_buttons_J11_and_LED",
-      "status": "PASS_FINAL_OPERATOR_LABELS_AND_VIEWS",
-      "evidence_and_limit": "Final exterior B.SilkS USB/UART/USER/RESET labels are legible and projected near their controls. Final label-only invariant leaves copper, footprints, models and placement unchanged. I2C/GPS/SMA/J11/LED labels remain. Physical access and side LED visibility require the real sample."
-    },
-    {
-      "requirement": "shield_ground_independent_of_load_return",
-      "status": "PASS_NATIVE_TOPOLOGY_WITH_SAMPLE_CONTACT_PENDING",
-      "evidence_and_limit": "Final native geometry records 6 mm GND mounting lands open on both masks, and all final boards have zero unrouted/DRC/parity results. Cable carries the full working GND return independently of metal hardware. Actual metal washer/standoff contact resistance remains a physical check."
-    },
-    {
-      "requirement": "standoff_stack",
-      "status": "PASS_FINAL_NOMINAL_ASSEMBLY",
-      "evidence_and_limit": "18 mm lower / 15 mm upper standoffs and five DIN433 washers per corner yield 18.50 / 16.00 mm inner gaps and 39.06 mm between outer PCB planes. Full supplied model is 98.00 x 70.01 x 45.56 mm without cable; 44.98 mm is only the nut-to-head dimension chain. Actual thread depth, >=3 mm engagement and no bottoming remain sample checks."
-    },
-    {
-      "requirement": "DAN_procurement_and_mates",
-      "status": "PASS_WITH_DECLARED_SAMPLE_GAPS",
-      "evidence_and_limit": "Canonical BOM/new-parts list has quantities, purchase URLs, matching housings/terminals and observed availability. JST XHP-2 and hardware availability gaps are explicit. Exact assembled IDC mate depth and cable bend/length remain pending; DS1016 13.3 mm is not falsely treated as full assembly depth."
-    },
-    {
-      "requirement": "legacy_procurement_ambiguity",
-      "status": "RESOLVED",
-      "evidence_and_limit": "Obsolete SH1/old connector shopping and notes were moved to bom/legacy_S4_16 with REFERENCE_ONLY names. Active NOTES and both 3dmodels READMEs describe V2 and prohibit purchasing/installing the unused inherited SH1/lid."
-    },
-    {
-      "requirement": "routing_POWER_BAT_and_C53",
-      "status": "RESOLVED_INDEPENDENT_NATIVE_GEOMETRY",
-      "evidence_and_limit": "Direct J8.1 to C53.1 to U2.10 route is 38.271068 mm, estimated 30.933 mOhm at 20 C for that selected route. Previous detour was removed and C53 is on the feed-through path. BAT sense is a separate low-current route. No transient/stability conclusion follows from this estimate."
-    },
-    {
-      "requirement": "routing_LOGIC_SYS_quality",
-      "status": "PASS_INDEPENDENT_NATIVE_GEOMETRY",
-      "evidence_and_limit": "Selected J11 to MCU and J11 to FB1 routes are 67.909671 and 57.653679 mm, with zero shared trace segments. Cable/J11/GND common impedance still exists; modem transient immunity requires measurement."
-    },
-    {
-      "requirement": "new_trace_angles",
-      "status": "RESOLVED_INDEPENDENT_NATIVE_GEOMETRY",
-      "evidence_and_limit": "New UUID segments have zero non-45/90-degree routes on POWER and LOGIC, tolerance 1e-5 mm and length threshold 0.08 mm. Short overlapping wide-track steps alone are not evidence of a visible or electrical routing defect."
-    },
-    {
-      "requirement": "final_ERC_DRC_parity_unrouted_and_exclusions",
-      "status": "PASS_FINAL_SOURCE_BOUND_REPORTS",
-      "evidence_and_limit": "Both ERC reports and all three DRC reports are zero, including unrouted/parity, ignored checks empty, severities error/warning/exclusion included. Every final exporter artifact matches its manifest and native PCB source hash."
-    },
-    {
-      "requirement": "actual_native_3D_and_dimension_PDF",
-      "status": "PASS_FINAL_SOURCE_BOUND_ARTIFACTS",
-      "evidence_and_limit": "Assembly/exploded STEP and all three native rendered PNG views bind to current final PCB/STEP/stack hashes. Independently inspected final 4-page dimension PDF and three PNG views; clear geometry, text and limits. All four Poppler pages have exit 0 and empty stderr after the page-3 Courier fix."
-    },
-    {
-      "requirement": "assembly_manual_and_limits",
-      "status": "PASS_DOCUMENTARY",
-      "evidence_and_limit": "Assembly manual is 8 pages; independent text/structure check agrees with root visual QA. J11/USB, pin map, three variants, disassembly-only ISP, nominal versus actual dimensions, cable/threads and inherited electronics restrictions are clearly separated from CAD acceptance."
-    },
-    {
-      "requirement": "limits_and_no_bench_claim",
-      "status": "PASS_DOCUMENTARY",
-      "evidence_and_limit": "No bench, EMC certification, actual module fit or mating qualification is asserted. Named sample checks and inherited cell/LTO/LMV431/LC/clone/NTC/watchdog/SAW limits remain explicit in V2_LIMITATIONS_RU.md."
-    }
-  ],
-  "unresolved_mandatory_CAD_findings": [],
-  "corrected_findings": [
-    "Legacy active SH1/old connector purchase notes",
-    "POWER BAT detour and C53 feed-through",
-    "One new skew BAT/TP1 segment",
-    "Missing exterior USB/UART/USER/RESET labels",
-    "Copied 3D model usage instructions",
-    "Page-3 PDF font warnings"
-  ],
-  "native_gates_observed": [
-    {
-      "board": "Power",
-      "violations": 0,
-      "unconnected_items": 0,
-      "schematic_parity": 0,
-      "ignored_checks": 0,
-      "included_severities": [
-        "error",
-        "warning",
-        "exclusion"
-      ]
-    },
-    {
-      "board": "Logic",
-      "violations": 0,
-      "unconnected_items": 0,
-      "schematic_parity": 0,
-      "ignored_checks": 0,
-      "included_severities": [
-        "error",
-        "warning",
-        "exclusion"
-      ]
-    },
-    {
-      "board": "Shield",
-      "violations": 0,
-      "unconnected_items": 0,
-      "schematic_parity": 0,
-      "ignored_checks": 0,
-      "included_severities": [
-        "error",
-        "warning",
-        "exclusion"
-      ]
-    },
-    {
-      "schema": "POWER",
-      "erc_violations": 0,
-      "ignored_checks": 0,
-      "included_severities": [
-        "error",
-        "warning",
-        "exclusion"
-      ]
-    },
-    {
-      "schema": "LOGIC",
-      "erc_violations": 0,
-      "ignored_checks": 0,
-      "included_severities": [
-        "error",
-        "warning",
-        "exclusion"
+      "id": "E-I2",
+      "status": "UNCHANGED",
+      "description": "Existing CN3722 LTO divider does not guarantee TPS63802 VIN<=5.5V in battery-absent charger OVP operation. Divider-only normal-CV tolerance proof does not cover that mode. Separate remedy was not applied in this focused correction review.",
+      "source": [
+        "https://consonance-elec.com/static/upload/file/20231218/1702867485736775.pdf",
+        "https://www.ti.com/lit/ds/symlink/tps63802.pdf"
       ]
     }
   ],
-  "final_native_export_records": [
+  "stage": "PASS_FIVE_CORRECTIONS_WITH_INHERITED_OPEN_RISKS",
+  "ok": true,
+  "reviewer_native_LOGIC_sha256": "6cbd7850caa14163ebe4d40aba4435ac8fe17f327d68419dfb94e0a1bc361bc8",
+  "native_PCB_modified_by_review": false,
+  "inputs": [
     {
-      "board": "Power",
-      "pcb": "design\\MeshRepeater2_Power\\MeshRepeater2_Power.kicad_pcb",
-      "pcb_sha256": "dd40232294bc3bfd88565f6843400ad10a68220e472d3d6cb3d7ac200152cf64",
-      "manifest_pcb_match": true,
-      "artifacts": [
-        {
-          "path": "output\\POWER\\MeshRepeater2_Power.step",
-          "sha256": "67aa28f699dc4103f7e43c1d614be31374268b69f1a675dbe16a995202efecd7",
-          "sha_match": true
-        },
-        {
-          "path": "output\\POWER\\MeshRepeater2_Power_assembly_top.png",
-          "sha256": "625cf90be26c194af9652425e535dbccc78619dcb90d45273f3a92e2e8c4fa97",
-          "sha_match": true
-        },
-        {
-          "path": "output\\POWER\\MeshRepeater2_Power_assembly_top.svg",
-          "sha256": "29dea8744cdcc5687799a95efe778d10208c76b8ddc0d2ef756c23e7db6c4224",
-          "sha_match": true
-        },
-        {
-          "path": "output\\POWER\\MeshRepeater2_Power_back.png",
-          "sha256": "8d4da9b2a61111e11c7c4bcc0b958695f572271de4f4cfb0f5b6b649209e82e6",
-          "sha_match": true
-        },
-        {
-          "path": "output\\POWER\\MeshRepeater2_Power_back.svg",
-          "sha256": "9a477d5657e278bd90a04db1e230f583df251ae73203ef776a250a628c40624e",
-          "sha_match": true
-        },
-        {
-          "path": "output\\POWER\\MeshRepeater2_Power_back_assembly.png",
-          "sha256": "2412e7c2bcd4f23bf20ce92d7e2629b15dab1ba7277434b3ef834237ce62e3ce",
-          "sha_match": true
-        },
-        {
-          "path": "output\\POWER\\MeshRepeater2_Power_back_assembly.svg",
-          "sha256": "1ccc34340cf48fe9026d4a3e819662dd6e84ee8dc16af85c716216aea783a7af",
-          "sha_match": true
-        },
-        {
-          "path": "output\\POWER\\MeshRepeater2_Power_drc.json",
-          "sha256": "83c9ded6c0deeef688a8c017ab31f103c207c98502cc294cf86828d963cfa99e",
-          "sha_match": true
-        },
-        {
-          "path": "output\\POWER\\MeshRepeater2_Power_front.png",
-          "sha256": "2b32a770ee683ffb2abb54be4ac740812a3d5196cd1a7e2992625432371fd912",
-          "sha_match": true
-        },
-        {
-          "path": "output\\POWER\\MeshRepeater2_Power_front.svg",
-          "sha256": "698f68b5155b43a637adc97d74b8bb4a3aec9fa10e819d4416717ae34f01d4e4",
-          "sha_match": true
-        },
-        {
-          "path": "output\\POWER\\MeshRepeater2_Power_front_assembly.png",
-          "sha256": "6e65e2bef6e651022ea2af47e73fc37ad0dc33434058b242eeae33c4d855f2cc",
-          "sha_match": true
-        },
-        {
-          "path": "output\\POWER\\MeshRepeater2_Power_front_assembly.svg",
-          "sha256": "e7e12daf1372bd9d0c62337781881ada2762ec2f883f26b04723810b42bdee18",
-          "sha_match": true
-        }
-      ]
+      "path": "AGENTS.md",
+      "sha256": "2fae0a331fa0fc860fa20e6c06c04a77c55d1d3f34939ef079589d71dae7a5f0"
     },
     {
-      "board": "Logic",
-      "pcb": "design\\MeshRepeater2_Logic\\MeshRepeater2_Logic.kicad_pcb",
-      "pcb_sha256": "2750624dc6c2c7e8b50089e66e5d9eef9c29aa3ee28541f72f54186b58dc9ceb",
-      "manifest_pcb_match": true,
-      "artifacts": [
-        {
-          "path": "output\\LOGIC\\MeshRepeater2_Logic.step",
-          "sha256": "6b95ca0d3273b60041c162ddf4f14cf0976e5a3b6bd86e3361059c5c1a33d8b7",
-          "sha_match": true
-        },
-        {
-          "path": "output\\LOGIC\\MeshRepeater2_Logic.step.gz",
-          "sha256": "4ddd351ff0dfd9726585bd141bdd468775e9627f1e39b3cd2f075dcb5fb2285d",
-          "sha_match": true
-        },
-        {
-          "path": "output\\LOGIC\\MeshRepeater2_Logic_assembly_top.png",
-          "sha256": "0a42f86a776ce03034f83bd1f99ee7340c54015b9e66c2345af939c61b90f03b",
-          "sha_match": true
-        },
-        {
-          "path": "output\\LOGIC\\MeshRepeater2_Logic_assembly_top.svg",
-          "sha256": "1257156986793e5be0dca89df5733a9464bb7654c350c80ab2b6fab438b1ec7d",
-          "sha_match": true
-        },
-        {
-          "path": "output\\LOGIC\\MeshRepeater2_Logic_back.png",
-          "sha256": "590bcc7972a2a95a780f6146dd850cdf233a026c414c1255198242d5442e6bdc",
-          "sha_match": true
-        },
-        {
-          "path": "output\\LOGIC\\MeshRepeater2_Logic_back.svg",
-          "sha256": "345c42444eb70d9d81a8a03e8e7bf265cb2eb1740baa8598170a3ffb005fab05",
-          "sha_match": true
-        },
-        {
-          "path": "output\\LOGIC\\MeshRepeater2_Logic_back_assembly.png",
-          "sha256": "b9c7a88387c12e015386900e6c57e0af3cbea2aa86368ee1c68f2f7ee803c9ae",
-          "sha_match": true
-        },
-        {
-          "path": "output\\LOGIC\\MeshRepeater2_Logic_back_assembly.svg",
-          "sha256": "c45af8e9e998639fa921324c8f676c2e9498d8e4cbab67b5ba3f9c87e86b46ff",
-          "sha_match": true
-        },
-        {
-          "path": "output\\LOGIC\\MeshRepeater2_Logic_drc.json",
-          "sha256": "792589c588ea65f59fc42ed70be735feae7e8e6bf866a8a3a6941cbea7ffda5c",
-          "sha_match": true
-        },
-        {
-          "path": "output\\LOGIC\\MeshRepeater2_Logic_front.png",
-          "sha256": "6faebdfeabd044b7452b8c885932a4b115ec9f1b0e0881d645838922c83862f9",
-          "sha_match": true
-        },
-        {
-          "path": "output\\LOGIC\\MeshRepeater2_Logic_front.svg",
-          "sha256": "deca3e69f2210e633e4e4c05e730753cc3d51c4e746ec1502c6751f8fe6d9da3",
-          "sha_match": true
-        },
-        {
-          "path": "output\\LOGIC\\MeshRepeater2_Logic_front_assembly.png",
-          "sha256": "98a9ddab19506de31fe0018f8cc554b4de2e8f2165cac227ea83654e5306b58f",
-          "sha_match": true
-        },
-        {
-          "path": "output\\LOGIC\\MeshRepeater2_Logic_front_assembly.svg",
-          "sha256": "adec342efda6e739ee8220782323a38e6ca732fae5c65b087f108a31591e3df0",
-          "sha_match": true
-        },
-        {
-          "path": "output\\LOGIC\\MeshRepeater2_Logic_operator_top.png",
-          "sha256": "0a42f86a776ce03034f83bd1f99ee7340c54015b9e66c2345af939c61b90f03b",
-          "sha_match": true
-        },
-        {
-          "path": "output\\LOGIC\\MeshRepeater2_Logic_operator_top.svg",
-          "sha256": "1257156986793e5be0dca89df5733a9464bb7654c350c80ab2b6fab438b1ec7d",
-          "sha_match": true
-        },
-        {
-          "path": "output\\LOGIC\\MeshRepeater2_Logic_operator_top_view.json",
-          "sha256": "0d298e804e5a8d436785ec9aa40c5cbde3eee5ed639c7a362e65bb97efe9579e",
-          "sha_match": true
-        }
-      ]
+      "path": "README.md",
+      "sha256": "ec653f4b4ccd821fccd9610c451a1525cf81eb48980fc84a23a93903d5cc99a9"
     },
     {
-      "board": "Shield",
-      "pcb": "design\\MeshRepeater2_Shield\\MeshRepeater2_Shield.kicad_pcb",
-      "pcb_sha256": "4ba1d2a7b47dd392b2ac79fa9a7e10fbf8e98be6b8a3423c813d8530ddb25147",
-      "manifest_pcb_match": true,
-      "artifacts": [
-        {
-          "path": "output\\SHIELD\\MeshRepeater2_Shield.step",
-          "sha256": "8c23e9ee3fb08ea45e552653249f9a4261b22061e22852d5904f20af8a7991f3",
-          "sha_match": true
-        },
-        {
-          "path": "output\\SHIELD\\MeshRepeater2_Shield_assembly_top.png",
-          "sha256": "8f0ade52957bbff6ea50eb257d8769bba11a9b4e35a2972b9215dfd15c3ca247",
-          "sha_match": true
-        },
-        {
-          "path": "output\\SHIELD\\MeshRepeater2_Shield_assembly_top.svg",
-          "sha256": "26c7b0afa85629f02683b787635f6fded651ed34ca2dcd78e6a8a326ac5dbaef",
-          "sha_match": true
-        },
-        {
-          "path": "output\\SHIELD\\MeshRepeater2_Shield_back.png",
-          "sha256": "2945505e9f977a6b1a1a077a255711100d435d100acdb7eee39e354958105ed2",
-          "sha_match": true
-        },
-        {
-          "path": "output\\SHIELD\\MeshRepeater2_Shield_back.svg",
-          "sha256": "14e83b48403b9f29bb324c88529e37fe0e3d61736f37697efbfa8bcd2148ac90",
-          "sha_match": true
-        },
-        {
-          "path": "output\\SHIELD\\MeshRepeater2_Shield_back_assembly.png",
-          "sha256": "2945505e9f977a6b1a1a077a255711100d435d100acdb7eee39e354958105ed2",
-          "sha_match": true
-        },
-        {
-          "path": "output\\SHIELD\\MeshRepeater2_Shield_back_assembly.svg",
-          "sha256": "66a0034f22d0f6251f751a811a236083e93b14cb3a9793568a8fd3c370c35f7c",
-          "sha_match": true
-        },
-        {
-          "path": "output\\SHIELD\\MeshRepeater2_Shield_drc.json",
-          "sha256": "e6f7c153b306fa6a7a386b9ad18bd2cfe8648e75f5144d2ac1b3a99838693991",
-          "sha_match": true
-        },
-        {
-          "path": "output\\SHIELD\\MeshRepeater2_Shield_front.png",
-          "sha256": "9f5060d477da130c248e4983c5aa6edac468f9a73fe27bece9d412412a0288c4",
-          "sha_match": true
-        },
-        {
-          "path": "output\\SHIELD\\MeshRepeater2_Shield_front.svg",
-          "sha256": "1d1ff6bc5c678701dcd31db5798aa615243601069da5dc23549ea5feee8cd37a",
-          "sha_match": true
-        },
-        {
-          "path": "output\\SHIELD\\MeshRepeater2_Shield_front_assembly.png",
-          "sha256": "1e7721baf32f62e3a5119155ec91256317881e0cae36f64be597d6b782242b08",
-          "sha_match": true
-        },
-        {
-          "path": "output\\SHIELD\\MeshRepeater2_Shield_front_assembly.svg",
-          "sha256": "e23b98513a326ef5243d3b3dc4d250fd51ac4020bc932c695af01f4d75be5fa9",
-          "sha_match": true
-        }
-      ]
-    }
-  ],
-  "source_bound_electrical_proofs": [
+      "path": "audit/fixes_2026_10_12/lto_options.json",
+      "sha256": "ea797bf8d9207238a59ee4d695ca22eb68184a2c3acd080b3a08082964758999"
+    },
+    {
+      "path": "audit/fixes_2026_10_12/reviewer.json",
+      "sha256": "09bfe22cdb926c3098d028628d9b2e71724848e408a4230308b53d4cb71a11e1"
+    },
+    {
+      "path": "audit/fixes_2026_10_12/reviewer.md",
+      "sha256": "bbc2d030740ccc325f18ec974e904a9bd39821d6e2a30491654a6a64926b5df7"
+    },
+    {
+      "path": "audit/fixes_2026_10_12/reviewer_LOGIC_positive_drc.json",
+      "sha256": "f1259724dad362466e78b8b90f636de8ad9728c132249ddee639b61193439935"
+    },
+    {
+      "path": "audit/fixes_2026_10_12/reviewer_RF_negative.json",
+      "sha256": "0c7b23b95ab49f0d581b1ff013f0e833f35e0aff1a0bba7d814e5b3c5d4aed84"
+    },
+    {
+      "path": "audit/fixes_2026_10_12/reviewer_RF_negative_drc.json",
+      "sha256": "22641526d46bbeb36a1e1566ff74242c6e106ba3af456b22720407a6515ad686"
+    },
+    {
+      "path": "audit/fixes_2026_10_12/reviewer_ground.json",
+      "sha256": "c147bbc358a1c4b547083422d1502a4669145a938b15dbc8e8b1e0ca6fc1a021"
+    },
+    {
+      "path": "audit/fixes_2026_10_12/reviewer_mechanics.json",
+      "sha256": "482bc72d3b29b3a34ee34fd360ae413665b9c4384f2919659b0ab56ccf880aef"
+    },
+    {
+      "path": "audit/fixes_2026_10_12/reviewer_models.json",
+      "sha256": "dc93143991a869a940d2b63979a802222e3106dde17ee7ba77c70d01bc49a6cc"
+    },
+    {
+      "path": "audit/fixes_2026_10_12/reviewer_routing.json",
+      "sha256": "8073745055bf66f4a50bfbbbec827a1e46b7e1cb311165ac55a0c5d3a3ae2613"
+    },
+    {
+      "path": "audit/fixes_2026_10_12/reviewer_routing_before.json",
+      "sha256": "87c85bff430dae1830f032d1135e5106c05e6638a1ae67a5c731196824561611"
+    },
+    {
+      "path": "audit/fixes_2026_10_12/root_equivalence.json",
+      "sha256": "e9f6d426fc1cbe27729b0c73e64ffc13579f5575bb1787cbb0a9c4710468f575"
+    },
+    {
+      "path": "audit/fixes_2026_10_12/root_fresh_checks.json",
+      "sha256": "b59d2b959c8c35ad8e96ce8c994c9dc14f0c23ae3b6c229fc05e1b7c9cc5bea2"
+    },
+    {
+      "path": "audit/fixes_2026_10_12/root_hole_metadata.json",
+      "sha256": "1a5ff50ee0cfe3e77fd0344e4fef0885789fe404dc22e61d9a3cb466c467739f"
+    },
+    {
+      "path": "audit/fixes_2026_10_12/routing_summary.json",
+      "sha256": "483d935204b5c9d8e99bad921321f52b11957f8494b8953dd259c7af633f70cc"
+    },
     {
       "path": "audit/v2_native_boards_final.json",
-      "sha256": "5df39c85daf43735c8a321f924090e2d15ef5836d789ede0d8b8b38819f7d67c",
-      "checks": 201,
-      "all_inputs_current": true,
-      "ok": true
+      "sha256": "4c17317464dee4a6d61d001caf828f7afc0de1c17836e99f86f35fd9f0c3afc6"
+    },
+    {
+      "path": "audit/v2_routing_engineering.json",
+      "sha256": "11d5f991b1d061909299c1be6eef3c8a7b0f8b02c685fc565dda137b71f01c56"
     },
     {
       "path": "audit/v2_schematic_equivalence.json",
-      "sha256": "91725b71f7933ceed5791dbd87a054b95b5fd68811a6c9260f57b01346080461",
-      "checks": 35,
-      "all_inputs_current": true,
-      "ok": true
+      "sha256": "3fe042a2468b8456b0a115b0602d44997eef4b74053d9cf287ccc856099b5927"
+    },
+    {
+      "path": "bom/DAN_NEW_PARTS.csv",
+      "sha256": "d5e59633736c90cd8279d296a32212a6329c672209772fe6d0345781222fc9de"
+    },
+    {
+      "path": "bom/V2_COMPONENT_BOM.csv",
+      "sha256": "8ebf0bee2e3f157999fb040c64bbbf6e6956a051b998a8027d2cf128c1b67375"
+    },
+    {
+      "path": "design/MeshRepeater2_Logic/3dmodels/SW_TE_1825027_2_Side.step",
+      "sha256": "d53707421560c16fdad511f3a99bb7216d5d0036c81b053b67006d0c5dc47316"
+    },
+    {
+      "path": "design/MeshRepeater2_Logic/MeshRepeater2_Logic.kicad_dru",
+      "sha256": "90c9b0a954772947bd20337728bd640235bb508fba68315a820b7ea3f791c783"
+    },
+    {
+      "path": "design/MeshRepeater2_Logic/MeshRepeater2_Logic.kicad_pcb",
+      "sha256": "6cbd7850caa14163ebe4d40aba4435ac8fe17f327d68419dfb94e0a1bc361bc8"
+    },
+    {
+      "path": "design/MeshRepeater2_Logic/model.json",
+      "sha256": "ef66e50d9971793f8a913534b8ea54fcb36d475d0f10a778d47b498b215070db"
+    },
+    {
+      "path": "design/MeshRepeater2_Power/3dmodels/SW_TE_1825027_2_Side.step",
+      "sha256": "d53707421560c16fdad511f3a99bb7216d5d0036c81b053b67006d0c5dc47316"
+    },
+    {
+      "path": "design/MeshRepeater2_Power/MeshRepeater2_Power.kicad_pcb",
+      "sha256": "c4efced02420f48fea993d166091e3ba3ec7be7cf9bc30feec164d067077cc3b"
+    },
+    {
+      "path": "design/MeshRepeater2_Power/model.json",
+      "sha256": "f6fa83e5c14def215a3f1995fed2bea787a79573c9923ba39502f0236f3f4055"
+    },
+    {
+      "path": "design/MeshRepeater2_Shield/MeshRepeater2_Shield.kicad_pcb",
+      "sha256": "4ba1d2a7b47dd392b2ac79fa9a7e10fbf8e98be6b8a3423c813d8530ddb25147"
+    },
+    {
+      "path": "design/interboard_cable.json",
+      "sha256": "f3cbf52237a6257fc11b384e1438703a8363b237d7eaef95db1f8439dfed44ac"
+    },
+    {
+      "path": "docs/Mesh_repeater_v2_Codex_prompt_RU.txt",
+      "sha256": "2611cec887ed0c8dc714ca3a3805e4e9f31effc8741a73f838cce86d844e8041"
+    },
+    {
+      "path": "docs/V2_ASSEMBLY_INSTRUCTIONS_RU.md",
+      "sha256": "e76ddd899824097a22a92118283e7ab3c1e969ba50b85685180c0dcf992a8ba6"
+    },
+    {
+      "path": "docs/V2_CHANGES_FROM_S4_16_RU.md",
+      "sha256": "cb86621800bc7e562097601808784b5656293947f0fd7028b21dc8abe5247f54"
+    },
+    {
+      "path": "docs/V2_LIMITATIONS_RU.md",
+      "sha256": "2f60f6e6100bb7969c51a0644988c54d4ede25becc7643bd6a0be5443fb79e6d"
+    },
+    {
+      "path": "docs/V2_ROUTING_ENGINEERING_AUDIT_RU.md",
+      "sha256": "cadca86c288f33a29e58472ceb82c543bafb9b02b03ad3e4eb33670ea96f642b"
+    },
+    {
+      "path": "docs/mechanical_library_checks.json",
+      "sha256": "ef55f83f8909bf4fee9f27a19143518876ca598ad3570d6005480aa4d82763a9"
+    },
+    {
+      "path": "docs/mechanical_model_checks.json",
+      "sha256": "dac2ef8b5c2d8f96c71df64273725b8e619e5053dcfa1be26155d2ca63eedefb"
+    },
+    {
+      "path": "docs/mechanical_selection.json",
+      "sha256": "ac69509daa7b0aefad4abbf67d7ee25863fed51248f7abc692825f20c4f44fc6"
+    },
+    {
+      "path": "docs/mechanics/Connfly_DS1071_SCB01x4_Mated_Envelope.step",
+      "sha256": "bd810ede45261816766910da74ab05e4ba8ee911671be819ff504827df317e44"
     }
   ],
-  "independent_route_snapshot": "audit/independent_route_snapshot.json",
-  "independent_native_geometry": "audit/v2_independent_geometry.json",
-  "independent_angles_snapshot": "audit/independent_angles_snapshot.json",
-  "final_mechanical_gate": {
-    "geometry_report_sha256": "d8e008256af04d0c602990f179ec958bfda2f19b83cde2267276ef1d642c93e3",
-    "native_render_report_sha256": "67371af48a4c29fb1484b6332e55f37e40b68d4fae66287469e79b115e092354",
-    "stack_source": "docs/mechanical_selection.json",
-    "stack_contract_sha256": "199dfe4daebb9bd490bc6c704a8e08ce3ab3097e215a2fc8edaa3e331190e962",
-    "bbox_mm": [
-      -4.75,
-      -67.21000000000001,
-      -3.48,
-      93.25,
-      2.8000000000000025,
-      42.080000000000005
+  "source": {
+    "path": "audit/fixes_2026_10_12/published_before/audit/v2_independent_final_review.json",
+    "sha256": "c705d88d82706bf254201ee999061644de02bcc62d761452d66e46fb3da62b13",
+    "role": "Historical published review; not evidence of corrected snapshot"
+  },
+  "fresh_native_check_summary": {
+    "strict_saved_and_refilled_DRC_boards": [
+      "POWER",
+      "LOGIC",
+      "SHIELD"
     ],
-    "bbox_dimensions_mm": [
-      98.0,
-      70.01,
-      45.56
-    ],
-    "pcb_intersections_zero": true,
-    "conservative_POWER_to_screen_mm": 5.959999999999992,
-    "conservative_LOGIC_to_screen_mm": 5.270000000000003,
-    "hardware_to_component_min_mm": 1.4045735194570597,
-    "views": [
-      {
-        "image": "docs\\mechanics\\MeshRepeater2_assembly_native_3D.png",
-        "sha256": "d90644153516313c1f60d209e0a604292f45bdbc58f92ef12f8a1908eea9061c",
-        "independent_visual_QA": "PASS: final native render inspected; orientation and component placement consistent. External cable/mates and thread profiles explicitly excluded."
-      },
-      {
-        "image": "docs\\mechanics\\MeshRepeater2_exploded_native_3D.png",
-        "sha256": "6692601b291ce09d5b51a12aacb32ec0fcfa50b2efb308526debbff5701c8b8c",
-        "independent_visual_QA": "PASS: final native render inspected; orientation and component placement consistent. External cable/mates and thread profiles explicitly excluded."
-      },
-      {
-        "image": "docs\\mechanics\\MeshRepeater2_exploded_below_native_3D.png",
-        "sha256": "c7e7b58261d30f49411e1e1eaf619063037f786f0d8b7d007281414f508f13b3",
-        "independent_visual_QA": "PASS: final native render inspected; orientation and component placement consistent. External cable/mates and thread profiles explicitly excluded."
-      }
-    ],
-    "dimensions_PDF": {
-      "path": "output\\pdf\\MeshRepeater2_assembly_dimensions.pdf",
-      "sha256": "8d1d3188ca50ef90130a42437570400afc5d56482b502e681c1048fb730fa50e",
-      "pages": 4,
-      "independent_visual_QA": "All four final rendered pages inspected; no layout or readable-glyph defect.",
-      "per_page_poppler_zero_stderr": true,
-      "audit_sha256": "e8336da76e7b8a68cf95f1978aaa0367f4befa553fe3424da359c2dadbbd7fad"
-    },
-    "manual": {
-      "path": "output/pdf/MeshRepeater2_assembly_manual_RU.pdf",
-      "sha256": "11a1817278e01b997a61baaa666cc365e57ffe953c1e64ff9300954c9756c0fa",
-      "pages": 8,
-      "independent_QA": "Text and document consistency checked; all-page layout reviewed by root."
-    },
-    "external_cable_envelope": "Provisional >=90.21 mm along Y for the proposed Y <= -23 mm cable loop; exact mate/cable sample not modeled."
+    "DRC_violations": 0,
+    "unconnected_items": 0,
+    "POWER_LOGIC_schematic_parity": 0,
+    "POWER_LOGIC_ERC_violations": 0,
+    "ignored_checks": 0,
+    "all_severities_and_all_track_errors": true,
+    "native_component_checks": "201/201",
+    "schematic_equivalence_checks": "35/35",
+    "independent_XML_retained_pins": 435,
+    "independent_XML_connection_groups": 102,
+    "tracked_files_unchanged_during_fresh_checks": 837
+  },
+  "inherited_design_decision": {
+    "status": "PRESERVE_EXISTING_LTO_AND_ACCEPT_NOTED_LIMITATIONS",
+    "date": "2026-10-12",
+    "user_answer": "Сохранить прежнюю схему LTO и отмеченные ограничения",
+    "risks_mitigated": false,
+    "retained": "2-ohm direct LMV431 balancers and existing CN3722 divider without independent overvoltage protection.",
+    "not_applied": "Proposed current booster and low-resistance VIN disconnect.",
+    "evidence": {
+      "path": "audit\\fixes_2026_10_12\\user_decision.json",
+      "sha256": "0cb36bc2eb0812a84a36cfeaa96c2927b2f1772d0198eaed3ef0823d03184930"
+    }
   },
   "bench_tests_performed": false,
   "remaining_physical_checks": [
-    "Exact NiceNano clone/module dimensions, Type-C access, USB reverse feed/LDO capacity and charger modification",
-    "Actual IDC mate/strain relief and insertion depth, cable length/bend/slack, all 12 conductors 1:1 and cable temperature rating (-20..70 C)",
-    "Actual M3 thread usable depth, >=3 mm engagement, no bottoming, metal GND contact and side LED/service accessibility",
-    "Converter/LC startup, effective capacitance under 3.3 V bias, transient stability and modem impact on MCU rail",
-    "RF/EMI and antenna performance near the continuous metal shield",
-    "Inherited cell/panel/LTO/LMV431/NTC/watchdog/optional SAW operating restrictions documented in docs/V2_LIMITATIONS_RU.md"
+    "Real mating stops, depth, cable retention, crimp and pin polarity for newly selected J3/J5 cable parts.",
+    "EMI/RF measurements, SPI operation at actual firmware settings and transient modem/MCU supply measurements.",
+    "Manufacturing stack, real module geometry and assembled mechanical access; STEP envelopes alone are not hardware qualification."
   ],
-  "publication_status": "Final V2 commit/read-back is root-owned; not asserted by this CAD review. Main and v1.0 preservation was independently read back before publication.",
-  "remote_refs_readonly_verified_UTC": "2026-10-11T17:15:39.772802+00:00",
-  "remote_refs_observed_before_publication": {
-    "refs/heads/main": "cf54f9970e716272d477afdb252b4e195d595cb6",
-    "refs/heads/mesh-repeater-2.0": "cf54f9970e716272d477afdb252b4e195d595cb6",
-    "refs/tags/v1.0": "cf54f9970e716272d477afdb252b4e195d595cb6"
-  }
+  "explicit_limits": [
+    "Short digital opposite-layer GND voids remain; nearby lateral connected GND and close return barrels are documented. Continuous opposite-plane coverage is not claimed.",
+    "ANT_RF axis gap caused by RXEN was removed. Inherited SMA launch gap remains; full-path impedance and RF performance are unqualified.",
+    "J3/J5 mate selections and conservative envelopes do not qualify real insertion depth, housing stops, crimp or retention.",
+    "Derived exports and complete assembly documentation are verified separately by root final artifact acceptance. This wrapper contains no not-final export or final acceptance hashes."
+  ],
+  "publication_status": "Local corrected snapshot. No publication or GitHub read-back is asserted by this independent review wrapper.",
+  "native_LOGIC_sha256": "6cbd7850caa14163ebe4d40aba4435ac8fe17f327d68419dfb94e0a1bc361bc8"
 }

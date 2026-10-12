@@ -1,0 +1,85 @@
+{
+  "reviewer": "fresh independent FreeCAD STEP read and Git baseline footprint comparison",
+  "date": "2026-10-12",
+  "switch_models": [
+    {
+      "path": "design\\MeshRepeater2_Power\\3dmodels\\SW_TE_1825027_2_Side.step",
+      "sha256": "d53707421560c16fdad511f3a99bb7216d5d0036c81b053b67006d0c5dc47316",
+      "valid": true,
+      "solids": 8,
+      "bbox_mm": [
+        -4.205,
+        -4.01,
+        -3.51,
+        4.205,
+        3.05,
+        7.01
+      ],
+      "bracket_width_mm": 8.41
+    },
+    {
+      "path": "design\\MeshRepeater2_Logic\\3dmodels\\SW_TE_1825027_2_Side.step",
+      "sha256": "d53707421560c16fdad511f3a99bb7216d5d0036c81b053b67006d0c5dc47316",
+      "valid": true,
+      "solids": 8,
+      "bbox_mm": [
+        -4.205,
+        -4.01,
+        -3.51,
+        4.205,
+        3.05,
+        7.01
+      ],
+      "bracket_width_mm": 8.41
+    }
+  ],
+  "footprints": [
+    {
+      "path": "design/MeshRepeater2_Power/Meshcore.pretty/SW_TE_1825027_2_Side.kicad_mod",
+      "unchanged_from_published_baseline": true,
+      "sha256": "113fa6aaa59fa75a0eb5587761d304190cda61982e3c19210b5f52779246e330",
+      "comparison": "Entire file byte-identical, covering pads, courtyard, Fab and model offset/rotation/scale."
+    },
+    {
+      "path": "design/MeshRepeater2_Logic/Meshcore.pretty/SW_TE_1825027_2_Side.kicad_mod",
+      "unchanged_from_published_baseline": true,
+      "sha256": "113fa6aaa59fa75a0eb5587761d304190cda61982e3c19210b5f52779246e330",
+      "comparison": "Entire file byte-identical, covering pads, courtyard, Fab and model offset/rotation/scale."
+    },
+    {
+      "path": "design/MeshRepeater2_Logic/Meshcore.pretty/SW_TE_1825027_2_Side__V2_SW1.kicad_mod",
+      "unchanged_from_published_baseline": true,
+      "sha256": "1e79c033bbe08b7a3e6ef9b8ec2d334a1f9da701ab18951e9f73b227092905f3",
+      "comparison": "Entire file byte-identical, covering pads, courtyard, Fab and model offset/rotation/scale."
+    },
+    {
+      "path": "design/MeshRepeater2_Logic/Meshcore.pretty/SW_TE_1825027_2_Side__V2_SW2.kicad_mod",
+      "unchanged_from_published_baseline": true,
+      "sha256": "9a8baa5e6b1f272edd4e08c83917b6f0ed8301b1ece707acd763639e58abf597",
+      "comparison": "Entire file byte-identical, covering pads, courtyard, Fab and model offset/rotation/scale."
+    }
+  ],
+  "mate_model": {
+    "path": "docs\\mechanics\\Connfly_DS1071_SCB01x4_Mated_Envelope.step",
+    "sha256": "bd810ede45261816766910da74ab05e4ba8ee911671be819ff504827df317e44",
+    "valid": true,
+    "bbox_mm": [
+      1.5,
+      -9.015,
+      4.355,
+      15.75,
+      1.395,
+      7.145
+    ],
+    "dimensions_mm": [
+      14.25,
+      10.41,
+      2.789999999999999
+    ],
+    "matches_manufacturer_maximum_housing_envelope": true,
+    "measured_mating_depth": false,
+    "mating_qualified": false
+  },
+  "M-02": "PASS_MODEL_ENVELOPE_AND_UNCHANGED_FOOTPRINTS",
+  "source_dimensions_visual_check": "TE C-1825027 rev H sheet: bracket 8.41 mm, mounting centre pitch 7.01 mm, terminals 4.50 mm, terminal drill0.99 mm, bracket drill1.30 mm at y2.49 mm. Connfly DS1071 rev B: female 10.16×2.54×14.00 ±0.25 mm."
+}

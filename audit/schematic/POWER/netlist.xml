@@ -2,14 +2,14 @@
 <export version="E">
   <design>
     <source>C:\Users\Alksndr\Desktop\codex\Meshcore\projects\Mesh_Repeater_2_0\design\MeshRepeater2_Power\MeshRepeater2_Power.kicad_sch</source>
-    <date>2026-10-11T23:30:36</date>
+    <date>2026-10-12T15:36:18</date>
     <tool>Eeschema 10.0.6</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
         <title>CN3722 / зарядка Na-ion и LTO</title>
         <company/>
-        <rev>V2.0-A1</rev>
-        <date>2026-10-11</date>
+        <rev>V2.0-A2</rev>
+        <date>2026-10-12</date>
         <source>MeshRepeater2_Power.kicad_sch</source>
         <comment number="1" value="Электрическая принципиальная; прототип"/>
         <comment number="2" value=""/>
@@ -26,8 +26,8 @@
       <title_block>
         <title>TPS63802 / питание и фильтр</title>
         <company/>
-        <rev>V2.0-A1</rev>
-        <date>2026-10-11</date>
+        <rev>V2.0-A2</rev>
+        <date>2026-10-12</date>
         <source>Converter.kicad_sch</source>
         <comment number="1" value="Электрическая принципиальная; прототип"/>
         <comment number="2" value=""/>
@@ -44,8 +44,8 @@
       <title_block>
         <title>LMV431A / LTO 2S опция</title>
         <company/>
-        <rev>V2.0-A1</rev>
-        <date>2026-10-11</date>
+        <rev>V2.0-A2</rev>
+        <date>2026-10-12</date>
         <source>LTO_Balancer.kicad_sch</source>
         <comment number="1" value="Электрическая принципиальная; прототип"/>
         <comment number="2" value=""/>
@@ -62,8 +62,8 @@
       <title_block>
         <title>LM393XK / холодный заряд Na-ion</title>
         <company/>
-        <rev>V2.0-A1</rev>
-        <date>2026-10-11</date>
+        <rev>V2.0-A2</rev>
+        <date>2026-10-12</date>
         <source>Thermal.kicad_sch</source>
         <comment number="1" value="Электрическая принципиальная; прототип"/>
         <comment number="2" value=""/>
@@ -76,12 +76,30 @@
         <comment number="9" value=""/>
       </title_block>
     </sheet>
-    <sheet number="5" name="/5. Interconnect/" tstamps="/ee8c890a-b94c-5d31-a2d6-e6deaf06236d/">
+    <sheet number="5" name="/5. BatteryMonitor/" tstamps="/3e0fda10-9f94-570d-b511-d93b150d3762/">
+      <title_block>
+        <title>INA219 / батарея и ток</title>
+        <company/>
+        <rev>V2.0-A2</rev>
+        <date>2026-10-12</date>
+        <source>BatteryMonitor.kicad_sch</source>
+        <comment number="1" value="Электрическая принципиальная; прототип"/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="6" name="/6. Interconnect/" tstamps="/ee8c890a-b94c-5d31-a2d6-e6deaf06236d/">
       <title_block>
         <title>Межплатное соединение / POWER ↔ LOGIC</title>
         <company/>
-        <rev>V2.0-A1</rev>
-        <date>2026-10-11</date>
+        <rev>V2.0-A2</rev>
+        <date>2026-10-12</date>
         <source>Interconnect.kicad_sch</source>
         <comment number="1" value="Электрическая принципиальная; прототип"/>
         <comment number="2" value=""/>
@@ -838,59 +856,6 @@ LTO:6.8pF</field>
       <property name="Sheetfile" value="MeshRepeater2_Power.kicad_sch"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>1e741b04-7bbd-5f02-a73c-92c44b996207</tstamps>
-      <units>
-        <unit name="A">
-          <pins>
-            <pin num="1"/>
-            <pin num="2"/>
-          </pins>
-        </unit>
-      </units>
-    </comp>
-    <comp ref="J8">
-      <value>Na-ion 1S</value>
-      <footprint>Meshcore:JST_XH_S2B-XH-A_1x02_P2.50mm_Horizontal__V2_J8</footprint>
-      <description>Mechanical v2 package; original functional pin numbers retained.</description>
-      <fields>
-        <field name="MPN">JST S2B-XH-A(LF)(SN)</field>
-        <field name="LCSC"/>
-        <field name="Vendor">Danomsk</field>
-        <field name="Vendor URL">https://www.danomsk.ru/shop/7-kommutatsiya/121-razemy/306-soediniteli-pryamougolnye/167075-cwf-2r-xh-02mr-s2b-xh-a-lf-sn-vilka-na-platu-uglovaya-2-50mm-uglovaya-zakrytaya-jst/</field>
-        <field name="Fit_NaIon">yes</field>
-        <field name="Fit_LTO_2S">yes</field>
-        <field name="Value_NaIon">Na-ion 1S</field>
-        <field name="Value_LTO_2S">Na-ion 1S</field>
-        <field name="Assembly">Na-ion: FIT; LTO 2S: FIT</field>
-        <field name="Nominal">BAT</field>
-        <field name="MPN_NaIon">JST S2B-XH-A(LF)(SN)</field>
-        <field name="MPN_LTO_2S">JST S2B-XH-A(LF)(SN)</field>
-        <field name="Fit_NaIon_NoCold">yes</field>
-        <field name="Value_NaIon_NoCold">Na-ion 1S</field>
-        <field name="MPN_NaIon_NoCold">JST S2B-XH-A(LF)(SN)</field>
-        <field name="Footprint">Meshcore:JST_XH_S2B-XH-A_1x02_P2.50mm_Horizontal__V2_J8</field>
-        <field name="Datasheet"/>
-        <field name="Description">Mechanical v2 package; original functional pin numbers retained.</field>
-      </fields>
-      <libsource lib="Meshcore" part="J2" description=""/>
-      <property name="MPN" value="JST S2B-XH-A(LF)(SN)"/>
-      <property name="LCSC" value=""/>
-      <property name="Vendor" value="Danomsk"/>
-      <property name="Vendor URL" value="https://www.danomsk.ru/shop/7-kommutatsiya/121-razemy/306-soediniteli-pryamougolnye/167075-cwf-2r-xh-02mr-s2b-xh-a-lf-sn-vilka-na-platu-uglovaya-2-50mm-uglovaya-zakrytaya-jst/"/>
-      <property name="Fit_NaIon" value="yes"/>
-      <property name="Fit_LTO_2S" value="yes"/>
-      <property name="Value_NaIon" value="Na-ion 1S"/>
-      <property name="Value_LTO_2S" value="Na-ion 1S"/>
-      <property name="Assembly" value="Na-ion: FIT; LTO 2S: FIT"/>
-      <property name="Nominal" value="BAT"/>
-      <property name="MPN_NaIon" value="JST S2B-XH-A(LF)(SN)"/>
-      <property name="MPN_LTO_2S" value="JST S2B-XH-A(LF)(SN)"/>
-      <property name="Fit_NaIon_NoCold" value="yes"/>
-      <property name="Value_NaIon_NoCold" value="Na-ion 1S"/>
-      <property name="MPN_NaIon_NoCold" value="JST S2B-XH-A(LF)(SN)"/>
-      <property name="Sheetname" value="MeshRepeater2_Power"/>
-      <property name="Sheetfile" value="MeshRepeater2_Power.kicad_sch"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamps>d332aa52-79d5-5d41-91ac-8b8721e66fb9</tstamps>
       <units>
         <unit name="A">
           <pins>
@@ -5993,6 +5958,384 @@ LTO:49.9k</field>
         </unit>
       </units>
     </comp>
+    <comp ref="C63">
+      <value>100nF 50V X7R</value>
+      <footprint>Meshcore:C_0805_2012Metric__V2_C63</footprint>
+      <description>INA219 battery monitor; fitted in Na-ion and LTO variants.</description>
+      <fields>
+        <field name="MPN">CC0805KRX7R9BB104</field>
+        <field name="LCSC"/>
+        <field name="Vendor">Danomsk</field>
+        <field name="Vendor URL"/>
+        <field name="Fit_NaIon">yes</field>
+        <field name="Fit_LTO_2S">yes</field>
+        <field name="Value_NaIon">100nF 50V X7R</field>
+        <field name="Value_LTO_2S">100nF 50V X7R</field>
+        <field name="Assembly">All variants: FIT</field>
+        <field name="Nominal">100nF</field>
+        <field name="MPN_NaIon">CC0805KRX7R9BB104</field>
+        <field name="MPN_LTO_2S">CC0805KRX7R9BB104</field>
+        <field name="Fit_NaIon_NoCold">yes</field>
+        <field name="Value_NaIon_NoCold">100nF 50V X7R</field>
+        <field name="MPN_NaIon_NoCold">CC0805KRX7R9BB104</field>
+        <field name="Footprint">Meshcore:C_0805_2012Metric__V2_C63</field>
+        <field name="Datasheet"/>
+        <field name="Description">INA219 battery monitor; fitted in Na-ion and LTO variants.</field>
+      </fields>
+      <libsource lib="Meshcore" part="C_V" description=""/>
+      <property name="MPN" value="CC0805KRX7R9BB104"/>
+      <property name="LCSC" value=""/>
+      <property name="Vendor" value="Danomsk"/>
+      <property name="Vendor URL" value=""/>
+      <property name="Fit_NaIon" value="yes"/>
+      <property name="Fit_LTO_2S" value="yes"/>
+      <property name="Value_NaIon" value="100nF 50V X7R"/>
+      <property name="Value_LTO_2S" value="100nF 50V X7R"/>
+      <property name="Assembly" value="All variants: FIT"/>
+      <property name="Nominal" value="100nF"/>
+      <property name="MPN_NaIon" value="CC0805KRX7R9BB104"/>
+      <property name="MPN_LTO_2S" value="CC0805KRX7R9BB104"/>
+      <property name="Fit_NaIon_NoCold" value="yes"/>
+      <property name="Value_NaIon_NoCold" value="100nF 50V X7R"/>
+      <property name="MPN_NaIon_NoCold" value="CC0805KRX7R9BB104"/>
+      <property name="Sheetname" value="5. BatteryMonitor"/>
+      <property name="Sheetfile" value="BatteryMonitor.kicad_sch"/>
+      <sheetpath names="/5. BatteryMonitor/" tstamps="/3e0fda10-9f94-570d-b511-d93b150d3762/"/>
+      <tstamps>9408b486-210c-50e4-a1a1-87a0698160ec</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C64">
+      <value>100nF 50V X7R</value>
+      <footprint>Meshcore:C_0805_2012Metric__V2_C64</footprint>
+      <description>INA219 battery monitor; fitted in Na-ion and LTO variants.</description>
+      <fields>
+        <field name="MPN">CC0805KRX7R9BB104</field>
+        <field name="LCSC"/>
+        <field name="Vendor">Danomsk</field>
+        <field name="Vendor URL"/>
+        <field name="Fit_NaIon">yes</field>
+        <field name="Fit_LTO_2S">yes</field>
+        <field name="Value_NaIon">100nF 50V X7R</field>
+        <field name="Value_LTO_2S">100nF 50V X7R</field>
+        <field name="Assembly">All variants: FIT</field>
+        <field name="Nominal">100nF</field>
+        <field name="MPN_NaIon">CC0805KRX7R9BB104</field>
+        <field name="MPN_LTO_2S">CC0805KRX7R9BB104</field>
+        <field name="Fit_NaIon_NoCold">yes</field>
+        <field name="Value_NaIon_NoCold">100nF 50V X7R</field>
+        <field name="MPN_NaIon_NoCold">CC0805KRX7R9BB104</field>
+        <field name="Footprint">Meshcore:C_0805_2012Metric__V2_C64</field>
+        <field name="Datasheet"/>
+        <field name="Description">INA219 battery monitor; fitted in Na-ion and LTO variants.</field>
+      </fields>
+      <libsource lib="Meshcore" part="C_V" description=""/>
+      <property name="MPN" value="CC0805KRX7R9BB104"/>
+      <property name="LCSC" value=""/>
+      <property name="Vendor" value="Danomsk"/>
+      <property name="Vendor URL" value=""/>
+      <property name="Fit_NaIon" value="yes"/>
+      <property name="Fit_LTO_2S" value="yes"/>
+      <property name="Value_NaIon" value="100nF 50V X7R"/>
+      <property name="Value_LTO_2S" value="100nF 50V X7R"/>
+      <property name="Assembly" value="All variants: FIT"/>
+      <property name="Nominal" value="100nF"/>
+      <property name="MPN_NaIon" value="CC0805KRX7R9BB104"/>
+      <property name="MPN_LTO_2S" value="CC0805KRX7R9BB104"/>
+      <property name="Fit_NaIon_NoCold" value="yes"/>
+      <property name="Value_NaIon_NoCold" value="100nF 50V X7R"/>
+      <property name="MPN_NaIon_NoCold" value="CC0805KRX7R9BB104"/>
+      <property name="Sheetname" value="5. BatteryMonitor"/>
+      <property name="Sheetfile" value="BatteryMonitor.kicad_sch"/>
+      <sheetpath names="/5. BatteryMonitor/" tstamps="/3e0fda10-9f94-570d-b511-d93b150d3762/"/>
+      <tstamps>cc14e272-ec70-5b24-9ced-ad269a4df67c</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="J8">
+      <value>Na-ion 1S</value>
+      <footprint>Meshcore:JST_XH_S2B-XH-A_1x02_P2.50mm_Horizontal__V2_J8</footprint>
+      <description>Mechanical v2 package; original functional pin numbers retained.</description>
+      <fields>
+        <field name="MPN">JST S2B-XH-A(LF)(SN)</field>
+        <field name="LCSC"/>
+        <field name="Vendor">Danomsk</field>
+        <field name="Vendor URL">https://www.danomsk.ru/shop/7-kommutatsiya/121-razemy/306-soediniteli-pryamougolnye/167075-cwf-2r-xh-02mr-s2b-xh-a-lf-sn-vilka-na-platu-uglovaya-2-50mm-uglovaya-zakrytaya-jst/</field>
+        <field name="Fit_NaIon">yes</field>
+        <field name="Fit_LTO_2S">yes</field>
+        <field name="Value_NaIon">Na-ion 1S</field>
+        <field name="Value_LTO_2S">Na-ion 1S</field>
+        <field name="Assembly">Na-ion: FIT; LTO 2S: FIT</field>
+        <field name="Nominal">BAT</field>
+        <field name="MPN_NaIon">JST S2B-XH-A(LF)(SN)</field>
+        <field name="MPN_LTO_2S">JST S2B-XH-A(LF)(SN)</field>
+        <field name="Fit_NaIon_NoCold">yes</field>
+        <field name="Value_NaIon_NoCold">Na-ion 1S</field>
+        <field name="MPN_NaIon_NoCold">JST S2B-XH-A(LF)(SN)</field>
+        <field name="Footprint">Meshcore:JST_XH_S2B-XH-A_1x02_P2.50mm_Horizontal__V2_J8</field>
+        <field name="Datasheet"/>
+        <field name="Description">Mechanical v2 package; original functional pin numbers retained.</field>
+      </fields>
+      <libsource lib="Meshcore" part="BAT_HEADER_LEFT" description=""/>
+      <property name="MPN" value="JST S2B-XH-A(LF)(SN)"/>
+      <property name="LCSC" value=""/>
+      <property name="Vendor" value="Danomsk"/>
+      <property name="Vendor URL" value="https://www.danomsk.ru/shop/7-kommutatsiya/121-razemy/306-soediniteli-pryamougolnye/167075-cwf-2r-xh-02mr-s2b-xh-a-lf-sn-vilka-na-platu-uglovaya-2-50mm-uglovaya-zakrytaya-jst/"/>
+      <property name="Fit_NaIon" value="yes"/>
+      <property name="Fit_LTO_2S" value="yes"/>
+      <property name="Value_NaIon" value="Na-ion 1S"/>
+      <property name="Value_LTO_2S" value="Na-ion 1S"/>
+      <property name="Assembly" value="Na-ion: FIT; LTO 2S: FIT"/>
+      <property name="Nominal" value="BAT"/>
+      <property name="MPN_NaIon" value="JST S2B-XH-A(LF)(SN)"/>
+      <property name="MPN_LTO_2S" value="JST S2B-XH-A(LF)(SN)"/>
+      <property name="Fit_NaIon_NoCold" value="yes"/>
+      <property name="Value_NaIon_NoCold" value="Na-ion 1S"/>
+      <property name="MPN_NaIon_NoCold" value="JST S2B-XH-A(LF)(SN)"/>
+      <property name="Sheetname" value="5. BatteryMonitor"/>
+      <property name="Sheetfile" value="BatteryMonitor.kicad_sch"/>
+      <sheetpath names="/5. BatteryMonitor/" tstamps="/3e0fda10-9f94-570d-b511-d93b150d3762/"/>
+      <tstamps>d332aa52-79d5-5d41-91ac-8b8721e66fb9</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R71">
+      <value>0.1R 1% 1W</value>
+      <footprint>Meshcore:R_2512_6332Metric__V2_R71</footprint>
+      <description>0.1 ohm stock INA219 calibration. Kelvin pickups at inner shunt pad edges. Normal 1.25A causes 125mV drop and 156mW; 1W device is not qualified for continuous 4A. TCR +/-600ppm/C for chosen Yageo 0.1ohm.</description>
+      <fields>
+        <field name="MPN">RL2512FK-070R1L</field>
+        <field name="LCSC"/>
+        <field name="Vendor">Danomsk</field>
+        <field name="Vendor URL">https://www.danomsk.ru/shop/6-rezistory/86-rezistory-postoyannye/501-rezistory-chip-1210-2512/145965-chip-2512-0-1-1-rl2512fk-070r1l-yageo/</field>
+        <field name="Fit_NaIon">yes</field>
+        <field name="Fit_LTO_2S">yes</field>
+        <field name="Value_NaIon">0.1R 1% 1W</field>
+        <field name="Value_LTO_2S">0.1R 1% 1W</field>
+        <field name="Assembly">All variants: FIT</field>
+        <field name="Nominal">0.1R</field>
+        <field name="MPN_NaIon">RL2512FK-070R1L</field>
+        <field name="MPN_LTO_2S">RL2512FK-070R1L</field>
+        <field name="Fit_NaIon_NoCold">yes</field>
+        <field name="Value_NaIon_NoCold">0.1R 1% 1W</field>
+        <field name="MPN_NaIon_NoCold">RL2512FK-070R1L</field>
+        <field name="Footprint">Meshcore:R_2512_6332Metric__V2_R71</field>
+        <field name="Datasheet"/>
+        <field name="Description">0.1 ohm stock INA219 calibration. Kelvin pickups at inner shunt pad edges. Normal 1.25A causes 125mV drop and 156mW; 1W device is not qualified for continuous 4A. TCR +/-600ppm/C for chosen Yageo 0.1ohm.</field>
+      </fields>
+      <libsource lib="Meshcore" part="R_H" description=""/>
+      <property name="MPN" value="RL2512FK-070R1L"/>
+      <property name="LCSC" value=""/>
+      <property name="Vendor" value="Danomsk"/>
+      <property name="Vendor URL" value="https://www.danomsk.ru/shop/6-rezistory/86-rezistory-postoyannye/501-rezistory-chip-1210-2512/145965-chip-2512-0-1-1-rl2512fk-070r1l-yageo/"/>
+      <property name="Fit_NaIon" value="yes"/>
+      <property name="Fit_LTO_2S" value="yes"/>
+      <property name="Value_NaIon" value="0.1R 1% 1W"/>
+      <property name="Value_LTO_2S" value="0.1R 1% 1W"/>
+      <property name="Assembly" value="All variants: FIT"/>
+      <property name="Nominal" value="0.1R"/>
+      <property name="MPN_NaIon" value="RL2512FK-070R1L"/>
+      <property name="MPN_LTO_2S" value="RL2512FK-070R1L"/>
+      <property name="Fit_NaIon_NoCold" value="yes"/>
+      <property name="Value_NaIon_NoCold" value="0.1R 1% 1W"/>
+      <property name="MPN_NaIon_NoCold" value="RL2512FK-070R1L"/>
+      <property name="Sheetname" value="5. BatteryMonitor"/>
+      <property name="Sheetfile" value="BatteryMonitor.kicad_sch"/>
+      <sheetpath names="/5. BatteryMonitor/" tstamps="/3e0fda10-9f94-570d-b511-d93b150d3762/"/>
+      <tstamps>c4d0b72a-f940-5924-8897-18ac954ff644</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R72">
+      <value>10R 1%</value>
+      <footprint>Meshcore:R_0805_2012Metric__V2_R72</footprint>
+      <description>INA219 battery monitor; fitted in Na-ion and LTO variants.</description>
+      <fields>
+        <field name="MPN">RC0805FR-0710RL</field>
+        <field name="LCSC"/>
+        <field name="Vendor">Danomsk</field>
+        <field name="Vendor URL"/>
+        <field name="Fit_NaIon">yes</field>
+        <field name="Fit_LTO_2S">yes</field>
+        <field name="Value_NaIon">10R 1%</field>
+        <field name="Value_LTO_2S">10R 1%</field>
+        <field name="Assembly">All variants: FIT</field>
+        <field name="Nominal">10R</field>
+        <field name="MPN_NaIon">RC0805FR-0710RL</field>
+        <field name="MPN_LTO_2S">RC0805FR-0710RL</field>
+        <field name="Fit_NaIon_NoCold">yes</field>
+        <field name="Value_NaIon_NoCold">10R 1%</field>
+        <field name="MPN_NaIon_NoCold">RC0805FR-0710RL</field>
+        <field name="Footprint">Meshcore:R_0805_2012Metric__V2_R72</field>
+        <field name="Datasheet"/>
+        <field name="Description">INA219 battery monitor; fitted in Na-ion and LTO variants.</field>
+      </fields>
+      <libsource lib="Meshcore" part="R_H" description=""/>
+      <property name="MPN" value="RC0805FR-0710RL"/>
+      <property name="LCSC" value=""/>
+      <property name="Vendor" value="Danomsk"/>
+      <property name="Vendor URL" value=""/>
+      <property name="Fit_NaIon" value="yes"/>
+      <property name="Fit_LTO_2S" value="yes"/>
+      <property name="Value_NaIon" value="10R 1%"/>
+      <property name="Value_LTO_2S" value="10R 1%"/>
+      <property name="Assembly" value="All variants: FIT"/>
+      <property name="Nominal" value="10R"/>
+      <property name="MPN_NaIon" value="RC0805FR-0710RL"/>
+      <property name="MPN_LTO_2S" value="RC0805FR-0710RL"/>
+      <property name="Fit_NaIon_NoCold" value="yes"/>
+      <property name="Value_NaIon_NoCold" value="10R 1%"/>
+      <property name="MPN_NaIon_NoCold" value="RC0805FR-0710RL"/>
+      <property name="Sheetname" value="5. BatteryMonitor"/>
+      <property name="Sheetfile" value="BatteryMonitor.kicad_sch"/>
+      <sheetpath names="/5. BatteryMonitor/" tstamps="/3e0fda10-9f94-570d-b511-d93b150d3762/"/>
+      <tstamps>f3741b72-48fa-5866-9496-aed5e4ca8118</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R73">
+      <value>10R 1%</value>
+      <footprint>Meshcore:R_0805_2012Metric__V2_R73</footprint>
+      <description>INA219 battery monitor; fitted in Na-ion and LTO variants.</description>
+      <fields>
+        <field name="MPN">RC0805FR-0710RL</field>
+        <field name="LCSC"/>
+        <field name="Vendor">Danomsk</field>
+        <field name="Vendor URL"/>
+        <field name="Fit_NaIon">yes</field>
+        <field name="Fit_LTO_2S">yes</field>
+        <field name="Value_NaIon">10R 1%</field>
+        <field name="Value_LTO_2S">10R 1%</field>
+        <field name="Assembly">All variants: FIT</field>
+        <field name="Nominal">10R</field>
+        <field name="MPN_NaIon">RC0805FR-0710RL</field>
+        <field name="MPN_LTO_2S">RC0805FR-0710RL</field>
+        <field name="Fit_NaIon_NoCold">yes</field>
+        <field name="Value_NaIon_NoCold">10R 1%</field>
+        <field name="MPN_NaIon_NoCold">RC0805FR-0710RL</field>
+        <field name="Footprint">Meshcore:R_0805_2012Metric__V2_R73</field>
+        <field name="Datasheet"/>
+        <field name="Description">INA219 battery monitor; fitted in Na-ion and LTO variants.</field>
+      </fields>
+      <libsource lib="Meshcore" part="R_H" description=""/>
+      <property name="MPN" value="RC0805FR-0710RL"/>
+      <property name="LCSC" value=""/>
+      <property name="Vendor" value="Danomsk"/>
+      <property name="Vendor URL" value=""/>
+      <property name="Fit_NaIon" value="yes"/>
+      <property name="Fit_LTO_2S" value="yes"/>
+      <property name="Value_NaIon" value="10R 1%"/>
+      <property name="Value_LTO_2S" value="10R 1%"/>
+      <property name="Assembly" value="All variants: FIT"/>
+      <property name="Nominal" value="10R"/>
+      <property name="MPN_NaIon" value="RC0805FR-0710RL"/>
+      <property name="MPN_LTO_2S" value="RC0805FR-0710RL"/>
+      <property name="Fit_NaIon_NoCold" value="yes"/>
+      <property name="Value_NaIon_NoCold" value="10R 1%"/>
+      <property name="MPN_NaIon_NoCold" value="RC0805FR-0710RL"/>
+      <property name="Sheetname" value="5. BatteryMonitor"/>
+      <property name="Sheetfile" value="BatteryMonitor.kicad_sch"/>
+      <sheetpath names="/5. BatteryMonitor/" tstamps="/3e0fda10-9f94-570d-b511-d93b150d3762/"/>
+      <tstamps>202099fa-56ba-5923-9ab4-b36fdab2d4e3</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U12">
+      <value>INA219AIDR</value>
+      <footprint>Meshcore:SOIC-8_3.9x4.9mm_P1.27mm__V2_U12</footprint>
+      <datasheet>https://www.ti.com/lit/ds/symlink/ina219.pdf</datasheet>
+      <description>INA219 battery monitor; fitted in Na-ion and LTO variants.</description>
+      <fields>
+        <field name="MPN">INA219AIDR</field>
+        <field name="LCSC"/>
+        <field name="Vendor">ChipDip</field>
+        <field name="Vendor URL">https://www.chipdip.ru/product/ina219aidr-monitor-toka-high-side-texas-instruments-9001599766</field>
+        <field name="Fit_NaIon">yes</field>
+        <field name="Fit_LTO_2S">yes</field>
+        <field name="Value_NaIon">INA219AIDR</field>
+        <field name="Value_LTO_2S">INA219AIDR</field>
+        <field name="Assembly">All variants: FIT</field>
+        <field name="Nominal">INA219AIDR</field>
+        <field name="MPN_NaIon">INA219AIDR</field>
+        <field name="MPN_LTO_2S">INA219AIDR</field>
+        <field name="Fit_NaIon_NoCold">yes</field>
+        <field name="Value_NaIon_NoCold">INA219AIDR</field>
+        <field name="MPN_NaIon_NoCold">INA219AIDR</field>
+        <field name="Footprint">Meshcore:SOIC-8_3.9x4.9mm_P1.27mm__V2_U12</field>
+        <field name="Datasheet">https://www.ti.com/lit/ds/symlink/ina219.pdf</field>
+        <field name="Description">INA219 battery monitor; fitted in Na-ion and LTO variants.</field>
+      </fields>
+      <libsource lib="Meshcore" part="INA219" description=""/>
+      <property name="MPN" value="INA219AIDR"/>
+      <property name="LCSC" value=""/>
+      <property name="Vendor" value="ChipDip"/>
+      <property name="Vendor URL" value="https://www.chipdip.ru/product/ina219aidr-monitor-toka-high-side-texas-instruments-9001599766"/>
+      <property name="Fit_NaIon" value="yes"/>
+      <property name="Fit_LTO_2S" value="yes"/>
+      <property name="Value_NaIon" value="INA219AIDR"/>
+      <property name="Value_LTO_2S" value="INA219AIDR"/>
+      <property name="Assembly" value="All variants: FIT"/>
+      <property name="Nominal" value="INA219AIDR"/>
+      <property name="MPN_NaIon" value="INA219AIDR"/>
+      <property name="MPN_LTO_2S" value="INA219AIDR"/>
+      <property name="Fit_NaIon_NoCold" value="yes"/>
+      <property name="Value_NaIon_NoCold" value="INA219AIDR"/>
+      <property name="MPN_NaIon_NoCold" value="INA219AIDR"/>
+      <property name="Sheetname" value="5. BatteryMonitor"/>
+      <property name="Sheetfile" value="BatteryMonitor.kicad_sch"/>
+      <sheetpath names="/5. BatteryMonitor/" tstamps="/3e0fda10-9f94-570d-b511-d93b150d3762/"/>
+      <tstamps>3d50a70e-4186-5307-aaf1-161fcb1fcf51</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="8"/>
+            <pin num="7"/>
+            <pin num="2"/>
+            <pin num="5"/>
+            <pin num="6"/>
+            <pin num="1"/>
+            <pin num="3"/>
+            <pin num="4"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
     <comp ref="H1">
       <value>M3 GND contact</value>
       <footprint>Meshcore:GND_M3_D3.2_OD6__V2_H1</footprint>
@@ -6005,13 +6348,13 @@ LTO:49.9k</field>
         <field name="Fit_NaIon">yes</field>
         <field name="Fit_LTO_2S">yes</field>
         <field name="Value_NaIon">M3 GND contact</field>
-        <field name="Value_LTO_2S">M3 NPTH</field>
+        <field name="Value_LTO_2S">M3 GND contact</field>
         <field name="Assembly">Na-ion: FIT; LTO 2S: FIT</field>
         <field name="Nominal"/>
         <field name="MPN_NaIon">PCB land M3 GND OD6 drill3.2</field>
         <field name="MPN_LTO_2S">PCB land M3 GND OD6 drill3.2</field>
         <field name="Fit_NaIon_NoCold">yes</field>
-        <field name="Value_NaIon_NoCold">M3 NPTH</field>
+        <field name="Value_NaIon_NoCold">M3 GND contact</field>
         <field name="MPN_NaIon_NoCold">PCB land M3 GND OD6 drill3.2</field>
         <field name="Footprint">Meshcore:GND_M3_D3.2_OD6__V2_H1</field>
         <field name="Datasheet"/>
@@ -6025,18 +6368,18 @@ LTO:49.9k</field>
       <property name="Fit_NaIon" value="yes"/>
       <property name="Fit_LTO_2S" value="yes"/>
       <property name="Value_NaIon" value="M3 GND contact"/>
-      <property name="Value_LTO_2S" value="M3 NPTH"/>
+      <property name="Value_LTO_2S" value="M3 GND contact"/>
       <property name="Assembly" value="Na-ion: FIT; LTO 2S: FIT"/>
       <property name="Nominal" value=""/>
       <property name="MPN_NaIon" value="PCB land M3 GND OD6 drill3.2"/>
       <property name="MPN_LTO_2S" value="PCB land M3 GND OD6 drill3.2"/>
       <property name="Fit_NaIon_NoCold" value="yes"/>
-      <property name="Value_NaIon_NoCold" value="M3 NPTH"/>
+      <property name="Value_NaIon_NoCold" value="M3 GND contact"/>
       <property name="MPN_NaIon_NoCold" value="PCB land M3 GND OD6 drill3.2"/>
-      <property name="Sheetname" value="5. Interconnect"/>
+      <property name="Sheetname" value="6. Interconnect"/>
       <property name="Sheetfile" value="Interconnect.kicad_sch"/>
       <property name="exclude_from_bom"/>
-      <sheetpath names="/5. Interconnect/" tstamps="/ee8c890a-b94c-5d31-a2d6-e6deaf06236d/"/>
+      <sheetpath names="/6. Interconnect/" tstamps="/ee8c890a-b94c-5d31-a2d6-e6deaf06236d/"/>
       <tstamps>fe0b4997-6c76-5eb8-91ce-1e9f5d765b5a</tstamps>
       <units>
         <unit name="A">
@@ -6058,13 +6401,13 @@ LTO:49.9k</field>
         <field name="Fit_NaIon">yes</field>
         <field name="Fit_LTO_2S">yes</field>
         <field name="Value_NaIon">M3 GND contact</field>
-        <field name="Value_LTO_2S">M3 NPTH</field>
+        <field name="Value_LTO_2S">M3 GND contact</field>
         <field name="Assembly">Na-ion: FIT; LTO 2S: FIT</field>
         <field name="Nominal"/>
         <field name="MPN_NaIon">PCB land M3 GND OD6 drill3.2</field>
         <field name="MPN_LTO_2S">PCB land M3 GND OD6 drill3.2</field>
         <field name="Fit_NaIon_NoCold">yes</field>
-        <field name="Value_NaIon_NoCold">M3 NPTH</field>
+        <field name="Value_NaIon_NoCold">M3 GND contact</field>
         <field name="MPN_NaIon_NoCold">PCB land M3 GND OD6 drill3.2</field>
         <field name="Footprint">Meshcore:GND_M3_D3.2_OD6__V2_H2</field>
         <field name="Datasheet"/>
@@ -6078,18 +6421,18 @@ LTO:49.9k</field>
       <property name="Fit_NaIon" value="yes"/>
       <property name="Fit_LTO_2S" value="yes"/>
       <property name="Value_NaIon" value="M3 GND contact"/>
-      <property name="Value_LTO_2S" value="M3 NPTH"/>
+      <property name="Value_LTO_2S" value="M3 GND contact"/>
       <property name="Assembly" value="Na-ion: FIT; LTO 2S: FIT"/>
       <property name="Nominal" value=""/>
       <property name="MPN_NaIon" value="PCB land M3 GND OD6 drill3.2"/>
       <property name="MPN_LTO_2S" value="PCB land M3 GND OD6 drill3.2"/>
       <property name="Fit_NaIon_NoCold" value="yes"/>
-      <property name="Value_NaIon_NoCold" value="M3 NPTH"/>
+      <property name="Value_NaIon_NoCold" value="M3 GND contact"/>
       <property name="MPN_NaIon_NoCold" value="PCB land M3 GND OD6 drill3.2"/>
-      <property name="Sheetname" value="5. Interconnect"/>
+      <property name="Sheetname" value="6. Interconnect"/>
       <property name="Sheetfile" value="Interconnect.kicad_sch"/>
       <property name="exclude_from_bom"/>
-      <sheetpath names="/5. Interconnect/" tstamps="/ee8c890a-b94c-5d31-a2d6-e6deaf06236d/"/>
+      <sheetpath names="/6. Interconnect/" tstamps="/ee8c890a-b94c-5d31-a2d6-e6deaf06236d/"/>
       <tstamps>d7cab7e6-7033-5f55-86af-ef847100a7f6</tstamps>
       <units>
         <unit name="A">
@@ -6111,13 +6454,13 @@ LTO:49.9k</field>
         <field name="Fit_NaIon">yes</field>
         <field name="Fit_LTO_2S">yes</field>
         <field name="Value_NaIon">M3 GND contact</field>
-        <field name="Value_LTO_2S">M3 NPTH</field>
+        <field name="Value_LTO_2S">M3 GND contact</field>
         <field name="Assembly">Na-ion: FIT; LTO 2S: FIT</field>
         <field name="Nominal"/>
         <field name="MPN_NaIon">PCB land M3 GND OD6 drill3.2</field>
         <field name="MPN_LTO_2S">PCB land M3 GND OD6 drill3.2</field>
         <field name="Fit_NaIon_NoCold">yes</field>
-        <field name="Value_NaIon_NoCold">M3 NPTH</field>
+        <field name="Value_NaIon_NoCold">M3 GND contact</field>
         <field name="MPN_NaIon_NoCold">PCB land M3 GND OD6 drill3.2</field>
         <field name="Footprint">Meshcore:GND_M3_D3.2_OD6__V2_H3</field>
         <field name="Datasheet"/>
@@ -6131,18 +6474,18 @@ LTO:49.9k</field>
       <property name="Fit_NaIon" value="yes"/>
       <property name="Fit_LTO_2S" value="yes"/>
       <property name="Value_NaIon" value="M3 GND contact"/>
-      <property name="Value_LTO_2S" value="M3 NPTH"/>
+      <property name="Value_LTO_2S" value="M3 GND contact"/>
       <property name="Assembly" value="Na-ion: FIT; LTO 2S: FIT"/>
       <property name="Nominal" value=""/>
       <property name="MPN_NaIon" value="PCB land M3 GND OD6 drill3.2"/>
       <property name="MPN_LTO_2S" value="PCB land M3 GND OD6 drill3.2"/>
       <property name="Fit_NaIon_NoCold" value="yes"/>
-      <property name="Value_NaIon_NoCold" value="M3 NPTH"/>
+      <property name="Value_NaIon_NoCold" value="M3 GND contact"/>
       <property name="MPN_NaIon_NoCold" value="PCB land M3 GND OD6 drill3.2"/>
-      <property name="Sheetname" value="5. Interconnect"/>
+      <property name="Sheetname" value="6. Interconnect"/>
       <property name="Sheetfile" value="Interconnect.kicad_sch"/>
       <property name="exclude_from_bom"/>
-      <sheetpath names="/5. Interconnect/" tstamps="/ee8c890a-b94c-5d31-a2d6-e6deaf06236d/"/>
+      <sheetpath names="/6. Interconnect/" tstamps="/ee8c890a-b94c-5d31-a2d6-e6deaf06236d/"/>
       <tstamps>3acfdd81-4832-5bb6-a54f-4c3f8e8c6bc8</tstamps>
       <units>
         <unit name="A">
@@ -6164,13 +6507,13 @@ LTO:49.9k</field>
         <field name="Fit_NaIon">yes</field>
         <field name="Fit_LTO_2S">yes</field>
         <field name="Value_NaIon">M3 GND contact</field>
-        <field name="Value_LTO_2S">M3 NPTH</field>
+        <field name="Value_LTO_2S">M3 GND contact</field>
         <field name="Assembly">Na-ion: FIT; LTO 2S: FIT</field>
         <field name="Nominal"/>
         <field name="MPN_NaIon">PCB land M3 GND OD6 drill3.2</field>
         <field name="MPN_LTO_2S">PCB land M3 GND OD6 drill3.2</field>
         <field name="Fit_NaIon_NoCold">yes</field>
-        <field name="Value_NaIon_NoCold">M3 NPTH</field>
+        <field name="Value_NaIon_NoCold">M3 GND contact</field>
         <field name="MPN_NaIon_NoCold">PCB land M3 GND OD6 drill3.2</field>
         <field name="Footprint">Meshcore:GND_M3_D3.2_OD6__V2_H4</field>
         <field name="Datasheet"/>
@@ -6184,18 +6527,18 @@ LTO:49.9k</field>
       <property name="Fit_NaIon" value="yes"/>
       <property name="Fit_LTO_2S" value="yes"/>
       <property name="Value_NaIon" value="M3 GND contact"/>
-      <property name="Value_LTO_2S" value="M3 NPTH"/>
+      <property name="Value_LTO_2S" value="M3 GND contact"/>
       <property name="Assembly" value="Na-ion: FIT; LTO 2S: FIT"/>
       <property name="Nominal" value=""/>
       <property name="MPN_NaIon" value="PCB land M3 GND OD6 drill3.2"/>
       <property name="MPN_LTO_2S" value="PCB land M3 GND OD6 drill3.2"/>
       <property name="Fit_NaIon_NoCold" value="yes"/>
-      <property name="Value_NaIon_NoCold" value="M3 NPTH"/>
+      <property name="Value_NaIon_NoCold" value="M3 GND contact"/>
       <property name="MPN_NaIon_NoCold" value="PCB land M3 GND OD6 drill3.2"/>
-      <property name="Sheetname" value="5. Interconnect"/>
+      <property name="Sheetname" value="6. Interconnect"/>
       <property name="Sheetfile" value="Interconnect.kicad_sch"/>
       <property name="exclude_from_bom"/>
-      <sheetpath names="/5. Interconnect/" tstamps="/ee8c890a-b94c-5d31-a2d6-e6deaf06236d/"/>
+      <sheetpath names="/6. Interconnect/" tstamps="/ee8c890a-b94c-5d31-a2d6-e6deaf06236d/"/>
       <tstamps>e5afac34-92b8-52ea-9988-910692765cf9</tstamps>
       <units>
         <unit name="A">
@@ -6206,48 +6549,48 @@ LTO:49.9k</field>
       </units>
     </comp>
     <comp ref="J101">
-      <value>INTERBOARD 12P</value>
-      <footprint>Meshcore:Connfly_DS1013_12RSIB_B_0_Horizontal__V2_J101</footprint>
-      <description>R/A drawing rotated to solder tails down.13.8mm is plan reach;9.1mm is assembled height. Body depth8.8mm. Hole1.02±0.05. Mechanical v2 package; original functional pin numbers retained.</description>
+      <value>INTERBOARD 2x6 VERTICAL</value>
+      <footprint>Meshcore:Ali_PinHeader_2x06_P2.54_L35_A3C6__V2_J101</footprint>
+      <description>Direct vertical connection through 12 isolated screen holes. Mirrored female pad grid gives physical 1:1 after LOGIC X180. Pin7 returns SYS_3V3 to INA219 only; remove J11 before USB as before. Exact generic pin section and mating limits require sample check.</description>
       <fields>
-        <field name="MPN">Connfly DS1013-12RSIB-B-0</field>
+        <field name="MPN">E-SIMPO L35mm A3C6 2x6P</field>
         <field name="LCSC"/>
-        <field name="Vendor">Danomsk</field>
-        <field name="Vendor URL">https://www.danomsk.ru/shop/7-kommutatsiya/121-razemy/306-soediniteli-pryamougolnye/134861-idc-12mr-ds1013-12rsib-b-0-vilka-uglovaya-shag-2-54mm-maks-dopust-tok-1a-connfly/</field>
+        <field name="Vendor">AliExpress</field>
+        <field name="Vendor URL">https://aliexpress.ru/item/1005011978353933.html?sku_id=12000057202232448</field>
         <field name="Fit_NaIon">yes</field>
         <field name="Fit_LTO_2S">yes</field>
-        <field name="Value_NaIon">INTERBOARD 12P</field>
-        <field name="Value_LTO_2S">INTERBOARD 12P</field>
+        <field name="Value_NaIon">INTERBOARD 2x6 VERTICAL</field>
+        <field name="Value_LTO_2S">INTERBOARD 2x6 VERTICAL</field>
         <field name="Assembly">All variants: FIT</field>
         <field name="Nominal">INTERBOARD</field>
-        <field name="MPN_NaIon">Connfly DS1013-12RSIB-B-0</field>
-        <field name="MPN_LTO_2S">Connfly DS1013-12RSIB-B-0</field>
+        <field name="MPN_NaIon">E-SIMPO L35mm A3C6 2x6P</field>
+        <field name="MPN_LTO_2S">E-SIMPO L35mm A3C6 2x6P</field>
         <field name="Fit_NaIon_NoCold">yes</field>
-        <field name="Value_NaIon_NoCold">INTERBOARD 12P</field>
-        <field name="MPN_NaIon_NoCold">Connfly DS1013-12RSIB-B-0</field>
-        <field name="Footprint">Meshcore:Connfly_DS1013_12RSIB_B_0_Horizontal__V2_J101</field>
+        <field name="Value_NaIon_NoCold">INTERBOARD 2x6 VERTICAL</field>
+        <field name="MPN_NaIon_NoCold">E-SIMPO L35mm A3C6 2x6P</field>
+        <field name="Footprint">Meshcore:Ali_PinHeader_2x06_P2.54_L35_A3C6__V2_J101</field>
         <field name="Datasheet"/>
-        <field name="Description">R/A drawing rotated to solder tails down.13.8mm is plan reach;9.1mm is assembled height. Body depth8.8mm. Hole1.02±0.05. Mechanical v2 package; original functional pin numbers retained.</field>
+        <field name="Description">Direct vertical connection through 12 isolated screen holes. Mirrored female pad grid gives physical 1:1 after LOGIC X180. Pin7 returns SYS_3V3 to INA219 only; remove J11 before USB as before. Exact generic pin section and mating limits require sample check.</field>
       </fields>
       <libsource lib="Meshcore" part="V2_J101" description=""/>
-      <property name="MPN" value="Connfly DS1013-12RSIB-B-0"/>
+      <property name="MPN" value="E-SIMPO L35mm A3C6 2x6P"/>
       <property name="LCSC" value=""/>
-      <property name="Vendor" value="Danomsk"/>
-      <property name="Vendor URL" value="https://www.danomsk.ru/shop/7-kommutatsiya/121-razemy/306-soediniteli-pryamougolnye/134861-idc-12mr-ds1013-12rsib-b-0-vilka-uglovaya-shag-2-54mm-maks-dopust-tok-1a-connfly/"/>
+      <property name="Vendor" value="AliExpress"/>
+      <property name="Vendor URL" value="https://aliexpress.ru/item/1005011978353933.html?sku_id=12000057202232448"/>
       <property name="Fit_NaIon" value="yes"/>
       <property name="Fit_LTO_2S" value="yes"/>
-      <property name="Value_NaIon" value="INTERBOARD 12P"/>
-      <property name="Value_LTO_2S" value="INTERBOARD 12P"/>
+      <property name="Value_NaIon" value="INTERBOARD 2x6 VERTICAL"/>
+      <property name="Value_LTO_2S" value="INTERBOARD 2x6 VERTICAL"/>
       <property name="Assembly" value="All variants: FIT"/>
       <property name="Nominal" value="INTERBOARD"/>
-      <property name="MPN_NaIon" value="Connfly DS1013-12RSIB-B-0"/>
-      <property name="MPN_LTO_2S" value="Connfly DS1013-12RSIB-B-0"/>
+      <property name="MPN_NaIon" value="E-SIMPO L35mm A3C6 2x6P"/>
+      <property name="MPN_LTO_2S" value="E-SIMPO L35mm A3C6 2x6P"/>
       <property name="Fit_NaIon_NoCold" value="yes"/>
-      <property name="Value_NaIon_NoCold" value="INTERBOARD 12P"/>
-      <property name="MPN_NaIon_NoCold" value="Connfly DS1013-12RSIB-B-0"/>
-      <property name="Sheetname" value="5. Interconnect"/>
+      <property name="Value_NaIon_NoCold" value="INTERBOARD 2x6 VERTICAL"/>
+      <property name="MPN_NaIon_NoCold" value="E-SIMPO L35mm A3C6 2x6P"/>
+      <property name="Sheetname" value="6. Interconnect"/>
       <property name="Sheetfile" value="Interconnect.kicad_sch"/>
-      <sheetpath names="/5. Interconnect/" tstamps="/ee8c890a-b94c-5d31-a2d6-e6deaf06236d/"/>
+      <sheetpath names="/6. Interconnect/" tstamps="/ee8c890a-b94c-5d31-a2d6-e6deaf06236d/"/>
       <tstamps>c44f063d-67fd-579d-b4b1-18c353ba57ec</tstamps>
       <units>
         <unit name="A">
@@ -6270,6 +6613,19 @@ LTO:49.9k</field>
     </comp>
   </components>
   <libparts>
+    <libpart lib="Meshcore" part="BAT_HEADER_LEFT">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">BAT_HEADER_LEFT</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="+" type="passive"/>
+        <pin num="2" name="GND" type="passive"/>
+      </pins>
+    </libpart>
     <libpart lib="Meshcore" part="CN3722">
       <fields>
         <field name="Reference">U</field>
@@ -6372,6 +6728,25 @@ LTO:49.9k</field>
       </fields>
       <pins>
         <pin num="1" name="GND" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Meshcore" part="INA219">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">INA219</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="A1" type="input"/>
+        <pin num="2" name="A0" type="input"/>
+        <pin num="3" name="SDA" type="bidirectional"/>
+        <pin num="4" name="SCL" type="input"/>
+        <pin num="5" name="VS" type="power_in"/>
+        <pin num="6" name="GND" type="power_in"/>
+        <pin num="7" name="IN-" type="input"/>
+        <pin num="8" name="IN+" type="input"/>
       </pins>
     </libpart>
     <libpart lib="Meshcore" part="J2">
@@ -6605,12 +6980,12 @@ LTO:49.9k</field>
         <pin num="4" name="GND" type="passive"/>
         <pin num="5" name="FILTER_OUT" type="passive"/>
         <pin num="6" name="GND" type="passive"/>
-        <pin num="7" name="FILTER_OUT" type="passive"/>
+        <pin num="7" name="SYS_3V3" type="passive"/>
         <pin num="8" name="GND" type="passive"/>
         <pin num="9" name="BAT" type="passive"/>
-        <pin num="10" name="GND" type="passive"/>
+        <pin num="10" name="SDA" type="passive"/>
         <pin num="11" name="MODE" type="passive"/>
-        <pin num="12" name="GND" type="passive"/>
+        <pin num="12" name="SCL" type="passive"/>
       </pins>
     </libpart>
   </libparts>
@@ -6713,42 +7088,48 @@ LTO:49.9k</field>
       <node ref="U1" pin="16" pinfunction="DRV_16" pintype="output"/>
     </net>
     <net code="18" name="BAT" class="Default">
+      <node ref="J101" pin="9" pinfunction="BAT_9" pintype="passive"/>
+      <node ref="J12" pin="1" pinfunction="PACK+_1" pintype="passive"/>
+      <node ref="J8" pin="1" pinfunction="+_1" pintype="passive"/>
+      <node ref="R15" pin="1" pintype="passive"/>
+      <node ref="R47" pin="1" pintype="passive"/>
+      <node ref="R71" pin="2" pintype="passive"/>
+      <node ref="R73" pin="1" pintype="passive"/>
+      <node ref="TP1" pin="1" pintype="passive"/>
+    </net>
+    <net code="19" name="BAT_SYS" class="Default">
       <node ref="C12" pin="1" pintype="passive"/>
       <node ref="C13" pin="1" pintype="passive"/>
       <node ref="C30" pin="1" pintype="passive"/>
       <node ref="C4" pin="1" pintype="passive"/>
       <node ref="C52" pin="1" pintype="passive"/>
       <node ref="C53" pin="1" pintype="passive"/>
-      <node ref="J101" pin="9" pinfunction="BAT_9" pintype="passive"/>
-      <node ref="J12" pin="1" pinfunction="PACK+_1" pintype="passive"/>
-      <node ref="J8" pin="1" pinfunction="1_1" pintype="passive"/>
       <node ref="R1" pin="2" pintype="passive"/>
-      <node ref="R15" pin="1" pintype="passive"/>
       <node ref="R3" pin="1" pintype="passive"/>
-      <node ref="R47" pin="1" pintype="passive"/>
-      <node ref="TP1" pin="1" pintype="passive"/>
+      <node ref="R71" pin="1" pintype="passive"/>
+      <node ref="R72" pin="1" pintype="passive"/>
       <node ref="U1" pin="14" pinfunction="BAT_14" pintype="input"/>
       <node ref="U2" pin="10" pinfunction="VIN_10" pintype="power_in"/>
     </net>
-    <net code="19" name="CHG_CS_M" class="Default">
+    <net code="20" name="CHG_CS_M" class="Default">
       <node ref="Q4" pin="3" pinfunction="D_3" pintype="passive"/>
       <node ref="Q6" pin="3" pinfunction="D_3" pintype="passive"/>
       <node ref="Q7" pin="3" pinfunction="D_3" pintype="passive"/>
       <node ref="R1" pin="1" pintype="passive"/>
       <node ref="R56" pin="2" pintype="passive"/>
     </net>
-    <net code="20" name="CHG_G_SHUNT" class="Default">
+    <net code="21" name="CHG_G_SHUNT" class="Default">
       <node ref="Q4" pin="1" pinfunction="G_1" pintype="input"/>
       <node ref="Q6" pin="1" pinfunction="G_1" pintype="input"/>
       <node ref="Q7" pin="1" pinfunction="G_1" pintype="input"/>
       <node ref="R58" pin="2" pintype="passive"/>
       <node ref="R68" pin="1" pintype="passive"/>
     </net>
-    <net code="21" name="CHRG" class="Default">
+    <net code="22" name="CHRG" class="Default">
       <node ref="D3" pin="1" pinfunction="K_1" pintype="passive"/>
       <node ref="U1" pin="4" pinfunction="CHRG_4" pintype="open_collector"/>
     </net>
-    <net code="22" name="CS_P" class="Default">
+    <net code="23" name="CS_P" class="Default">
       <node ref="L1" pin="2" pintype="passive"/>
       <node ref="Q4" pin="2" pinfunction="S_2" pintype="passive"/>
       <node ref="Q6" pin="2" pinfunction="S_2" pintype="passive"/>
@@ -6757,19 +7138,18 @@ LTO:49.9k</field>
       <node ref="R58" pin="1" pintype="passive"/>
       <node ref="U1" pin="13" pinfunction="CSP_13" pintype="input"/>
     </net>
-    <net code="23" name="DONE" class="Default">
+    <net code="24" name="DONE" class="Default">
       <node ref="D4" pin="1" pinfunction="K_1" pintype="passive"/>
       <node ref="U1" pin="5" pinfunction="DONE_5" pintype="open_collector"/>
     </net>
-    <net code="24" name="FILTER_OUT" class="Default">
+    <net code="25" name="FILTER_OUT" class="Default">
       <node ref="J101" pin="1" pinfunction="FILTER_OUT_1" pintype="passive"/>
       <node ref="J101" pin="3" pinfunction="FILTER_OUT_3" pintype="passive"/>
       <node ref="J101" pin="5" pinfunction="FILTER_OUT_5" pintype="passive"/>
-      <node ref="J101" pin="7" pinfunction="FILTER_OUT_7" pintype="passive"/>
       <node ref="L4" pin="2" pintype="passive"/>
       <node ref="R41" pin="1" pintype="passive"/>
     </net>
-    <net code="25" name="GND" class="Default">
+    <net code="26" name="GND" class="Default">
       <node ref="C1" pin="2" pintype="passive"/>
       <node ref="C12" pin="2" pintype="passive"/>
       <node ref="C13" pin="2" pintype="passive"/>
@@ -6806,6 +7186,7 @@ LTO:49.9k</field>
       <node ref="C60" pin="2" pintype="passive"/>
       <node ref="C61" pin="2" pintype="passive"/>
       <node ref="C62" pin="2" pintype="passive"/>
+      <node ref="C63" pin="2" pintype="passive"/>
       <node ref="C7" pin="2" pintype="passive"/>
       <node ref="C8" pin="2" pintype="passive"/>
       <node ref="D2" pin="2" pinfunction="A_2" pintype="passive"/>
@@ -6813,15 +7194,13 @@ LTO:49.9k</field>
       <node ref="H2" pin="1" pinfunction="GND_1" pintype="passive"/>
       <node ref="H3" pin="1" pinfunction="GND_1" pintype="passive"/>
       <node ref="H4" pin="1" pinfunction="GND_1" pintype="passive"/>
-      <node ref="J101" pin="10" pinfunction="GND_10" pintype="passive"/>
-      <node ref="J101" pin="12" pinfunction="GND_12" pintype="passive"/>
       <node ref="J101" pin="2" pinfunction="GND_2" pintype="passive"/>
       <node ref="J101" pin="4" pinfunction="GND_4" pintype="passive"/>
       <node ref="J101" pin="6" pinfunction="GND_6" pintype="passive"/>
       <node ref="J101" pin="8" pinfunction="GND_8" pintype="passive"/>
       <node ref="J12" pin="3" pinfunction="PACK-_3" pintype="passive"/>
       <node ref="J7" pin="2" pinfunction="2_2" pintype="passive"/>
-      <node ref="J8" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="J8" pin="2" pinfunction="GND_2" pintype="passive"/>
       <node ref="Q5" pin="2" pinfunction="S_2" pintype="passive"/>
       <node ref="R14" pin="2" pintype="passive"/>
       <node ref="R16" pin="2" pintype="passive"/>
@@ -6840,12 +7219,15 @@ LTO:49.9k</field>
       <node ref="U1" pin="3" pinfunction="GND_3" pintype="power_in"/>
       <node ref="U10" pin="4" pinfunction="GND_4" pintype="power_in"/>
       <node ref="U11" pin="3" pinfunction="A_3" pintype="passive"/>
+      <node ref="U12" pin="1" pinfunction="A1_1" pintype="input"/>
+      <node ref="U12" pin="2" pinfunction="A0_2" pintype="input"/>
+      <node ref="U12" pin="6" pinfunction="GND_6" pintype="power_in"/>
       <node ref="U2" pin="3" pinfunction="AGND_3" pintype="power_in"/>
       <node ref="U2" pin="8" pinfunction="PGND_8" pintype="power_in"/>
       <node ref="U9" pin="2" pinfunction="A_2" pintype="passive"/>
       <node ref="U9" pin="5" pinfunction="A_5" pintype="passive"/>
     </net>
-    <net code="26" name="LTO_MID" class="Default">
+    <net code="27" name="LTO_MID" class="Default">
       <node ref="C58" pin="2" pintype="passive"/>
       <node ref="J12" pin="2" pinfunction="MID_2" pintype="passive"/>
       <node ref="R50" pin="2" pintype="passive"/>
@@ -6853,16 +7235,16 @@ LTO:49.9k</field>
       <node ref="U8" pin="2" pinfunction="A_2" pintype="passive"/>
       <node ref="U8" pin="5" pinfunction="A_5" pintype="passive"/>
     </net>
-    <net code="27" name="MODE" class="Default">
+    <net code="28" name="MODE" class="Default">
       <node ref="J101" pin="11" pinfunction="MODE_11" pintype="passive"/>
       <node ref="R17" pin="1" pintype="passive"/>
       <node ref="U2" pin="2" pinfunction="MODE_2" pintype="input"/>
     </net>
-    <net code="28" name="Net-(C6-Pad1)" class="Default">
+    <net code="29" name="Net-(C6-Pad1)" class="Default">
       <node ref="C6" pin="1" pintype="passive"/>
       <node ref="R6" pin="2" pintype="passive"/>
     </net>
-    <net code="29" name="Net-(C15-Pad1)" class="Default">
+    <net code="30" name="Net-(C15-Pad1)" class="Default">
       <node ref="C15" pin="1" pintype="passive"/>
       <node ref="C34" pin="1" pintype="passive"/>
       <node ref="C35" pin="1" pintype="passive"/>
@@ -6875,7 +7257,7 @@ LTO:49.9k</field>
       <node ref="C42" pin="1" pintype="passive"/>
       <node ref="R40" pin="2" pintype="passive"/>
     </net>
-    <net code="30" name="Net-(C16-Pad1)" class="Default">
+    <net code="31" name="Net-(C16-Pad1)" class="Default">
       <node ref="C16" pin="1" pintype="passive"/>
       <node ref="C43" pin="1" pintype="passive"/>
       <node ref="C44" pin="1" pintype="passive"/>
@@ -6888,86 +7270,104 @@ LTO:49.9k</field>
       <node ref="C51" pin="1" pintype="passive"/>
       <node ref="R41" pin="2" pintype="passive"/>
     </net>
-    <net code="31" name="Net-(D1-A)" class="Default">
+    <net code="32" name="Net-(D1-A)" class="Default">
       <node ref="D1" pin="2" pinfunction="A_2" pintype="passive"/>
       <node ref="Q1" pin="3" pinfunction="D_3" pintype="passive"/>
     </net>
-    <net code="32" name="Net-(D1-K)" class="Default">
+    <net code="33" name="Net-(D1-K)" class="Default">
       <node ref="D1" pin="1" pinfunction="K_1" pintype="passive"/>
       <node ref="D2" pin="1" pinfunction="K_1" pintype="passive"/>
       <node ref="L1" pin="1" pintype="passive"/>
     </net>
-    <net code="33" name="Net-(D3-A)" class="Default">
+    <net code="34" name="Net-(D3-A)" class="Default">
       <node ref="D3" pin="2" pinfunction="A_2" pintype="passive"/>
       <node ref="R10" pin="2" pintype="passive"/>
     </net>
-    <net code="34" name="Net-(D4-A)" class="Default">
+    <net code="35" name="Net-(D4-A)" class="Default">
       <node ref="D4" pin="2" pinfunction="A_2" pintype="passive"/>
       <node ref="R11" pin="2" pintype="passive"/>
     </net>
-    <net code="35" name="Net-(R48-Pad2)" class="Default">
+    <net code="36" name="Net-(R48-Pad2)" class="Default">
       <node ref="R48" pin="2" pintype="passive"/>
       <node ref="R49" pin="1" pintype="passive"/>
     </net>
-    <net code="36" name="Net-(R52-Pad2)" class="Default">
+    <net code="37" name="Net-(R52-Pad2)" class="Default">
       <node ref="R52" pin="2" pintype="passive"/>
       <node ref="R53" pin="1" pintype="passive"/>
     </net>
-    <net code="37" name="Net-(U1-COM1)" class="Default">
+    <net code="38" name="Net-(U1-COM1)" class="Default">
       <node ref="C5" pin="1" pintype="passive"/>
       <node ref="R5" pin="1" pintype="passive"/>
       <node ref="U1" pin="8" pinfunction="COM1_8" pintype="passive"/>
     </net>
-    <net code="38" name="Net-(U1-COM2)" class="Default">
+    <net code="39" name="Net-(U1-COM2)" class="Default">
       <node ref="R6" pin="1" pintype="passive"/>
       <node ref="U1" pin="9" pinfunction="COM2_9" pintype="passive"/>
     </net>
-    <net code="39" name="Net-(U1-COM3)" class="Default">
+    <net code="40" name="Net-(U1-COM3)" class="Default">
       <node ref="C7" pin="1" pintype="passive"/>
       <node ref="U1" pin="11" pinfunction="COM3_11" pintype="passive"/>
     </net>
-    <net code="40" name="Net-(U1-FB)" class="Default">
+    <net code="41" name="Net-(U1-FB)" class="Default">
       <node ref="C30" pin="2" pintype="passive"/>
       <node ref="R3" pin="2" pintype="passive"/>
       <node ref="R4" pin="1" pintype="passive"/>
       <node ref="U1" pin="10" pinfunction="FB_10" pintype="input"/>
     </net>
-    <net code="41" name="Net-(U1-MPPT)" class="Default">
+    <net code="42" name="Net-(U1-MPPT)" class="Default">
       <node ref="R7" pin="2" pintype="passive"/>
       <node ref="R8" pin="1" pintype="passive"/>
       <node ref="U1" pin="7" pinfunction="MPPT_7" pintype="input"/>
     </net>
-    <net code="42" name="Net-(U1-TEMP)" class="Default">
+    <net code="43" name="Net-(U1-TEMP)" class="Default">
       <node ref="R9" pin="1" pintype="passive"/>
       <node ref="U1" pin="6" pinfunction="TEMP_6" pintype="input"/>
     </net>
-    <net code="43" name="Net-(U1-VG)" class="Default">
+    <net code="44" name="Net-(U1-VG)" class="Default">
       <node ref="C3" pin="2" pintype="passive"/>
       <node ref="U1" pin="1" pinfunction="VG_1" pintype="power_out"/>
     </net>
-    <net code="44" name="Net-(U8-K)" class="Default">
+    <net code="45" name="Net-(U8-K)" class="Default">
       <node ref="C58" pin="1" pintype="passive"/>
       <node ref="R47" pin="2" pintype="passive"/>
       <node ref="R48" pin="1" pintype="passive"/>
       <node ref="U8" pin="3" pinfunction="K_3" pintype="passive"/>
     </net>
-    <net code="45" name="Net-(U8-REF)" class="Default">
+    <net code="46" name="Net-(U8-REF)" class="Default">
       <node ref="R49" pin="2" pintype="passive"/>
       <node ref="R50" pin="1" pintype="passive"/>
       <node ref="U8" pin="4" pinfunction="REF_4" pintype="input"/>
     </net>
-    <net code="46" name="Net-(U9-K)" class="Default">
+    <net code="47" name="Net-(U9-K)" class="Default">
       <node ref="C59" pin="1" pintype="passive"/>
       <node ref="R51" pin="2" pintype="passive"/>
       <node ref="R52" pin="1" pintype="passive"/>
       <node ref="U9" pin="3" pinfunction="K_3" pintype="passive"/>
     </net>
-    <net code="47" name="Net-(U9-REF)" class="Default">
+    <net code="48" name="Net-(U9-REF)" class="Default">
       <node ref="R53" pin="2" pintype="passive"/>
       <node ref="R54" pin="1" pintype="passive"/>
       <node ref="U9" pin="4" pinfunction="REF_4" pintype="input"/>
     </net>
-    <net code="48" name="SOLAR" class="Default">
+    <net code="49" name="Net-(U12-IN+)" class="Default">
+      <node ref="C64" pin="1" pintype="passive"/>
+      <node ref="R72" pin="2" pintype="passive"/>
+      <node ref="U12" pin="8" pinfunction="IN+_8" pintype="input"/>
+    </net>
+    <net code="50" name="Net-(U12-IN-)" class="Default">
+      <node ref="C64" pin="2" pintype="passive"/>
+      <node ref="R73" pin="2" pintype="passive"/>
+      <node ref="U12" pin="7" pinfunction="IN-_7" pintype="input"/>
+    </net>
+    <net code="51" name="SCL" class="Default">
+      <node ref="J101" pin="12" pinfunction="SCL_12" pintype="passive"/>
+      <node ref="U12" pin="4" pinfunction="SCL_4" pintype="input"/>
+    </net>
+    <net code="52" name="SDA" class="Default">
+      <node ref="J101" pin="10" pinfunction="SDA_10" pintype="passive"/>
+      <node ref="U12" pin="3" pinfunction="SDA_3" pintype="bidirectional"/>
+    </net>
+    <net code="53" name="SOLAR" class="Default">
       <node ref="C1" pin="1" pintype="passive"/>
       <node ref="C2" pin="1" pintype="passive"/>
       <node ref="C3" pin="1" pintype="passive"/>
@@ -6983,22 +7383,27 @@ LTO:49.9k</field>
       <node ref="U1" pin="15" pinfunction="VCC_15" pintype="power_in"/>
       <node ref="U10" pin="8" pinfunction="VCC_8" pintype="power_in"/>
     </net>
-    <net code="49" name="unconnected-(J12-NC-Pad4)" class="Default">
+    <net code="54" name="SYS_3V3" class="Default">
+      <node ref="C63" pin="1" pintype="passive"/>
+      <node ref="J101" pin="7" pinfunction="SYS_3V3_7" pintype="passive"/>
+      <node ref="U12" pin="5" pinfunction="VS_5" pintype="power_in"/>
+    </net>
+    <net code="55" name="unconnected-(J12-NC-Pad4)" class="Default">
       <node ref="J12" pin="4" pinfunction="NC_4" pintype="passive+no_connect"/>
     </net>
-    <net code="50" name="unconnected-(U1-NC-Pad12)" class="Default">
+    <net code="56" name="unconnected-(U1-NC-Pad12)" class="Default">
       <node ref="U1" pin="12" pinfunction="NC_12" pintype="no_connect"/>
     </net>
-    <net code="51" name="unconnected-(U2-PG-Pad5)" class="Default">
+    <net code="57" name="unconnected-(U2-PG-Pad5)" class="Default">
       <node ref="U2" pin="5" pinfunction="PG_5" pintype="open_collector+no_connect"/>
     </net>
-    <net code="52" name="unconnected-(U8-NC-Pad1)" class="Default">
+    <net code="58" name="unconnected-(U8-NC-Pad1)" class="Default">
       <node ref="U8" pin="1" pinfunction="NC_1" pintype="no_connect"/>
     </net>
-    <net code="53" name="unconnected-(U9-NC-Pad1)" class="Default">
+    <net code="59" name="unconnected-(U9-NC-Pad1)" class="Default">
       <node ref="U9" pin="1" pinfunction="NC_1" pintype="no_connect"/>
     </net>
-    <net code="54" name="unconnected-(U11-NC-Pad1)" class="Default">
+    <net code="60" name="unconnected-(U11-NC-Pad1)" class="Default">
       <node ref="U11" pin="1" pinfunction="NC_1" pintype="no_connect"/>
     </net>
   </nets>

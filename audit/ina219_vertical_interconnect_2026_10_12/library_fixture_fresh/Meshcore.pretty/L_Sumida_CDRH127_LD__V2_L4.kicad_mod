@@ -1,0 +1,422 @@
+(footprint "L_Sumida_CDRH127_LD__V2_L4"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "Sumida CDRH127/LD; manufacturer two-land pattern 5.4x2.9mm, centers 9.9mm; 12.3x12.3x8.0mm max. F.Cu coil keepout; stencil windows are an engineering choice.")
+	(tags "inductor Sumida CDRH127 LD 2R4NC shielded")
+	(property "Reference" "REF**"
+		(at 0 0 270)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "8029e9f6-95dd-404a-9c31-247ef7c21b33")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Value" "L_Sumida_CDRH127_LD__V2_L4"
+		(at 0 7.8 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "a28376f8-a064-4bea-a912-7c36fa26dee6")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "2bddcdd5-f256-4868-ba7f-87fefca3b573")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" "Requested Sumida CDRH127/LD. Procurement and transient qualification remain open."
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "e77e6688-de47-4bc4-ad75-5b29371e0b88")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "MPN" "CDRH127/LDNP-2R4NC"
+		(at 0 0 270)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "cd08cdfa-1938-49f6-a467-994411d2ee6f")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "LCSC" ""
+		(at 0 0 270)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "65a80328-d62f-4ab4-8ff4-537637864883")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Vendor" ""
+		(at 0 0 270)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "f88c8594-4645-448c-81d9-b8294fe8d900")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Vendor URL" ""
+		(at 0 0 270)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "08ed420f-67b3-463f-8b50-87fb88f4fd1d")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Fit_NaIon" "yes"
+		(at 0 0 270)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "6a56e8d6-17b7-42f7-bc65-9a390259721f")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Fit_LTO_2S" "yes"
+		(at 0 0 270)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "0db37dcf-0069-4c97-9e25-8450f3ca9446")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value_NaIon" "2.4uH"
+		(at 0 0 270)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "60926aea-40f6-4409-8da0-506841cb524c")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value_LTO_2S" "2.4uH"
+		(at 0 0 270)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "1117d7ac-9726-4192-a66a-9ba37ca557e9")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Assembly" "Na-ion: FIT; LTO 2S: FIT"
+		(at 0 0 270)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "14ac160c-5b83-453f-88e3-3f26f9bf5100")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Nominal" "2.4uH"
+		(at 1.921001 0 270)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "4087a4b6-09dd-4497-8544-df6f00c293f3")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "MPN_NaIon" "CDRH127/LDNP-2R4NC"
+		(at 0 0 270)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "e446eafe-022e-4dc2-a1f1-a564456269b6")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "MPN_LTO_2S" "CDRH127/LDNP-2R4NC"
+		(at 0 0 270)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "bc3259a8-23aa-4432-aa90-306fb3bf0b13")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Fit_NaIon_NoCold" "yes"
+		(at 0 0 270)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "5ee37bad-38a8-4c6f-9b96-cf1af609d7d3")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value_NaIon_NoCold" "2.4uH"
+		(at 0 0 270)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "ea4d06e3-5a4d-4536-afa8-f59f729a1b8b")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "MPN_NaIon_NoCold" "CDRH127/LDNP-2R4NC"
+		(at 0 0 270)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "39f267ee-4b79-4752-823a-391adb859f04")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_line
+		(start -6.3 -6.3)
+		(end -6.3 6.3)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "d3b1c188-902e-405f-a9c3-393104278af3")
+	)
+	(fp_line
+		(start -6.3 -6.3)
+		(end -3.05 -6.3)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "b4ddcf44-bef8-43c8-a291-5fac9c6c25cc")
+	)
+	(fp_line
+		(start -6.3 6.3)
+		(end -3.05 6.3)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "5f4bf693-3676-4ef9-8b87-ccc12da176a4")
+	)
+	(fp_line
+		(start 3.05 -6.3)
+		(end 6.3 -6.3)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "b32a88a1-6769-4a5c-8b55-bd05349deef7")
+	)
+	(fp_line
+		(start 3.05 6.3)
+		(end 6.3 6.3)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "92f4c620-8b64-4e5d-8bdc-0f400d8033f7")
+	)
+	(fp_line
+		(start 6.3 -6.3)
+		(end 6.3 6.3)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "05e7daff-941d-47c2-bee6-1253a8041537")
+	)
+	(fp_rect
+		(start -6.45 -6.7)
+		(end 6.45 6.7)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "e3f843d8-110d-4ee1-a6c9-690710d781e5")
+	)
+	(fp_rect
+		(start -6 -6)
+		(end 6 6)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "f5db8547-bc85-4955-b04c-6b62eb48f2a5")
+	)
+	(pad "" smd rect
+		(at -1.35 -5.65)
+		(size 2.45 1.2)
+		(layers "F.Paste")
+		(uuid "71e4fb3e-adde-4c1f-aa89-a932b5fe4e9f")
+	)
+	(pad "" smd rect
+		(at -1.35 -4.25)
+		(size 2.45 1.2)
+		(layers "F.Paste")
+		(uuid "b18bb8b0-c99b-48bc-839b-c80b79b4a36e")
+	)
+	(pad "" smd rect
+		(at -1.35 4.25)
+		(size 2.45 1.2)
+		(layers "F.Paste")
+		(uuid "6570f914-138d-4079-9095-bd5ace2e6467")
+	)
+	(pad "" smd rect
+		(at -1.35 5.65)
+		(size 2.45 1.2)
+		(layers "F.Paste")
+		(uuid "4f9a1ad2-aede-4ecd-a9e5-32b6b82c157f")
+	)
+	(pad "" smd rect
+		(at 1.35 -5.65)
+		(size 2.45 1.2)
+		(layers "F.Paste")
+		(uuid "19b39b25-4c87-4a0d-8a7d-6a999470b094")
+	)
+	(pad "" smd rect
+		(at 1.35 -4.25)
+		(size 2.45 1.2)
+		(layers "F.Paste")
+		(uuid "24f17251-5c64-4c14-8d83-d5f67204c018")
+	)
+	(pad "" smd rect
+		(at 1.35 4.25)
+		(size 2.45 1.2)
+		(layers "F.Paste")
+		(uuid "ce52b075-0a16-4e73-9ce3-25333c567c68")
+	)
+	(pad "" smd rect
+		(at 1.35 5.65)
+		(size 2.45 1.2)
+		(layers "F.Paste")
+		(uuid "278bbb2c-b674-4987-aad1-df81a230aa0a")
+	)
+	(pad "1" smd rect
+		(at 0 -4.95)
+		(size 5.4 2.9)
+		(layers "F.Cu" "F.Mask")
+		(solder_mask_margin 0.05)
+		(uuid "627d7bc2-b0d0-4713-8b00-6234216aae01")
+	)
+	(pad "2" smd rect
+		(at 0 4.95)
+		(size 5.4 2.9)
+		(layers "F.Cu" "F.Mask")
+		(solder_mask_margin 0.05)
+		(uuid "ce3f3622-1a29-4ab8-86ae-b352e0c818d8")
+	)
+	(zone
+		(layer "F.Cu")
+		(uuid "b448efa4-f778-4463-b76a-96030342ed6a")
+		(hatch edge 0.5)
+		(connect_pads
+			(clearance 0)
+		)
+		(min_thickness 0.25)
+		(keepout
+			(tracks not_allowed)
+			(vias not_allowed)
+			(pads allowed)
+			(copperpour not_allowed)
+			(footprints allowed)
+		)
+		(placement
+			(enabled no)
+			(sheetname "")
+		)
+		(fill
+			(thermal_gap 0.5)
+			(thermal_bridge_width 0.5)
+			(island_removal_mode 0)
+		)
+		(polygon
+			(pts
+				(xy -6.15 -3.5) (xy 6.15 -3.5) (xy 6.15 3.5) (xy -6.15 3.5)
+			)
+		)
+	)
+	(embedded_fonts no)
+	(model "${KIPRJMOD}/3dmodels/Sumida_CDRH127_LD.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

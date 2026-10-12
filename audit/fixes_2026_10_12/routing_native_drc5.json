@@ -1,0 +1,32 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-10-12T01:08:26",
+    "ignored_checks": [],
+    "included_severities": [
+        "error",
+        "warning",
+        "exclusion"
+    ],
+    "kicad_version": "10.0.6",
+    "schematic_parity": [],
+    "source": "MeshRepeater2_Logic.kicad_pcb",
+    "unconnected_items": [],
+    "violations": [
+        {
+            "description": "Элементы запрещены (область запрета 'BLE_ANTENNA_NO_COPPER')",
+            "items": [
+                {
+                    "description": "Перех. отв. [GND] на F.Cu - B.Cu",
+                    "pos": {
+                        "x": 24.11,
+                        "y": 31.2
+                    },
+                    "uuid": "ef31dba0-68e7-4269-b7d8-0212e82ee0d0"
+                }
+            ],
+            "severity": "error",
+            "type": "items_not_allowed"
+        }
+    ]
+}

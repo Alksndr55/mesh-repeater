@@ -1,0 +1,11 @@
+1
+23456781
+2345678A
+BCDEFA
+BCDEFDate: 2026-10-11KiCad E.D.A. 10.0.6Rev: V2.0-A1Size: A3Id: 3/5Title: LMV431A / LTO 2S опцияFile: LTO_Balancer.kicad_schSheet: /3. LTO_Balancer/Электрическая принципиальная; прототипR50
+100k 0.1%NC1A2K3REF4A5U8LMV431ANC 1A2K3REF4A5U9LMV431AC5947nF 16V X7RC5847nF 16V X7RR472R 1%R48120k 0.1%R54 100k 0.1%R492.49k 0.1%R52 120k 0.1%PACK+1MID2PACK-3NC4J12LTO 2S + MID -R51 2R 1%R532.49k 0.1%BATLTO_MID
+BATLTO_MID LTO_MID Балласт 
+R47/R51 = 2R по выбору пользователя; ток LMV431 на углах допусков не ограничен до 15 мА.LMV431AIM5/NOPBSOT-23-5Верхняя ячейкаV2.0-A1 / 2026-10-11 / инженерный прототипБалансир 2S LTO / опциональная сборка POWERMPN TBD / 47nF X7R 16V / LTO only0805SOT-23-5LMV431AIM5/NOPB0805XH 1x4 / 2.50 / 90degMPN TBD / 100k 0.1% / LTO only0805MPN TBD / 47nF X7R 16V / LTO onlyMPN TBD / 2.49k 0.1% / LTO only08050805 MPN TBD / 120k 0.1% / LTO only08050805MPN TBD / 2.49k 0.1% / LTO only0805RC0805FR-072RL / LTO onlyMPN TBD / 100k 0.1% / LTO onlyБалансир: 2R, 120k+2,49k / 100k (0,1%), LMV431A, 47nF.V2.0-A1: отдельной защиты ячеек и защиты от перенапряжения нет.Нижняя 
+ячейкаRC0805FR-072RL / LTO only0805POWER: 
+балансир под средним экраном. J12: 1 PACK+ / 2 MID / 3 PACK-.MPN 
+TBD / 120k 0.1% / LTO only0805Na-ion: R3=61,9k / R4=100k / C30=12pF. LTO: 121k / 100k / 6,8pF. Допуск R: 0,1%.Na-ion: этот лист не запаивать. LTO 2S: запаять все компоненты этого листа.LTO: номинал 5,345 В; максимум 5,445 В при ТКС ≤25 ppm/°C, -40…85°C. Выбросы не учтены.L-KLS1-2.50-04-R / LTO onlyJ12LTO 2S + MID -PACK+1MID2PACK-3NC4

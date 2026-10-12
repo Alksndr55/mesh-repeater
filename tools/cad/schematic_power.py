@@ -55,13 +55,16 @@ def _converter():
 
     # Both local input capacitors are normal vertical shunts below BAT.
     s.wire(_g(16, 52), _g(50, 52), _g(50, 56), ('U2', 10))
-    s.global_stub('BAT',_g(39,26),_g(47,26),angle=180)
+    s.global_stub('BAT_SYS' if MODEL.get('battery_monitor') else 'BAT',_g(39,26),_g(47,26),angle=180)
     for ref, x in [('C12', 22), ('C13', 39)]:
         s.wire((ref, 1), _g(x, 52)); s.dot(_g(x, 52))
         _ground(s, (ref, 2))
 
     # EN divider: BAT -> R15 -> EN_UV -> R16 -> GND.
-    s.wire(('R15', 1), _g(16, 52)); s.dot(_g(16, 52))
+    if MODEL.get('battery_monitor'):
+        s.net('R15',1,7.62)
+    else:
+        s.wire(('R15', 1), _g(16, 52)); s.dot(_g(16, 52))
     s.wire(('R15', 2), _g(16, 82), ('R16', 1))
     s.wire(('U2', 1), _g(47, 66), _g(47, 82), _g(16, 82))
     s.dot(_g(16, 82)); s.label('EN_UV', _g(33, 82))
@@ -107,7 +110,11 @@ def _converter():
     if 'TP4' in PARTS:_sym(s,'TP4',292,52)
     _sym(s,'TP6',121,113)
     _sym(s,'TP1',39,48)
-    s.wire(('TP1',1),_g(39,52));s.dot(_g(39,52))
+    if MODEL.get('battery_monitor'):
+        tx,ty=s.pin('TP1',1)
+        s.global_stub('BAT',(tx,ty),(tx-7.62,ty))
+    else:
+        s.wire(('TP1',1),_g(39,52));s.dot(_g(39,52))
     if 'R55' in PARTS:
         s.wire(('R55',2),('L3',1))
         s.wire(_g(130,56),_g(130,42));s.dot(_g(130,56))
@@ -129,7 +136,7 @@ def _converter():
         if 'TP4' in PARTS:s.wire(('TP4',1),_g(292,56));s.dot(_g(292,56))
     else:
         s.global_stub('FILTER_OUT',('L4',2),_g(251,56),angle=180)
-        s.text('FILTER_OUT → межплатный кабель → J11.1 (LOGIC).',309.88,83.82,1.05)
+        s.text('FILTER_OUT → межплатные штыри → J11.1 (LOGIC).',309.88,83.82,1.05)
     _ground(s,('TP6',1))
     for stage,(rref,xbase) in enumerate([('R40',185.42),('R41',299.72)]):
         s.sym(rref,xbase,88.9,'R_V')

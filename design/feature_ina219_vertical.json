@@ -1,0 +1,121 @@
+{
+  "revision": "V2.0-A2-INA219",
+  "date": "2026-10-12",
+  "user_request": "INA219 on POWER, 0.1 ohm stock MeshCore calibration, vertical Ali interconnects",
+  "baseline_contract_immutable": true,
+  "interboard_pinmap": {
+    "1": "FILTER_OUT",
+    "2": "GND",
+    "3": "FILTER_OUT",
+    "4": "GND",
+    "5": "FILTER_OUT",
+    "6": "GND",
+    "7": "SYS_3V3",
+    "8": "GND",
+    "9": "BAT",
+    "10": "SDA",
+    "11": "MODE",
+    "12": "SCL"
+  },
+  "new_references": [
+    "U12",
+    "R71",
+    "R72",
+    "R73",
+    "C63",
+    "C64"
+  ],
+  "original_net_overrides": {
+    "POWER": {
+      "U1": {
+        "14": "BAT_SYS"
+      },
+      "R1": {
+        "2": "BAT_SYS"
+      },
+      "C4": {
+        "1": "BAT_SYS"
+      },
+      "R3": {
+        "1": "BAT_SYS"
+      },
+      "U2": {
+        "10": "BAT_SYS"
+      },
+      "C12": {
+        "1": "BAT_SYS"
+      },
+      "C13": {
+        "1": "BAT_SYS"
+      },
+      "C52": {
+        "1": "BAT_SYS"
+      },
+      "C53": {
+        "1": "BAT_SYS"
+      },
+      "C30": {
+        "1": "BAT_SYS"
+      }
+    }
+  },
+  "series_projection": {
+    "reference": "R71",
+    "pins": [
+      "1",
+      "2"
+    ],
+    "nets": [
+      "BAT_SYS",
+      "BAT"
+    ],
+    "purpose": "Only collapse the new series measurement resistor for the legacy endpoint-graph projection; the saved native nets must remain distinct."
+  },
+  "raw_battery_endpoints": [
+    [
+      "J8",
+      "1"
+    ],
+    [
+      "J12",
+      "1"
+    ],
+    [
+      "R47",
+      "1"
+    ],
+    [
+      "R15",
+      "1"
+    ],
+    [
+      "TP1",
+      "1"
+    ],
+    [
+      "J101",
+      "9"
+    ]
+  ],
+  "INA219_expected_nets": {
+    "1": "GND",
+    "2": "GND",
+    "3": "SDA",
+    "4": "SCL",
+    "5": "SYS_3V3",
+    "6": "GND",
+    "7": "INA_VIN_M",
+    "8": "INA_VIN_P"
+  },
+  "INA219_address": 64,
+  "shunt_ohm": 0.1,
+  "current_direction": "positive charge; negative discharge",
+  "limits": [
+    "LTO balancer currents bypass main pack shunt through cell/midpoint branches",
+    "INA active current approximately 0.7mA typical, 1mA maximum; stock continuous mode retained",
+    "INA current range approximately +/-3.2A, power telemetry not signed",
+    "Generic Ali pin section and maximum insertion require actual samples",
+    "Accepted inherited LTO limitations are retained; no extra OVP or balancer amplifier"
+  ],
+  "baseline_contract_sha256": "478b416c5fa28fbe4cebbc594eb1b519e90cb6c393aba6f58130b6fecffdac08"
+}

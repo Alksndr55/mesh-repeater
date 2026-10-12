@@ -1,0 +1,352 @@
+(footprint "L_Coilcraft_XGL4020_471MEC__V2_L2"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(locked yes)
+	(layer "F.Cu")
+	(descr "Coilcraft XGL4020-471MEC, shielded 0.47uH; official recommended rectangular copper lands 0.98x3.40mm, 2.37mm centre pitch. Body 4.0+/-0.3 x 4.0+/-0.3mm; height max 2.10mm. Coilcraft Document 1529-3, revised 02/19/26. Mask +0.05mm and paste 1:1 are engineering choices, not manufacturer stencil specifications. See Coilcraft_XGL4020_471MEC_evidence.json.")
+	(tags "Coilcraft XGL4020 471MEC 0.47uH shielded power inductor")
+	(property "Reference" "REF**"
+		(at -1.5 -3.5 90)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "b5436ac1-a5fd-47ea-9938-77123448f344")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Value" "L_Coilcraft_XGL4020_471MEC__V2_L2"
+		(at 0 3 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "dda20e21-967d-40d6-95b0-e57caf908570")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.12)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "07cfb337-5c08-4b9b-8d0e-b80942249109")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" "Shielded 0.47uH power inductor; body 4.0+/-0.3mm square, maximum height 2.10mm. Official Coilcraft recommended copper lands; mask, paste and F.Cu under-coil keepout are engineering choices."
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "f0cc1327-8289-4b4f-bf95-08df88ad5386")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "MPN" "XGL4020-471MEC"
+		(at 0 0 90)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "396b5a71-5bb1-4d16-a797-c716bbd391c1")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "LCSC" "C5837785"
+		(at 0 0 90)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "0cccce4a-63b8-4e03-8df4-0acb31f4006d")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Vendor" ""
+		(at 0 0 90)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "bf3f9866-b7d4-4df1-9721-05ef289b32b0")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Vendor URL" ""
+		(at 0 0 90)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "bf671196-e815-45d1-bfc8-cd3fddd1a107")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Fit_NaIon" "yes"
+		(at 0 0 90)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "9ddcadb3-4fae-4e16-a9c3-5da55ddb48eb")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Fit_LTO_2S" "yes"
+		(at 0 0 90)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "4652f1d4-9295-486d-890e-d0cd59e4b8e0")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value_NaIon" "0.47uH"
+		(at 0 0 90)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "73533e74-7b3c-49e2-adad-b09039445a60")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value_LTO_2S" "0.47uH"
+		(at 0 0 90)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "307bb0ff-03d3-4d43-a735-b9210925a582")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Assembly" "Na-ion: FIT; LTO 2S: FIT"
+		(at 0 0 90)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "d4807809-ef78-4554-b01a-df19d8b78538")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Nominal" "0.47uH"
+		(at -1.5 -5.474453 180)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "3fb4929a-ff72-4fea-838b-bc604b10709b")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "MPN_NaIon" "XGL4020-471MEC"
+		(at 0 0 90)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "1ce189fe-fc12-415f-a3c2-d411ec153448")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "MPN_LTO_2S" "XGL4020-471MEC"
+		(at 0 0 90)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "41c27e16-d4ef-423d-8d20-c3fa53d04092")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Fit_NaIon_NoCold" "yes"
+		(at 0 0 90)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "caff980e-3aca-40bb-bd45-01f3ebb26402")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value_NaIon_NoCold" "0.47uH"
+		(at 0 0 90)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "35d43e44-fcf0-4889-8da9-023f135030e1")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "MPN_NaIon_NoCold" "XGL4020-471MEC"
+		(at 0 0 90)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "bd2070fc-3fa7-456b-8296-e81e1bd985b3")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_rect
+		(start -2.4 -2.4)
+		(end 2.4 2.4)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "aca11407-6527-456f-94a3-35f5cd6050d2")
+	)
+	(fp_rect
+		(start -2.26 -2.26)
+		(end 2.26 2.26)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "23d414ce-da07-4882-af5d-d3be78410999")
+	)
+	(fp_rect
+		(start -2.15 -2.15)
+		(end 2.15 2.15)
+		(stroke
+			(width 0.05)
+			(type dash)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "8260aee8-aeec-4cea-bf4e-a0806fa8078f")
+	)
+	(fp_rect
+		(start -2 -2)
+		(end 2 2)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "627502b0-393b-4077-ad38-e715801549f5")
+	)
+	(fp_text user ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(uuid "da08ba95-5127-4aa9-b30f-e535bde9a59d")
+		(effects
+			(font
+				(size 0.7 0.7)
+				(thickness 0.1)
+			)
+		)
+	)
+	(pad "1" smd rect
+		(at -1.185 0)
+		(size 0.98 3.4)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(solder_mask_margin 0.05)
+		(solder_paste_margin 0)
+		(solder_paste_margin_ratio 0)
+		(uuid "d3a8cd7b-b44b-4ac8-b231-e23507c0e15e")
+	)
+	(pad "2" smd rect
+		(at 1.185 0)
+		(size 0.98 3.4)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(solder_mask_margin 0.05)
+		(solder_paste_margin 0)
+		(solder_paste_margin_ratio 0)
+		(uuid "2205d055-ba6c-4276-88e7-4456df11030a")
+	)
+	(zone
+		(layer "F.Cu")
+		(uuid "e2f997c1-683f-4d78-9638-033fa73933da")
+		(hatch edge 0.5)
+		(connect_pads
+			(clearance 0)
+		)
+		(min_thickness 0.25)
+		(keepout
+			(tracks not_allowed)
+			(vias not_allowed)
+			(pads allowed)
+			(copperpour not_allowed)
+			(footprints allowed)
+		)
+		(placement
+			(enabled no)
+			(sheetname "")
+		)
+		(fill
+			(thermal_gap 0.5)
+			(thermal_bridge_width 0.5)
+			(island_removal_mode 0)
+		)
+		(polygon
+			(pts
+				(xy -0.695 -2.15) (xy 0.695 -2.15) (xy 0.695 2.15) (xy -0.695 2.15)
+			)
+		)
+	)
+	(embedded_fonts no)
+	(model "${KIPRJMOD}/3dmodels/Coilcraft_XGL4020.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

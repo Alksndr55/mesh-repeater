@@ -1,0 +1,175 @@
+{
+  "status": "ONLY_EXACT_DUPLICATES_AND_NEGATIVE_KELVIN_EXIT_CHANGED",
+  "source_pcb_sha256": "08fee4d2f8f42a855a8bd4ad5e6092be5eeb613137ffdd8e58b7419a51cb223e",
+  "final_pcb_sha256": "ccb6f7ac9ea2823dfc843232e102039a7c1204f03a1d98faa0be2a6bdeb235e2",
+  "baseline_sha256": "c4efced02420f48fea993d166091e3ba3ec7be7cf9bc30feec164d067077cc3b",
+  "removed_track_count": 11,
+  "removals": [
+    {
+      "retained_uuid": "41d26901-66ef-4685-a866-d5a529adb95f",
+      "removed_uuid": "e8c374b4-3907-4c77-922c-6af8b649670f",
+      "retained_pre_ina_uuid": false,
+      "both_duplicates_pre_ina": false,
+      "identical_copper_signature": "[\"BAT\",2,800000,[[45500000,6000000],[46500000,5000000]]]"
+    },
+    {
+      "retained_uuid": "45ea1bd4-d96b-4988-92bb-6036a6dd6a45",
+      "removed_uuid": "4c815789-4d61-44b4-b053-fae7b18a8a92",
+      "retained_pre_ina_uuid": false,
+      "both_duplicates_pre_ina": false,
+      "identical_copper_signature": "[\"BAT\",2,800000,[[46500000,3400000],[46500000,5000000]]]"
+    },
+    {
+      "retained_uuid": "baecaa23-125e-4c04-88b1-14b656d53655",
+      "removed_uuid": "f248b699-6140-49c8-b44e-6578bb48fc55",
+      "retained_pre_ina_uuid": false,
+      "both_duplicates_pre_ina": false,
+      "identical_copper_signature": "[\"BAT\",2,800000,[[41900000,6000000],[45500000,6000000]]]"
+    },
+    {
+      "retained_uuid": "0c63c2bb-73bd-42b8-8cf0-78f6b8c3d091",
+      "removed_uuid": "b975a96e-0a67-4fea-a734-ba9d56840c89",
+      "retained_pre_ina_uuid": true,
+      "both_duplicates_pre_ina": true,
+      "identical_copper_signature": "[\"BAT_SYS\",2,800000,[[41500000,12100000],[41600000,12200000]]]"
+    },
+    {
+      "retained_uuid": "27aa72eb-e420-4b5a-9050-0f3820752250",
+      "removed_uuid": "be7d7727-9053-4376-b95d-233547d877ff",
+      "retained_pre_ina_uuid": true,
+      "both_duplicates_pre_ina": true,
+      "identical_copper_signature": "[\"BAT_SYS\",2,800000,[[41300000,12000000],[41400000,12100000]]]"
+    },
+    {
+      "retained_uuid": "3a52dd31-f1b1-4dad-aefa-2904567d4b68",
+      "removed_uuid": "4563f88b-c5ba-491b-91cb-c5a9afdf20df",
+      "retained_pre_ina_uuid": true,
+      "both_duplicates_pre_ina": true,
+      "identical_copper_signature": "[\"BAT_SYS\",2,800000,[[41400000,12100000],[41500000,12100000]]]"
+    },
+    {
+      "retained_uuid": "67d58a33-0aca-4505-af96-6ece82e8d38e",
+      "removed_uuid": "f58ed213-d7ee-41ac-b1ea-6d54c613137b",
+      "retained_pre_ina_uuid": true,
+      "both_duplicates_pre_ina": true,
+      "identical_copper_signature": "[\"BAT_SYS\",2,800000,[[41700000,12200000],[42100000,12600000]]]"
+    },
+    {
+      "retained_uuid": "89a3f517-849c-4019-bdf5-f6fe3041958c",
+      "removed_uuid": "afde3e3f-fc0a-4935-95f9-a2c949c55812",
+      "retained_pre_ina_uuid": true,
+      "both_duplicates_pre_ina": true,
+      "identical_copper_signature": "[\"BAT_SYS\",2,800000,[[41600000,12200000],[41700000,12200000]]]"
+    },
+    {
+      "retained_uuid": "256c8acf-75b8-4eb8-b366-2c1a7ff9e130",
+      "removed_uuid": "c2988e31-74db-4a7b-a66a-6ac2e1902b29",
+      "retained_pre_ina_uuid": false,
+      "both_duplicates_pre_ina": false,
+      "identical_copper_signature": "[\"SYS_3V3\",0,300000,[[60100000,10300000],[60100000,11300000]]]"
+    },
+    {
+      "retained_uuid": "265098b9-7bd1-449d-9b8c-9d8786016c37",
+      "removed_uuid": "e17ee580-644d-4050-8060-c84c477ab72a",
+      "retained_pre_ina_uuid": false,
+      "both_duplicates_pre_ina": false,
+      "identical_copper_signature": "[\"SYS_3V3\",0,300000,[[60100000,11300000],[61000000,12200000]]]"
+    },
+    {
+      "retained_uuid": "53152995-92e9-47d7-8bd1-4a30c39032ee",
+      "removed_uuid": "d491ee12-d36c-4e16-b77e-7e5436c43abb",
+      "retained_pre_ina_uuid": false,
+      "both_duplicates_pre_ina": false,
+      "identical_copper_signature": "[\"SYS_3V3\",2,300000,[[61000000,12200000],[61000000,12350000]]]"
+    }
+  ],
+  "kelvin_uuid": "689c50b2-29a2-4760-b5e3-4f055e8a820e",
+  "kelvin_before": [
+    "segment",
+    [
+      "start",
+      "46.5",
+      "4.099999"
+    ],
+    [
+      "end",
+      "47.2",
+      "4.8"
+    ],
+    [
+      "width",
+      "0.25"
+    ],
+    [
+      "locked",
+      "yes"
+    ],
+    [
+      "layer",
+      "\"B.Cu\""
+    ],
+    [
+      "net",
+      "\"BAT\""
+    ],
+    [
+      "uuid",
+      "\"689c50b2-29a2-4760-b5e3-4f055e8a820e\""
+    ]
+  ],
+  "kelvin_after": [
+    "segment",
+    [
+      "start",
+      "47.2",
+      "4.1"
+    ],
+    [
+      "end",
+      "47.2",
+      "4.8"
+    ],
+    [
+      "width",
+      "0.25"
+    ],
+    [
+      "locked",
+      "yes"
+    ],
+    [
+      "layer",
+      "\"B.Cu\""
+    ],
+    [
+      "net",
+      "\"BAT\""
+    ],
+    [
+      "uuid",
+      "\"689c50b2-29a2-4760-b5e3-4f055e8a820e\""
+    ]
+  ],
+  "kelvin_new_start_inside_R71_pad2": true,
+  "duplicates_preserve_identical_copper_union": true,
+  "all_other_track_attributes_and_uuid_preserved": true,
+  "all_non_segment_native_tokens_exactly_unchanged": true,
+  "remaining_exact_track_duplicates": 0,
+  "strict_drc": {
+    "violations": 0,
+    "unconnected_items": 0,
+    "schematic_parity": 0
+  },
+  "drc_exit_code": 0,
+  "saved_no_refill": true,
+  "unchanged": [
+    "vias",
+    "footprints and all fields",
+    "positions and rotations",
+    "3D",
+    "nets and schematic paths",
+    "zones and existing filled geometry",
+    "silk/Fab/caption styles",
+    "project settings"
+  ]
+}

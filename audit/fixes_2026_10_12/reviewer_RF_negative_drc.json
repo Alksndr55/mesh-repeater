@@ -1,0 +1,79 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-10-12T01:13:18",
+    "ignored_checks": [],
+    "included_severities": [
+        "error",
+        "warning",
+        "exclusion"
+    ],
+    "kicad_version": "10.0.6",
+    "schematic_parity": [],
+    "source": "reviewer_RF_negative_probe.kicad_pcb",
+    "unconnected_items": [
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Дорожка [/RADIO_RXEN] на B.Cu, длина 11,8000 mm",
+                    "pos": {
+                        "x": 37.4,
+                        "y": 8.6
+                    },
+                    "uuid": "6dd09f92-5ee5-4d5c-9a12-c21bd5d43b8a"
+                },
+                {
+                    "description": "Дорожка [/RADIO_RXEN] на F.Cu, длина 4,5255 mm",
+                    "pos": {
+                        "x": 51.6,
+                        "y": 24.7
+                    },
+                    "uuid": "85bcf690-af66-461a-a080-ff258577b2a2"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        }
+    ],
+    "violations": [
+        {
+            "description": "Элементы запрещены (правило 'RF opposite layer permits GND and RF only')",
+            "items": [
+                {
+                    "description": "Дорожка [/RADIO_RXEN] на B.Cu, длина 11,8000 mm",
+                    "pos": {
+                        "x": 37.4,
+                        "y": 8.6
+                    },
+                    "uuid": "6dd09f92-5ee5-4d5c-9a12-c21bd5d43b8a"
+                }
+            ],
+            "severity": "error",
+            "type": "items_not_allowed"
+        },
+        {
+            "description": "Нарушение зазора (класс цепей 'Default' зазор 0,2000 mm; текущий 0,0000 mm)",
+            "items": [
+                {
+                    "description": "Дорожка [/RADIO_RXEN] на B.Cu, длина 11,8000 mm",
+                    "pos": {
+                        "x": 37.4,
+                        "y": 8.6
+                    },
+                    "uuid": "6dd09f92-5ee5-4d5c-9a12-c21bd5d43b8a"
+                },
+                {
+                    "description": "Зона 'GND_REFERENCE' [GND] на B.Cu, приоритет 0",
+                    "pos": {
+                        "x": 0.4,
+                        "y": 0.4
+                    },
+                    "uuid": "ea134844-3180-40ec-879f-9967ac403446"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        }
+    ]
+}

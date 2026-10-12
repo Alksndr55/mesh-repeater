@@ -9,8 +9,8 @@
 	(paper "A4")
 	(title_block
 		(title "Mesh Repeater 2.0 / middle shield")
-		(date "2026-10-11")
-		(rev "V2.0-A1")
+		(date "2026-10-12")
+		(rev "V2.0-A2")
 		(company "Designed by @Alksndritm")
 	)
 	(layers
@@ -125,6 +125,166 @@
 			(scaleselection 1)
 			(outputdirectory "")
 		)
+	)
+	(footprint "Shield:Shield_Interconnect_2x06_NPTH_D2_CuVoid3"
+		(layer "F.Cu")
+		(uuid "0e3e5311-bd3a-4aa5-8cf9-07f9d09cb16e")
+		(at 64.15 49)
+		(descr "12 separate NPTH2.0mm, pitch2.54. Drill-to-foil clearance0.50mm; Cuvoid3.0mm overlaps adjacent copper clearances while FR4 drill web0.54mm remains. Generic pin fit subject to incoming dimensional control.")
+		(property "Reference" "HS1"
+			(at 6.35 5 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "1fa289e7-b938-44f5-83cf-1c1ac149ac9d")
+			(effects
+				(font
+					(size 0.8 0.8)
+				)
+			)
+		)
+		(property "Value" "INTERCONNECT PASS-THROUGH"
+			(at 6.35 5 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "ab4552db-9066-4feb-ae3c-94de5c7031d6")
+			(effects
+				(font
+					(size 0.8 0.8)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "dc5c0c84-b4a5-4069-895a-a0c00570d624")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "78be83af-8502-4b85-b048-06a468a05a52")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(attr board_only exclude_from_pos_files exclude_from_bom)
+		(duplicate_pad_numbers_are_jumpers no)
+		(fp_rect
+			(start -1.25 -1.25)
+			(end 13.95 3.79)
+			(stroke
+				(width 0.05)
+				(type default)
+			)
+			(fill no)
+			(layer "F.CrtYd")
+			(uuid "7a024456-6565-4b5e-bf87-0c41c851b642")
+		)
+		(pad "" np_thru_hole circle
+			(at 0 0)
+			(size 2 2)
+			(drill 2)
+			(layers "*.Cu" "*.Mask")
+			(clearance 0.5)
+			(uuid "afc41c9b-f218-4b70-bf2c-a4bfab0beb25")
+		)
+		(pad "" np_thru_hole circle
+			(at 0 2.54)
+			(size 2 2)
+			(drill 2)
+			(layers "*.Cu" "*.Mask")
+			(clearance 0.5)
+			(uuid "19cc6456-78c8-4904-b4f4-529ab6589c5f")
+		)
+		(pad "" np_thru_hole circle
+			(at 2.54 0)
+			(size 2 2)
+			(drill 2)
+			(layers "*.Cu" "*.Mask")
+			(clearance 0.5)
+			(uuid "892c7db9-7f0c-41eb-95c2-a47b1e76285c")
+		)
+		(pad "" np_thru_hole circle
+			(at 2.54 2.54)
+			(size 2 2)
+			(drill 2)
+			(layers "*.Cu" "*.Mask")
+			(clearance 0.5)
+			(uuid "777dd810-402b-4554-b365-cf2f5e7d10f4")
+		)
+		(pad "" np_thru_hole circle
+			(at 5.08 0)
+			(size 2 2)
+			(drill 2)
+			(layers "*.Cu" "*.Mask")
+			(clearance 0.5)
+			(uuid "de323fb9-2467-4164-b3ba-07b947c434b1")
+		)
+		(pad "" np_thru_hole circle
+			(at 5.08 2.54)
+			(size 2 2)
+			(drill 2)
+			(layers "*.Cu" "*.Mask")
+			(clearance 0.5)
+			(uuid "1b3d742d-8c33-4ef2-9fc5-6a38a7c3df08")
+		)
+		(pad "" np_thru_hole circle
+			(at 7.62 0)
+			(size 2 2)
+			(drill 2)
+			(layers "*.Cu" "*.Mask")
+			(clearance 0.5)
+			(uuid "d468306a-b6f4-4361-82dc-6750d6414041")
+		)
+		(pad "" np_thru_hole circle
+			(at 7.62 2.54)
+			(size 2 2)
+			(drill 2)
+			(layers "*.Cu" "*.Mask")
+			(clearance 0.5)
+			(uuid "bed91d8e-ee8c-4c6b-80ad-1766bbf9afe6")
+		)
+		(pad "" np_thru_hole circle
+			(at 10.16 0)
+			(size 2 2)
+			(drill 2)
+			(layers "*.Cu" "*.Mask")
+			(clearance 0.5)
+			(uuid "fd2cadd3-a038-432f-ba93-c02bc9218017")
+		)
+		(pad "" np_thru_hole circle
+			(at 10.16 2.54)
+			(size 2 2)
+			(drill 2)
+			(layers "*.Cu" "*.Mask")
+			(clearance 0.5)
+			(uuid "9a4717b2-a290-4857-99de-0c6d7b0431ba")
+		)
+		(pad "" np_thru_hole circle
+			(at 12.7 0)
+			(size 2 2)
+			(drill 2)
+			(layers "*.Cu" "*.Mask")
+			(clearance 0.5)
+			(uuid "a36eabef-d332-48ce-b08f-c04895cfa2af")
+		)
+		(pad "" np_thru_hole circle
+			(at 12.7 2.54)
+			(size 2 2)
+			(drill 2)
+			(layers "*.Cu" "*.Mask")
+			(clearance 0.5)
+			(uuid "d3c2947f-e49e-4422-b965-867543711ef0")
+		)
+		(embedded_fonts no)
 	)
 	(footprint "Shield:Shield_Foil_GND_Anchor"
 		(layer "F.Cu")
@@ -624,6 +784,29 @@
 		(layer "Edge.Cuts")
 		(uuid "9e735d67-41b8-4661-baed-493b47159d02")
 	)
+	(gr_text "DISCONNECT ALL POWER BEFORE DISASSEMBLY"
+		(at 42 55.2 0)
+		(layer "F.SilkS")
+		(uuid "27c1b531-7268-4bab-b34f-1c632cf04ba0")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.18)
+				(bold yes)
+			)
+		)
+	)
+	(gr_text "M3 3.2mm / contact OD6 / PCB1.52mm"
+		(at 35 49.6 0)
+		(layer "F.SilkS")
+		(uuid "979d5157-fa12-4484-bbc4-ab26e16666a3")
+		(effects
+			(font
+				(size 0.85 0.85)
+				(thickness 0.12)
+			)
+		)
+	)
 	(gr_text "J8 BAT: 1 + / 2 GND. J12 LTO: 1 BAT / 2 MID / 3 GND / 4 NC."
 		(at 45 24.9 0)
 		(layer "F.SilkS")
@@ -635,7 +818,7 @@
 			)
 		)
 	)
-	(gr_text "Cable supplies power/GND; metal stands are for shield contact."
+	(gr_text "10 SDA; 11 MODE; 12 SCL. Stands connect shield foil."
 		(at 45 34.5 0)
 		(layer "F.SilkS")
 		(uuid "fdc415da-e93f-4259-8b7e-4e503caa63d5")
@@ -657,21 +840,10 @@
 			)
 		)
 	)
-	(gr_text "No SH1 frame/lid. Continuous foil: no slots or cut-out letters."
+	(gr_text "12 x NPTH2.0mm / drill-to-foil gap0.50mm. Inspect pin fit."
 		(at 45 45.4 0)
 		(layer "F.SilkS")
 		(uuid "db378b66-4e39-4f4d-af56-39222b37d6e8")
-		(effects
-			(font
-				(size 0.9 0.9)
-				(thickness 0.12)
-			)
-		)
-	)
-	(gr_text "M3 holes 3.2mm / washer OD6 / PCB 1.52mm / foil one face"
-		(at 45 49.6 0)
-		(layer "F.SilkS")
-		(uuid "979d5157-fa12-4484-bbc4-ab26e16666a3")
 		(effects
 			(font
 				(size 0.9 0.9)
@@ -683,18 +855,6 @@
 		(at 45 38.7 0)
 		(layer "F.SilkS")
 		(uuid "c97ebcf9-868c-4159-a572-7787c532bb84")
-		(effects
-			(font
-				(size 0.9 0.9)
-				(thickness 0.18)
-				(bold yes)
-			)
-		)
-	)
-	(gr_text "Disconnect solar + battery + USB before disassembly."
-		(at 45 52.3 0)
-		(layer "F.SilkS")
-		(uuid "27c1b531-7268-4bab-b34f-1c632cf04ba0")
 		(effects
 			(font
 				(size 0.9 0.9)
@@ -736,7 +896,7 @@
 			)
 		)
 	)
-	(gr_text "J101 <-> J201: cable pins 1:1; route around screen edge."
+	(gr_text "J101 <-> J201: straight 2x6 pins THROUGH screen holes."
 		(at 45 29.1 0)
 		(layer "F.SilkS")
 		(uuid "8c6e2458-74e8-4218-8fc7-751d0ed81f93")
@@ -747,7 +907,7 @@
 			)
 		)
 	)
-	(gr_text "1/3/5/7 FILTER_OUT   all even GND   9 BAT   11 MODE"
+	(gr_text "1/3/5 FILTER_OUT; 2/4/6/8 GND; 7 SYS_3V3; 9 BAT"
 		(at 45 31.8 0)
 		(layer "F.SilkS")
 		(uuid "516273f5-7863-40d5-b893-01bcad9262ed")
@@ -770,7 +930,7 @@
 			)
 		)
 	)
-	(gr_text "Mesh Repeater 2.0 / SHIELD / V2.0-A1"
+	(gr_text "Mesh Repeater 2.0 / SHIELD / V2.0-A2"
 		(at 45 8 0)
 		(layer "F.SilkS")
 		(uuid "b8c6c26b-3d14-4fc0-a706-0e08bce0d2a2")
@@ -782,7 +942,7 @@
 			)
 		)
 	)
-	(gr_text "Full assembly instructions / cable / variants: project docs."
+	(gr_text "Pin35mm / socket8.5mm / nominal engagement4.48mm."
 		(at 45 6.1 180)
 		(layer "B.SilkS")
 		(uuid "46ba1305-746d-42b7-9972-bc2a7d992a59")
@@ -952,8 +1112,8 @@
 			(justify mirror)
 		)
 	)
-	(gr_text "Mesh Repeater 2.0 / SHIELD / V2.0-A1"
-		(at 45 52 180)
+	(gr_text "Mesh Repeater 2.0 / SHIELD / V2.0-A2"
+		(at 35 52 180)
 		(layer "B.SilkS")
 		(uuid "3ea58e1f-7916-414c-8d86-4896ea6bd5fe")
 		(effects
@@ -983,6 +1143,11 @@
 		(polygon
 			(pts
 				(xy 0.3 0.3) (xy 89.7 0.3) (xy 89.7 59.7) (xy 0.3 59.7)
+			)
+		)
+		(polygon
+			(pts
+				(xy 62.65 47.5) (xy 78.35 47.5) (xy 78.35 53.04) (xy 62.65 53.04)
 			)
 		)
 		(filled_polygon
@@ -1030,7 +1195,38 @@
 				(xy 2.657624 54.791837) (xy 2.657623 54.791838) (xy 2.441875 54.916399) (xy 2.44186 54.916409) (xy 2.244229 55.068057)
 				(xy 2.244217 55.068067) (xy 2.068067 55.244217) (xy 2.068057 55.244229) (xy 1.916409 55.44186) (xy 1.916399 55.441875)
 				(xy 1.791838 55.657623) (xy 1.696499 55.887789) (xy 1.696495 55.887799) (xy 1.63202 56.128423) (xy 1.632018 56.128431)
-				(xy 1.632018 56.128435) (xy 1.5995 56.375435) (xy 0.3005 56.375435) (xy 0.3005 3.375435) (xy 1.5995 3.375435)
+				(xy 1.632018 56.128435) (xy 1.5995 56.375435) (xy 0.3005 56.375435) (xy 0.3005 48.881908) (xy 62.6495 48.881908)
+				(xy 62.6495 48.88238) (xy 62.6495 49.118094) (xy 62.649651 49.120014) (xy 62.649599 49.120018) (xy 62.65 49.125105)
+				(xy 62.65 51.414893) (xy 62.649599 51.419982) (xy 62.649651 51.419987) (xy 62.6495 51.421906) (xy 62.6495 51.658094)
+				(xy 62.649651 51.660014) (xy 62.649599 51.660018) (xy 62.65 51.665105) (xy 62.65 53.04) (xy 64.024894 53.04)
+				(xy 64.029982 53.0404) (xy 64.029987 53.040349) (xy 64.031906 53.0405) (xy 64.031908 53.0405) (xy 64.268094 53.0405)
+				(xy 64.270013 53.040349) (xy 64.270017 53.0404) (xy 64.275106 53.04) (xy 66.564894 53.04) (xy 66.569982 53.0404)
+				(xy 66.569987 53.040349) (xy 66.571906 53.0405) (xy 66.571908 53.0405) (xy 66.808094 53.0405) (xy 66.810013 53.040349)
+				(xy 66.810017 53.0404) (xy 66.815106 53.04) (xy 69.104894 53.04) (xy 69.109982 53.0404) (xy 69.109987 53.040349)
+				(xy 69.111906 53.0405) (xy 69.111908 53.0405) (xy 69.348094 53.0405) (xy 69.350013 53.040349) (xy 69.350017 53.0404)
+				(xy 69.355106 53.04) (xy 71.644894 53.04) (xy 71.649982 53.0404) (xy 71.649987 53.040349) (xy 71.651906 53.0405)
+				(xy 71.651908 53.0405) (xy 71.888094 53.0405) (xy 71.890013 53.040349) (xy 71.890017 53.0404) (xy 71.895106 53.04)
+				(xy 74.184894 53.04) (xy 74.189982 53.0404) (xy 74.189987 53.040349) (xy 74.191906 53.0405) (xy 74.191908 53.0405)
+				(xy 74.428094 53.0405) (xy 74.430013 53.040349) (xy 74.430017 53.0404) (xy 74.435106 53.04) (xy 76.724894 53.04)
+				(xy 76.729982 53.0404) (xy 76.729987 53.040349) (xy 76.731906 53.0405) (xy 76.731908 53.0405) (xy 76.968094 53.0405)
+				(xy 76.970013 53.040349) (xy 76.970017 53.0404) (xy 76.975106 53.04) (xy 78.35 53.04) (xy 78.35 51.665105)
+				(xy 78.3504 51.660018) (xy 78.350349 51.660014) (xy 78.3505 51.658094) (xy 78.3505 51.421906) (xy 78.350349 51.419987)
+				(xy 78.3504 51.419982) (xy 78.35 51.414893) (xy 78.35 49.125105) (xy 78.3504 49.120018) (xy 78.350349 49.120014)
+				(xy 78.3505 49.118094) (xy 78.3505 48.881906) (xy 78.350349 48.879987) (xy 78.3504 48.879982) (xy 78.35 48.874893)
+				(xy 78.35 47.5) (xy 76.975106 47.5) (xy 76.970017 47.499599) (xy 76.970013 47.499651) (xy 76.968093 47.4995)
+				(xy 76.968092 47.4995) (xy 76.731908 47.4995) (xy 76.731907 47.4995) (xy 76.729987 47.499651) (xy 76.729982 47.499599)
+				(xy 76.724894 47.5) (xy 74.435106 47.5) (xy 74.430017 47.499599) (xy 74.430013 47.499651) (xy 74.428093 47.4995)
+				(xy 74.428092 47.4995) (xy 74.191908 47.4995) (xy 74.191907 47.4995) (xy 74.189987 47.499651) (xy 74.189982 47.499599)
+				(xy 74.184894 47.5) (xy 71.895106 47.5) (xy 71.890017 47.499599) (xy 71.890013 47.499651) (xy 71.888093 47.4995)
+				(xy 71.888092 47.4995) (xy 71.651908 47.4995) (xy 71.651907 47.4995) (xy 71.649987 47.499651) (xy 71.649982 47.499599)
+				(xy 71.644894 47.5) (xy 69.355106 47.5) (xy 69.350017 47.499599) (xy 69.350013 47.499651) (xy 69.348093 47.4995)
+				(xy 69.348092 47.4995) (xy 69.111908 47.4995) (xy 69.111907 47.4995) (xy 69.109987 47.499651) (xy 69.109982 47.499599)
+				(xy 69.104894 47.5) (xy 66.815106 47.5) (xy 66.810017 47.499599) (xy 66.810013 47.499651) (xy 66.808093 47.4995)
+				(xy 66.808092 47.4995) (xy 66.571908 47.4995) (xy 66.571907 47.4995) (xy 66.569987 47.499651) (xy 66.569982 47.499599)
+				(xy 66.564894 47.5) (xy 64.275106 47.5) (xy 64.270017 47.499599) (xy 64.270013 47.499651) (xy 64.268093 47.4995)
+				(xy 64.268092 47.4995) (xy 64.031908 47.4995) (xy 64.031907 47.4995) (xy 64.029987 47.499651) (xy 64.029982 47.499599)
+				(xy 64.024894 47.5) (xy 62.65 47.5) (xy 62.65 48.874893) (xy 62.649652 48.879312) (xy 62.649765 48.879683)
+				(xy 62.649622 48.881136) (xy 62.6495 48.881908) (xy 0.3005 48.881908) (xy 0.3005 3.375435) (xy 1.5995 3.375435)
 				(xy 1.5995 3.624565) (xy 1.632018 3.871565) (xy 1.632019 3.871569) (xy 1.63202 3.871576) (xy 1.696495 4.1122)
 				(xy 1.696498 4.112207) (xy 1.791836 4.342373) (xy 1.791838 4.342376) (xy 1.916399 4.558124) (xy 1.916409 4.558139)
 				(xy 2.068057 4.75577) (xy 2.068067 4.755782) (xy 2.244217 4.931932) (xy 2.244229 4.931942) (xy 2.44186 5.08359)

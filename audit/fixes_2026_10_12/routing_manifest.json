@@ -1,0 +1,186 @@
+{
+  "date": "2026-10-12",
+  "scope": "V2 LOGIC native PCB and RF custom rules; no schematic, GPIO, values, or footprint pose changes",
+  "reviewed_native_sha256": "6cbd7850caa14163ebe4d40aba4435ac8fe17f327d68419dfb94e0a1bc361bc8",
+  "CAD_findings": {
+    "R1": "fixed, independently accepted with disclosed residual reference gaps",
+    "R2": "fixed; ANT_RF lower reference restored and RF non-GND negative probe PASS"
+  },
+  "CAD_checks": {
+    "violations": 0,
+    "unconnected": 0,
+    "schematic_parity": 0,
+    "ignored_checks": 0,
+    "physical_GND_components": 1,
+    "new_GND_vias": 50
+  },
+  "preservation_checks": {
+    "footprint_positions_rotations_unchanged": true,
+    "pad_net_geometry_unchanged": true,
+    "SYS_3V3_copper_unchanged": true,
+    "ANT_RF_copper_unchanged": true,
+    "ANT_SMA_copper_unchanged": true,
+    "RADIO_3V3_copper_unchanged": true,
+    "FILTER_OUT_copper_unchanged": true,
+    "BAT_ADC_copper_unchanged": true,
+    "BAT_copper_unchanged": true,
+    "all_ground_islands_joined_physical_component": true,
+    "J10_pose_fixed": true,
+    "RF_ANT_gap_removed": true,
+    "all_new_track_angles_45_90": true,
+    "strict_DRC_zero": true,
+    "unconnected_zero": true,
+    "parity_zero": true
+  },
+  "metrics": [
+    {
+      "net": "MOSI_RF",
+      "before": {
+        "whole_net_segment_sum_mm": 185.25595709376944,
+        "vias": 11,
+        "opposite_GND_uncovered_sample_estimate_mm": 66.0343228550472
+      },
+      "after": {
+        "whole_net_segment_sum_mm": 30.916652224137046,
+        "vias": 2,
+        "opposite_GND_uncovered_sample_estimate_mm": 15.397193326056765
+      }
+    },
+    {
+      "net": "MISO_MCU",
+      "before": {
+        "whole_net_segment_sum_mm": 121.65858291274932,
+        "vias": 11,
+        "opposite_GND_uncovered_sample_estimate_mm": 55.26735188994628
+      },
+      "after": {
+        "whole_net_segment_sum_mm": 42.7634559672906,
+        "vias": 4,
+        "opposite_GND_uncovered_sample_estimate_mm": 25.09228768507769
+      }
+    },
+    {
+      "net": "RADIO_RST",
+      "before": {
+        "whole_net_segment_sum_mm": 105.14697828518777,
+        "vias": 6,
+        "opposite_GND_uncovered_sample_estimate_mm": 48.272596230776855
+      },
+      "after": {
+        "whole_net_segment_sum_mm": 33.35006276123159,
+        "vias": 1,
+        "opposite_GND_uncovered_sample_estimate_mm": 19.80568765628062
+      }
+    },
+    {
+      "net": "RADIO_RXEN",
+      "before": {
+        "whole_net_segment_sum_mm": 109.32738233589843,
+        "vias": 5,
+        "opposite_GND_uncovered_sample_estimate_mm": 33.4046574112056
+      },
+      "after": {
+        "whole_net_segment_sum_mm": 96.10236933762178,
+        "vias": 7,
+        "opposite_GND_uncovered_sample_estimate_mm": 37.05883672731441
+      }
+    },
+    {
+      "net": "SCK_RF",
+      "before": {
+        "whole_net_segment_sum_mm": 29.163049224548686,
+        "vias": 2,
+        "opposite_GND_uncovered_sample_estimate_mm": 14.487907386200986
+      },
+      "after": {
+        "whole_net_segment_sum_mm": 30.100307524751734,
+        "vias": 4,
+        "opposite_GND_uncovered_sample_estimate_mm": 18.169967437465726
+      }
+    },
+    {
+      "net": "RADIO_DIO1",
+      "before": {
+        "whole_net_segment_sum_mm": 32.76507934888323,
+        "vias": 5,
+        "opposite_GND_uncovered_sample_estimate_mm": 21.841991993340653
+      },
+      "after": {
+        "whole_net_segment_sum_mm": 35.662135623730954,
+        "vias": 7,
+        "opposite_GND_uncovered_sample_estimate_mm": 31.519462678048573
+      }
+    },
+    {
+      "net": "GPS_TX_MCU",
+      "before": {
+        "whole_net_segment_sum_mm": 82.0648791182154,
+        "vias": 9,
+        "opposite_GND_uncovered_sample_estimate_mm": 27.085766841585283
+      },
+      "after": {
+        "whole_net_segment_sum_mm": 82.32640148713038,
+        "vias": 11,
+        "opposite_GND_uncovered_sample_estimate_mm": 34.63824353019274
+      }
+    }
+  ],
+  "not_claimed": [
+    "uninterrupted opposite-layer plane under every digital signal",
+    "SI/EMI bench qualification",
+    "RF launch or SAW impedance qualification"
+  ],
+  "files": [
+    {
+      "path": "design/MeshRepeater2_Logic/MeshRepeater2_Logic.kicad_pcb",
+      "sha256": "6cbd7850caa14163ebe4d40aba4435ac8fe17f327d68419dfb94e0a1bc361bc8",
+      "bytes": 1123788
+    },
+    {
+      "path": "design/MeshRepeater2_Logic/MeshRepeater2_Logic.kicad_dru",
+      "sha256": "90c9b0a954772947bd20337728bd640235bb508fba68315a820b7ea3f791c783",
+      "bytes": 494
+    },
+    {
+      "path": "audit/fixes_2026_10_12/routing_before.kicad_pcb",
+      "sha256": "2750624dc6c2c7e8b50089e66e5d9eef9c29aa3ee28541f72f54186b58dc9ceb",
+      "bytes": 1206710
+    },
+    {
+      "path": "audit/fixes_2026_10_12/routing_after_native.json",
+      "sha256": "46c82545ebce8f40ff8b83968e6523bfb3f38652eb8c65187b068b6d1cb79c73",
+      "bytes": 3999096
+    },
+    {
+      "path": "audit/fixes_2026_10_12/routing_summary.json",
+      "sha256": "483d935204b5c9d8e99bad921321f52b11957f8494b8953dd259c7af633f70cc",
+      "bytes": 3870
+    },
+    {
+      "path": "audit/fixes_2026_10_12/routing_native_final_drc.json",
+      "sha256": "6608aaca39fc0ce6bff41e91923ba805f4c8784d8f9dbbb7cf093e7123154751",
+      "bytes": 415
+    },
+    {
+      "path": "audit/fixes_2026_10_12/routing_ground_stitches.json",
+      "sha256": "52f663cf79c7445b42abbd387524eda789743f5ec6c0b0a53267c18592d5f196",
+      "bytes": 10113
+    },
+    {
+      "path": "audit/fixes_2026_10_12/reviewer_routing.json",
+      "sha256": "8073745055bf66f4a50bfbbbec827a1e46b7e1cb311165ac55a0c5d3a3ae2613",
+      "bytes": 113471
+    },
+    {
+      "path": "audit/fixes_2026_10_12/reviewer_RF_negative.json",
+      "sha256": "0c7b23b95ab49f0d581b1ff013f0e833f35e0aff1a0bba7d814e5b3c5d4aed84",
+      "bytes": 1800
+    },
+    {
+      "path": "audit/fixes_2026_10_12/routing_fixes_RU.md",
+      "sha256": "537799415266da99f714719e8a2b8280330adebb9001a6899f038a5ad07e4af0",
+      "bytes": 10666
+    }
+  ],
+  "delivery_authority": "design/MeshRepeater2_Logic/MeshRepeater2_Logic.kicad_pcb; scratch candidates are not manufacturing deliverables"
+}

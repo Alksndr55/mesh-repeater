@@ -110,6 +110,9 @@ class Markings:
     def __init__(self,b,model):
         self.b=b;self.model=model;self.which=model['partition_board'];self.base=180 if self.which=='LOGIC' else 0
         self.parts={p['ref']:p for p in model['parts']};self.fps={f.GetReference():f for f in b.GetFootprints()}
+        if (ROOT/'design/feature_ina219_vertical.json').is_file():
+            names={'1':'LC_OUT','2':'GND','3':'LC_OUT','4':'GND','5':'LC_OUT','6':'GND','7':'SYS_3V3','8':'GND','9':'BAT','10':'SDA','11':'MODE','12':'SCL'}
+            PIN_NAMES['J101']=names.copy();PIN_NAMES['J201']=names.copy()
         if set(self.parts)!=set(self.fps):raise ValueError('Native PCB and model ref inventories differ')
         self.bounds=grow(rect(b.GetBoardEdgesBoundingBox()),-.40)
         self.obs={l:[] for l in SILKS};self.lines={l:[] for l in SILKS};self.bodies={};self.generated=[];self.associations=[];self.groups=[];self.pinouts=[];self.transferred=[];self.unplaced_front=[];self.clipped_boundaries=[];self.held=[]
@@ -306,7 +309,7 @@ class Markings:
             self.pinouts.append(row)
     def caption(self,ref):
         p=self.parts[ref];n=nominal(p)
-        if ref in ('J101','J201'):n='IDC 12P'
+        if ref in ('J101','J201'):n='2x6 L35' if ref=='J101' else '2x6 H8.5'
         if ref.startswith('H') and self.which=='LOGIC':return ref+' M3'
         if ref.startswith('H'):n='GND M3'
         # Field content is preserved; only the printed caption is shortened.

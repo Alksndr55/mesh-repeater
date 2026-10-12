@@ -5,9 +5,9 @@ import json
 import pcbnew
 
 ROOT = Path(__file__).resolve().parents[1]
-WORKSPACE = ROOT.parents[1]
+WORKSPACE = ROOT.parent.parent if ROOT.parent.name == "projects" else ROOT.parent
 CONTRACT_PATH = ROOT / "design" / "v2_electrical_contract.json"
-SOURCE = WORKSPACE / "design" / "Meshcore_NaIon" / "Meshcore_NaIon.kicad_pcb"
+SOURCE = ROOT / "baseline" / "S4_16" / "Meshcore_NaIon.kicad_pcb"
 
 
 def main():

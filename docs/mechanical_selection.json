@@ -1,8 +1,8 @@
 {
-  "date": "2026-10-11",
+  "date": "2026-10-12",
   "units": "mm",
   "project": "Mesh Repeater ver2.0",
-  "status": "dimensioned library; actual hardware fit and electrical current qualification pending",
+  "status": "Current selected vertical parts/models; final assembled STEP binding and actual incoming hardware mating qualification pending",
   "board": {
     "width": 90,
     "height": 60,
@@ -28,7 +28,21 @@
       "B.Mask": 0.0
     },
     "expected_step_core_plus_foil_mm": 1.51,
-    "cad_note": "KiCad uses a two-copper-layer container. B.Cu is empty and has zero stackup thickness. The manufactured shield has copper on one side only. The native nominal total is 1.52 mm; STEP omits the 0.01 mm front mask."
+    "cad_note": "KiCad uses a two-copper-layer container. B.Cu is empty and has zero stackup thickness. The manufactured shield has copper on one side only. The native nominal total is 1.52 mm; STEP omits the 0.01 mm front mask.",
+    "pin_apertures": {
+      "quantity": 12,
+      "NPTH_drill_mm": 2.0,
+      "minimum_drill_to_foil_clearance_mm": 0.5,
+      "FR4_minimum_nominal_drill_web_mm": 0.54,
+      "copper_only_array_clearance_native_xy_mm": [
+        62.65,
+        47.5,
+        78.35,
+        53.04
+      ],
+      "continuous_connected_foil_around_array": true,
+      "qualification": "Native design dimensions; actual pin-to-foil mechanical clearance and board alignment require incoming samples."
+    }
   },
   "mounting": {
     "centres": [
@@ -157,118 +171,6 @@
       "stock_checked": "2026-10-11"
     },
     {
-      "mpn": "Connfly DS1013-12RSIB-B-0",
-      "refs": [
-        "J101",
-        "J201"
-      ],
-      "article": 134861,
-      "pads": [
-        [
-          "1",
-          0.0,
-          0.0,
-          1.02,
-          "THT"
-        ],
-        [
-          "2",
-          2.54,
-          0.0,
-          1.02,
-          "THT"
-        ],
-        [
-          "3",
-          0.0,
-          2.54,
-          1.02,
-          "THT"
-        ],
-        [
-          "4",
-          2.54,
-          2.54,
-          1.02,
-          "THT"
-        ],
-        [
-          "5",
-          0.0,
-          5.08,
-          1.02,
-          "THT"
-        ],
-        [
-          "6",
-          2.54,
-          5.08,
-          1.02,
-          "THT"
-        ],
-        [
-          "7",
-          0.0,
-          7.62,
-          1.02,
-          "THT"
-        ],
-        [
-          "8",
-          2.54,
-          7.62,
-          1.02,
-          "THT"
-        ],
-        [
-          "9",
-          0.0,
-          10.16,
-          1.02,
-          "THT"
-        ],
-        [
-          "10",
-          2.54,
-          10.16,
-          1.02,
-          "THT"
-        ],
-        [
-          "11",
-          0.0,
-          12.7,
-          1.02,
-          "THT"
-        ],
-        [
-          "12",
-          2.54,
-          12.7,
-          1.02,
-          "THT"
-        ]
-      ],
-      "bbox": [
-        5.0,
-        -5.07,
-        13.8,
-        17.77
-      ],
-      "height": 9.1,
-      "tail": 2.9,
-      "mating": [
-        1,
-        0
-      ],
-      "source": "https://en.connfly.com/static/upload/file/pdf/DS1013.pdf#page=1",
-      "note": "R/A drawing rotated to solder tails down.13.8mm is plan reach;9.1mm is assembled height. Body depth8.8mm. Hole1.02±0.05.",
-      "footprint": "Meshcore:Connfly_DS1013_12RSIB_B_0_Horizontal",
-      "dan_url": "https://www.danomsk.ru/shop/7-kommutatsiya/121-razemy/306-soediniteli-pryamougolnye/134861-idc-12mr-ds1013-12rsib-b-0-vilka-uglovaya-shag-2-54mm-maks-dopust-tok-1a-connfly/",
-      "stock": 21,
-      "stock_checked": "2026-10-11"
-    },
-    {
       "mpn": "Connfly DS1022-1x40RUF11-B cut to2pins",
       "refs": [
         "J11"
@@ -373,7 +275,12 @@
       "footprint": "Meshcore:SW_TE_1825027_2_Side",
       "dan_url": "https://www.danomsk.ru/shop/7-kommutatsiya/120-pereklyuchateli/587-mikroknopki/199312-mikroknopka-1825027-2-fsmra1jh04-kan0631n-0431b010-42-uglovaya-bez-fiksatsii-7-11-7-01-3-68mm-off-on/",
       "stock": 127,
-      "stock_checked": "2026-10-11"
+      "stock_checked": "2026-10-11",
+      "bracket_width": 8.41,
+      "model_width_before_fix_mm": 7.66,
+      "model_width_after_fix_mm": 8.41,
+      "model_fix": "M-02: full nominal TE bracket outer envelope; pads and courtyard unchanged.",
+      "model_fix_checked": "2026-10-12"
     },
     {
       "mpn": "Connfly DS1022-1x40RUF11-B cut to4pins",
@@ -435,25 +342,6 @@
     },
     {
       "refs": [
-        "W1_END_POWER",
-        "W1_END_LOGIC"
-      ],
-      "mpn": "Connfly DS1016-12MA2BB",
-      "article": 195394,
-      "dan_url": "https://www.danomsk.ru/shop/7-kommutatsiya/121-razemy/306-soediniteli-pryamougolnye/195394-idc-12f-ds1016-12ma2bb-rozetka-shag-2-54mm-maks-dopust-tok-1a-connfly/",
-      "stock": 230,
-      "stock_checked": "2026-10-11",
-      "body_length": 19.9,
-      "body_width": 6.0,
-      "top_cover_dimension": 13.3,
-      "assembled_axial_size": null,
-      "mated_axial_extension": null,
-      "dimension_note": "13.3 mm is the separate Top cover dimension in DS1016, not a dimensioned final mated assembly. Validate the final socket size and mating depth on an actual pair.",
-      "source": "https://en.connfly.com/static/upload/file/pdf/DS1016.pdf",
-      "note": "Female key/strain relief,12positions2.54mm. Cable conductor pitch1.27mm."
-    },
-    {
-      "refs": [
         "STAND_POWER_SCREEN_X4"
       ],
       "mpn": "RUICHI PCHSN-18",
@@ -484,23 +372,272 @@
       "male_stud": 6.0,
       "source": "https://www.danomsk.ru/upload/iblock/1b1/188548_e44317379783c17effab280d052a68cb.pdf",
       "note": "6.0±0.2mm male; usable female thread depth unspecified. Measure before tightening top6mm screw."
+    },
+    {
+      "mpn": "E-SIMPO L35mm A3C6 2x6P",
+      "refs": [
+        "J101"
+      ],
+      "article": "1005011978353933",
+      "supplier": "AliExpress",
+      "supplier_url": "https://aliexpress.ru/item/1005011978353933.html?sku_id=12000057202232448",
+      "vendor_url": "https://aliexpress.ru/item/1005011978353933.html?sku_id=12000057202232448",
+      "stock": "99+",
+      "stock_checked": "2026-10-12",
+      "footprint": "Meshcore:Ali_PinHeader_2x06_P2.54_L35_A3C6",
+      "pads": [
+        [
+          "1",
+          0,
+          0.0,
+          1.02,
+          "THT"
+        ],
+        [
+          "2",
+          2.54,
+          0.0,
+          1.02,
+          "THT"
+        ],
+        [
+          "3",
+          0,
+          2.54,
+          1.02,
+          "THT"
+        ],
+        [
+          "4",
+          2.54,
+          2.54,
+          1.02,
+          "THT"
+        ],
+        [
+          "5",
+          0,
+          5.08,
+          1.02,
+          "THT"
+        ],
+        [
+          "6",
+          2.54,
+          5.08,
+          1.02,
+          "THT"
+        ],
+        [
+          "7",
+          0,
+          7.62,
+          1.02,
+          "THT"
+        ],
+        [
+          "8",
+          2.54,
+          7.62,
+          1.02,
+          "THT"
+        ],
+        [
+          "9",
+          0,
+          10.16,
+          1.02,
+          "THT"
+        ],
+        [
+          "10",
+          2.54,
+          10.16,
+          1.02,
+          "THT"
+        ],
+        [
+          "11",
+          0,
+          12.7,
+          1.02,
+          "THT"
+        ],
+        [
+          "12",
+          2.54,
+          12.7,
+          1.02,
+          "THT"
+        ]
+      ],
+      "bbox": [
+        -1.23,
+        -1.47,
+        3.77,
+        14.17
+      ],
+      "height": 32.0,
+      "tail": 3.0,
+      "mating": [
+        0,
+        0,
+        1
+      ],
+      "source": "https://aliexpress.ru/item/1005011978353933.html?sku_id=12000057202232448",
+      "nominal_geometry_source": "Selected Ali dimensions and saved footprint, not a guaranteed mating tolerance",
+      "quantity": 1,
+      "sample_qualification": "Male section, straightness and contact engagement window require incoming measurement.",
+      "overall_metal_length": 35.0,
+      "height_includes_pins": true,
+      "lower_insulator_z_mm": [
+        0,
+        2.5
+      ],
+      "upper_insulator_z_mm": [
+        23.5,
+        26.0
+      ],
+      "pin_section_nominal_for_CAD_only_mm": [
+        0.64,
+        0.64
+      ],
+      "geometry_quality": "Pin/body envelope approximation; do not treat full32mm height as a solid body",
+      "lot_quantity": 50,
+      "lot_price_rub": 1449
+    },
+    {
+      "mpn": "MTJ H8.5 2X6P 10PCS",
+      "refs": [
+        "J201"
+      ],
+      "article": "1005008954873458",
+      "supplier": "AliExpress",
+      "supplier_url": "https://aliexpress.ru/item/1005008954873458.html?sku_id=12000047353417475",
+      "vendor_url": "https://aliexpress.ru/item/1005008954873458.html?sku_id=12000047353417475",
+      "stock": "99+",
+      "stock_checked": "2026-10-12",
+      "footprint": "Meshcore:Ali_PinSocket_2x06_P2.54_H8.5_v2_mirror",
+      "pads": [
+        [
+          "1",
+          0,
+          0.0,
+          1.02,
+          "THT"
+        ],
+        [
+          "2",
+          -2.54,
+          0.0,
+          1.02,
+          "THT"
+        ],
+        [
+          "3",
+          0,
+          2.54,
+          1.02,
+          "THT"
+        ],
+        [
+          "4",
+          -2.54,
+          2.54,
+          1.02,
+          "THT"
+        ],
+        [
+          "5",
+          0,
+          5.08,
+          1.02,
+          "THT"
+        ],
+        [
+          "6",
+          -2.54,
+          5.08,
+          1.02,
+          "THT"
+        ],
+        [
+          "7",
+          0,
+          7.62,
+          1.02,
+          "THT"
+        ],
+        [
+          "8",
+          -2.54,
+          7.62,
+          1.02,
+          "THT"
+        ],
+        [
+          "9",
+          0,
+          10.16,
+          1.02,
+          "THT"
+        ],
+        [
+          "10",
+          -2.54,
+          10.16,
+          1.02,
+          "THT"
+        ],
+        [
+          "11",
+          0,
+          12.7,
+          1.02,
+          "THT"
+        ],
+        [
+          "12",
+          -2.54,
+          12.7,
+          1.02,
+          "THT"
+        ]
+      ],
+      "bbox": [
+        -3.77,
+        -1.47,
+        1.23,
+        14.17
+      ],
+      "height": 8.5,
+      "tail": 3.15,
+      "mating": [
+        0,
+        0,
+        1
+      ],
+      "source": "https://aliexpress.ru/item/1005008954873458.html?sku_id=12000047353417475",
+      "nominal_geometry_source": "Selected Ali dimensions and saved footprint, not a guaranteed mating tolerance",
+      "quantity": 1,
+      "sample_qualification": "Male section, straightness and contact engagement window require incoming measurement.",
+      "mirrored_pad_rows": true,
+      "upper_board_assembly_transform": "Rotate whole LOGIC180deg aroundX; pad mirror ensures direct physical1:1",
+      "body_dimensions_mm": [
+        5.0,
+        15.64,
+        8.5
+      ],
+      "tail_section_mm": [
+        0.6,
+        0.4
+      ],
+      "tail_section_not_male_acceptance": true,
+      "pack_quantity": 10,
+      "pack_price_rub": 106
     }
   ],
   "accessories": [
-    {
-      "refs": [
-        "W1_CABLE"
-      ],
-      "mpn": "Connfly DS1057-16A282R-30.5",
-      "article": 200351,
-      "quantity": 0.12,
-      "unit": "m",
-      "dan_url": "https://www.danomsk.ru/shop/425-kabeli-provoda-shnury/427-kabeli-provoda/789-shleyfy/200351-shleyf-16-zhil-1-27mm-ds1057-16a282r-30-5-connfly/",
-      "stock": 72,
-      "stock_checked": "2026-10-11",
-      "source": "https://en.connfly.com/static/upload/file/pdf/DS1057.pdf",
-      "note": "Buy required sale length; separate12conductors retaining red pin1 stripe. AWG28,7x0.127mm, conductor resistance<=0.237ohm/m20C, PVC thickness0.9±0.15mm, ratedambient-20..70C. A120mmlengthisslacktarget, confirmonassembly."
-    },
     {
       "refs": [
         "J12_HARNESS"
@@ -613,6 +750,62 @@
       "stock_checked": "2026-10-11",
       "source": "https://purelogic.ru/docs/mekhanika/vinty_din_7985_chernye_draw.pdf",
       "note": "Nominal6mm underhead. Headmodel uses conservative6mmOD/2.52mmhigh; exactorderedheadmayvary. Prove usablefemale depth beforetightening. Do not substitute25mm screw fromDan."
+    },
+    {
+      "refs": [
+        "J3_J5_HOUSINGS"
+      ],
+      "mpn": "Connfly I-DS1071-SCB01x4",
+      "article": 208362,
+      "quantity": 2,
+      "unit": "pc",
+      "dan_url": "https://www.danomsk.ru/shop/7-kommutatsiya/121-razemy/306-soediniteli-pryamougolnye/208362-bls-1x04-i-ds1071-scb01x4-rozetka-obzh-bez-kontaktov-kontakty-178228-201995-shag-2-54mm-maks-dopust-/",
+      "stock": 170,
+      "stock_checked": "2026-10-12",
+      "source": "https://en.connfly.com/static/upload/file/pdf/DS1071.pdf",
+      "pitch_mm": 2.54,
+      "housing_nominal_mm": [
+        10.16,
+        2.54,
+        14.0
+      ],
+      "housing_max_mm": [
+        10.41,
+        2.79,
+        14.25
+      ],
+      "mate_headers": [
+        "J3",
+        "J5"
+      ],
+      "mate_mpn": "Connfly DS1022-1x40RUF11-B cut to4pins",
+      "note": "Два кабельных корпуса 1x4 без контактов. По одному для J3/I2C и J5/UART; требуется всего 8 T-DS1071-SC600. Разъёмы без ключа: первый контакт пометить вручную и проверить всю распиновку до включения. Габариты корпуса по Connfly: 10,16 x 2,54 x 14,00 мм; общий допуск ±0,25 мм."
+    },
+    {
+      "refs": [
+        "J3_J5_CONTACTS"
+      ],
+      "mpn": "Connfly T-DS1071-SC600",
+      "article": 201995,
+      "quantity": 8,
+      "unit": "pc",
+      "dan_url": "https://www.danomsk.ru/shop/7-kommutatsiya/121-razemy/306-soediniteli-pryamougolnye/201995-kontakty-dlya-rozetok-bls-bld-t-ds1071-sc600-2-54mm-connfly/",
+      "stock": 6746,
+      "stock_checked": "2026-10-12",
+      "source": "https://en.connfly.com/static/upload/file/pdf/DS1071.pdf",
+      "wire_awg": [
+        28,
+        22
+      ],
+      "wire_area_mm2": [
+        0.09,
+        0.3
+      ],
+      "wire_insulation_od_mm": [
+        1.2,
+        1.6
+      ],
+      "note": "Восемь гнездовых обжимных контактов: по четыре для J3 и J5. Медь AWG28..22, 0,09..0,30 мм²; диаметр изоляции 1,2..1,6 мм. Обжимать подходящей матрицей, затем проверить фиксацию и электрическую распиновку. Для пяти сборок: 10 корпусов и 40 контактов без запаса."
     }
   ],
   "interboard": {
@@ -627,24 +820,16 @@
       "4": "GND",
       "5": "FILTER_OUT",
       "6": "GND",
-      "7": "FILTER_OUT",
+      "7": "SYS_3V3",
       "8": "GND",
       "9": "BAT",
-      "10": "GND",
+      "10": "SDA",
       "11": "MODE",
-      "12": "GND"
+      "12": "SCL"
     },
-    "connection": "1:1; test every pin before power.",
-    "forbidden_crossnet": "SYS_3V3",
-    "cable": "Connfly DS1057-16A282R-30.5: separate 12 conductors, retain the red stripe; provisional length 120 mm including slack.",
-    "assembly_current_limit": "Dan specifies 1 A/contact. Board continuous current 0.5 A is an unmeasured design assumption. Qualify the cable, peak current and voltage drop; parallel contacts do not prove a multiplied assembly rating.",
-    "cable_temperature_limit_C": [
-      -20,
-      70
-    ],
-    "cable_resistance_max_ohm_per_m20C": 0.237,
-    "ideal_wire_only_drop_at0_5A_120mm_V": 0.005925,
-    "route": "Around the north screen edge; planned external cable loop physical Y <= -23 mm, design bend radius >= 5 mm. These provisional dimensions require assembly validation.",
+    "connection": "Direct vertical1:1 through isolated screen holes; no ribbon cable or half-twist",
+    "assembly_current_limit": "0.5A source design bound, not bench qualification. Each FILTER_OUT contact must withstand it; parallel pins do not multiply the rated assembly current. INA SYS return1mA maximum. Generic male current/contact resistance requires actual qualification.",
+    "route": "Pins pass through twelve separate NPTH2.0mm apertures. Copper cleared at least0.50mm from drill and across array.",
     "header_power": {
       "first_pin": [
         64.15,
@@ -654,19 +839,21 @@
     },
     "header_logic": {
       "first_pin": [
-        76.85,
+        64.15,
         49.0
       ],
-      "rotation_kicad": 270
+      "rotation_kicad": 90,
+      "mirrored_local_rows": true
     },
-    "header_physical_body_xy": [
-      59.08,
-      -2.8,
-      81.92,
-      6.0
-    ],
-    "header_mount_clearance_note": "The headers were shifted left to preserve clearance to the north-east washers and arbitrarily rotated M3 hex standoffs. Physical center X is 70.5 mm.",
-    "orientation_warning": "After LOGIC rotates about X, both keyed headers face north but pin 1 is at opposite physical X. A correctly oriented half-twist of the ribbon or a custom 1:1 wire harness is necessary. The key alone does not prove 1:1 wiring."
+    "working_face_gap_mm": 36.02,
+    "male_total_metal_length_mm": 35.0,
+    "male_tip_above_POWER_mm": 32.0,
+    "female_body_height_mm": 8.5,
+    "nominal_engagement_mm": 4.48,
+    "upper_plastic_to_socket_mm": 1.52,
+    "orientation_warning": "Generic unkeyed pair: use board pin1 marks. LOGIC is flippedX180 and uses a mirrored female footprint; do not replace with an ordinary unmirrored footprint.",
+    "SYS_3V3_return": "Pin7 is downstream J11 SYS_3V3 returned from LOGIC only to U12.5 and C63.1; it does not feed the converter or bypass J11.",
+    "additional_signals": "Pin10 SDA and12 SCL use existing M1.15/M1.16; 7bit INA address0x40."
   },
   "assembly": {
     "lower_components": "F up",
@@ -719,25 +906,303 @@
     "Measure the NiceNano clone and actual Type-C plug.",
     "Incoming inspection: usable female thread depth and approximate RUICHI stud dimensions.",
     "Check all connector footprints against the actual ordered MPNs before fabrication.",
-    "Validate the cable, thread stack and connector access on an assembly.",
-    "Selected IDC cable is specified for -20 to +70 C. Lower ambient temperatures require another qualified cable.",
-    "Original JST XHP-2 direct stock is not verified; supplier alternatives have qualified availability notes."
+    "Original JST XHP-2 direct stock is not verified; supplier alternatives have qualified availability notes.",
+    "Qualify generic Ali male section/straightness, female mating depth and actual pin-to-screen clearance.",
+    "Refresh final assembly geometry from current native boards; old IDC clearances are historical."
   ],
   "assembly_cad_dimensions": {
-    "uncabled_bbox_mm": [
-      -4.75,
-      -67.21000000000001,
-      -3.48,
-      93.25,
-      2.8000000000000025,
-      42.080000000000005
-    ],
-    "uncabled_dimensions_mm": [
-      98.0,
-      70.01,
-      45.56
-    ],
+    "status": "PREVIOUS_IDC_EXPORT_HISTORICAL_REFRESH_REQUIRED",
     "source": "docs/mechanics/assembly_geometry_report.json",
-    "note": "The complete CAD envelope includes projecting connector bodies and the lower M3 stud. The 44.98 mm nut-to-head chain is not the complete height. Cable outside the screen and actual connector mating remain provisional; with the native southern connector at physical Y=67.21 mm, a planned northern cable loop Y <= -23 mm makes the complete Y envelope at least about 90.21 mm before actual mating and slack allowances."
-  }
+    "note": "Previous IDC exports/clearances and cable outer envelope do not qualify the current Ali vertical assembly. Refresh after final native boards and actual Ali3D exports.",
+    "previous_values": {
+      "uncabled_bbox_mm": [
+        -4.75,
+        -67.21000000000001,
+        -3.48,
+        93.25,
+        2.8000000000000025,
+        42.080000000000005
+      ],
+      "uncabled_dimensions_mm": [
+        98.0,
+        70.01,
+        45.56
+      ],
+      "source": "docs/mechanics/assembly_geometry_report.json",
+      "note": "The complete CAD envelope includes projecting connector bodies and the lower M3 stud. The 44.98 mm nut-to-head chain is not the complete height. Cable outside the screen and actual connector mating remain provisional; with the native southern connector at physical Y=67.21 mm, a planned northern cable loop Y <= -23 mm makes the complete Y envelope at least about 90.21 mm before actual mating and slack allowances."
+    }
+  },
+  "mechanical_fixes": {
+    "date": "2026-10-12",
+    "findings": [
+      "M-01",
+      "M-02",
+      "DOC-01"
+    ],
+    "report": "audit/fixes_2026_10_12/mechanics.json",
+    "mate_envelope": "docs/mechanics/Connfly_DS1071_SCB01x4_Mated_Envelope.step",
+    "mate_qualification": "Manufacturer family compatibility and dimensioned conservative envelope. The fully assembled mating depth and cable retention require hardware qualification.",
+    "mate_model_local_bbox_step_mm": [
+      1.5,
+      -9.015,
+      4.355,
+      15.75,
+      1.395,
+      7.145
+    ],
+    "mate_placements_native": {
+      "J3": {
+        "origin_mm": [
+          86,
+          12
+        ],
+        "rotation_kicad_degrees": 0,
+        "pins": {
+          "1": "SYS_3V3",
+          "2": "GND",
+          "3": "SCL",
+          "4": "SDA"
+        }
+      },
+      "J5": {
+        "origin_mm": [
+          2.5,
+          18.12
+        ],
+        "rotation_kicad_degrees": 180,
+        "pins": {
+          "1": "GND",
+          "2": "SYS_3V3",
+          "3": "UART_TX",
+          "4": "UART_RX"
+        }
+      }
+    },
+    "mate_removal_space_target_mm": 7,
+    "mate_insertion_depth_note": "Envelope assumes housing front x=1.50 mm, 0.25 mm after nominal male insulator edge. Actual seating stop and mating depth are not specified in the drawing; do not infer an exact tolerance fit from this model."
+  },
+  "previous_IDC_revision": {
+    "status": "HISTORICAL_NOT_CURRENT_ASSEMBLY_OR_BUY_LIST",
+    "parts": [
+      {
+        "mpn": "Connfly DS1013-12RSIB-B-0",
+        "refs": [
+          "J101",
+          "J201"
+        ],
+        "article": 134861,
+        "pads": [
+          [
+            "1",
+            0.0,
+            0.0,
+            1.02,
+            "THT"
+          ],
+          [
+            "2",
+            2.54,
+            0.0,
+            1.02,
+            "THT"
+          ],
+          [
+            "3",
+            0.0,
+            2.54,
+            1.02,
+            "THT"
+          ],
+          [
+            "4",
+            2.54,
+            2.54,
+            1.02,
+            "THT"
+          ],
+          [
+            "5",
+            0.0,
+            5.08,
+            1.02,
+            "THT"
+          ],
+          [
+            "6",
+            2.54,
+            5.08,
+            1.02,
+            "THT"
+          ],
+          [
+            "7",
+            0.0,
+            7.62,
+            1.02,
+            "THT"
+          ],
+          [
+            "8",
+            2.54,
+            7.62,
+            1.02,
+            "THT"
+          ],
+          [
+            "9",
+            0.0,
+            10.16,
+            1.02,
+            "THT"
+          ],
+          [
+            "10",
+            2.54,
+            10.16,
+            1.02,
+            "THT"
+          ],
+          [
+            "11",
+            0.0,
+            12.7,
+            1.02,
+            "THT"
+          ],
+          [
+            "12",
+            2.54,
+            12.7,
+            1.02,
+            "THT"
+          ]
+        ],
+        "bbox": [
+          5.0,
+          -5.07,
+          13.8,
+          17.77
+        ],
+        "height": 9.1,
+        "tail": 2.9,
+        "mating": [
+          1,
+          0
+        ],
+        "source": "https://en.connfly.com/static/upload/file/pdf/DS1013.pdf#page=1",
+        "note": "R/A drawing rotated to solder tails down.13.8mm is plan reach;9.1mm is assembled height. Body depth8.8mm. Hole1.02±0.05.",
+        "footprint": "Meshcore:Connfly_DS1013_12RSIB_B_0_Horizontal",
+        "dan_url": "https://www.danomsk.ru/shop/7-kommutatsiya/121-razemy/306-soediniteli-pryamougolnye/134861-idc-12mr-ds1013-12rsib-b-0-vilka-uglovaya-shag-2-54mm-maks-dopust-tok-1a-connfly/",
+        "stock": 21,
+        "stock_checked": "2026-10-11"
+      },
+      {
+        "refs": [
+          "W1_END_POWER",
+          "W1_END_LOGIC"
+        ],
+        "mpn": "Connfly DS1016-12MA2BB",
+        "article": 195394,
+        "dan_url": "https://www.danomsk.ru/shop/7-kommutatsiya/121-razemy/306-soediniteli-pryamougolnye/195394-idc-12f-ds1016-12ma2bb-rozetka-shag-2-54mm-maks-dopust-tok-1a-connfly/",
+        "stock": 230,
+        "stock_checked": "2026-10-11",
+        "body_length": 19.9,
+        "body_width": 6.0,
+        "top_cover_dimension": 13.3,
+        "assembled_axial_size": null,
+        "mated_axial_extension": null,
+        "dimension_note": "13.3 mm is the separate Top cover dimension in DS1016, not a dimensioned final mated assembly. Validate the final socket size and mating depth on an actual pair.",
+        "source": "https://en.connfly.com/static/upload/file/pdf/DS1016.pdf",
+        "note": "Female key/strain relief,12positions2.54mm. Cable conductor pitch1.27mm."
+      }
+    ],
+    "accessories": [
+      {
+        "refs": [
+          "W1_CABLE"
+        ],
+        "mpn": "Connfly DS1057-16A282R-30.5",
+        "article": 200351,
+        "quantity": 0.12,
+        "unit": "m",
+        "dan_url": "https://www.danomsk.ru/shop/425-kabeli-provoda-shnury/427-kabeli-provoda/789-shleyfy/200351-shleyf-16-zhil-1-27mm-ds1057-16a282r-30-5-connfly/",
+        "stock": 72,
+        "stock_checked": "2026-10-11",
+        "source": "https://en.connfly.com/static/upload/file/pdf/DS1057.pdf",
+        "note": "Buy required sale length; separate12conductors retaining red pin1 stripe. AWG28,7x0.127mm, conductor resistance<=0.237ohm/m20C, PVC thickness0.9±0.15mm, ratedambient-20..70C. A120mmlengthisslacktarget, confirmonassembly."
+      }
+    ],
+    "interboard": {
+      "headers": [
+        "J101",
+        "J201"
+      ],
+      "pin_map": {
+        "1": "FILTER_OUT",
+        "2": "GND",
+        "3": "FILTER_OUT",
+        "4": "GND",
+        "5": "FILTER_OUT",
+        "6": "GND",
+        "7": "FILTER_OUT",
+        "8": "GND",
+        "9": "BAT",
+        "10": "GND",
+        "11": "MODE",
+        "12": "GND"
+      },
+      "connection": "1:1; test every pin before power.",
+      "forbidden_crossnet": "SYS_3V3",
+      "cable": "Connfly DS1057-16A282R-30.5: separate 12 conductors, retain the red stripe; provisional length 120 mm including slack.",
+      "assembly_current_limit": "Dan specifies 1 A/contact. Board continuous current 0.5 A is an unmeasured design assumption. Qualify the cable, peak current and voltage drop; parallel contacts do not prove a multiplied assembly rating.",
+      "cable_temperature_limit_C": [
+        -20,
+        70
+      ],
+      "cable_resistance_max_ohm_per_m20C": 0.237,
+      "ideal_wire_only_drop_at0_5A_120mm_V": 0.005925,
+      "route": "Around the north screen edge; planned external cable loop physical Y <= -23 mm, design bend radius >= 5 mm. These provisional dimensions require assembly validation.",
+      "header_power": {
+        "first_pin": [
+          64.15,
+          11.0
+        ],
+        "rotation_kicad": 90
+      },
+      "header_logic": {
+        "first_pin": [
+          76.85,
+          49.0
+        ],
+        "rotation_kicad": 270
+      },
+      "header_physical_body_xy": [
+        59.08,
+        -2.8,
+        81.92,
+        6.0
+      ],
+      "header_mount_clearance_note": "The headers were shifted left to preserve clearance to the north-east washers and arbitrarily rotated M3 hex standoffs. Physical center X is 70.5 mm.",
+      "orientation_warning": "After LOGIC rotates about X, both keyed headers face north but pin 1 is at opposite physical X. A correctly oriented half-twist of the ribbon or a custom 1:1 wire harness is necessary. The key alone does not prove 1:1 wiring."
+    },
+    "assembly_cad_dimensions": {
+      "uncabled_bbox_mm": [
+        -4.75,
+        -67.21000000000001,
+        -3.48,
+        93.25,
+        2.8000000000000025,
+        42.080000000000005
+      ],
+      "uncabled_dimensions_mm": [
+        98.0,
+        70.01,
+        45.56
+      ],
+      "source": "docs/mechanics/assembly_geometry_report.json",
+      "note": "The complete CAD envelope includes projecting connector bodies and the lower M3 stud. The 44.98 mm nut-to-head chain is not the complete height. Cable outside the screen and actual connector mating remain provisional; with the native southern connector at physical Y=67.21 mm, a planned northern cable loop Y <= -23 mm makes the complete Y envelope at least about 90.21 mm before actual mating and slack allowances."
+    },
+    "reason": "A2 replaces IDC/ribbon cable with Ali direct vertical pins and adds INA219."
+  },
+  "revision": "V2.0-A2-INA219"
 }

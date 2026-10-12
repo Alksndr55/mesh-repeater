@@ -1,0 +1,140 @@
+{
+  "status": "PASS_WITH_BOUNDED_STEP_COPPER_FIDELITY_LIMITATION",
+  "native_pcb_sha256": "6cbd7850caa14163ebe4d40aba4435ac8fe17f327d68419dfb94e0a1bc361bc8",
+  "step_sha256": "ef4dcec5bde1ae790ecb1ea946c77f794a2e094711ad20e696f5d3c87b4663c3",
+  "controls": {
+    "current": {
+      "path": "output\\LOGIC\\MeshRepeater2_Logic_step_export.log",
+      "sha256": "d4dcab96097681c6f926341720929eca04d819131c94a5d1d6785ca9b637b884",
+      "wire_warning_count": 4,
+      "boxes_z_xy_mm": [
+        [
+          1.43,
+          36.241763,
+          11.878018,
+          36.390318,
+          11.960842
+        ],
+        [
+          1.43,
+          36.241763,
+          11.878018,
+          36.390318,
+          11.960842
+        ],
+        [
+          1.43,
+          32.721615,
+          11.520504,
+          32.922606,
+          11.635013
+        ],
+        [
+          1.43,
+          32.721615,
+          11.520504,
+          32.922606,
+          11.635013
+        ]
+      ],
+      "missing_model_count": 0,
+      "step_created": true
+    },
+    "before": {
+      "path": "audit\\fixes_2026_10_12\\step_diagnosis_before.log",
+      "sha256": "52ff940ca21fa4f2466e568e669bef47940bf986d89cc3c99f844a414a7b44f5",
+      "wire_warning_count": 4,
+      "boxes_z_xy_mm": [
+        [
+          1.43,
+          36.235011,
+          11.8755,
+          36.390318,
+          11.960842
+        ],
+        [
+          1.43,
+          36.235011,
+          11.8755,
+          36.390318,
+          11.960842
+        ],
+        [
+          1.43,
+          32.721615,
+          11.520504,
+          32.922606,
+          11.635013
+        ],
+        [
+          1.43,
+          32.721615,
+          11.520504,
+          32.922606,
+          11.635013
+        ]
+      ],
+      "missing_model_count": 13,
+      "step_created": true
+    },
+    "without_zones": {
+      "path": "audit\\fixes_2026_10_12\\step_diagnosis_nozones.log",
+      "sha256": "a2468b7ab610000f67103be54855e93b0c98d2623673f70dafccc105fddcf562",
+      "wire_warning_count": 0,
+      "boxes_z_xy_mm": [],
+      "missing_model_count": 0,
+      "step_created": true
+    },
+    "zones_only": {
+      "path": "audit\\fixes_2026_10_12\\step_diagnosis_zones_only.log",
+      "sha256": "421e890f9eb6c73326426e34312b6e6dc936d8846a0cbea1e32e9fc96257ef55",
+      "wire_warning_count": 4,
+      "boxes_z_xy_mm": [
+        [
+          1.43,
+          36.241763,
+          11.878018,
+          36.393338,
+          11.963103
+        ],
+        [
+          1.43,
+          36.241763,
+          11.878018,
+          36.393338,
+          11.963103
+        ],
+        [
+          1.43,
+          32.721615,
+          11.520504,
+          32.922606,
+          11.635013
+        ],
+        [
+          1.43,
+          32.721615,
+          11.520504,
+          32.922606,
+          11.635013
+        ]
+      ],
+      "missing_model_count": 0,
+      "step_created": true
+    }
+  },
+  "native_local_geometry_report": {
+    "path": "audit\\fixes_2026_10_12\\step_diagnosis_native.json",
+    "sha256": "84967735edae0dd76cd8452d4660ceb97ffb84286ef6d2754471eae692bc71a2"
+  },
+  "STEP_BRep_report": {
+    "path": "audit\\fixes_2026_10_12\\step_diagnosis_brep.json",
+    "sha256": "cb07ed28519d1801edb7498ba92598f92b2764da06971c3d7a2e5c623ea23a43"
+  },
+  "diagnosis": "Four warnings represent two unique small copper-contour regions. Warnings predate current routing corrections and depend on exporting zones. Independent local Boolean-clipped native F.Cu GND regions are closed and non-self-intersecting. The delivered STEP compound and all 964 solids are BRep-valid. This does not prove faithful export of those two source copper contours.",
+  "likely_cause": "The warning boxes coincide with adjacent GND_TOP / RF_CPW_GND_1 boundaries whose points differ by approximately one 1nm native grid unit. An OCC contour tolerance/rounding issue is consistent with these observations; the exact internal skipped contour was not recovered.",
+  "limitation": "Full STEP is a mechanical/visual derivative, not an exact manufacturing-copper source. Preserve exporter warnings; use saved native board/verified native plots for copper. Re-export without --include-zones is warning-free if a clean mechanical-only STEP is required, explicitly recording omitted zones. Do not alter valid native routing solely to hide this export limitation.",
+  "primary_source": "https://gitlab.com/kicad/code/kicad/-/raw/10.0.6/pcbnew/exporters/step/step_pcb_model.cpp",
+  "source_interpretation": "MakeShapes checks OCC wire validity, nullifies an invalid wire and may skip an outline or a hole. Success exit does not guarantee that every source contour was exported.",
+  "scope": "No native boards, models, canonical exports or root scripts changed by this diagnosis. Before-control model lookup fails because its scratch KIPRJMOD differs; that control is used only for copper-warning comparison."
+}

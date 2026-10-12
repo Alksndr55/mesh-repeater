@@ -1,0 +1,591 @@
+<html class="hb-loaded">
+
+<head>
+	<!--
+ * @Description: 头部标签，用于收录
+ * @Author: Seven
+ * @LastEditors: Seven
+ * @Date: 2019-08-15 12:38:15
+ * @LastEditTime: 2019-08-15 12:38:45
+-->
+<meta name="renderer" content="webkit">
+<meta charset="utf-8" />
+<title>Connfly Electronic Co., Ltd.</title>
+<meta name="Keywords" content="">
+<meta name="Description" content="">
+
+	<!--
+ * @Description: 样式包含文件
+ * @Author: Seven
+ * @LastEditors: Seven
+ * @Date: 2019-08-15 12:39:35
+ * @LastEditTime: 2019-09-03 13:53:20
+-->
+<link rel="stylesheet" type="text/css" href="/template/en/css/public.css">
+<link rel="stylesheet" type="text/css" href="/template/en/css/common.css">
+</head>
+
+<body>
+	<!--
+ * @Description: 头部导航
+ * @Author: Seven
+ * @LastEditors: Seven
+ * @Date: 2019-08-15 12:40:53
+ * @LastEditTime: 2019-09-03 13:49:48
+-->
+<div class="container" id="Header">
+    <div id="topLogo"><img src="/template/en/image/logo.jpg" alt=""></div>
+    <div id="mobMenuBtn">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <div id="topPlugin">
+      <div id="topLogin">
+				
+        <a href="/member/register/">Register</a> |
+        <a href="/member/login/">login</a></div>
+				
+      <div id="topSearch">
+        <div class="search">
+          <form action="/search/" method="get" id="search-form">
+              <input id="search-keyword" type="text" name="keyword" class="form-control" placeholder="Product model..." maxlength="60">
+              <input type="hidden" name="scode" value="2"><!-- value 为类的id -->
+              <button type="submit" role="button" class="btn" aria-label="search button" id="search-btn-page">
+                <span id="searchBtn">
+                  <i class="fas fa-search"></i>
+                </span>
+              </bottom>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="clearfix"></div>
+    <div id="topMenu">
+      <ul>
+        <li><a href="/">Home</a></li>
+				
+        <li><a href="/about">About CONNFLY</a></li>
+				
+        <li><a href="/product/">Products</a></li>
+				
+        <li><a href="/project/">Solutions</a></li>
+				
+        <li><a href="/source/">Download</a></li>
+				
+        <li><a href="/news/">News</a></li>
+				
+        <li><a href="/service/">Service</a></li>
+				
+        <li><a href="/job/">H.R</a></li>
+				
+        <li><a href="/Market/">Sales</a></li>
+				
+        <li><a href="/contact/">Contact Us</a></li>
+				
+        <li id="topLanguage" style="cursor:pointer">
+          <div>United Kingdom<i class="fas fa-angle-down" id="langAngle"></i></div>
+        </li>
+      </ul>
+    </div>
+</div>
+  <style>
+      #langSelect{ display: none; position: absolute; top: 130px; left: 0; width:100%; padding:50px 0; background: white; border-top: 1px solid lightgray;
+          border-bottom: 1px solid lightgray; box-shadow: 0 10px 10px lightgray; z-index: 100; } 
+      #langSelect .posItems{ width: 300px; float: left; } 
+      #langSelect .posItems .country{ width: 100%; display: flex; align-items: center; padding: 5px 20px; } 
+      #langSelect .posItems .country img{ width: 30px; margin-right: 10px }
+      .topMenu ul li a{ color: #000;}
+  </style>
+  <div id="langSelect">
+    <div class="container">
+      <div class="posItems">
+        <h1>Asia</h1>
+        <a class="country" href="//connfly.com"><img src="/template/en/image/lan/CN.jpg" alt="">中华人民共和国</a>
+        <a class="country" href="http://en.connfly.com/Do/area?lg=tr"><img src="/template/en/image/lan/TR.jpg" alt="">Türkiye Cumhuriyeti</a>
+        <a class="country" href="http://en.connfly.com/Do/area?lg=kr"><img src="/template/en/image/lan/KR.jpg" alt="">대한민국</a>
+        <a class="country" href="http://en.connfly.com/Do/area?lg=sa"><img src="/template/en/image/lan/SA.jpg" alt="">امارات عربية متحدة&lrm;</a>
+        <a class="country" href="http://en.connfly.com/Do/area?lg=jp"><img src="/template/en/image/lan/JP.jpg" alt="">にほんこく</a>
+      </div>
+      <div class="posItems">
+        <h1>Europe</h1>
+        <!--<a class="country" href="http://en.connfly.com/Do/area?lg=ru"><img src="/template/en/image/lan/RU.jpg" alt="">Российская Федерация</a>-->
+        <a class="country" href="http://en.connfly.com/Do/area?lg=de"><img src="/template/en/image/lan/DE.jpg" alt="">Die Bundesrepublik Deutschland</a>
+        <a class="country" href="http://en.connfly.com/Do/area?lg=en"><img src="/template/en/image/lan/EN.jpg" alt="">United Kingdom</a>
+        <a class="country" href="http://en.connfly.com/Do/area?lg=it"><img src="/template/en/image/lan/IT.jpg" alt="">Repubblica Italiana</a>
+        <a class="country" href="http://en.connfly.com/Do/area?lg=pl"><img src="/template/en/image/lan/PL.jpg" alt="">Rzeczpospolita Polska</a>
+        <a class="country" href="http://en.connfly.com/Do/area?lg=pt"><img src="/template/en/image/lan/PT.jpg" alt="">República Portuguesa</a>
+        <a class="country" href="http://en.connfly.com/Do/area?lg=es"><img src="/template/en/image/lan/ES.jpg" alt="">Reino de España</a>
+        <a class="country" href="http://en.connfly.com/Do/area?lg=fr"><img src="/template/en/image/lan/FR.jpg" alt="">République française</a>
+      </div>
+    </div>
+  </div>
+	<div id="pageInfo">
+		<div class="container" id="proShowPage">
+			<div id="nowPlace">
+    <a href="/">Home</a>/<a href="/product/">Products</a>/<a href="/list_11/">Wafer、Housing、Terminals、Cable Assembly、Wire Harness Series</a>/<a href="/list_68/">2.54mm wafer series</a>
+    <span id="mobLeftList">
+        <i class="fas fa-chevron-down"></i>
+    </span>
+</div>
+			<div id="showContent">
+				<!--  -->
+				<div class="protu" style="width: 45%; float: left;"><img width="100%" src="/static/upload/image/ico/DS1071.jpg" alt="DS1071">
+				</div>
+
+				<div id="showBasic">
+					<h1 id="showTitle">
+						<b>DS1071</b>
+						<hr style="border:none;border-bottom:1px solid #00927f;margin-bottom:10px;margin-top: 3px">
+						2.54mm Housing TJC8 Type</h1>
+					<div id="showBtn">
+						<div id="samples">Request sample</div>
+						<div id="support">Online support</div>
+						<div id="tel">Complaint telephone</div>
+					</div>
+					<style>
+						#showBtn #samples,
+						#showBtn #support,
+						#showBtn #tel {
+							cursor: pointer
+						}
+
+						#samplesBox,
+						#supportBox,
+						#telBox {
+							display: none;
+							position: absolute;
+							top: 70px;
+							left: 55%;
+							border: 1px solid lightgray;
+							width: 65%;
+							min-height: 100%;
+							border-radius: 10px;
+							padding: 10px;
+							background: white;
+						}
+
+						#samplesBox h3,
+						#supportBox h3,
+						#telBox h3 {
+							margin-top: 10px;
+							line-height: 1.75em
+						}
+
+						#samplesBox div,
+						#supportBox div,
+						#telBox div {
+							padding-left: 1em;
+							line-height: 1.75em
+						}
+
+						#closeSample,
+						#closeSupport,
+						#closeTel {
+							display: block;
+							position: absolute;
+							right: 10px;
+							top: 10px;
+							cursor: pointer;
+							font-size: 20px;
+						}
+					</style>
+					<div id="samplesBox">
+						
+						<h3>Asian Market::Ms.Wendy</h3>
+						<div>Tel：</div>
+						<div>E-mail：
+							<a href="connfly02@connfly.com" target="_blank">connfly02@connfly.com</a>
+						</div>
+						
+						<h3>Indian and middle east Market::Mr.Nick</h3>
+						<div>Tel：</div>
+						<div>E-mail：
+							<a href="connfly12@connfly.com" target="_blank">connfly12@connfly.com</a>
+						</div>
+						
+						<h3>Indian and middle east Market::Ms.Vicky</h3>
+						<div>Tel：</div>
+						<div>E-mail：
+							<a href="connfly20@connfly.com" target="_blank">connfly20@connfly.com</a>
+						</div>
+						
+						<h3>Russian and South American Market::Ms.Nancy</h3>
+						<div>Tel：</div>
+						<div>E-mail：
+							<a href="trade@connfly.com" target="_blank">trade@connfly.com</a>
+						</div>
+						
+						<h3>European Market::Ms.Summer</h3>
+						<div>Tel：</div>
+						<div>E-mail：
+							<a href="connfly21@connfly.com" target="_blank">connfly21@connfly.com</a>
+						</div>
+						
+						<h3>European Market::Ms.Grace</h3>
+						<div>Tel：</div>
+						<div>E-mail：
+							<a href="zhenqin@connfly.com" target="_blank">zhenqin@connfly.com</a>
+						</div>
+						
+						<i class="fas fa-times" id="closeSample"></i>
+					</div>
+					<div id="supportBox">
+						
+						<h3>黄工</h3>
+						<div>QQ：
+							<a href="http://wpa.qq.com/msgrd?v=3&amp;uin=2506416236&amp;site=qq&amp;menu=yes"
+								target="_blank">2506416236</a></div>
+						
+						<i class="fas fa-times" id="closeSupport"></i>
+					</div>
+					<div id="telBox">
+						<div>0574-63506868</div>
+						<i class="fas fa-times" id="closeTel"></i>
+					</div>
+				</div>
+				<div class="clearfix"></div>
+				<div id="showMore">
+					<ul>
+						<li class="active" id="more1">Drawing</li>
+						<li id="more2">Specifications</li>
+						<li id="more3">Material information</li>
+						<li id="more4">Certifications</li>
+						<li id="more5">Lead Free Type</li>
+						<li id="more6">Packaging specifications</li>
+					</ul>
+					<div id="show1">
+						<ul>
+							
+							<li><a href="/static/upload/file/pdf/DS1071.pdf" target="_blank"><img
+										src="/template/en/image/prosvg/PDF.svg">Download</a></li>
+							
+							
+						</ul>
+
+					</div>
+					<div id="show2">
+						<table width="450"><colgroup><col width="197"/><col width="253"/></colgroup><tbody><tr class="firstRow"><td width="197" style="border: 1px solid rgb(0, 0, 0); border-image: none; text-align: left; color: rgb(0, 0, 0); font-size: 15px; font-style: normal; font-weight: 400; vertical-align: middle; white-space: normal;">产品系列</td><td width="253" style="border: 1px solid rgb(0, 0, 0); border-image: none; text-align: center; color: rgb(0, 0, 0); font-size: 15px; font-style: normal; font-weight: 400; vertical-align: middle; white-space: normal;">DS1071</td></tr><tr><td width="197" style="border: 1px solid rgb(0, 0, 0); border-image: none; text-align: left; color: rgb(0, 0, 0); font-size: 15px; font-style: normal; font-weight: 400; vertical-align: middle; white-space: normal;">间距</td><td width="253" style="border: 1px solid rgb(0, 0, 0); border-image: none; text-align: center; color: rgb(0, 0, 0); font-size: 15px; font-style: normal; font-weight: 400; vertical-align: middle; white-space: normal;">2.54mm</td></tr><tr><td width="197" style="border: 1px solid rgb(0, 0, 0); border-image: none; text-align: left; color: rgb(0, 0, 0); font-size: 15px; font-style: normal; font-weight: 400; vertical-align: middle; white-space: normal;">产品描述</td><td width="253" style="border: 1px solid rgb(0, 0, 0); border-image: none; text-align: center; color: rgb(0, 0, 0); font-size: 15px; font-style: normal; font-weight: 400; vertical-align: middle; white-space: normal;">Housing&nbsp;TJC8&nbsp;Type&nbsp;</td></tr><tr><td width="197" style="border: 1px solid rgb(0, 0, 0); border-image: none; text-align: left; color: rgb(0, 0, 0); font-size: 15px; font-style: normal; font-weight: 400; vertical-align: middle; white-space: normal;">Pin数范围</td><td width="253" style="border: 1px solid rgb(0, 0, 0); border-image: none; text-align: center; color: rgb(0, 0, 0); font-size: 15px; font-style: normal; font-weight: 400; vertical-align: middle; white-space: normal;">1*1~1*40/2*2~2*40</td></tr><tr><td width="197" style="border: 1px solid rgb(0, 0, 0); border-image: none; text-align: left; color: rgb(0, 0, 0); font-size: 15px; font-style: normal; font-weight: 400; vertical-align: middle; white-space: normal;">产品种类</td><td width="253" style="border: 1px solid rgb(0, 0, 0); border-image: none; text-align: center; color: rgb(0, 0, 0); font-size: 15px; font-style: normal; font-weight: 400; vertical-align: middle; white-space: normal;">线对板</td></tr><tr><td width="197" style="border: 1px solid rgb(0, 0, 0); border-image: none; text-align: left; color: rgb(0, 0, 0); font-size: 15px; font-style: normal; font-weight: 400; vertical-align: middle; white-space: normal;">符合焊接温度</td><td width="253" style="border: 1px solid rgb(0, 0, 0); border-image: none; text-align: center; color: rgb(0, 0, 0); font-size: 15px; font-style: normal; font-weight: 400; vertical-align: middle; white-space: normal;">250±5℃</td></tr><tr><td width="197" style="border: 1px solid rgb(0, 0, 0); border-image: none; text-align: left; color: rgb(0, 0, 0); font-size: 15px; font-style: normal; font-weight: 400; vertical-align: middle; white-space: normal;">额定电流</td><td width="253" style="border: 1px solid rgb(0, 0, 0); border-image: none; text-align: center; color: rgb(0, 0, 0); font-size: 15px; font-style: normal; font-weight: 400; vertical-align: middle; white-space: normal;">3A(AWG#22)</td></tr><tr><td width="197" style="border: 1px solid rgb(0, 0, 0); border-image: none; text-align: left; color: rgb(0, 0, 0); font-size: 15px; font-style: normal; font-weight: 400; vertical-align: middle; white-space: normal;">额定电压</td><td width="253" style="border: 1px solid rgb(0, 0, 0); border-image: none; text-align: center; color: rgb(0, 0, 0); font-size: 15px; font-style: normal; font-weight: 400; vertical-align: middle; white-space: normal;">250V</td></tr><tr><td width="197" style="border: 1px solid rgb(0, 0, 0); border-image: none; text-align: left; color: rgb(0, 0, 0); font-size: 15px; font-style: normal; font-weight: 400; vertical-align: middle; white-space: normal;">接触阻抗</td><td width="253" style="border: 1px solid rgb(0, 0, 0); border-image: none; text-align: center; color: rgb(0, 0, 0); font-size: 15px; font-style: normal; font-weight: 400; vertical-align: middle; white-space: normal;">30mΩ&nbsp;最大</td></tr><tr><td width="197" style="border: 1px solid rgb(0, 0, 0); border-image: none; text-align: left; color: rgb(0, 0, 0); font-size: 15px; font-style: normal; font-weight: 400; vertical-align: middle; white-space: normal;">绝缘阻抗</td><td width="253" style="border: 1px solid rgb(0, 0, 0); border-image: none; text-align: center; color: rgb(0, 0, 0); font-size: 15px; font-style: normal; font-weight: 400; vertical-align: middle; white-space: normal;">1000MΩ最小</td></tr><tr><td width="197" style="border: 1px solid rgb(0, 0, 0); border-image: none; text-align: left; color: rgb(0, 0, 0); font-size: 15px; font-style: normal; font-weight: 400; vertical-align: middle; white-space: normal;">耐电压</td><td width="253" style="border: 1px solid rgb(0, 0, 0); border-image: none; text-align: center; color: rgb(0, 0, 0); font-size: 15px; font-style: normal; font-weight: 400; vertical-align: middle; white-space: normal;">500V&nbsp;AC&nbsp;1分钟</td></tr><tr><td width="197" style="border: 1px solid rgb(0, 0, 0); border-image: none; text-align: left; color: rgb(0, 0, 0); font-size: 15px; font-style: normal; font-weight: 400; vertical-align: middle; white-space: normal;">插拔寿命</td><td width="253" style="border: 1px solid rgb(0, 0, 0); border-image: none; text-align: center; color: rgb(0, 0, 0); font-size: 15px; font-style: normal; font-weight: 400; vertical-align: middle; white-space: normal;">/</td></tr><tr><td width="197" style="border: 1px solid rgb(0, 0, 0); border-image: none; text-align: left; color: rgb(0, 0, 0); font-size: 15px; font-style: normal; font-weight: 400; vertical-align: middle; white-space: normal;">操作温度</td><td width="253" style="border: 1px solid rgb(0, 0, 0); border-image: none; text-align: center; color: rgb(0, 0, 0); font-size: 15px; font-style: normal; font-weight: 400; vertical-align: middle; white-space: normal;">-25~+85℃</td></tr><tr><td width="197" style="border: 1px solid rgb(0, 0, 0); border-image: none; text-align: left; color: rgb(0, 0, 0); font-size: 15px; font-style: normal; font-weight: 400; vertical-align: middle; white-space: normal;">适用线径</td><td width="253" style="border: 1px solid rgb(0, 0, 0); border-image: none; text-align: center; color: rgb(0, 0, 0); font-size: 15px; font-style: normal; font-weight: 400; vertical-align: middle; white-space: normal;">AWG#28~#22</td></tr></tbody></table><p>&nbsp;</p><p><br/></p><p><br/></p>
+					</div>
+					<div id="show3">
+						<table width="450"><colgroup><col width="197"/><col width="253"/></colgroup><tbody><tr class="firstRow"><td width="197" style="border-color: rgb(0, 0, 0); font-size: 15px; vertical-align: middle; white-space: normal;">塑胶材料</td><td width="253" style="border-color: rgb(0, 0, 0); text-align: center; font-size: 15px; vertical-align: middle; white-space: normal;">热塑性塑胶</td></tr><tr><td width="197" style="border-color: rgb(0, 0, 0); font-size: 15px; vertical-align: middle; white-space: normal;">塑胶阻燃等级</td><td width="253" style="border-color: rgb(0, 0, 0); text-align: center; font-size: 15px; vertical-align: middle; white-space: normal;">UL94V-0/UL94V-2/UL94HB</td></tr><tr><td width="197" style="border-color: rgb(0, 0, 0); font-size: 15px; vertical-align: middle; white-space: normal;">灼热丝测试</td><td width="253" style="border-color: rgb(0, 0, 0); text-align: center; font-size: 15px; vertical-align: middle; white-space: normal;">/</td></tr><tr><td width="197" style="border-color: rgb(0, 0, 0); font-size: 15px; vertical-align: middle; white-space: normal;">塑胶常规颜色</td><td width="253" style="border-color: rgb(0, 0, 0); text-align: center; font-size: 15px; vertical-align: middle; white-space: normal;">黑色</td></tr><tr><td width="197" style="border-color: rgb(0, 0, 0); font-size: 15px; vertical-align: middle; white-space: normal;">塑胶不常规颜色</td><td width="253" style="border-color: rgb(0, 0, 0); text-align: center; font-size: 15px; vertical-align: middle; white-space: normal;">/</td></tr><tr><td width="197" style="border-color: rgb(0, 0, 0); font-size: 15px; vertical-align: middle; white-space: normal;">塑胶颜色是否可以定制</td><td width="253" style="border-color: rgb(0, 0, 0); text-align: center; font-size: 15px; vertical-align: middle; white-space: normal;">/</td></tr><tr><td width="197" style="border-color: rgb(0, 0, 0); font-size: 15px; vertical-align: middle; white-space: normal;">Pin针端子材料</td><td width="253" style="border-color: rgb(0, 0, 0); text-align: center; font-size: 15px; vertical-align: middle; white-space: normal;">铜合金</td></tr><tr><td width="197" style="border-color: rgb(0, 0, 0); font-size: 15px; vertical-align: middle; white-space: normal;">Pin针端子常规电镀</td><td width="253" style="border-color: rgb(0, 0, 0); text-align: center; font-size: 15px; vertical-align: middle; white-space: normal;">镀锡</td></tr><tr><td width="197" style="border-color: rgb(0, 0, 0); font-size: 15px; vertical-align: middle; white-space: normal;">Pin针端子电镀定制</td><td width="253" style="border-color: rgb(0, 0, 0); text-align: center; font-size: 15px; vertical-align: middle; white-space: normal;">镀金</td></tr></tbody></table><p>&nbsp;</p><p><br style="white-space: normal;"/></p><p><br/></p>
+					</div>
+					<div id="show4">
+						<style>
+							.rzimg {
+								width: 85px;
+								float: left;
+							}
+
+							.rzimg img {
+								display: block;
+								margin: 5px auto !important;
+								float: none !important;
+							}
+						</style>
+						<table>
+							<tbody>
+								<tr>
+									<td>
+										<div class="rzimg" style="width:85px;float:left;margin-top: 5px">
+											<img src="/template/en/image/prosvg/ul.png" alt="" style="height:20px;margin-top: 5px">
+										</div>UL
+									</td>
+									<td id="ul">/</td>
+								</tr>
+								<tr>
+									<td>
+										<div class="rzimg" style="width:85px;float:left;margin-top: 5px">
+											<img src="/template/en/image/prosvg/ce.png" alt="" style="height:20px;margin-top: 5px">
+										</div>CE
+									</td>
+									<td id="ce">/</td>
+								</tr>
+								<tr>
+									<td>
+										<div class="rzimg" style="width:85px;float:left;margin-top: 5px">
+											<img src="/template/en/image/prosvg/fcc.png" alt="" style="height:20px;margin-top: 5px">
+										</div>FCC
+									</td>
+									<td id="fcc">/</td>
+								</tr>
+								<tr>
+									<td>
+										<div class="rzimg" style="width:85px;float:left;margin-top: 5px">
+											<img src="/template/en/image/prosvg/rohs.png" alt="" style="height:20px;margin-top: 5px">
+										</div>ROHS
+									</td>
+									<td id="rohs">/</td>
+								</tr>
+								<tr>
+									<td>
+										<div class="rzimg" style="width:85px;float:left;margin-top: 5px">
+											<img src="/template/en/image/prosvg/vde.png" alt="" style="height:20px;margin-top: 5px">
+										</div>VDE
+									</td>
+									<td id="vde">/</td>
+								</tr>
+								<tr>
+									<td>
+										<div class="rzimg" style="width:85px;float:left;margin-top: 5px">
+											<img src="/template/en/image/prosvg/ccc.png" alt="" style="height:20px;margin-top: 5px">
+										</div>CCC
+									</td>
+									<td id="ccc">/</td>
+								</tr>
+								<tr>
+									<td>
+										<div class="rzimg" style="width:85px;float:left;margin-top: 5px">
+											<img src="/template/en/image/prosvg/cb.png" alt="" style="height:20px;margin-top: 5px">
+										</div>CB
+									</td>
+									<td id="cb">/</td>
+								</tr>
+							</tbody>
+						</table>
+						<script>
+							var rz = "CE,FCC"
+							var rzArr = rz.split(",")
+							console.log(rzArr)
+							if (rzArr.length) {
+								for (var i = 0; i < rzArr.length; i++) {
+									document.getElementById(rzArr[i].toLowerCase()).innerHTML = "Yes"
+								}
+							}
+						</script>
+					</div>
+					<div id="show5">
+						<table>
+							<tbody>
+								<tr>
+									<td>
+										<img src="/template/en/image/prosvg/rohs.png" alt="">ROHS 2.0</td>
+									<td id="rohs-2-0">/</td>
+								</tr>
+								<tr>
+									<td>
+										<img src="/template/en/image/prosvg/reach.png" alt="">REACH</td>
+									<td id="reach">/</td>
+								</tr>
+								<tr>
+									<td>
+										<img src="" style="opacity: 0;" alt="">HF</td>
+									<td id="hf">/</td>
+								</tr>
+								<tr>
+									<td>
+										<img src="" style="opacity: 0;" alt="">PFOS</td>
+									<td id="pfos">/</td>
+								</tr>
+								<tr>
+									<td>
+										<img src="" style="opacity: 0;" alt="">PFOR</td>
+									<td id="pfor">/</td>
+								</tr>
+								<tr>
+									<td>
+										<img src="" style="opacity: 0;" alt="">SS-00259</td>
+									<td id="ss-00259">/</td>
+								</tr>
+							</tbody>
+						</table>
+						<script>
+							var hjbz = "ROHS 2.0"
+							var hjbzArr = hjbz.split(",")
+							var tString
+							console.log(hjbzArr)
+							console.log(hjbzArr)
+							if (hjbzArr.length) {
+								for (var i = 0; i < hjbzArr.length; i++) {
+									tString = hjbzArr[i].toLowerCase()
+									tString = tString.replace(' ', '-')
+									tString = tString.replace('.', '-')
+									document.getElementById(tString).innerHTML = "Yes"
+								}
+							}
+						</script>
+					</div>
+					<div id="show6">
+						<table width="450"><colgroup><col width="197"/><col width="253"/></colgroup><tbody><tr class="firstRow"><td width="197" style="border-color: rgb(0, 0, 0); font-size: 15px; vertical-align: middle; white-space: normal;">包装类型</td><td width="253" style="border-color: rgb(0, 0, 0); text-align: center; font-size: 15px; vertical-align: middle; white-space: normal;">袋装</td></tr><tr><td width="197" style="border-color: rgb(0, 0, 0); font-size: 15px; vertical-align: middle; white-space: normal;">包装类型定制</td><td width="253" style="border-color: rgb(0, 0, 0); text-align: center; font-size: 15px; vertical-align: middle; white-space: normal;">/</td></tr></tbody></table><p>&nbsp;</p><p><br style="white-space: normal;"/></p><p><br/></p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+	<!--
+ * @Description: footer部分
+ * @Author: Seven
+ * @LastEditors: Seven
+ * @Date: 2019-08-15 12:41:55
+ * @LastEditTime: 2019-09-03 13:50:56
+-->
+<link rel="stylesheet" type="text/css" href="https://www.jq22.com/jquery/font-awesome.4.7.0.css">
+<style>
+  .weixin{ display: inline-block; float: left; position: relative;}
+   .weixin .wxewm{ position: absolute; top: 38px; left: 0; display: none; width: 80px !important; height: 80px !important;}
+   .weixin:hover .wxewm{ display: block !important;}
+</style>
+<div id="Footer">
+    <div class="container">
+      <div id="footerContact">
+        <img id="footerLogo" src="/template/en/image/logof.png" alt="">
+        <div id="footerInfo">
+          <span><i class="fas fa-map-marker-alt"></i></span>No. 125, Zhanteng Road, East Industrial Zone, Kuangyan Town, Cixi, Ningbo City, Zhejiang Province<br>
+          <span><i class="fas fa-mail-bulk"></i></span>315333<br>
+          <span><i class="fas fa-blender-phone"></i></span>+86-574-63508787&nbsp;+86-574-63509600<br>
+          <span><i class="fas fa-fax"></i></span>+86-574-63510817&nbsp;+86-574-63507299<br>
+          <span><i class="fas fa-envelope"></i></span><!-- business@connfly.com -->sale@connfly.com<br>
+          <span><i class="fa fa-paypal" aria-hidden="true"></i></span>sales@connfly.com
+        </div>
+        <div id="sns">
+          <a href="http://wpa.qq.com/msgrd?v=3&amp;uin=1106099746&amp;site=qq&amp;menu=yes" target="_blank"><img src="/template/en/image/lan/ficon1.png" alt=""></a>
+          <a href="https://shop106839502.taobao.com/?spm=a1z10.1-c.0.0.315749247tTNdI" target="_blank"><img src="/template/en/image/lan/ficon2.png" alt=""></a>
+          <a href="https://weibo.com/p/1005051905300615/home?from=page_100505&mod=TAB&is_all=1#place" target="_blank"><img src="/template/en/image/lan/ficon3.png" alt=""></a>
+          <div class="weixin">
+            <img src="/template/en/image/lan/ficon4.png" alt="" id="wechat">
+            <img class="wxewm" src="/template/en/image/lan/wxewm.png">
+          </div>
+          <a href="https://www.youtube.com/channel/UCmBuSWiSHtPTKRmBGV2ZsJA" target="_blank"><img src="/template/en/image/lan/ficon5.png" alt="" id="paypal"></a>
+          <!-- <a href="" target="_blank"><img src="/template/en/image/lan/ficon6.png" alt="" id="wechatqr"></a> -->
+          <!-- <div id="snsinfo">
+            <img src="/template/en/image/lan/ficon6.png" alt="" id="wechatqr">
+            <p id="textinfo"></p>
+          </div> -->
+        </div>
+      </div>
+      <div id="footerLists">
+        <ul id="footerProduct">
+          <li class="footerListTitle">Products</li>
+          
+          <li><a href="/newproducts/">New Products</a></li>
+          
+          <li><a href="/list_27/">Pin Header Seri···</a></li>
+          
+          <li><a href="/list_29/">Female Series</a></li>
+          
+          <li><a href="/list_22/">Battery Holders···</a></li>
+          
+          <li><a href="/list_23/">Shrouded/Box He···</a></li>
+          
+          <li><a href="/list_31/">D-SUB、Machine P···</a></li>
+          
+          <li><a href="/list_12/">IC Socket、Pin、C···</a></li>
+          
+          <li><a href="/list_36/">Automotive、PC10···</a></li>
+          
+          <li><a href="/list_11/">Wafer、Housing、T···</a></li>
+          
+          <li><a href="/list_28/">RJ11/RJ12/RJ45、···</a></li>
+          
+          <li><a href="/list/2.html">More</a></li>
+        </ul>
+        <ul id="footerProject">
+          <li class="footerListTitle">Latest scenarios</li>
+          
+          <li><a href="/list_164/">smart meter</a></li>
+          
+          <li><a href="/list_165/">LED lighting</a></li>
+          
+          <li><a href="/list_166/">Industrial computer</a></li>
+          
+          <li><a href="/list_167/">Military industry and medical treatment</a></li>
+          
+          <li><a href="/list_168/">Automobile and new energy</a></li>
+          
+          <li><a href="/list_169/">Communication equipment</a></li>
+          
+          <li><a href="/list_170/">Network and wireless equipment</a></li>
+          
+          <li><a href="/list_171/">Consumer electronics</a></li>
+          
+          <li><a href="/list_172/">intelligent robot</a></li>
+          
+          <li><a href="/list_173/">high-speed rail</a></li>
+          
+        </ul>
+        <ul id="footerAbout">
+          <li class="footerListTitle">About CONNFLY</li>
+          
+          <li><a href="/about/">Company profile</a></li>
+          
+          <li><a href="/org/">Organization</a></li>
+          
+          <li><a href="/honor/">Product certification and certificate</a></li>
+          
+          <li><a href="/culture/">corporate culture</a></li>
+          
+          <li><a href="/qa/">Quality assurance</a></li>
+          
+        </ul>
+        <ul id="footerQr">
+          <li class="footerListTitle">Electronic Data</li>
+          <li id="footerBook">E-book<img src="/template/en/image/ewmbook.jpg" alt=""></li>
+          <li id="footerVr">VR<img src="/template/en/image/ewmvr.jpg" alt=""></li>
+            </ul>
+      </div>
+      <!-- #footerQrimg(src=staticUrl({type:'image',name:'book.jpg'}), alt='') span 晨翔电子资料书 img(src=staticUrl({type:'image',name:'vr.jpg'}), alt='') span 晨翔电子VR介绍--></div>
+  </div>
+
+	<script>
+		document.getElementById('closeSample').onclick = function () {
+			document.getElementById('samplesBox').style.display = 'none'
+		}
+		document.getElementById('samples').onclick = function () {
+			document.getElementById('samplesBox').style.display = 'block'
+			document.getElementById('supportBox').style.display = 'none'
+			document.getElementById('telBox').style.display = 'none'
+		}
+		document.getElementById('closeSupport').onclick = function () {
+			document.getElementById('supportBox').style.display = 'none'
+		}
+		document.getElementById('support').onclick = function () {
+			document.getElementById('supportBox').style.display = 'block'
+			document.getElementById('samplesBox').style.display = 'none'
+			document.getElementById('telBox').style.display = 'none'
+		}
+		document.getElementById('closeTel').onclick = function () {
+			document.getElementById('telBox').style.display = 'none'
+		}
+		document.getElementById('tel').onclick = function () {
+			document.getElementById('telBox').style.display = 'block'
+			document.getElementById('supportBox').style.display = 'none'
+			document.getElementById('samplesBox').style.display = 'none'
+		}
+
+		function c(id) {
+			document.getElementById('more' + id).className = "active"
+			document.getElementById('show' + id).style.display = "block"
+			for (j = 1; j <= 6; j++) {
+				if (id == j) {
+					continue
+				}
+				document.getElementById('more' + j).className = ""
+				document.getElementById('show' + j).style.display = "none"
+			}
+		}
+		document.getElementById('more1').onclick = function () {
+			c(1)
+		}
+		document.getElementById('more2').onclick = function () {
+			c(2)
+		}
+		document.getElementById('more3').onclick = function () {
+			c(3)
+		}
+		document.getElementById('more4').onclick = function () {
+			c(4)
+		}
+		document.getElementById('more5').onclick = function () {
+			c(5)
+		}
+		document.getElementById('more6').onclick = function () {
+			c(6)
+		}
+	</script>
+	<script src="/template/en/js/proshow.js"></script>
+</body>
+
+</html>

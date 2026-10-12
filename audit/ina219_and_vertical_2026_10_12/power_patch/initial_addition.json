@@ -1,0 +1,193 @@
+{
+  "input_sha256": "c4efced02420f48fea993d166091e3ba3ec7be7cf9bc30feec164d067077cc3b",
+  "partition": {
+    "cut_cost": 4.095666630560342,
+    "removed": [
+      {
+        "uuid": "8063c988-64bd-4567-934f-3202f75c85e7",
+        "net": "BAT",
+        "start": [
+          19.5,
+          41.2
+        ],
+        "end": [
+          19.8,
+          41.2
+        ],
+        "width": 0.25,
+        "layer": "F.Cu"
+      },
+      {
+        "uuid": "cefa7d6e-521a-4e56-9484-ea45bbaed75d",
+        "net": "BAT",
+        "start": [
+          40.5,
+          12.0
+        ],
+        "end": [
+          39.5,
+          11.0
+        ],
+        "width": 0.8,
+        "layer": "B.Cu"
+      },
+      {
+        "uuid": "9151af4d-515b-4c9e-ba01-7de235d6b7a0",
+        "net": "BAT",
+        "start": [
+          43.35,
+          14.0
+        ],
+        "end": [
+          36.4875,
+          14.0
+        ],
+        "width": 0.3,
+        "layer": "F.Cu"
+      },
+      {
+        "uuid": "55a2391d-3243-4c98-9835-012d191b9220",
+        "net": "BAT",
+        "start": [
+          44.5,
+          11.7
+        ],
+        "end": [
+          45.2,
+          11.0
+        ],
+        "width": 0.8,
+        "layer": "F.Cu"
+      }
+    ],
+    "components": [
+      {
+        "net": "BAT_SYS",
+        "pads": [
+          [
+            "C30",
+            "1"
+          ],
+          [
+            "C52",
+            "1"
+          ],
+          [
+            "U2",
+            "10"
+          ],
+          [
+            "C4",
+            "1"
+          ],
+          [
+            "R1",
+            "2"
+          ],
+          [
+            "C12",
+            "1"
+          ],
+          [
+            "U1",
+            "14"
+          ],
+          [
+            "R3",
+            "1"
+          ],
+          [
+            "C53",
+            "1"
+          ],
+          [
+            "C13",
+            "1"
+          ]
+        ],
+        "item_count": 101
+      },
+      {
+        "net": "BAT",
+        "pads": [
+          [
+            "J101",
+            "9"
+          ],
+          [
+            "J8",
+            "1"
+          ],
+          [
+            "R47",
+            "1"
+          ]
+        ],
+        "item_count": 63
+      },
+      {
+        "net": "BAT",
+        "pads": [
+          [
+            "TP1",
+            "1"
+          ]
+        ],
+        "item_count": 17
+      },
+      {
+        "net": "BAT",
+        "pads": [
+          [
+            "R15",
+            "1"
+          ],
+          [
+            "J12",
+            "1"
+          ]
+        ],
+        "item_count": 15
+      }
+    ]
+  },
+  "new_footprint_poses": {
+    "U12": {
+      "x": 58.2,
+      "y": 12.8,
+      "rotation": 90,
+      "native_layer": "F.Cu"
+    },
+    "R71": {
+      "x": 28.8,
+      "y": 6.8,
+      "rotation": 90,
+      "native_layer": "B.Cu"
+    },
+    "R72": {
+      "x": 54.0,
+      "y": 12.2,
+      "rotation": 0,
+      "native_layer": "B.Cu"
+    },
+    "R73": {
+      "x": 54.0,
+      "y": 14.8,
+      "rotation": 0,
+      "native_layer": "B.Cu"
+    },
+    "C63": {
+      "x": 60.4,
+      "y": 12.8,
+      "rotation": 90,
+      "native_layer": "B.Cu"
+    },
+    "C64": {
+      "x": 57.8,
+      "y": 16.0,
+      "rotation": 90,
+      "native_layer": "B.Cu"
+    }
+  },
+  "after_sha256": "07ae14afabc200fc59057da84e14b284637cfe540c50c27c064a7db57ae8de55"
+}

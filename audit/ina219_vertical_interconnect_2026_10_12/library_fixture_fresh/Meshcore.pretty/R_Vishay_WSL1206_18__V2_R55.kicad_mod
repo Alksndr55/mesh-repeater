@@ -1,0 +1,324 @@
+(footprint "R_Vishay_WSL1206_18__V2_R55"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "Vishay WSL1206 for 0.006..0.20 ohm; manufacturer lands a=1.65mm b=1.93mm l=1.80mm, document30100 revision23-Nov-2023 page2. Full paste apertures are an engineering choice.")
+	(tags "resistor Vishay WSL1206 current sense metal strip 22mohm")
+	(property "Reference" "REF**"
+		(at 4.75 6 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "dcc984ed-6f1e-4bed-ba99-a3be5fd2faa1")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Value" "R_Vishay_WSL1206_18__V2_R55"
+		(at 0 1.9 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "7a131847-7e03-4aa4-a05d-5832f9c55569")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "1273349d-d618-45db-86d8-4437c60d6607")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" "47mOhm series resistor after local TPS63802 C14/FB sense, before L3. Voltage loss I*0.047 ohm, dissipated power I^2*0.047 ohm."
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "43298b5e-3b32-4d12-b7de-5604be19cf6f")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "MPN" "WSL1206R0470FEA"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "17997e43-8a40-479a-be2b-6631766b935c")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "LCSC" ""
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "ebd789d8-7c54-49ea-b2fa-95b88894eed2")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Vendor" "ChipDip / Vishay"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "e1838432-6e34-4e30-8880-9b7c5a491a64")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Vendor URL" "https://www.chipdip.ru/product/wsl1206r0470fea-current-sense-resistors-smd-1-4watt-vishay-8005236780"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "fe3f8c6b-d222-486c-b998-d3dd24cafae7")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Fit_NaIon" "yes"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "daa19e6d-9f0c-46c5-a464-bfde0e3cd967")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Fit_LTO_2S" "yes"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "fe25ba5d-f833-4d6a-a62b-2009281826cb")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value_NaIon" "47mR 1%"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "f51bd888-78d2-4d36-8b67-c97f7a444317")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value_LTO_2S" "47mR 1%"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "81ef9821-1c1b-42fd-9d02-b10da28d2b62")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Assembly" "Na-ion: FIT; LTO 2S: FIT"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "60a755af-433a-45ae-8b86-c7c3582c3e14")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Nominal" "47mR"
+		(at 4.75 8.808738 90)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "e704a52e-00ff-4860-b340-9d29f659a150")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "MPN_NaIon" "WSL1206R0470FEA"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "7f812bbb-095f-48de-ad59-c7449eb6a3cc")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "MPN_LTO_2S" "WSL1206R0470FEA"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "f646a648-cc33-45f9-94e9-2c82caf4bafe")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Fit_NaIon_NoCold" "yes"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "59c7875c-0ab3-4858-ac14-012a06e1fac5")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value_NaIon_NoCold" "47mR 1%"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "8efeda5c-251a-48e8-96bc-ecf9ad47ae61")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "MPN_NaIon_NoCold" "WSL1206R0470FEA"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "fe322783-7b6f-4374-ba5e-216307dd1d5d")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_rect
+		(start -2.8 -1.25)
+		(end 2.8 1.25)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "e0304773-77e2-487f-a699-abd4841b5bfc")
+	)
+	(fp_line
+		(start -1.092 -0.8)
+		(end -1.092 0.8)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "62c419e1-5027-4e7e-97d9-6b0678fa2ab7")
+	)
+	(fp_line
+		(start -0.65 -1.12)
+		(end 0.65 -1.12)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "fe90c631-9882-4fc3-a8b1-9b33dbb46bf6")
+	)
+	(fp_line
+		(start -0.65 1.12)
+		(end 0.65 1.12)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "b49f66f0-09e8-44b9-b93c-4b9003546822")
+	)
+	(fp_line
+		(start 1.092 -0.8)
+		(end 1.092 0.8)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "1fc242b1-7791-44f5-8dca-da0b2b6df266")
+	)
+	(fp_rect
+		(start -1.6 -0.8)
+		(end 1.6 0.8)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "d320d2d4-c268-4cde-a45c-d3dec10b0274")
+	)
+	(pad "1" smd rect
+		(at -1.725 0)
+		(size 1.65 1.93)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(solder_mask_margin 0.05)
+		(uuid "c046c304-f05f-48db-b95e-9464c66fc81d")
+	)
+	(pad "2" smd rect
+		(at 1.725 0)
+		(size 1.65 1.93)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(solder_mask_margin 0.05)
+		(uuid "9226810d-3b66-4cdb-b5d2-2987115a1d54")
+	)
+	(embedded_fonts no)
+	(model "${KIPRJMOD}/3dmodels/Vishay_WSL1206.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

@@ -1,18 +1,22 @@
 {
   "stage": "SAVED_MODEL_COMPONENT_INVENTORY_NOT_FULL_PROCUREMENT_RELEASE",
-  "date": "2026-10-11",
+  "date": "2026-10-12",
   "baseline_commit": "cf54f9970e716272d477afdb252b4e195d595cb6",
   "inputs": {
     "design/v2_electrical_contract.json": "478b416c5fa28fbe4cebbc594eb1b519e90cb6c393aba6f58130b6fecffdac08",
-    "docs/mechanical_selection.json": "199dfe4daebb9bd490bc6c704a8e08ce3ab3097e215a2fc8edaa3e331190e962",
-    "design/MeshRepeater2_Power/model.json": "4ae809f8dabec401a68c193432beecf15771c0c0392094c52c7d423df961b07b",
-    "audit/MeshRepeater2_Power_footprint_variants.json": "3a5ccefd8bf259c2c61afbfdc73906a9878f15504cfa7df9b0e89055b8e35239",
-    "design/MeshRepeater2_Logic/model.json": "ef66e50d9971793f8a913534b8ea54fcb36d475d0f10a778d47b498b215070db",
-    "audit/MeshRepeater2_Logic_footprint_variants.json": "961b078f28e8b18ff2f62245e6ca12cac8e33d88da08eb229b6c036f85454bd9"
+    "docs/mechanical_selection.json": "9440103c48c255b4683f861ac3884d5d6a2c5bb9ae43cdb1bb187722eeca430e",
+    "design/feature_ina219_vertical.json": "693b5e48ba9c76f279b386b4c0329c77291013b6305e4e3bf458e72c796adf8b",
+    "tools/v2_feature_contract.py": "36f875828c7f3e16c6917d47e6641f1fb85bbe97079add98f4f4941230736205",
+    "audit/ina219_and_vertical_2026_10_12/procurement.json": "796d2412ae4f2e1b4d2954d79b522f9e2097c784d9acd6b9f3426e40bd0d7137",
+    "audit/vertical_interconnect_2026_10_12/ali_pair_selection.json": "8d527dc34351b84db53d016c01600b51cf434bc19cdda7274c9a068390a12187",
+    "design/MeshRepeater2_Power/model.json": "8047db72825784315a9204b069fcbf96249d16ccbbe3642f6936bea83b4631c0",
+    "audit/MeshRepeater2_Power_footprint_variants.json": "1c3f415936d06c75e44714db8a3a277491b5cbc0b221769706e56a0eafe83939",
+    "design/MeshRepeater2_Logic/model.json": "bd86ec187e55fda26c2089d62869faf38c81319e0b2f769aa08807a3daf57efe",
+    "audit/MeshRepeater2_Logic_footprint_variants.json": "53cfe37ed30fe23cd9a457ddd3d2eff1e5a815845649f2c315ce8707620788cc"
   },
   "snapshot_stable": true,
   "changed_inputs": [],
-  "rows": 172,
+  "rows": 178,
   "baseline_original_positions": 167,
   "original_positions_retained": 166,
   "explicit_removed_mechanical_positions": [
@@ -27,15 +31,220 @@
     }
   ],
   "baseline_positions_fully_accounted": true,
-  "bom_sha256": "a16dc5dc76ce541ad15de3193ce359ae23a9f02d0c275ba0d78183dfc0ec6dc8",
+  "bom_sha256": "4b9eb7cfa7cfbabc17ad3e75bbbcf7eb03818f6b545da2aea2470e09909f6b67",
   "excludes": [
-    "external cable housings and contacts",
-    "ribbon cable and strain relief",
-    "shunt",
+    "removable J11 jumper shunt only (R71 measurement resistor is included)",
     "spacers/bolts/nuts/washers",
     "separate battery cell purchase",
     "SH1 removed by explicit mechanical decision"
   ],
-  "additional_procurement_list": "DAN_NEW_PARTS (prepared by mechanical selection task)",
+  "additional_procurement_list": "DAN_NEW_PARTS for remaining accessories; J101/J201 Ali parts are included here and supersede prior IDC/cable selection",
+  "feature_checks": [
+    {
+      "name": "INA219 six new positions remain only on POWER",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "INA219 exact circuit nets U12",
+      "pass": true,
+      "detail": {
+        "expected": {
+          "1": "GND",
+          "2": "GND",
+          "3": "SDA",
+          "4": "SCL",
+          "5": "SYS_3V3",
+          "6": "GND",
+          "7": "INA_VIN_M",
+          "8": "INA_VIN_P"
+        },
+        "actual": {
+          "1": "GND",
+          "2": "GND",
+          "3": "SDA",
+          "4": "SCL",
+          "5": "SYS_3V3",
+          "6": "GND",
+          "7": "INA_VIN_M",
+          "8": "INA_VIN_P"
+        }
+      }
+    },
+    {
+      "name": "INA219 exact value/MPN/package and all variant fits U12",
+      "pass": true,
+      "detail": {
+        "physical_footprint": "Meshcore:SOIC-8_3.9x4.9mm_P1.27mm",
+        "expected_footprint": "Meshcore:SOIC-8_3.9x4.9mm_P1.27mm"
+      }
+    },
+    {
+      "name": "INA219 exact circuit nets R71",
+      "pass": true,
+      "detail": {
+        "expected": {
+          "1": "BAT_SYS",
+          "2": "BAT"
+        },
+        "actual": {
+          "1": "BAT_SYS",
+          "2": "BAT"
+        }
+      }
+    },
+    {
+      "name": "INA219 exact value/MPN/package and all variant fits R71",
+      "pass": true,
+      "detail": {
+        "physical_footprint": "Meshcore:R_2512_6332Metric",
+        "expected_footprint": "Meshcore:R_2512_6332Metric"
+      }
+    },
+    {
+      "name": "INA219 exact circuit nets R72",
+      "pass": true,
+      "detail": {
+        "expected": {
+          "1": "BAT_SYS",
+          "2": "INA_VIN_P"
+        },
+        "actual": {
+          "1": "BAT_SYS",
+          "2": "INA_VIN_P"
+        }
+      }
+    },
+    {
+      "name": "INA219 exact value/MPN/package and all variant fits R72",
+      "pass": true,
+      "detail": {
+        "physical_footprint": "Meshcore:R_0805_2012Metric",
+        "expected_footprint": "Meshcore:R_0805_2012Metric"
+      }
+    },
+    {
+      "name": "INA219 exact circuit nets R73",
+      "pass": true,
+      "detail": {
+        "expected": {
+          "1": "BAT",
+          "2": "INA_VIN_M"
+        },
+        "actual": {
+          "1": "BAT",
+          "2": "INA_VIN_M"
+        }
+      }
+    },
+    {
+      "name": "INA219 exact value/MPN/package and all variant fits R73",
+      "pass": true,
+      "detail": {
+        "physical_footprint": "Meshcore:R_0805_2012Metric",
+        "expected_footprint": "Meshcore:R_0805_2012Metric"
+      }
+    },
+    {
+      "name": "INA219 exact circuit nets C63",
+      "pass": true,
+      "detail": {
+        "expected": {
+          "1": "SYS_3V3",
+          "2": "GND"
+        },
+        "actual": {
+          "1": "SYS_3V3",
+          "2": "GND"
+        }
+      }
+    },
+    {
+      "name": "INA219 exact value/MPN/package and all variant fits C63",
+      "pass": true,
+      "detail": {
+        "physical_footprint": "Meshcore:C_0805_2012Metric",
+        "expected_footprint": "Meshcore:C_0805_2012Metric"
+      }
+    },
+    {
+      "name": "INA219 exact circuit nets C64",
+      "pass": true,
+      "detail": {
+        "expected": {
+          "1": "INA_VIN_P",
+          "2": "INA_VIN_M"
+        },
+        "actual": {
+          "1": "INA_VIN_P",
+          "2": "INA_VIN_M"
+        }
+      }
+    },
+    {
+      "name": "INA219 exact value/MPN/package and all variant fits C64",
+      "pass": true,
+      "detail": {
+        "physical_footprint": "Meshcore:C_0805_2012Metric",
+        "expected_footprint": "Meshcore:C_0805_2012Metric"
+      }
+    },
+    {
+      "name": "POWER exact new twelve-pin interconnect nets",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "LOGIC exact new twelve-pin interconnect nets",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Raw pack endpoints retain BAT before measurement shunt",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Returned SYS_3V3 powers only INA219 VS and its bypass on POWER",
+      "pass": true,
+      "detail": [
+        [
+          "C63",
+          "1"
+        ],
+        [
+          "J101",
+          "7"
+        ],
+        [
+          "U12",
+          "5"
+        ]
+      ]
+    },
+    {
+      "name": "INA219 address straps fix 7-bit address 0x40",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "J11 removable bridge remains FILTER_OUT to SYS_3V3",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "FakeTec INA219 uses existing M1 I2C pads15/16",
+      "pass": true,
+      "detail": null
+    }
+  ],
+  "new_INA219_positions": [
+    "U12",
+    "R71",
+    "R72",
+    "R73",
+    "C63",
+    "C64"
+  ],
   "model_selection_sync_pending_refs": []
 }

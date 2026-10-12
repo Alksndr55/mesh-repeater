@@ -1,0 +1,7 @@
+1
+2 3 4 5 6 7 8 1
+2 3 4 5 6 7 8 A
+BCDEFA
+BCDEFDate: 2026-10-11KiCad E.D.A. 10.0.6Rev: V2.0-A1Size: A3Id: 3/4Title: ATtiny13A / watchdogFile: Watchdog.kicad_schSheet: /3. Watchdog/Электрическая принципиальная; прототипR38
+1kC33100nF 50V X7RR39100kR37 0RR3310kPB5_/_RESET1PB3_/_TXEN_IN2PB43GND4PB0_/_RESET_OD_/_MOSI5 PB1_/_MISO6PB2_/_SCK7VCC8U6ATtiny13A-SSU1 12233445566J10AVR ISP 3V3R3610kWDT_MISO WDT_RESETWDT_SCK WDT_MISOWDT_MOSI_RESETWDT_MOSI_RESETSYS_3V3 WDT_RESETMCU_RESETSYS_3V3SYS_3V3WDT_SCK RADIO_TXEN0805RC0805FR-07100KLCL21B104KBCNNNCRC0805FR-0710KLRC0805FR-071KL08050805DS1021-2X5SF11-B V2.0-A1 / 2026-10-11 / инженерный прототипATtiny13A — внешний watchdog из пользовательского проекта0805 RC0805FR-0710KL2 x 3 / 2.54 mmTXEN HT-RA62 → R38 → PB3 (вывод 2). Контроль появления передач.SOIC-8 / 3.9 mmATTINY13A-SSUПлата питается сама: питание цели от программатора отключить. Для ISP снять R37.Сначала FLASH, затем LFUSE=0x7B / HFUSE=0xFB: 128 кГц, SUT ≈64 мс, BOD 2,7 В.Нет импульсов TXEN: 1350 тактов WDT по 8 с ≈ 3 ч; затем RESET ≈ 1 с.PB0 (вывод 5): только LOW или Hi-Z. RESET ATtiny (вывод 1) — отдельная цепь.BOD следит за SYS_3V3; порог EN батареи не меняется. Проверить восстановление и ток сна.J10: стандартный AVR ISP, уровни 3,3 В; SCK ≤ 10 кГц после установки fuse.Прошивка: watchdog/main.c. Штатное молчание радио более ≈3 ч также вызовет сброс.0805
+RC0805FR-070RL 0805J10 AVR ISP 3V3112233445566

@@ -48,7 +48,7 @@ def copy_if_absent(src, dst):
 
 
 def main():
-    assert ROOT.name == "Mesh_Repeater_2_0"
+    assert ROOT.name in {"Mesh_Repeater_2_0", "v2"}
     assert hashlib.sha256((BASE / "Meshcore_NaIon.kicad_pcb").read_bytes()).hexdigest() == PCB_SHA
     baseline = json.loads((BASE / "model.json").read_text(encoding="utf-8"))
     contract = json.loads(CONTRACT.read_text(encoding="utf-8"))

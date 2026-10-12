@@ -1,0 +1,95 @@
+{
+  "head": "547740fee937f891568f18485c7a6a3733c234c9",
+  "date": "2026-10-12",
+  "CAD_modified": false,
+  "input_sha256": {
+    "design\\MeshRepeater2_Power\\MeshRepeater2_Power.kicad_pcb": "dd40232294bc3bfd88565f6843400ad10a68220e472d3d6cb3d7ac200152cf64",
+    "design\\MeshRepeater2_Logic\\MeshRepeater2_Logic.kicad_pcb": "2750624dc6c2c7e8b50089e66e5d9eef9c29aa3ee28541f72f54186b58dc9ceb",
+    "design\\MeshRepeater2_Shield\\MeshRepeater2_Shield.kicad_pcb": "4ba1d2a7b47dd392b2ac79fa9a7e10fbf8e98be6b8a3423c813d8530ddb25147",
+    "baseline\\S4_16\\Meshcore_NaIon.kicad_pcb": "742ae27bb1d13893f6dc368e5c67f5c41b35a3e6765331fc7e9871297d23dec6"
+  },
+  "inputs_unchanged": true,
+  "findings": [
+    {
+      "id": "R1",
+      "severity": "P2",
+      "new_in_V2": true,
+      "title": "Excessive MOSI/MISO/reset detours with disrupted reference and additional transitions",
+      "geometry_confidence": "high",
+      "hardware_impact_confidence": "medium",
+      "total_net_mm": {
+        "MOSI_RF": 185.25595709376952,
+        "MISO_MCU": 121.65858291274932
+      },
+      "path_segment_sum_estimate_mm": {
+        "MOSI_RF": 171.08691911333113,
+        "MISO_MCU": 94.63721856198917,
+        "RADIO_RST": 102.41879502661799
+      },
+      "length_scope": "whole native segments selected by item connectivity; not exact electrical pin-to-pin path; all-net totals separate",
+      "worst_MOSI_nearest_return_barrel_mm": 6.020797289396148,
+      "signal_via_xy_mm": [
+        53,
+        21
+      ],
+      "GND_via_xy_mm": [
+        57.5,
+        25
+      ],
+      "fix": "Reserve central MCU to modem interface corridor; retain source resistors; shorten routes, reduce transitions, ensure continuous reference and nearby return vias; preserve GPIO."
+    },
+    {
+      "id": "R2",
+      "severity": "P2",
+      "new_in_V2": true,
+      "title": "B.Cu RADIO_RXEN cuts GND under ANT_RF",
+      "geometry_confidence": "high",
+      "hardware_impact_confidence": "medium",
+      "RXEN_xy_mm": [
+        [
+          37.4,
+          8.6
+        ],
+        [
+          49.2,
+          8.6
+        ]
+      ],
+      "RF_gap_xy_mm": [
+        [
+          42.72222222222222,
+          8.277777777777779
+        ],
+        [
+          42.08585858585858,
+          8.914141414141415
+        ]
+      ],
+      "gap_length_mm": 0.8999540851465151,
+      "baseline_has_continuous_B_GND": true,
+      "fix": "Move RXEN out of RF corridor and restore uninterrupted B.Cu GND; verify saved fill and RF measurements."
+    }
+  ],
+  "passed_native": {
+    "POWER_unconnected": 0,
+    "LOGIC_unconnected": 0,
+    "SHIELD_unconnected": 0,
+    "physical_GND_components": {
+      "POWER": 1,
+      "LOGIC": 1,
+      "SHIELD": 1
+    }
+  },
+  "report": "routing.md",
+  "evidence_png": [
+    "routing_spi_evidence.png",
+    "routing_rf_reference_gap.png"
+  ],
+  "detailed_metrics": [
+    "routing_native.json",
+    "routing_metrics.json",
+    "routing_focus.json"
+  ],
+  "hardware_tests_performed": false,
+  "EMI_or_IPC_certification_claimed": false
+}

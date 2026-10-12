@@ -1,0 +1,194 @@
+{
+  "status": "ACCEPTED_NATIVE_DRC_CLEAN",
+  "changes": [
+    {
+      "net": "FILTER_OUT",
+      "layer": "B.Cu",
+      "width_mm": 0.8,
+      "before_segments": 47,
+      "after_segments": 8,
+      "before_length_mm": 44.47056274847713,
+      "after_length_mm": 44.41198410471444,
+      "path_mm": [
+        [
+          64.2,
+          49.2
+        ],
+        [
+          62.6,
+          50.800000000000004
+        ],
+        [
+          62.6,
+          52.3
+        ],
+        [
+          64.80000000000001,
+          54.5
+        ],
+        [
+          73.2,
+          54.5
+        ],
+        [
+          76.1,
+          54.5
+        ],
+        [
+          77.6,
+          53.0
+        ],
+        [
+          84.4,
+          46.19999999999999
+        ],
+        [
+          84.4,
+          31.7
+        ]
+      ]
+    },
+    {
+      "net": "SYS_3V3",
+      "layer": "F.Cu",
+      "width_mm": 0.25,
+      "before_segments": 19,
+      "after_segments": 9,
+      "before_length_mm": 43.19604614807104,
+      "after_length_mm": 43.137467504308354,
+      "path_mm": [
+        [
+          71.8,
+          49.6
+        ],
+        [
+          70.5,
+          50.9
+        ],
+        [
+          70.5,
+          52.2
+        ],
+        [
+          71.1,
+          52.8
+        ],
+        [
+          77.4,
+          52.8
+        ],
+        [
+          78.1,
+          52.1
+        ],
+        [
+          78.1,
+          47.6
+        ],
+        [
+          88.4,
+          37.3
+        ],
+        [
+          88.4,
+          27.9
+        ],
+        [
+          86.0,
+          25.5
+        ]
+      ]
+    },
+    {
+      "net": "MODE",
+      "layer": "F.Cu",
+      "width_mm": 0.25,
+      "before_segments": 6,
+      "after_segments": 3,
+      "before_length_mm": 29.556854249492382,
+      "after_length_mm": 29.556854249492382,
+      "path_mm": [
+        [
+          76.8,
+          49.0
+        ],
+        [
+          75.4,
+          47.6
+        ],
+        [
+          51.5,
+          47.6
+        ],
+        [
+          48.9,
+          45.0
+        ]
+      ]
+    },
+    {
+      "net": "SDA",
+      "layer": "B.Cu",
+      "width_mm": 0.2,
+      "before_segments": 12,
+      "after_segments": 3,
+      "before_length_mm": 23.584062043356592,
+      "after_length_mm": 23.584062043356592,
+      "path_mm": [
+        [
+          74.3,
+          51.5
+        ],
+        [
+          75.6,
+          50.2
+        ],
+        [
+          75.6,
+          30.999999999999996
+        ],
+        [
+          73.8,
+          29.2
+        ]
+      ]
+    },
+    {
+      "net": "SCL",
+      "layer": "B.Cu",
+      "width_mm": 0.25,
+      "before_segments": 10,
+      "after_segments": 4,
+      "before_length_mm": 26.433809511662428,
+      "after_length_mm": 26.375230867899738,
+      "path_mm": [
+        [
+          76.8,
+          51.5
+        ],
+        [
+          76.8,
+          51.10000000000001
+        ],
+        [
+          83.2,
+          44.7
+        ],
+        [
+          83.2,
+          28.2
+        ],
+        [
+          82.9,
+          27.9
+        ]
+      ]
+    }
+  ],
+  "DRC_counts": {
+    "violations": 0,
+    "unconnected_items": 0,
+    "schematic_parity": 0
+  },
+  "native_sha256": "22d0846d23e70449a18a81b5f851e39405bd6c5ed943af45f5ca2fe7937db322"
+}

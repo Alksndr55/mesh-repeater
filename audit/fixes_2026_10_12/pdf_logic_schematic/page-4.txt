@@ -1,0 +1,11 @@
+1
+2 3 4 5 6 7 8 1
+2 3 4 5 6 7 8 A
+BCDEFA
+BCDEFDate: 2026-10-11KiCad E.D.A. 10.0.6Rev: V2.0-A1Size: A3Id: 4/4Title: Межплатное соединение / POWER ↔ LOGICFile: Interconnect.kicad_schSheet: /4. Interconnect/Электрическая принципиальная; прототип1
+2J11LC OUT - SYS 3V3GND1H201M3 GND contact1 1GND1H202M3 GND contactR211kTP7TP4GND
+1H204M3 GND contactGND1H203M3 GND contactFILTER_OUT
+1GND2FILTER_OUT3GND4FILTER_OUT5GND6FILTER_OUT7GND8BAT9GND10MODE11GND12J201INTERBOARD 12PSYS_3V3FILTER_OUT FILTER_OUTBATFILTER_OUTMODEFILTER_OUT RADIO_TXENSYS_3V3SYS_3V3MODE FILTER_OUTЭкран/стойки: 
+только GND/EMI; не обязательный силовой возврат.V2.0-A1 
+/ 2026-10-11 / инженерный прототипMesh Repeater 2.0 — LOGIC / межплатные соединенияДо USB снять J11; вернуть только после отключения USB.Полная распиновка и маршрут кабеля — interboard_connections.csv.DS1022-1x40RUF11-B
+IDC 2x6 / 2.54 / 90degR21 оставлен 1 кОм: RADIO_TXEN → R21 → MODE через кабель.J11: шунт установлен для АКБ/солнца.0805DS1013-12RSIB-B-0 RC0805FR-071KL1x2 / 2.54 / 90degJ201 INTERBOARD 12PFILTER_OUT1GND2FILTER_OUT3GND4FILTER_OUT5GND6FILTER_OUT7GND8BAT9GND10MODE11GND12

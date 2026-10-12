@@ -24,7 +24,8 @@ def build():
     s.sym('C8', 91.44, 64.77, 'CP_V')
     s.sym('D2', 163.83, 64.77, 'D_UP')
     s.sym('C4', right(276.86), 59.69, 'C_V')
-    s.sym('J8', right(278.13), 93.98)
+    if not MODEL.get('battery_monitor'):
+        s.sym('J8', right(278.13), 93.98)
 
     s.wire(('J7', 1), (38.10, 40.64), (38.10, rail_y), ('Q1', 2))
     s.global_stub('SOLAR',(86.36,rail_y),(86.36,33.02),(76.20,33.02));s.dot((86.36,rail_y))
@@ -48,9 +49,13 @@ def build():
         s.dot((238.76, rail_y))
     else:
         s.wire(('L1', 2), ('R1', 1))
-    s.wire(('R1', 2), (right(295.91), rail_y), (right(295.91), 91.44), ('J8', 1))
-    s.global_stub('BAT',(right(262.89),rail_y),(right(262.89),33.02),(right(252.73),33.02));s.dot((right(262.89),rail_y))
-    s.ground(('J8', 2))
+    if MODEL.get('battery_monitor'):
+        s.wire(('R1',2),(right(276.86),rail_y))
+    else:
+        s.wire(('R1', 2), (right(295.91), rail_y), (right(295.91), 91.44), ('J8', 1))
+        s.ground(('J8', 2))
+    battery_rail='BAT_SYS' if MODEL.get('battery_monitor') else 'BAT'
+    s.global_stub(battery_rail,(right(262.89),rail_y),(right(262.89),33.02),(right(252.73),33.02));s.dot((right(262.89),rail_y))
     s.wire((163.83, rail_y), ('D2', 1))
     s.dot((163.83, rail_y))
     s.ground(('D2', 2))
@@ -172,6 +177,6 @@ def build():
         s.text('R1 = 0,28 Ом / 1%: Iзар ≈ 714 мА; расчётный максимум ≈ 784 мА.',
                101.60, 184.15, 1.05)
     s.flag('SOLAR', 30.48, 179.07, 1)
-    s.flag('BAT', 58.42, 179.07, 2)
+    s.flag('BAT_SYS' if MODEL.get('battery_monitor') else 'BAT', 58.42, 179.07, 2)
     s.flag('GND', 86.36, 179.07, 3)
     return s

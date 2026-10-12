@@ -1,0 +1,250 @@
+{
+  "board": "LOGIC",
+  "source_sha256": "6cbd7850caa14163ebe4d40aba4435ac8fe17f327d68419dfb94e0a1bc361bc8",
+  "native_sha256": "e229ab660b7e6cfa3101dae11851f053540a413f12cd7e165e9405556f3334bd",
+  "pinmap": {
+    "1": "FILTER_OUT",
+    "2": "GND",
+    "3": "FILTER_OUT",
+    "4": "GND",
+    "5": "FILTER_OUT",
+    "6": "GND",
+    "7": "SYS_3V3",
+    "8": "GND",
+    "9": "BAT",
+    "10": "SDA",
+    "11": "MODE",
+    "12": "SCL"
+  },
+  "connector": {
+    "footprint": "Ali_PinSocket_2x06_P2.54_H8.5_v2_mirror",
+    "origin": [
+      64.15,
+      49
+    ],
+    "rotation": 90
+  },
+  "removed_local_branches": [],
+  "new_routes": [
+    {
+      "net": "SYS_3V3",
+      "width_mm": 0.5,
+      "start": [
+        2.5,
+        15.58
+      ],
+      "end": [
+        4.8,
+        17.24
+      ],
+      "segments": 2,
+      "vias": [],
+      "visited": 999
+    },
+    {
+      "net": "SYS_3V3",
+      "width_mm": 0.5,
+      "start": [
+        71.77,
+        49.0
+      ],
+      "end": [
+        50.9125,
+        38.035
+      ],
+      "segments": 6,
+      "vias": [],
+      "visited": 142041
+    },
+    {
+      "net": "MODE",
+      "width_mm": 0.25,
+      "start": [
+        48.9125,
+        45.0
+      ],
+      "end": [
+        76.85,
+        49.0
+      ],
+      "segments": 6,
+      "vias": [],
+      "visited": 7162
+    },
+    {
+      "net": "SCL",
+      "width_mm": 0.25,
+      "start": [
+        10.38,
+        28.66
+      ],
+      "end": [
+        76.85,
+        51.54
+      ],
+      "segments": 31,
+      "vias": [
+        [
+          8.200000000000001,
+          29.1
+        ]
+      ],
+      "visited": 211994
+    },
+    {
+      "net": "SCL",
+      "width_mm": 0.25,
+      "start": [
+        76.85,
+        51.54
+      ],
+      "end": [
+        86.0,
+        17.1
+      ],
+      "segments": 14,
+      "vias": [],
+      "visited": 47596
+    },
+    {
+      "net": "BAT",
+      "width_mm": 0.2,
+      "start": [
+        29.8,
+        19.9125
+      ],
+      "end": [
+        74.31,
+        49.0
+      ],
+      "segments": 38,
+      "vias": [
+        [
+          23.5,
+          21.6
+        ],
+        [
+          23.5,
+          25.5
+        ],
+        [
+          54.6,
+          32.6
+        ]
+      ],
+      "visited": 173225
+    },
+    {
+      "net": "FILTER_OUT",
+      "width_mm": 0.8,
+      "start": [
+        64.15,
+        49.0
+      ],
+      "end": [
+        66.69,
+        49.0
+      ],
+      "segments": 1,
+      "vias": [],
+      "visited": 26
+    },
+    {
+      "net": "FILTER_OUT",
+      "width_mm": 0.8,
+      "start": [
+        66.69,
+        49.0
+      ],
+      "end": [
+        69.23,
+        49.0
+      ],
+      "segments": 1,
+      "vias": [],
+      "visited": 26
+    },
+    {
+      "net": "FILTER_OUT",
+      "width_mm": 0.8,
+      "start": [
+        69.23,
+        49.0
+      ],
+      "end": [
+        86.0,
+        23.0
+      ],
+      "segments": 19,
+      "vias": [
+        [
+          66.5,
+          46.7
+        ],
+        [
+          83.0,
+          32.5
+        ]
+      ],
+      "visited": 94002
+    },
+    {
+      "net": "SDA",
+      "width_mm": 0.25,
+      "start": [
+        10.38,
+        31.2
+      ],
+      "end": [
+        74.31,
+        51.54
+      ],
+      "segments": 59,
+      "vias": [
+        [
+          11.8,
+          2.7
+        ],
+        [
+          39.300000000000004,
+          50.900000000000006
+        ]
+      ],
+      "visited": 219486
+    },
+    {
+      "net": "SDA",
+      "width_mm": 0.25,
+      "start": [
+        74.31,
+        51.54
+      ],
+      "end": [
+        83.0,
+        16.62
+      ],
+      "segments": 24,
+      "vias": [
+        [
+          88.4,
+          21.3
+        ]
+      ],
+      "visited": 74244
+    }
+  ],
+  "ISP_before_after": {
+    "xy": [
+      35.7,
+      31.3
+    ],
+    "angle": 0.0,
+    "uuid": "39f09937-e3d1-4dc3-8b77-3ebd6a6e8e4c"
+  },
+  "DRC_counts": {
+    "violations": 0,
+    "unconnected_items": 0,
+    "schematic_parity": 0
+  },
+  "DRC_violations": []
+}

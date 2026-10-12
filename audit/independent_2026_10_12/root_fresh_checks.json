@@ -1,0 +1,335 @@
+{
+  "commit": "547740fee937f891568f18485c7a6a3733c234c9",
+  "kicad_version": "10.0.6",
+  "tracked_file_count": 837,
+  "tracked_changes": [],
+  "checks": [
+    {
+      "id": "logic_erc",
+      "command": [
+        "C:\\Program Files\\KiCad\\10.0\\bin\\kicad-cli.exe",
+        "sch",
+        "erc",
+        "--format",
+        "json",
+        "--severity-all",
+        "--exit-code-violations",
+        "-o",
+        "C:\\Users\\Alksndr\\Desktop\\codex\\Meshcore\\projects\\Mesh_Repeater_2_0\\audit\\independent_2026_10_12\\logic_erc.json",
+        "C:\\Users\\Alksndr\\Desktop\\codex\\Meshcore\\projects\\Mesh_Repeater_2_0\\design\\MeshRepeater2_Logic\\MeshRepeater2_Logic.kicad_sch"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 7.437,
+      "stdout": "Найдено 0 нарушений\nОтчёт ERC сохранен в C:/Users/Alksndr/Desktop/codex/Meshcore/projects/Mesh_Repeater_2_0/audit/independent_2026_10_12/logic_erc.json\n",
+      "stderr": "",
+      "report_present": true,
+      "top_level_keys": [
+        "$schema",
+        "coordinate_units",
+        "date",
+        "ignored_checks",
+        "included_severities",
+        "kicad_version",
+        "sheets",
+        "source"
+      ],
+      "counts": {
+        "ignored_checks": 0,
+        "included_severities": 3,
+        "sheets": 4
+      },
+      "erc_items": 0,
+      "report_sha256": "735507eb59ded3d7117d1b3068f79dcab5e2a351a1be4aa06994b022d5b39adb"
+    },
+    {
+      "id": "logic_refill_drc",
+      "command": [
+        "C:\\Program Files\\KiCad\\10.0\\bin\\kicad-cli.exe",
+        "pcb",
+        "drc",
+        "--format",
+        "json",
+        "--severity-all",
+        "--all-track-errors",
+        "--exit-code-violations",
+        "-o",
+        "C:\\Users\\Alksndr\\Desktop\\codex\\Meshcore\\projects\\Mesh_Repeater_2_0\\audit\\independent_2026_10_12\\logic_refill_drc.json",
+        "--schematic-parity",
+        "--refill-zones",
+        "C:\\Users\\Alksndr\\Desktop\\codex\\Meshcore\\projects\\Mesh_Repeater_2_0\\design\\MeshRepeater2_Logic\\MeshRepeater2_Logic.kicad_pcb"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 8.797,
+      "stdout": "Найдено 0 нарушений\nНайдено 0 неподключенных элементов\nНайдено 0 проблем с соответствием схеме\nОтчет DRC сохранен в C:/Users/Alksndr/Desktop/codex/Meshcore/projects/Mesh_Repeater_2_0/audit/independent_2026_10_12/logic_refill_drc.json\n",
+      "stderr": "",
+      "report_present": true,
+      "top_level_keys": [
+        "$schema",
+        "coordinate_units",
+        "date",
+        "ignored_checks",
+        "included_severities",
+        "kicad_version",
+        "schematic_parity",
+        "source",
+        "unconnected_items",
+        "violations"
+      ],
+      "counts": {
+        "ignored_checks": 0,
+        "included_severities": 3,
+        "schematic_parity": 0,
+        "unconnected_items": 0,
+        "violations": 0
+      },
+      "report_sha256": "4eb8f1d140302f62d934a3da083a34eaabf05d494a2a9e6cd621a54169c66523"
+    },
+    {
+      "id": "logic_saved_drc",
+      "command": [
+        "C:\\Program Files\\KiCad\\10.0\\bin\\kicad-cli.exe",
+        "pcb",
+        "drc",
+        "--format",
+        "json",
+        "--severity-all",
+        "--all-track-errors",
+        "--exit-code-violations",
+        "-o",
+        "C:\\Users\\Alksndr\\Desktop\\codex\\Meshcore\\projects\\Mesh_Repeater_2_0\\audit\\independent_2026_10_12\\logic_saved_drc.json",
+        "--schematic-parity",
+        "C:\\Users\\Alksndr\\Desktop\\codex\\Meshcore\\projects\\Mesh_Repeater_2_0\\design\\MeshRepeater2_Logic\\MeshRepeater2_Logic.kicad_pcb"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 25.734,
+      "stdout": "Найдено 0 нарушений\nНайдено 0 неподключенных элементов\nНайдено 0 проблем с соответствием схеме\nОтчет DRC сохранен в C:/Users/Alksndr/Desktop/codex/Meshcore/projects/Mesh_Repeater_2_0/audit/independent_2026_10_12/logic_saved_drc.json\n",
+      "stderr": "",
+      "report_present": true,
+      "top_level_keys": [
+        "$schema",
+        "coordinate_units",
+        "date",
+        "ignored_checks",
+        "included_severities",
+        "kicad_version",
+        "schematic_parity",
+        "source",
+        "unconnected_items",
+        "violations"
+      ],
+      "counts": {
+        "ignored_checks": 0,
+        "included_severities": 3,
+        "schematic_parity": 0,
+        "unconnected_items": 0,
+        "violations": 0
+      },
+      "report_sha256": "b39d4d63cd865e8d241a4731ca2b7889ce8b7d7988aa1d9c7ec7c2034ef5d41e"
+    },
+    {
+      "id": "power_erc",
+      "command": [
+        "C:\\Program Files\\KiCad\\10.0\\bin\\kicad-cli.exe",
+        "sch",
+        "erc",
+        "--format",
+        "json",
+        "--severity-all",
+        "--exit-code-violations",
+        "-o",
+        "C:\\Users\\Alksndr\\Desktop\\codex\\Meshcore\\projects\\Mesh_Repeater_2_0\\audit\\independent_2026_10_12\\power_erc.json",
+        "C:\\Users\\Alksndr\\Desktop\\codex\\Meshcore\\projects\\Mesh_Repeater_2_0\\design\\MeshRepeater2_Power\\MeshRepeater2_Power.kicad_sch"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 9.625,
+      "stdout": "Найдено 0 нарушений\nОтчёт ERC сохранен в C:/Users/Alksndr/Desktop/codex/Meshcore/projects/Mesh_Repeater_2_0/audit/independent_2026_10_12/power_erc.json\n",
+      "stderr": "",
+      "report_present": true,
+      "top_level_keys": [
+        "$schema",
+        "coordinate_units",
+        "date",
+        "ignored_checks",
+        "included_severities",
+        "kicad_version",
+        "sheets",
+        "source"
+      ],
+      "counts": {
+        "ignored_checks": 0,
+        "included_severities": 3,
+        "sheets": 5
+      },
+      "erc_items": 0,
+      "report_sha256": "c930f3e6c02b6a9c3c9b035f1a3deb17de181ada735f3fcad5a44d1087bd015a"
+    },
+    {
+      "id": "power_refill_drc",
+      "command": [
+        "C:\\Program Files\\KiCad\\10.0\\bin\\kicad-cli.exe",
+        "pcb",
+        "drc",
+        "--format",
+        "json",
+        "--severity-all",
+        "--all-track-errors",
+        "--exit-code-violations",
+        "-o",
+        "C:\\Users\\Alksndr\\Desktop\\codex\\Meshcore\\projects\\Mesh_Repeater_2_0\\audit\\independent_2026_10_12\\power_refill_drc.json",
+        "--schematic-parity",
+        "--refill-zones",
+        "C:\\Users\\Alksndr\\Desktop\\codex\\Meshcore\\projects\\Mesh_Repeater_2_0\\design\\MeshRepeater2_Power\\MeshRepeater2_Power.kicad_pcb"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 37.625,
+      "stdout": "Найдено 0 нарушений\nНайдено 0 неподключенных элементов\nНайдено 0 проблем с соответствием схеме\nОтчет DRC сохранен в C:/Users/Alksndr/Desktop/codex/Meshcore/projects/Mesh_Repeater_2_0/audit/independent_2026_10_12/power_refill_drc.json\n",
+      "stderr": "",
+      "report_present": true,
+      "top_level_keys": [
+        "$schema",
+        "coordinate_units",
+        "date",
+        "ignored_checks",
+        "included_severities",
+        "kicad_version",
+        "schematic_parity",
+        "source",
+        "unconnected_items",
+        "violations"
+      ],
+      "counts": {
+        "ignored_checks": 0,
+        "included_severities": 3,
+        "schematic_parity": 0,
+        "unconnected_items": 0,
+        "violations": 0
+      },
+      "report_sha256": "a78e498621a2d1fe6279bd2f53f47533182b9bca30b05b9db3b59b04d4a60c38"
+    },
+    {
+      "id": "power_saved_drc",
+      "command": [
+        "C:\\Program Files\\KiCad\\10.0\\bin\\kicad-cli.exe",
+        "pcb",
+        "drc",
+        "--format",
+        "json",
+        "--severity-all",
+        "--all-track-errors",
+        "--exit-code-violations",
+        "-o",
+        "C:\\Users\\Alksndr\\Desktop\\codex\\Meshcore\\projects\\Mesh_Repeater_2_0\\audit\\independent_2026_10_12\\power_saved_drc.json",
+        "--schematic-parity",
+        "C:\\Users\\Alksndr\\Desktop\\codex\\Meshcore\\projects\\Mesh_Repeater_2_0\\design\\MeshRepeater2_Power\\MeshRepeater2_Power.kicad_pcb"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 35.75,
+      "stdout": "Найдено 0 нарушений\nНайдено 0 неподключенных элементов\nНайдено 0 проблем с соответствием схеме\nОтчет DRC сохранен в C:/Users/Alksndr/Desktop/codex/Meshcore/projects/Mesh_Repeater_2_0/audit/independent_2026_10_12/power_saved_drc.json\n",
+      "stderr": "",
+      "report_present": true,
+      "top_level_keys": [
+        "$schema",
+        "coordinate_units",
+        "date",
+        "ignored_checks",
+        "included_severities",
+        "kicad_version",
+        "schematic_parity",
+        "source",
+        "unconnected_items",
+        "violations"
+      ],
+      "counts": {
+        "ignored_checks": 0,
+        "included_severities": 3,
+        "schematic_parity": 0,
+        "unconnected_items": 0,
+        "violations": 0
+      },
+      "report_sha256": "2a90f2517ec5263b88723b5f7d4d31ac2af2c054fbca6458ade279419eaff037"
+    },
+    {
+      "id": "shield_refill_drc",
+      "command": [
+        "C:\\Program Files\\KiCad\\10.0\\bin\\kicad-cli.exe",
+        "pcb",
+        "drc",
+        "--format",
+        "json",
+        "--severity-all",
+        "--all-track-errors",
+        "--exit-code-violations",
+        "-o",
+        "C:\\Users\\Alksndr\\Desktop\\codex\\Meshcore\\projects\\Mesh_Repeater_2_0\\audit\\independent_2026_10_12\\shield_refill_drc.json",
+        "--refill-zones",
+        "C:\\Users\\Alksndr\\Desktop\\codex\\Meshcore\\projects\\Mesh_Repeater_2_0\\design\\MeshRepeater2_Shield\\MeshRepeater2_Shield.kicad_pcb"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 2.578,
+      "stdout": "Найдено 0 нарушений\nНайдено 0 неподключенных элементов\nОтчет DRC сохранен в C:/Users/Alksndr/Desktop/codex/Meshcore/projects/Mesh_Repeater_2_0/audit/independent_2026_10_12/shield_refill_drc.json\n",
+      "stderr": "",
+      "report_present": true,
+      "top_level_keys": [
+        "$schema",
+        "coordinate_units",
+        "date",
+        "ignored_checks",
+        "included_severities",
+        "kicad_version",
+        "schematic_parity",
+        "source",
+        "unconnected_items",
+        "violations"
+      ],
+      "counts": {
+        "ignored_checks": 0,
+        "included_severities": 3,
+        "schematic_parity": 0,
+        "unconnected_items": 0,
+        "violations": 0
+      },
+      "report_sha256": "3045c1649864098c1a1db140f65390d0bfe66f434d499cb3da75b625a1c2887d"
+    },
+    {
+      "id": "shield_saved_drc",
+      "command": [
+        "C:\\Program Files\\KiCad\\10.0\\bin\\kicad-cli.exe",
+        "pcb",
+        "drc",
+        "--format",
+        "json",
+        "--severity-all",
+        "--all-track-errors",
+        "--exit-code-violations",
+        "-o",
+        "C:\\Users\\Alksndr\\Desktop\\codex\\Meshcore\\projects\\Mesh_Repeater_2_0\\audit\\independent_2026_10_12\\shield_saved_drc.json",
+        "C:\\Users\\Alksndr\\Desktop\\codex\\Meshcore\\projects\\Mesh_Repeater_2_0\\design\\MeshRepeater2_Shield\\MeshRepeater2_Shield.kicad_pcb"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 6.093,
+      "stdout": "Найдено 0 нарушений\nНайдено 0 неподключенных элементов\nОтчет DRC сохранен в C:/Users/Alksndr/Desktop/codex/Meshcore/projects/Mesh_Repeater_2_0/audit/independent_2026_10_12/shield_saved_drc.json\n",
+      "stderr": "",
+      "report_present": true,
+      "top_level_keys": [
+        "$schema",
+        "coordinate_units",
+        "date",
+        "ignored_checks",
+        "included_severities",
+        "kicad_version",
+        "schematic_parity",
+        "source",
+        "unconnected_items",
+        "violations"
+      ],
+      "counts": {
+        "ignored_checks": 0,
+        "included_severities": 3,
+        "schematic_parity": 0,
+        "unconnected_items": 0,
+        "violations": 0
+      },
+      "report_sha256": "af4f4d2637d1ec46445bdd549a8f9b20b1f47eac3bbe43c06bfa105351208e0c"
+    }
+  ]
+}

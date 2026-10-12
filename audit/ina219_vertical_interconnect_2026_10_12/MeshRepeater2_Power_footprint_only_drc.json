@@ -1,0 +1,270 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-10-12T15:06:17",
+    "ignored_checks": [],
+    "included_severities": [
+        "error",
+        "warning",
+        "exclusion"
+    ],
+    "kicad_version": "10.0.6",
+    "schematic_parity": [],
+    "source": "MeshRepeater2_Power.kicad_pcb",
+    "unconnected_items": [],
+    "violations": [
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Надпись на плате 'L3' на F.Silkscreen",
+                    "pos": {
+                        "x": 58.0,
+                        "y": 15.425237
+                    },
+                    "uuid": "6d43f2c0-70c7-42e7-a12d-9c76cb8a8d9d"
+                },
+                {
+                    "description": "Конт. пл. 2 [GND] от U12 на F.Cu",
+                    "pos": {
+                        "x": 57.565,
+                        "y": 15.275
+                    },
+                    "uuid": "879467aa-4e14-4c5f-a317-bdc452b3ce0a"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Зазор шелкографии (ограничения настроек платы зазор 0,1000 mm; текущий 0,0772 mm)",
+            "items": [
+                {
+                    "description": "Надпись на плате 'R68\n1k' на B.Silkscreen",
+                    "pos": {
+                        "x": 79.5,
+                        "y": 16.8
+                    },
+                    "uuid": "631efe21-bf65-4e66-b681-fa6d17a7af83"
+                },
+                {
+                    "description": "Надпись на плате '1/3/5 OUT | 2/4/6/8 GND' на B.Silkscreen",
+                    "pos": {
+                        "x": 70.5,
+                        "y": 14.7
+                    },
+                    "uuid": "947846a1-a30e-4088-8d4c-42de51e12b94"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Зазор шелкографии (ограничения настроек платы зазор 0,1000 mm; текущий 0,0804 mm)",
+            "items": [
+                {
+                    "description": "Надпись на плате 'R68\n1k' на B.Silkscreen",
+                    "pos": {
+                        "x": 79.5,
+                        "y": 16.8
+                    },
+                    "uuid": "631efe21-bf65-4e66-b681-fa6d17a7af83"
+                },
+                {
+                    "description": "Надпись на плате '7 3V3 | 9 BAT | 10 SDA' на B.Silkscreen",
+                    "pos": {
+                        "x": 70.5,
+                        "y": 16.0
+                    },
+                    "uuid": "e4e4acce-99dc-48f3-93c4-d96752b3f50a"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Зазор шелкографии (ограничения настроек платы зазор 0,1000 mm; текущий 0,0000 mm)",
+            "items": [
+                {
+                    "description": "Сегмент от R72 на B.Silkscreen",
+                    "pos": {
+                        "x": 53.772936,
+                        "y": 11.465
+                    },
+                    "uuid": "2bcff525-29bd-41b5-9d95-589fae926251"
+                },
+                {
+                    "description": "Надпись на плате 'G8 x1.5' на B.Silkscreen",
+                    "pos": {
+                        "x": 55.019047,
+                        "y": 11.099428
+                    },
+                    "uuid": "728ecf8e-5ecf-4a5c-8f86-6d27f5b271ed"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Зазор шелкографии (ограничения настроек платы зазор 0,1000 mm; текущий 0,0193 mm)",
+            "items": [
+                {
+                    "description": "Сегмент от R73 на B.Silkscreen",
+                    "pos": {
+                        "x": 53.772936,
+                        "y": 10.535
+                    },
+                    "uuid": "6390379d-f860-4931-96e3-b3ebc2830f82"
+                },
+                {
+                    "description": "Надпись на плате 'G8 x1.5' на B.Silkscreen",
+                    "pos": {
+                        "x": 55.019047,
+                        "y": 11.099428
+                    },
+                    "uuid": "728ecf8e-5ecf-4a5c-8f86-6d27f5b271ed"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Зазор шелкографии (ограничения настроек платы зазор 0,1000 mm; текущий 0,0640 mm)",
+            "items": [
+                {
+                    "description": "Сегмент от C64 на B.Silkscreen",
+                    "pos": {
+                        "x": 57.065,
+                        "y": 7.961252
+                    },
+                    "uuid": "acc2be75-5fe6-4446-bd7b-ea5e2c1f97cb"
+                },
+                {
+                    "description": "Надпись на плате 'R11\n10k' на B.Silkscreen",
+                    "pos": {
+                        "x": 56.0,
+                        "y": 7.0
+                    },
+                    "uuid": "de5928f6-14bf-4dad-b753-610abe8f3adb"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Надпись на плате 'G8 x1.5' на B.Silkscreen",
+                    "pos": {
+                        "x": 55.019047,
+                        "y": 11.099428
+                    },
+                    "uuid": "728ecf8e-5ecf-4a5c-8f86-6d27f5b271ed"
+                },
+                {
+                    "description": "Конт. пл. 2 [Net-(U12-IN+)] от R72 на B.Cu",
+                    "pos": {
+                        "x": 54.9125,
+                        "y": 12.2
+                    },
+                    "uuid": "a174775f-ba75-4e36-a08b-f406d4768114"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Надпись на плате 'G8 x1.5' на B.Silkscreen",
+                    "pos": {
+                        "x": 55.019047,
+                        "y": 11.099428
+                    },
+                    "uuid": "728ecf8e-5ecf-4a5c-8f86-6d27f5b271ed"
+                },
+                {
+                    "description": "Конт. пл. 1 [BAT_SYS] от R72 на B.Cu",
+                    "pos": {
+                        "x": 53.0875,
+                        "y": 12.2
+                    },
+                    "uuid": "24c433b0-5dea-4525-ae66-131279dc3b3c"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Надпись на плате 'R48\n120k' на B.Silkscreen",
+                    "pos": {
+                        "x": 52.049999,
+                        "y": 14.0
+                    },
+                    "uuid": "5d94021a-3830-4011-a3c4-a6a4165810eb"
+                },
+                {
+                    "description": "Конт. пл. 1 [BAT_SYS] от R72 на B.Cu",
+                    "pos": {
+                        "x": 53.0875,
+                        "y": 12.2
+                    },
+                    "uuid": "24c433b0-5dea-4525-ae66-131279dc3b3c"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Надпись на плате 'R11\n10k' на B.Silkscreen",
+                    "pos": {
+                        "x": 56.0,
+                        "y": 7.0
+                    },
+                    "uuid": "de5928f6-14bf-4dad-b753-610abe8f3adb"
+                },
+                {
+                    "description": "Конт. пл. 2 [Net-(U12-IN-)] от C64 на B.Cu",
+                    "pos": {
+                        "x": 57.8,
+                        "y": 6.75
+                    },
+                    "uuid": "4ebf3210-16d3-4b30-a3b9-45a5694e1b3d"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Надпись на плате 'R11\n10k' на B.Silkscreen",
+                    "pos": {
+                        "x": 56.0,
+                        "y": 7.0
+                    },
+                    "uuid": "de5928f6-14bf-4dad-b753-610abe8f3adb"
+                },
+                {
+                    "description": "Конт. пл. 1 [Net-(U12-IN+)] от C64 на B.Cu",
+                    "pos": {
+                        "x": 57.8,
+                        "y": 8.65
+                    },
+                    "uuid": "3fced56b-301c-418d-8b2c-b2f098e4eddd"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        }
+    ]
+}

@@ -10,6 +10,7 @@ import hashlib
 import json
 import math
 import gzip
+from datetime import date
 
 ROOT=Path(__file__).resolve().parents[2]
 
@@ -122,12 +123,27 @@ def main():
             hardware.append(add(f'M3x6_top_screw_{idx+1}_envelope',screw,(.73,.74,.77)))
         if not exploded:
             assembled_shapes=boards
+            direct_vertical=(ROOT/'design/feature_ina219_vertical.json').is_file()
+            # The declared long header intentionally crosses the middle board.
+            # Its narrow XY envelope is excluded only from the conservative
+            # vertical-gap summary; every solid remains in Boolean collisions.
+            pass_window=(61.5,-13.2,79.6,-6.3)
+            nonpassing=[];passing=[]
+            for solid in boards['POWER'].Solids:
+                sb=solid.BoundBox
+                in_window=(pass_window[0]<=sb.XMin and sb.XMax<=pass_window[2] and pass_window[1]<=sb.YMin and sb.YMax<=pass_window[3])
+                if direct_vertical and in_window and sb.ZMax>st['shield_bottom_z']:
+                    passing.append(solid)
+                else:nonpassing.append(solid)
+            nonpassing_z=max(s.BoundBox.ZMax for s in nonpassing)
             vertical_clearances={
                 'power_max_native_component_height_mm':boards['POWER'].BoundBox.ZMax-st['power_pcb_top_z'],
                 'power_envelope_to_screen_mm':boards['SHIELD'].BoundBox.ZMin-boards['POWER'].BoundBox.ZMax,
                 'logic_max_native_component_height_mm':st['logic_component_face_z']-boards['LOGIC'].BoundBox.ZMin,
                 'logic_envelope_to_screen_mm':boards['LOGIC'].BoundBox.ZMin-boards['SHIELD'].BoundBox.ZMax,
-                'note':'Whole-export vertical envelope gaps are conservative. Values apply to the supplied models; undocumented NiceNano, SMA and modem models remain approximate.'}
+                'power_nonpassing_envelope_to_screen_mm':boards['SHIELD'].BoundBox.ZMin-nonpassing_z,
+                'intentional_header_passage':{'active':direct_vertical,'excluded_solids_from_gap_only':len(passing),'window_xy_mm':list(pass_window),'Boolean_collision_check_includes_all_solids':True},
+                'note':'Long header pins cross the screen through declared NPTH holes; a negative whole-export gap is expected. Ordinary component clearance and full BRep intersections are checked separately. Undocumented NiceNano, SMA and modem models remain approximate.'}
             collisions=[]
             for na,nb in [('POWER','SHIELD'),('SHIELD','LOGIC'),('POWER','LOGIC')]:
                 ba,bb=boards[na].BoundBox,boards[nb].BoundBox
@@ -136,9 +152,18 @@ def main():
                     volume=0.0
                     method='Disjoint axis-aligned bounding boxes prove no intersection.'
                 else:
-                    common=boards[na].common(boards[nb])
-                    volume=common.Volume if not common.isNull() else 0.0
-                    method='Native BRep Boolean intersection.'
+                    # The new long posts overlap the other exports' broad
+                    # envelopes. Check every potentially touching solid pair,
+                    # rather than Boolean thousands of distant copper solids.
+                    left=[(solid,solid.BoundBox)for solid in boards[na].Solids]
+                    right=[(solid,solid.BoundBox)for solid in boards[nb].Solids]
+                    volume=0.;candidate_count=0
+                    for sa,aa in left:
+                        for sb,bb in right:
+                            if aa.XMax<=bb.XMin or bb.XMax<=aa.XMin or aa.YMax<=bb.YMin or bb.YMax<=aa.YMin or aa.ZMax<=bb.ZMin or bb.ZMax<=aa.ZMin:continue
+                            candidate_count+=1;common=sa.common(sb)
+                            volume+=common.Volume if not common.isNull() else 0.
+                    method=f'Native BRep Boolean of every overlapping solid pair ({candidate_count}); disjoint pairs rejected by bounding boxes. Volume sum is conservative if solids overlap internally.'
                 collisions.append({'a':na,'b':nb,'intersecting_volume_mm3':volume,'pass':volume<1e-6,'method':method})
             hardware_clearances=[]
             for name in ('POWER','LOGIC'):
@@ -204,10 +229,10 @@ def main():
             except Exception as e:svg_error=str(e)
         reports[stem]={'bbox_mm':[bb.XMin,bb.YMin,bb.ZMin,bb.XMax,bb.YMax,bb.ZMax],
                        'pcb_intersections':collisions,'vertical_envelope_clearances':vertical_clearances,'hardware_to_component_clearances':hardware_clearances,'edge_svg_requested':a.edge_svg,'edge_svg_error':svg_error,'includes':['Native PCB STEP components','Standoff, washer, screw and nut outer envelopes'],
-                       'excludes':['External harness and female connector mating','Thread profiles and unmeasured usable female thread depth'],
-                       'qualification':'Native PCB geometry and a nominal mechanical stack only. Actual modules, threaded fasteners and harness mating are not qualified by these models.'}
+                       'excludes':['External harness','Thread profiles and unmeasured usable female thread depth','Actual spring-contact engagement and connector manufacturing tolerances'],
+                       'qualification':'Native PCB geometry including nominal vertical male/female envelopes and a nominal mechanical stack. Actual modules, threaded fasteners and Ali connector mating require a physical sample.'}
         App.closeDocument(doc.Name)
-    result={'date':'2026-10-11','inputs':inputs,'coordinate_convention':'CAD X = native PCB X; CAD Y = −physical PCB Y; CAD Z points up. LOGIC and SHIELD rotate 180° about X.',
+    result={'date':date.today().isoformat(),'inputs':inputs,'coordinate_convention':'CAD X = native PCB X; CAD Y = −physical PCB Y; CAD Z points up. LOGIC and SHIELD rotate 180° about X.',
             'stack_source':'docs/mechanical_selection.json','stack_contract_sha256':hashlib.sha256((ROOT/'docs/mechanical_selection.json').read_bytes()).hexdigest(),'artifacts':reports}
     (a.out/'assembly_geometry_report.json').write_text(json.dumps(result,indent=2),encoding='utf-8')
     print(json.dumps(result,indent=2))

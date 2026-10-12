@@ -1,0 +1,48 @@
+{
+  "native_input_sha256": "6cbd7850caa14163ebe4d40aba4435ac8fe17f327d68419dfb94e0a1bc361bc8",
+  "native_unchanged": true,
+  "probe_not_deliverable": true,
+  "probe_file": "audit\\fixes_2026_10_12\\reviewer_rf_negative\\reviewer_RF_negative_probe.kicad_pcb",
+  "added_track_uuid": "6dd09f92-5ee5-4d5c-9a12-c21bd5d43b8a",
+  "controlled_geometry": {
+    "netcode": 45,
+    "start": [
+      37.4,
+      8.6
+    ],
+    "end": [
+      49.2,
+      8.6
+    ],
+    "width_mm": 0.25,
+    "layer": "B.Cu"
+  },
+  "rule_input_sha256": "90c9b0a954772947bd20337728bd640235bb508fba68315a820b7ea3f791c783",
+  "pro_input_sha256": "6b2143e9ee1c0ab33f29390652732cd7be74381df98d50c087c77630234d8144",
+  "library_context": "Original fp-lib-table copied with KIPRJMOD rebased to unchanged native library; avoids unrelated relocated-library warnings.",
+  "DRC_exit_code": 0,
+  "disallowed_items_for_controlled_segment": [
+    {
+      "description": "Элементы запрещены (правило 'RF opposite layer permits GND and RF only')",
+      "items": [
+        {
+          "description": "Дорожка [/RADIO_RXEN] на B.Cu, длина 11,8000 mm",
+          "pos": {
+            "x": 37.4,
+            "y": 8.6
+          },
+          "uuid": "6dd09f92-5ee5-4d5c-9a12-c21bd5d43b8a"
+        }
+      ],
+      "severity": "error",
+      "type": "items_not_allowed"
+    }
+  ],
+  "all_violation_types": [
+    "items_not_allowed",
+    "clearance"
+  ],
+  "stdout": "Найдено 2 нарушений\nНайдено 1 неподключенных элементов\nОтчет DRC сохранен в C:/Users/Alksndr/Desktop/codex/Meshcore/projects/Mesh_Repeater_2_0/audit/fixes_2026_10_12/reviewer_RF_negative_drc.json\n",
+  "stderr": "",
+  "status": "PASS"
+}

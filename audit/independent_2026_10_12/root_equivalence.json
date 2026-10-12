@@ -1,0 +1,361 @@
+{
+  "method": "Fresh SOURCE native XML; merged POWER/LOGIC net components through twelve physical 1:1 cable contacts. No generator contract used.",
+  "source_pins_retained": 435,
+  "source_groups": 102,
+  "v2_groups": 102,
+  "missing_pins": [],
+  "missing_groups": [],
+  "extra_groups": [],
+  "removed_refs": [
+    "SH1"
+  ],
+  "bom_variant_differences": [],
+  "native_variant_differences": [],
+  "J11_removed_FILTER_SYS_separate": true,
+  "source_export": {
+    "command": [
+      "C:\\Program Files\\KiCad\\10.0\\bin\\kicad-cli.exe",
+      "sch",
+      "export",
+      "netlist",
+      "--format",
+      "kicadxml",
+      "-o",
+      "C:\\Users\\Alksndr\\Desktop\\codex\\Meshcore\\projects\\Mesh_Repeater_2_0\\audit\\independent_2026_10_12\\root_source.xml",
+      "C:\\Users\\Alksndr\\Desktop\\codex\\Meshcore\\projects\\Mesh_Repeater_2_0\\baseline\\S4_16\\Meshcore_NaIon.kicad_sch"
+    ],
+    "stdout": "",
+    "stderr": ""
+  },
+  "inputs": {
+    "baseline\\S4_16\\Meshcore_NaIon.kicad_sch": "c04694c0ad3fccbf6028c7eaa74d5f14d75b21a1cdb68d1166b60d1c36a06105",
+    "audit\\independent_2026_10_12\\root_source.xml": "3710ef4e1f7f64caf9eca3687642f1a1549510676b139952709b268771d59e8b",
+    "audit\\independent_2026_10_12\\electrical.power.xml": "e37974ebd73a63860f2efddbce70930e674139058867dff0db356e9e8d477aad",
+    "audit\\independent_2026_10_12\\electrical.logic.xml": "35f7adcd39d663695f2721a999c3ecf06c3f1fbff717e11b79485eb883ab9166",
+    "bom\\V2_COMPONENT_BOM.csv": "a16dc5dc76ce541ad15de3193ce359ae23a9f02d0c275ba0d78183dfc0ec6dc8",
+    "baseline\\S4_16\\assembly_variants_S4_16.csv": "0bd6e07934ff43afe863390921fbc0a408fda380e6b0be5e385cbcee41dab91a"
+  },
+  "pass": true,
+  "documented_mechanical_exceptions": [
+    {
+      "ref": "J11",
+      "field": "MPN_NaIon",
+      "source": "DS1021-1X40SF11-B",
+      "bom": "Connfly DS1022-1x40RUF11-B cut to2pins",
+      "native": "Connfly DS1022-1x40RUF11-B cut to2pins",
+      "reason": "Side-access component selection or grounded M3 clamp land required by V2 task"
+    },
+    {
+      "ref": "J11",
+      "field": "MPN_NaIon_NoCold",
+      "source": "DS1021-1X40SF11-B",
+      "bom": "Connfly DS1022-1x40RUF11-B cut to2pins",
+      "native": "Connfly DS1022-1x40RUF11-B cut to2pins",
+      "reason": "Side-access component selection or grounded M3 clamp land required by V2 task"
+    },
+    {
+      "ref": "J11",
+      "field": "MPN_LTO_2S",
+      "source": "DS1021-1X40SF11-B",
+      "bom": "Connfly DS1022-1x40RUF11-B cut to2pins",
+      "native": "Connfly DS1022-1x40RUF11-B cut to2pins",
+      "reason": "Side-access component selection or grounded M3 clamp land required by V2 task"
+    },
+    {
+      "ref": "J3",
+      "field": "MPN_NaIon",
+      "source": "DS1021-1X40SF11-B",
+      "bom": "DS1022-1x40RUF11-B cut to4pins",
+      "native": "DS1022-1x40RUF11-B cut to4pins",
+      "reason": "Side-access component selection or grounded M3 clamp land required by V2 task"
+    },
+    {
+      "ref": "J3",
+      "field": "MPN_NaIon_NoCold",
+      "source": "DS1021-1X40SF11-B",
+      "bom": "DS1022-1x40RUF11-B cut to4pins",
+      "native": "DS1022-1x40RUF11-B cut to4pins",
+      "reason": "Side-access component selection or grounded M3 clamp land required by V2 task"
+    },
+    {
+      "ref": "J3",
+      "field": "MPN_LTO_2S",
+      "source": "DS1021-1X40SF11-B",
+      "bom": "DS1022-1x40RUF11-B cut to4pins",
+      "native": "DS1022-1x40RUF11-B cut to4pins",
+      "reason": "Side-access component selection or grounded M3 clamp land required by V2 task"
+    },
+    {
+      "ref": "J5",
+      "field": "MPN_NaIon",
+      "source": "DS1021-1X40SF11-B",
+      "bom": "DS1022-1x40RUF11-B cut to4pins",
+      "native": "DS1022-1x40RUF11-B cut to4pins",
+      "reason": "Side-access component selection or grounded M3 clamp land required by V2 task"
+    },
+    {
+      "ref": "J5",
+      "field": "MPN_NaIon_NoCold",
+      "source": "DS1021-1X40SF11-B",
+      "bom": "DS1022-1x40RUF11-B cut to4pins",
+      "native": "DS1022-1x40RUF11-B cut to4pins",
+      "reason": "Side-access component selection or grounded M3 clamp land required by V2 task"
+    },
+    {
+      "ref": "J5",
+      "field": "MPN_LTO_2S",
+      "source": "DS1021-1X40SF11-B",
+      "bom": "DS1022-1x40RUF11-B cut to4pins",
+      "native": "DS1022-1x40RUF11-B cut to4pins",
+      "reason": "Side-access component selection or grounded M3 clamp land required by V2 task"
+    },
+    {
+      "ref": "SW1",
+      "field": "MPN_NaIon",
+      "source": "KLS7-TS6604-4.3-180",
+      "bom": "TE1825027-2 / FSMRA1JH04",
+      "native": "TE1825027-2 / FSMRA1JH04",
+      "reason": "Side-access component selection or grounded M3 clamp land required by V2 task"
+    },
+    {
+      "ref": "SW1",
+      "field": "MPN_NaIon_NoCold",
+      "source": "KLS7-TS6604-4.3-180",
+      "bom": "TE1825027-2 / FSMRA1JH04",
+      "native": "TE1825027-2 / FSMRA1JH04",
+      "reason": "Side-access component selection or grounded M3 clamp land required by V2 task"
+    },
+    {
+      "ref": "SW1",
+      "field": "MPN_LTO_2S",
+      "source": "KLS7-TS6604-4.3-180",
+      "bom": "TE1825027-2 / FSMRA1JH04",
+      "native": "TE1825027-2 / FSMRA1JH04",
+      "reason": "Side-access component selection or grounded M3 clamp land required by V2 task"
+    },
+    {
+      "ref": "SW2",
+      "field": "MPN_NaIon",
+      "source": "KLS7-TS6604-4.3-180",
+      "bom": "TE1825027-2 / FSMRA1JH04",
+      "native": "TE1825027-2 / FSMRA1JH04",
+      "reason": "Side-access component selection or grounded M3 clamp land required by V2 task"
+    },
+    {
+      "ref": "SW2",
+      "field": "MPN_NaIon_NoCold",
+      "source": "KLS7-TS6604-4.3-180",
+      "bom": "TE1825027-2 / FSMRA1JH04",
+      "native": "TE1825027-2 / FSMRA1JH04",
+      "reason": "Side-access component selection or grounded M3 clamp land required by V2 task"
+    },
+    {
+      "ref": "SW2",
+      "field": "MPN_LTO_2S",
+      "source": "KLS7-TS6604-4.3-180",
+      "bom": "TE1825027-2 / FSMRA1JH04",
+      "native": "TE1825027-2 / FSMRA1JH04",
+      "reason": "Side-access component selection or grounded M3 clamp land required by V2 task"
+    },
+    {
+      "ref": "J7",
+      "field": "MPN_NaIon",
+      "source": "DS1021-1X40SF11-B",
+      "bom": "JST S2B-XH-A(LF)(SN)",
+      "native": "JST S2B-XH-A(LF)(SN)",
+      "reason": "Side-access component selection or grounded M3 clamp land required by V2 task"
+    },
+    {
+      "ref": "J7",
+      "field": "MPN_NaIon_NoCold",
+      "source": "DS1021-1X40SF11-B",
+      "bom": "JST S2B-XH-A(LF)(SN)",
+      "native": "JST S2B-XH-A(LF)(SN)",
+      "reason": "Side-access component selection or grounded M3 clamp land required by V2 task"
+    },
+    {
+      "ref": "J7",
+      "field": "MPN_LTO_2S",
+      "source": "DS1021-1X40SF11-B",
+      "bom": "JST S2B-XH-A(LF)(SN)",
+      "native": "JST S2B-XH-A(LF)(SN)",
+      "reason": "Side-access component selection or grounded M3 clamp land required by V2 task"
+    },
+    {
+      "ref": "J8",
+      "field": "MPN_NaIon",
+      "source": "DS1021-1X40SF11-B",
+      "bom": "JST S2B-XH-A(LF)(SN)",
+      "native": "JST S2B-XH-A(LF)(SN)",
+      "reason": "Side-access component selection or grounded M3 clamp land required by V2 task"
+    },
+    {
+      "ref": "J8",
+      "field": "MPN_NaIon_NoCold",
+      "source": "DS1021-1X40SF11-B",
+      "bom": "JST S2B-XH-A(LF)(SN)",
+      "native": "JST S2B-XH-A(LF)(SN)",
+      "reason": "Side-access component selection or grounded M3 clamp land required by V2 task"
+    },
+    {
+      "ref": "J8",
+      "field": "MPN_LTO_2S",
+      "source": "DS1021-1X40SF11-B",
+      "bom": "JST S2B-XH-A(LF)(SN)",
+      "native": "JST S2B-XH-A(LF)(SN)",
+      "reason": "Side-access component selection or grounded M3 clamp land required by V2 task"
+    },
+    {
+      "ref": "H1",
+      "field": "Value_NaIon",
+      "source": "M3 NPTH",
+      "bom": "M3 NPTH",
+      "native": "M3 GND contact",
+      "reason": "Side-access component selection or grounded M3 clamp land required by V2 task"
+    },
+    {
+      "ref": "H1",
+      "field": "MPN_NaIon",
+      "source": "",
+      "bom": "PCB land M3 GND OD6 drill3.2",
+      "native": "PCB land M3 GND OD6 drill3.2",
+      "reason": "Side-access component selection or grounded M3 clamp land required by V2 task"
+    },
+    {
+      "ref": "H1",
+      "field": "MPN_NaIon_NoCold",
+      "source": "",
+      "bom": "PCB land M3 GND OD6 drill3.2",
+      "native": "PCB land M3 GND OD6 drill3.2",
+      "reason": "Side-access component selection or grounded M3 clamp land required by V2 task"
+    },
+    {
+      "ref": "H1",
+      "field": "MPN_LTO_2S",
+      "source": "",
+      "bom": "PCB land M3 GND OD6 drill3.2",
+      "native": "PCB land M3 GND OD6 drill3.2",
+      "reason": "Side-access component selection or grounded M3 clamp land required by V2 task"
+    },
+    {
+      "ref": "H2",
+      "field": "Value_NaIon",
+      "source": "M3 NPTH",
+      "bom": "M3 NPTH",
+      "native": "M3 GND contact",
+      "reason": "Side-access component selection or grounded M3 clamp land required by V2 task"
+    },
+    {
+      "ref": "H2",
+      "field": "MPN_NaIon",
+      "source": "",
+      "bom": "PCB land M3 GND OD6 drill3.2",
+      "native": "PCB land M3 GND OD6 drill3.2",
+      "reason": "Side-access component selection or grounded M3 clamp land required by V2 task"
+    },
+    {
+      "ref": "H2",
+      "field": "MPN_NaIon_NoCold",
+      "source": "",
+      "bom": "PCB land M3 GND OD6 drill3.2",
+      "native": "PCB land M3 GND OD6 drill3.2",
+      "reason": "Side-access component selection or grounded M3 clamp land required by V2 task"
+    },
+    {
+      "ref": "H2",
+      "field": "MPN_LTO_2S",
+      "source": "",
+      "bom": "PCB land M3 GND OD6 drill3.2",
+      "native": "PCB land M3 GND OD6 drill3.2",
+      "reason": "Side-access component selection or grounded M3 clamp land required by V2 task"
+    },
+    {
+      "ref": "H3",
+      "field": "Value_NaIon",
+      "source": "M3 NPTH",
+      "bom": "M3 NPTH",
+      "native": "M3 GND contact",
+      "reason": "Side-access component selection or grounded M3 clamp land required by V2 task"
+    },
+    {
+      "ref": "H3",
+      "field": "MPN_NaIon",
+      "source": "",
+      "bom": "PCB land M3 GND OD6 drill3.2",
+      "native": "PCB land M3 GND OD6 drill3.2",
+      "reason": "Side-access component selection or grounded M3 clamp land required by V2 task"
+    },
+    {
+      "ref": "H3",
+      "field": "MPN_NaIon_NoCold",
+      "source": "",
+      "bom": "PCB land M3 GND OD6 drill3.2",
+      "native": "PCB land M3 GND OD6 drill3.2",
+      "reason": "Side-access component selection or grounded M3 clamp land required by V2 task"
+    },
+    {
+      "ref": "H3",
+      "field": "MPN_LTO_2S",
+      "source": "",
+      "bom": "PCB land M3 GND OD6 drill3.2",
+      "native": "PCB land M3 GND OD6 drill3.2",
+      "reason": "Side-access component selection or grounded M3 clamp land required by V2 task"
+    },
+    {
+      "ref": "H4",
+      "field": "Value_NaIon",
+      "source": "M3 NPTH",
+      "bom": "M3 NPTH",
+      "native": "M3 GND contact",
+      "reason": "Side-access component selection or grounded M3 clamp land required by V2 task"
+    },
+    {
+      "ref": "H4",
+      "field": "MPN_NaIon",
+      "source": "",
+      "bom": "PCB land M3 GND OD6 drill3.2",
+      "native": "PCB land M3 GND OD6 drill3.2",
+      "reason": "Side-access component selection or grounded M3 clamp land required by V2 task"
+    },
+    {
+      "ref": "H4",
+      "field": "MPN_NaIon_NoCold",
+      "source": "",
+      "bom": "PCB land M3 GND OD6 drill3.2",
+      "native": "PCB land M3 GND OD6 drill3.2",
+      "reason": "Side-access component selection or grounded M3 clamp land required by V2 task"
+    },
+    {
+      "ref": "H4",
+      "field": "MPN_LTO_2S",
+      "source": "",
+      "bom": "PCB land M3 GND OD6 drill3.2",
+      "native": "PCB land M3 GND OD6 drill3.2",
+      "reason": "Side-access component selection or grounded M3 clamp land required by V2 task"
+    },
+    {
+      "ref": "J12",
+      "field": "MPN_NaIon",
+      "source": "DS1021-1X40SF11-B",
+      "bom": "KLS L-KLS1-2.50-04-R",
+      "native": "KLS L-KLS1-2.50-04-R",
+      "reason": "Side-access component selection or grounded M3 clamp land required by V2 task"
+    },
+    {
+      "ref": "J12",
+      "field": "MPN_NaIon_NoCold",
+      "source": "DS1021-1X40SF11-B",
+      "bom": "KLS L-KLS1-2.50-04-R",
+      "native": "KLS L-KLS1-2.50-04-R",
+      "reason": "Side-access component selection or grounded M3 clamp land required by V2 task"
+    },
+    {
+      "ref": "J12",
+      "field": "MPN_LTO_2S",
+      "source": "DS1021-1X40SF11-B",
+      "bom": "KLS L-KLS1-2.50-04-R",
+      "native": "KLS L-KLS1-2.50-04-R",
+      "reason": "Side-access component selection or grounded M3 clamp land required by V2 task"
+    }
+  ]
+}

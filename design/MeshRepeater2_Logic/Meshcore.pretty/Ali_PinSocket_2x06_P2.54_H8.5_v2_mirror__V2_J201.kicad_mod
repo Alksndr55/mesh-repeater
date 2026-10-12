@@ -1,0 +1,409 @@
+(footprint "Ali_PinSocket_2x06_P2.54_H8.5_v2_mirror__V2_J201"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "Ali MTJ/JinSheng 2X6P 10PCS. H8.5mm, length15.64+/-0.30, width5mm; solder tail3.15+/-0.25mm, section0.6x0.4. Female top-view pad rows mirror male: even row localX=-2.54, both footprints rotate90deg. Actual contact mating depth and accepted male cross-section require sample qualification.")
+	(property "Reference" "REF**"
+		(at -1.27 -2.8 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "d71ceed0-efdc-419b-b976-66fa570204eb")
+		(effects
+			(font
+				(size 0.9 0.9)
+				(thickness 0.14)
+			)
+		)
+	)
+	(property "Value" "Ali_PinSocket_2x06_P2.54_H8.5_v2_mirror__V2_J201"
+		(at -1.27 15.5 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "77addde8-1950-475c-bc5c-37aef1a63d76")
+		(effects
+			(font
+				(size 0.9 0.9)
+				(thickness 0.12)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "ecbdf73f-02ec-4065-b4c6-0d8788f5ffbe")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" "Direct vertical connection through 12 isolated screen holes. Mirrored female pad grid gives physical 1:1 after LOGIC X180. Pin7 returns SYS_3V3 to INA219 only; remove J11 before USB as before. Exact generic pin section and mating limits require sample check."
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "5acc1671-99cb-4dfb-b0c5-d8083978d5f0")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "MPN" "MTJ H8.5 2X6P 10PCS"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "d971c4d8-0ede-4420-ad85-b25544547f23")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "LCSC" ""
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "07a0cb83-fc75-493a-a33e-5c1561d34be1")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Vendor" "AliExpress"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "4945f77a-cf49-4ca2-a062-066f5529ffd1")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Vendor URL" "https://aliexpress.ru/item/1005008954873458.html?sku_id=12000047353417475"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "b4348584-8d10-45d8-814b-c0a56c4599e0")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Fit_NaIon" "yes"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "bd262d42-4a7e-4a8c-9b52-c8cf145db59e")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Fit_LTO_2S" "yes"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "99b37635-a1f3-44f6-80c5-3918ba245fa6")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value_NaIon" "INTERBOARD 2x6 VERTICAL"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "ed8ba83d-e606-41f3-b513-d1c7e3056f9b")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value_LTO_2S" "INTERBOARD 2x6 VERTICAL"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "8fab00bd-b73d-4dc3-8606-6744bb58ce33")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Assembly" "All variants: FIT"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "08294034-fe6b-41d2-a034-7d77548696cb")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Nominal" "INTERBOARD"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "a29366be-904f-4e0c-9af0-5eb7f4d2d685")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "MPN_NaIon" "MTJ H8.5 2X6P 10PCS"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "19db573a-2e2b-48dc-bed5-d638c609ac77")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "MPN_LTO_2S" "MTJ H8.5 2X6P 10PCS"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "8c16f529-9cf8-4ded-8b9a-c0c84894479f")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Fit_NaIon_NoCold" "yes"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "2a1475e8-116e-4dde-9ade-db6f1992dd9e")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value_NaIon_NoCold" "INTERBOARD 2x6 VERTICAL"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "c228f241-788c-4b7d-a382-350ade9c758b")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "MPN_NaIon_NoCold" "MTJ H8.5 2X6P 10PCS"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "7acacd79-ecb5-433b-91a8-5e0bfb326b9d")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Package" "2x6 / 2.54 / H8.5 / vertical"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "ca8f6d66-4aa2-4a46-960d-3c3f92077050")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr through_hole)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_rect
+		(start -3.87 -1.57)
+		(end 1.33 14.27)
+		(stroke
+			(width 0.12)
+			(type default)
+		)
+		(fill no)
+		(layer "F.SilkS")
+		(uuid "fa59f736-578b-4172-bed8-ebf2bc9b324d")
+	)
+	(fp_rect
+		(start -4.02 -1.72)
+		(end 1.48 14.42)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "b08ee21f-951c-40e8-aa77-708e486b1af1")
+	)
+	(fp_line
+		(start -3.77 -0.47)
+		(end -2.77 -1.47)
+		(stroke
+			(width 0.15)
+			(type default)
+		)
+		(layer "F.Fab")
+		(uuid "789cb959-b617-4f7f-b04e-58d8d84f0201")
+	)
+	(fp_rect
+		(start -3.77 -1.47)
+		(end 1.23 14.17)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "d4a1bec3-a595-4086-a7f8-6ab4703cfb5d")
+	)
+	(fp_text user "1"
+		(at -4.67 0 0)
+		(layer "F.SilkS")
+		(uuid "012517f7-f37e-4f72-9832-5ee33331f298")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.13)
+			)
+		)
+	)
+	(pad "1" thru_hole rect
+		(at 0 0)
+		(size 1.8 1.8)
+		(drill 1.02)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "9588e959-9eb4-4177-bf25-e8d1a58faecd")
+	)
+	(pad "2" thru_hole circle
+		(at -2.54 0)
+		(size 1.8 1.8)
+		(drill 1.02)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "6d606434-237b-44d0-a7f3-470805a7caaf")
+	)
+	(pad "3" thru_hole circle
+		(at 0 2.54)
+		(size 1.8 1.8)
+		(drill 1.02)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "5629cb89-2ce9-4270-8e25-60d9276ce12d")
+	)
+	(pad "4" thru_hole circle
+		(at -2.54 2.54)
+		(size 1.8 1.8)
+		(drill 1.02)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "f879b0f1-9012-4f14-9b92-b8553a9ef59e")
+	)
+	(pad "5" thru_hole circle
+		(at 0 5.08)
+		(size 1.8 1.8)
+		(drill 1.02)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "099e5428-4e07-45b0-9be7-5b539e65efdb")
+	)
+	(pad "6" thru_hole circle
+		(at -2.54 5.08)
+		(size 1.8 1.8)
+		(drill 1.02)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "96f55a3e-4e8d-4d12-a8db-a9bb7a568e27")
+	)
+	(pad "7" thru_hole circle
+		(at 0 7.62)
+		(size 1.8 1.8)
+		(drill 1.02)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "062cba21-d151-447f-a917-8f0ba06dc0da")
+	)
+	(pad "8" thru_hole circle
+		(at -2.54 7.62)
+		(size 1.8 1.8)
+		(drill 1.02)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "5c0347e8-a1c2-4a29-bfff-d083ce88ec57")
+	)
+	(pad "9" thru_hole circle
+		(at 0 10.16)
+		(size 1.8 1.8)
+		(drill 1.02)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "656ef606-06b4-41bb-b2cd-9cbc5e48e874")
+	)
+	(pad "10" thru_hole circle
+		(at -2.54 10.16)
+		(size 1.8 1.8)
+		(drill 1.02)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "80bfcae1-6141-4878-87b7-4633761ace02")
+	)
+	(pad "11" thru_hole circle
+		(at 0 12.7)
+		(size 1.8 1.8)
+		(drill 1.02)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "0bcde7b5-d72b-4076-a61a-7624c8afe477")
+	)
+	(pad "12" thru_hole circle
+		(at -2.54 12.7)
+		(size 1.8 1.8)
+		(drill 1.02)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "31541410-aebe-4513-941a-01e85a7ab86b")
+	)
+	(embedded_fonts no)
+	(model "${KIPRJMOD}/3dmodels/Ali_PinSocket_2x06_P2.54_H8.5_v2_mirror.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

@@ -1,0 +1,93 @@
+{
+  "date": "2026-10-12",
+  "project": "Mesh Repeater 2.0",
+  "status": "ALI_MALE_ACCEPTED_BY_USER; ALI_FEMALE_SELECTED_AND_DIMENSIONED; CAD_BOM_NOT_UPDATED",
+  "user_direction": "AliExpress option accepted; select female there and define final pin height.",
+  "male": {
+    "brand": "E-SIMPO",
+    "product_id": "1005011978353933",
+    "sku_id": "12000057202232448",
+    "options": [
+      "L35mm A3C6",
+      "2x6P"
+    ],
+    "url": "https://aliexpress.ru/item/1005011978353933.html?sku_id=12000057202232448",
+    "lot_quantity": 50,
+    "lot_price_rub": 1449,
+    "stock_displayed": "99+",
+    "tail_PC_mm": 3,
+    "free_tip_PA_mm": 6,
+    "PB_mm": 26,
+    "overall_metal_length_mm": 35,
+    "tip_above_POWER_mm": 32,
+    "upper_plastic_above_POWER_mm": [
+      23.5,
+      26.0
+    ],
+    "postal_shipping_shown_rub": 363
+  },
+  "female": {
+    "listed_brand": "MTJ",
+    "drawing_mark": "JinSheng",
+    "product_id": "1005008954873458",
+    "sku_id": "12000047353417475",
+    "option": "2X6P 10PCS",
+    "url": "https://aliexpress.ru/item/1005008954873458.html?sku_id=12000047353417475",
+    "price_rub_for_selected_option": 106,
+    "pack_quantity_in_option_and_title": 10,
+    "platform_generic_unit_label": "Цена за 1 штуку / Количество 1; refers to one selected sale unit, do not infer a one-connector price from it. Confirm packing against 2X6P 10PCS when ordering.",
+    "stock_displayed": "99+",
+    "cart_button_visible": true,
+    "body_height_mm": 8.5,
+    "body_height_tolerance": "Not given",
+    "body_length_mm": 15.64,
+    "body_length_tolerance_mm": 0.3,
+    "body_width_mm": 5.0,
+    "tail_length_mm": 3.15,
+    "tail_tolerance_mm": 0.25,
+    "tail_section_mm": [
+      0.6,
+      0.4
+    ],
+    "tail_section_not_male_acceptance": true,
+    "nominal_current_rating_A": 3,
+    "contact_resistance_max_mOhm": 20,
+    "delivery_price_shown_rub": 192,
+    "delivery_shown": "24–27 October pickup; 31 October–5 November post",
+    "minimum_mating_depth": "Not specified in drawing",
+    "accepted_male_pin_section": "Not specified in drawing"
+  },
+  "decision": {
+    "male_total_length_mm": 35,
+    "female_height_mm": 8.5,
+    "pin_grid_mm": 2.54,
+    "configuration": "2x6",
+    "POWER_LOGIC_working_face_gap_mm": 36.02,
+    "nominal_insertion_mm": 4.48,
+    "upper_plastic_to_socket_mm": 1.52,
+    "screen_to_upper_plastic_mm": 3.48,
+    "standoffs_changed": false,
+    "washer_chain_changed": false,
+    "nominal_outer_PCB_height_mm": 39.06,
+    "complete_existing_assembly_envelope_height_mm": 45.56,
+    "equation": "L = working gap + PCB solder tail - female body height + target insertion = 36.02 + 3 - 8.5 + 4.5 = 35.02 mm; choose sale variant 35 mm, actual nominal insertion 4.48 mm."
+  },
+  "limits": "Nominal geometry only. Male contact section and mating-depth window of this exact generic pair remain undocumented. Fit/contact qualification uses actual samples; no Samtec mating-depth window is attributed to this pair. Measure the assembled working gap and pin straightness before production. Shield apertures are still to be designed; this selection does not claim final drill qualification.",
+  "purchase_for_five": {
+    "male_lots": 1,
+    "female_packs": 1,
+    "goods_rub": 1555,
+    "shipping_shown_sum_rub": 555,
+    "total_with_two_shown_delivery_charges_rub": 2110,
+    "unused_males": 45,
+    "unused_females": 5,
+    "consumed_pair_cost_rub": 39.58,
+    "shipping_not_checkout_quote": true
+  },
+  "independent_geometry_report": "audit/vertical_interconnect_2026_10_12/ali_pair_geometry.json",
+  "native_unchanged": {
+    "Power": "c4efced02420f48fea993d166091e3ba3ec7be7cf9bc30feec164d067077cc3b",
+    "Logic": "6cbd7850caa14163ebe4d40aba4435ac8fe17f327d68419dfb94e0a1bc361bc8",
+    "Shield": "4ba1d2a7b47dd392b2ac79fa9a7e10fbf8e98be6b8a3423c813d8530ddb25147"
+  }
+}

@@ -1,0 +1,123 @@
+{
+  "page_count": 9,
+  "every_page_visually_inspected": true,
+  "renderer": "Poppler pdftoppm120dpi; native KiCad10 PDF export",
+  "native_editor_files_retained": true,
+  "corrections": "Readable package names sourced from selected physical footprint; compact SPI captions, Kelvin note and LMV431/GPS labels moved clear of conductors; electrical graph and hidden Footprint unchanged.",
+  "projects": [
+    {
+      "board": "POWER",
+      "pages": 5,
+      "native_schematics": [
+        {
+          "path": "design\\MeshRepeater2_Power\\Converter.kicad_sch",
+          "sha256": "6e91b009695bb7283a15f442cb54ec670282a9dea60c1df20886eccd286b8820"
+        },
+        {
+          "path": "design\\MeshRepeater2_Power\\Interconnect.kicad_sch",
+          "sha256": "5c479c16beb115ec76a10c8efc17e1ecd063880dc053c3a1ad32522c024b7327"
+        },
+        {
+          "path": "design\\MeshRepeater2_Power\\LTO_Balancer.kicad_sch",
+          "sha256": "a28eb02a594f9761bdd64751da7d011adefc20dab62edd256e32237cd8bb970b"
+        },
+        {
+          "path": "design\\MeshRepeater2_Power\\MeshRepeater2_Power.kicad_sch",
+          "sha256": "62e3fb44653c8f33c37c6dae277f6ddec163b0c53976149aad170373fb0e07bf"
+        },
+        {
+          "path": "design\\MeshRepeater2_Power\\Thermal.kicad_sch",
+          "sha256": "48873907fd38d51fdc8f7060f5bc5ced3abfbadce1a012a1fe711c5e52217220"
+        }
+      ],
+      "native_netlist": {
+        "path": "audit\\schematic\\POWER\\netlist.xml",
+        "sha256": "9f109d76c1bfd97e8ce7a1aaf694d5cecc6027ca159e1d2666ebcea0027a45e1"
+      },
+      "strict_erc": {
+        "path": "audit\\schematic\\POWER\\erc.json",
+        "sha256": "f4bbe7f98fa7da8e0d6d280687ee5de864bcda137733086eaa15849d27da5c95"
+      },
+      "pdf": {
+        "path": "output\\pdf\\MeshRepeater2_Power_schematic.pdf",
+        "sha256": "b6bd1723bec09a9a7fcec5306ee31817673675b78bd721ec09c36b3c01bdd07e"
+      },
+      "reviewed_previews": [
+        {
+          "path": "audit\\schematic\\POWER\\previews\\page-1.png",
+          "sha256": "7a65cd8ea9f629446d9c207e36553c8aaae51520388fde84da61fb9c9df6712a"
+        },
+        {
+          "path": "audit\\schematic\\POWER\\previews\\page-2.png",
+          "sha256": "669fee5a9dbcd7abcfc064e673b081d5b7da344c50df303acf37e05ea65b703d"
+        },
+        {
+          "path": "audit\\schematic\\POWER\\previews\\page-3.png",
+          "sha256": "92e56a1a9eac7a3544c23ab8c35117702c6775ac4aff28f497ae4e917717134b"
+        },
+        {
+          "path": "audit\\schematic\\POWER\\previews\\page-4.png",
+          "sha256": "e335f2464f0626de1f73f409dadc4d55dfd80c8ee8d2ab8c6834a5412bd98242"
+        },
+        {
+          "path": "audit\\schematic\\POWER\\previews\\page-5.png",
+          "sha256": "d061c6244d67c41abd23dfb87f2816bbd06bba187f195a89722dcc179c27185d"
+        }
+      ],
+      "visual_review": "Every page inspected after final render: compact physical package captions; no clipping or visible annotation/wire collision; title, page number and sheet links clear."
+    },
+    {
+      "board": "LOGIC",
+      "pages": 4,
+      "native_schematics": [
+        {
+          "path": "design\\MeshRepeater2_Logic\\Interconnect.kicad_sch",
+          "sha256": "34b813633f09bb2e04646bda29d41ff0d48d9044cf0f0161ba37be060308a111"
+        },
+        {
+          "path": "design\\MeshRepeater2_Logic\\MeshRepeater2_Logic.kicad_sch",
+          "sha256": "fc8f0c7d775f112c7f0910022600df16e804a813fecf762757bac31d4724e375"
+        },
+        {
+          "path": "design\\MeshRepeater2_Logic\\RTC_IO.kicad_sch",
+          "sha256": "6f3f41da49f799c9f473e9529e48e4fe6191e7d02848e9254d67d35167a3a353"
+        },
+        {
+          "path": "design\\MeshRepeater2_Logic\\Watchdog.kicad_sch",
+          "sha256": "4d44bb8fc82632da8ed3a7c8f833ef40884944034ede255b0398c0034dce8e4b"
+        }
+      ],
+      "native_netlist": {
+        "path": "audit\\schematic\\LOGIC\\netlist.xml",
+        "sha256": "f0f0426d8c419e2c2928ee56401b3688dae36e024cd7761d2d88b78825327906"
+      },
+      "strict_erc": {
+        "path": "audit\\schematic\\LOGIC\\erc.json",
+        "sha256": "a34c419d34b27755aecae8772c4608056921404e90a39a409d9dec4b33aa3998"
+      },
+      "pdf": {
+        "path": "output\\pdf\\MeshRepeater2_Logic_schematic.pdf",
+        "sha256": "6afd1b47a19e1aae6bc64db81af80e66d139c1fd49e0881873441674d16a0186"
+      },
+      "reviewed_previews": [
+        {
+          "path": "audit\\schematic\\LOGIC\\previews\\page-1.png",
+          "sha256": "7560e150a4a476bfff1bea96b99b5e4ddbfec96fd8819f40a8e5617117051a0e"
+        },
+        {
+          "path": "audit\\schematic\\LOGIC\\previews\\page-2.png",
+          "sha256": "a7114687a6eb699f5bc7652242c2d07d2b04040781e97133dfd9d6b63086c168"
+        },
+        {
+          "path": "audit\\schematic\\LOGIC\\previews\\page-3.png",
+          "sha256": "0e296921b159728c859413118019c4783c293d85cd301d10e539df8a237250e0"
+        },
+        {
+          "path": "audit\\schematic\\LOGIC\\previews\\page-4.png",
+          "sha256": "63143fbc63accb946c8225a602c6cb030fa28a5d9b3f16ebc61b305e0d6e105f"
+        }
+      ],
+      "visual_review": "Every page inspected after final render: compact physical package captions; no clipping or visible annotation/wire collision; title, page number and sheet links clear."
+    }
+  ]
+}

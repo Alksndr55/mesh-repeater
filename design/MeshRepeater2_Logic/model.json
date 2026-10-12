@@ -1,8 +1,8 @@
 {
   "project": "MeshRepeater2_Logic",
-  "revision": "V2.0-A1_LAYOUT",
-  "schematic_revision": "V2.0-A1",
-  "schematic_date": "2026-10-11",
+  "revision": "V2.0-A2-INA219",
+  "schematic_revision": "V2.0-A2",
+  "schematic_date": "2026-10-12",
   "board": {
     "width": 90,
     "height": 60,
@@ -2431,7 +2431,7 @@
     {
       "ref": "J201",
       "kind": "Connector12",
-      "value": "INTERBOARD 12P",
+      "value": "INTERBOARD 2x6 VERTICAL",
       "nets": {
         "1": "FILTER_OUT",
         "2": "GND",
@@ -2439,20 +2439,20 @@
         "4": "GND",
         "5": "FILTER_OUT",
         "6": "GND",
-        "7": "FILTER_OUT",
+        "7": "SYS_3V3",
         "8": "GND",
         "9": "BAT",
-        "10": "GND",
+        "10": "SDA",
         "11": "MODE",
-        "12": "GND"
+        "12": "SCL"
       },
-      "footprint": "Meshcore:Connfly_DS1013_12RSIB_B_0_Horizontal__V2_J201",
-      "x": 76.85,
-      "y": 49,
-      "rotation": 270,
+      "footprint": "Meshcore:Ali_PinSocket_2x06_P2.54_H8.5_v2_mirror__V2_J201",
+      "x": 64.15,
+      "y": 49.0,
+      "rotation": 90,
       "group": "interboard",
-      "note": "R/A drawing rotated to solder tails down.13.8mm is plan reach;9.1mm is assembled height. Body depth8.8mm. Hole1.02±0.05. Mechanical v2 package; original functional pin numbers retained.",
-      "mpn": "Connfly DS1013-12RSIB-B-0",
+      "note": "Direct vertical connection through 12 isolated screen holes. Mirrored female pad grid gives physical 1:1 after LOGIC X180. Pin7 returns SYS_3V3 to INA219 only; remove J11 before USB as before. Exact generic pin section and mating limits require sample check.",
+      "mpn": "MTJ H8.5 2X6P 10PCS",
       "lcsc": "",
       "dnp": false,
       "fit_naion": true,
@@ -2462,13 +2462,15 @@
       "assembly": "All variants: FIT",
       "schematic_uuid": "d1ec0ec5-2e71-5f70-a3d2-eae70a9d0034",
       "sheet_path": "/105ad8a7-7e6b-542d-bfd4-ec797b1696df/f41cb747-67df-583a-8b1a-9bd19e8f35ea",
-      "vendor": "Danomsk",
-      "vendor_url": "https://www.danomsk.ru/shop/7-kommutatsiya/121-razemy/306-soediniteli-pryamougolnye/134861-idc-12mr-ds1013-12rsib-b-0-vilka-uglovaya-shag-2-54mm-maks-dopust-tok-1a-connfly/",
-      "procurement_checked_at": "2026-10-11",
+      "vendor": "AliExpress",
+      "vendor_url": "https://aliexpress.ru/item/1005008954873458.html?sku_id=12000047353417475",
+      "procurement_checked_at": "2026-10-12",
       "procurement_package": "Connfly_DS1013_12RSIB_B_0_Horizontal",
-      "package": "IDC 2x6 / 2.54 / 90deg",
-      "package_short": "IDC 2x6 / 2.54 / 90deg",
-      "source_footprint_before_v2_graphic_variant": "Meshcore:Connfly_DS1013_12RSIB_B_0_Horizontal"
+      "package": "THT 2x6 / 2.54 / vertical",
+      "package_short": "THT 2x6 / 2.54 / vertical",
+      "mpn_lto2s": "MTJ H8.5 2X6P 10PCS",
+      "mpn_naion_no_cold": "MTJ H8.5 2X6P 10PCS",
+      "source_footprint_before_v2_graphic_variant": "Meshcore:Ali_PinSocket_2x06_P2.54_H8.5_v2_mirror"
     }
   ],
   "usb_isolation_jumper": {
@@ -2938,24 +2940,23 @@
   },
   "interboard_connector": {
     "reference": "J201",
-    "pin_net_map": {
+    "pinmap": {
       "1": "FILTER_OUT",
       "2": "GND",
       "3": "FILTER_OUT",
       "4": "GND",
       "5": "FILTER_OUT",
       "6": "GND",
-      "7": "FILTER_OUT",
+      "7": "SYS_3V3",
       "8": "GND",
       "9": "BAT",
-      "10": "GND",
+      "10": "SDA",
       "11": "MODE",
-      "12": "GND"
+      "12": "SCL"
     },
-    "geometry_status": "PROVISIONAL",
-    "outward_edge": "RIGHT",
-    "continuous_FILTER_OUT_design_A": 0.5,
-    "minimum_single_power_contact_A": 0.5
+    "method": "vertical through shield",
+    "male_length_mm": 35,
+    "female_height_mm": 8.5
   },
   "assembly_variants_authoritative": {
     "J11": {

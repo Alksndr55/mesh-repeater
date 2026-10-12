@@ -1,0 +1,79 @@
+{
+  "purpose": "Extend DOC-01 fix into current hidden variant labels; frozen S4.16 contract not edited.",
+  "before_sha256": {
+    "design\\MeshRepeater2_Power\\MeshRepeater2_Power.kicad_pcb": "dd40232294bc3bfd88565f6843400ad10a68220e472d3d6cb3d7ac200152cf64",
+    "design\\MeshRepeater2_Power\\Interconnect.kicad_sch": "8f3744a5ff558d1f64e58697d6fac9cc34ad79ac2d7bfd0725496d754e97770d",
+    "design\\MeshRepeater2_Power\\Meshcore.pretty\\GND_M3_D3.2_OD6__V2_H1.kicad_mod": "0fe7f5171df960c37584dfc8a073af05f27943227f71121dbbf7f146b5476c63",
+    "design\\MeshRepeater2_Power\\Meshcore.pretty\\GND_M3_D3.2_OD6__V2_H2.kicad_mod": "067bcdbea36b70b45ae727b2ddf4e52c503d84fb607d3a8d4e42dbbb5d95663a",
+    "design\\MeshRepeater2_Power\\Meshcore.pretty\\GND_M3_D3.2_OD6__V2_H3.kicad_mod": "871b490bd410a528743f46e02073cd3fe9847a7c0b37a43e7c3724c5d3b97089",
+    "design\\MeshRepeater2_Power\\Meshcore.pretty\\GND_M3_D3.2_OD6__V2_H4.kicad_mod": "31ddfaba591c0f2ed30c8343aff4ffc08110fe67ed86470254d6db5a5cf64cc0",
+    "design\\MeshRepeater2_Power\\model.json": "4ae809f8dabec401a68c193432beecf15771c0c0392094c52c7d423df961b07b",
+    "audit\\MeshRepeater2_Power_footprint_variants.json": "3a5ccefd8bf259c2c61afbfdc73906a9878f15504cfa7df9b0e89055b8e35239"
+  },
+  "after_sha256": {
+    "design\\MeshRepeater2_Power\\MeshRepeater2_Power.kicad_pcb": "c4efced02420f48fea993d166091e3ba3ec7be7cf9bc30feec164d067077cc3b",
+    "design\\MeshRepeater2_Power\\Interconnect.kicad_sch": "5c479c16beb115ec76a10c8efc17e1ecd063880dc053c3a1ad32522c024b7327",
+    "design\\MeshRepeater2_Power\\Meshcore.pretty\\GND_M3_D3.2_OD6__V2_H1.kicad_mod": "c8da54c66b005707b6f917a8ceaa0bf5b6ce19c5cdb4dcc209dd5782e19a29cf",
+    "design\\MeshRepeater2_Power\\Meshcore.pretty\\GND_M3_D3.2_OD6__V2_H2.kicad_mod": "cba129ecda4377f0af327ae1108744f73b6895906b2e88825854e28e862ef7fb",
+    "design\\MeshRepeater2_Power\\Meshcore.pretty\\GND_M3_D3.2_OD6__V2_H3.kicad_mod": "7479081f7eeaa25912945e9656653fd26cde7dc03af3f153e15a21b253a21bff",
+    "design\\MeshRepeater2_Power\\Meshcore.pretty\\GND_M3_D3.2_OD6__V2_H4.kicad_mod": "bcf40c6808c173a950611c37db231a0351754ac14678fc556d5975aa0cc00476",
+    "design\\MeshRepeater2_Power\\model.json": "f6fa83e5c14def215a3f1995fed2bea787a79573c9923ba39502f0236f3f4055",
+    "audit\\MeshRepeater2_Power_footprint_variants.json": "3df33bc9cd77aa6c128cbe12d9457a20c1cf6429bf0f9b5100504ac10607f7ca"
+  },
+  "native_changes": [
+    {
+      "path": "design\\MeshRepeater2_Power\\MeshRepeater2_Power.kicad_pcb",
+      "property_text_replacements": 8,
+      "only_literal_metadata_replaced": true
+    },
+    {
+      "path": "design\\MeshRepeater2_Power\\Interconnect.kicad_sch",
+      "property_text_replacements": 8,
+      "only_literal_metadata_replaced": true
+    },
+    {
+      "path": "design\\MeshRepeater2_Power\\Meshcore.pretty\\GND_M3_D3.2_OD6__V2_H1.kicad_mod",
+      "property_text_replacements": 2,
+      "only_literal_metadata_replaced": true
+    },
+    {
+      "path": "design\\MeshRepeater2_Power\\Meshcore.pretty\\GND_M3_D3.2_OD6__V2_H2.kicad_mod",
+      "property_text_replacements": 2,
+      "only_literal_metadata_replaced": true
+    },
+    {
+      "path": "design\\MeshRepeater2_Power\\Meshcore.pretty\\GND_M3_D3.2_OD6__V2_H3.kicad_mod",
+      "property_text_replacements": 2,
+      "only_literal_metadata_replaced": true
+    },
+    {
+      "path": "design\\MeshRepeater2_Power\\Meshcore.pretty\\GND_M3_D3.2_OD6__V2_H4.kicad_mod",
+      "property_text_replacements": 2,
+      "only_literal_metadata_replaced": true
+    }
+  ],
+  "library_mapping_checks": [
+    {
+      "ref": "H1",
+      "native_equals_library": true,
+      "variant_labels": "M3 GND contact"
+    },
+    {
+      "ref": "H2",
+      "native_equals_library": true,
+      "variant_labels": "M3 GND contact"
+    },
+    {
+      "ref": "H3",
+      "native_equals_library": true,
+      "variant_labels": "M3 GND contact"
+    },
+    {
+      "ref": "H4",
+      "native_equals_library": true,
+      "variant_labels": "M3 GND contact"
+    }
+  ],
+  "physical_geometry_modified": false,
+  "functional_nets_modified": false
+}

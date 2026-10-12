@@ -1,0 +1,312 @@
+(footprint "KLS_XH_L_KLS1_2_50_04_R_Horizontal__V2_J12"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "KLS L-KLS1-2.50-04-R. Drawing: https://img.klsele.com/admin/product_upload/20250303165321L-KLS1-2.50.pdf#page=6. Simplified envelope STEP model.")
+	(property "Reference" "REF**"
+		(at 3.75 -10.2 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "f8c9f9a4-4f0f-409b-a079-21dcddb3980c")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.12)
+			)
+		)
+	)
+	(property "Value" "KLS_XH_L_KLS1_2_50_04_R_Horizontal__V2_J12"
+		(at 3.75 3.4 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "6ae8e1c6-e20c-4005-97a2-fba899f63308")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.12)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "40ad0564-3bdd-4e25-acf3-52085daed1b4")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" "4 positions: pins1..3 preserve former LTO nets; pin4 is NC. Matching4pole cable housing required. Mechanical v2 package; original functional pin numbers retained."
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "c54b225a-944d-4b83-bee7-be4c81df5f81")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "MPN" "KLS L-KLS1-2.50-04-R"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "19c07971-06b8-4d3f-bb7b-0fa22509f0ae")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "LCSC" ""
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "e816c276-a9bc-4652-8153-b4377b8040e1")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Vendor" "Danomsk"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "6fb9ae92-03b1-4fe8-95fd-6d1470c76014")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Vendor URL" "https://www.danomsk.ru/shop/7-kommutatsiya/121-razemy/306-soediniteli-pryamougolnye/38160-cwf-4r-l-kls1-2-50-04-r-vilka-na-platu-uglovaya-tip-a-2-50mm-zakrytaya-kls/"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "722a2ef5-be25-4cfa-8082-ea963a855b30")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Fit_NaIon" "no"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "816742ed-3ede-4ded-ae0c-3c620a4abce8")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Fit_LTO_2S" "yes"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "ac78b1cf-6199-41ea-9439-97db413e376b")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value_NaIon" "LTO 2S + MID -"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "a8d7faba-54f2-4b74-a1f3-369a20252bc9")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value_LTO_2S" "LTO 2S + MID -"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "6f2230b1-e6a9-4d01-8db9-7260cada9a83")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Assembly" "Na-ion: DNP; LTO 2S: FIT"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "2bdd73af-da73-4a3f-9965-a4dd85e95b25")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Nominal" "BAT/MID"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "c3a9e538-0059-4584-9585-a725f20e4ea8")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "MPN_NaIon" "KLS L-KLS1-2.50-04-R"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "5241c0ea-eba7-4329-bc20-3dcf253ed742")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "MPN_LTO_2S" "KLS L-KLS1-2.50-04-R"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "989af625-ae51-4b6b-811a-4477e99087ce")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Fit_NaIon_NoCold" "no"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "ee8ddc3b-65cf-4f88-b7ad-c8b3c573cefd")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value_NaIon_NoCold" "LTO 2S + MID -"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "b5b29880-9278-4368-b063-5614492ea064")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "MPN_NaIon_NoCold" "KLS L-KLS1-2.50-04-R"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "836ff0c9-7337-4040-ac4f-bf91d1655e3c")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr through_hole)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_rect
+		(start -2.75 -9.45)
+		(end 10.25 2.65)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "28f968f6-a65a-4801-b193-60ab29fa8014")
+	)
+	(fp_rect
+		(start -2.6 -9.3)
+		(end 10.1 2.5)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "26b91950-546b-460e-a5f5-750bab30f8bc")
+	)
+	(fp_rect
+		(start -2.5 -9.2)
+		(end 10 2.4)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "af874bcc-0871-4fa2-8645-87fec0893cb0")
+	)
+	(pad "1" thru_hole rect
+		(at 0 0)
+		(size 1.8 1.8)
+		(drill 1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "7b91ca02-6f04-4e83-9a0c-8190efe21430")
+	)
+	(pad "2" thru_hole circle
+		(at 2.5 0)
+		(size 1.8 1.8)
+		(drill 1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "5255d0ad-bed4-41be-a807-61641b56f52f")
+	)
+	(pad "3" thru_hole circle
+		(at 5 0)
+		(size 1.8 1.8)
+		(drill 1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "7b7de0a3-293e-4dab-a1f2-4aaf4a4b7c93")
+	)
+	(pad "4" thru_hole circle
+		(at 7.5 0)
+		(size 1.8 1.8)
+		(drill 1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "55cddb53-1171-42ee-b499-d61ab0413941")
+	)
+	(embedded_fonts no)
+	(model "${KIPRJMOD}/3dmodels/KLS_XH_L_KLS1_2_50_04_R_Horizontal.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

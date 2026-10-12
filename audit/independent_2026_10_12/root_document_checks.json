@@ -1,0 +1,67 @@
+{
+  "scope": "V2 document links and manufacturing wording; local existence is not supplier availability",
+  "checked_local_links": 68,
+  "broken_local_links": [],
+  "findings": [
+    {
+      "id": "DOC-01",
+      "severity": "low",
+      "origin": "V2 BOM integration",
+      "status": "confirmed",
+      "file": "bom/V2_COMPONENT_BOM.csv",
+      "line": 71,
+      "problem": "H1–H4 values say M3 NPTH, while physical footprint and notes specify grounded plated through holes. Native CAD is PTH; the ambiguity is in BOM text, not drill data.",
+      "recommended_fix": "Change all three assembly value labels for H1–H4 to M3 PTH GND, retaining geometry and purchase=no.",
+      "evidence": [
+        {
+          "Board": "POWER",
+          "Reference": "H1",
+          "Value_NaIon_COLD": "M3 NPTH",
+          "Value_NaIon_NoCOLD": "M3 NPTH",
+          "Value_LTO_2S": "M3 NPTH",
+          "Physical_Package_Footprint": "Meshcore:GND_M3_D3.2_OD6",
+          "Note": "3.2 mm M3 plated/contact mounting hole; exposed GND on both sides. Working return stays in cable."
+        },
+        {
+          "Board": "POWER",
+          "Reference": "H2",
+          "Value_NaIon_COLD": "M3 NPTH",
+          "Value_NaIon_NoCOLD": "M3 NPTH",
+          "Value_LTO_2S": "M3 NPTH",
+          "Physical_Package_Footprint": "Meshcore:GND_M3_D3.2_OD6",
+          "Note": "3.2 mm M3 plated/contact mounting hole; exposed GND on both sides. Working return stays in cable."
+        },
+        {
+          "Board": "POWER",
+          "Reference": "H3",
+          "Value_NaIon_COLD": "M3 NPTH",
+          "Value_NaIon_NoCOLD": "M3 NPTH",
+          "Value_LTO_2S": "M3 NPTH",
+          "Physical_Package_Footprint": "Meshcore:GND_M3_D3.2_OD6",
+          "Note": "3.2 mm M3 plated/contact mounting hole; exposed GND on both sides. Working return stays in cable."
+        },
+        {
+          "Board": "POWER",
+          "Reference": "H4",
+          "Value_NaIon_COLD": "M3 NPTH",
+          "Value_NaIon_NoCOLD": "M3 NPTH",
+          "Value_LTO_2S": "M3 NPTH",
+          "Physical_Package_Footprint": "Meshcore:GND_M3_D3.2_OD6",
+          "Note": "3.2 mm M3 plated/contact mounting hole; exposed GND on both sides. Working return stays in cable."
+        }
+      ]
+    }
+  ],
+  "legacy_manifest_status": "Root publication_manifest.json explicitly describes S4.16/ver1.0; V2 links use audit/V2_FINAL_ACCEPTANCE.json. It is legacy, not V2 evidence.",
+  "inputs": {
+    "README.md": "95db97879e16062ded7ffe10ddbc3a12747218f559a9263fbc4ece9994a91ffd",
+    "START_HERE_RU.md": "61ff77f83b10d51b2b040ab25480b567c0abbbc3ad5adf3ba9a5f255f26c5bb4",
+    "output\\V2_OVERVIEW_RU.html": "e8cb018f581ee9d6ff81ddde5cef0c1c0a86d0a8b623fbd4f6244eeecb90a306",
+    "docs\\V2_ASSEMBLY_INSTRUCTIONS_RU.md": "6d517fbef9497ee2d32eedb1db46ce8861ed53f685adf0311109dbc6db121162",
+    "docs\\V2_CHANGES_FROM_S4_16_RU.md": "10e5a3c37899659ca84de6b71ad9fd68de9c9208231db1d279d34ea2fa2bec32",
+    "docs\\V2_LIMITATIONS_RU.md": "cca6ed025404f75a4932fc3af73e1e5f6a418679ea2692261439b15114ebb7de",
+    "docs\\V2_ROUTING_ENGINEERING_AUDIT_RU.md": "74609516fcf8644489553c889768ab03b879170e4fdc87d97ee5d39c387e080c",
+    "bom\\V2_COMPONENT_BOM.csv": "a16dc5dc76ce541ad15de3193ce359ae23a9f02d0c275ba0d78183dfc0ec6dc8",
+    "publication_manifest.json": "dd38030e27c7c802ecfc5edc8ebf48c1463afc085f9556058d724fcece8a710b"
+  }
+}

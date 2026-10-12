@@ -1,0 +1,111 @@
+M1 [18.0, 18.5] 180.0 [('1', '/RADIO_RST', [25.62, 33.74]), ('2', '/RADIO_DIO1', [25.62, 31.2]), ('3', 'Net-(M1-P1.11_{slash}_SCK)', [25.62, 28.66]), ('4', 'Net-(M1-P1.13_{slash}_NSS)', [25.62, 26.12]), ('5', 'Net-(M1-P1.15_{slash}_MOSI)', [25.62, 23.58]), ('6', 'Net-(M1-P0.02_{slash}_MISO)', [25.62, 21.04]), ('7', '/RADIO_BUSY', [25.62, 18.5]), ('8', 'BAT_ADC', [25.62, 15.96]), ('9', 'SYS_3V3', [25.62, 13.42]), ('10', 'MCU_RESET', [25.62, 10.88]), ('11', 'GND', [25.62, 8.34]), ('12', 'unconnected-(M1-RAW_-_NC-Pad12)', [25.62, 5.8]), ('13', 'unconnected-(M1-BAT_-_NC-Pad13)', [25.62, 3.26]), ('14', 'unconnected-(M1-P1.06_{slash}_spare-Pad14)', [10.38, 33.74]), ('15', 'SDA', [10.38, 31.2]), ('16', 'SCL', [10.38, 28.66]), ('17', 'USER_BTN', [10.38, 26.12]), ('18', 'GPS_EN', [10.38, 23.58]), ('19', 'GPS_RX_MCU', [10.38, 21.04]), ('20', 'GPS_TX_MCU', [10.38, 18.5]), ('21', '/RADIO_RXEN', [10.38, 15.96]), ('22', 'GND', [10.38, 13.42]), ('23', 'GND', [10.38, 10.88]), ('24', 'UART_RX', [10.38, 8.34]), ('25', 'UART_TX', [10.38, 5.8]), ('26', 'GND', [10.38, 3.26])]
+M2 [48.0, 18.0] 0.0 [('1', '/ANT_RF', [40.0, 11.0]), ('2', 'GND', [40.0, 13.0]), ('3', '/RADIO_3V3', [40.0, 15.0]), ('4', '/RADIO_RST', [40.0, 17.0]), ('5', 'RADIO_TXEN', [40.0, 19.0]), ('6', '/RADIO_DIO1', [40.0, 21.0]), ('7', 'RADIO_TXEN', [40.0, 23.0]), ('8', 'unconnected-(M2-DIO3-Pad8)', [40.0, 25.0]), ('9', 'GND', [56.0, 25.0]), ('10', '/RADIO_BUSY', [56.0, 23.0]), ('11', '/RADIO_RXEN', [56.0, 21.0]), ('12', 'Net-(M2-SCK)', [56.0, 19.0]), ('13', 'Net-(M2-MISO)', [56.0, 17.0]), ('14', 'Net-(M2-MOSI)', [56.0, 15.0]), ('15', 'Net-(M2-NSS)', [56.0, 13.0]), ('16', 'GND', [56.0, 11.0])]
+R23 [30.0, 28.66] 0.0 [('1', 'Net-(M1-P1.11_{slash}_SCK)', [29.0875, 28.66]), ('2', 'Net-(M2-SCK)', [30.9125, 28.66])]
+R24 [30.0, 23.58] 0.0 [('1', 'Net-(M1-P1.15_{slash}_MOSI)', [29.0875, 23.58]), ('2', 'Net-(M2-MOSI)', [30.9125, 23.58])]
+R25 [30.0, 26.12] 0.0 [('1', 'Net-(M1-P1.13_{slash}_NSS)', [29.0875, 26.12]), ('2', 'Net-(M2-NSS)', [30.9125, 26.12])]
+R26 [59.4, 18.8] 0.0 [('1', 'Net-(M2-MISO)', [58.4875, 18.8]), ('2', 'Net-(M1-P0.02_{slash}_MISO)', [60.3125, 18.8])]
+J10 [35.7, 31.3] 0.0 [('1', 'WDT_MISO', [35.7, 31.3]), ('2', 'SYS_3V3', [38.24, 31.3]), ('3', 'WDT_SCK', [35.7, 33.84]), ('4', 'WDT_MOSI_RESET', [38.24, 33.84]), ('5', 'WDT_RESET', [35.7, 36.38]), ('6', 'GND', [38.24, 36.38])]
+FB1 [33.8, 14.45] 0.0 [('1', 'SYS_3V3', [32.65, 14.45]), ('2', '/RADIO_3V3', [34.95, 14.45])]
+C21 [29.05, 11.3] 90.0 [('1', 'SYS_3V3', [29.05, 12.25]), ('2', 'GND', [29.05, 10.35])]
+C22 [32.1, 11.3] 90.0 [('1', 'SYS_3V3', [32.1, 12.25]), ('2', 'GND', [32.1, 10.35])]
+
+BASELINE Net-(M2-MOSI) 14
+{"kind": "track", "uuid": "002521ff-2d7a-493b-b4e3-8294000f428d", "start": [33.0, 16.1], "end": [34.9, 16.1], "width_mm": 0.2, "layer": "F.Cu", "length_mm": 1.9}
+CONFLICTS [('Net-(M1-P0.02_{slash}_MISO)', [36.2, 17.2], [35.0, 16.0], '94f79be2-c76c-4d1d-986a-2b0035d4be37'), ('Net-(M1-P0.02_{slash}_MISO)', [35.0, 16.0], [35.5, 16.0], 'be09e11a-f392-4437-b55f-60cb472c39dd')]
+{"kind": "track", "uuid": "2a153de3-9f87-4b6e-82bf-bad9bde84dd2", "start": [35.6, 16.8], "end": [35.6, 17.8], "width_mm": 0.2, "layer": "F.Cu", "length_mm": 1.0}
+CONFLICTS [('GND', [34.85, 17.7], [35.5, 17.7], 'b6421c52-f81f-4e85-98c2-28dba0c2dcc0'), ('GND', [35.5, 17.7], None, 'bc34b63a-0c84-4d9d-98e3-d02bd0503312'), ('Net-(M1-P0.02_{slash}_MISO)', [36.2, 17.2], [35.0, 16.0], '94f79be2-c76c-4d1d-986a-2b0035d4be37')]
+{"kind": "track", "uuid": "4010bf25-f71b-4ed8-acea-dbeda472f44a", "start": [53.0, 18.0], "end": [56.0, 15.0], "width_mm": 0.2, "layer": "F.Cu", "length_mm": 4.242640687119286}
+CONFLICTS []
+{"kind": "track", "uuid": "56bb58a2-751c-41af-8629-20df65295bbd", "start": [30.9125, 23.58], "end": [30.9, 23.592499], "width_mm": 0.2, "layer": "F.Cu", "length_mm": 0.0176769624370252}
+CONFLICTS []
+{"kind": "track", "uuid": "770ee368-362c-4b2f-b3d2-3df9db8dee5f", "start": [30.9, 23.6], "end": [33.0, 21.5], "width_mm": 0.2, "layer": "F.Cu", "length_mm": 2.9698484809835}
+CONFLICTS [('GPS_TX_MCU', [31.35, 22.3], None, 'dc0b78d3-fa2a-44c3-84db-2c437fbed679')]
+{"kind": "track", "uuid": "93a12632-dd83-42e4-976a-901bca15894b", "start": [42.0, 18.0], "end": [53.0, 18.0], "width_mm": 0.2, "layer": "F.Cu", "length_mm": 11.0}
+CONFLICTS [('GPS_TX_MCU', [47.1, 19.6], [47.1, 13.6], '70073057-9bc7-42a9-9955-eaa882a4ed48'), ('RADIO_TXEN', [43.8, 15.8], [40.3, 19.3], '3db31218-86b2-4d84-b41a-3dfac1b93fba'), ('RADIO_TXEN', [47.8, 19.9], [47.8, 15.8], '9c153850-0066-468e-8879-4451032f8de4'), ('MCU_RESET', [48.5, 15.5], [48.5, 20.5], '27a8f156-7a77-4cde-98bc-92eccd68c6f3'), ('Net-(M2-NSS)', [49.0, 20.8], [49.0, 16.0], 'e5a168ab-fc63-4cfb-8c33-6df7b66be9a6')]
+{"kind": "track", "uuid": "a862de62-1d5d-485e-afad-370a137342b7", "start": [35.6, 17.8], "end": [38.4, 17.8], "width_mm": 0.2, "layer": "F.Cu", "length_mm": 2.8}
+CONFLICTS [('GND', [34.85, 17.7], [35.5, 17.7], 'b6421c52-f81f-4e85-98c2-28dba0c2dcc0'), ('GND', [36.9, 17.7], None, 'a74086dc-5060-4837-85e4-433cc2922b10'), ('GND', [35.5, 17.7], None, 'bc34b63a-0c84-4d9d-98e3-d02bd0503312'), ('Net-(M1-P0.02_{slash}_MISO)', [36.2, 18.1], [36.2, 17.2], '9c236064-ffd7-422f-a710-9d5dbb5faf41'), ('Net-(M1-P0.02_{slash}_MISO)', [35.7, 18.6], [36.2, 18.1], 'fa322f78-9cb5-4861-9fae-92cff31f71fc')]
+{"kind": "track", "uuid": "bd5e751b-3e1a-4ff9-bdd9-511450246fd6", "start": [30.9, 23.592499], "end": [30.9, 23.6], "width_mm": 0.2, "layer": "F.Cu", "length_mm": 0.007501}
+CONFLICTS []
+{"kind": "track", "uuid": "dfddb595-75ac-4426-bb4f-a080282dbb8f", "start": [33.0, 21.5], "end": [33.0, 16.1], "width_mm": 0.2, "layer": "F.Cu", "length_mm": 5.4}
+CONFLICTS []
+{"kind": "track", "uuid": "fd22f531-9fc8-4feb-a4c1-2e5f7e375c0d", "start": [34.9, 16.1], "end": [35.6, 16.8], "width_mm": 0.2, "layer": "F.Cu", "length_mm": 0.9899494936611666}
+CONFLICTS [('Net-(M1-P0.02_{slash}_MISO)', [36.2, 17.2], [35.0, 16.0], '94f79be2-c76c-4d1d-986a-2b0035d4be37'), ('Net-(M1-P0.02_{slash}_MISO)', [35.0, 16.0], [35.5, 16.0], 'be09e11a-f392-4437-b55f-60cb472c39dd')]
+{"kind": "via", "uuid": "85dc716c-2682-402d-b647-bad5ec55923e", "at": [42.0, 18.0], "drill_mm": 0.3}
+{"kind": "via", "uuid": "be516f22-a15e-47c8-8165-61ecb4abad4c", "at": [38.4, 17.8], "drill_mm": 0.3}
+{"kind": "track", "uuid": "93550389-0637-485e-8495-9d0a49f3bfc0", "start": [38.6, 18.0], "end": [42.0, 18.0], "width_mm": 0.2, "layer": "B.Cu", "length_mm": 3.4}
+CONFLICTS [('SYS_3V3', [75.98, 18.6], [34.3, 18.6], 'ffa2a470-4808-4e78-80a7-a187439ec4a8')]
+{"kind": "track", "uuid": "eb87a550-70d3-4f7a-a7eb-a6cb81ff377d", "start": [38.4, 17.8], "end": [38.6, 18.0], "width_mm": 0.2, "layer": "B.Cu", "length_mm": 0.28284271247461906}
+CONFLICTS [('SYS_3V3', [75.98, 18.6], [34.3, 18.6], 'ffa2a470-4808-4e78-80a7-a187439ec4a8')]
+
+BASELINE Net-(M1-P0.02_{slash}_MISO) 15
+{"kind": "track", "uuid": "0e99a27b-6b16-491e-a833-1762b48170e9", "start": [59.5, 19.45], "end": [60.15, 18.8], "width_mm": 0.2, "layer": "F.Cu", "length_mm": 0.9192388155425119}
+CONFLICTS []
+{"kind": "track", "uuid": "11ee62a2-fc00-435c-912a-40ff98cdceaa", "start": [46.6, 20.0], "end": [47.15, 19.45], "width_mm": 0.2, "layer": "F.Cu", "length_mm": 0.7778174593052024}
+CONFLICTS [('GPS_TX_MCU', [47.1, 19.6], [47.1, 13.6], '70073057-9bc7-42a9-9955-eaa882a4ed48'), ('GPS_TX_MCU', [47.1, 19.6], None, '694fd46d-5c14-4e2f-bdc2-181305a93741')]
+{"kind": "track", "uuid": "6def9c22-fc7b-4327-ad3b-00a6628efc8c", "start": [60.15, 18.8], "end": [60.3125, 18.8], "width_mm": 0.2, "layer": "F.Cu", "length_mm": 0.1625}
+CONFLICTS []
+{"kind": "track", "uuid": "94c92aa4-b3bf-4213-a516-95e68050d7fb", "start": [25.62, 21.04], "end": [26.08, 21.5], "width_mm": 0.2, "layer": "F.Cu", "length_mm": 0.6505382386916237}
+CONFLICTS []
+{"kind": "track", "uuid": "9cc4cded-0426-4869-8f27-816c3ddd87f2", "start": [33.45, 21.95], "end": [35.4, 20.0], "width_mm": 0.2, "layer": "F.Cu", "length_mm": 2.7577164466275352}
+CONFLICTS []
+{"kind": "track", "uuid": "c1ea9baf-14b7-4937-b992-5db34647b676", "start": [26.08, 21.5], "end": [32.1, 21.5], "width_mm": 0.2, "layer": "F.Cu", "length_mm": 6.02}
+CONFLICTS []
+{"kind": "track", "uuid": "e2405e7f-8f66-4893-a2c0-046935717323", "start": [35.4, 20.0], "end": [42.0, 20.0], "width_mm": 0.2, "layer": "F.Cu", "length_mm": 6.6}
+CONFLICTS []
+{"kind": "track", "uuid": "e95ef024-47b8-4bef-8a08-dc01e2e48fd2", "start": [42.0, 20.0], "end": [46.6, 20.0], "width_mm": 0.2, "layer": "F.Cu", "length_mm": 4.6}
+CONFLICTS []
+{"kind": "via", "uuid": "361b33d8-9fa4-4953-bc99-64c4ed0588bd", "at": [32.1, 21.5], "drill_mm": 0.3}
+{"kind": "via", "uuid": "b4213691-592f-40f6-9391-b3dc4da47b4b", "at": [59.5, 19.45], "drill_mm": 0.3}
+{"kind": "via", "uuid": "d35f3394-41c0-440a-8af3-2fbb61bed98b", "at": [33.45, 21.95], "drill_mm": 0.3}
+{"kind": "via", "uuid": "eeee5a0b-4255-462c-9a7f-231d11b37bcb", "at": [47.15, 19.45], "drill_mm": 0.3}
+{"kind": "track", "uuid": "416f6943-9910-4e0c-92bf-69619c246cdf", "start": [32.55, 21.95], "end": [33.45, 21.95], "width_mm": 0.2, "layer": "B.Cu", "length_mm": 0.9}
+CONFLICTS []
+{"kind": "track", "uuid": "6be4a5a5-7c5d-4f78-8f32-5419bd3f6294", "start": [47.15, 19.45], "end": [59.5, 19.45], "width_mm": 0.2, "layer": "B.Cu", "length_mm": 12.35}
+CONFLICTS [('GPS_TX_MCU', [47.1, 19.6], None, '694fd46d-5c14-4e2f-bdc2-181305a93741'), ('GPS_TX_MCU', [38.7, 19.6], [47.1, 19.6], 'ca37cf67-5d6d-4b5d-997b-c6646c619eba')]
+{"kind": "track", "uuid": "d7b0f1fb-5542-4829-a4e1-23088ae1f1f5", "start": [32.1, 21.5], "end": [32.55, 21.95], "width_mm": 0.2, "layer": "B.Cu", "length_mm": 0.6363961030678928}
+CONFLICTS []
+
+BASELINE /3. Modules/RADIO_RST 23
+{"kind": "track", "uuid": "40112ed7-f78f-40ea-b3c5-04ee5c8095a9", "start": [46.7, 29.3], "end": [47.9, 28.1], "width_mm": 0.2, "layer": "F.Cu", "length_mm": 1.6970562748477143}
+CONFLICTS [('/RADIO_RST', [46.7, 29.3], [47.9, 28.1], '22c02b71-ee3d-4245-9cb0-c8507c893de8'), ('/RADIO_RST', [47.9, 28.1], [49.1, 28.1], '4fc692f1-8820-4a10-8c0b-3a2af1ac89cf'), ('/RADIO_RST', [46.7, 29.3], None, 'ffda6a18-5f8b-48dd-aa9b-bb25c2fb77c5')]
+{"kind": "track", "uuid": "99bbe2fd-902e-48d7-b02d-119972762229", "start": [40.0, 17.0], "end": [39.0, 17.0], "width_mm": 0.2, "layer": "F.Cu", "length_mm": 1.0}
+CONFLICTS [('/RADIO_RST', [40.5, 16.5], [40.0, 17.0], '70bb8fd7-4059-4607-9f25-7450720d55c4')]
+{"kind": "track", "uuid": "a9a93d5a-25fb-44ce-b917-379c5debd43b", "start": [47.9, 28.1], "end": [49.1, 28.1], "width_mm": 0.2, "layer": "F.Cu", "length_mm": 1.2}
+CONFLICTS [('/RADIO_RST', [46.7, 29.3], [47.9, 28.1], '22c02b71-ee3d-4245-9cb0-c8507c893de8'), ('/RADIO_RST', [47.9, 28.1], [49.1, 28.1], '4fc692f1-8820-4a10-8c0b-3a2af1ac89cf'), ('/RADIO_RST', [49.1, 28.1], None, '59d7c679-033b-47f6-b330-2433751fa07e')]
+{"kind": "via", "uuid": "2723d6f6-83ec-423f-aa62-9a8c6a832106", "at": [46.7, 29.3], "drill_mm": 0.3}
+{"kind": "via", "uuid": "906aa955-7db0-4b52-a048-6814899194f9", "at": [39.0, 17.0], "drill_mm": 0.3}
+{"kind": "via", "uuid": "d0876cb3-7180-44e0-b11b-5ea9822a9f84", "at": [49.1, 28.1], "drill_mm": 0.3}
+{"kind": "track", "uuid": "1174f8c7-5ffd-4581-90f2-d120eec4fd26", "start": [30.3, 38.4], "end": [34.5, 38.4], "width_mm": 0.2, "layer": "B.Cu", "length_mm": 4.2}
+CONFLICTS [('/RADIO_RST', [30.3, 38.4], [34.5, 38.4], '4d4d9779-99d8-40cb-9c60-1398cd5af67b'), ('/RADIO_RST', [25.6, 33.7], [30.3, 38.4], '6ac67f29-0fcd-4e80-ae73-5428e015a74c'), ('/RADIO_RST', [34.5, 38.4], [34.7, 38.2], 'c7182c6c-800b-4f4e-9379-acb8796f1f58'), ('/RADIO_RST', [34.7, 38.2], [39.9, 38.2], 'fe1a960f-f9ef-4859-9c66-d1600af437f1')]
+{"kind": "track", "uuid": "18ff977e-6064-44de-af9f-22b63c2967b9", "start": [49.1, 28.1], "end": [49.1, 22.3], "width_mm": 0.2, "layer": "B.Cu", "length_mm": 5.8}
+CONFLICTS [('Net-(M2-NSS)', [48.7, 22.7], None, '84a5f7bd-b185-48e6-8faa-3d15d6ce4df0'), ('Net-(M2-NSS)', [48.7, 22.7], [48.7, 21.3], '1ff2d60c-b6e9-404a-8da7-f5d3b5067309'), ('/RADIO_RST', [49.1, 28.1], None, '59d7c679-033b-47f6-b330-2433751fa07e'), ('/RADIO_RST', [49.1, 28.1], [50.5, 26.7], '4a34161f-656f-477c-a07f-2bf5ff4c9ff2')]
+{"kind": "track", "uuid": "28d9d05b-3929-4be8-a560-37297608629a", "start": [45.1, 18.3], "end": [45.1, 15.1], "width_mm": 0.2, "layer": "B.Cu", "length_mm": 3.2}
+CONFLICTS [('SYS_3V3', [75.76, 16.8], [34.3, 16.8], 'c0648521-606a-4b89-8967-ecc094e8a0ed'), ('SYS_3V3', [75.98, 18.6], [34.3, 18.6], 'ffa2a470-4808-4e78-80a7-a187439ec4a8'), ('Net-(M1-P0.02_{slash}_MISO)', [41.4, 15.9], [45.2, 15.9], '7dc554f1-88fb-4ac3-9fa1-b97fdd1e25d6'), ('Net-(M1-P0.02_{slash}_MISO)', [45.2, 15.9], [46.0, 15.1], '9f7be103-2295-439e-afe2-52d6b0e640fd')]
+{"kind": "track", "uuid": "2a8bb970-cb24-4691-8959-91a2a7e62166", "start": [25.6, 33.72], "end": [25.6, 33.7], "width_mm": 0.2, "layer": "B.Cu", "length_mm": 0.02}
+CONFLICTS [('/RADIO_RST', [25.62, 33.74], [25.6, 33.72], '5fa0bfd7-a254-4f80-ad84-bb172169f57c'), ('/RADIO_RST', [25.6, 33.7], [30.3, 38.4], '6ac67f29-0fcd-4e80-ae73-5428e015a74c'), ('/RADIO_RST', [25.6, 33.72], [25.6, 33.7], '6ffe3b63-ff99-42fd-a97c-f5804ac8a906')]
+{"kind": "track", "uuid": "2f3b9ff0-df44-4965-91dc-d7cf0e1f5401", "start": [44.6, 14.6], "end": [44.1, 14.6], "width_mm": 0.2, "layer": "B.Cu", "length_mm": 0.5}
+CONFLICTS [('/RADIO_RST', [43.7, 14.4], None, 'db85bcf7-6f52-4463-96b5-eec972862e22'), ('/RADIO_RST', [43.9, 14.6], [43.7, 14.4], '5131927b-421a-4fd8-9e33-278ed583a068')]
+{"kind": "track", "uuid": "3235c5ec-400a-465d-a70c-22f3404df45b", "start": [45.1, 15.1], "end": [44.6, 14.6], "width_mm": 0.2, "layer": "B.Cu", "length_mm": 0.7071067811865476}
+CONFLICTS []
+{"kind": "track", "uuid": "3886075e-5b02-41eb-93b8-2de437312108", "start": [34.7, 38.2], "end": [39.9, 38.2], "width_mm": 0.2, "layer": "B.Cu", "length_mm": 5.2}
+CONFLICTS [('/RADIO_RST', [30.3, 38.4], [34.5, 38.4], '4d4d9779-99d8-40cb-9c60-1398cd5af67b'), ('/RADIO_RST', [34.5, 38.4], [34.7, 38.2], 'c7182c6c-800b-4f4e-9379-acb8796f1f58'), ('/RADIO_RST', [39.9, 38.2], [46.7, 31.4], 'f548a16b-e7b7-44c4-b482-c1afc81812ca'), ('/RADIO_RST', [34.7, 38.2], [39.9, 38.2], 'fe1a960f-f9ef-4859-9c66-d1600af437f1')]
+{"kind": "track", "uuid": "3ec590cb-ccc4-4a65-963a-d00d8262109d", "start": [42.7, 16.2], "end": [41.9, 17.0], "width_mm": 0.2, "layer": "B.Cu", "length_mm": 1.1313708498984762}
+CONFLICTS [('SYS_3V3', [75.76, 16.8], [34.3, 16.8], 'c0648521-606a-4b89-8967-ecc094e8a0ed'), ('Net-(M1-P0.02_{slash}_MISO)', [41.4, 15.9], [45.2, 15.9], '7dc554f1-88fb-4ac3-9fa1-b97fdd1e25d6')]
+{"kind": "track", "uuid": "46dd13e4-ff7a-4d55-9db7-1dcc2603f3f1", "start": [49.1, 22.3], "end": [45.1, 18.3], "width_mm": 0.2, "layer": "B.Cu", "length_mm": 5.656854249492381}
+CONFLICTS [('GPS_TX_MCU', [47.1, 19.6], None, '694fd46d-5c14-4e2f-bdc2-181305a93741'), ('GPS_TX_MCU', [38.7, 19.6], [47.1, 19.6], 'ca37cf67-5d6d-4b5d-997b-c6646c619eba'), ('SYS_3V3', [75.98, 18.6], [34.3, 18.6], 'ffa2a470-4808-4e78-80a7-a187439ec4a8'), ('RADIO_TXEN', [47.0, 20.6], None, 'b8052dfe-e7e9-4536-8142-22e323be4f01'), ('RADIO_TXEN', [46.2, 20.6], [47.0, 20.6], 'c5c8eced-98ab-4545-a1a1-27b3be10e9b3'), ('MCU_RESET', [47.7, 21.3], None, '70832e8e-bda2-4222-90be-e07b3d820073'), ('MCU_RESET', [47.7, 21.3], [47.7, 22.7], '255b6f2c-c833-4a4d-bdf5-0d716566d4a0'), ('Net-(M2-NSS)', [48.7, 22.7], None, '84a5f7bd-b185-48e6-8faa-3d15d6ce4df0'), ('Net-(M2-NSS)', [48.7, 21.3], None, 'e80e6a11-efde-4918-b756-28a43b888d26'), ('Net-(M2-NSS)', [48.7, 22.7], [48.7, 21.3], '1ff2d60c-b6e9-404a-8da7-f5d3b5067309')]
+{"kind": "track", "uuid": "48c73d5f-382e-4524-9b9e-172d005ef481", "start": [34.5, 38.4], "end": [34.7, 38.2], "width_mm": 0.2, "layer": "B.Cu", "length_mm": 0.28284271247461906}
+CONFLICTS [('/RADIO_RST', [30.3, 38.4], [34.5, 38.4], '4d4d9779-99d8-40cb-9c60-1398cd5af67b'), ('/RADIO_RST', [34.5, 38.4], [34.7, 38.2], 'c7182c6c-800b-4f4e-9379-acb8796f1f58'), ('/RADIO_RST', [34.7, 38.2], [39.9, 38.2], 'fe1a960f-f9ef-4859-9c66-d1600af437f1')]
+{"kind": "track", "uuid": "630b4736-e75e-4e69-be58-9269669b8db8", "start": [41.9, 17.0], "end": [39.0, 17.0], "width_mm": 0.2, "layer": "B.Cu", "length_mm": 2.9}
+CONFLICTS [('SYS_3V3', [75.76, 16.8], [34.3, 16.8], 'c0648521-606a-4b89-8967-ecc094e8a0ed')]
+{"kind": "track", "uuid": "6d87c192-ff70-4705-8638-ab5cd79a0d87", "start": [39.9, 38.2], "end": [46.7, 31.4], "width_mm": 0.2, "layer": "B.Cu", "length_mm": 9.616652224137047}
+CONFLICTS [('/RADIO_RST', [46.7, 31.4], [46.7, 29.3], '0c904d48-aac0-4361-984b-052bf5726943'), ('/RADIO_RST', [39.9, 38.2], [46.7, 31.4], 'f548a16b-e7b7-44c4-b482-c1afc81812ca'), ('/RADIO_RST', [34.7, 38.2], [39.9, 38.2], 'fe1a960f-f9ef-4859-9c66-d1600af437f1')]
+{"kind": "track", "uuid": "7135aa03-1a9e-4a87-8895-31905760e9b1", "start": [44.1, 14.6], "end": [42.7, 16.0], "width_mm": 0.2, "layer": "B.Cu", "length_mm": 1.9798989873223332}
+CONFLICTS [('/RADIO_RST', [43.7, 14.4], None, 'db85bcf7-6f52-4463-96b5-eec972862e22'), ('/RADIO_RST', [43.9, 14.6], [43.7, 14.4], '5131927b-421a-4fd8-9e33-278ed583a068'), ('Net-(M1-P0.02_{slash}_MISO)', [41.4, 15.9], [45.2, 15.9], '7dc554f1-88fb-4ac3-9fa1-b97fdd1e25d6')]
+{"kind": "track", "uuid": "9161a3e8-6d67-49f0-92a2-7d7378825e17", "start": [46.7, 31.4], "end": [46.7, 29.3], "width_mm": 0.2, "layer": "B.Cu", "length_mm": 2.1}
+CONFLICTS [('/RADIO_RST', [46.7, 29.3], None, 'ffda6a18-5f8b-48dd-aa9b-bb25c2fb77c5'), ('/RADIO_RST', [46.7, 31.4], [46.7, 29.3], '0c904d48-aac0-4361-984b-052bf5726943'), ('/RADIO_RST', [39.9, 38.2], [46.7, 31.4], 'f548a16b-e7b7-44c4-b482-c1afc81812ca')]
+{"kind": "track", "uuid": "9cb7b42e-4996-43f2-96b0-3c6b3f46adbf", "start": [25.62, 33.74], "end": [25.6, 33.72], "width_mm": 0.2, "layer": "B.Cu", "length_mm": 0.028284271247461905}
+CONFLICTS [('/RADIO_RST', [25.62, 33.74], [25.6, 33.72], '5fa0bfd7-a254-4f80-ad84-bb172169f57c'), ('/RADIO_RST', [25.6, 33.7], [30.3, 38.4], '6ac67f29-0fcd-4e80-ae73-5428e015a74c'), ('/RADIO_RST', [25.6, 33.72], [25.6, 33.7], '6ffe3b63-ff99-42fd-a97c-f5804ac8a906')]
+{"kind": "track", "uuid": "a0d8c758-b281-42bf-9d01-c8e0681a6af5", "start": [25.6, 33.7], "end": [30.3, 38.4], "width_mm": 0.2, "layer": "B.Cu", "length_mm": 6.646803743153547}
+CONFLICTS [('/RADIO_RST', [30.3, 38.4], [34.5, 38.4], '4d4d9779-99d8-40cb-9c60-1398cd5af67b'), ('/RADIO_RST', [25.62, 33.74], [25.6, 33.72], '5fa0bfd7-a254-4f80-ad84-bb172169f57c'), ('/RADIO_RST', [25.6, 33.7], [30.3, 38.4], '6ac67f29-0fcd-4e80-ae73-5428e015a74c'), ('/RADIO_RST', [25.6, 33.72], [25.6, 33.7], '6ffe3b63-ff99-42fd-a97c-f5804ac8a906')]
+{"kind": "track", "uuid": "fc40a53e-7f2f-474b-8ca8-f74cac2c6b9b", "start": [42.7, 16.0], "end": [42.7, 16.2], "width_mm": 0.2, "layer": "B.Cu", "length_mm": 0.2}
+CONFLICTS [('SYS_3V3', [75.76, 16.8], [34.3, 16.8], 'c0648521-606a-4b89-8967-ecc094e8a0ed'), ('Net-(M1-P0.02_{slash}_MISO)', [41.4, 15.9], [45.2, 15.9], '7dc554f1-88fb-4ac3-9fa1-b97fdd1e25d6')]

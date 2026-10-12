@@ -1,0 +1,81 @@
+{
+  "date_local": "2026-10-12",
+  "timezone": "Asia/Omsk",
+  "scope": "Read-only connector selection; no CAD edits",
+  "status": "PRICE_AND_STOCK_CONFIRMED_NOMINAL_HEIGHT_FITS_CONTACT_SECTION_UNDOCUMENTED",
+  "shop": "aliexpress.ru",
+  "seller": "ConnPro Factory Supply Store",
+  "seller_store_id": "1105427632",
+  "brand_listed": "E-SIMPO",
+  "product_id": "1005011978353933",
+  "sku_id": "12000057202232448",
+  "url": "https://aliexpress.ru/item/1005011978353933.html?sku_id=12000057202232448",
+  "selected_options": {
+    "color_dimension": "L35mm A3C6",
+    "contact_count": "2x6P"
+  },
+  "purchase": {
+    "currency": "RUB",
+    "lot_price": 1449,
+    "lot_quantity": 50,
+    "calculated_unit_price": 28.98,
+    "stock_text_exact": "Осталось 99+ шт.",
+    "add_to_cart_button_visible": true,
+    "added_to_cart": false,
+    "postal_shipping_price": 363,
+    "postal_delivery_text": "2–8 ноября почтой",
+    "pickup_shipping_price": 478,
+    "pickup_delivery_text": "4 ноября в пункт выдачи",
+    "unit_count_of_stock_is_not_inferred": true
+  },
+  "geometry": {
+    "pin_pitch": 2.54,
+    "row_pitch": 2.54,
+    "rows": 2,
+    "positions_per_row": 6,
+    "metal_total_length_L": 35,
+    "solder_tail_PC": 3,
+    "mating_tip_free_PA": 6,
+    "PB_includes_two_plastic_rows": 26,
+    "plastic_thickness_each": 2.5,
+    "body_length_nominal": 15.24,
+    "body_width_nominal": 5.08,
+    "tip_height_from_power_front_plane": 32,
+    "upper_insulator_top_height_from_power_front_plane": 26,
+    "required_front_plane_gap": 36.02,
+    "female_example_body_height": 8.5,
+    "nominal_mating_insertion_with_example": 4.48,
+    "nominal_upper_insulator_to_female_mouth_clearance": 1.52,
+    "cross_section_dimension_of_exact_sku_documented": false,
+    "cross_section_note": "Square contacts visible in photographs. Exact width and width tolerance are not given in this listing's drawing. Do not claim 0.64 SQ verified from this listing. A related one-row listing has a 0.64 SQ drawing, which is not proof for this exact SKU.",
+    "recommended_pcb_drill_diameter": 1.02,
+    "seller_general_tolerance_text": "+/-0,2 мм",
+    "drawing_general_tolerance_xx": 0.2,
+    "drawing_general_tolerance_x": 0.25,
+    "dimensional_fit_scope": "Nominal axial fit only. Manufacturing, PCB thickness and standoff stack tolerances must be included by the root reviewer; insertion-depth, section-width and pin straightness incoming acceptance remains necessary."
+  },
+  "electrical_and_materials": {
+    "seller_current_rating_A": 3,
+    "drawing_current_rating_A": 3,
+    "seller_contact_material": "Фосфорная бронза",
+    "drawing_contact_material": "Copper Alloy",
+    "seller_finish": "Золотое покрытие",
+    "drawing_contact_resistance_mOhm_max": 30,
+    "seller_operating_temperature_C": [-40, 105],
+    "plating_thickness_for_exact_selected_sku_specified": false
+  },
+  "evidence": {
+    "live_browser_tab": "Codex In-app Browser / tab 6",
+    "live_screenshot_captured": true,
+    "screenshot_contains": ["selected L35mm A3C6", "selected 2x6P", "1449 rubles", "lot 50", "99+ stock", "add to cart", "shipping prices and dates"],
+    "dimensional_overview": "sources/ali_local_male35_drawing_1.png",
+    "seller_engineering_drawing": "sources/ali_local_male35_drawing_2.png",
+    "seller_engineering_drawing_source": "https://ae-pic-a1.aliexpress-media.com/kf/S899bd0aaf5cb4157b772b786ab13dd72g.jpg?width=1452&height=1000&hash=2452",
+    "photo_pack_quantity_50_for_related_length_30_not_selected_length": "sources/ali_local_male35_details_11.png"
+  },
+  "rejected_related_candidates": [
+    {"product_id": "1005011894771753", "option": "L30mm A3C6 / 1x12P", "reason": "Metal total length 30 mm with 3 mm tail leaves tip 27 mm above PCB; does not reach a normal 8.5 mm socket across 36.02 mm."},
+    {"product_id": "1005012685154719", "reason": "Official seller spacer height choices 11/13.5/16/18.5/21 mm, but only 2x20 contacts and lot/unit ambiguity; no accepted 12-contact exact variant."},
+    {"product_id": "1005013255703196", "reason": "Female height choices stop at 8.5 mm; cannot solve the short L30 male's reach."}
+  ]
+}

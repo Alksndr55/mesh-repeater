@@ -1,6 +1,6 @@
 {
   "board": "LOGIC",
-  "revision": "V2.0-A1",
+  "revision": "V2.0-A2",
   "project": "MeshRepeater2_Logic",
   "parts": 57,
   "baseline_pcb_sha256": "742ae27bb1d13893f6dc368e5c67f5c41b35a3e6765331fc7e9871297d23dec6",
@@ -3241,16 +3241,16 @@
         },
         {
           "ref": "J201",
-          "mpn": "DS1013-12RSIB-B-0",
-          "package": "IDC 2x6 / 2.54 / 90deg",
+          "mpn": "MTJ H8.5 2X6P 10PCS",
+          "package": "THT 2x6 / 2.54 / vertical",
           "at": [
             220.98,
             119.38
           ],
           "font_mm": 1.05,
           "lines": [
-            "DS1013-12RSIB-B-0",
-            "IDC 2x6 / 2.54 / 90deg"
+            "MTJ H8.5 2X6P 10PCS",
+            "THT 2x6 / 2.54 / vertical"
           ],
           "placement": "below symbol; lower-right for vertical passive"
         }
@@ -3329,7 +3329,7 @@
           "angle": 180
         },
         {
-          "name": "FILTER_OUT",
+          "name": "SYS_3V3",
           "at": [
             241.3,
             82.55
@@ -3345,10 +3345,26 @@
           "angle": 180
         },
         {
+          "name": "SDA",
+          "at": [
+            241.3,
+            97.79
+          ],
+          "angle": 180
+        },
+        {
           "name": "MODE",
           "at": [
             241.3,
             102.87
+          ],
+          "angle": 180
+        },
+        {
+          "name": "SCL",
+          "at": [
+            241.3,
+            107.95
           ],
           "angle": 180
         }
@@ -3537,11 +3553,31 @@
         [
           [
             233.68,
+            97.79
+          ],
+          [
+            241.3,
+            97.79
+          ]
+        ],
+        [
+          [
+            233.68,
             102.87
           ],
           [
             241.3,
             102.87
+          ]
+        ],
+        [
+          [
+            233.68,
+            107.95
+          ],
+          [
+            241.3,
+            107.95
           ]
         ]
       ]

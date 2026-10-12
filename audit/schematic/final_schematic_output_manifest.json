@@ -1,123 +1,130 @@
 {
-  "page_count": 9,
+  "revision": "V2.0-A2",
+  "page_count": 10,
   "every_page_visually_inspected": true,
-  "renderer": "Poppler pdftoppm120dpi; native KiCad10 PDF export",
+  "renderer": "Native KiCad10 PDF + Poppler PNG",
   "native_editor_files_retained": true,
-  "corrections": "Readable package names sourced from selected physical footprint; compact SPI captions, Kelvin note and LMV431/GPS labels moved clear of conductors; electrical graph and hidden Footprint unchanged.",
+  "corrections": "INA219 compact circuit, readable MPN/package captions, five child sheet references within A3 frame, exact vertical interconnect roles. All ten exported pages visually reviewed.",
   "projects": [
     {
       "board": "POWER",
-      "pages": 5,
+      "pages": 6,
       "native_schematics": [
         {
-          "path": "design\\MeshRepeater2_Power\\Converter.kicad_sch",
-          "sha256": "6e91b009695bb7283a15f442cb54ec670282a9dea60c1df20886eccd286b8820"
+          "path": "design/MeshRepeater2_Power/BatteryMonitor.kicad_sch",
+          "sha256": "b30a8d1673a737cb9605284504b40b1f518e281f47c400a22086f24413774bc3"
         },
         {
-          "path": "design\\MeshRepeater2_Power\\Interconnect.kicad_sch",
-          "sha256": "8f3744a5ff558d1f64e58697d6fac9cc34ad79ac2d7bfd0725496d754e97770d"
+          "path": "design/MeshRepeater2_Power/Converter.kicad_sch",
+          "sha256": "2298eef9d0adf98a3e3c1649e2236517d06a547f2300a03e1aaa9ba0299241a4"
         },
         {
-          "path": "design\\MeshRepeater2_Power\\LTO_Balancer.kicad_sch",
-          "sha256": "a28eb02a594f9761bdd64751da7d011adefc20dab62edd256e32237cd8bb970b"
+          "path": "design/MeshRepeater2_Power/Interconnect.kicad_sch",
+          "sha256": "733a36d7ff9bdf83b251f02f0626b1d90115d6151672bc76ec640f519822acbe"
         },
         {
-          "path": "design\\MeshRepeater2_Power\\MeshRepeater2_Power.kicad_sch",
-          "sha256": "62e3fb44653c8f33c37c6dae277f6ddec163b0c53976149aad170373fb0e07bf"
+          "path": "design/MeshRepeater2_Power/LTO_Balancer.kicad_sch",
+          "sha256": "41f77e6c58d0af4a9d9490cc840f50fffcc2d0ebf438d18d8bdb22f579092968"
         },
         {
-          "path": "design\\MeshRepeater2_Power\\Thermal.kicad_sch",
-          "sha256": "48873907fd38d51fdc8f7060f5bc5ced3abfbadce1a012a1fe711c5e52217220"
+          "path": "design/MeshRepeater2_Power/MeshRepeater2_Power.kicad_sch",
+          "sha256": "4a614cbd067103499edc759fb688bdc2d0d4ac247b4c41b461a2a7f054970a78"
+        },
+        {
+          "path": "design/MeshRepeater2_Power/Thermal.kicad_sch",
+          "sha256": "5a52b94ebc267054040ca90d7dafec9ee989b3ccdae5c354adf29596ec0f8ae7"
         }
       ],
       "native_netlist": {
-        "path": "audit\\schematic\\POWER\\netlist.xml",
-        "sha256": "c8b60e49b3b2217d2867cb1e5f104f25c931c6770672cb5b75b5289562da571e"
+        "path": "audit/schematic/POWER/netlist.xml",
+        "sha256": "191b9e9c16ff9448ddd7a209b3cef117b4deea4ceae7a7361b908cc1883c57da"
       },
       "strict_erc": {
-        "path": "audit\\schematic\\POWER\\erc.json",
-        "sha256": "d2841a17c874a9b4404e5088236a0437b07f018d3277e800b96c50615a9bd000"
+        "path": "audit/schematic/POWER/erc.json",
+        "sha256": "22c88617a4e0bf528c8af2bfe13770bc2526d1dfe0fabc2074ff1467048eb869"
       },
       "pdf": {
-        "path": "output\\pdf\\MeshRepeater2_Power_schematic.pdf",
-        "sha256": "a1128b7649ffc89a3157f543983ea42bbaa943ea847b3c6c64972f91507b98bf"
+        "path": "output/pdf/MeshRepeater2_Power_V2_A2_INA219_schematic.pdf",
+        "sha256": "bd528a9cc43d49332aa628dfd15c88d71c6d28c1a8df05a85e246a6186fdbb27"
       },
       "reviewed_previews": [
         {
-          "path": "audit\\schematic\\POWER\\previews\\page-1.png",
-          "sha256": "cdad9a441cbcd9a0dc0102306364c9182251502b5b59986266349d23cc3d38bf"
+          "path": "audit/ina219_and_vertical_2026_10_12/pdf_preview/power-1.png",
+          "sha256": "c67555d4da88e82095c405f82f48e216ca7aebbfdf19bba3eb6e17ccef1cc13b"
         },
         {
-          "path": "audit\\schematic\\POWER\\previews\\page-2.png",
-          "sha256": "78ad897f1b9b5d9ff6ab8fc49cdecd9cf841b9b25759f978337b1e0953168ce5"
+          "path": "audit/ina219_and_vertical_2026_10_12/pdf_preview/power-2.png",
+          "sha256": "ec1a4c9c98aae3ab066032d27590c4e32f820c0919cfaa7329c9570ce47436ab"
         },
         {
-          "path": "audit\\schematic\\POWER\\previews\\page-3.png",
-          "sha256": "58a2bc48c6be365dd3ce3e40a8f797653fb9f8ebe1edb2d1ac003772a8fa8493"
+          "path": "audit/ina219_and_vertical_2026_10_12/pdf_preview/power-3.png",
+          "sha256": "828eed28f318de27e2e6d6d76d64a03db1aa46a2ef9069daf630218237cd5365"
         },
         {
-          "path": "audit\\schematic\\POWER\\previews\\page-4.png",
-          "sha256": "2be905c531182f15a04486f8cc919a0b5279a3217a1fca37da0c19d64cf0440b"
+          "path": "audit/ina219_and_vertical_2026_10_12/pdf_preview/power-4.png",
+          "sha256": "71705060b4cfcf72828ab04f9edc95b244e6c585d69e1fb35ce8e062451d7093"
         },
         {
-          "path": "audit\\schematic\\POWER\\previews\\page-5.png",
-          "sha256": "056a65a0e0eea69260fcc044b73dd5f7b85db5ad51f185f6866610a0b4d2a944"
+          "path": "audit/ina219_and_vertical_2026_10_12/pdf_preview/power-5.png",
+          "sha256": "de6ffdcd78e6ea1a3c7bfcf08e2e5df1503e61d7a5473c5d7a1d2c95659ad423"
+        },
+        {
+          "path": "audit/ina219_and_vertical_2026_10_12/pdf_preview/power-6.png",
+          "sha256": "11aaa199274ae09fee250a8376f151c579784595cc58febb77d3aee8a3248edc"
         }
-      ],
-      "visual_review": "Every page inspected after final render: compact physical package captions; no clipping or visible annotation/wire collision; title, page number and sheet links clear."
+      ]
     },
     {
       "board": "LOGIC",
       "pages": 4,
       "native_schematics": [
         {
-          "path": "design\\MeshRepeater2_Logic\\Interconnect.kicad_sch",
-          "sha256": "34b813633f09bb2e04646bda29d41ff0d48d9044cf0f0161ba37be060308a111"
+          "path": "design/MeshRepeater2_Logic/Interconnect.kicad_sch",
+          "sha256": "d9c32344af4412d78033dc9e6158424ee63262775481f32a44c35ab7b5e58a92"
         },
         {
-          "path": "design\\MeshRepeater2_Logic\\MeshRepeater2_Logic.kicad_sch",
-          "sha256": "fc8f0c7d775f112c7f0910022600df16e804a813fecf762757bac31d4724e375"
+          "path": "design/MeshRepeater2_Logic/MeshRepeater2_Logic.kicad_sch",
+          "sha256": "f5bc0fe46b4152e5c8c9d890306414fd29a0dcf072f5485ca6d4dcdcbecdb239"
         },
         {
-          "path": "design\\MeshRepeater2_Logic\\RTC_IO.kicad_sch",
-          "sha256": "6f3f41da49f799c9f473e9529e48e4fe6191e7d02848e9254d67d35167a3a353"
+          "path": "design/MeshRepeater2_Logic/RTC_IO.kicad_sch",
+          "sha256": "d3a172dbb1a717b14f99b89c9efc9bfe78962ab724e1ae937cdb63828a240210"
         },
         {
-          "path": "design\\MeshRepeater2_Logic\\Watchdog.kicad_sch",
-          "sha256": "4d44bb8fc82632da8ed3a7c8f833ef40884944034ede255b0398c0034dce8e4b"
+          "path": "design/MeshRepeater2_Logic/Watchdog.kicad_sch",
+          "sha256": "1895876037045950d89f70329235b5d3586aba2a9ca4eb23777b35d84a593562"
         }
       ],
       "native_netlist": {
-        "path": "audit\\schematic\\LOGIC\\netlist.xml",
-        "sha256": "d3539ba04100f9a10fb11c8b6d47c73252f1791b81f412a0323a5eaeec0a894d"
+        "path": "audit/schematic/LOGIC/netlist.xml",
+        "sha256": "ed99638d565908b62af422668574854a0fd53af2e4b2acb3c2faab3038dda209"
       },
       "strict_erc": {
-        "path": "audit\\schematic\\LOGIC\\erc.json",
-        "sha256": "2e05c77e6034a6ec92a6357b97bfe3a1cb80ff30393bac0b1c6369ae38c6a7ab"
+        "path": "audit/schematic/LOGIC/erc.json",
+        "sha256": "4c758bcb72f4fdb4665679437bb08f216aeb4d512777fe276bf7e4c4595c236c"
       },
       "pdf": {
-        "path": "output\\pdf\\MeshRepeater2_Logic_schematic.pdf",
-        "sha256": "6afd1b47a19e1aae6bc64db81af80e66d139c1fd49e0881873441674d16a0186"
+        "path": "output/pdf/MeshRepeater2_Logic_V2_A2_schematic.pdf",
+        "sha256": "589cd322ae48bc6282e30e1816a10a412482b391b6af18b4cd19e28a3fcf727a"
       },
       "reviewed_previews": [
         {
-          "path": "audit\\schematic\\LOGIC\\previews\\page-1.png",
-          "sha256": "7560e150a4a476bfff1bea96b99b5e4ddbfec96fd8819f40a8e5617117051a0e"
+          "path": "audit/ina219_and_vertical_2026_10_12/pdf_preview/logic-1.png",
+          "sha256": "5740029cbc19df245bd8aa85843dcd9c78fd898db343f857034aa8aa14940a61"
         },
         {
-          "path": "audit\\schematic\\LOGIC\\previews\\page-2.png",
-          "sha256": "a7114687a6eb699f5bc7652242c2d07d2b04040781e97133dfd9d6b63086c168"
+          "path": "audit/ina219_and_vertical_2026_10_12/pdf_preview/logic-2.png",
+          "sha256": "f280ae5cadc0a66a2964e9efd299b8c261104d9b5f3d4a32d322507a09e67957"
         },
         {
-          "path": "audit\\schematic\\LOGIC\\previews\\page-3.png",
-          "sha256": "0e296921b159728c859413118019c4783c293d85cd301d10e539df8a237250e0"
+          "path": "audit/ina219_and_vertical_2026_10_12/pdf_preview/logic-3.png",
+          "sha256": "0146f10e4d3fa7c831a22e44e737190657fc5bb659b01a0fd86a7ff177555316"
         },
         {
-          "path": "audit\\schematic\\LOGIC\\previews\\page-4.png",
-          "sha256": "63143fbc63accb946c8225a602c6cb030fa28a5d9b3f16ebc61b305e0d6e105f"
+          "path": "audit/ina219_and_vertical_2026_10_12/pdf_preview/logic-4.png",
+          "sha256": "6aa877327f833595729037418aeeabfa2c11e67cc1c329232da1b892dac39c1c"
         }
-      ],
-      "visual_review": "Every page inspected after final render: compact physical package captions; no clipping or visible annotation/wire collision; title, page number and sheet links clear."
+      ]
     }
   ]
 }

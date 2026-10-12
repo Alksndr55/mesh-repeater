@@ -1,6 +1,8 @@
 """V2 only. Dimensioned connector footprints and simplified envelope STEP models.
 
 Run with bundled Python --footprints; run with FreeCAD/bin/python.exe --models.
+For a narrow model update use --models --only-model NAME; it leaves contracts,
+footprints and other models unchanged.
 Does not edit boards, schematic, source v1, or footprints placed on a board.
 Manufacturer drawings are listed in docs/mechanical_selection.json.
 """
@@ -49,6 +51,7 @@ DEFINITIONS = {
                  ('', -3.505, 2.49, 1.30, 'NPTH'), ('', 3.505, 2.49, 1.30, 'NPTH')],
         'bbox': [-3.555, -2.49, 3.555, 1.19], 'courtyard_bbox': [-4.455, -3.30, 4.455, 4.26],
         'height': 7.01, 'tail': 3.51, 'mating': [0, -1], 'actuator_projection': 0.56,
+        'bracket_width': 8.41,
         'source': 'https://www.te.com/en/product-1825027-2.html',
         'drawing_mirror': 'https://www.danomsk.ru/upload/iblock/51a/199312_5a706f693299daa97f0862bd57db70e9.pdf',
         'note': 'Electrical hole pitch4.50mm; bracket pitch7.01mm, not7.11bodywidth. Row separation2.49mm. Bracket width8.41mm and rearreach4.01 from electrical row included in courtyard. Bracket holes are non-electrical.',
@@ -62,8 +65,38 @@ four.update(mpn='Connfly DS1022-1x40RUF11-B cut to4pins', refs=['J3', 'J5'],
             bbox=[-1.25,-1.27,1.25,8.89])
 DEFINITIONS['Connfly_DS1022_1x04RUF11_B_Horizontal'] = four
 
+# Cable-side female pieces for J3/J5. The DS1071 manufacturer drawing explicitly
+# identifies DS1021/DS1022 as its matching male headers; this is not a pitch-only
+# cross-brand substitution. These accessories do not alter any PCB footprint.
+J3_J5_MATES = [
+    {'refs':['J3_J5_HOUSINGS'], 'mpn':'Connfly I-DS1071-SCB01x4',
+     'article':208362, 'quantity':2, 'unit':'pc',
+     'dan_url':'https://www.danomsk.ru/shop/7-kommutatsiya/121-razemy/306-soediniteli-pryamougolnye/208362-bls-1x04-i-ds1071-scb01x4-rozetka-obzh-bez-kontaktov-kontakty-178228-201995-shag-2-54mm-maks-dopust-/',
+     'stock':170, 'stock_checked':'2026-10-12',
+     'source':'https://en.connfly.com/static/upload/file/pdf/DS1071.pdf',
+     'pitch_mm':2.54, 'housing_nominal_mm':[10.16,2.54,14.00],
+     'housing_max_mm':[10.41,2.79,14.25],
+     'mate_headers':['J3','J5'], 'mate_mpn':'Connfly DS1022-1x40RUF11-B cut to4pins',
+     'note':'Два кабельных корпуса 1x4 без контактов. По одному для J3/I2C и J5/UART; требуется всего 8 T-DS1071-SC600. Разъёмы без ключа: первый контакт пометить вручную и проверить всю распиновку до включения. Габариты корпуса по Connfly: 10,16 x 2,54 x 14,00 мм; общий допуск ±0,25 мм.'},
+    {'refs':['J3_J5_CONTACTS'], 'mpn':'Connfly T-DS1071-SC600',
+     'article':201995, 'quantity':8, 'unit':'pc',
+     'dan_url':'https://www.danomsk.ru/shop/7-kommutatsiya/121-razemy/306-soediniteli-pryamougolnye/201995-kontakty-dlya-rozetok-bls-bld-t-ds1071-sc600-2-54mm-connfly/',
+     'stock':6746, 'stock_checked':'2026-10-12',
+     'source':'https://en.connfly.com/static/upload/file/pdf/DS1071.pdf',
+     'wire_awg':[28,22], 'wire_area_mm2':[0.09,0.30], 'wire_insulation_od_mm':[1.2,1.6],
+     'note':'Восемь гнездовых обжимных контактов: по четыре для J3 и J5. Медь AWG28..22, 0,09..0,30 мм²; диаметр изоляции 1,2..1,6 мм. Обжимать подходящей матрицей, затем проверить фиксацию и электрическую распиновку. Для пяти сборок: 10 корпусов и 40 контактов без запаса.'},
+]
+
 
 def write_contract():
+    if (ROOT / 'design' / 'feature_ina219_vertical.json').exists():
+        raise RuntimeError(
+            'Legacy IDC generator: refusing to overwrite the current vertical '
+            'mechanical_selection.json or DAN_NEW_PARTS.csv. Use the current '
+            'docs/vertical_interconnect_selection.json and '
+            'tools/cad/update_v2_vertical_interconnect.py for Ali parts. '
+            '--models --only-model remains available for an unrelated narrow model update.'
+        )
     cards = json.loads((ROOT / 'docs/dan_cards_checked.json').read_text(encoding='utf-8'))
     indexed = {str(c['url'].rstrip('/').split('/')[-1].split('-')[0]): c for c in cards}
     parts = []
@@ -128,6 +161,7 @@ def write_contract():
          'stock':'Ordering available insearchresult; pack40','stock_checked':'2026-10-11','source':'https://purelogic.ru/docs/mekhanika/vinty_din_7985_chernye_draw.pdf',
          'note':'Nominal6mm underhead. Headmodel uses conservative6mmOD/2.52mmhigh; exactorderedheadmayvary. Prove usablefemale depth beforetightening. Do not substitute25mm screw fromDan.'},
     ]
+    accessories.extend(copy.deepcopy(J3_J5_MATES))
     contract = {
         'date': '2026-10-11', 'units': 'mm', 'project': 'Mesh Repeater ver2.0',
         'status': 'dimensioned library; actual hardware fit and electrical current qualification pending',
@@ -260,11 +294,12 @@ def write_footprints():
     print(f'Wrote {len(DEFINITIONS)} dimensioned footprints into each v2 library')
 
 
-def write_models():
+def write_models(only=None):
     import FreeCAD as App
     import Part
     outdir=DESIGNS[0]/'3dmodels'
-    for name,d in DEFINITIONS.items():
+    selected = DEFINITIONS if only is None else {only: DEFINITIONS[only]}
+    for name,d in selected.items():
         doc=App.newDocument('Model')
         x0,y0,x1,y1=d['bbox']
         # KiCad XY is reflected alongY intheSTEP localcoordinate convention.
@@ -290,20 +325,27 @@ def write_models():
                 feature('Riser'+num,Part.makeBox(.64,.64,d['overall_height']-.32,App.Vector(-.32,-y-.32,0)),(.74,.67,.42))
         if name.startswith('SW_'):
             feature('Actuator',Part.makeCylinder(1.755,d['actuator_projection'],App.Vector(0,-y0,4.01),App.Vector(0,1,0)),(.95,.95,.85))
+            # TE specifies an 8.41 mm overall bracket, wider than the 7.01 mm
+            # centre pitch of its mounting legs. Preserve the full outer envelope.
+            bracket_section_width=d['bracket_width']-7.01
             for sx in(-1,1):
-                feature('Bracket'+str(sx),Part.makeBox(.65,3.0,3.0,App.Vector(sx*3.505-.325,-4.01,0)),(.75,.75,.78))
+                feature('Bracket'+str(sx),Part.makeBox(bracket_section_width,3.0,3.0,
+                    App.Vector(sx*3.505-bracket_section_width/2,-4.01,0)),(.75,.75,.78))
         doc.recompute()
         dest=outdir/(name+'.step');Part.export(doc.Objects,str(dest));App.closeDocument(doc.Name)
         for target in DESIGNS[1:]:
             (target/'3dmodels'/dest.name).write_bytes(dest.read_bytes())
-    print(f'Wrote {len(DEFINITIONS)} simplified envelope STEP models into each v2 project')
+    print(f'Wrote {len(selected)} simplified envelope STEP models into each v2 project')
 
 
 def main():
-    ap=argparse.ArgumentParser();ap.add_argument('--footprints',action='store_true');ap.add_argument('--models',action='store_true');args=ap.parse_args()
-    write_contract()
+    ap=argparse.ArgumentParser();ap.add_argument('--footprints',action='store_true');ap.add_argument('--models',action='store_true')
+    ap.add_argument('--only-model',choices=tuple(DEFINITIONS));args=ap.parse_args()
+    if args.only_model and (not args.models or args.footprints):
+        ap.error('--only-model requires --models and cannot change footprints')
+    if not args.only_model:write_contract()
     if args.footprints:write_footprints()
-    if args.models:write_models()
+    if args.models:write_models(args.only_model)
 
 
 if __name__=='__main__':main()

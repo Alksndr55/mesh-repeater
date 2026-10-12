@@ -1,0 +1,108 @@
+{
+  "shield_solids": [
+    {
+      "bbox": [
+        0.3004999999999981,
+        -59.6995,
+        20.02,
+        89.6995,
+        -0.30049999999999694,
+        20.055
+      ],
+      "volume": 184.26187377432166,
+      "faces": 18
+    },
+    {
+      "bbox": [
+        0.0,
+        -60.0,
+        20.055,
+        90.0,
+        0.0,
+        21.53
+      ],
+      "volume": 7917.549384560184,
+      "faces": 10
+    }
+  ],
+  "all_assembly_bbox": [
+    -4.75,
+    -67.21000000000001,
+    -3.48,
+    93.25,
+    2.8000000000000007,
+    42.080000000000005
+  ],
+  "hardware_clearance": [
+    {
+      "board": "POWER",
+      "corner": 1,
+      "nearest": null,
+      "lower_bound_if_none": 2
+    },
+    {
+      "board": "POWER",
+      "corner": 2,
+      "nearest": {
+        "distance": 1.4045735194570597,
+        "solid": 70,
+        "bbox": [
+          59.08,
+          -6.0,
+          1.5599999999999998,
+          81.92,
+          2.8000000000000007,
+          10.66
+        ]
+      },
+      "lower_bound_if_none": 2
+    },
+    {
+      "board": "POWER",
+      "corner": 3,
+      "nearest": null,
+      "lower_bound_if_none": 2
+    },
+    {
+      "board": "POWER",
+      "corner": 4,
+      "nearest": null,
+      "lower_bound_if_none": 2
+    },
+    {
+      "board": "LOGIC",
+      "corner": 1,
+      "nearest": null,
+      "lower_bound_if_none": 2
+    },
+    {
+      "board": "LOGIC",
+      "corner": 2,
+      "nearest": {
+        "distance": 1.4045735194570739,
+        "solid": 73,
+        "bbox": [
+          59.08,
+          -6.0,
+          28.4,
+          81.92,
+          2.8000000000000007,
+          37.5
+        ]
+      },
+      "lower_bound_if_none": 2
+    },
+    {
+      "board": "LOGIC",
+      "corner": 3,
+      "nearest": null,
+      "lower_bound_if_none": 2
+    },
+    {
+      "board": "LOGIC",
+      "corner": 4,
+      "nearest": null,
+      "lower_bound_if_none": 2
+    }
+  ]
+}

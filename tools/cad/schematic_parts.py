@@ -131,6 +131,10 @@ def add_component_annotations(sheet):
             'M2':(213.36,121.92,''), 'SH1':(208.28,180.34,''),
             'R6':(143.51,158.75,'left')}
         if ref in overrides and sheet.name!='Interconnect':ax,ay,justify=overrides[ref]
+        if sheet.name=='BatteryMonitor':
+            if ref=='R72':ax,ay,justify=x,y+3.81,''
+            if ref=='R73':ax,ay,justify=x,y+13.97,''
+            if ref=='C64':ax,ay,justify=x+3.81,y+15.24,'left';size=.85;lines=[mpn,package]
         if sheet.name=='LTO_Balancer' and ref in ('U8','U9'):
             # Below/right of the device, between its A return and capacitor.
             # The sheet already declares LTO-only assembly; repeating that

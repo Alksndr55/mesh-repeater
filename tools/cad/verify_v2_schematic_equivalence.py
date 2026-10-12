@@ -5,9 +5,12 @@ functional connected-component membership may not. This check compares the
 exported native KiCad netlists rather than the schematic generator's manifest.
 """
 from pathlib import Path
-import argparse, hashlib, json, xml.etree.ElementTree as ET
+import argparse, hashlib, json, sys, xml.etree.ElementTree as ET
 
 ROOT=Path(__file__).resolve().parents[2]
+sys.path.insert(0, str(ROOT / 'tools'))
+from v2_feature_contract import (FEATURE_PATH, PINMAP, NEW_NETS, INA_SOIC_PIN_NAMES, load_feature,
+    expected_original_nets, feature_checks, feature_native_checks, legacy_union)
 
 def load_netlist(path,board):
     xml=ET.parse(path).getroot();net_by_pin={};groups={}
@@ -30,6 +33,12 @@ class Union:
         return n
     def join(self,a,b):self.parents[self.root(a)]=self.root(b)
 
+def symbol_pins(xml, ref):
+    comp = next(n for n in xml.findall('./components/comp') if n.get('ref') == ref)
+    source = comp.find('libsource')
+    libpart = next(n for n in xml.findall('./libparts/libpart') if n.get('lib') == source.get('lib') and n.get('part') == source.get('part'))
+    return {n.get('num'): {'name': n.get('name'), 'type': n.get('type')} for n in libpart.findall('./pins/pin')}
+
 def main():
     p=argparse.ArgumentParser()
     p.add_argument('--contract',type=Path,required=True)
@@ -45,11 +54,17 @@ def main():
             if not path.resolve().is_relative_to(ROOT):raise ValueError('All v2 proof paths must stay inside v2')
             setattr(a,name,path.resolve())
     contract=json.loads(a.contract.read_text(encoding='utf-8'))
+    feature=load_feature(a.contract)
     cable=json.loads(a.cable.read_text(encoding='utf-8'))
     models={n:json.loads(path.read_text(encoding='utf-8')) for n,path in [('POWER',a.power_model),('LOGIC',a.logic_model)]}
     natives={n:load_netlist(path,n) for n,path in [('POWER',a.power_netlist),('LOGIC',a.logic_netlist)]}
     checks=[]
     def check(name,passed,detail=None):checks.append({'name':name,'pass':bool(passed),'detail':detail})
+    checks.extend(feature_checks(models, feature))
+    if feature:
+        power_xml=ET.parse(a.power_netlist).getroot()
+        ina_names={pin:fields['name'] for pin,fields in symbol_pins(power_xml,'U12').items()} if 'U12' in natives['POWER'][2] else {}
+        check('INA219 native SOIC8 physical pin names match TI',ina_names==INA_SOIC_PIN_NAMES,{'expected':INA_SOIC_PIN_NAMES,'actual':ina_names})
     union=Union()
     for board,model in models.items():
         expected_local={};pin_missing=[];native_local={}
@@ -80,7 +95,10 @@ def main():
                 declared.append(cp['nets'][str(link[key]['pin'])])
             check('cable same electrical net: '+str(link),declared==[link['net'],link['net']],declared)
             union.join(*ends);cable_nets.add(link['net']);contacts.append((ends,link['net']))
-    check('exact four interboard nets',cable_nets=={'FILTER_OUT','BAT','MODE','GND'},sorted(cable_nets))
+    expected_interboard=PINMAP if feature else {str(n): 'FILTER_OUT' if n in (1,3,5,7) else 'BAT' if n==9 else 'MODE' if n==11 else 'GND' for n in range(1,13)}
+    links=cable['connections']
+    check('exact twelve physical 1:1 interboard contacts',len(links)==12 and {str(x['power']['pin']):x['net'] for x in links}==expected_interboard and all(x['power']['ref']=='J101' and x['logic']['ref']=='J201' and str(x['power']['pin'])==str(x['logic']['pin']) for x in links))
+    check('exact declared interboard nets',cable_nets==set(expected_interboard.values()),sorted(cable_nets))
     source_parts={p['reference']:p for p in contract['parts']}
     # A documented removed SH1 is mechanical. It never removes a functional
     # signal endpoint. Grounded bolt pads are new mechanical GND endpoints.
@@ -88,6 +106,23 @@ def main():
     removed=[r for r in source_parts if r not in actual_parts[source_parts[r]['board']]]
     mechanical_refs={r for r,part in source_parts.items() if part['original_model_part']['kind']=='MountingHole'}|{'SH1'}
     check('all original functional references retained',set(removed).issubset(mechanical_refs),removed)
+    if feature:
+        allowed_new={'POWER':set(NEW_NETS)|{'J101'},'LOGIC':{'J201','H201','H202','H203','H204'}}
+        for board in models:
+            added=set(actual_parts[board])-set(source_parts)
+            check(board+' exact authorized additional positions',added==allowed_new[board],sorted(added))
+    original_net_fail=[]
+    for ref, source in source_parts.items():
+        if ref in removed:continue
+        board=source['board'];part=actual_parts[board].get(ref);original=source['original_model_part']
+        if original['kind']=='MountingHole':continue
+        before=dict(original['nets'],**({'4':None} if ref=='J12' else {}))
+        expected_nets=expected_original_nets(board,ref,before,feature)
+        if part is None or part['nets']!=expected_nets:original_net_fail.append((board,ref,expected_nets,None if part is None else part['nets']))
+    check('original model pins unchanged except exact authorized BAT_SYS override',not original_net_fail,original_net_fail)
+    native_pin_net={endpoint:group for native in natives.values() for endpoint,group in native[0].items()}
+    checks.extend(feature_native_checks(native_pin_net,feature))
+    projected_union=legacy_union(union,native_pin_net,feature)
     expected_groups={};actual_groups={};nc_fail=[];value_fail=[];variant_fail=[];pin_fail=[]
     for logical in contract['nets']:
         nodes=[]
@@ -97,12 +132,12 @@ def main():
             native=natives[n['board']][0].get(endpoint)
             if native is None:pin_fail.append(endpoint);continue
             nodes.append((n['reference'],str(n['pin'])))
-            actual_groups.setdefault(union.root(native),set()).add((n['reference'],str(n['pin'])))
+            actual_groups.setdefault(projected_union.root(native),set()).add((n['reference'],str(n['pin'])))
         if nodes:expected_groups[logical['logical_net']]=set(nodes)
     expected={frozenset(nodes) for nodes in expected_groups.values()}
     actual={frozenset(nodes) for nodes in actual_groups.values()}
     check('all connected functional pins exist',not pin_fail,pin_fail)
-    check('functional pin graph equals S4.16 across cable',expected==actual,{'expected_groups':len(expected),'actual_groups':len(actual),'missing_groups':[sorted(v) for v in expected-actual],'extra_groups':[sorted(v) for v in actual-expected]})
+    check('legacy functional pin graph equals S4.16 with declared R71 series projection',expected==actual,{'expected_groups':len(expected),'actual_groups':len(actual),'missing_groups':[sorted(v) for v in expected-actual],'extra_groups':[sorted(v) for v in actual-expected]})
     for ref,source in source_parts.items():
         if ref in removed:continue
         board=source['board'];original=source['original_model_part'];part=actual_parts[board].get(ref)
@@ -126,16 +161,24 @@ def main():
     check('original NC pins remain isolated',not nc_fail,nc_fail)
     check('default component values unchanged',not value_fail,value_fail)
     check('all three assembly fit/value variants unchanged',not variant_fail,variant_fail)
-    projected={name:nodes for name,nodes in expected_groups.items()}
-    filter_group=next((group for group,nodes in actual_groups.items() if ('J11','1') in nodes),None)
-    sys_group=next((group for group,nodes in actual_groups.items() if ('J11','2') in nodes),None)
+    filter_native=native_pin_net.get(('LOGIC','J11','1'))
+    sys_native=native_pin_net.get(('LOGIC','J11','2'))
+    filter_group=union.root(filter_native) if filter_native is not None else None
+    sys_group=union.root(sys_native) if sys_native is not None else None
     check('J11 removed keeps LC OUT separate from SYS_3V3',filter_group is not None and sys_group is not None and filter_group!=sys_group)
     check('D3/D4 remain local to POWER',all(ref in actual_parts['POWER'] and ref not in actual_parts['LOGIC'] for ref in ['D3','D4','R10','R11']))
-    input_paths=[a.contract,a.power_netlist,a.logic_netlist,a.power_model,a.logic_model,a.cable]
+    original_xml_path=ROOT/'audit'/'source_s4_16'/'native_netlist.xml'
+    check('original native XML matches frozen hash',hashlib.sha256(original_xml_path.read_bytes()).hexdigest()==contract['source_inputs']['native_netlist']['sha256'])
+    original_xml=ET.parse(original_xml_path).getroot();logic_xml=ET.parse(a.logic_netlist).getroot()
+    for ref in ['M1','M2']:
+        baseline_names=symbol_pins(original_xml,ref);current_names=symbol_pins(logic_xml,ref)
+        check('FakeTec unchanged physical pin/GPIO names '+ref,baseline_names==current_names,{'baseline':baseline_names,'V2_native_XML':current_names})
+    input_paths=[a.contract,a.power_netlist,a.logic_netlist,a.power_model,a.logic_model,a.cable,original_xml_path]
+    if feature:input_paths.extend([FEATURE_PATH,ROOT/'tools'/'v2_feature_contract.py'])
     for model_path in [a.power_model,a.logic_model]:
         for pattern in ['*.kicad_sch','*.kicad_sym','*.kicad_pro']:
             input_paths.extend(sorted(model_path.parent.glob(pattern)))
-    report={'scope':'Native schematic graph after cable connection; no board/bench/mechanical claim','baseline_pcb_sha256':contract['source_inputs']['pcb']['sha256'],'ok':all(c['pass'] for c in checks),'checks':checks,'inputs':{str(path.relative_to(ROOT)):hashlib.sha256(path.read_bytes()).hexdigest() for path in input_paths}}
+    report={'scope':'Full native local graph and authorized INA219 circuit; immutable S4.16 legacy graph projects only R71, no board/bench/mechanical claim','baseline_pcb_sha256':contract['source_inputs']['pcb']['sha256'],'ok':all(c['pass'] for c in checks),'checks':checks,'inputs':{str(path.relative_to(ROOT)):hashlib.sha256(path.read_bytes()).hexdigest() for path in input_paths}}
     a.out.parent.mkdir(parents=True,exist_ok=True);a.out.write_text(json.dumps(report,ensure_ascii=False,indent=2),encoding='utf-8')
     print(json.dumps({'ok':report['ok'],'checks':len(checks),'failed':[c for c in checks if not c['pass']],'report':str(a.out.relative_to(ROOT))},ensure_ascii=True))
     if not report['ok']:raise SystemExit(1)

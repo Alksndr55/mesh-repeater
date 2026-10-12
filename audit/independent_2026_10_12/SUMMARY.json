@@ -1,0 +1,229 @@
+{
+  "date": "2026-10-12",
+  "scope": "Independent read-only audit of published Mesh Repeater 2.0; three fresh reviewers plus separate root proof checks",
+  "commit": "547740fee937f891568f18485c7a6a3733c234c9",
+  "baseline_commit": "cf54f9970e716272d477afdb252b4e195d595cb6",
+  "new_findings": [
+    {
+      "id": "R1",
+      "severity": "P2",
+      "new_in_V2": true,
+      "title": "Избыточные обходы MOSI/MISO и RESET, разрывы местной опорной земли",
+      "geometry_confidence": "high",
+      "hardware_impact_confidence": "medium",
+      "total_net_mm": {
+        "MOSI_RF": 185.25595709376952,
+        "MISO_MCU": 121.65858291274932
+      },
+      "path_segment_sum_estimate_mm": {
+        "MOSI_RF": 171.08691911333113,
+        "MISO_MCU": 94.63721856198917,
+        "RADIO_RST": 102.41879502661799
+      },
+      "length_scope": "whole native segments selected by item connectivity; not exact electrical pin-to-pin path; all-net totals separate",
+      "worst_MOSI_nearest_return_barrel_mm": 6.020797289396148,
+      "signal_via_xy_mm": [
+        53,
+        21
+      ],
+      "GND_via_xy_mm": [
+        57.5,
+        25
+      ],
+      "fix": "Освободить центральный коридор MCU ↔ модем, сократить обходы и переходы, оставить согласующие резисторы у источников, обеспечить непрерывную местную опору и соседние GND via. GPIO и функции сохранить. Проверить SPI/reset осциллографом после переразводки.",
+      "detail": "При тех же конечных площадках, что в S4.16, MOSI/MISO получили длинные обходы. Суммы целых выбранных сегментов около 171,1 / 94,6 мм против 33,7 / 35,6 мм в S4.16; это оценка графа, не точная длина пути внутри широких площадок. Вся медь соответствующих сетей — 185,3 / 121,7 мм, по 11 виа. Выбранный RESET вырос примерно с 53,0 до 102,4 мм. Под частями SPI нет земли противоположного слоя; у MOSI via (53; 21) ближайшая GND via находится в 6,02 мм. Функциональный отказ не установлен, но геометрическая регрессия подтверждена.",
+      "evidence": [
+        "routing.md:15; routing_spi_evidence.png",
+        "LOGIC PCB:31401, UUID 55ba81aa-501c-4eb4-92b4-31b9ec08ed3e — 9,1 мм MOSI без B.Cu GND",
+        "LOGIC PCB:36008, UUID 0b63f05f-ccd6-4c91-8e44-5a6e65296761 — 6,9 мм MISO без F.Cu GND",
+        "LOGIC PCB:31878 — сигнальная via (53; 21)"
+      ]
+    },
+    {
+      "id": "R2",
+      "severity": "P2",
+      "new_in_V2": true,
+      "title": "RADIO_RXEN разрывает B.Cu GND непосредственно под ANT_RF",
+      "geometry_confidence": "high",
+      "hardware_impact_confidence": "medium",
+      "RXEN_xy_mm": [
+        [
+          37.4,
+          8.6
+        ],
+        [
+          49.2,
+          8.6
+        ]
+      ],
+      "RF_gap_xy_mm": [
+        [
+          42.72222222222222,
+          8.277777777777779
+        ],
+        [
+          42.08585858585858,
+          8.914141414141415
+        ]
+      ],
+      "gap_length_mm": 0.8999540851465151,
+      "baseline_has_continuous_B_GND": true,
+      "fix": "Перенести RXEN вне проекции ANT_RF/ANT_SMA, восстановить сплошную B.Cu GND под RF и добавить правило, запрещающее цифровые трассы в этом коридоре без запрета GND-заливки. Повторить проверку сохранённой меди и RF-тракта.",
+      "detail": "Новая дорожка RXEN от (37,4; 8,6) до (49,2; 8,6) и её зазор прорезают нижнюю опорную медь под RF. Пробел по оси ANT_RF составляет около 0,900 мм; в S4.16 его не было. Боковая F.Cu земля остаётся, поэтому RF-возврат полностью не оборван. Изменение структуры и близкое цифровое пересечение подтверждены; величина RF/EMI-последствий не измерена.",
+      "evidence": [
+        "routing.md:44; routing_rf_reference_gap.png",
+        "LOGIC PCB:35441, UUID e0e0ec38-fa6a-448a-a9bd-716f6f9b20c8 — RXEN",
+        "LOGIC PCB:33187, UUID 0a10c8ed-006d-451e-8ec3-774664bdfb11 — ANT_RF"
+      ]
+    },
+    {
+      "id": "M-01",
+      "severity": "P2",
+      "confidence": 0.98,
+      "title": "BOM не содержит ответных кабельных частей новых угловых J3/J5",
+      "evidence": [
+        "bom/DAN_NEW_PARTS.csv:5",
+        "bom/V2_COMPONENT_BOM.csv:134",
+        "bom/V2_COMPONENT_BOM.csv:136",
+        "docs/Mesh_repeater_v2_Codex_prompt_RU.txt:185"
+      ],
+      "refs": [
+        "J3",
+        "J5"
+      ],
+      "coordinates_native_mm": {
+        "J3": [
+          86,
+          12,
+          0
+        ],
+        "J5": [
+          2.5,
+          18.12,
+          180
+        ]
+      },
+      "detail": "Один DS1022-1x40RUF11-B разрезается на J11/J3/J5, но это только платные вилки. Для J11 шунт отдельно указан, для J3 и J5 ни 4-контактные кабельные корпуса, ни гнездовые контакты/готовые кабели не перечислены. Поэтому по спискам 2.0 нельзя собрать и проверить все выбранные внешние соединения; конечный габарит и доступ с ответной частью также не определены.",
+      "suggestion": "При последующей правке добавить проверенные кабельные гнёзда/контакты либо конкретные готовые 1x4 кабели с количеством, применимостью ко всем трём вариантам, размером и схемой нумерации, затем проверить вставку и снятие в собранных этажах."
+    },
+    {
+      "id": "M-02",
+      "severity": "P3",
+      "confidence": 0.99,
+      "title": "Упрощённая STEP кнопки не покрывает полный наружный размер скобы",
+      "evidence": [
+        "tools/cad/build_v2_mechanical_library.py:294",
+        "tools/cad/build_v2_mechanical_library.py:50",
+        "docs/mechanical_sources/SW1_TE.pdf, page1, front-view bracket width8.41mm",
+        "audit/independent_2026_10_12/mechanics.geometry.json, models.SW_TE_1825027_2_Side.step"
+      ],
+      "refs": [
+        "SW1",
+        "SW2"
+      ],
+      "coordinates_native_mm": {
+        "SW1": [
+          29,
+          58.2,
+          180
+        ],
+        "SW2": [
+          41,
+          58.2,
+          180
+        ]
+      },
+      "detail": "Габарит локальной STEP по X составляет -3.83..3.83 =7.66мм. TE drawing задаёт 8.41мм для внешней скобы. Недостают 0.375мм с каждого края. Courtyard ±4.455мм верно учитывает настоящую ширину скобы, поэтому подтверждённого пересечения или ошибки отверстий здесь нет; ограничение относится к полноте визуальной/3D проверки.",
+      "suggestion": "При последующей правке использовать точную TE STEP либо консервативно расширить оболочку скобы до ±4.205мм, затем повторить геометрическую проверку. Сейчас не ссылаться на эту STEP как на полный реальный наружный контур скобы."
+    },
+    {
+      "id": "DOC-01",
+      "severity": "P3",
+      "origin": "V2 BOM integration",
+      "status": "confirmed",
+      "file": "bom/V2_COMPONENT_BOM.csv",
+      "line": 71,
+      "problem": "H1–H4 values say M3 NPTH, while physical footprint and notes specify grounded plated through holes. Native CAD is PTH; the ambiguity is in BOM text, not drill data.",
+      "recommended_fix": "Переименовать значения H1–H4 во всех вариантах в M3 PTH GND, сохранив геометрию и признак «не закупать как компонент».",
+      "evidence": [
+        "bom/V2_COMPONENT_BOM.csv:71–74",
+        "Physical_Package_Footprint = Meshcore:GND_M3_D3.2_OD6; native pad type = thru_hole"
+      ],
+      "title": "BOM H1–H4: подпись NPTH против фактических отверстий PTH GND",
+      "detail": "Во всех трёх колонках номиналов H1–H4 осталось M3 NPTH, тогда как физические посадки, MPN и пояснения задают металлизированные отверстия с контактом GND. Нативная сверловка корректна; неоднозначность находится в тексте ведомости."
+    }
+  ],
+  "inherited_accepted_risks": [
+    {
+      "id": "E-I1",
+      "severity": "high",
+      "origin": "inherited_S4.16_accepted",
+      "ref": "U8/U9.3; R47/R51",
+      "evidence": "2 ohm shunts do not bound LMV431 cathode current to recommended15mA or absolute30mA under cell imbalance.",
+      "location": "design/MeshRepeater2_Power/LTO_Balancer.kicad_sch:10703; :9957; electrical.power.xml:4594; :4650",
+      "baseline_location": "baseline/S4_16/assembly_variants_S4_16.csv:124; :130",
+      "primary_source": "https://www.ti.com/lit/ds/symlink/lmv431.pdf",
+      "recommended_fix": "If electrical redesign is later authorized, current-limit the balancing path or use a qualified balancer/protection; until then characterize current and temperature."
+    },
+    {
+      "id": "E-I2",
+      "severity": "high",
+      "origin": "inherited_S4.16_accepted",
+      "ref": "U1.14 BAT -> U2.10 VIN",
+      "evidence": "CN3722 no-battery OVP estimate exceeds TPS63802 recommended5.5V, with highcorner envelope approaching6V absolute.",
+      "location": "design/MeshRepeater2_Power/MeshRepeater2_Power.kicad_sch:16606; design/MeshRepeater2_Power/Converter.kicad_sch:21247; electrical.power.xml:1653; :3949",
+      "baseline_location": "baseline/S4_16/assembly_variants_S4_16.csv:12",
+      "primary_sources": [
+        "https://consonance-elec.com/static/upload/file/20231218/1702867485736775.pdf",
+        "https://www.ti.com/lit/ds/symlink/tps63802.pdf"
+      ],
+      "recommended_fix": "If redesign is authorized, add independently qualified voltage limiting; qualify startup/unplug transients and exclude unqualified no-battery operation."
+    }
+  ],
+  "formal_checks": {
+    "kicad_version": "10.0.6",
+    "ERC_runs": 2,
+    "DRC_runs": 6,
+    "all_exit_codes_zero": true,
+    "rules": {
+      "Power": {
+        "DRC_severity_ignore": [],
+        "ERC_severity_ignore": []
+      },
+      "Logic": {
+        "DRC_severity_ignore": [],
+        "ERC_severity_ignore": []
+      },
+      "Shield": {
+        "DRC_severity_ignore": [],
+        "ERC_severity_ignore": []
+      }
+    }
+  },
+  "equivalence": {
+    "pass": true,
+    "retained_pins": 435,
+    "source_groups": 102,
+    "v2_groups": 102,
+    "J11_removed_FILTER_SYS_separate": true
+  },
+  "local_document_links": {
+    "checked": 68,
+    "broken": []
+  },
+  "preservation": {
+    "tracked_file_count": 837,
+    "tracked_changes": [],
+    "original_V1_board_sha256": "742ae27bb1d13893f6dc368e5c67f5c41b35a3e6765331fc7e9871297d23dec6",
+    "frozen_V1_board_sha256": "742ae27bb1d13893f6dc368e5c67f5c41b35a3e6765331fc7e9871297d23dec6",
+    "V1_board_unchanged": true
+  },
+  "review_reports": {
+    "routing": "routing.json",
+    "electrical": "electrical.json",
+    "mechanics": "mechanics.json",
+    "documents": "root_document_checks.json"
+  },
+  "product_modifications": false,
+  "manufacturing_or_EMC_qualification": false
+}

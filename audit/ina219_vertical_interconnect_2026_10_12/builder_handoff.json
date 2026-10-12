@@ -1,0 +1,21 @@
+{
+  "status": "LOGIC_SHIELD_HANDOFF; POWER_NATIVE_PENDING",
+  "native_sha256": {
+    "LOGIC": "0a174296e629f1656889efbf2430eeffb4a1df0c953f14be6d18eff6a8beb93b",
+    "SHIELD": "b76bcf145c7506900cf4c298dd7b770a8541f2833cdcf874c7663ba8fbd83da1"
+  },
+  "logic_DRC_source": "audit/ina219_vertical_interconnect_2026_10_12/MeshRepeater2_Logic_pinout_labels_drc.json",
+  "shield_DRC_source": "audit/ina219_vertical_interconnect_2026_10_12/MeshRepeater2_Shield_final_drc.json",
+  "direct_pin_coordinates_source": "audit/ina219_vertical_interconnect_2026_10_12/vertical_coordinate_mating.json",
+  "smoothing_source": "audit/ina219_vertical_interconnect_2026_10_12/logic_route_smoothing.json",
+  "preserved_original_bus_source": "audit/ina219_vertical_interconnect_2026_10_12/logic_retained_route_optimization.json",
+  "connector_model_source": "audit/ina219_vertical_interconnect_2026_10_12/connector_3d_checks.json",
+  "new_branch_widths_mm": {
+    "FILTER_OUT": 0.8,
+    "SYS_3V3_INA_only": 0.25,
+    "SDA": 0.2,
+    "SCL": 0.25,
+    "BAT_ADC_sense": 0.25
+  },
+  "schematic_parity_status": "Root regenerates and syncs new native schematic first; no parity claim in this handoff."
+}

@@ -1,0 +1,264 @@
+{
+  "date": "2026-10-12",
+  "status": "PROPOSAL ONLY; native/BOM/schematic unchanged",
+  "recommended_pair": {
+    "male": "Samtec MTSW-106-21-S-D-1195",
+    "female": "Samtec SSW-106-01-G-D",
+    "quantity_per_assembly_each": 1,
+    "quantity_for5_each": 5
+  },
+  "purchase": {
+    "male_url": "https://www.samtec.com/products/mtsw-106-21-s-d-1195",
+    "male_stock": 728,
+    "male_stock_evidence_named_row_on": "https://www.samtec.com/products/mtsw-106-21-s-d-1175",
+    "male_price": "No current primary direct price verified; quote only. Do not attribute indexed Alldatasheet/Octopart prices to a live purchase offer.",
+    "female_url": "https://www.digikey.com/en/products/detail/samtec-inc/SSW-106-01-G-D/1112052",
+    "female_stock": 667,
+    "female_factory_stock": 2713,
+    "female_currency": "USD",
+    "female_price_qty1_9": 2.58,
+    "female_price_qty10": 2.196,
+    "female_cost_qty5": 12.9,
+    "note": "Displayed stock/date only. No purchase, quote or messages sent. Shipping/payment to Russia not verified. No suitable documented Dan/ChipDip exact pair found."
+  },
+  "geometry_mm": {
+    "grid": 2.54,
+    "pin_square_nominal": 0.635,
+    "male_post": 30.353,
+    "male_post_tolerance": 0.2032,
+    "male_body_height_REF": 2.54,
+    "male_oal": 36.321999999999996,
+    "male_tail": 3.428999999999994,
+    "female_height": 8.509,
+    "female_height_tolerance": 0.127,
+    "female_tail": 2.6416,
+    "female_insertion_catalog": [
+      3.68,
+      6.35
+    ],
+    "F_face_gap": 36.019999999999996,
+    "nominal_insertion": 5.382000000000005
+  },
+  "acceptance": {
+    "F_face_gap_mm": [
+      35.62,
+      36.419999999999995
+    ],
+    "male_body_height_mm": [
+      2.4130000000000003,
+      2.667
+    ],
+    "body_height_note": "Incoming inspection acceptance; bodyheight is REF in primaryprint, not a guaranteed tolerance.",
+    "total_axial_budget_mm": 0.8572,
+    "insertion_bounds_mm": [
+      4.524800000000005,
+      6.239200000000005
+    ],
+    "pass": true,
+    "note": "Assembled gap and each pin insertion must be measured; unknown standoff and washer tolerances are not assumed. No changes to stand lengths, washers or M3thread chain proposed."
+  },
+  "shield_proposal": {
+    "holes": 12,
+    "type": "NPTH; isolated from foil, unsoldered",
+    "diameter_mm": 2.0,
+    "drill_tolerance_assumption_mm": 0.05,
+    "copper_clear_diameter_mm": 3.0,
+    "pins": {
+      "1": {
+        "net": "FILTER_OUT",
+        "power_native_xy": [
+          64.15,
+          11.0
+        ],
+        "logic_proposed_native_xy": [
+          64.15,
+          49.0
+        ],
+        "shield_proposed_native_xy": [
+          64.15,
+          49.0
+        ]
+      },
+      "2": {
+        "net": "GND",
+        "power_native_xy": [
+          64.15,
+          8.46
+        ],
+        "logic_proposed_native_xy": [
+          64.15,
+          51.54
+        ],
+        "shield_proposed_native_xy": [
+          64.15,
+          51.54
+        ]
+      },
+      "3": {
+        "net": "FILTER_OUT",
+        "power_native_xy": [
+          66.69,
+          11.0
+        ],
+        "logic_proposed_native_xy": [
+          66.69,
+          49.0
+        ],
+        "shield_proposed_native_xy": [
+          66.69,
+          49.0
+        ]
+      },
+      "4": {
+        "net": "GND",
+        "power_native_xy": [
+          66.69,
+          8.46
+        ],
+        "logic_proposed_native_xy": [
+          66.69,
+          51.54
+        ],
+        "shield_proposed_native_xy": [
+          66.69,
+          51.54
+        ]
+      },
+      "5": {
+        "net": "FILTER_OUT",
+        "power_native_xy": [
+          69.23,
+          11.0
+        ],
+        "logic_proposed_native_xy": [
+          69.23,
+          49.0
+        ],
+        "shield_proposed_native_xy": [
+          69.23,
+          49.0
+        ]
+      },
+      "6": {
+        "net": "GND",
+        "power_native_xy": [
+          69.23,
+          8.46
+        ],
+        "logic_proposed_native_xy": [
+          69.23,
+          51.54
+        ],
+        "shield_proposed_native_xy": [
+          69.23,
+          51.54
+        ]
+      },
+      "7": {
+        "net": "FILTER_OUT",
+        "power_native_xy": [
+          71.77,
+          11.0
+        ],
+        "logic_proposed_native_xy": [
+          71.77,
+          49.0
+        ],
+        "shield_proposed_native_xy": [
+          71.77,
+          49.0
+        ]
+      },
+      "8": {
+        "net": "GND",
+        "power_native_xy": [
+          71.77,
+          8.46
+        ],
+        "logic_proposed_native_xy": [
+          71.77,
+          51.54
+        ],
+        "shield_proposed_native_xy": [
+          71.77,
+          51.54
+        ]
+      },
+      "9": {
+        "net": "BAT",
+        "power_native_xy": [
+          74.31,
+          11.0
+        ],
+        "logic_proposed_native_xy": [
+          74.31,
+          49.0
+        ],
+        "shield_proposed_native_xy": [
+          74.31,
+          49.0
+        ]
+      },
+      "10": {
+        "net": "GND",
+        "power_native_xy": [
+          74.31,
+          8.46
+        ],
+        "logic_proposed_native_xy": [
+          74.31,
+          51.54
+        ],
+        "shield_proposed_native_xy": [
+          74.31,
+          51.54
+        ]
+      },
+      "11": {
+        "net": "MODE",
+        "power_native_xy": [
+          76.85,
+          11.0
+        ],
+        "logic_proposed_native_xy": [
+          76.85,
+          49.0
+        ],
+        "shield_proposed_native_xy": [
+          76.85,
+          49.0
+        ]
+      },
+      "12": {
+        "net": "GND",
+        "power_native_xy": [
+          76.85,
+          8.46
+        ],
+        "logic_proposed_native_xy": [
+          76.85,
+          51.54
+        ],
+        "shield_proposed_native_xy": [
+          76.85,
+          51.54
+        ]
+      }
+    },
+    "laminate_web_nominal_mm": 0.54,
+    "lateral_acceptance": "Long-pin planeoffset<=.25mm, boardregistration<=.15mm, squarepin diagonal<=.94mm. With minhole1.95mm radialmargin>=.105mm. 2.0mm holes do not absorb unrestricted vendor2degree pin sway; reject/realign hardware or revise drillplan before fabrication. Clearings overlap in copper; remove any floating foil islands."
+  },
+  "orientation": "Old J201 numbering physically opposes J101. Native female footprint must be mirrored/reoriented so proposedJ201 pin1 at[64.15,49], evenrowY51.54 and ascendingX; reroute locally. Do not simply swap existing IDC body. ISP J10 unchanged. Preserve12 nets1:1; SYS_3V3 absent.",
+  "sources": {
+    "male_print": "https://suddendocs.samtec.com/prints/mtsw-xxx-xx-x-x-xxxx-xx-xxx-mkt.pdf",
+    "male_catalog": "https://suddendocs.samtec.com/catalog_english/mtsw.pdf",
+    "female_print": "https://suddendocs.samtec.com/prints/ssw-1xx-xx-xxx-x-xx-xxx-xx-mkt.pdf",
+    "female_catalog": "https://suddendocs.samtec.com/catalog_english/ssw_th.pdf"
+  },
+  "rejected": {
+    "PLS40L_example": "Documented18.8mm matingpost is too short for36.02mm stack.",
+    "TSW10621_withSSW": "Nominal6.02mm leaves.33mm to maxinsertion6.35, insufficient unknown tolerancechain.",
+    "MTSW1175": "Nominal4.875mm fit but exactstock not confirmed; stock728on1175 names1195."
+  },
+  "source_stack_sha256": "ac69509daa7b0aefad4abbf67d7ee25863fed51248f7abc692825f20c4f44fc6"
+}

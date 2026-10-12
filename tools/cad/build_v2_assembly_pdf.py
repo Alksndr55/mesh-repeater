@@ -1,5 +1,6 @@
 """Publish a dimensioned review PDF from verified native STEP assembly outputs."""
 from pathlib import Path
+from datetime import date
 import hashlib
 import json
 
@@ -45,7 +46,7 @@ def main():
         text(35, height-39, value, 23, True)
         c.setStrokeColor(HexColor('#d4dce3'))
         c.line(35, height-51, width-35, height-51)
-        text(35, 19, 'Mesh Repeater 2.0 | native STEP + номинальная цепочка крепежа | 11.10.2026', 10, color='#526273')
+        text(35, 19, 'Mesh Repeater 2.0 | native STEP + номинальная цепочка крепежа | '+date.today().strftime('%d.%m.%Y'), 10, color='#526273')
         text(width-80, 19, f'{number}/4', 10, color='#526273')
 
     def picture(name, x, y, w, h):
@@ -91,7 +92,7 @@ def main():
     y -= 17
     y = lines(x, y, [
         'Все три PCB: 90 × 60 мм.',
-        'Полный CAD: 98,00 × 70,01 × 45,56 мм.',
+        ('Полный CAD: '+' × '.join(f'{bbox[i+3]-bbox[i]:.2f}'.replace('.',',') for i in range(3))+' мм.'),
         'Размеры выше не включают внешний кабель.',
         'С петлёй Y≤−23: по Y ориентировочно',
         'не менее 90,21 мм; проверить на образце.',
@@ -105,6 +106,7 @@ def main():
     lines(45, 102, [
         'Зазоры вычислены из native STEP. Модели Nice!Nano, модема и SMA остаются приближенными.',
         'Нулевые пересечения плат подтверждены геометрией моделей; реальные модули и сопряжения требуют образца.',
+        'В STEP LOGIC возможен пропуск двух мелких контуров меди; нативная плата проходит DRC. См. отчёт экспорта.',
     ], 12, 20)
     c.showPage()
 

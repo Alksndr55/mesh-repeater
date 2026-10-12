@@ -1,0 +1,503 @@
+{
+  "status": "PROPOSAL ONLY — CAD, model and assembly files unchanged; not qualified for production",
+  "date": "2026-10-12",
+  "scope": "Inherited E-I1 and E-I2 only; approved GPIO and 2-ohm ballast preserved",
+  "source_sha256": {
+    "audit\\independent_2026_10_12\\electrical.power.xml": "e37974ebd73a63860f2efddbce70930e674139058867dff0db356e9e8d477aad",
+    "design\\MeshRepeater2_Power\\model.json": "f6fa83e5c14def215a3f1995fed2bea787a79573c9923ba39502f0236f3f4055",
+    "design\\MeshRepeater2_Power\\LTO_Balancer.kicad_sch": "a28eb02a594f9761bdd64751da7d011adefc20dab62edd256e32237cd8bb970b",
+    "design\\MeshRepeater2_Power\\Converter.kicad_sch": "6e91b009695bb7283a15f442cb54ec670282a9dea60c1df20886eccd286b8820"
+  },
+  "native_net_evidence": {
+    "U1": {
+      "16": "/GATE",
+      "14": "BAT",
+      "4": "CHRG",
+      "13": "CS_P",
+      "5": "DONE",
+      "2": "GND",
+      "3": "GND",
+      "8": "Net-(U1-COM1)",
+      "9": "Net-(U1-COM2)",
+      "11": "Net-(U1-COM3)",
+      "10": "Net-(U1-FB)",
+      "7": "Net-(U1-MPPT)",
+      "6": "Net-(U1-TEMP)",
+      "1": "Net-(U1-VG)",
+      "15": "SOLAR",
+      "12": "unconnected-(U1-NC-Pad12)"
+    },
+    "U2": {
+      "1": "/2. Converter/EN_UV",
+      "4": "/2. Converter/FB_SYS",
+      "9": "/2. Converter/LX1",
+      "7": "/2. Converter/LX2",
+      "6": "/2. Converter/SYS_PRE",
+      "10": "BAT",
+      "3": "GND",
+      "8": "GND",
+      "2": "MODE",
+      "5": "unconnected-(U2-PG-Pad5)"
+    },
+    "U8": {
+      "2": "LTO_MID",
+      "5": "LTO_MID",
+      "3": "Net-(U8-K)",
+      "4": "Net-(U8-REF)",
+      "1": "unconnected-(U8-NC-Pad1)"
+    },
+    "U9": {
+      "2": "GND",
+      "5": "GND",
+      "3": "Net-(U9-K)",
+      "4": "Net-(U9-REF)",
+      "1": "unconnected-(U9-NC-Pad1)"
+    },
+    "R3": {
+      "1": "BAT",
+      "2": "Net-(U1-FB)"
+    },
+    "R4": {
+      "2": "GND",
+      "1": "Net-(U1-FB)"
+    },
+    "R47": {
+      "1": "BAT",
+      "2": "Net-(U8-K)"
+    },
+    "R48": {
+      "2": "Net-(R48-Pad2)",
+      "1": "Net-(U8-K)"
+    },
+    "R49": {
+      "1": "Net-(R48-Pad2)",
+      "2": "Net-(U8-REF)"
+    },
+    "R50": {
+      "2": "LTO_MID",
+      "1": "Net-(U8-REF)"
+    },
+    "R51": {
+      "1": "LTO_MID",
+      "2": "Net-(U9-K)"
+    },
+    "R52": {
+      "2": "Net-(R52-Pad2)",
+      "1": "Net-(U9-K)"
+    },
+    "R53": {
+      "1": "Net-(R52-Pad2)",
+      "2": "Net-(U9-REF)"
+    },
+    "R54": {
+      "2": "GND",
+      "1": "Net-(U9-REF)"
+    },
+    "C58": {
+      "2": "LTO_MID",
+      "1": "Net-(U8-K)"
+    },
+    "C59": {
+      "2": "GND",
+      "1": "Net-(U9-K)"
+    },
+    "L1": {
+      "2": "CS_P",
+      "1": "Net-(D1-K)"
+    },
+    "C4": {
+      "1": "BAT",
+      "2": "GND"
+    },
+    "C12": {
+      "1": "BAT",
+      "2": "GND"
+    },
+    "C52": {
+      "1": "BAT",
+      "2": "GND"
+    },
+    "C53": {
+      "1": "BAT",
+      "2": "GND"
+    }
+  },
+  "charger": {
+    "formula": "VREG=VFB*(1+R3/R4)+IFB*R3; static OVP_max=1.10*VREG_max",
+    "resistor_fraction": 0.002625,
+    "VFB_typ_V": 2.416,
+    "VFB_max_V": 2.44,
+    "IFB_typ_A": 5e-08,
+    "IFB_max_A": 3e-07,
+    "approved_LTO": {
+      "R3_ohm": 121000,
+      "R4_ohm": 100000,
+      "CV_typ_V": 5.34541,
+      "CV_static_upper_V": 5.444336182348979,
+      "OVP_typ_V": 5.773042800000001,
+      "OVP_static_upper_V": 5.988769800583878,
+      "static_margin_to_5_5_V": -0.48876980058387787
+    },
+    "lower_CV_comparison_NOT_a_fix": [
+      {
+        "R3_ohm": 97600,
+        "R4_ohm": 100000,
+        "CV_typ_V": 4.778896,
+        "CV_static_upper_V": 4.8633323255971925,
+        "OVP_typ_V": 5.1612076799999995,
+        "OVP_static_upper_V": 5.349665558156913,
+        "static_margin_to_5_5_V": 0.15033444184308742
+      },
+      {
+        "R3_ohm": 100000,
+        "R4_ohm": 100000,
+        "CV_typ_V": 4.837,
+        "CV_static_upper_V": 4.922922464751222,
+        "OVP_typ_V": 5.22396,
+        "OVP_static_upper_V": 5.415214711226345,
+        "static_margin_to_5_5_V": 0.08478528877365488
+      },
+      {
+        "R3_ohm": 102000,
+        "R4_ohm": 100000,
+        "CV_typ_V": 4.88542,
+        "CV_static_upper_V": 4.972580914046246,
+        "OVP_typ_V": 5.2762536,
+        "OVP_static_upper_V": 5.46983900545087,
+        "static_margin_to_5_5_V": 0.030160994549129683
+      },
+      {
+        "R3_ohm": 103000,
+        "R4_ohm": 100000,
+        "CV_typ_V": 4.909630000000001,
+        "CV_static_upper_V": 4.99741013869376,
+        "OVP_typ_V": 5.302400400000002,
+        "OVP_static_upper_V": 5.497151152563136,
+        "static_margin_to_5_5_V": 0.002848847436863977
+      }
+    ],
+    "transient_example_NOT_a_prediction": {
+      "formula": "sqrt(Vtrip^2 + L*Ipk^2/Ceff)",
+      "L_H": 0.0001,
+      "assumed_Ipk_A": 0.8,
+      "assumed_Ceff_F": 2e-05,
+      "Vtrip_V": 5.415214711226345,
+      "Vafter_V": 5.70302992879068
+    },
+    "unbounded_in_source": "No maximum CN3722 OVP response delay; MLCC effective capacitance not guaranteed"
+  },
+  "booster": {
+    "topology": "PNP emitter on node AFTER original 2 ohm; collector to cell minus; LMV cathode controls base through 390 ohm",
+    "channels": [
+      {
+        "channel": 1,
+        "cell_plus": "BAT",
+        "cell_minus": "LTO_MID",
+        "regulated_node": "LTO_K1",
+        "keep": {
+          "R47": [
+            "BAT",
+            "LTO_K1"
+          ],
+          "R48": [
+            "LTO_K1",
+            "LTO_DIV1"
+          ],
+          "R49": [
+            "LTO_DIV1",
+            "LTO_REF1"
+          ],
+          "R50": [
+            "LTO_REF1",
+            "LTO_MID"
+          ],
+          "C58": [
+            "LTO_K1",
+            "LTO_MID"
+          ]
+        },
+        "change": {
+          "U8.3": "LTO_CTRL1"
+        },
+        "add": {
+          "QBOOST1": {
+            "1_E": "LTO_K1",
+            "2_C": "LTO_MID",
+            "3_B": "LTO_BASE1"
+          },
+          "RB1": [
+            "LTO_BASE1",
+            "LTO_CTRL1"
+          ],
+          "RBE1": [
+            "LTO_K1",
+            "LTO_BASE1"
+          ],
+          "RCOMP1": [
+            "LTO_CTRL1",
+            "LTO_COMP1"
+          ],
+          "CCOMP1": [
+            "LTO_COMP1",
+            "LTO_REF1"
+          ]
+        },
+        "unchanged_LMV_pins": {
+          "U8.1": "NC",
+          "U8.2": "LTO_MID",
+          "U8.4": "LTO_REF1",
+          "U8.5": "LTO_MID"
+        }
+      },
+      {
+        "channel": 2,
+        "cell_plus": "LTO_MID",
+        "cell_minus": "GND",
+        "regulated_node": "LTO_K2",
+        "keep": {
+          "R51": [
+            "LTO_MID",
+            "LTO_K2"
+          ],
+          "R52": [
+            "LTO_K2",
+            "LTO_DIV2"
+          ],
+          "R53": [
+            "LTO_DIV2",
+            "LTO_REF2"
+          ],
+          "R54": [
+            "LTO_REF2",
+            "GND"
+          ],
+          "C59": [
+            "LTO_K2",
+            "GND"
+          ]
+        },
+        "change": {
+          "U9.3": "LTO_CTRL2"
+        },
+        "add": {
+          "QBOOST2": {
+            "1_E": "LTO_K2",
+            "2_C": "GND",
+            "3_B": "LTO_BASE2"
+          },
+          "RB2": [
+            "LTO_BASE2",
+            "LTO_CTRL2"
+          ],
+          "RBE2": [
+            "LTO_K2",
+            "LTO_BASE2"
+          ],
+          "RCOMP2": [
+            "LTO_CTRL2",
+            "LTO_COMP2"
+          ],
+          "CCOMP2": [
+            "LTO_COMP2",
+            "LTO_REF2"
+          ]
+        },
+        "unchanged_LMV_pins": {
+          "U9.1": "NC",
+          "U9.2": "GND",
+          "U9.4": "LTO_REF2",
+          "U9.5": "GND"
+        }
+      }
+    ],
+    "added_parts": [
+      {
+        "function": "QBOOST1 / QBOOST2",
+        "quantity": 2,
+        "value": "PNP",
+        "mpn": "BCX53-16,115",
+        "package": "SOT89",
+        "pinmap": {
+          "1": "E",
+          "2": "C",
+          "3": "B"
+        },
+        "purchase": "https://www.lcsc.com/product-detail/C47787.html",
+        "availability": "LCSC: part listed in stock when checked 2026-10-12; Danomsk stock unconfirmed"
+      },
+      {
+        "function": "RB1 / RB2",
+        "quantity": 2,
+        "value": "390 ohm 1%",
+        "mpn": "RC0805FR-07390RL",
+        "package": "0805",
+        "purchase": "https://www.lcsc.com/fr/product-detail/Chip-Resistor-Surface-Mount_390R-390R-1_C114543.html",
+        "availability": "Distributor part link; stock not newly confirmed"
+      },
+      {
+        "function": "RBE1 / RBE2",
+        "quantity": 2,
+        "value": "4.7 kohm 1%",
+        "mpn": "RC0805FR-074K7L",
+        "package": "0805",
+        "purchase": null,
+        "availability": "Concrete manufacturer part; Danomsk exact part/stock not confirmed"
+      },
+      {
+        "function": "RCOMP1 / RCOMP2",
+        "quantity": 2,
+        "value": "47 kohm 1%",
+        "mpn": "RC0805FR-0747KL",
+        "package": "0805",
+        "purchase": null,
+        "availability": "Concrete manufacturer part; Danomsk exact part/stock not confirmed"
+      },
+      {
+        "function": "CCOMP1 / CCOMP2",
+        "quantity": 2,
+        "value": "100 nF X7R",
+        "mpn": "CC0805KKX7R0BB104",
+        "package": "0805",
+        "purchase": "https://www.danomsk.ru/shop/5-kondensatory/89-kondensatory-keramicheskie/732-kondensatory-smd-0805/168995-chip-kond-0805-x7r-0-1uf-10-100v-cc0805kkx7r0bb104-cc0805-yageo/",
+        "availability": "Exact Danomsk part already selected in project; stock not rechecked today"
+      }
+    ],
+    "unchanged_divider_ohm": [
+      120000,
+      2490,
+      100000
+    ],
+    "threshold_typ_old_V": 2.7772495,
+    "threshold_low_corner_V": 2.700279966533467,
+    "threshold_high_estimate_V": 2.927951840099099,
+    "threshold_high_limit_caveat": "0.9 uA IREF combines max at 25C and max temperature variation; not an independently tabulated guaranteed full-temperature absolute IREF.",
+    "off_current_typ_estimate_per_channel_A": 1.2327536941791167e-05,
+    "cathode_current_bound": {
+      "assumed_max_cell_V": 5.5,
+      "assumed_node_voltage_range_V": [
+        0,
+        5.5
+      ],
+      "capacitor_initial_range_V": [
+        -5.5,
+        5.5
+      ],
+      "formula": "5.5/RB_min + 11/RCOMP_min",
+      "RB_min_ohm": 381.03,
+      "RCOMP_min_ohm": 45919.0,
+      "IK_max_A": 0.014674111213670004,
+      "qualification": "Analytical resistor bound only, including reversal of stored compensation-capacitor voltage. Does not certify stability, clamp threshold or thermal safety."
+    },
+    "compensation_candidate": {
+      "R_ohm": 47000,
+      "C_F": 1e-07,
+      "RC_pole_Hz": 33.862753849339434,
+      "qualified": false
+    },
+    "thermal": [
+      {
+        "cell_V": 2.8,
+        "shunt_A_estimate": 0.0503636532659256,
+        "R2_power_W": 0.00502226518917495,
+        "PNP_power_W_upper_estimate": 0.13599596395541672,
+        "PNP_Tj_C_estimate_Ta85_theta132": 102.951467242115
+      },
+      {
+        "cell_V": 2.85,
+        "shunt_A_estimate": 0.07561617851845098,
+        "R2_power_W": 0.011321256778393811,
+        "PNP_power_W_upper_estimate": 0.2041848519991915,
+        "PNP_Tj_C_estimate_Ta85_theta132": 111.95240046389328
+      },
+      {
+        "cell_V": 3.0,
+        "shunt_A_estimate": 0.1513737542760267,
+        "R2_power_W": 0.045369746697565445,
+        "PNP_power_W_upper_estimate": 0.40875151613051464,
+        "PNP_Tj_C_estimate_Ta85_theta132": 138.95520012922793
+      },
+      {
+        "cell_V": 3.3,
+        "shunt_A_estimate": 0.3028889057911781,
+        "R2_power_W": 0.1816485447177268,
+        "PNP_power_W_upper_estimate": 0.8178848443931609,
+        "PNP_Tj_C_estimate_Ta85_theta132": 192.96079945989726
+      }
+    ],
+    "thermal_assumption": "BCX53 thetaJA=132 K/W with >=1 cm2 collector copper; not guaranteed on actual two-layer board under lid.",
+    "headroom_condition": "CTRL >= VREF and Ic/hFE + VBE/RBE <= (KREG - VBE - VREF)/RB. Gain table has no full-temperature guaranteed continuous hFE envelope.",
+    "threshold_change": "Cathode operating voltage changes; LMV431 cathode-voltage coefficient changes REF by millivolts. Same resistor values are not an exact threshold equivalence."
+  },
+  "E_I2_choices": [
+    {
+      "id": "retain",
+      "action": "Preserve approved LTO circuit",
+      "result": "E-I2 remains; solar operation with battery absent/disconnected is not qualified; no claim of 5.5 V in every situation"
+    },
+    {
+      "id": "authorize_low_loss_OVP",
+      "action": "Authorize separate low-loss overvoltage disconnect between BAT and TPS VIN",
+      "result": "Requires new circuit decision, startup/response tolerances and energy/thermal proof; no ready implementation in this proposal"
+    }
+  ],
+  "rejected_LDO_comparison": {
+    "mpn": "TPS7A2650DRVR",
+    "package": "WSON6 2x2 mm",
+    "pins": {
+      "1": "OUT",
+      "2": "NC (optionally GND)",
+      "3": "PG (unused, optionally GND)",
+      "4": "EN tied IN",
+      "5": "GND",
+      "6": "IN",
+      "pad": "GND"
+    },
+    "output_V": 5.0,
+    "output_static_tolerance": 0.01,
+    "output_current_max_A": 0.5,
+    "IQ_no_load_typ_A": 2e-06,
+    "IQ_no_load_max_A": 4.5e-06,
+    "dropout_max_V_at_500mA": 0.59,
+    "reason_rejected": "Conflicts with critical voltage-drop preference and limits TPS input current; output transition overshoot has no universal 5.5 V guarantee. Not recommended as ready OVP.",
+    "purchase": "https://www.lcsc.com/product-detail/C2866192.html"
+  },
+  "qualification_checks": [
+    "LMV cathode current and CTRL voltage at onset and 2.75/2.80/2.85 V per cell, all accepted temperatures and tolerance corners.",
+    "Oscilloscope KREG, CTRL, REF and balance current; zero/high source impedance, startup, battery insertion/removal, 47 nF and compensation capacitor tolerance; no sustained oscillation.",
+    "Per-channel no-balance leakage, collector copper thermal rise under cover; maintain allowed junction temperature and resistor derating.",
+    "Define actual permissible individual LTO cell maximum from its datasheet; this high-impedance divider has broad corners and remains a balancer, not cell protection.",
+    "For separately authorized VIN OVP: source rising/step, battery unplug at maximum charge current, light/full load, startup and converter cutoff; verify instantaneous VIN <=5.5 V over the accepted envelope."
+  ],
+  "sources": [
+    {
+      "id": "lmv",
+      "url": "https://www.ti.com/lit/ds/symlink/lmv431.pdf",
+      "title": "TI LMV431 Rev G; recommended current, A-grade limits and stability"
+    },
+    {
+      "id": "cn",
+      "url": "https://consonance-elec.com/static/upload/file/20231218/1702867485736775.pdf",
+      "title": "Consonance CN3722 Rev 1.2; FB, OVP and battery removal"
+    },
+    {
+      "id": "tps",
+      "url": "https://www.ti.com/lit/ds/symlink/tps63802.pdf",
+      "title": "TI TPS63802 Rev D; VIN operating limit and UVLO"
+    },
+    {
+      "id": "pnp",
+      "url": "https://assets.nexperia.com/documents/data-sheet/BCX53_SER.pdf",
+      "title": "Nexperia BCX53 Rev 11 (12 August 2026); pins, gain, thermal limits"
+    },
+    {
+      "id": "rb",
+      "url": "https://yageogroup.com/component-documentation/download/specsheet/RC0805FR-07390RL",
+      "title": "Yageo RC0805FR-07390RL; 1%, 0.125 W, 100 ppm/K"
+    },
+    {
+      "id": "ldo",
+      "url": "https://www.ti.com/lit/ds/symlink/tps7a26.pdf",
+      "title": "TI TPS7A26 Rev B; dropout, IQ, startup and thermal envelope"
+    }
+  ]
+}

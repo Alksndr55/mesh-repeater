@@ -1,0 +1,212 @@
+{
+  "date": "2026-10-12",
+  "review_type": "Independent nominal geometry; read-only CAD",
+  "status": "SELECTED ALI L35 + MTJ 2X6P NOMINAL AXIAL FIT; MATING WINDOW, MALE SECTION AND FULL STACK TOLERANCES UNDOCUMENTED",
+  "native_modified": false,
+  "male_exact_sku": {
+    "product_id": "1005011978353933",
+    "sku_id": "12000057202232448",
+    "url": "https://aliexpress.ru/item/1005011978353933.html?sku_id=12000057202232448",
+    "options": {
+      "color_dimension": "L35mm A3C6",
+      "contact_count": "2x6P"
+    }
+  },
+  "female_candidate": {
+    "seller_manufacturer_name_on_drawing": "JinSheng / MTJ",
+    "product_id": "1005008954873458",
+    "sku_id": "12000047353417475",
+    "url": "https://aliexpress.ru/item/1005008954873458.html?sku_id=12000047353417475",
+    "selected_option": "2X6P 10PCS",
+    "body_height_mm": 8.5,
+    "body_height_tolerance_documented": false,
+    "body_length_mm": 15.64,
+    "body_length_tolerance_mm": 0.3,
+    "body_length_formula": "2.54*N + 0.40, N=6; do not use A=15.24 alone as body length",
+    "body_width_mm": 5.0,
+    "row_pitch_mm": 2.54,
+    "pin_pitch_mm": 2.54,
+    "pin_pitch_tolerance_mm": 0.1,
+    "end_pin_span_B_mm": 12.7,
+    "end_pin_span_B_tolerance_mm": 0.2,
+    "solder_tail_mm": 3.15,
+    "solder_tail_tolerance_mm": 0.25,
+    "solder_tail_section_mm": [
+      0.6,
+      0.4
+    ],
+    "tail_section_is_not_male_mating_cross_section": true,
+    "mating_window_documented": false,
+    "allowed_male_pin_section_documented": false,
+    "rated_current_A": 3,
+    "contact_resistance_mOhm_max": 20,
+    "insulation_resistance_MOhm_min": 1000,
+    "operating_temperature_C": [
+      -40,
+      105
+    ],
+    "contact_material": "Brass",
+    "insulator_material": "PBT black UL94-V0",
+    "family_contact_plating": "G/F or Tin over 30 microinch Ni; exact selected plating thickness not guaranteed by SKU-specific record",
+    "purchase_snapshot": {
+      "verified_by": "root live browser snapshot stored as sources/ali_socket_2x6_offer.txt",
+      "currency": "RUB",
+      "selected_lot_price": 106,
+      "lot_quantity": 10,
+      "calculated_unit_price": 10.6,
+      "stock_text": "Осталось 99+ шт.",
+      "stock_unit_not_inferred": true,
+      "shipping_quote_rub": 192,
+      "cart_action_performed": false
+    }
+  },
+  "POWER_front_relative_stack_mm": {
+    "SHIELD_near": 18.5,
+    "SHIELD_far": 20.02,
+    "LOGIC_component_face": 36.019999999999996,
+    "female_mouth": 27.519999999999996
+  },
+  "comparison": [
+    {
+      "L_total_mm": 30,
+      "PC_tail_mm": 3,
+      "PA_free_upper_pin_mm": 6,
+      "PB_includes_both_plastic_mm": 21,
+      "lower_plastic_interval_mm": [
+        0,
+        2.5
+      ],
+      "upper_plastic_interval_mm": [
+        18.5,
+        21
+      ],
+      "tip_from_POWER_front_mm": 27,
+      "female_mouth_mm": 27.519999999999996,
+      "nominal_insertion_mm": -0.519999999999996,
+      "upper_plastic_to_socket_mouth_clearance_mm": 6.519999999999996,
+      "upper_plastic_overlap_with_SHIELD_mm": 1.5199999999999996,
+      "upper_plastic_to_SHIELD_far_clearance_mm": -1.5199999999999996,
+      "nominal_fit": false
+    },
+    {
+      "L_total_mm": 35,
+      "PC_tail_mm": 3,
+      "PA_free_upper_pin_mm": 6,
+      "PB_includes_both_plastic_mm": 26,
+      "lower_plastic_interval_mm": [
+        0,
+        2.5
+      ],
+      "upper_plastic_interval_mm": [
+        23.5,
+        26
+      ],
+      "tip_from_POWER_front_mm": 32,
+      "female_mouth_mm": 27.519999999999996,
+      "nominal_insertion_mm": 4.480000000000004,
+      "upper_plastic_to_socket_mouth_clearance_mm": 1.519999999999996,
+      "upper_plastic_overlap_with_SHIELD_mm": 0,
+      "upper_plastic_to_SHIELD_far_clearance_mm": 3.4800000000000004,
+      "nominal_fit": true
+    },
+    {
+      "L_total_mm": 40,
+      "PC_tail_mm": 3,
+      "PA_free_upper_pin_mm": 6,
+      "PB_includes_both_plastic_mm": 31,
+      "lower_plastic_interval_mm": [
+        0,
+        2.5
+      ],
+      "upper_plastic_interval_mm": [
+        28.5,
+        31
+      ],
+      "tip_from_POWER_front_mm": 37,
+      "female_mouth_mm": 27.519999999999996,
+      "nominal_insertion_mm": 9.480000000000004,
+      "upper_plastic_to_socket_mouth_clearance_mm": -3.480000000000004,
+      "upper_plastic_overlap_with_SHIELD_mm": 0,
+      "upper_plastic_to_SHIELD_far_clearance_mm": 8.48,
+      "nominal_fit": false
+    }
+  ],
+  "final_nominal_height_mm": {
+    "outside_PCB_planes": 39.06,
+    "existing_all_hardware_envelope": 45.56,
+    "face_to_face_POWER_LOGIC": 36.019999999999996,
+    "unchanged_if_female_tail_mm_max": 4.540000000000006,
+    "male_tail_tip_global_z": -1.48,
+    "female_tail_tip_global_z_nominal": 40.69,
+    "female_tail_tip_global_z_max": 40.94,
+    "female_tail_max_to_existing_upper_envelope_clearance": 1.1400000000000006,
+    "female_tail_height_added_to_envelope": 0.0
+  },
+  "tolerance_notes": {
+    "seller_general_text": "+/-0,2 мм",
+    "seller_drawing_dot_X": 0.25,
+    "seller_drawing_dot_XX": 0.2,
+    "difference_not_resolved": "Using ±0.25 mm per L/PC/PA/H is a conservative sensitivity scenario, not proof that integer dimensions are assigned this tolerance by the seller. Assembly fastener and PCB tolerances remain unspecified.",
+    "L35_header_only_sensitivity_mm": {
+      "tip": [
+        31.5,
+        32.5
+      ],
+      "upper_plastic_top": [
+        25.25,
+        26.75
+      ],
+      "upper_plastic_bottom": [
+        22.5,
+        24.5
+      ],
+      "insertion_if_nominal_socket_and_stack": [
+        3.98,
+        4.98
+      ],
+      "minimum_plastic_to_socket_clearance_if_nominal_socket_stack": 0.77,
+      "minimum_upper_plastic_to_SHIELD_far_clearance_if_nominal_stack": 2.48
+    },
+    "female_height": "The exact JinSheng drawing specifies H=8.50 mm without an explicit height tolerance. Do not apply Samtec SSW tolerance/window or infer one from the male drawing."
+  },
+  "acceptance_conditions": [
+    "Exact male square section and tolerances and the socket accepted section are not stated. Female 0.60 x 0.40 dimensions are the solder tail, not a mating-pin specification.",
+    "Exact JinSheng female minimum/maximum insertion not stated: cannot certify electrical mating solely from 4.48 mm nominal depth. Check exact pair sample or obtain its own specification.",
+    "Inspect pin straightness and alignment with isolated SHIELD openings.",
+    "Measure actual assembled F-face gap and socket seated height. No invented standoff tolerance."
+  ],
+  "inputs": [
+    {
+      "path": "docs\\mechanical_selection.json",
+      "sha256": "ac69509daa7b0aefad4abbf67d7ee25863fed51248f7abc692825f20c4f44fc6"
+    },
+    {
+      "path": "docs\\mechanics\\assembly_geometry_report.json",
+      "sha256": "6b45f0f29cbaf8a380880b6e0b3681284d7b7c6f93611ef4484bb69c4e1ee2e6"
+    },
+    {
+      "path": "audit\\vertical_interconnect_2026_10_12\\ali_local_candidate.json",
+      "sha256": "c8971cb19dcd31af72574438453ad5464c0a76f8aa3b9ca72b3947db99ad47e8"
+    },
+    {
+      "path": "audit\\vertical_interconnect_2026_10_12\\sources\\ali_local_male35_drawing_1.png",
+      "sha256": "086584aaa5c0bdfeae9157084240c1feefeec6bb6db2e7e568905f1a6fe843d6"
+    },
+    {
+      "path": "audit\\vertical_interconnect_2026_10_12\\sources\\ali_local_male35_drawing_2.png",
+      "sha256": "be37181c39c1370f9a74f77aae00ff185f4581a8b67b3eb58a808e37e7c76f5b"
+    },
+    {
+      "path": "audit\\vertical_interconnect_2026_10_12\\sources\\ali_socket_2x6_drawing.png",
+      "sha256": "31ed440781d93dc4da871f1277608578646889ff1f6cad0365a9b29ea2e1b63c"
+    },
+    {
+      "path": "audit\\vertical_interconnect_2026_10_12\\sources\\ali_socket_2x6_offer.txt",
+      "sha256": "10fe40cab45e07f1029e8b0f34ded6efe2e611a929a5e40cede76c76845ff6b1"
+    },
+    {
+      "path": "audit\\vertical_interconnect_2026_10_12\\sources\\ali_socket_images.json",
+      "sha256": "f86dae8a995da0a3a062ab7306a3b3955bcd632f6f17a897f3e5f7f86cbb5bca"
+    }
+  ]
+}

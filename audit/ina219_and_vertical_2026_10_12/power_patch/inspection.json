@@ -1,0 +1,3211 @@
+{
+  "input_sha256": "c4efced02420f48fea993d166091e3ba3ec7be7cf9bc30feec164d067077cc3b",
+  "partition": {
+    "cut_cost": 4.095666630560342,
+    "removed": [
+      {
+        "uuid": "55a2391d-3243-4c98-9835-012d191b9220",
+        "net": "BAT",
+        "start": [
+          44.5,
+          11.7
+        ],
+        "end": [
+          45.2,
+          11.0
+        ],
+        "width": 0.8,
+        "layer": "F.Cu"
+      },
+      {
+        "uuid": "cefa7d6e-521a-4e56-9484-ea45bbaed75d",
+        "net": "BAT",
+        "start": [
+          40.5,
+          12.0
+        ],
+        "end": [
+          39.5,
+          11.0
+        ],
+        "width": 0.8,
+        "layer": "B.Cu"
+      },
+      {
+        "uuid": "9151af4d-515b-4c9e-ba01-7de235d6b7a0",
+        "net": "BAT",
+        "start": [
+          43.35,
+          14.0
+        ],
+        "end": [
+          36.4875,
+          14.0
+        ],
+        "width": 0.3,
+        "layer": "F.Cu"
+      },
+      {
+        "uuid": "8063c988-64bd-4567-934f-3202f75c85e7",
+        "net": "BAT",
+        "start": [
+          19.5,
+          41.2
+        ],
+        "end": [
+          19.8,
+          41.2
+        ],
+        "width": 0.25,
+        "layer": "F.Cu"
+      }
+    ],
+    "components": [
+      {
+        "net": "BAT_SYS",
+        "pads": [
+          [
+            "C52",
+            "1"
+          ],
+          [
+            "U2",
+            "10"
+          ],
+          [
+            "C13",
+            "1"
+          ],
+          [
+            "R1",
+            "2"
+          ],
+          [
+            "R3",
+            "1"
+          ],
+          [
+            "U1",
+            "14"
+          ],
+          [
+            "C4",
+            "1"
+          ],
+          [
+            "C30",
+            "1"
+          ],
+          [
+            "C12",
+            "1"
+          ],
+          [
+            "C53",
+            "1"
+          ]
+        ],
+        "item_count": 101
+      },
+      {
+        "net": "BAT",
+        "pads": [
+          [
+            "J8",
+            "1"
+          ],
+          [
+            "R47",
+            "1"
+          ],
+          [
+            "J101",
+            "9"
+          ]
+        ],
+        "item_count": 63
+      },
+      {
+        "net": "BAT",
+        "pads": [
+          [
+            "J12",
+            "1"
+          ],
+          [
+            "R15",
+            "1"
+          ]
+        ],
+        "item_count": 15
+      },
+      {
+        "net": "BAT",
+        "pads": [
+          [
+            "TP1",
+            "1"
+          ]
+        ],
+        "item_count": 17
+      }
+    ]
+  },
+  "new_footprint_poses": {
+    "U12": {
+      "x": 58.2,
+      "y": 12.8,
+      "rotation": 90,
+      "native_layer": "F.Cu"
+    },
+    "R71": {
+      "x": 27.8,
+      "y": 12.5,
+      "rotation": 0,
+      "native_layer": "B.Cu"
+    },
+    "R72": {
+      "x": 54.0,
+      "y": 12.2,
+      "rotation": 0,
+      "native_layer": "B.Cu"
+    },
+    "R73": {
+      "x": 54.0,
+      "y": 14.8,
+      "rotation": 0,
+      "native_layer": "B.Cu"
+    },
+    "C63": {
+      "x": 60.4,
+      "y": 12.8,
+      "rotation": 90,
+      "native_layer": "B.Cu"
+    },
+    "C64": {
+      "x": 57.8,
+      "y": 16.0,
+      "rotation": 90,
+      "native_layer": "B.Cu"
+    }
+  },
+  "old_battery_items": [
+    {
+      "uuid": "019e1e84-5582-4ba8-a3c9-1a6779a1248e",
+      "net": "BAT",
+      "start": [
+        10.4,
+        44.3
+      ],
+      "end": [
+        10.9,
+        43.8
+      ],
+      "width": 0.25,
+      "layer": "F.Cu"
+    },
+    {
+      "uuid": "01b99584-5be7-4f64-8c53-55b2e9c20de4",
+      "net": "BAT_SYS",
+      "start": [
+        45.425,
+        16.4
+      ],
+      "end": [
+        42.95,
+        16.4
+      ],
+      "width": 0.5,
+      "layer": "F.Cu"
+    },
+    {
+      "uuid": "036e100f-42d6-4606-bbe4-ce12fb8f03d8",
+      "net": "BAT_SYS",
+      "start": [
+        26.6,
+        40.65
+      ],
+      "end": [
+        25.75,
+        41.5
+      ],
+      "width": 0.8,
+      "layer": "F.Cu"
+    },
+    {
+      "uuid": "095d83bd-562d-4323-8404-01eac819c715",
+      "net": "BAT",
+      "start": [
+        35.3,
+        9.4
+      ],
+      "end": [
+        35.2,
+        9.3
+      ],
+      "width": 0.8,
+      "layer": "F.Cu"
+    },
+    {
+      "uuid": "0c3b4d10-4c1d-44dc-9112-88b7ff779d21",
+      "net": "BAT_SYS",
+      "start": [
+        25.75,
+        39.6375
+      ],
+      "end": [
+        25.75,
+        41.5
+      ],
+      "width": 0.25,
+      "layer": "F.Cu"
+    },
+    {
+      "uuid": "0eeaa0eb-fe94-415e-a674-d88a91c6d1f1",
+      "net": "BAT",
+      "start": [
+        26.1,
+        6.0
+      ],
+      "end": [
+        41.9,
+        6.0
+      ],
+      "width": 0.8,
+      "layer": "F.Cu"
+    },
+    {
+      "uuid": "1154301f-02e2-472b-8eb6-34e67670ab52",
+      "net": "BAT_SYS",
+      "start": [
+        21.95,
+        38.8
+      ],
+      "end": [
+        21.9125,
+        38.7625
+      ],
+      "width": 0.25,
+      "layer": "F.Cu"
+    },
+    {
+      "uuid": "147dfad1-4541-41a3-89fc-6d87e47d0554",
+      "net": "BAT_SYS",
+      "start": [
+        25.0,
+        27.1
+      ],
+      "end": [
+        23.7,
+        28.4
+      ],
+      "width": 0.8,
+      "layer": "F.Cu"
+    },
+    {
+      "uuid": "14fad979-afe3-4183-88b6-cb4b43367223",
+      "net": "BAT",
+      "start": [
+        24.5,
+        7.2
+      ],
+      "end": [
+        24.5,
+        7.6
+      ],
+      "width": 0.8,
+      "layer": "F.Cu"
+    },
+    {
+      "uuid": "1617a691-2589-4b16-943b-ad25e61adcd0",
+      "net": "BAT",
+      "start": [
+        36.7,
+        10.8
+      ],
+      "end": [
+        35.2,
+        9.3
+      ],
+      "width": 0.8,
+      "layer": "F.Cu"
+    },
+    {
+      "uuid": "19849fcb-52f0-4784-8cdf-a487f3572e3c",
+      "net": "BAT_SYS",
+      "start": [
+        21.0,
+        40.0
+      ],
+      "end": [
+        21.0,
+        39.7
+      ],
+      "width": 0.25,
+      "layer": "F.Cu"
+    },
+    {
+      "uuid": "1ea03e15-f0fb-4168-92b8-c1672299b68a",
+      "net": "BAT",
+      "start": [
+        25.6,
+        6.5
+      ],
+      "end": [
+        25.2,
+        6.5
+      ],
+      "width": 0.8,
+      "layer": "F.Cu"
+    },
+    {
+      "uuid": "1f6c2fea-002a-47a4-9fa9-53fbf89dd40f",
+      "net": "BAT",
+      "start": [
+        24.9,
+        6.7
+      ],
+      "end": [
+        24.8,
+        6.7
+      ],
+      "width": 0.8,
+      "layer": "F.Cu"
+    },
+    {
+      "uuid": "1fc2e57b-3ecf-490a-b885-d4be15b8fd18",
+      "net": "BAT_SYS",
+      "start": [
+        42.75,
+        17.85
+      ],
+      "end": [
+        42.75,
+        18.65
+      ],
+      "width": 0.6,
+      "layer": "F.Cu"
+    },
+    {
+      "uuid": "20b65f5d-26a3-48f0-9a08-056868a21c08",
+      "net": "BAT",
+      "start": [
+        24.8,
+        6.7
+      ],
+      "end": [
+        24.7,
+        6.8
+      ],
+      "width": 0.8,
+      "layer": "F.Cu"
+    },
+    {
+      "uuid": "216ae950-7ad4-4dcf-b18a-64c996c3ced4",
+      "net": "BAT",
+      "start": [
+        37.4,
+        10.9
+      ],
+      "end": [
+        37.4,
+        10.8
+      ],
+      "width": 0.8,
+      "layer": "F.Cu"
+    },
+    {
+      "uuid": "2ee167c7-5dd7-40f0-9675-a5d292cea8a2",
+      "net": "BAT_SYS",
+      "start": [
+        43.2,
+        12.8
+      ],
+      "end": [
+        42.3,
+        12.8
+      ],
+      "width": 0.8,
+      "layer": "F.Cu"
+    },
+    {
+      "uuid": "2ee94ef7-bfdb-4ed4-b99f-336aeb48d148",
+      "net": "BAT_SYS",
+      "start": [
+        21.9125,
+        38.7625
+      ],
+      "end": [
+        21.9125,
+        35.8
+      ],
+      "width": 0.25,
+      "layer": "F.Cu"
+    },
+    {
+      "uuid": "30a79331-d8c0-494f-aaa0-fe72abe00bd4",
+      "net": "BAT",
+      "start": [
+        6.6,
+        44.4
+      ],
+      "end": [
+        6.7,
+        44.3
+      ],
+      "width": 0.25,
+      "layer": "F.Cu"
+    },
+    {
+      "uuid": "314152dd-112c-4eee-8cba-534737e69e7c",
+      "net": "BAT",
+      "start": [
+        37.7,
+        11.0
+      ],
+      "end": [
+        37.6,
+        10.9
+      ],
+      "width": 0.8,
+      "layer": "F.Cu"
+    },
+    {
+      "uuid": "31a04da2-1553-4f94-a2c5-546edbf8012b",
+      "net": "BAT_SYS",
+      "start": [
+        42.95,
+        17.65
+      ],
+      "end": [
+        42.75,
+        17.85
+      ],
+      "width": 0.6,
+      "layer": "F.Cu"
+    },
+    {
+      "uuid": "326ae40f-eeb0-4196-9a5e-bb2cdc785f95",
+      "net": "BAT_SYS",
+      "start": [
+        42.95,
+        15.25
+      ],
+      "end": [
+        42.95,
+        17.65
+      ],
+      "width": 0.6,
+      "layer": "F.Cu"
+    },
+    {
+      "uuid": "343e578c-0e80-43b9-9680-a256c475e7de",
+      "net": "BAT_SYS",
+      "start": [
+        23.1625,
+        28.975
+      ],
+      "end": [
+        23.7375,
+        28.4
+      ],
+      "width": 0.15,
+      "layer": "F.Cu"
+    },
+    {
+      "uuid": "3a4abe5d-dbb2-46d5-8fbd-35415c7bab5f",
+      "net": "BAT_SYS",
+      "start": [
+        42.75,
+        18.65
+      ],
+      "end": [
+        42.75,
+        19.5
+      ],
+      "width": 0.25,
+      "layer": "F.Cu"
+    },
+    {
+      "uuid": "3e539133-eadb-441e-95e1-e7b967121ca3",
+      "net": "BAT_SYS",
+      "start": [
+        23.7375,
+        28.4
+      ],
+      "end": [
+        23.7375,
+        29.5125
+      ],
+      "width": 0.8,
+      "layer": "F.Cu"
+    },
+    {
+      "uuid": "4d4a24c5-ed92-4c7b-a5a7-5cc490ab1289",
+      "net": "BAT",
+      "start": [
+        17.8,
+        16.2
+      ],
+      "end": [
+        17.8,
+        16.1
+      ],
+      "width": 0.8,
+      "layer": "F.Cu"
+    },
+    {
+      "uuid": "4e4a5269-a10c-4e56-b68f-2cd8ff9ade0f",
+      "net": "BAT",
+      "start": [
+        35.3,
+        10.4
+      ],
+      "end": [
+        35.3,
+        9.4
+      ],
+      "width": 0.8,
+      "layer": "F.Cu"
+    },
+    {
+      "uuid": "4efda163-d807-4d3b-92dc-64fbcb0179f5",
+      "net": "BAT_SYS",
+      "start": [
+        43.1,
+        17.5
+      ],
+      "end": [
+        43.0,
+        17.6
+      ],
+      "width": 0.8,
+      "layer": "F.Cu"
+    },
+    {
+      "uuid": "4f36bd88-57e5-4291-bd38-f330c925e987",
+      "net": "BAT_SYS",
+      "start": [
+        19.8,
+        41.2
+      ],
+      "end": [
+        19.9,
+        41.1
+      ],
+      "width": 0.25,
+      "layer": "F.Cu"
+    },
+    {
+      "uuid": "516e90fd-04b2-4ae4-8ae6-0a88072a209d",
+      "net": "BAT",
+      "start": [
+        26.1,
+        6.0
+      ],
+      "end": [
+        25.6,
+        6.5
+      ],
+      "width": 0.8,
+      "layer": "F.Cu"
+    },
+    {
+      "uuid": "5874b60c-8294-4523-917d-d847de9c43b9",
+      "net": "BAT",
+      "start": [
+        24.6,
+        7.1
+      ],
+      "end": [
+        24.5,
+        7.2
+      ],
+      "width": 0.8,
+      "layer": "F.Cu"
+    },
+    {
+      "uuid": "5b92603b-06b4-4b8b-b5d2-c2ca720839e7",
+      "net": "BAT",
+      "start": [
+        41.9,
+        6.0
+      ],
+      "end": [
+        44.5,
+        8.6
+      ],
+      "width": 0.8,
+      "layer": "F.Cu"
+    },
+    {
+      "uuid": "5d435c8a-bc8d-4558-a723-f7f6cb7499ac",
+      "net": "BAT",
+      "start": [
+        24.7,
+        6.9
+      ],
+      "end": [
+        24.6,
+        7.0
+      ],
+      "width": 0.8,
+      "layer": "F.Cu"
+    },
+    {
+      "uuid": "5ed1a490-c3d7-493f-98a2-dc1bbc12ed1e",
+      "net": "BAT",
+      "start": [
+        17.8,
+        16.2
+      ],
+      "end": [
+        17.8,
+        16.25
+      ],
+      "width": 0.8,
+      "layer": "F.Cu"
+    },
+    {
+      "uuid": "5eeb2e38-822a-4c38-9f94-b7035e7da144",
+      "net": "BAT_SYS",
+      "start": [
+        45.2,
+        11.0
+      ],
+      "end": [
+        46.525,
+        11.0
+      ],
+      "width": 0.8,
+      "layer": "F.Cu"
+    },
+    {
+      "uuid": "61f31392-a09a-4d0d-9f86-cedaf2c4d989",
+      "net": "BAT",
+      "start": [
+        37.6,
+        10.9
+      ],
+      "end": [
+        37.4,
+        10.9
+      ],
+      "width": 0.8,
+      "layer": "F.Cu"
+    },
+    {
+      "uuid": "6653b44a-444b-47c5-a074-d1b06263293e",
+      "net": "BAT_SYS",
+      "start": [
+        43.35,
+        14.0
+      ],
+      "end": [
+        43.35,
+        14.85
+      ],
+      "width": 0.3,
+      "layer": "F.Cu"
+    },
+    {
+      "uuid": "685a5e6f-a2f7-48da-a56b-33a91d711988",
+      "net": "BAT",
+      "start": [
+        24.7,
+        6.8
+      ],
+      "end": [
+        24.7,
+        6.9
+      ],
+      "width": 0.8,
+      "layer": "F.Cu"
+    },
+    {
+      "uuid": "6b8a21cd-0baf-43a4-a74c-1e6c3687e9fb",
+      "net": "BAT_SYS",
+      "start": [
+        20.3625,
+        27.525
+      ],
+      "end": [
+        21.5,
+        27.525
+      ],
+      "width": 0.15,
+      "layer": "F.Cu"
+    },
+    {
+      "uuid": "6c6ae84d-dfd8-48aa-b9e7-04e50997d177",
+      "net": "BAT",
+      "start": [
+        17.8,
+        16.1
+      ],
+      "end": [
+        17.4,
+        15.7
+      ],
+      "width": 0.8,
+      "layer": "F.Cu"
+    },
+    {
+      "uuid": "6de02650-8405-4355-9acd-8114a0600567",
+      "net": "BAT",
+      "start": [
+        5.5,
+        45.0
+      ],
+      "end": [
+        5.9,
+        45.0
+      ],
+      "width": 0.25,
+      "layer": "F.Cu"
+    },
+    {
+      "uuid": "6e637cf5-2765-4c29-a828-3aabcd041cb3",
+      "net": "BAT_SYS",
+      "start": [
+        20.1,
+        40.9
+      ],
+      "end": [
+        21.0,
+        40.0
+      ],
+      "width": 0.25,
+      "layer": "F.Cu"
+    },
+    {
+      "uuid": "716566a3-7835-47f9-bb2c-9484ddd35b6f",
+      "net": "BAT_SYS",
+      "start": [
+        21.5,
+        27.525
+      ],
+      "end": [
+        22.95,
+        28.975
+      ],
+      "width": 0.15,
+      "layer": "F.Cu"
+    },
+    {
+      "uuid": "806fef3e-7f00-4bef-9ae0-6a4859be34e4",
+      "net": "BAT",
+      "start": [
+        25.2,
+        6.5
+      ],
+      "end": [
+        25.1,
+        6.6
+      ],
+      "width": 0.8,
+      "layer": "F.Cu"
+    },
+    {
+      "uuid": "80c5f418-ea09-4ba6-9509-e6015780bc54",
+      "net": "BAT",
+      "start": [
+        39.5,
+        11.0
+      ],
+      "end": [
+        37.7,
+        11.0
+      ],
+      "width": 0.8,
+      "layer": "F.Cu"
+    },
+    {
+      "uuid": "849e3104-cbd7-4f52-9824-37d1973be613",
+      "net": "BAT_SYS",
+      "start": [
+        45.7,
+        16.7
+      ],
+      "end": [
+        45.4,
+        16.4
+      ],
+      "width": 0.8,
+      "layer": "F.Cu"
+    },
+    {
+      "uuid": "858b3f6c-d2ea-4e08-addc-62efddd817aa",
+      "net": "BAT_SYS",
+      "start": [
+        43.2,
+        12.8
+      ],
+      "end": [
+        43.2,
+        15.1
+      ],
+      "width": 0.8,
+      "layer": "F.Cu"
+    },
+    {
+      "uuid": "8654c400-05c6-4ccb-9265-fac9fa46d005",
+      "net": "BAT_SYS",
+      "start": [
+        22.95,
+        28.975
+      ],
+      "end": [
+        23.1625,
+        28.975
+      ],
+      "width": 0.15,
+      "layer": "F.Cu"
+    },
+    {
+      "uuid": "867e4c1c-d120-46ce-84da-287d83bc25d5",
+      "net": "BAT_SYS",
+      "start": [
+        20.1,
+        41.0
+      ],
+      "end": [
+        20.1,
+        40.9
+      ],
+      "width": 0.25,
+      "layer": "F.Cu"
+    },
+    {
+      "uuid": "8712f57d-54a3-48a2-8874-ba6c0834b058",
+      "net": "BAT",
+      "start": [
+        2.0,
+        50.0
+      ],
+      "end": [
+        2.0,
+        45.0
+      ],
+      "width": 0.6,
+      "layer": "F.Cu"
+    },
+    {
+      "uuid": "93b02871-d039-4699-a629-fff8fdbc2e3b",
+      "net": "BAT",
+      "start": [
+        17.4,
+        15.7
+      ],
+      "end": [
+        17.3,
+        15.7
+      ],
+      "width": 0.8,
+      "layer": "F.Cu"
+    },
+    {
+      "uuid": "94dd8204-6922-48dc-a4bc-ff46645f8b4f",
+      "net": "BAT",
+      "start": [
+        6.5,
+        44.4
+      ],
+      "end": [
+        6.6,
+        44.4
+      ],
+      "width": 0.25,
+      "layer": "F.Cu"
+    },
+    {
+      "uuid": "94f5013b-93fe-4a66-bc0b-026b89aa9ee9",
+      "net": "BAT_SYS",
+      "start": [
+        25.75,
+        41.75
+      ],
+      "end": [
+        25.75,
+        41.5
+      ],
+      "width": 1.0,
+      "layer": "F.Cu"
+    },
+    {
+      "uuid": "96e9020e-dd2c-4de0-a976-cdc3ec16d482",
+      "net": "BAT",
+      "start": [
+        2.0,
+        50.0
+      ],
+      "end": [
+        4.5,
+        50.0
+      ],
+      "width": 1.0,
+      "layer": "F.Cu"
+    },
+    {
+      "uuid": "9da6c254-3469-4da4-b9f1-b1f27fbf2cf2",
+      "net": "BAT_SYS",
+      "start": [
+        21.9125,
+        35.8
+      ],
+      "end": [
+        25.75,
+        39.6375
+      ],
+      "width": 0.25,
+      "layer": "F.Cu"
+    },
+    {
+      "uuid": "a1bbadb0-fd70-4293-9502-b29d8a60b683",
+      "net": "BAT",
+      "start": [
+        10.9,
+        43.8
+      ],
+      "end": [
+        16.9,
+        43.8
+      ],
+      "width": 0.25,
+      "layer": "F.Cu"
+    },
+    {
+      "uuid": "a5e8a4e5-79d6-459a-b8d1-fe898b67c4d9",
+      "net": "BAT",
+      "start": [
+        17.8,
+        16.25
+      ],
+      "end": [
+        17.2875,
+        15.7375
+      ],
+      "width": 0.3,
+      "layer": "F.Cu"
+    },
+    {
+      "uuid": "ab838e7d-d82b-4296-9ca4-302e88c81d1d",
+      "net": "BAT",
+      "start": [
+        17.2875,
+        15.7375
+      ],
+      "end": [
+        17.2875,
+        15.0
+      ],
+      "width": 0.3,
+      "layer": "F.Cu"
+    },
+    {
+      "uuid": "aff9a454-a87a-4809-8a10-75e83d0b2c06",
+      "net": "BAT",
+      "start": [
+        25.0,
+        6.6
+      ],
+      "end": [
+        24.9,
+        6.7
+      ],
+      "width": 0.8,
+      "layer": "F.Cu"
+    },
+    {
+      "uuid": "b875e0cd-e932-4e85-97d9-56d636054f75",
+      "net": "BAT",
+      "start": [
+        16.9,
+        43.8
+      ],
+      "end": [
+        19.5,
+        41.2
+      ],
+      "width": 0.25,
+      "layer": "F.Cu"
+    },
+    {
+      "uuid": "b8b6cea4-13e5-4608-82b3-ae029fef7d13",
+      "net": "BAT_SYS",
+      "start": [
+        21.0,
+        39.7
+      ],
+      "end": [
+        21.9,
+        38.8
+      ],
+      "width": 0.25,
+      "layer": "F.Cu"
+    },
+    {
+      "uuid": "bcdf6229-4b4f-4932-b124-9cd4571a3778",
+      "net": "BAT_SYS",
+      "start": [
+        25.3,
+        27.1
+      ],
+      "end": [
+        25.0,
+        27.1
+      ],
+      "width": 0.8,
+      "layer": "F.Cu"
+    },
+    {
+      "uuid": "bda93a0c-7106-4fe7-b690-d0253cad62fb",
+      "net": "BAT",
+      "start": [
+        24.6,
+        7.0
+      ],
+      "end": [
+        24.6,
+        7.1
+      ],
+      "width": 0.8,
+      "layer": "F.Cu"
+    },
+    {
+      "uuid": "be241dbf-40eb-4827-abe3-80b683a77b5c",
+      "net": "BAT",
+      "start": [
+        36.0,
+        11.1
+      ],
+      "end": [
+        35.3,
+        10.4
+      ],
+      "width": 0.8,
+      "layer": "F.Cu"
+    },
+    {
+      "uuid": "bff9b7d5-b4ee-418f-9cf5-f6ec20bedc4f",
+      "net": "BAT_SYS",
+      "start": [
+        43.2,
+        15.9
+      ],
+      "end": [
+        43.1,
+        16.0
+      ],
+      "width": 0.8,
+      "layer": "F.Cu"
+    },
+    {
+      "uuid": "c384d954-c72d-4fd8-927f-3887cbbf3d27",
+      "net": "BAT",
+      "start": [
+        36.5,
+        14.0
+      ],
+      "end": [
+        36.0,
+        13.5
+      ],
+      "width": 0.8,
+      "layer": "F.Cu"
+    },
+    {
+      "uuid": "d841ae04-104a-4ae5-bb66-24a152d7a8b2",
+      "net": "BAT_SYS",
+      "start": [
+        43.35,
+        15.7
+      ],
+      "end": [
+        42.95,
+        15.7
+      ],
+      "width": 1.0,
+      "layer": "F.Cu"
+    },
+    {
+      "uuid": "dab29d35-edce-4db6-b6b2-39b3e335d3fc",
+      "net": "BAT_SYS",
+      "start": [
+        23.7375,
+        29.5125
+      ],
+      "end": [
+        23.65,
+        29.6
+      ],
+      "width": 0.8,
+      "layer": "F.Cu"
+    },
+    {
+      "uuid": "dd9f5f6b-57bb-4c0d-892a-4510d76dad3e",
+      "net": "BAT_SYS",
+      "start": [
+        46.525,
+        12.6
+      ],
+      "end": [
+        46.525,
+        13.4
+      ],
+      "width": 0.8,
+      "layer": "F.Cu"
+    },
+    {
+      "uuid": "deff6bdc-1702-4276-a83c-1dec660f3fc9",
+      "net": "BAT",
+      "start": [
+        25.1,
+        6.6
+      ],
+      "end": [
+        25.0,
+        6.6
+      ],
+      "width": 0.8,
+      "layer": "F.Cu"
+    },
+    {
+      "uuid": "dfb2f649-7d1c-47be-905d-c783acfbc671",
+      "net": "BAT",
+      "start": [
+        36.0,
+        13.5
+      ],
+      "end": [
+        36.0,
+        11.1
+      ],
+      "width": 0.8,
+      "layer": "F.Cu"
+    },
+    {
+      "uuid": "e025a90c-f9a6-4d0e-ba05-c38c58c7923f",
+      "net": "BAT",
+      "start": [
+        36.4875,
+        14.0
+      ],
+      "end": [
+        36.4875,
+        15.9
+      ],
+      "width": 0.3,
+      "layer": "F.Cu"
+    },
+    {
+      "uuid": "e028c73a-a6ec-409c-bdf2-d616dfba1087",
+      "net": "BAT_SYS",
+      "start": [
+        43.2,
+        12.8
+      ],
+      "end": [
+        43.2,
+        15.9
+      ],
+      "width": 0.8,
+      "layer": "F.Cu"
+    },
+    {
+      "uuid": "e0e0d56f-b010-4337-b2ee-0c1871c357d4",
+      "net": "BAT",
+      "start": [
+        37.4,
+        10.8
+      ],
+      "end": [
+        36.7,
+        10.8
+      ],
+      "width": 0.8,
+      "layer": "F.Cu"
+    },
+    {
+      "uuid": "e826a905-faa0-4054-bae3-4e81236065a2",
+      "net": "BAT",
+      "start": [
+        5.9,
+        45.0
+      ],
+      "end": [
+        6.5,
+        44.4
+      ],
+      "width": 0.25,
+      "layer": "F.Cu"
+    },
+    {
+      "uuid": "ec2999b6-00e0-404a-a033-377b1eaf27e0",
+      "net": "BAT",
+      "start": [
+        6.7,
+        44.3
+      ],
+      "end": [
+        10.4,
+        44.3
+      ],
+      "width": 0.25,
+      "layer": "F.Cu"
+    },
+    {
+      "uuid": "f2282d20-2585-4b93-83a0-a667fc1af4c6",
+      "net": "BAT_SYS",
+      "start": [
+        42.3,
+        12.8
+      ],
+      "end": [
+        42.1,
+        12.6
+      ],
+      "width": 0.8,
+      "layer": "F.Cu"
+    },
+    {
+      "uuid": "f3247ad8-6b71-46c2-b72c-736422843bad",
+      "net": "BAT_SYS",
+      "start": [
+        19.9,
+        41.1
+      ],
+      "end": [
+        20.0,
+        41.1
+      ],
+      "width": 0.25,
+      "layer": "F.Cu"
+    },
+    {
+      "uuid": "f62c4603-6603-439c-974d-abb2a6b278f6",
+      "net": "BAT_SYS",
+      "start": [
+        43.35,
+        14.85
+      ],
+      "end": [
+        42.95,
+        15.25
+      ],
+      "width": 0.3,
+      "layer": "F.Cu"
+    },
+    {
+      "uuid": "fb73ff6d-5e0d-4212-ac24-95ebc086f348",
+      "net": "BAT",
+      "start": [
+        24.5,
+        7.6
+      ],
+      "end": [
+        22.8,
+        9.3
+      ],
+      "width": 0.8,
+      "layer": "F.Cu"
+    },
+    {
+      "uuid": "fc7ffa7d-54b7-4d3a-80f4-e05ad5db4d2d",
+      "net": "BAT_SYS",
+      "start": [
+        20.0,
+        41.1
+      ],
+      "end": [
+        20.1,
+        41.0
+      ],
+      "width": 0.25,
+      "layer": "F.Cu"
+    },
+    {
+      "uuid": "024e1668-6e44-4d30-8f4a-139217ebdc98",
+      "net": "BAT_SYS",
+      "at": [
+        26.6,
+        40.65
+      ],
+      "kind": "via"
+    },
+    {
+      "uuid": "0cc53d60-e7e8-4174-ab6e-7a16ae0b1314",
+      "net": "BAT",
+      "at": [
+        4.5,
+        50.0
+      ],
+      "kind": "via"
+    },
+    {
+      "uuid": "0e1fe8ee-59e1-4b3e-9264-9202bf408f0b",
+      "net": "BAT_SYS",
+      "at": [
+        46.525,
+        13.4
+      ],
+      "kind": "via"
+    },
+    {
+      "uuid": "592d879e-0453-4dc8-aec8-bbf0538b8317",
+      "net": "BAT",
+      "at": [
+        2.0,
+        47.0
+      ],
+      "kind": "via"
+    },
+    {
+      "uuid": "638d1eae-bbf4-4341-a942-6f0c841a813b",
+      "net": "BAT",
+      "at": [
+        44.5,
+        11.7
+      ],
+      "kind": "via"
+    },
+    {
+      "uuid": "6b44c926-7d7e-44e5-8a94-390d34b93dbd",
+      "net": "BAT_SYS",
+      "at": [
+        43.2,
+        12.8
+      ],
+      "kind": "via"
+    },
+    {
+      "uuid": "77746f82-ccdf-4dc2-a3a7-6d93c2a8162f",
+      "net": "BAT_SYS",
+      "at": [
+        25.3,
+        27.1
+      ],
+      "kind": "via"
+    },
+    {
+      "uuid": "7ae8e33a-62c3-49cb-a7d5-53a8014c6122",
+      "net": "BAT",
+      "at": [
+        39.5,
+        11.0
+      ],
+      "kind": "via"
+    },
+    {
+      "uuid": "8022fec8-555a-470a-98fc-c72287750415",
+      "net": "BAT_SYS",
+      "at": [
+        42.1,
+        12.6
+      ],
+      "kind": "via"
+    },
+    {
+      "uuid": "8059368a-a790-4ef7-9862-15b4f7333375",
+      "net": "BAT_SYS",
+      "at": [
+        23.65,
+        29.6
+      ],
+      "kind": "via"
+    },
+    {
+      "uuid": "8fb87779-262e-4d72-b875-d02a1bff57f4",
+      "net": "BAT",
+      "at": [
+        44.5,
+        8.6
+      ],
+      "kind": "via"
+    },
+    {
+      "uuid": "bffb3544-b3a5-4b17-a833-530bf01a0112",
+      "net": "BAT",
+      "at": [
+        5.5,
+        45.0
+      ],
+      "kind": "via"
+    },
+    {
+      "uuid": "ebf29eaf-75d8-46da-bd72-c6912a6a87b3",
+      "net": "BAT",
+      "at": [
+        17.8,
+        16.25
+      ],
+      "kind": "via"
+    },
+    {
+      "uuid": "04ac2e16-fcd7-450f-8bc2-17dd3b21e51b",
+      "net": "BAT_SYS",
+      "start": [
+        38.1,
+        12.6
+      ],
+      "end": [
+        38.0,
+        12.7
+      ],
+      "width": 0.8,
+      "layer": "B.Cu"
+    },
+    {
+      "uuid": "0a4ec84d-c4ea-4f94-8884-c59da48b0e28",
+      "net": "BAT_SYS",
+      "start": [
+        38.0,
+        12.7
+      ],
+      "end": [
+        38.0,
+        14.1
+      ],
+      "width": 0.8,
+      "layer": "B.Cu"
+    },
+    {
+      "uuid": "0bd02c1c-4b46-45cf-89b1-671812f25ed2",
+      "net": "BAT",
+      "start": [
+        25.0,
+        6.9
+      ],
+      "end": [
+        25.1,
+        6.9
+      ],
+      "width": 0.25,
+      "layer": "B.Cu"
+    },
+    {
+      "uuid": "0c63c2bb-73bd-42b8-8cf0-78f6b8c3d091",
+      "net": "BAT_SYS",
+      "start": [
+        41.6,
+        12.2
+      ],
+      "end": [
+        41.5,
+        12.1
+      ],
+      "width": 0.8,
+      "layer": "B.Cu"
+    },
+    {
+      "uuid": "0e73f8a4-5bea-4fbf-b7d4-022c91af8d29",
+      "net": "BAT",
+      "start": [
+        53.7,
+        6.8
+      ],
+      "end": [
+        60.5,
+        13.6
+      ],
+      "width": 0.25,
+      "layer": "B.Cu"
+    },
+    {
+      "uuid": "11e292bd-588a-4b6e-ac8a-fbe427cde386",
+      "net": "BAT",
+      "start": [
+        19.8,
+        13.6
+      ],
+      "end": [
+        19.8,
+        13.7
+      ],
+      "width": 0.8,
+      "layer": "B.Cu"
+    },
+    {
+      "uuid": "15bdf507-9833-4f8e-95bd-fedd79c5fcaf",
+      "net": "BAT",
+      "start": [
+        25.2,
+        6.8
+      ],
+      "end": [
+        53.7,
+        6.8
+      ],
+      "width": 0.25,
+      "layer": "B.Cu"
+    },
+    {
+      "uuid": "22b012a5-3e5c-487b-b961-ff7fb8df4e4a",
+      "net": "BAT_SYS",
+      "start": [
+        38.7,
+        12.0
+      ],
+      "end": [
+        38.6,
+        12.1
+      ],
+      "width": 0.8,
+      "layer": "B.Cu"
+    },
+    {
+      "uuid": "23ae9550-4f35-4bec-9000-513caa016fe2",
+      "net": "BAT_SYS",
+      "start": [
+        26.1,
+        26.3
+      ],
+      "end": [
+        25.3,
+        27.1
+      ],
+      "width": 0.8,
+      "layer": "B.Cu"
+    },
+    {
+      "uuid": "27aa72eb-e420-4b5a-9050-0f3820752250",
+      "net": "BAT_SYS",
+      "start": [
+        41.4,
+        12.1
+      ],
+      "end": [
+        41.3,
+        12.0
+      ],
+      "width": 0.8,
+      "layer": "B.Cu"
+    },
+    {
+      "uuid": "27ae2d03-6822-43c5-a361-0f1cc80f37d9",
+      "net": "BAT_SYS",
+      "start": [
+        38.0,
+        14.1
+      ],
+      "end": [
+        35.5,
+        16.6
+      ],
+      "width": 0.8,
+      "layer": "B.Cu"
+    },
+    {
+      "uuid": "2cbb66dd-d65b-457c-ba49-b3e588fc6958",
+      "net": "BAT_SYS",
+      "start": [
+        38.2,
+        12.3
+      ],
+      "end": [
+        38.2,
+        12.4
+      ],
+      "width": 0.8,
+      "layer": "B.Cu"
+    },
+    {
+      "uuid": "310cd4f3-66c6-4780-985e-f6fbcc212759",
+      "net": "BAT_SYS",
+      "start": [
+        35.4,
+        17.0
+      ],
+      "end": [
+        35.3,
+        17.1
+      ],
+      "width": 0.8,
+      "layer": "B.Cu"
+    },
+    {
+      "uuid": "362cdd9f-6179-47c5-bdcc-c018dfe4ea35",
+      "net": "BAT",
+      "start": [
+        60.7,
+        13.7
+      ],
+      "end": [
+        69.2,
+        13.7
+      ],
+      "width": 0.25,
+      "layer": "B.Cu"
+    },
+    {
+      "uuid": "3a52dd31-f1b1-4dad-aefa-2904567d4b68",
+      "net": "BAT_SYS",
+      "start": [
+        41.5,
+        12.1
+      ],
+      "end": [
+        41.4,
+        12.1
+      ],
+      "width": 0.8,
+      "layer": "B.Cu"
+    },
+    {
+      "uuid": "3efc74a3-5a62-47c7-89bc-f934ffc82853",
+      "net": "BAT_SYS",
+      "start": [
+        29.3,
+        23.2
+      ],
+      "end": [
+        26.2,
+        26.3
+      ],
+      "width": 0.8,
+      "layer": "B.Cu"
+    },
+    {
+      "uuid": "4563f88b-c5ba-491b-91cb-c5a9afdf20df",
+      "net": "BAT_SYS",
+      "start": [
+        41.5,
+        12.1
+      ],
+      "end": [
+        41.4,
+        12.1
+      ],
+      "width": 0.8,
+      "layer": "B.Cu"
+    },
+    {
+      "uuid": "4605ff64-e84e-470f-95d8-de8199ae676e",
+      "net": "BAT_SYS",
+      "start": [
+        29.4,
+        22.9
+      ],
+      "end": [
+        29.4,
+        23.0
+      ],
+      "width": 0.8,
+      "layer": "B.Cu"
+    },
+    {
+      "uuid": "4ab0337e-db80-4196-9a9a-309b488222bf",
+      "net": "BAT",
+      "start": [
+        19.9,
+        13.4
+      ],
+      "end": [
+        19.9,
+        13.5
+      ],
+      "width": 0.8,
+      "layer": "B.Cu"
+    },
+    {
+      "uuid": "4b4694f1-ba81-4ea6-b244-5cf8d9c31bd0",
+      "net": "BAT_SYS",
+      "start": [
+        35.2,
+        17.3
+      ],
+      "end": [
+        35.1,
+        17.3
+      ],
+      "width": 0.8,
+      "layer": "B.Cu"
+    },
+    {
+      "uuid": "4d81c364-728a-423d-9869-46d670ef5b5b",
+      "net": "BAT_SYS",
+      "start": [
+        23.65,
+        29.6
+      ],
+      "end": [
+        26.6,
+        32.55
+      ],
+      "width": 0.8,
+      "layer": "B.Cu"
+    },
+    {
+      "uuid": "52370f40-b603-45a8-90c4-53cb5665a04e",
+      "net": "BAT_SYS",
+      "start": [
+        43.2,
+        13.4
+      ],
+      "end": [
+        43.2,
+        12.8
+      ],
+      "width": 0.8,
+      "layer": "B.Cu"
+    },
+    {
+      "uuid": "57954343-1e96-411f-ac1d-20ea345b800a",
+      "net": "BAT",
+      "start": [
+        20.2,
+        12.4
+      ],
+      "end": [
+        20.1,
+        12.5
+      ],
+      "width": 0.8,
+      "layer": "B.Cu"
+    },
+    {
+      "uuid": "5a36b023-636a-413f-8100-18a3044cb506",
+      "net": "BAT_SYS",
+      "start": [
+        29.5,
+        22.6
+      ],
+      "end": [
+        29.5,
+        22.8
+      ],
+      "width": 0.8,
+      "layer": "B.Cu"
+    },
+    {
+      "uuid": "5a8e3790-0856-4a00-956e-89ea2454c7a9",
+      "net": "BAT",
+      "start": [
+        22.0,
+        9.0
+      ],
+      "end": [
+        22.1,
+        8.9
+      ],
+      "width": 0.25,
+      "layer": "B.Cu"
+    },
+    {
+      "uuid": "5e6f8aea-7730-4887-a2eb-506e06e968cf",
+      "net": "BAT_SYS",
+      "start": [
+        35.0,
+        17.4
+      ],
+      "end": [
+        34.9,
+        17.4
+      ],
+      "width": 0.8,
+      "layer": "B.Cu"
+    },
+    {
+      "uuid": "5eb85e72-d91a-4019-b3d7-8b790e78d6a2",
+      "net": "BAT",
+      "start": [
+        22.5,
+        8.5
+      ],
+      "end": [
+        23.4,
+        8.5
+      ],
+      "width": 0.25,
+      "layer": "B.Cu"
+    },
+    {
+      "uuid": "5f2c85fe-7223-47e4-8f2f-f233724f1fe8",
+      "net": "BAT_SYS",
+      "start": [
+        26.2,
+        26.3
+      ],
+      "end": [
+        26.1,
+        26.3
+      ],
+      "width": 0.8,
+      "layer": "B.Cu"
+    },
+    {
+      "uuid": "62bf42ee-3359-4c3f-99e9-c328fbb07184",
+      "net": "BAT_SYS",
+      "start": [
+        46.525,
+        13.4
+      ],
+      "end": [
+        43.2,
+        13.4
+      ],
+      "width": 0.8,
+      "layer": "B.Cu"
+    },
+    {
+      "uuid": "67d58a33-0aca-4505-af96-6ece82e8d38e",
+      "net": "BAT_SYS",
+      "start": [
+        42.1,
+        12.6
+      ],
+      "end": [
+        41.7,
+        12.2
+      ],
+      "width": 0.8,
+      "layer": "B.Cu"
+    },
+    {
+      "uuid": "6813504d-c9c7-49c7-a1c5-642eacf05ab3",
+      "net": "BAT_SYS",
+      "start": [
+        26.6,
+        32.55
+      ],
+      "end": [
+        26.6,
+        40.65
+      ],
+      "width": 0.8,
+      "layer": "B.Cu"
+    },
+    {
+      "uuid": "69783470-2bc9-4faf-95cd-74680a9ad894",
+      "net": "BAT",
+      "start": [
+        70.5,
+        12.4
+      ],
+      "end": [
+        70.6,
+        12.4
+      ],
+      "width": 0.25,
+      "layer": "B.Cu"
+    },
+    {
+      "uuid": "6be31aad-368c-42e3-b543-4468f3bc2e1e",
+      "net": "BAT",
+      "start": [
+        22.8,
+        9.7
+      ],
+      "end": [
+        20.2,
+        12.3
+      ],
+      "width": 0.8,
+      "layer": "B.Cu"
+    },
+    {
+      "uuid": "6d0dd9a8-0e63-4812-92b2-79c6ceca2d1c",
+      "net": "BAT",
+      "start": [
+        23.4,
+        8.5
+      ],
+      "end": [
+        25.0,
+        6.9
+      ],
+      "width": 0.25,
+      "layer": "B.Cu"
+    },
+    {
+      "uuid": "6def1f09-4d9e-41f2-a448-eed0425d65d8",
+      "net": "BAT_SYS",
+      "start": [
+        38.6,
+        12.1
+      ],
+      "end": [
+        38.5,
+        12.1
+      ],
+      "width": 0.8,
+      "layer": "B.Cu"
+    },
+    {
+      "uuid": "7dc86aef-8192-4e30-b3f9-b3427abd5cc6",
+      "net": "BAT",
+      "start": [
+        60.5,
+        13.6
+      ],
+      "end": [
+        60.6,
+        13.6
+      ],
+      "width": 0.25,
+      "layer": "B.Cu"
+    },
+    {
+      "uuid": "84f8fe5d-8845-4278-91ec-c3bbc69ca13f",
+      "net": "BAT",
+      "start": [
+        69.2,
+        13.7
+      ],
+      "end": [
+        70.5,
+        12.4
+      ],
+      "width": 0.25,
+      "layer": "B.Cu"
+    },
+    {
+      "uuid": "890dc75e-ac15-4e31-a31e-e3046ed19949",
+      "net": "BAT",
+      "start": [
+        2.0,
+        47.0
+      ],
+      "end": [
+        4.0,
+        45.0
+      ],
+      "width": 0.25,
+      "layer": "B.Cu"
+    },
+    {
+      "uuid": "89a3f517-849c-4019-bdf5-f6fe3041958c",
+      "net": "BAT_SYS",
+      "start": [
+        41.7,
+        12.2
+      ],
+      "end": [
+        41.6,
+        12.2
+      ],
+      "width": 0.8,
+      "layer": "B.Cu"
+    },
+    {
+      "uuid": "89c6f2b3-de07-4d7c-9226-71cb426b497d",
+      "net": "BAT",
+      "start": [
+        22.1,
+        8.8
+      ],
+      "end": [
+        22.3,
+        8.6
+      ],
+      "width": 0.25,
+      "layer": "B.Cu"
+    },
+    {
+      "uuid": "89f98664-389b-4dac-a4e7-bf850e97955f",
+      "net": "BAT",
+      "start": [
+        22.0,
+        9.3
+      ],
+      "end": [
+        22.0,
+        9.0
+      ],
+      "width": 0.25,
+      "layer": "B.Cu"
+    },
+    {
+      "uuid": "8a3cfbea-8726-4996-9d4a-3b78a832086d",
+      "net": "BAT_SYS",
+      "start": [
+        38.5,
+        12.1
+      ],
+      "end": [
+        38.4,
+        12.2
+      ],
+      "width": 0.8,
+      "layer": "B.Cu"
+    },
+    {
+      "uuid": "8b95383e-9f3d-4b67-abd0-7171c879dc5c",
+      "net": "BAT",
+      "start": [
+        25.1,
+        6.9
+      ],
+      "end": [
+        25.2,
+        6.8
+      ],
+      "width": 0.25,
+      "layer": "B.Cu"
+    },
+    {
+      "uuid": "917b329c-f261-4b3a-a31c-b9633d50162b",
+      "net": "BAT",
+      "start": [
+        20.0,
+        13.3
+      ],
+      "end": [
+        19.9,
+        13.4
+      ],
+      "width": 0.8,
+      "layer": "B.Cu"
+    },
+    {
+      "uuid": "935a4ce9-4f4e-4149-b4f2-a56f76d27470",
+      "net": "BAT",
+      "start": [
+        22.8,
+        9.3
+      ],
+      "end": [
+        22.8,
+        9.7
+      ],
+      "width": 0.8,
+      "layer": "B.Cu"
+    },
+    {
+      "uuid": "9af4b1c7-6d0e-49c4-ab09-77e37beaedb5",
+      "net": "BAT",
+      "start": [
+        73.0,
+        12.3
+      ],
+      "end": [
+        74.3,
+        11.0
+      ],
+      "width": 0.25,
+      "layer": "B.Cu"
+    },
+    {
+      "uuid": "9c48b4a6-08f9-4f8a-ab6f-dcf7806342e9",
+      "net": "BAT",
+      "start": [
+        22.1,
+        8.9
+      ],
+      "end": [
+        22.1,
+        8.8
+      ],
+      "width": 0.25,
+      "layer": "B.Cu"
+    },
+    {
+      "uuid": "9e770794-9a38-43dc-9456-1268b48988c2",
+      "net": "BAT_SYS",
+      "start": [
+        29.3,
+        23.1
+      ],
+      "end": [
+        29.3,
+        23.2
+      ],
+      "width": 0.8,
+      "layer": "B.Cu"
+    },
+    {
+      "uuid": "9edd03e6-4a94-4b97-ae3a-224f45bbc3a3",
+      "net": "BAT_SYS",
+      "start": [
+        35.4,
+        16.9
+      ],
+      "end": [
+        35.4,
+        17.0
+      ],
+      "width": 0.8,
+      "layer": "B.Cu"
+    },
+    {
+      "uuid": "9fa557f3-9b4a-4f55-9a8c-f17c8b689ef0",
+      "net": "BAT_SYS",
+      "start": [
+        29.4,
+        23.0
+      ],
+      "end": [
+        29.3,
+        23.1
+      ],
+      "width": 0.8,
+      "layer": "B.Cu"
+    },
+    {
+      "uuid": "a228dc01-eeef-43d8-9ec0-d90f7719c1a9",
+      "net": "BAT_SYS",
+      "start": [
+        38.2,
+        12.4
+      ],
+      "end": [
+        38.1,
+        12.5
+      ],
+      "width": 0.8,
+      "layer": "B.Cu"
+    },
+    {
+      "uuid": "a6b97199-dfed-44c8-8445-fbd5e77aa285",
+      "net": "BAT",
+      "start": [
+        4.2,
+        49.7
+      ],
+      "end": [
+        4.5,
+        50.0
+      ],
+      "width": 0.8,
+      "layer": "B.Cu"
+    },
+    {
+      "uuid": "a6dde5d4-249d-4d63-b10a-b92217cff2d1",
+      "net": "BAT",
+      "start": [
+        20.1,
+        12.5
+      ],
+      "end": [
+        20.1,
+        12.6
+      ],
+      "width": 0.8,
+      "layer": "B.Cu"
+    },
+    {
+      "uuid": "adb4c6b6-909b-43ba-9307-5c5d4ee7f1ab",
+      "net": "BAT",
+      "start": [
+        60.6,
+        13.6
+      ],
+      "end": [
+        60.7,
+        13.7
+      ],
+      "width": 0.25,
+      "layer": "B.Cu"
+    },
+    {
+      "uuid": "af394f4e-5410-4500-8610-93da4e25813b",
+      "net": "BAT_SYS",
+      "start": [
+        35.1,
+        17.3
+      ],
+      "end": [
+        35.0,
+        17.4
+      ],
+      "width": 0.8,
+      "layer": "B.Cu"
+    },
+    {
+      "uuid": "afb1633c-bd90-4368-b20c-700c611bb645",
+      "net": "BAT",
+      "start": [
+        19.9,
+        13.5
+      ],
+      "end": [
+        19.8,
+        13.6
+      ],
+      "width": 0.8,
+      "layer": "B.Cu"
+    },
+    {
+      "uuid": "afde3e3f-fc0a-4935-95f9-a2c949c55812",
+      "net": "BAT_SYS",
+      "start": [
+        41.7,
+        12.2
+      ],
+      "end": [
+        41.6,
+        12.2
+      ],
+      "width": 0.8,
+      "layer": "B.Cu"
+    },
+    {
+      "uuid": "aff964ed-f34b-4e0f-a2e1-42bd19c7dd42",
+      "net": "BAT_SYS",
+      "start": [
+        35.5,
+        16.6
+      ],
+      "end": [
+        35.5,
+        16.8
+      ],
+      "width": 0.8,
+      "layer": "B.Cu"
+    },
+    {
+      "uuid": "b1445a16-0bb5-4305-985b-047e512ed6e0",
+      "net": "BAT_SYS",
+      "start": [
+        34.9,
+        17.4
+      ],
+      "end": [
+        34.8,
+        17.5
+      ],
+      "width": 0.8,
+      "layer": "B.Cu"
+    },
+    {
+      "uuid": "b3426355-7237-4bec-aefb-3d99018a0ad4",
+      "net": "BAT",
+      "start": [
+        20.1,
+        12.6
+      ],
+      "end": [
+        20.0,
+        12.7
+      ],
+      "width": 0.8,
+      "layer": "B.Cu"
+    },
+    {
+      "uuid": "b3fff10f-16a6-4db4-a6be-cd698717bc69",
+      "net": "BAT_SYS",
+      "start": [
+        41.3,
+        12.0
+      ],
+      "end": [
+        38.7,
+        12.0
+      ],
+      "width": 0.8,
+      "layer": "B.Cu"
+    },
+    {
+      "uuid": "b4a8320b-9d42-4b7a-93e6-baabc7b906f0",
+      "net": "BAT_SYS",
+      "start": [
+        38.1,
+        12.5
+      ],
+      "end": [
+        38.1,
+        12.6
+      ],
+      "width": 0.8,
+      "layer": "B.Cu"
+    },
+    {
+      "uuid": "b975a96e-0a67-4fea-a734-ba9d56840c89",
+      "net": "BAT_SYS",
+      "start": [
+        41.6,
+        12.2
+      ],
+      "end": [
+        41.5,
+        12.1
+      ],
+      "width": 0.8,
+      "layer": "B.Cu"
+    },
+    {
+      "uuid": "bad39393-4612-4f5f-831e-ae9a4b0ae477",
+      "net": "BAT_SYS",
+      "start": [
+        35.3,
+        17.1
+      ],
+      "end": [
+        35.3,
+        17.2
+      ],
+      "width": 0.8,
+      "layer": "B.Cu"
+    },
+    {
+      "uuid": "bbc9955d-e179-4f58-97b1-e59e6420ef71",
+      "net": "BAT_SYS",
+      "start": [
+        29.5,
+        22.8
+      ],
+      "end": [
+        29.4,
+        22.9
+      ],
+      "width": 0.8,
+      "layer": "B.Cu"
+    },
+    {
+      "uuid": "be7d7727-9053-4376-b95d-233547d877ff",
+      "net": "BAT_SYS",
+      "start": [
+        41.4,
+        12.1
+      ],
+      "end": [
+        41.3,
+        12.0
+      ],
+      "width": 0.8,
+      "layer": "B.Cu"
+    },
+    {
+      "uuid": "c3fbc5b7-7ec2-4d66-aac8-5e2ac0a7dbdd",
+      "net": "BAT_SYS",
+      "start": [
+        35.3,
+        17.2
+      ],
+      "end": [
+        35.2,
+        17.3
+      ],
+      "width": 0.8,
+      "layer": "B.Cu"
+    },
+    {
+      "uuid": "c6cf0854-4cbe-4057-ad46-748a08c4ac20",
+      "net": "BAT_SYS",
+      "start": [
+        35.5,
+        16.8
+      ],
+      "end": [
+        35.4,
+        16.9
+      ],
+      "width": 0.8,
+      "layer": "B.Cu"
+    },
+    {
+      "uuid": "c998e180-ade1-4be1-a0fa-14542eaea26c",
+      "net": "BAT_SYS",
+      "start": [
+        41.3,
+        12.0
+      ],
+      "end": [
+        40.5,
+        12.0
+      ],
+      "width": 0.8,
+      "layer": "B.Cu"
+    },
+    {
+      "uuid": "d31b650b-ac18-48ce-b672-f79eeab482fa",
+      "net": "BAT",
+      "start": [
+        70.6,
+        12.4
+      ],
+      "end": [
+        70.7,
+        12.3
+      ],
+      "width": 0.25,
+      "layer": "B.Cu"
+    },
+    {
+      "uuid": "d6357407-5134-4210-b3ab-6286a1e0268d",
+      "net": "BAT",
+      "start": [
+        19.8,
+        13.7
+      ],
+      "end": [
+        17.8,
+        15.7
+      ],
+      "width": 0.8,
+      "layer": "B.Cu"
+    },
+    {
+      "uuid": "db35924b-b010-478b-9722-d2b49e1d569a",
+      "net": "BAT",
+      "start": [
+        17.8,
+        16.2
+      ],
+      "end": [
+        17.8,
+        16.25
+      ],
+      "width": 0.8,
+      "layer": "B.Cu"
+    },
+    {
+      "uuid": "dd074774-2f61-41ea-914c-a0b6f1e7e4f3",
+      "net": "BAT",
+      "start": [
+        22.75,
+        9.3
+      ],
+      "end": [
+        22.0,
+        9.3
+      ],
+      "width": 0.25,
+      "layer": "B.Cu"
+    },
+    {
+      "uuid": "dd4d0c76-c288-4769-8122-66234d7937ed",
+      "net": "BAT_SYS",
+      "start": [
+        34.6,
+        17.5
+      ],
+      "end": [
+        29.5,
+        22.6
+      ],
+      "width": 0.8,
+      "layer": "B.Cu"
+    },
+    {
+      "uuid": "df5f3291-26e7-4159-8ebc-ec8bf3ebe4dd",
+      "net": "BAT",
+      "start": [
+        70.7,
+        12.3
+      ],
+      "end": [
+        73.0,
+        12.3
+      ],
+      "width": 0.25,
+      "layer": "B.Cu"
+    },
+    {
+      "uuid": "e24ea6aa-dc5b-484f-8c69-06279ef4e38b",
+      "net": "BAT",
+      "start": [
+        22.4,
+        8.6
+      ],
+      "end": [
+        22.5,
+        8.5
+      ],
+      "width": 0.25,
+      "layer": "B.Cu"
+    },
+    {
+      "uuid": "e3e9e4ca-653c-450f-acf8-34e1f4251c37",
+      "net": "BAT_SYS",
+      "start": [
+        38.3,
+        12.2
+      ],
+      "end": [
+        38.2,
+        12.3
+      ],
+      "width": 0.8,
+      "layer": "B.Cu"
+    },
+    {
+      "uuid": "e5ddf1f0-f2b2-4c5e-9dec-4d4e67af1b64",
+      "net": "BAT",
+      "start": [
+        17.8,
+        15.7
+      ],
+      "end": [
+        17.8,
+        16.2
+      ],
+      "width": 0.8,
+      "layer": "B.Cu"
+    },
+    {
+      "uuid": "e6949190-bd7c-405a-ba4d-5e0c71dd9c7c",
+      "net": "BAT",
+      "start": [
+        20.2,
+        12.3
+      ],
+      "end": [
+        20.2,
+        12.4
+      ],
+      "width": 0.8,
+      "layer": "B.Cu"
+    },
+    {
+      "uuid": "e97c744a-a3e8-47da-b686-297d7e635907",
+      "net": "BAT",
+      "start": [
+        22.3,
+        8.6
+      ],
+      "end": [
+        22.4,
+        8.6
+      ],
+      "width": 0.25,
+      "layer": "B.Cu"
+    },
+    {
+      "uuid": "eb68f086-d778-48fe-a0fd-302372523454",
+      "net": "BAT",
+      "start": [
+        44.5,
+        8.6
+      ],
+      "end": [
+        44.5,
+        11.7
+      ],
+      "width": 0.8,
+      "layer": "B.Cu"
+    },
+    {
+      "uuid": "ee3ee10f-04b9-4161-a858-34740bb52413",
+      "net": "BAT_SYS",
+      "start": [
+        34.8,
+        17.5
+      ],
+      "end": [
+        34.6,
+        17.5
+      ],
+      "width": 0.8,
+      "layer": "B.Cu"
+    },
+    {
+      "uuid": "eeab32cf-d6a0-4051-b418-14c947e15fa3",
+      "net": "BAT",
+      "start": [
+        20.0,
+        12.7
+      ],
+      "end": [
+        20.0,
+        13.3
+      ],
+      "width": 0.8,
+      "layer": "B.Cu"
+    },
+    {
+      "uuid": "f0becc45-4d3c-438b-8cfa-e2db3817a147",
+      "net": "BAT",
+      "start": [
+        4.0,
+        45.0
+      ],
+      "end": [
+        5.5,
+        45.0
+      ],
+      "width": 0.25,
+      "layer": "B.Cu"
+    },
+    {
+      "uuid": "f3f406d5-e4e7-4f86-b39e-520b86cd8693",
+      "net": "BAT_SYS",
+      "start": [
+        38.4,
+        12.2
+      ],
+      "end": [
+        38.3,
+        12.2
+      ],
+      "width": 0.8,
+      "layer": "B.Cu"
+    },
+    {
+      "uuid": "f58ed213-d7ee-41ac-b1ea-6d54c613137b",
+      "net": "BAT_SYS",
+      "start": [
+        42.1,
+        12.6
+      ],
+      "end": [
+        41.7,
+        12.2
+      ],
+      "width": 0.8,
+      "layer": "B.Cu"
+    }
+  ],
+  "pads": [
+    {
+      "uuid": "34c4e97f-1aa0-41ab-9e7a-a97f3d701e0c",
+      "ref": "U12",
+      "pin": "1",
+      "at": [
+        56.295,
+        15.275
+      ],
+      "net": "GND"
+    },
+    {
+      "uuid": "b372de37-1ab9-4b22-b75a-9cdf627e2ab6",
+      "ref": "U12",
+      "pin": "2",
+      "at": [
+        57.565,
+        15.275
+      ],
+      "net": "GND"
+    },
+    {
+      "uuid": "c1ee4deb-cd49-4ccd-b37b-19965663c56b",
+      "ref": "U12",
+      "pin": "3",
+      "at": [
+        58.835,
+        15.275
+      ],
+      "net": "SDA"
+    },
+    {
+      "uuid": "124adfd9-b652-44d5-b876-378e5f1b08a7",
+      "ref": "U12",
+      "pin": "4",
+      "at": [
+        60.105,
+        15.275
+      ],
+      "net": "SCL"
+    },
+    {
+      "uuid": "0b9745cd-8d83-4bd4-b00e-f801a535de54",
+      "ref": "U12",
+      "pin": "5",
+      "at": [
+        60.105,
+        10.325
+      ],
+      "net": "SYS_3V3"
+    },
+    {
+      "uuid": "693382b2-9dd6-4cd2-ba9d-75a1feb96205",
+      "ref": "U12",
+      "pin": "6",
+      "at": [
+        58.835,
+        10.325
+      ],
+      "net": "GND"
+    },
+    {
+      "uuid": "d8d706fb-2de2-4275-b655-8cca0da3cbd1",
+      "ref": "U12",
+      "pin": "7",
+      "at": [
+        57.565,
+        10.325
+      ],
+      "net": "INA_VIN_M"
+    },
+    {
+      "uuid": "90fd33a6-7250-4252-85b1-7503c914e5ff",
+      "ref": "U12",
+      "pin": "8",
+      "at": [
+        56.295,
+        10.325
+      ],
+      "net": "INA_VIN_P"
+    },
+    {
+      "uuid": "ecd5c7e3-1da6-4afe-91c2-63e0827b2f50",
+      "ref": "R71",
+      "pin": "1",
+      "at": [
+        24.8375,
+        12.5
+      ],
+      "net": "BAT_SYS"
+    },
+    {
+      "uuid": "3efca30f-cfee-4a9d-937a-51bd3b89fe34",
+      "ref": "R71",
+      "pin": "2",
+      "at": [
+        30.7625,
+        12.5
+      ],
+      "net": "BAT"
+    },
+    {
+      "uuid": "22b38907-02fd-49e1-9e5f-edd6cdcbec2d",
+      "ref": "R72",
+      "pin": "1",
+      "at": [
+        53.0875,
+        12.2
+      ],
+      "net": "BAT_SYS"
+    },
+    {
+      "uuid": "ed8d4a0e-1580-4193-9376-c5bd80914c60",
+      "ref": "R72",
+      "pin": "2",
+      "at": [
+        54.9125,
+        12.2
+      ],
+      "net": "INA_VIN_P"
+    },
+    {
+      "uuid": "8923e667-ed08-47e4-ac52-f893edbfdc9f",
+      "ref": "R73",
+      "pin": "1",
+      "at": [
+        53.0875,
+        14.8
+      ],
+      "net": "BAT"
+    },
+    {
+      "uuid": "97548201-5bfc-49f9-93c8-327780f25859",
+      "ref": "R73",
+      "pin": "2",
+      "at": [
+        54.9125,
+        14.8
+      ],
+      "net": "INA_VIN_M"
+    },
+    {
+      "uuid": "9c4ea3dc-0bd2-4e08-b4ee-1ddc9aab8b5c",
+      "ref": "C63",
+      "pin": "1",
+      "at": [
+        60.4,
+        13.75
+      ],
+      "net": "SYS_3V3"
+    },
+    {
+      "uuid": "7631fc30-2807-4cfa-884c-09e5a1db92c8",
+      "ref": "C63",
+      "pin": "2",
+      "at": [
+        60.4,
+        11.85
+      ],
+      "net": "GND"
+    },
+    {
+      "uuid": "0d5ebf08-35f8-4101-ae84-c4bba0cf8180",
+      "ref": "C64",
+      "pin": "1",
+      "at": [
+        57.8,
+        16.95
+      ],
+      "net": "INA_VIN_P"
+    },
+    {
+      "uuid": "6ab6617a-3ed5-40ed-a8bb-9362fa84deb2",
+      "ref": "C64",
+      "pin": "2",
+      "at": [
+        57.8,
+        15.05
+      ],
+      "net": "INA_VIN_M"
+    },
+    {
+      "uuid": "69b39996-a892-49a4-949a-cc55eadeefca",
+      "ref": "J8",
+      "pin": "1",
+      "at": [
+        22.75,
+        9.3
+      ],
+      "net": "BAT"
+    },
+    {
+      "uuid": "deb11dc3-44dc-44a6-ba3f-2aafc1a02e8d",
+      "ref": "J8",
+      "pin": "2",
+      "at": [
+        25.25,
+        9.3
+      ],
+      "net": "GND"
+    },
+    {
+      "uuid": "8682e588-86a5-4bbe-b7f8-ceb4e63a6c6c",
+      "ref": "J12",
+      "pin": "1",
+      "at": [
+        35.25,
+        9.3
+      ],
+      "net": "BAT"
+    },
+    {
+      "uuid": "cec162fa-1974-46a1-afb4-b6bd79cfcdc2",
+      "ref": "J12",
+      "pin": "2",
+      "at": [
+        37.75,
+        9.3
+      ],
+      "net": "LTO_MID"
+    },
+    {
+      "uuid": "53e9f6c6-ed33-467f-ae90-845c21fbb144",
+      "ref": "J12",
+      "pin": "3",
+      "at": [
+        40.25,
+        9.3
+      ],
+      "net": "GND"
+    },
+    {
+      "uuid": "08c08e8b-631e-47bb-9838-3d458ebeeb04",
+      "ref": "J12",
+      "pin": "4",
+      "at": [
+        42.75,
+        9.3
+      ],
+      "net": ""
+    },
+    {
+      "uuid": "bf85a60b-0563-4f1b-8624-e3e2b8bd374b",
+      "ref": "J101",
+      "pin": "1",
+      "at": [
+        64.15,
+        11.0
+      ],
+      "net": "FILTER_OUT"
+    },
+    {
+      "uuid": "95cf0f6d-1ec9-4198-9dad-6c2b138caa62",
+      "ref": "J101",
+      "pin": "2",
+      "at": [
+        64.15,
+        8.46
+      ],
+      "net": "GND"
+    },
+    {
+      "uuid": "51454511-a4c7-4db5-a838-4a7bd360887a",
+      "ref": "J101",
+      "pin": "3",
+      "at": [
+        66.69,
+        11.0
+      ],
+      "net": "FILTER_OUT"
+    },
+    {
+      "uuid": "97878ea4-ae5d-4a29-8563-d618048d22d5",
+      "ref": "J101",
+      "pin": "4",
+      "at": [
+        66.69,
+        8.46
+      ],
+      "net": "GND"
+    },
+    {
+      "uuid": "50d094d1-3351-47b8-b610-52bd2cf509a1",
+      "ref": "J101",
+      "pin": "5",
+      "at": [
+        69.23,
+        11.0
+      ],
+      "net": "FILTER_OUT"
+    },
+    {
+      "uuid": "3931319c-d4a7-4e4a-a3ba-90ec4c8ffafd",
+      "ref": "J101",
+      "pin": "6",
+      "at": [
+        69.23,
+        8.46
+      ],
+      "net": "GND"
+    },
+    {
+      "uuid": "59d91102-aae0-4ecc-8fc8-de22b222e704",
+      "ref": "J101",
+      "pin": "7",
+      "at": [
+        71.77,
+        11.0
+      ],
+      "net": "SYS_3V3"
+    },
+    {
+      "uuid": "e95e9b78-fb1b-483d-8c6a-f967e039c20b",
+      "ref": "J101",
+      "pin": "8",
+      "at": [
+        71.77,
+        8.46
+      ],
+      "net": "GND"
+    },
+    {
+      "uuid": "11e22ac2-e4da-4dac-9f86-d3e0b02b86d5",
+      "ref": "J101",
+      "pin": "9",
+      "at": [
+        74.31,
+        11.0
+      ],
+      "net": "BAT"
+    },
+    {
+      "uuid": "6880abca-a226-4ca0-a9d1-e39e06469b68",
+      "ref": "J101",
+      "pin": "10",
+      "at": [
+        74.31,
+        8.46
+      ],
+      "net": "SDA"
+    },
+    {
+      "uuid": "778fe602-e152-45f5-b0f9-f58d66b1f7d2",
+      "ref": "J101",
+      "pin": "11",
+      "at": [
+        76.85,
+        11.0
+      ],
+      "net": "MODE"
+    },
+    {
+      "uuid": "c3413c3c-4a39-4069-875e-b8be4ca6c037",
+      "ref": "J101",
+      "pin": "12",
+      "at": [
+        76.85,
+        8.46
+      ],
+      "net": "SCL"
+    },
+    {
+      "uuid": "9504ec8d-0a53-4719-99cf-6ffe71e6746b",
+      "ref": "R15",
+      "pin": "1",
+      "at": [
+        36.4875,
+        15.899999
+      ],
+      "net": "BAT"
+    },
+    {
+      "uuid": "fe8c4f35-3caa-469f-9b7a-b9abb21bb220",
+      "ref": "R15",
+      "pin": "2",
+      "at": [
+        38.3125,
+        15.899999
+      ],
+      "net": "EN_UV"
+    },
+    {
+      "uuid": "8b5d3a37-2a0c-441b-9a18-9c403fce4f8d",
+      "ref": "R47",
+      "pin": "1",
+      "at": [
+        17.2875,
+        15.0
+      ],
+      "net": "BAT"
+    },
+    {
+      "uuid": "d745b844-7ecb-4ca0-bc00-40b9073f7601",
+      "ref": "R47",
+      "pin": "2",
+      "at": [
+        19.1125,
+        15.0
+      ],
+      "net": "LTO_K1"
+    },
+    {
+      "uuid": "00c747d9-ad01-4ebf-92e4-8415fbe0c2ea",
+      "ref": "C53",
+      "pin": "1",
+      "at": [
+        46.525,
+        11.9
+      ],
+      "net": "BAT_SYS"
+    },
+    {
+      "uuid": "70b4aec7-d853-4ba0-a9ae-6a7bf357846f",
+      "ref": "C53",
+      "pin": "2",
+      "at": [
+        49.475,
+        11.9
+      ],
+      "net": "GND"
+    },
+    {
+      "uuid": "ed6dea30-bdbf-4530-a41d-656751bb7cd1",
+      "ref": "R1",
+      "pin": "1",
+      "at": [
+        26.6625,
+        28.4
+      ],
+      "net": "CHG_CS_M"
+    },
+    {
+      "uuid": "12d36190-20a2-4401-9b53-9a51c9febce2",
+      "ref": "R1",
+      "pin": "2",
+      "at": [
+        23.7375,
+        28.4
+      ],
+      "net": "BAT_SYS"
+    },
+    {
+      "uuid": "4de38e57-f4ef-49a1-9ee6-469d1b2b22ec",
+      "ref": "U2",
+      "pin": "",
+      "at": [
+        42.175,
+        20.5
+      ],
+      "net": ""
+    },
+    {
+      "uuid": "4e6880b3-42ac-4e1d-92d2-07cfa4ca825f",
+      "ref": "U2",
+      "pin": "",
+      "at": [
+        42.925,
+        20.5
+      ],
+      "net": ""
+    },
+    {
+      "uuid": "878863b1-ad14-4ef9-96c4-4159ee5006d7",
+      "ref": "U2",
+      "pin": "1",
+      "at": [
+        41.1,
+        19.5
+      ],
+      "net": "EN_UV"
+    },
+    {
+      "uuid": "56a3f189-134d-4394-88a7-c7cc8c9a3c23",
+      "ref": "U2",
+      "pin": "2",
+      "at": [
+        41.1,
+        20.0
+      ],
+      "net": "MODE"
+    },
+    {
+      "uuid": "e4f667b7-f764-4373-a542-e1169b0066df",
+      "ref": "U2",
+      "pin": "3",
+      "at": [
+        41.1,
+        20.5
+      ],
+      "net": "GND"
+    },
+    {
+      "uuid": "f8f9659e-5375-4ac7-96d1-3b4d27243802",
+      "ref": "U2",
+      "pin": "4",
+      "at": [
+        41.1,
+        21.0
+      ],
+      "net": "FB_SYS"
+    },
+    {
+      "uuid": "3d708eb3-82cd-49ef-83e7-4254e3fd3ee6",
+      "ref": "U2",
+      "pin": "5",
+      "at": [
+        41.1,
+        21.5
+      ],
+      "net": ""
+    },
+    {
+      "uuid": "9114abc1-9796-40d9-aa38-fb684ebe6928",
+      "ref": "U2",
+      "pin": "6",
+      "at": [
+        42.75,
+        21.5
+      ],
+      "net": "SYS_PRE"
+    },
+    {
+      "uuid": "19eaf5b2-7f9d-40a3-b1f0-f2185d703f65",
+      "ref": "U2",
+      "pin": "7",
+      "at": [
+        42.75,
+        21.0
+      ],
+      "net": "LX2"
+    },
+    {
+      "uuid": "83b59d6f-7706-4853-9f38-3f835f551c5d",
+      "ref": "U2",
+      "pin": "8",
+      "at": [
+        42.55,
+        20.5
+      ],
+      "net": "GND"
+    },
+    {
+      "uuid": "3193f1bb-d816-4c62-a414-bd975fd57b87",
+      "ref": "U2",
+      "pin": "9",
+      "at": [
+        42.75,
+        20.0
+      ],
+      "net": "LX1"
+    },
+    {
+      "uuid": "cf97298a-6c37-4381-b09e-153f943524ff",
+      "ref": "U2",
+      "pin": "10",
+      "at": [
+        42.75,
+        19.5
+      ],
+      "net": "BAT_SYS"
+    }
+  ]
+}

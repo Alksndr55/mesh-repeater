@@ -1,0 +1,40 @@
+{
+  "stage": "INDEPENDENT_FINAL_EXTRA_GEOMETRY_FINDINGS_PENDING_CORRECTION",
+  "source_POWER_sha256": "08fee4d2f8f42a855a8bd4ad5e6092be5eeb613137ffdd8e58b7419a51cb223e",
+  "source_LOGIC_sha256": "7a7c6a4c64b51521636fe2f9e6a837f2c1dce64fc20e8b4073290dfb2f745750",
+  "basic_checks_passed": 80,
+  "basic_checks_total": 80,
+  "findings": [
+    {
+      "name": "Exact duplicate tracks",
+      "count": 11,
+      "electrical_new_connection": false,
+      "status": "Reported to parent and builder; final native cleanup required"
+    },
+    {
+      "name": "Negative Kelvin pickup overlaps high-current feed outside R71.2 pad",
+      "native_track_UUID": "689c50b2-29a2-4760-b5e3-4f055e8a820e",
+      "measured_common_copper_outside_pad_mm2": 0.1235864238235,
+      "layer": "B.Cu",
+      "old_start_mm": [
+        46.5,
+        4.099999
+      ],
+      "old_end_mm": [
+        47.2,
+        4.8
+      ],
+      "proposed_start_mm": [
+        47.2,
+        4.1
+      ],
+      "proposed_end_mm": [
+        47.2,
+        4.8
+      ],
+      "status": "Reported to parent and builder; final independent rerun required"
+    }
+  ],
+  "CAD_modified": false,
+  "ok": false
+}

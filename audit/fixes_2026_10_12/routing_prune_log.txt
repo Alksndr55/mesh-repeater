@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "C:\Users\Alksndr\Desktop\codex\Meshcore\projects\Mesh_Repeater_2_0\audit\fixes_2026_10_12\routing_prune.py", line 11, in <module>
+    if any(v['type']!='track_dangling' or any('GPS_TX_MCU' not in i['description'] for i in v['items']) for v in d['violations']):raise RuntimeError(d['violations'])
+                                                                                                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: [{'description': "Элементы запрещены (область запрета 'BLE_ANTENNA_NO_COPPER')", 'items': [{'description': 'Перех. отв. [GND] на F.Cu - B.Cu', 'pos': {'x': 24.11, 'y': 31.2}, 'uuid': 'ef31dba0-68e7-4269-b7d8-0212e82ee0d0'}], 'severity': 'error', 'type': 'items_not_allowed'}]

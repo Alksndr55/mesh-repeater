@@ -1,0 +1,549 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-10-12T14:52:24",
+    "ignored_checks": [],
+    "included_severities": [
+        "error",
+        "warning",
+        "exclusion"
+    ],
+    "kicad_version": "10.0.6",
+    "schematic_parity": [
+        {
+            "description": "Отсутствует поле символа 'MPN' в посад. месте",
+            "items": [
+                {
+                    "description": "Посад. место C63",
+                    "pos": {
+                        "x": 61.0,
+                        "y": 11.4
+                    },
+                    "uuid": "7a8df036-21b7-4f1e-9306-7ff4a70a88c3"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "Отсутствует поле символа 'MPN' в посад. месте",
+            "items": [
+                {
+                    "description": "Посад. место C64",
+                    "pos": {
+                        "x": 57.8,
+                        "y": 7.7
+                    },
+                    "uuid": "73512aab-cff0-4c52-a571-5ab84a7e8f8b"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "Цепь конт. пл. (INA_VIN_P) не соответствует цепи, заданной схемой (Net-(U12-IN+))",
+            "items": [
+                {
+                    "description": "Конт. пл. 1 [INA_VIN_P] от C64 на B.Cu",
+                    "pos": {
+                        "x": 57.8,
+                        "y": 8.65
+                    },
+                    "uuid": "3fced56b-301c-418d-8b2c-b2f098e4eddd"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Цепь конт. пл. (INA_VIN_M) не соответствует цепи, заданной схемой (Net-(U12-IN-))",
+            "items": [
+                {
+                    "description": "Конт. пл. 2 [INA_VIN_M] от C64 на B.Cu",
+                    "pos": {
+                        "x": 57.8,
+                        "y": 6.75
+                    },
+                    "uuid": "4ebf3210-16d3-4b30-a3b9-45a5694e1b3d"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Отсутствует поле символа 'MPN' в посад. месте",
+            "items": [
+                {
+                    "description": "Посад. место R71",
+                    "pos": {
+                        "x": 46.5,
+                        "y": 6.5
+                    },
+                    "uuid": "3011f793-16ee-4843-a548-1b7df88c8923"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "Отсутствует поле символа 'MPN' в посад. месте",
+            "items": [
+                {
+                    "description": "Посад. место R72",
+                    "pos": {
+                        "x": 54.0,
+                        "y": 12.2
+                    },
+                    "uuid": "fadc58b6-3f5b-4f1c-8de8-256dc3a2612d"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "Цепь конт. пл. (INA_VIN_P) не соответствует цепи, заданной схемой (Net-(U12-IN+))",
+            "items": [
+                {
+                    "description": "Конт. пл. 2 [INA_VIN_P] от R72 на B.Cu",
+                    "pos": {
+                        "x": 54.9125,
+                        "y": 12.2
+                    },
+                    "uuid": "a174775f-ba75-4e36-a08b-f406d4768114"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Отсутствует поле символа 'MPN' в посад. месте",
+            "items": [
+                {
+                    "description": "Посад. место R73",
+                    "pos": {
+                        "x": 54.0,
+                        "y": 9.8
+                    },
+                    "uuid": "caeb9f6e-547a-4bed-bb5e-6826a6d5d1bb"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "Цепь конт. пл. (INA_VIN_M) не соответствует цепи, заданной схемой (Net-(U12-IN-))",
+            "items": [
+                {
+                    "description": "Конт. пл. 2 [INA_VIN_M] от R73 на B.Cu",
+                    "pos": {
+                        "x": 54.9125,
+                        "y": 9.8
+                    },
+                    "uuid": "5daa8a01-0cce-4ec5-8fc3-a317dd7fb4cb"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Отсутствует поле символа 'MPN' в посад. месте",
+            "items": [
+                {
+                    "description": "Посад. место U12",
+                    "pos": {
+                        "x": 58.2,
+                        "y": 12.8
+                    },
+                    "uuid": "0d635759-a731-4e32-9930-6f91b68e532b"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "Цепь конт. пл. (INA_VIN_M) не соответствует цепи, заданной схемой (Net-(U12-IN-))",
+            "items": [
+                {
+                    "description": "Конт. пл. 7 [INA_VIN_M] от U12 на F.Cu",
+                    "pos": {
+                        "x": 57.565,
+                        "y": 10.325
+                    },
+                    "uuid": "83582468-344c-48b7-b291-2427800ff07d"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Цепь конт. пл. (INA_VIN_P) не соответствует цепи, заданной схемой (Net-(U12-IN+))",
+            "items": [
+                {
+                    "description": "Конт. пл. 8 [INA_VIN_P] от U12 на F.Cu",
+                    "pos": {
+                        "x": 56.295,
+                        "y": 10.325
+                    },
+                    "uuid": "ac3284f9-3334-4099-9a60-b9bdb97703b7"
+                }
+            ],
+            "severity": "warning",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Значение (J101) не соответствует значению символа (INTERBOARD 12P)",
+            "items": [
+                {
+                    "description": "Посад. место J101",
+                    "pos": {
+                        "x": 64.15,
+                        "y": 11.0
+                    },
+                    "uuid": "8c0f8a8f-e57b-4d3f-9b66-a9e234974f5d"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_mismatch"
+        },
+        {
+            "description": "Meshcore:Connfly_DS1013_12RSIB_B_0_Horizontal__V2_J101 не соответствует посад. месту, указанному символом (Meshcore:Ali_PinHeader_2x06_P2.54_L35_A3C6)",
+            "items": [
+                {
+                    "description": "Посад. место J101",
+                    "pos": {
+                        "x": 64.15,
+                        "y": 11.0
+                    },
+                    "uuid": "8c0f8a8f-e57b-4d3f-9b66-a9e234974f5d"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_mismatch"
+        },
+        {
+            "description": "Поле 'MPN' отличается (Плата: 'Connfly DS1013-12RSIB-B-0', Схема: 'E-SIMPO L35mm A3C6 2x6P')",
+            "items": [
+                {
+                    "description": "Посад. место J101",
+                    "pos": {
+                        "x": 64.15,
+                        "y": 11.0
+                    },
+                    "uuid": "8c0f8a8f-e57b-4d3f-9b66-a9e234974f5d"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        }
+    ],
+    "source": "MeshRepeater2_Power.kicad_pcb",
+    "unconnected_items": [],
+    "violations": [
+        {
+            "description": "Tracks crossing",
+            "items": [
+                {
+                    "description": "Дорожка [BAT] на F.Cu, длина 3,6770 mm",
+                    "pos": {
+                        "x": 46.5,
+                        "y": 3.4
+                    },
+                    "uuid": "3b4a0447-4e7d-4b31-a1cb-bd504364924f"
+                },
+                {
+                    "description": "Дорожка [CHRG] на F.Cu, длина 3,1113 mm",
+                    "pos": {
+                        "x": 43.8,
+                        "y": 5.2
+                    },
+                    "uuid": "5cfde9d0-082b-460e-afc2-b1fffef37f8d"
+                }
+            ],
+            "severity": "error",
+            "type": "tracks_crossing"
+        },
+        {
+            "description": "Элементы замыкают две цепи (цепи BAT и CHRG)",
+            "items": [
+                {
+                    "description": "Дорожка [BAT] на F.Cu, длина 2,0000 mm",
+                    "pos": {
+                        "x": 43.9,
+                        "y": 6.0
+                    },
+                    "uuid": "504b05c1-60b0-4843-b58d-d55f6141a6e4"
+                },
+                {
+                    "description": "Дорожка [CHRG] на F.Cu, длина 3,1113 mm",
+                    "pos": {
+                        "x": 43.8,
+                        "y": 5.2
+                    },
+                    "uuid": "5cfde9d0-082b-460e-afc2-b1fffef37f8d"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Courtyards overlap",
+            "items": [
+                {
+                    "description": "Посад. место U12",
+                    "pos": {
+                        "x": 58.2,
+                        "y": 12.8
+                    },
+                    "uuid": "0d635759-a731-4e32-9930-6f91b68e532b"
+                },
+                {
+                    "description": "Посад. место J101",
+                    "pos": {
+                        "x": 64.15,
+                        "y": 11.0
+                    },
+                    "uuid": "8c0f8a8f-e57b-4d3f-9b66-a9e234974f5d"
+                }
+            ],
+            "severity": "error",
+            "type": "courtyards_overlap"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "Дорожка [BAT] на F.Cu, длина 6,0000 mm",
+                    "pos": {
+                        "x": 10.9,
+                        "y": 43.8
+                    },
+                    "uuid": "a1bbadb0-fd70-4293-9502-b29d8a60b683"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "Дорожка [BAT_SYS] на F.Cu, длина 0,1414 mm",
+                    "pos": {
+                        "x": 20.0,
+                        "y": 41.1
+                    },
+                    "uuid": "fc7ffa7d-54b7-4d3a-80f4-e05ad5db4d2d"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Надпись на плате 'L3' на F.Silkscreen",
+                    "pos": {
+                        "x": 58.0,
+                        "y": 15.425237
+                    },
+                    "uuid": "6d43f2c0-70c7-42e7-a12d-9c76cb8a8d9d"
+                },
+                {
+                    "description": "Конт. пл. 2 [GND] от U12 на F.Cu",
+                    "pos": {
+                        "x": 57.565,
+                        "y": 15.275
+                    },
+                    "uuid": "879467aa-4e14-4c5f-a317-bdc452b3ce0a"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Зазор шелкографии (ограничения настроек платы зазор 0,1000 mm; текущий 0,0000 mm)",
+            "items": [
+                {
+                    "description": "Сегмент от R72 на B.Silkscreen",
+                    "pos": {
+                        "x": 53.772936,
+                        "y": 11.465
+                    },
+                    "uuid": "2bcff525-29bd-41b5-9d95-589fae926251"
+                },
+                {
+                    "description": "Надпись на плате 'G8 x1.5' на B.Silkscreen",
+                    "pos": {
+                        "x": 55.019047,
+                        "y": 11.099428
+                    },
+                    "uuid": "728ecf8e-5ecf-4a5c-8f86-6d27f5b271ed"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Зазор шелкографии (ограничения настроек платы зазор 0,1000 mm; текущий 0,0193 mm)",
+            "items": [
+                {
+                    "description": "Сегмент от R73 на B.Silkscreen",
+                    "pos": {
+                        "x": 53.772936,
+                        "y": 10.535
+                    },
+                    "uuid": "6390379d-f860-4931-96e3-b3ebc2830f82"
+                },
+                {
+                    "description": "Надпись на плате 'G8 x1.5' на B.Silkscreen",
+                    "pos": {
+                        "x": 55.019047,
+                        "y": 11.099428
+                    },
+                    "uuid": "728ecf8e-5ecf-4a5c-8f86-6d27f5b271ed"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Зазор шелкографии (ограничения настроек платы зазор 0,1000 mm; текущий 0,0640 mm)",
+            "items": [
+                {
+                    "description": "Сегмент от C64 на B.Silkscreen",
+                    "pos": {
+                        "x": 57.065,
+                        "y": 7.961252
+                    },
+                    "uuid": "acc2be75-5fe6-4446-bd7b-ea5e2c1f97cb"
+                },
+                {
+                    "description": "Надпись на плате 'R11\n10k' на B.Silkscreen",
+                    "pos": {
+                        "x": 56.0,
+                        "y": 7.0
+                    },
+                    "uuid": "de5928f6-14bf-4dad-b753-610abe8f3adb"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Надпись на плате 'G8 x1.5' на B.Silkscreen",
+                    "pos": {
+                        "x": 55.019047,
+                        "y": 11.099428
+                    },
+                    "uuid": "728ecf8e-5ecf-4a5c-8f86-6d27f5b271ed"
+                },
+                {
+                    "description": "Конт. пл. 2 [INA_VIN_P] от R72 на B.Cu",
+                    "pos": {
+                        "x": 54.9125,
+                        "y": 12.2
+                    },
+                    "uuid": "a174775f-ba75-4e36-a08b-f406d4768114"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Надпись на плате 'G8 x1.5' на B.Silkscreen",
+                    "pos": {
+                        "x": 55.019047,
+                        "y": 11.099428
+                    },
+                    "uuid": "728ecf8e-5ecf-4a5c-8f86-6d27f5b271ed"
+                },
+                {
+                    "description": "Конт. пл. 1 [BAT_SYS] от R72 на B.Cu",
+                    "pos": {
+                        "x": 53.0875,
+                        "y": 12.2
+                    },
+                    "uuid": "24c433b0-5dea-4525-ae66-131279dc3b3c"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Надпись на плате 'R11\n10k' на B.Silkscreen",
+                    "pos": {
+                        "x": 56.0,
+                        "y": 7.0
+                    },
+                    "uuid": "de5928f6-14bf-4dad-b753-610abe8f3adb"
+                },
+                {
+                    "description": "Конт. пл. 2 [INA_VIN_M] от C64 на B.Cu",
+                    "pos": {
+                        "x": 57.8,
+                        "y": 6.75
+                    },
+                    "uuid": "4ebf3210-16d3-4b30-a3b9-45a5694e1b3d"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Надпись на плате 'R11\n10k' на B.Silkscreen",
+                    "pos": {
+                        "x": 56.0,
+                        "y": 7.0
+                    },
+                    "uuid": "de5928f6-14bf-4dad-b753-610abe8f3adb"
+                },
+                {
+                    "description": "Конт. пл. 1 [INA_VIN_P] от C64 на B.Cu",
+                    "pos": {
+                        "x": 57.8,
+                        "y": 8.65
+                    },
+                    "uuid": "3fced56b-301c-418d-8b2c-b2f098e4eddd"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Надпись на плате 'R48\n120k' на B.Silkscreen",
+                    "pos": {
+                        "x": 52.049999,
+                        "y": 14.0
+                    },
+                    "uuid": "5d94021a-3830-4011-a3c4-a6a4165810eb"
+                },
+                {
+                    "description": "Конт. пл. 1 [BAT_SYS] от R72 на B.Cu",
+                    "pos": {
+                        "x": 53.0875,
+                        "y": 12.2
+                    },
+                    "uuid": "24c433b0-5dea-4525-ae66-131279dc3b3c"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        }
+    ]
+}

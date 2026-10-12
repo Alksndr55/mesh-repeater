@@ -1,0 +1,87 @@
+{
+  "stage": "V2_PUBLICATION_FRESH_PROOF_CLOSURE_REBIND",
+  "ok": true,
+  "checks": [
+    {
+      "name": "Eight previous proofs preserved byte for byte",
+      "pass": true
+    },
+    {
+      "name": "Historical helper matches its original independent binding",
+      "pass": true
+    },
+    {
+      "name": "Only the organizational WORKSPACE assignment changed in the helper",
+      "pass": true
+    },
+    {
+      "name": "All preserved CAD sources remain unchanged",
+      "pass": true
+    },
+    {
+      "name": "Fresh independent review passes all original 132 conditions",
+      "pass": true
+    },
+    {
+      "name": "Fresh review used saved CAD without modification or refill",
+      "pass": true
+    },
+    {
+      "name": "Fresh independent measurements and geometry equal the prior proof",
+      "pass": true
+    },
+    {
+      "name": "Every fresh independent input hash matches its current file",
+      "pass": true
+    },
+    {
+      "name": "Only regenerated proof inputs and the documented helper binding changed",
+      "pass": true
+    },
+    {
+      "name": "All 18 finite issue dispositions remain unchanged",
+      "pass": true
+    },
+    {
+      "name": "Closure itself is still the preserved original before rebinding",
+      "pass": true
+    },
+    {
+      "name": "All other closure inputs remain hash-exact",
+      "pass": true
+    },
+    {
+      "name": "Both actual board hashes match the preserved closure",
+      "pass": true
+    },
+    {
+      "name": "Exactly three closure pointers refer to the prior independent proof",
+      "pass": true
+    }
+  ],
+  "CAD_modified": false,
+  "exports_regenerated": false,
+  "issue_dispositions_modified": false,
+  "previous_proofs_manifest": {
+    "path": "archive/publication_previous_proofs/2026_10_12_before_refresh/manifest.json",
+    "sha256": "7411e05a0c01003273d026bef5a70cf2ce1d62680627126814a6e50c807a75ad"
+  },
+  "historical_helper": {
+    "historical_bound_path": "tools/verify_v2_native_boards.py",
+    "backup_path": "archive/publication_previous_proofs/2026_10_12_before_refresh/historical_method/verify_v2_native_boards.py",
+    "sha256": "519154a86add41a19cc0120febce1cfd9146ec529006ea62c4889579990cf5b9"
+  },
+  "current_helper": {
+    "path": "tools/verify_v2_native_boards.py",
+    "sha256": "db7b5fc3b18f41f48522bfdc73d4590f581f0cfd2615f4f42dfe98d70b8eb301"
+  },
+  "independent_review": {
+    "path": "audit/routing_geometry_2026_10_12/independent_final.json",
+    "sha256": "51f7c4e972d39075c68e4f88863cba6a8564843f93ea80edcda83e7418f80605"
+  },
+  "closure": {
+    "path": "audit/routing_geometry_2026_10_12/closure_review.json",
+    "sha256": "5c764604950212acbe0d894417500806f7711d2f7095b18dbfa361968efadce1"
+  },
+  "change_scope": "Three derived pointers to a freshly rerun independent proof, including one nested evidence reference; all original issue dispositions, source hashes and acceptance conditions retained."
+}

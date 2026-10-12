@@ -1,0 +1,172 @@
+{
+  "date": "2026-10-12",
+  "project": "Mesh Repeater 2.0",
+  "status": "SAVED_NATIVE_CAD_COMPLETE_SAMPLE_MATING_UNQUALIFIED",
+  "user_direction": "User authorized INA219 addition and redesign of vertical interboard connectors after choosing the Ali pair.",
+  "male": {
+    "brand": "E-SIMPO",
+    "product_id": "1005011978353933",
+    "sku_id": "12000057202232448",
+    "options": [
+      "L35mm A3C6",
+      "2x6P"
+    ],
+    "url": "https://aliexpress.ru/item/1005011978353933.html?sku_id=12000057202232448",
+    "lot_quantity": 50,
+    "lot_price_rub": 1449,
+    "stock_displayed": "99+",
+    "tail_PC_mm": 3,
+    "free_tip_PA_mm": 6,
+    "PB_mm": 26,
+    "overall_metal_length_mm": 35,
+    "tip_above_POWER_mm": 32,
+    "upper_plastic_above_POWER_mm": [
+      23.5,
+      26.0
+    ],
+    "postal_shipping_shown_rub": 363
+  },
+  "female": {
+    "listed_brand": "MTJ",
+    "drawing_mark": "JinSheng",
+    "product_id": "1005008954873458",
+    "sku_id": "12000047353417475",
+    "option": "2X6P 10PCS",
+    "url": "https://aliexpress.ru/item/1005008954873458.html?sku_id=12000047353417475",
+    "price_rub_for_selected_option": 106,
+    "pack_quantity_in_option_and_title": 10,
+    "platform_generic_unit_label": "Цена за 1 штуку / Количество 1; refers to one selected sale unit, do not infer a one-connector price from it. Confirm packing against 2X6P 10PCS when ordering.",
+    "stock_displayed": "99+",
+    "cart_button_visible": true,
+    "body_height_mm": 8.5,
+    "body_height_tolerance": "Not given",
+    "body_length_mm": 15.64,
+    "body_length_tolerance_mm": 0.3,
+    "body_width_mm": 5.0,
+    "tail_length_mm": 3.15,
+    "tail_tolerance_mm": 0.25,
+    "tail_section_mm": [
+      0.6,
+      0.4
+    ],
+    "tail_section_not_male_acceptance": true,
+    "nominal_current_rating_A": 3,
+    "contact_resistance_max_mOhm": 20,
+    "delivery_price_shown_rub": 192,
+    "delivery_shown": "24–27 October pickup; 31 October–5 November post",
+    "minimum_mating_depth": "Not specified in drawing",
+    "accepted_male_pin_section": "Not specified in drawing"
+  },
+  "decision": {
+    "male_total_length_mm": 35,
+    "female_height_mm": 8.5,
+    "pin_grid_mm": 2.54,
+    "configuration": "2x6",
+    "POWER_LOGIC_working_face_gap_mm": 36.02,
+    "nominal_insertion_mm": 4.48,
+    "upper_plastic_to_socket_mm": 1.52,
+    "screen_to_upper_plastic_mm": 3.48,
+    "standoffs_changed": false,
+    "washer_chain_changed": false,
+    "nominal_outer_PCB_height_mm": 39.06,
+    "complete_existing_assembly_envelope_height_mm": 45.56,
+    "equation": "L = working gap + PCB solder tail - female body height + target insertion = 36.02 + 3 - 8.5 + 4.5 = 35.02 mm; choose sale variant 35 mm, actual nominal insertion 4.48 mm."
+  },
+  "limits": "Nominal L35/H8.5 geometry only. Exact generic male section/straightness and mating-depth window are not documented. Selected native drills and copper cutouts require sample fit; no Samtec mating window is assigned to this pair. Previous IDC envelopes are historical.",
+  "purchase_for_five": {
+    "male_lots": 1,
+    "female_packs": 1,
+    "goods_rub": 1555,
+    "shipping_shown_sum_rub": 555,
+    "total_with_two_shown_delivery_charges_rub": 2110,
+    "unused_males": 45,
+    "unused_females": 5,
+    "consumed_pair_cost_rub": 39.58,
+    "shipping_not_checkout_quote": true
+  },
+  "independent_geometry_report": "audit/vertical_interconnect_2026_10_12/ali_pair_geometry.json",
+  "revision": "V2.0-A2-INA219",
+  "previous_native_unchanged_selection_only": {
+    "Power": "c4efced02420f48fea993d166091e3ba3ec7be7cf9bc30feec164d067077cc3b",
+    "Logic": "6cbd7850caa14163ebe4d40aba4435ac8fe17f327d68419dfb94e0a1bc361bc8",
+    "Shield": "4ba1d2a7b47dd392b2ac79fa9a7e10fbf8e98be6b8a3423c813d8530ddb25147"
+  },
+  "interboard_pinmap": {
+    "1": "FILTER_OUT",
+    "2": "GND",
+    "3": "FILTER_OUT",
+    "4": "GND",
+    "5": "FILTER_OUT",
+    "6": "GND",
+    "7": "SYS_3V3",
+    "8": "GND",
+    "9": "BAT",
+    "10": "SDA",
+    "11": "MODE",
+    "12": "SCL"
+  },
+  "feature_allowlist": "design/feature_ina219_vertical.json",
+  "screen_apertures": {
+    "quantity": 12,
+    "NPTH_drill_mm": 2.0,
+    "minimum_drill_to_foil_clearance_mm": 0.5,
+    "FR4_minimum_nominal_drill_web_mm": 0.54,
+    "copper_only_array_clearance_native_xy_mm": [
+      62.65,
+      47.5,
+      78.35,
+      53.04
+    ],
+    "continuous_connected_foil_around_array": true,
+    "qualification": "Native design dimensions; actual pin-to-foil mechanical clearance and board alignment require incoming samples."
+  },
+  "native_binding": {
+    "stage": "FINAL_SAVED_NATIVE_CAD_SAMPLE_MATING_UNQUALIFIED",
+    "boards": {
+      "POWER": {
+        "path": "design/MeshRepeater2_Power/MeshRepeater2_Power.kicad_pcb",
+        "sha256": "24e7f986b5367bad9b9b7b468f39a2237bb83569585871b9a056a6da6072e729",
+        "DRC": {
+          "path": "output/POWER/MeshRepeater2_Power_drc.json",
+          "sha256": "5c7fa5207f7f11519ca01cb877086211c79f2fb4e82240fba18ecb304ce16e60"
+        }
+      },
+      "LOGIC": {
+        "path": "design/MeshRepeater2_Logic/MeshRepeater2_Logic.kicad_pcb",
+        "sha256": "b9e6e4f621f9a685433c9bd22d7af0ff4e1639eb47f94c2509e6de6d401a66ca",
+        "DRC": {
+          "path": "output/LOGIC/MeshRepeater2_Logic_drc.json",
+          "sha256": "b11b478762da9f5300a5a9301bc4c49251c0cec5e2e5b207aeccc4bbff9ac04f"
+        }
+      },
+      "SHIELD": {
+        "path": "design/MeshRepeater2_Shield/MeshRepeater2_Shield.kicad_pcb",
+        "sha256": "66854e88ca8ffcfba0514f08ceff8c29d2ea8b6e5262a8d6ed48405f2f0ed8e3",
+        "DRC": {
+          "path": "output/SHIELD/MeshRepeater2_Shield_drc.json",
+          "sha256": "00db072a569939d273b4cb5f4591d854909148da8a42e1b64d5813a4e6c09bce"
+        }
+      }
+    },
+    "model_records": [
+      {
+        "path": "design/MeshRepeater2_Power/model.json",
+        "sha256": "8047db72825784315a9204b069fcbf96249d16ccbbe3642f6936bea83b4631c0"
+      },
+      {
+        "path": "design/MeshRepeater2_Logic/model.json",
+        "sha256": "bd86ec187e55fda26c2089d62869faf38c81319e0b2f769aa08807a3daf57efe"
+      }
+    ],
+    "mating_proof": {
+      "path": "audit/ina219_vertical_interconnect_2026_10_12/vertical_coordinate_mating.json",
+      "sha256": "0fbb4b7bf6134cd56413d7612444bf2a47aca545b5b597b39b62f081ae1c7df1"
+    },
+    "schematic_equivalence": {
+      "path": "audit/v2_schematic_equivalence.json",
+      "sha256": "1bfa5098ffe4d89ec518b133cef99db89036d5cb038b511670279f6c970ff82f",
+      "checks": 68,
+      "ok": true
+    }
+  }
+}

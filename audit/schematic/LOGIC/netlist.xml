@@ -2,14 +2,14 @@
 <export version="E">
   <design>
     <source>C:\Users\Alksndr\Desktop\codex\Meshcore\projects\Mesh_Repeater_2_0\design\MeshRepeater2_Logic\MeshRepeater2_Logic.kicad_sch</source>
-    <date>2026-10-11T23:28:59</date>
+    <date>2026-10-12T15:36:17</date>
     <tool>Eeschema 10.0.6</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
         <title>Nice!Nano / HT-RA62</title>
         <company/>
-        <rev>V2.0-A1</rev>
-        <date>2026-10-11</date>
+        <rev>V2.0-A2</rev>
+        <date>2026-10-12</date>
         <source>MeshRepeater2_Logic.kicad_sch</source>
         <comment number="1" value="Электрическая принципиальная; прототип"/>
         <comment number="2" value=""/>
@@ -26,8 +26,8 @@
       <title_block>
         <title>DS3231M / разъёмы</title>
         <company/>
-        <rev>V2.0-A1</rev>
-        <date>2026-10-11</date>
+        <rev>V2.0-A2</rev>
+        <date>2026-10-12</date>
         <source>RTC_IO.kicad_sch</source>
         <comment number="1" value="Электрическая принципиальная; прототип"/>
         <comment number="2" value=""/>
@@ -44,8 +44,8 @@
       <title_block>
         <title>ATtiny13A / watchdog</title>
         <company/>
-        <rev>V2.0-A1</rev>
-        <date>2026-10-11</date>
+        <rev>V2.0-A2</rev>
+        <date>2026-10-12</date>
         <source>Watchdog.kicad_sch</source>
         <comment number="1" value="Электрическая принципиальная; прототип"/>
         <comment number="2" value=""/>
@@ -62,8 +62,8 @@
       <title_block>
         <title>Межплатное соединение / POWER ↔ LOGIC</title>
         <company/>
-        <rev>V2.0-A1</rev>
-        <date>2026-10-11</date>
+        <rev>V2.0-A2</rev>
+        <date>2026-10-12</date>
         <source>Interconnect.kicad_sch</source>
         <comment number="1" value="Электрическая принципиальная; прототип"/>
         <comment number="2" value=""/>
@@ -2968,45 +2968,45 @@
       </units>
     </comp>
     <comp ref="J201">
-      <value>INTERBOARD 12P</value>
-      <footprint>Meshcore:Connfly_DS1013_12RSIB_B_0_Horizontal__V2_J201</footprint>
-      <description>R/A drawing rotated to solder tails down.13.8mm is plan reach;9.1mm is assembled height. Body depth8.8mm. Hole1.02±0.05. Mechanical v2 package; original functional pin numbers retained.</description>
+      <value>INTERBOARD 2x6 VERTICAL</value>
+      <footprint>Meshcore:Ali_PinSocket_2x06_P2.54_H8.5_v2_mirror__V2_J201</footprint>
+      <description>Direct vertical connection through 12 isolated screen holes. Mirrored female pad grid gives physical 1:1 after LOGIC X180. Pin7 returns SYS_3V3 to INA219 only; remove J11 before USB as before. Exact generic pin section and mating limits require sample check.</description>
       <fields>
-        <field name="MPN">Connfly DS1013-12RSIB-B-0</field>
+        <field name="MPN">MTJ H8.5 2X6P 10PCS</field>
         <field name="LCSC"/>
-        <field name="Vendor">Danomsk</field>
-        <field name="Vendor URL">https://www.danomsk.ru/shop/7-kommutatsiya/121-razemy/306-soediniteli-pryamougolnye/134861-idc-12mr-ds1013-12rsib-b-0-vilka-uglovaya-shag-2-54mm-maks-dopust-tok-1a-connfly/</field>
+        <field name="Vendor">AliExpress</field>
+        <field name="Vendor URL">https://aliexpress.ru/item/1005008954873458.html?sku_id=12000047353417475</field>
         <field name="Fit_NaIon">yes</field>
         <field name="Fit_LTO_2S">yes</field>
-        <field name="Value_NaIon">INTERBOARD 12P</field>
-        <field name="Value_LTO_2S">INTERBOARD 12P</field>
+        <field name="Value_NaIon">INTERBOARD 2x6 VERTICAL</field>
+        <field name="Value_LTO_2S">INTERBOARD 2x6 VERTICAL</field>
         <field name="Assembly">All variants: FIT</field>
         <field name="Nominal">INTERBOARD</field>
-        <field name="MPN_NaIon">Connfly DS1013-12RSIB-B-0</field>
-        <field name="MPN_LTO_2S">Connfly DS1013-12RSIB-B-0</field>
+        <field name="MPN_NaIon">MTJ H8.5 2X6P 10PCS</field>
+        <field name="MPN_LTO_2S">MTJ H8.5 2X6P 10PCS</field>
         <field name="Fit_NaIon_NoCold">yes</field>
-        <field name="Value_NaIon_NoCold">INTERBOARD 12P</field>
-        <field name="MPN_NaIon_NoCold">Connfly DS1013-12RSIB-B-0</field>
-        <field name="Footprint">Meshcore:Connfly_DS1013_12RSIB_B_0_Horizontal__V2_J201</field>
+        <field name="Value_NaIon_NoCold">INTERBOARD 2x6 VERTICAL</field>
+        <field name="MPN_NaIon_NoCold">MTJ H8.5 2X6P 10PCS</field>
+        <field name="Footprint">Meshcore:Ali_PinSocket_2x06_P2.54_H8.5_v2_mirror__V2_J201</field>
         <field name="Datasheet"/>
-        <field name="Description">R/A drawing rotated to solder tails down.13.8mm is plan reach;9.1mm is assembled height. Body depth8.8mm. Hole1.02±0.05. Mechanical v2 package; original functional pin numbers retained.</field>
+        <field name="Description">Direct vertical connection through 12 isolated screen holes. Mirrored female pad grid gives physical 1:1 after LOGIC X180. Pin7 returns SYS_3V3 to INA219 only; remove J11 before USB as before. Exact generic pin section and mating limits require sample check.</field>
       </fields>
       <libsource lib="Meshcore" part="V2_J201" description=""/>
-      <property name="MPN" value="Connfly DS1013-12RSIB-B-0"/>
+      <property name="MPN" value="MTJ H8.5 2X6P 10PCS"/>
       <property name="LCSC" value=""/>
-      <property name="Vendor" value="Danomsk"/>
-      <property name="Vendor URL" value="https://www.danomsk.ru/shop/7-kommutatsiya/121-razemy/306-soediniteli-pryamougolnye/134861-idc-12mr-ds1013-12rsib-b-0-vilka-uglovaya-shag-2-54mm-maks-dopust-tok-1a-connfly/"/>
+      <property name="Vendor" value="AliExpress"/>
+      <property name="Vendor URL" value="https://aliexpress.ru/item/1005008954873458.html?sku_id=12000047353417475"/>
       <property name="Fit_NaIon" value="yes"/>
       <property name="Fit_LTO_2S" value="yes"/>
-      <property name="Value_NaIon" value="INTERBOARD 12P"/>
-      <property name="Value_LTO_2S" value="INTERBOARD 12P"/>
+      <property name="Value_NaIon" value="INTERBOARD 2x6 VERTICAL"/>
+      <property name="Value_LTO_2S" value="INTERBOARD 2x6 VERTICAL"/>
       <property name="Assembly" value="All variants: FIT"/>
       <property name="Nominal" value="INTERBOARD"/>
-      <property name="MPN_NaIon" value="Connfly DS1013-12RSIB-B-0"/>
-      <property name="MPN_LTO_2S" value="Connfly DS1013-12RSIB-B-0"/>
+      <property name="MPN_NaIon" value="MTJ H8.5 2X6P 10PCS"/>
+      <property name="MPN_LTO_2S" value="MTJ H8.5 2X6P 10PCS"/>
       <property name="Fit_NaIon_NoCold" value="yes"/>
-      <property name="Value_NaIon_NoCold" value="INTERBOARD 12P"/>
-      <property name="MPN_NaIon_NoCold" value="Connfly DS1013-12RSIB-B-0"/>
+      <property name="Value_NaIon_NoCold" value="INTERBOARD 2x6 VERTICAL"/>
+      <property name="MPN_NaIon_NoCold" value="MTJ H8.5 2X6P 10PCS"/>
       <property name="Sheetname" value="4. Interconnect"/>
       <property name="Sheetfile" value="Interconnect.kicad_sch"/>
       <sheetpath names="/4. Interconnect/" tstamps="/f41cb747-67df-583a-8b1a-9bd19e8f35ea/"/>
@@ -3578,12 +3578,12 @@
         <pin num="4" name="GND" type="passive"/>
         <pin num="5" name="FILTER_OUT" type="passive"/>
         <pin num="6" name="GND" type="passive"/>
-        <pin num="7" name="FILTER_OUT" type="passive"/>
+        <pin num="7" name="SYS_3V3" type="passive"/>
         <pin num="8" name="GND" type="passive"/>
         <pin num="9" name="BAT" type="passive"/>
-        <pin num="10" name="GND" type="passive"/>
+        <pin num="10" name="SDA" type="passive"/>
         <pin num="11" name="MODE" type="passive"/>
-        <pin num="12" name="GND" type="passive"/>
+        <pin num="12" name="SCL" type="passive"/>
       </pins>
     </libpart>
   </libparts>
@@ -3654,7 +3654,6 @@
       <node ref="J201" pin="1" pinfunction="FILTER_OUT_1" pintype="passive"/>
       <node ref="J201" pin="3" pinfunction="FILTER_OUT_3" pintype="passive"/>
       <node ref="J201" pin="5" pinfunction="FILTER_OUT_5" pintype="passive"/>
-      <node ref="J201" pin="7" pinfunction="FILTER_OUT_7" pintype="passive"/>
     </net>
     <net code="14" name="GND" class="Default">
       <node ref="BT1" pin="2" pinfunction="-_2" pintype="passive"/>
@@ -3678,8 +3677,6 @@
       <node ref="H204" pin="1" pinfunction="GND_1" pintype="passive"/>
       <node ref="J10" pin="6" pinfunction="6_6" pintype="passive"/>
       <node ref="J13" pin="2" pinfunction="SHIELD_2" pintype="passive"/>
-      <node ref="J201" pin="10" pinfunction="GND_10" pintype="passive"/>
-      <node ref="J201" pin="12" pinfunction="GND_12" pintype="passive"/>
       <node ref="J201" pin="2" pinfunction="GND_2" pintype="passive"/>
       <node ref="J201" pin="4" pinfunction="GND_4" pintype="passive"/>
       <node ref="J201" pin="6" pinfunction="GND_6" pintype="passive"/>
@@ -3793,12 +3790,14 @@
       <node ref="R38" pin="1" pintype="passive"/>
     </net>
     <net code="33" name="SCL" class="Default">
+      <node ref="J201" pin="12" pinfunction="SCL_12" pintype="passive"/>
       <node ref="J3" pin="3" pinfunction="3_3" pintype="passive"/>
       <node ref="M1" pin="16" pinfunction="P0.11_/_SCL_16" pintype="passive"/>
       <node ref="R30" pin="2" pintype="passive"/>
       <node ref="U4" pin="8" pinfunction="SCL_8" pintype="input"/>
     </net>
     <net code="34" name="SDA" class="Default">
+      <node ref="J201" pin="10" pinfunction="SDA_10" pintype="passive"/>
       <node ref="J3" pin="4" pinfunction="4_4" pintype="passive"/>
       <node ref="M1" pin="15" pinfunction="P1.04_/_SDA_15" pintype="passive"/>
       <node ref="R29" pin="2" pintype="passive"/>
@@ -3812,6 +3811,7 @@
       <node ref="FB1" pin="1" pintype="passive"/>
       <node ref="J10" pin="2" pinfunction="2_2" pintype="passive"/>
       <node ref="J11" pin="2" pintype="passive"/>
+      <node ref="J201" pin="7" pinfunction="SYS_3V3_7" pintype="passive"/>
       <node ref="J3" pin="1" pinfunction="1_1" pintype="passive"/>
       <node ref="J4" pin="6" pinfunction="V_BCKP_6" pintype="passive"/>
       <node ref="J5" pin="2" pinfunction="2_2" pintype="passive"/>

@@ -1,0 +1,409 @@
+{
+  "stage": "READ_ONLY_FINITE_AUDIT_CLOSURE_REVIEW",
+  "CAD_modified": false,
+  "status": "FINITE_INITIAL_AUDIT_CLOSED_WITH_DOCUMENTED_REQUIRED_EXCEPTIONS",
+  "review_scope": "Finite initial geometry/GND audit findings; no new design proposals",
+  "issues": [
+    {
+      "id": "P1",
+      "board": "POWER",
+      "subject": "CHRG F.Cu",
+      "status": "APPLIED",
+      "result_ru": "Возвратная петля удалена; исходная цепь 40 сегментов заменена четырьмя.",
+      "evidence": {
+        "before_segments": 40,
+        "after_segments": 4,
+        "source": "POWER_changes.json changes CHRG"
+      }
+    },
+    {
+      "id": "P2",
+      "board": "POWER",
+      "subject": "SDA F.Cu к J101",
+      "status": "APPLIED",
+      "result_ru": "Ступеньки объединены: 38 сегментов заменены 13, обход площадок сохранён.",
+      "evidence": {
+        "before_segments": 38,
+        "after_segments": 13,
+        "source": "POWER_changes.json changes SDA"
+      }
+    },
+    {
+      "id": "P3",
+      "board": "POWER",
+      "subject": "BAT B.Cu 0,8 мм",
+      "status": "RETAINED_OBSTACLE_CONSTRAINED",
+      "result_ru": "Сохранён обязательный обход. Все четыре исходных варианта прямого соединения пересекают чужую медь; они имеют 8–17 препятствий. Kelvin-отводы, C53 и силовые контуры сохранены.",
+      "evidence": {
+        "endpoints": [
+          [
+            14.9,
+            25.1
+          ],
+          [
+            32.2,
+            21.7
+          ]
+        ],
+        "initial_segments": 59,
+        "initial_direct_option_obstacle_counts": [
+          8,
+          11,
+          16,
+          17
+        ],
+        "source": "POWER_before.json simplification_candidates BAT B.Cu width0.8; POWER_changes.json remaining_geometry"
+      }
+    },
+    {
+      "id": "P4",
+      "board": "POWER",
+      "subject": "BAT_SYS B.Cu 0,8 мм",
+      "status": "APPLIED_WITH_REQUIRED_BYPASSES",
+      "result_ru": "Оба свободных участка упрощены: 20→3 и 16→4 сегмента. Защищённые контуры CN3722, TPS63802 и шунта остались исходными.",
+      "evidence": {
+        "source": "POWER_changes.json changes BAT_SYS; actual_diff_proof protected_critical_tracks_exactly_retained=277"
+      }
+    },
+    {
+      "id": "P5",
+      "board": "POWER",
+      "subject": "FILTER_OUT B.Cu у J101",
+      "status": "RETAINED_OBSTACLE_CONSTRAINED",
+      "result_ru": "Не заменён небезопасным прямым соединением. Четыре исходных варианта имеют 8–9 препятствий; верхний проход возле площадок J101 и MODE необходим.",
+      "evidence": {
+        "endpoints": [
+          [
+            80.0,
+            14.3
+          ],
+          [
+            63.5,
+            10.1
+          ]
+        ],
+        "initial_segments": 15,
+        "initial_direct_option_obstacle_counts": [
+          8,
+          8,
+          9,
+          9
+        ],
+        "source": "POWER_before.json simplification_candidates FILTER_OUT; POWER_changes.json remaining_geometry"
+      }
+    },
+    {
+      "id": "P6",
+      "board": "POWER",
+      "subject": "GND vias",
+      "status": "APPLIED_WITH_PROTECTED_RETURN",
+      "result_ru": "Три свободных перехода перенесены в существующие ряды. Переход (77;13) сохранён: исходно это единственная межслойная связь местного верхнего острова; слепое перемещение было прямо исключено аудитом.",
+      "evidence": {
+        "moved_vias": 3,
+        "protected_uuid": "c879573d-75b8-4a1d-80f6-4f40ff8a300f",
+        "protected_at_mm": [
+          77,
+          13
+        ],
+        "before_after_ground_vias": [
+          455,
+          455
+        ],
+        "source": "GND_before_review_RU.md; POWER_changes.json ground_moves; independent_final.json"
+      }
+    },
+    {
+      "id": "L1",
+      "board": "LOGIC",
+      "subject": "BAT B.Cu, три исходных цепочки",
+      "status": "APPLIED",
+      "result_ru": "Все три исходные цепочки заменены более прямыми участками; местный возврат C26 через via (7,5;28,5) сохранён. Затем цепочки объединены без потери контактов.",
+      "evidence": {
+        "initial_segment_counts": [
+          22,
+          27,
+          10
+        ],
+        "first_replacement_segment_counts": [
+          6,
+          6,
+          2
+        ],
+        "protected_uuid": "55118033-4eda-494b-9a3d-0c525d7a3a5e",
+        "source": "LOGIC_changes.json BAT; GND_before_candidates.json"
+      }
+    },
+    {
+      "id": "L2",
+      "board": "LOGIC",
+      "subject": "SCL B.Cu",
+      "status": "APPLIED",
+      "result_ru": "Все отмеченные ступеньки упрощены; исходная цепочка 13 сегментов стала двумя до последующего объединения соседних участков.",
+      "evidence": {
+        "source": "LOGIC_changes.json SCL"
+      }
+    },
+    {
+      "id": "L3",
+      "board": "LOGIC",
+      "subject": "NSS F.Cu/B.Cu",
+      "status": "APPLIED_AT_WIDTH_BOUNDARIES",
+      "result_ru": "Упрощение выполнено отдельными участками с сохранением 0,2/0,25 мм. Замена смешанных ширин одним сегментом была исключена первоначальным аудитом.",
+      "evidence": {
+        "local_replacements": 11,
+        "source": "LOGIC_changes.json Net-(M2-NSS); LOGIC_before.md"
+      }
+    },
+    {
+      "id": "L4",
+      "board": "LOGIC",
+      "subject": "MCU_RESET F.Cu/B.Cu",
+      "status": "APPLIED_AT_WIDTH_BOUNDARIES",
+      "result_ru": "Ступеньки и отмеченный короткий выход MCU_RESET исправлены; переходы ширины сохранены.",
+      "evidence": {
+        "local_replacements": 9,
+        "source": "LOGIC_changes.json MCU_RESET; LOGIC_before.md"
+      }
+    },
+    {
+      "id": "L5",
+      "board": "LOGIC",
+      "subject": "RADIO_TXEN B.Cu",
+      "status": "APPLIED",
+      "result_ru": "Отмеченная цепочка (47,3;26,6)→(45,3;24,6) заменена прямой диагональю 45°: 5→1 сегмент. Также упрощены соседние участки TXEN.",
+      "evidence": {
+        "source": "LOGIC_changes.json RADIO_TXEN"
+      }
+    },
+    {
+      "id": "L6",
+      "board": "LOGIC",
+      "subject": "GPS_EN F.Cu/B.Cu",
+      "status": "APPLIED",
+      "result_ru": "Выполнены четыре локальных упрощения с сохранением точек подключения и слоя.",
+      "evidence": {
+        "local_replacements": 4,
+        "source": "LOGIC_changes.json GPS_EN"
+      }
+    },
+    {
+      "id": "L7",
+      "board": "LOGIC",
+      "subject": "/RADIO_BUSY B.Cu",
+      "status": "RETAINED_PROTECTED_RETURN",
+      "result_ru": "Без перемещения via (32,1;24) первоначальный аудит не нашёл более короткий безопасный вариант (5→5). Вариант 5→2 требовал движения местного возврата возле R24.2; GND-аудит пометил этот переход как электрически защищённый, поэтому он сохранён.",
+      "evidence": {
+        "protected_uuid": "3a59cb32-f5c8-45f8-a048-0b8577170809",
+        "protected_at_mm": [
+          32.1,
+          24
+        ],
+        "nearest_pad": {
+          "ref": "R24",
+          "pin": "2",
+          "center_distance_mm": 1.2596
+        },
+        "source": "LOGIC_before.json RADIO_BUSY; GND_before_candidates.json; independent_final.json"
+      }
+    },
+    {
+      "id": "L8",
+      "board": "LOGIC",
+      "subject": "Петля SYS_3V3 у U6",
+      "status": "APPLIED_SEPARATELY",
+      "result_ru": "Идентифицированная местная петля исправлена отдельно: 7→2 сегмента, 5,366→1,766 мм; все четыре внешних контакта, включая U6.8, сохранены. Остальные ветви MCU/FB1 не менялись.",
+      "evidence": {
+        "after_points_mm": [
+          [
+            43.1,
+            35.5
+          ],
+          [
+            41.9,
+            35.5
+          ],
+          [
+            41.5,
+            35.9
+          ]
+        ],
+        "source": "LOGIC_changes.json named_U6_feed_only; LOGIC_after.md"
+      }
+    },
+    {
+      "id": "L9",
+      "board": "LOGIC",
+      "subject": "GPS_3V3 F.Cu",
+      "status": "APPLIED_COLLINEAR_JOIN",
+      "result_ru": "Исходный безопасный кандидат закрыт узкой правкой: коллинеарные участки объединены, первый UUID сохранён, второй удалён. 609→608 сегментов; симметричная разность фактической меди 0 мм². Длина и количество поворотов не изменились.",
+      "evidence": {
+        "old_uuids": [
+          "0c84546c-9359-4e74-8f9e-b20b602408e2",
+          "b7df2a57-8716-48c6-9966-176ed1785108"
+        ],
+        "before_points_mm": [
+          [
+            65.95,
+            4.5
+          ],
+          [
+            64.45,
+            4.5
+          ],
+          [
+            57.3,
+            4.5
+          ]
+        ],
+        "replacement_points_mm": [
+          [
+            65.95,
+            4.5
+          ],
+          [
+            57.3,
+            4.5
+          ]
+        ],
+        "width_mm": 0.4,
+        "layer": "F.Cu",
+        "native_candidate_clearance_0_2mm_pass": true,
+        "native_external_contacts_preserved": true,
+        "external_contact_uuids": [
+          "581686b2-4c79-4c42-8f59-dfe7b0c306f5",
+          "d99dc128-1288-4cf1-96eb-2010483184ab",
+          "e7c069d1-0036-46bd-9fd8-411d1fd64b21"
+        ],
+        "source": "LOGIC_before.json GPS_3V3 eligible=True; native read-only check",
+        "retained_uuid": "0c84546c-9359-4e74-8f9e-b20b602408e2",
+        "removed_uuid": "b7df2a57-8716-48c6-9966-176ed1785108",
+        "physical_copper_symmetric_difference_mm2": 0.0,
+        "proof": {
+          "path": "audit/routing_geometry_2026_10_12/gps_collinear_fix/proof.json",
+          "sha256": "4b5bed9b97aa54e7d5b771ddfe4ed93f7f4f2087b3c478340c21647ad11c589a"
+        },
+        "fresh_independent_review": {
+          "path": "audit/routing_geometry_2026_10_12/independent_final.json",
+          "sha256": "51f7c4e972d39075c68e4f88863cba6a8564843f93ea80edcda83e7418f80605"
+        },
+        "strict_DRC": {
+          "violations": 0,
+          "unconnected_items": 0,
+          "schematic_parity": 0,
+          "ignored_checks": 0
+        },
+        "strict_DRC_exit_code": 0,
+        "saved_native_final_coordinates_independently_verified": true,
+        "final_LOGIC_changes_count": 67,
+        "final_LOGIC_segments": 608
+      }
+    },
+    {
+      "id": "L10",
+      "board": "LOGIC",
+      "subject": "/RADIO_DIO1 B.Cu",
+      "status": "APPLIED",
+      "result_ru": "Исходный безопасный кандидат 5→4 применён; соседний выход к MCU дополнительно упрощён 3→2.",
+      "evidence": {
+        "source": "LOGIC_changes.json /RADIO_DIO1"
+      }
+    },
+    {
+      "id": "L11",
+      "board": "LOGIC",
+      "subject": "USER_BTN, SYS_3V3 и FILTER_OUT protected candidates",
+      "status": "RETAINED_AUDIT_EXCEPTIONS",
+      "result_ru": "Прямой USER_BTN пересекал BLE keepout; варианты SYS_3V3 содержали разные ширины/силовые ветви; FILTER_OUT относится к защищённой силовой топологии. Эти варианты исходный аудит пометил eligible=False.",
+      "evidence": {
+        "source": "LOGIC_before.json shortcut_candidates safety; LOGIC_before.md"
+      }
+    },
+    {
+      "id": "L12",
+      "board": "LOGIC",
+      "subject": "GND vias",
+      "status": "APPLIED_WITH_PROTECTED_RETURNS",
+      "result_ru": "Все 19 свободных stitching-переходов из исходного конечного списка перенесены; ни одного не добавлено и не удалено. RF, местные возвраты и переходы у площадок сохранены.",
+      "evidence": {
+        "moved_vias": 19,
+        "before_after_ground_vias": [
+          423,
+          423
+        ],
+        "source": "GND_before_candidates.json; LOGIC_changes.json ground_moves; independent_final.json"
+      }
+    }
+  ],
+  "inputs": [
+    {
+      "path": "audit/routing_geometry_2026_10_12/POWER_before.md",
+      "sha256": "dcfb24e56d6d3c6aa065054c2d29204c233b7eb98151b64fd037e0bff46c3b3a"
+    },
+    {
+      "path": "audit/routing_geometry_2026_10_12/POWER_before.json",
+      "sha256": "ddc93c9f6e14b6b06ec45a40e0228cce86bda234e31034154acedd6da50dcc44"
+    },
+    {
+      "path": "audit/routing_geometry_2026_10_12/LOGIC_before.md",
+      "sha256": "afb2955843bc1fba60a58c1753ace2aacfefb41ae359f34a2c51038af34c143b"
+    },
+    {
+      "path": "audit/routing_geometry_2026_10_12/LOGIC_before.json",
+      "sha256": "adc36bc4d0d742690acd14c71505a53a1e1a4579e33f98a1f697b00433a17db5"
+    },
+    {
+      "path": "audit/routing_geometry_2026_10_12/GND_before_review_RU.md",
+      "sha256": "f005147046df9b8b229260e075545d001a0f6842e98c32bbf117934b9efa15e7"
+    },
+    {
+      "path": "audit/routing_geometry_2026_10_12/GND_before_candidates.json",
+      "sha256": "046cd541acc0819431a703ab366edab498be7b90d9758f711ad67bc09467f4db"
+    },
+    {
+      "path": "audit/routing_geometry_2026_10_12/GND_before_analysis.json",
+      "sha256": "161d76e6496d833fc6c14ecdf4e46b92bb0e7d52fd40c90a5b7a52604d9e5375"
+    },
+    {
+      "path": "audit/routing_geometry_2026_10_12/POWER_changes.json",
+      "sha256": "9003ea6c76621b031e2c7d52c0ea620927d91255e04decb3869f458519dcec1d"
+    },
+    {
+      "path": "audit/routing_geometry_2026_10_12/LOGIC_changes.json",
+      "sha256": "bd043cc0ad7524b74f7088701c0a24df9fc31937b4d90e36b2d1e1c28db376a5"
+    },
+    {
+      "path": "audit/routing_geometry_2026_10_12/independent_final.json",
+      "sha256": "51f7c4e972d39075c68e4f88863cba6a8564843f93ea80edcda83e7418f80605"
+    },
+    {
+      "path": "audit/routing_geometry_2026_10_12/gps_collinear_fix/proof.json",
+      "sha256": "4b5bed9b97aa54e7d5b771ddfe4ed93f7f4f2087b3c478340c21647ad11c589a"
+    },
+    {
+      "path": "audit/routing_geometry_2026_10_12/LOGIC_after.md",
+      "sha256": "8d17f366a582cde017065e9ff40d84694fd44589cc2eec16e52cb4c90d877534"
+    }
+  ],
+  "boards": {
+    "POWER": {
+      "path": "design/MeshRepeater2_Power/MeshRepeater2_Power.kicad_pcb",
+      "sha256": "24e7f986b5367bad9b9b7b468f39a2237bb83569585871b9a056a6da6072e729"
+    },
+    "LOGIC": {
+      "path": "design/MeshRepeater2_Logic/MeshRepeater2_Logic.kicad_pcb",
+      "sha256": "b9e6e4f621f9a685433c9bd22d7af0ff4e1639eb47f94c2509e6de6d401a66ca"
+    }
+  },
+  "genuine_unapplied_safe_actions": [],
+  "independent_saved_native_gate_checks": 132,
+  "independent_saved_native_gate_pass": true,
+  "physical_EMI_test_performed": false,
+  "current_independent_review": {
+    "path": "audit/routing_geometry_2026_10_12/independent_final.json",
+    "sha256": "51f7c4e972d39075c68e4f88863cba6a8564843f93ea80edcda83e7418f80605"
+  },
+  "final_boards_native_sha": {
+    "POWER": "24e7f986b5367bad9b9b7b468f39a2237bb83569585871b9a056a6da6072e729",
+    "LOGIC": "b9e6e4f621f9a685433c9bd22d7af0ff4e1639eb47f94c2509e6de6d401a66ca"
+  }
+}

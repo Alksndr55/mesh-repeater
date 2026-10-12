@@ -1,0 +1,1876 @@
+{
+  "stage": "FINAL_NATIVE_ASSIGNED_NET_IDENTITY_ONLY",
+  "ok": true,
+  "source_commit": "cf54f9970e716272d477afdb252b4e195d595cb6",
+  "scope": "Saved native component/pad/ref/value/variant/GPIO/assigned-net identity against model, native XML and frozen S4.16. No routing-continuity, DRC, thermal, EMI or physical-mating claim.",
+  "CAD_files_modified": false,
+  "summary": {
+    "POWER": {
+      "parts": 121,
+      "numbered_physical_pads": 291,
+      "unique_ref_pin_pairs": 291,
+      "logical_local_groups": 60,
+      "native_PCB_groups": 60
+    },
+    "LOGIC": {
+      "parts": 57,
+      "numbered_physical_pads": 199,
+      "unique_ref_pin_pairs": 195,
+      "logical_local_groups": 53,
+      "native_PCB_groups": 53
+    }
+  },
+  "checks": [
+    {
+      "name": "original native XML matches frozen hash",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "POWER graphic footprint variants have exact geometry/library mapping proof",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "POWER model references unique",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "POWER PCB references unique",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "POWER XML references unique",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "POWER exact model/PCB/XML reference set",
+      "pass": true,
+      "detail": {
+        "model_only_PCB": [],
+        "PCB_only": [],
+        "XML_missing": [],
+        "XML_extra": []
+      }
+    },
+    {
+      "name": "POWER original allocation U1",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "POWER original allocation Q1",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "POWER original allocation D1",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "POWER original allocation D2",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "POWER original allocation L1",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "POWER original allocation R1",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "POWER original allocation C1",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "POWER original allocation C2",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "POWER original allocation C3",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "POWER original allocation C4",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "POWER original allocation R3",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "POWER original allocation R4",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "POWER original allocation C5",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "POWER original allocation R5",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "POWER original allocation R6",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "POWER original allocation C6",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "POWER original allocation C7",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "POWER original allocation R7",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "POWER original allocation R8",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "POWER original allocation R9",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "POWER original allocation C8",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "POWER original allocation R10",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "POWER original allocation D3",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "POWER original allocation R11",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "POWER original allocation D4",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "POWER original allocation U2",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "POWER original allocation L2",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "POWER original allocation C12",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "POWER original allocation C13",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "POWER original allocation C14",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "POWER original allocation C52",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "POWER original allocation C53",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "POWER original allocation C54",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "POWER original allocation C55",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "POWER original allocation R13",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "POWER original allocation R14",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "POWER original allocation R15",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "POWER original allocation R16",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "POWER original allocation R17",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "POWER original allocation L3",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "POWER original allocation L4",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "POWER original allocation C15",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "POWER original allocation C34",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "POWER original allocation C35",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "POWER original allocation C36",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "POWER original allocation C37",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "POWER original allocation C38",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "POWER original allocation C39",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "POWER original allocation C40",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "POWER original allocation C41",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "POWER original allocation C42",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "POWER original allocation C16",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "POWER original allocation C43",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "POWER original allocation C44",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "POWER original allocation C45",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "POWER original allocation C46",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "POWER original allocation C47",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "POWER original allocation C48",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "POWER original allocation C49",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "POWER original allocation C50",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "POWER original allocation C51",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "POWER original allocation R40",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "POWER original allocation R41",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "POWER original allocation J7",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "POWER original allocation J8",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "POWER original allocation TP1",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "POWER original allocation TP3",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "POWER original allocation TP6",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "POWER original allocation C30",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "POWER original allocation H1",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "POWER original allocation H2",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "POWER original allocation H3",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "POWER original allocation H4",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "POWER original allocation R47",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "POWER original allocation R48",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "POWER original allocation R49",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "POWER original allocation R50",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "POWER original allocation U8",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "POWER original allocation C58",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "POWER original allocation R51",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "POWER original allocation R52",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "POWER original allocation R53",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "POWER original allocation R54",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "POWER original allocation U9",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "POWER original allocation C59",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "POWER original allocation J12",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "POWER original allocation TP8",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "POWER original allocation TP9",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "POWER original allocation R55",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "POWER original allocation R56",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "POWER original allocation Q4",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "POWER original allocation Q6",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "POWER original allocation Q7",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "POWER original allocation R58",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "POWER original allocation U10",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "POWER original allocation U11",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "POWER original allocation Q5",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "POWER original allocation R57",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "POWER original allocation R59",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "POWER original allocation R60",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "POWER original allocation R69",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "POWER original allocation R61",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "POWER original allocation R62",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "POWER original allocation R70",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "POWER original allocation R63",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "POWER original allocation R64",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "POWER original allocation R65",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "POWER original allocation R66",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "POWER original allocation R67",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "POWER original allocation R68",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "POWER original allocation C60",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "POWER original allocation C61",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "POWER original allocation C62",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "POWER original allocation TH1",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "POWER numbered pad identities and original pins",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "POWER exact footprint/value/layer/pose vs model",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "POWER native XML footprint/value vs model",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "POWER all original variant Fit/Value/MPN fields",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "POWER PCB assigned endpoint graph vs model",
+      "pass": true,
+      "detail": {
+        "missing_groups": [],
+        "extra_groups": []
+      }
+    },
+    {
+      "name": "POWER PCB endpoint graph vs native XML",
+      "pass": true,
+      "detail": {
+        "missing_groups": [],
+        "extra_groups": [],
+        "missing_XML_pins": [],
+        "extra_XML_pins": []
+      }
+    },
+    {
+      "name": "LOGIC graphic footprint variants have exact geometry/library mapping proof",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "LOGIC model references unique",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "LOGIC PCB references unique",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "LOGIC XML references unique",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "LOGIC exact model/PCB/XML reference set",
+      "pass": true,
+      "detail": {
+        "model_only_PCB": [],
+        "PCB_only": [],
+        "XML_missing": [],
+        "XML_extra": []
+      }
+    },
+    {
+      "name": "LOGIC original allocation J11",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "LOGIC original allocation R21",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "LOGIC original allocation M1",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "LOGIC original allocation C21",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "LOGIC original allocation C22",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "LOGIC original allocation M2",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "LOGIC original allocation R23",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "LOGIC original allocation R24",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "LOGIC original allocation R25",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "LOGIC original allocation R26",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "LOGIC original allocation C23",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "LOGIC original allocation C24",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "LOGIC original allocation R27",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "LOGIC original allocation R28",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "LOGIC original allocation C25",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "LOGIC original allocation R29",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "LOGIC original allocation R30",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "LOGIC original allocation J3",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "LOGIC original allocation J4",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "LOGIC original allocation J5",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "LOGIC original allocation SW1",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "LOGIC original allocation SW2",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "LOGIC original allocation R31",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "LOGIC original allocation C26",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "LOGIC original allocation TP4",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "LOGIC original allocation TP7",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "LOGIC original allocation U4",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "LOGIC original allocation BT1",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "LOGIC original allocation C27",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "LOGIC original allocation R33",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "LOGIC original allocation R35",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "LOGIC original allocation U6",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "LOGIC original allocation C33",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "LOGIC original allocation R36",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "LOGIC original allocation R37",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "LOGIC original allocation R38",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "LOGIC original allocation R39",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "LOGIC original allocation J10",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "LOGIC original allocation Q2",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "LOGIC original allocation Q3",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "LOGIC original allocation R42",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "LOGIC original allocation R43",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "LOGIC original allocation R44",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "LOGIC original allocation R45",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "LOGIC original allocation R46",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "LOGIC original allocation U7",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "LOGIC original allocation C56",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "LOGIC original allocation C57",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "LOGIC original allocation FB1",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "LOGIC original allocation J13",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "LOGIC original allocation FL1",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "LOGIC original allocation NT1",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "LOGIC numbered pad identities and original pins",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "LOGIC exact footprint/value/layer/pose vs model",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "LOGIC native XML footprint/value vs model",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "LOGIC all original variant Fit/Value/MPN fields",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "LOGIC PCB assigned endpoint graph vs model",
+      "pass": true,
+      "detail": {
+        "missing_groups": [],
+        "extra_groups": []
+      }
+    },
+    {
+      "name": "LOGIC PCB endpoint graph vs native XML",
+      "pass": true,
+      "detail": {
+        "missing_groups": [],
+        "extra_groups": [],
+        "missing_XML_pins": [],
+        "extra_XML_pins": []
+      }
+    },
+    {
+      "name": "exact documented SH1 mechanical removal",
+      "pass": true,
+      "detail": [
+        "SH1"
+      ]
+    },
+    {
+      "name": "retained original references allocated once",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "POWER exactly authorized additional positions",
+      "pass": true,
+      "detail": [
+        "C63",
+        "C64",
+        "J101",
+        "R71",
+        "R72",
+        "R73",
+        "U12"
+      ]
+    },
+    {
+      "name": "LOGIC exactly authorized additional positions",
+      "pass": true,
+      "detail": [
+        "H201",
+        "H202",
+        "H203",
+        "H204",
+        "J201"
+      ]
+    },
+    {
+      "name": "INA219 six new positions remain only on POWER",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "INA219 exact circuit nets U12",
+      "pass": true,
+      "detail": {
+        "expected": {
+          "1": "GND",
+          "2": "GND",
+          "3": "SDA",
+          "4": "SCL",
+          "5": "SYS_3V3",
+          "6": "GND",
+          "7": "INA_VIN_M",
+          "8": "INA_VIN_P"
+        },
+        "actual": {
+          "1": "GND",
+          "2": "GND",
+          "3": "SDA",
+          "4": "SCL",
+          "5": "SYS_3V3",
+          "6": "GND",
+          "7": "INA_VIN_M",
+          "8": "INA_VIN_P"
+        }
+      }
+    },
+    {
+      "name": "INA219 exact value/MPN/package and all variant fits U12",
+      "pass": true,
+      "detail": {
+        "physical_footprint": "Meshcore:SOIC-8_3.9x4.9mm_P1.27mm",
+        "expected_footprint": "Meshcore:SOIC-8_3.9x4.9mm_P1.27mm"
+      }
+    },
+    {
+      "name": "INA219 exact circuit nets R71",
+      "pass": true,
+      "detail": {
+        "expected": {
+          "1": "BAT_SYS",
+          "2": "BAT"
+        },
+        "actual": {
+          "1": "BAT_SYS",
+          "2": "BAT"
+        }
+      }
+    },
+    {
+      "name": "INA219 exact value/MPN/package and all variant fits R71",
+      "pass": true,
+      "detail": {
+        "physical_footprint": "Meshcore:R_2512_6332Metric",
+        "expected_footprint": "Meshcore:R_2512_6332Metric"
+      }
+    },
+    {
+      "name": "INA219 exact circuit nets R72",
+      "pass": true,
+      "detail": {
+        "expected": {
+          "1": "BAT_SYS",
+          "2": "INA_VIN_P"
+        },
+        "actual": {
+          "1": "BAT_SYS",
+          "2": "INA_VIN_P"
+        }
+      }
+    },
+    {
+      "name": "INA219 exact value/MPN/package and all variant fits R72",
+      "pass": true,
+      "detail": {
+        "physical_footprint": "Meshcore:R_0805_2012Metric",
+        "expected_footprint": "Meshcore:R_0805_2012Metric"
+      }
+    },
+    {
+      "name": "INA219 exact circuit nets R73",
+      "pass": true,
+      "detail": {
+        "expected": {
+          "1": "BAT",
+          "2": "INA_VIN_M"
+        },
+        "actual": {
+          "1": "BAT",
+          "2": "INA_VIN_M"
+        }
+      }
+    },
+    {
+      "name": "INA219 exact value/MPN/package and all variant fits R73",
+      "pass": true,
+      "detail": {
+        "physical_footprint": "Meshcore:R_0805_2012Metric",
+        "expected_footprint": "Meshcore:R_0805_2012Metric"
+      }
+    },
+    {
+      "name": "INA219 exact circuit nets C63",
+      "pass": true,
+      "detail": {
+        "expected": {
+          "1": "SYS_3V3",
+          "2": "GND"
+        },
+        "actual": {
+          "1": "SYS_3V3",
+          "2": "GND"
+        }
+      }
+    },
+    {
+      "name": "INA219 exact value/MPN/package and all variant fits C63",
+      "pass": true,
+      "detail": {
+        "physical_footprint": "Meshcore:C_0805_2012Metric",
+        "expected_footprint": "Meshcore:C_0805_2012Metric"
+      }
+    },
+    {
+      "name": "INA219 exact circuit nets C64",
+      "pass": true,
+      "detail": {
+        "expected": {
+          "1": "INA_VIN_P",
+          "2": "INA_VIN_M"
+        },
+        "actual": {
+          "1": "INA_VIN_P",
+          "2": "INA_VIN_M"
+        }
+      }
+    },
+    {
+      "name": "INA219 exact value/MPN/package and all variant fits C64",
+      "pass": true,
+      "detail": {
+        "physical_footprint": "Meshcore:C_0805_2012Metric",
+        "expected_footprint": "Meshcore:C_0805_2012Metric"
+      }
+    },
+    {
+      "name": "POWER exact new twelve-pin interconnect nets",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "LOGIC exact new twelve-pin interconnect nets",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Raw pack endpoints retain BAT before measurement shunt",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Returned SYS_3V3 powers only INA219 VS and its bypass on POWER",
+      "pass": true,
+      "detail": [
+        [
+          "C63",
+          "1"
+        ],
+        [
+          "J101",
+          "7"
+        ],
+        [
+          "U12",
+          "5"
+        ]
+      ]
+    },
+    {
+      "name": "INA219 address straps fix 7-bit address 0x40",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "J11 removable bridge remains FILTER_OUT to SYS_3V3",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "FakeTec INA219 uses existing M1 I2C pads15/16",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "INA219 native SOIC8 physical pin names match TI",
+      "pass": true,
+      "detail": {
+        "expected": {
+          "1": "A1",
+          "2": "A0",
+          "3": "SDA",
+          "4": "SCL",
+          "5": "VS",
+          "6": "GND",
+          "7": "IN-",
+          "8": "IN+"
+        },
+        "actual": {
+          "1": "A1",
+          "2": "A0",
+          "3": "SDA",
+          "4": "SCL",
+          "5": "VS",
+          "6": "GND",
+          "7": "IN-",
+          "8": "IN+"
+        }
+      }
+    },
+    {
+      "name": "no SH1 footprint on either final board",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "exact twelve-pin 1:1 interconnect",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "cable endpoints native assigned nets",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "Native R71 keeps raw BAT and BAT_SYS distinct without bypass",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Native raw-battery endpoints stay on shunt BAT side",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Native Kelvin pickup follows proper shunt sides",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Native INA differential RC filter endpoints",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Native INA VS return is separate from lower converter FILTER_OUT",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "PCB legacy functional graph equals S4.16 with declared R71 series projection",
+      "pass": true,
+      "detail": {
+        "missing_groups": [],
+        "extra_groups": []
+      }
+    },
+    {
+      "name": "FakeTec unchanged physical pin/GPIO names M1",
+      "pass": true,
+      "detail": {
+        "baseline": {
+          "1": {
+            "name": "P0.09_/_RADIO_RST",
+            "type": "passive"
+          },
+          "2": {
+            "name": "P0.10_/_DIO1",
+            "type": "passive"
+          },
+          "3": {
+            "name": "P1.11_/_SCK",
+            "type": "passive"
+          },
+          "4": {
+            "name": "P1.13_/_NSS",
+            "type": "passive"
+          },
+          "5": {
+            "name": "P1.15_/_MOSI",
+            "type": "passive"
+          },
+          "6": {
+            "name": "P0.02_/_MISO",
+            "type": "passive"
+          },
+          "7": {
+            "name": "P0.29_/_BUSY",
+            "type": "passive"
+          },
+          "8": {
+            "name": "P0.31_/_BAT_ADC",
+            "type": "passive"
+          },
+          "9": {
+            "name": "VCC_/_MOD_3V3",
+            "type": "passive"
+          },
+          "10": {
+            "name": "RESET",
+            "type": "passive"
+          },
+          "11": {
+            "name": "GND",
+            "type": "passive"
+          },
+          "12": {
+            "name": "RAW_-_NC",
+            "type": "passive"
+          },
+          "13": {
+            "name": "BAT_-_NC",
+            "type": "passive"
+          },
+          "14": {
+            "name": "P1.06_/_spare",
+            "type": "passive"
+          },
+          "15": {
+            "name": "P1.04_/_SDA",
+            "type": "passive"
+          },
+          "16": {
+            "name": "P0.11_/_SCL",
+            "type": "passive"
+          },
+          "17": {
+            "name": "P1.00_/_USER_BTN",
+            "type": "passive"
+          },
+          "18": {
+            "name": "P0.24_/_GPS_EN_/_DIGITAL_OUT",
+            "type": "passive"
+          },
+          "19": {
+            "name": "P0.22_/_GPS_RX",
+            "type": "passive"
+          },
+          "20": {
+            "name": "P0.20_/_GPS_TX",
+            "type": "passive"
+          },
+          "21": {
+            "name": "P0.17_/_RXEN",
+            "type": "passive"
+          },
+          "22": {
+            "name": "GND",
+            "type": "passive"
+          },
+          "23": {
+            "name": "GND",
+            "type": "passive"
+          },
+          "24": {
+            "name": "P0.08_/_UART_RX",
+            "type": "passive"
+          },
+          "25": {
+            "name": "P0.06_/_UART_TX",
+            "type": "passive"
+          },
+          "26": {
+            "name": "GND",
+            "type": "passive"
+          }
+        },
+        "V2_native_XML": {
+          "1": {
+            "name": "P0.09_/_RADIO_RST",
+            "type": "passive"
+          },
+          "2": {
+            "name": "P0.10_/_DIO1",
+            "type": "passive"
+          },
+          "3": {
+            "name": "P1.11_/_SCK",
+            "type": "passive"
+          },
+          "4": {
+            "name": "P1.13_/_NSS",
+            "type": "passive"
+          },
+          "5": {
+            "name": "P1.15_/_MOSI",
+            "type": "passive"
+          },
+          "6": {
+            "name": "P0.02_/_MISO",
+            "type": "passive"
+          },
+          "7": {
+            "name": "P0.29_/_BUSY",
+            "type": "passive"
+          },
+          "8": {
+            "name": "P0.31_/_BAT_ADC",
+            "type": "passive"
+          },
+          "9": {
+            "name": "VCC_/_MOD_3V3",
+            "type": "passive"
+          },
+          "10": {
+            "name": "RESET",
+            "type": "passive"
+          },
+          "11": {
+            "name": "GND",
+            "type": "passive"
+          },
+          "12": {
+            "name": "RAW_-_NC",
+            "type": "passive"
+          },
+          "13": {
+            "name": "BAT_-_NC",
+            "type": "passive"
+          },
+          "14": {
+            "name": "P1.06_/_spare",
+            "type": "passive"
+          },
+          "15": {
+            "name": "P1.04_/_SDA",
+            "type": "passive"
+          },
+          "16": {
+            "name": "P0.11_/_SCL",
+            "type": "passive"
+          },
+          "17": {
+            "name": "P1.00_/_USER_BTN",
+            "type": "passive"
+          },
+          "18": {
+            "name": "P0.24_/_GPS_EN_/_DIGITAL_OUT",
+            "type": "passive"
+          },
+          "19": {
+            "name": "P0.22_/_GPS_RX",
+            "type": "passive"
+          },
+          "20": {
+            "name": "P0.20_/_GPS_TX",
+            "type": "passive"
+          },
+          "21": {
+            "name": "P0.17_/_RXEN",
+            "type": "passive"
+          },
+          "22": {
+            "name": "GND",
+            "type": "passive"
+          },
+          "23": {
+            "name": "GND",
+            "type": "passive"
+          },
+          "24": {
+            "name": "P0.08_/_UART_RX",
+            "type": "passive"
+          },
+          "25": {
+            "name": "P0.06_/_UART_TX",
+            "type": "passive"
+          },
+          "26": {
+            "name": "GND",
+            "type": "passive"
+          }
+        }
+      }
+    },
+    {
+      "name": "FakeTec unchanged physical pin/GPIO names M2",
+      "pass": true,
+      "detail": {
+        "baseline": {
+          "1": {
+            "name": "ANT",
+            "type": "passive"
+          },
+          "2": {
+            "name": "GND",
+            "type": "passive"
+          },
+          "3": {
+            "name": "3V3",
+            "type": "passive"
+          },
+          "4": {
+            "name": "RST",
+            "type": "passive"
+          },
+          "5": {
+            "name": "TXEN_=_DIO2",
+            "type": "passive"
+          },
+          "6": {
+            "name": "DIO1",
+            "type": "passive"
+          },
+          "7": {
+            "name": "DIO2_=_TXEN",
+            "type": "passive"
+          },
+          "8": {
+            "name": "DIO3",
+            "type": "passive"
+          },
+          "9": {
+            "name": "GND",
+            "type": "passive"
+          },
+          "10": {
+            "name": "BUSY",
+            "type": "passive"
+          },
+          "11": {
+            "name": "RXEN",
+            "type": "passive"
+          },
+          "12": {
+            "name": "SCK",
+            "type": "passive"
+          },
+          "13": {
+            "name": "MISO",
+            "type": "passive"
+          },
+          "14": {
+            "name": "MOSI",
+            "type": "passive"
+          },
+          "15": {
+            "name": "NSS",
+            "type": "passive"
+          },
+          "16": {
+            "name": "GND",
+            "type": "passive"
+          }
+        },
+        "V2_native_XML": {
+          "1": {
+            "name": "ANT",
+            "type": "passive"
+          },
+          "2": {
+            "name": "GND",
+            "type": "passive"
+          },
+          "3": {
+            "name": "3V3",
+            "type": "passive"
+          },
+          "4": {
+            "name": "RST",
+            "type": "passive"
+          },
+          "5": {
+            "name": "TXEN_=_DIO2",
+            "type": "passive"
+          },
+          "6": {
+            "name": "DIO1",
+            "type": "passive"
+          },
+          "7": {
+            "name": "DIO2_=_TXEN",
+            "type": "passive"
+          },
+          "8": {
+            "name": "DIO3",
+            "type": "passive"
+          },
+          "9": {
+            "name": "GND",
+            "type": "passive"
+          },
+          "10": {
+            "name": "BUSY",
+            "type": "passive"
+          },
+          "11": {
+            "name": "RXEN",
+            "type": "passive"
+          },
+          "12": {
+            "name": "SCK",
+            "type": "passive"
+          },
+          "13": {
+            "name": "MISO",
+            "type": "passive"
+          },
+          "14": {
+            "name": "MOSI",
+            "type": "passive"
+          },
+          "15": {
+            "name": "NSS",
+            "type": "passive"
+          },
+          "16": {
+            "name": "GND",
+            "type": "passive"
+          }
+        }
+      }
+    },
+    {
+      "name": "J11 assigned FILTER_OUT remains distinct from SYS_3V3",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "J10 original ISP pose and physical footprint retained",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "both board copper counts and thickness match models",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "input snapshot remained unchanged during read-only review",
+      "pass": true,
+      "detail": []
+    }
+  ],
+  "inputs": {
+    "design\\v2_electrical_contract.json": "478b416c5fa28fbe4cebbc594eb1b519e90cb6c393aba6f58130b6fecffdac08",
+    "design\\interboard_cable.json": "6bb676777af64ca3bf39032b7205314ba47641a2bce39509b77200df51b439f0",
+    "audit\\source_s4_16\\native_netlist.xml": "14b479e30ab779ca2c8af2465e6ccee1ccf8aeb26e435c4c3a84bb1cc51662d3",
+    "design\\feature_ina219_vertical.json": "693b5e48ba9c76f279b386b4c0329c77291013b6305e4e3bf458e72c796adf8b",
+    "tools\\v2_feature_contract.py": "36f875828c7f3e16c6917d47e6641f1fb85bbe97079add98f4f4941230736205",
+    "design\\MeshRepeater2_Power\\model.json": "8047db72825784315a9204b069fcbf96249d16ccbbe3642f6936bea83b4631c0",
+    "design\\MeshRepeater2_Power\\MeshRepeater2_Power.kicad_pcb": "ccb6f7ac9ea2823dfc843232e102039a7c1204f03a1d98faa0be2a6bdeb235e2",
+    "audit\\schematic\\POWER\\netlist.xml": "191b9e9c16ff9448ddd7a209b3cef117b4deea4ceae7a7361b908cc1883c57da",
+    "audit\\MeshRepeater2_Power_footprint_variants.json": "1c3f415936d06c75e44714db8a3a277491b5cbc0b221769706e56a0eafe83939",
+    "design\\MeshRepeater2_Power\\Meshcore.pretty\\C_1206_3216Metric__V2_C1.kicad_mod": "31c19f88a879476ee2070975e27b1e6fa112bf2f9fe85d9fdc6c052f15c595ac",
+    "design\\MeshRepeater2_Power\\Meshcore.pretty\\C_0805_2012Metric__V2_C12.kicad_mod": "33eaaa7976a08c94688357c41dc9ff53a3e066e02ebd137ccb008f145e55e9f7",
+    "design\\MeshRepeater2_Power\\Meshcore.pretty\\C_0603_1608Metric__V2_C13.kicad_mod": "ef0ec8f460f4eeac5cf3631b59221fae1f5982da43df8d867af00403c26b39f3",
+    "design\\MeshRepeater2_Power\\Meshcore.pretty\\C_0805_2012Metric__V2_C14.kicad_mod": "8fa211faf811091084efd1bbb8be1990934d4e525feb822782884db5e9d167d4",
+    "design\\MeshRepeater2_Power\\Meshcore.pretty\\C_1812_4532Metric__V2_C15.kicad_mod": "74d10177dfef49787c6689ed71000a5af8096614c7d7325d62da521c730f1b6f",
+    "design\\MeshRepeater2_Power\\Meshcore.pretty\\C_1812_4532Metric__V2_C16.kicad_mod": "c023db4167ee7a0f0aebb1d1643a2a9f0b724c0bcd6bdcefdaa4a654954bfc65",
+    "design\\MeshRepeater2_Power\\Meshcore.pretty\\C_0805_2012Metric__V2_C2.kicad_mod": "0e3ed8ed7a83c23dc271b3ed2c3eeba6f2037bb2b899aaaae39b568b381bfbf9",
+    "design\\MeshRepeater2_Power\\Meshcore.pretty\\C_0805_2012Metric__V2_C3.kicad_mod": "3c13061e763613f539fc5b919c60e5cfef5d2c90686de14fa2b978c4a72045c6",
+    "design\\MeshRepeater2_Power\\Meshcore.pretty\\C_0805_2012Metric__V2_C30.kicad_mod": "aa26c585d8509966bdd59df57ba265f38c9a6c9b1c1ef17c552ea68bedfb7a6b",
+    "design\\MeshRepeater2_Power\\Meshcore.pretty\\C_1812_4532Metric__V2_C34.kicad_mod": "175fa11ab949fb6f63e18f87d12e95b5d889107853c37bd8b1705942d6f59bc0",
+    "design\\MeshRepeater2_Power\\Meshcore.pretty\\C_1812_4532Metric__V2_C35.kicad_mod": "687b18db06a22734ac41a1208d23167f1bb54a883edc760c77fefe2574aa3191",
+    "design\\MeshRepeater2_Power\\Meshcore.pretty\\C_1812_4532Metric__V2_C36.kicad_mod": "50d750c87471aee49a637bcb19a1ad5a4367e7f5df96e494daeb70dd043f48e4",
+    "design\\MeshRepeater2_Power\\Meshcore.pretty\\C_1812_4532Metric__V2_C37.kicad_mod": "3d0a787c6dffc6b2bcebb75a32a17398d9aadda66c50187b9128fed51361551c",
+    "design\\MeshRepeater2_Power\\Meshcore.pretty\\C_1812_4532Metric__V2_C38.kicad_mod": "4d001e3a337bae9cb4712aaf987f5894e2d2e9fed7c00fb1e668cedfe1a7394f",
+    "design\\MeshRepeater2_Power\\Meshcore.pretty\\C_1812_4532Metric__V2_C39.kicad_mod": "961007289cf18cae48ea90b26469052aeceafe1c5686f8624ea90d424501f3e1",
+    "design\\MeshRepeater2_Power\\Meshcore.pretty\\C_0805_2012Metric__V2_C4.kicad_mod": "772d36efdb18eb9ff3e59f1a26a124561b0fb4f286d55c59829ebd38c51e436d",
+    "design\\MeshRepeater2_Power\\Meshcore.pretty\\C_1812_4532Metric__V2_C40.kicad_mod": "2349295ceaec16ee37b58835928fee1947c85feb5c1d07ee74122692eef7db5b",
+    "design\\MeshRepeater2_Power\\Meshcore.pretty\\C_1812_4532Metric__V2_C41.kicad_mod": "64e4a11d7e507b502a6bf985fce6f563abb5f491f95c939d9be34654fa9859b1",
+    "design\\MeshRepeater2_Power\\Meshcore.pretty\\C_1812_4532Metric__V2_C42.kicad_mod": "db38a70e9d64fe576c7660c2a0f73871ecd17876cca731e80f4582da40eb14d3",
+    "design\\MeshRepeater2_Power\\Meshcore.pretty\\C_1812_4532Metric__V2_C43.kicad_mod": "a25f530a0069cfac38e2b92d260d3b4411a45df13fa8ebad54aae1efb0ac1357",
+    "design\\MeshRepeater2_Power\\Meshcore.pretty\\C_1812_4532Metric__V2_C44.kicad_mod": "9bdf641303b6f7cbe268635f7192e5183329e37491fb1bc88c357fce1aeaa99a",
+    "design\\MeshRepeater2_Power\\Meshcore.pretty\\C_1812_4532Metric__V2_C45.kicad_mod": "7670b1d5a7baad854a924292eb2a37d87cdbba8fe55e5d3595e81834dc67baa8",
+    "design\\MeshRepeater2_Power\\Meshcore.pretty\\C_1812_4532Metric__V2_C46.kicad_mod": "45d3b783f4c456635d579576112bef15cdacf1c186c1e86fcb4da6fb22c63720",
+    "design\\MeshRepeater2_Power\\Meshcore.pretty\\C_1812_4532Metric__V2_C47.kicad_mod": "fea78be97b92e028e39b2bad7d32f7d3626de50e6ab526093a52e37b57223890",
+    "design\\MeshRepeater2_Power\\Meshcore.pretty\\C_1812_4532Metric__V2_C48.kicad_mod": "f9e33ab1c400d22199c29cd99df1a8edae644103595b469f5cd71c46d768a69a",
+    "design\\MeshRepeater2_Power\\Meshcore.pretty\\C_1812_4532Metric__V2_C49.kicad_mod": "4b7cca39a7384f0d219b4ee9caa6b3d94862e449f64deb1bb43258ac06a8449d",
+    "design\\MeshRepeater2_Power\\Meshcore.pretty\\C_0805_2012Metric__V2_C5.kicad_mod": "ef015b820e8e645d5c0632b5553bcebb766011cc8d7cf91e9a90fea340ee1c9f",
+    "design\\MeshRepeater2_Power\\Meshcore.pretty\\C_1812_4532Metric__V2_C50.kicad_mod": "ded4c262636ed54eae70a9ebd0611331de6c2507791e208fa87ad1a6b4bfefa9",
+    "design\\MeshRepeater2_Power\\Meshcore.pretty\\C_1812_4532Metric__V2_C51.kicad_mod": "8cb290b70e27c96a9f807777ba17ebea2a81a39dc1f505f604d28bed547ef861",
+    "design\\MeshRepeater2_Power\\Meshcore.pretty\\C_0805_2012Metric__V2_C52.kicad_mod": "edea9f52796f57acfb932d8497b6a4c0e033690f853e91bfdface9fcfa4e2461",
+    "design\\MeshRepeater2_Power\\Meshcore.pretty\\C_1206_3216Metric__V2_C53.kicad_mod": "a942b2b399505583d8fa62a74959b4bae30453cf90559941123bedcfca253f0a",
+    "design\\MeshRepeater2_Power\\Meshcore.pretty\\C_1206_3216Metric__V2_C54.kicad_mod": "59b8b52a8d27bf90918938f11dd2bf0cd6d5e3e82b378988516791f28b915bf6",
+    "design\\MeshRepeater2_Power\\Meshcore.pretty\\C_1206_3216Metric__V2_C55.kicad_mod": "0d7c8b4d0cedcddb28174abbaa07e69e22406182b1ff782cbc1d7eaf97ece62f",
+    "design\\MeshRepeater2_Power\\Meshcore.pretty\\C_0805_2012Metric__V2_C58.kicad_mod": "a45c6bbc2999cbe61fe72d716c8b72617fc8fdc49a0a7419c645d6fabfe09b20",
+    "design\\MeshRepeater2_Power\\Meshcore.pretty\\C_0805_2012Metric__V2_C59.kicad_mod": "04dd95d9a8a53f2fb899aca4ea1ff7b6ed43526b3899731a0aea66a3f62a6c90",
+    "design\\MeshRepeater2_Power\\Meshcore.pretty\\C_0805_2012Metric__V2_C6.kicad_mod": "6348cbe1b1f967667b73c15e46aeb919ab1c22b493d9da7d528f4d3569e663d3",
+    "design\\MeshRepeater2_Power\\Meshcore.pretty\\C_0805_2012Metric__V2_C60.kicad_mod": "1191da7322a7fda6ff681484e2adc254261f372d485d92c04ea76e06a39266f1",
+    "design\\MeshRepeater2_Power\\Meshcore.pretty\\C_0805_2012Metric__V2_C61.kicad_mod": "96f759a8ebcf890fe7767a610b5afda37c8aa37ff4e1284ac20c33449f39645c",
+    "design\\MeshRepeater2_Power\\Meshcore.pretty\\C_0805_2012Metric__V2_C62.kicad_mod": "98c10f2b7ffa6aadff9c9cd4feffa1031cf1747f2321e5727393206f6aef0ac9",
+    "design\\MeshRepeater2_Power\\Meshcore.pretty\\C_0805_2012Metric__V2_C63.kicad_mod": "4f98be118e6b6894ff07629b544407055f910f64730365bfde1fd57c41c6ef84",
+    "design\\MeshRepeater2_Power\\Meshcore.pretty\\C_0805_2012Metric__V2_C64.kicad_mod": "2493987bfba408e830d30d903d0d5807e167adf4927635252b3d258f00f70216",
+    "design\\MeshRepeater2_Power\\Meshcore.pretty\\C_0805_2012Metric__V2_C7.kicad_mod": "cc07de556a320e08bfbf5b5410e19054d12449aff6b33d640d9212ff1568d871",
+    "design\\MeshRepeater2_Power\\Meshcore.pretty\\CP_Elec_Panasonic_FK_D_6.3x5.8__V2_C8.kicad_mod": "66a78083ae098817f2184157dcc7468fda1f08a814628480746c1929c2f62ba7",
+    "design\\MeshRepeater2_Power\\Meshcore.pretty\\D_SMB__V2_D1.kicad_mod": "13d2bfd740cab75aabcb840165b36a32ce06364dcbd86617ac75626472d463e4",
+    "design\\MeshRepeater2_Power\\Meshcore.pretty\\D_SMB__V2_D2.kicad_mod": "14d3db0ce7e89714d58bb973bb540024f2cae2d32ffe663e98a9f1a4d1392a4e",
+    "design\\MeshRepeater2_Power\\Meshcore.pretty\\LED_0805_2012Metric__V2_D3.kicad_mod": "a0a0cdd4cbc91de8614628e8e39d31d4856b0b63c4491191f0f47f6fbaaf32b5",
+    "design\\MeshRepeater2_Power\\Meshcore.pretty\\LED_0805_2012Metric__V2_D4.kicad_mod": "c5a6e80b3a2db42ec06bc7a2deb171c54435360f5ee6055bfeed7ae358b5d58a",
+    "design\\MeshRepeater2_Power\\Meshcore.pretty\\GND_M3_D3.2_OD6__V2_H1.kicad_mod": "43004e67ae19c935200823a61bb242979a41540bb9b4d76cc8e5dd06631a4068",
+    "design\\MeshRepeater2_Power\\Meshcore.pretty\\GND_M3_D3.2_OD6__V2_H2.kicad_mod": "af334217815225c99efff62c9b00e98c2ba024442e5620d396bd7317dc098eff",
+    "design\\MeshRepeater2_Power\\Meshcore.pretty\\GND_M3_D3.2_OD6__V2_H3.kicad_mod": "d302ba5070fd9057f15d9a8ee2dd18650be4fdf2d55ae46268a203f415e51234",
+    "design\\MeshRepeater2_Power\\Meshcore.pretty\\GND_M3_D3.2_OD6__V2_H4.kicad_mod": "0f6f065744b305815c720df542a2bf4e12df6cf26b82fd052a28e595c17cb2af",
+    "design\\MeshRepeater2_Power\\Meshcore.pretty\\Ali_PinHeader_2x06_P2.54_L35_A3C6__V2_J101.kicad_mod": "1fc3cd255250a4751927d898dd106b4f643ec6e0daaa9361949a2c15ac875677",
+    "design\\MeshRepeater2_Power\\Meshcore.pretty\\KLS_XH_L_KLS1_2_50_04_R_Horizontal__V2_J12.kicad_mod": "ed19d58492cc72211feed44ba0f149fdd952df37f146a66cee28ed3ae4e16fce",
+    "design\\MeshRepeater2_Power\\Meshcore.pretty\\JST_XH_S2B-XH-A_1x02_P2.50mm_Horizontal__V2_J7.kicad_mod": "323ca0f95785353e9108da8cb31e3fbca575a2642848b239bff686a9a9a23951",
+    "design\\MeshRepeater2_Power\\Meshcore.pretty\\JST_XH_S2B-XH-A_1x02_P2.50mm_Horizontal__V2_J8.kicad_mod": "82efab49123c34669a2a9c7ebe3fc45ae7fe27610cb4729cc5ae89a696f1f4c5",
+    "design\\MeshRepeater2_Power\\Meshcore.pretty\\L_Sumida_CDRH127_LDNP_101MC__V2_L1.kicad_mod": "c601e3792438a213d5f9e9077ce778811508e17845d8335e9323baf3a02e44aa",
+    "design\\MeshRepeater2_Power\\Meshcore.pretty\\L_Coilcraft_XGL4020_471MEC__V2_L2.kicad_mod": "1716dcc35aa06c536b718f1ce9d7b64499de2f849ad4b0985569c4c99677764a",
+    "design\\MeshRepeater2_Power\\Meshcore.pretty\\L_Sumida_CDRH127_LD__V2_L3.kicad_mod": "e498d4d3d7fbd86d2373e11a2ba83286f91a0794e9ec3fc3cf83f1992263880e",
+    "design\\MeshRepeater2_Power\\Meshcore.pretty\\L_Sumida_CDRH127_LD__V2_L4.kicad_mod": "1f17d23a5368bbb77ea975f8e0c8b42de1f1ec9077c08b329180e8483c0c2d7b",
+    "design\\MeshRepeater2_Power\\Meshcore.pretty\\SOT-23__V2_Q1.kicad_mod": "a9fb81c16a4cd6b10b36fbb85184295f99e07bb6f3542e26891321f284ce64b2",
+    "design\\MeshRepeater2_Power\\Meshcore.pretty\\SOT-23__V2_Q4.kicad_mod": "7323a6a0ade902f418c7c2e43229ad44cfe68067c140f99538955df2c4af6e1c",
+    "design\\MeshRepeater2_Power\\Meshcore.pretty\\SOT-23__V2_Q5.kicad_mod": "0eab3bfc383a58dc1e95048254b0d077a9d133f9f7e621121caacdeef32d7a2a",
+    "design\\MeshRepeater2_Power\\Meshcore.pretty\\SOT-23__V2_Q6.kicad_mod": "46f77f95c4f1872182833b13841166798154f42723f94e22c3281ed8e10f1a7f",
+    "design\\MeshRepeater2_Power\\Meshcore.pretty\\SOT-23__V2_Q7.kicad_mod": "b90aee77b321e0f72631fc9a62de94ce6d59b8c5078e128a5b65450981943c37",
+    "design\\MeshRepeater2_Power\\Meshcore.pretty\\R_1206_3216Metric__V2_R1.kicad_mod": "fe6c5633f3a7d140d1884b986329faaa93f7d37c2e710b4701b11d0a8b3d12f6",
+    "design\\MeshRepeater2_Power\\Meshcore.pretty\\R_0805_2012Metric__V2_R10.kicad_mod": "cf9d7a76b02cbf6b6a46ad59fa43a13c635cef5f43b0de69601f575c67e65fff",
+    "design\\MeshRepeater2_Power\\Meshcore.pretty\\R_0805_2012Metric__V2_R11.kicad_mod": "fa3fa5bd89ff35d22d81b05e6e13000e362667d251308176a136d670ab4d646f",
+    "design\\MeshRepeater2_Power\\Meshcore.pretty\\R_0805_2012Metric__V2_R13.kicad_mod": "afa3b27dfe0daf4d345764dc18f51cbf3674d8be3909621da5adf8be4d0671e3",
+    "design\\MeshRepeater2_Power\\Meshcore.pretty\\R_0805_2012Metric__V2_R14.kicad_mod": "4a6c12ca5a5e628b88ac4e581e9148f335384c01c9ac9810d078399ea43bf422",
+    "design\\MeshRepeater2_Power\\Meshcore.pretty\\R_0805_2012Metric__V2_R15.kicad_mod": "a426c33b4cff9d087c107130efcafe24d2d6e7ce52cb5e04f9252aa851d5d11f",
+    "design\\MeshRepeater2_Power\\Meshcore.pretty\\R_0805_2012Metric__V2_R16.kicad_mod": "9a59eeb7f962357757e55c41bfce4b23f4f8db1f20b0dceb5264e2fd23d63518",
+    "design\\MeshRepeater2_Power\\Meshcore.pretty\\R_0805_2012Metric__V2_R17.kicad_mod": "0874accda6e0b689287cb80991aa28f8560d0cd7918ba810c4eb458515acf224",
+    "design\\MeshRepeater2_Power\\Meshcore.pretty\\R_0805_2012Metric__V2_R3.kicad_mod": "ba5f6eb38facb94ca368167d5c6b590bcf67322a93a48f7b9fc650e34fa075b2",
+    "design\\MeshRepeater2_Power\\Meshcore.pretty\\R_0805_2012Metric__V2_R4.kicad_mod": "a021a0d78524aece5dee902f221fe3e2b399e18ff4bbd9ff0c9057edec6e4916",
+    "design\\MeshRepeater2_Power\\Meshcore.pretty\\R_Vishay_WSL1206_18__V2_R40.kicad_mod": "ded561395f4632a8b85971345899b270f1e28a843d9910381c7414ac011c5378",
+    "design\\MeshRepeater2_Power\\Meshcore.pretty\\R_Vishay_WSL1206_18__V2_R41.kicad_mod": "f34a128e6b4198e8a52ba484d4b106e6994feec1e69c6317297c232797104a55",
+    "design\\MeshRepeater2_Power\\Meshcore.pretty\\R_0805_2012Metric__V2_R47.kicad_mod": "8f892b05bad941955420af29a488a672f87a2e34b84dea0ffc6da682418ef944",
+    "design\\MeshRepeater2_Power\\Meshcore.pretty\\R_0805_2012Metric__V2_R48.kicad_mod": "383775b51b9274ff203b31fc45f343f91b1c083b4540bff2422fac92e6c4e64a",
+    "design\\MeshRepeater2_Power\\Meshcore.pretty\\R_0805_2012Metric__V2_R49.kicad_mod": "057aece70907b13b38f5f5bb431fd83b35b18315d091198fbd7b8fb4be99382f",
+    "design\\MeshRepeater2_Power\\Meshcore.pretty\\R_0805_2012Metric__V2_R5.kicad_mod": "4c9626782c3cd722ba29bc08419f13fde9b4634426c925469aaf9c03eca5afee",
+    "design\\MeshRepeater2_Power\\Meshcore.pretty\\R_0805_2012Metric__V2_R50.kicad_mod": "37cc6c4d3907b60439ec76dfc5a4f0ed588af6400ab873abe2b0f01ff5a14db6",
+    "design\\MeshRepeater2_Power\\Meshcore.pretty\\R_0805_2012Metric__V2_R51.kicad_mod": "caef8657bba52b8343f522f6e845971a66e0ffca5fb7c320d563f4a5087ba68d",
+    "design\\MeshRepeater2_Power\\Meshcore.pretty\\R_0805_2012Metric__V2_R52.kicad_mod": "aa2e17d3a00db53435ca1b67f2f37a712b6839557f4bfd8c2bd686f920b0ed50",
+    "design\\MeshRepeater2_Power\\Meshcore.pretty\\R_0805_2012Metric__V2_R53.kicad_mod": "409c21e8a847d03ba69d6067b77cd5cff0c182d7bc25e26e0685a3a81f488a07",
+    "design\\MeshRepeater2_Power\\Meshcore.pretty\\R_0805_2012Metric__V2_R54.kicad_mod": "fa028c605041d79cb7e0fb5b09941fc74335aadaa153fce947e867bfb0760ae3",
+    "design\\MeshRepeater2_Power\\Meshcore.pretty\\R_Vishay_WSL1206_18__V2_R55.kicad_mod": "d3813b40d9e3f2855e86602d7aba4bee1c515f2c62b727e87bd6dfe5c95e9844",
+    "design\\MeshRepeater2_Power\\Meshcore.pretty\\R_0805_2012Metric__V2_R56.kicad_mod": "1bcee6ee32f050334d56a4061a09deca1a69bfb8f5567a1fd69f96d218297d0b",
+    "design\\MeshRepeater2_Power\\Meshcore.pretty\\R_0805_2012Metric__V2_R57.kicad_mod": "7af3c42046399406ebd969f020d8871a55c9e2afe998fac61a2336e4d01172f5",
+    "design\\MeshRepeater2_Power\\Meshcore.pretty\\R_0805_2012Metric__V2_R58.kicad_mod": "66118d848c47655957b26cfe34f45b07dc0badb18672dacd216e23c692235be4",
+    "design\\MeshRepeater2_Power\\Meshcore.pretty\\R_0805_2012Metric__V2_R59.kicad_mod": "54e99468f694fae7ddec26415deb7a363224a97817e90fde666cd6015dfaeff4",
+    "design\\MeshRepeater2_Power\\Meshcore.pretty\\R_0805_2012Metric__V2_R6.kicad_mod": "b5f3e96f6494095f841a67a10b50976faf25a4bbd18c0da880a0de4938455e84",
+    "design\\MeshRepeater2_Power\\Meshcore.pretty\\R_0805_2012Metric__V2_R60.kicad_mod": "8fde03670c545cbadd54bc382c8277ee02ffddcfc08cfeba6cea81e13cb1fb10",
+    "design\\MeshRepeater2_Power\\Meshcore.pretty\\R_0805_2012Metric__V2_R61.kicad_mod": "0cf90640f3fa9b2b7b51d303b0752556871602ebe177ab2dd007bcf8f70bbea5",
+    "design\\MeshRepeater2_Power\\Meshcore.pretty\\R_0805_2012Metric__V2_R62.kicad_mod": "8a11b01baab9a949034167f16ea8e0e37fb0a0985e206eb31bcd6170bc17b243",
+    "design\\MeshRepeater2_Power\\Meshcore.pretty\\R_0805_2012Metric__V2_R63.kicad_mod": "75b5cf1819f7b8db3018c3be4407898b3be1f69aee1dd3df0577c66127508b77",
+    "design\\MeshRepeater2_Power\\Meshcore.pretty\\R_0805_2012Metric__V2_R64.kicad_mod": "60fbb62bbf3a2a4a6485fc88f74aba08666047c8df54a2e68a76cd273e2c4c4b",
+    "design\\MeshRepeater2_Power\\Meshcore.pretty\\R_0805_2012Metric__V2_R65.kicad_mod": "8b317aa5d2061964305c70b9f701c8d4d34717a33ed004ab9e4319e3dc327471",
+    "design\\MeshRepeater2_Power\\Meshcore.pretty\\R_0805_2012Metric__V2_R66.kicad_mod": "a971dca08fc428a43950c21bbc4bd5872d5abf6f3662e9cf8c59671a34736b2e",
+    "design\\MeshRepeater2_Power\\Meshcore.pretty\\R_0805_2012Metric__V2_R67.kicad_mod": "e7b5d6861aa349d5ab9b90e95f28836c85425a25f7e2762116d6c0872f6b97ce",
+    "design\\MeshRepeater2_Power\\Meshcore.pretty\\R_0805_2012Metric__V2_R68.kicad_mod": "d260965639f443686c0f32b1eae1dec27f0dd29dfe1faf167584928d87a01460",
+    "design\\MeshRepeater2_Power\\Meshcore.pretty\\R_0805_2012Metric__V2_R69.kicad_mod": "550c41ee822226f22b77c4805e8a5f55dd8ca8a2d5536778860bbb8d03deec91",
+    "design\\MeshRepeater2_Power\\Meshcore.pretty\\R_0805_2012Metric__V2_R7.kicad_mod": "5ad34bcc173c1446799fa3614d89334e5411f7bb5ce765c912b8aaf8daed569f",
+    "design\\MeshRepeater2_Power\\Meshcore.pretty\\R_0805_2012Metric__V2_R70.kicad_mod": "9226d02c3a958783b9b37b1595ab739384c51c87283c56713db063836b2bda16",
+    "design\\MeshRepeater2_Power\\Meshcore.pretty\\R_2512_6332Metric__V2_R71.kicad_mod": "b6a917dc01d5c486a8e39c095c85a82e9a41af9344b56d7e33163278ed94a2b5",
+    "design\\MeshRepeater2_Power\\Meshcore.pretty\\R_0805_2012Metric__V2_R72.kicad_mod": "4c0c410e909c5c66c0ad8ba128642e3dce3d96a7c5cc763a97a6ca7e0f0d442e",
+    "design\\MeshRepeater2_Power\\Meshcore.pretty\\R_0805_2012Metric__V2_R73.kicad_mod": "a3adc1ed6f2877ff2b9e71194c15f6dd072f18a950d059dfc9a722bc47e9cb34",
+    "design\\MeshRepeater2_Power\\Meshcore.pretty\\R_0805_2012Metric__V2_R8.kicad_mod": "6f283d7ca022a68a807a830c908b4aa0c3991489e518cc3b2d5d4ede7b88df61",
+    "design\\MeshRepeater2_Power\\Meshcore.pretty\\R_0805_2012Metric__V2_R9.kicad_mod": "8a08462b7507717282efb8b584f06180c415684e236d6ffa57d42697d63610a4",
+    "design\\MeshRepeater2_Power\\Meshcore.pretty\\NTC_TDK_B57861S_Onboard_or_Remote_P2.54mm__V2_TH1.kicad_mod": "009c6aeb34be6fe5c9409a9966c09a301cd33029d13a27e1e2103ddb1c50cecc",
+    "design\\MeshRepeater2_Power\\Meshcore.pretty\\TestPoint_Pad_D1.5mm__V2_TP1.kicad_mod": "022951373831a7d99f245f6929a2c524c8003bd087dcd4ea235ec1ec0084e97b",
+    "design\\MeshRepeater2_Power\\Meshcore.pretty\\TestPoint_Pad_D1.5mm__V2_TP3.kicad_mod": "c0de5160f9159be5f8dfbf051e0b8c2f6ed40aa25e65fb5862fe21b9a05f4745",
+    "design\\MeshRepeater2_Power\\Meshcore.pretty\\TestPoint_Pad_D1.5mm__V2_TP6.kicad_mod": "05380a55a174fb7ab2c2f5b716658c7de3c51542626df872b8ff1999434f1985",
+    "design\\MeshRepeater2_Power\\Meshcore.pretty\\TestPoint_Pad_D1.5mm__V2_TP8.kicad_mod": "380b6b2ddc535611343a493e68b617e4ab2a299c77e439d1e80bc48a2fa5aae7",
+    "design\\MeshRepeater2_Power\\Meshcore.pretty\\TestPoint_Pad_D1.5mm__V2_TP9.kicad_mod": "8c1f712598afc5f44a10f363e83a0a892deb192ba701daf53590facc8ec3427e",
+    "design\\MeshRepeater2_Power\\Meshcore.pretty\\TSSOP-16_4.4x5mm_P0.65mm__V2_U1.kicad_mod": "f96e05c79505e6da8f0e03929a605d0dc665b76d36b28adca7b7bd394620e3c3",
+    "design\\MeshRepeater2_Power\\Meshcore.pretty\\SOIC-8_3.9x4.9mm_P1.27mm__V2_U10.kicad_mod": "98077c9a26f9556e0fe7d23128de3f3ef6c8a93c9965a0e844de36130e09b5fc",
+    "design\\MeshRepeater2_Power\\Meshcore.pretty\\TO-92_Inline__V2_U11.kicad_mod": "c8457f805cdd2c7b0e044bb2669d1f0e8c6fbd0a380b0b548cba7063db5042fa",
+    "design\\MeshRepeater2_Power\\Meshcore.pretty\\SOIC-8_3.9x4.9mm_P1.27mm__V2_U12.kicad_mod": "0817e6d6341f4c50482853aff0f1918220b2cd35f906d5f49bb51a7d4cc50bd1",
+    "design\\MeshRepeater2_Power\\Meshcore.pretty\\TPS63802_DLA0010A__V2_U2.kicad_mod": "c4f4b0f93c1aab09f2056a5ba67ed0b85d06638706854f1fe5f6f8171b75dbc2",
+    "design\\MeshRepeater2_Power\\Meshcore.pretty\\SOT-23-5__V2_U8.kicad_mod": "e14f06e26ae88c6e7ea951730973572010bd7de2230c371f2ee3c785010336f6",
+    "design\\MeshRepeater2_Power\\Meshcore.pretty\\SOT-23-5__V2_U9.kicad_mod": "7b1277aa53ced720855af8c0b61c381d25e6b685a1ea9f425f9837a4748fcff7",
+    "design\\MeshRepeater2_Logic\\model.json": "bd86ec187e55fda26c2089d62869faf38c81319e0b2f769aa08807a3daf57efe",
+    "design\\MeshRepeater2_Logic\\MeshRepeater2_Logic.kicad_pcb": "8adea4351861ec4514941f168c2f5377cda9e2ddef2cd954fa63ad1e8699fd0d",
+    "audit\\schematic\\LOGIC\\netlist.xml": "ed99638d565908b62af422668574854a0fd53af2e4b2acb3c2faab3038dda209",
+    "audit\\MeshRepeater2_Logic_footprint_variants.json": "53cfe37ed30fe23cd9a457ddd3d2eff1e5a815845649f2c315ce8707620788cc",
+    "design\\MeshRepeater2_Logic\\Meshcore.pretty\\BatteryHolder_Keystone_1060_1x2032__V2_BT1.kicad_mod": "9db44c9e77d7c7f580ad706e7bf95de694dbd8a62890f5dd6fe3efb880aea413",
+    "design\\MeshRepeater2_Logic\\Meshcore.pretty\\C_0805_2012Metric__V2_C21.kicad_mod": "05f10badc537c1089a8955ec5ddad6af454709da5199066c0f6261c12f8d8e36",
+    "design\\MeshRepeater2_Logic\\Meshcore.pretty\\C_0805_2012Metric__V2_C22.kicad_mod": "4fbcc5232248302d6bc899abad6ad86a5cc7b332b6572af46593b53f9346bb1a",
+    "design\\MeshRepeater2_Logic\\Meshcore.pretty\\C_0805_2012Metric__V2_C23.kicad_mod": "616fe48e90efeccadd83d135458d31e45de61f16b4909801add65e8d0d3a26d6",
+    "design\\MeshRepeater2_Logic\\Meshcore.pretty\\C_0805_2012Metric__V2_C24.kicad_mod": "c6fb4379beb29de7788b171b470b8968e4348219e472caf8de1cd585efdf3d0c",
+    "design\\MeshRepeater2_Logic\\Meshcore.pretty\\C_0805_2012Metric__V2_C25.kicad_mod": "9627866d748a3d716415434e3b1f307b94ea8381c8f56aeb2442955df79be844",
+    "design\\MeshRepeater2_Logic\\Meshcore.pretty\\C_0805_2012Metric__V2_C26.kicad_mod": "4c79085bceda29eb910a4f6ec313ec7adb87a674a9d9bbaff4cc1f1805a607ff",
+    "design\\MeshRepeater2_Logic\\Meshcore.pretty\\C_0805_2012Metric__V2_C27.kicad_mod": "cca368ce35fdea19a646dd61c0982f1cabbb864d8a6faeb1fcc380e105000596",
+    "design\\MeshRepeater2_Logic\\Meshcore.pretty\\C_0805_2012Metric__V2_C33.kicad_mod": "c473bc900785af7d6ba019adbf4cce77e23620444ff57b152f78bae48f0eb350",
+    "design\\MeshRepeater2_Logic\\Meshcore.pretty\\C_0805_2012Metric__V2_C56.kicad_mod": "5e21cdc95b01ac23602c71a8db2114b3104b22256ea85c9e1397c22b1cabc3c6",
+    "design\\MeshRepeater2_Logic\\Meshcore.pretty\\C_0805_2012Metric__V2_C57.kicad_mod": "2b238f0adbdde09cb8477c3b1bfe27ffa98c04912161867ed7a85c37081e2d0b",
+    "design\\MeshRepeater2_Logic\\Meshcore.pretty\\Ferrite_Murata_BLM21PG__V2_FB1.kicad_mod": "548c9ffb65b4b85711d94f3a0146fdd6134b5ab8fbdfde6d8c04d5575585b25d",
+    "design\\MeshRepeater2_Logic\\Meshcore.pretty\\SAW_AEL_DCC6C_S869M000S003__V2_FL1.kicad_mod": "275944272980f39bf673d1582fc5404d6ee4ac67aa8ad07a66d480e92115e451",
+    "design\\MeshRepeater2_Logic\\Meshcore.pretty\\GND_M3_D3.2_OD6__V2_H201.kicad_mod": "a294b2c2ab0f45699dabf7216f30c6a23cebaadba9549b8065699eeb4899fe4d",
+    "design\\MeshRepeater2_Logic\\Meshcore.pretty\\GND_M3_D3.2_OD6__V2_H202.kicad_mod": "dfc79d443449d8430ce7faa60375b70ad3de5bb256870d887c269bc12c44d138",
+    "design\\MeshRepeater2_Logic\\Meshcore.pretty\\GND_M3_D3.2_OD6__V2_H203.kicad_mod": "5d465a193830d20761af36e763114acc7d0bd6348cda49ed47a07d0791e0bd8c",
+    "design\\MeshRepeater2_Logic\\Meshcore.pretty\\GND_M3_D3.2_OD6__V2_H204.kicad_mod": "d217e64a575cd1f04851f555e39f192e80b1388d6fd13e9cea9c5e889581427e",
+    "design\\MeshRepeater2_Logic\\Meshcore.pretty\\PinHeader_2x03_P2.54mm_Vertical__V2_J10.kicad_mod": "4cba9d13b25e9b0973e8282c21d79060a066e4c2d39711e7adfa75f6869772e2",
+    "design\\MeshRepeater2_Logic\\Meshcore.pretty\\Connfly_DS1022_1x02RUF11_B_Horizontal__V2_J11.kicad_mod": "fb7b9eb1fc1533d4043e9d39e6ab5bfbfaf4980454d8fc3f4ffcb227d0cabf74",
+    "design\\MeshRepeater2_Logic\\Meshcore.pretty\\SMA_KLS1_SMA002_B_Horizontal__V2_J13.kicad_mod": "051618b1de44875716d3dd76207b0d4257eb8c88776e27752b26ca029df94536",
+    "design\\MeshRepeater2_Logic\\Meshcore.pretty\\Ali_PinSocket_2x06_P2.54_H8.5_v2_mirror__V2_J201.kicad_mod": "7387c0e210e838a2eb94dc5a2b6613cd9ebc27ace390b2a0ecb541764bc55845",
+    "design\\MeshRepeater2_Logic\\Meshcore.pretty\\Connfly_DS1022_1x04RUF11_B_Horizontal__V2_J3.kicad_mod": "b48d40e86bab2b7ce4361397234ed381db67b660d17f7b3ef6f0aa559bfbf009",
+    "design\\MeshRepeater2_Logic\\Meshcore.pretty\\Molex_PicoBlade_53261-0871_1x08-1MP_P1.25mm_Horizontal__V2_J4.kicad_mod": "1e65a98e87c0fb101704998ea64e5ee7ed3f92171419f63626b5af9ee585ea56",
+    "design\\MeshRepeater2_Logic\\Meshcore.pretty\\Connfly_DS1022_1x04RUF11_B_Horizontal__V2_J5.kicad_mod": "63af63b86bb0baa7dbc2fd68a140742bbb00705f21ee17400076799a6897a90a",
+    "design\\MeshRepeater2_Logic\\Meshcore.pretty\\NiceNano_13x2_Socket__V2_M1.kicad_mod": "bbd9989cd417a1ae993b00f169b2e9a1c4738cfc459e7400902a7bbd529e763a",
+    "design\\MeshRepeater2_Logic\\Meshcore.pretty\\HT_RA62__V2_M2.kicad_mod": "0344f3b2fe529a63249dbe1f978c8dd902b3a800eee40eabd58c510f96975b54",
+    "design\\MeshRepeater2_Logic\\Meshcore.pretty\\RF_Cut_Link_0p6__V2_NT1.kicad_mod": "b5040c5f1511f81b2a6a972d9afbc386bdfb73c2c294c19c499f61e200afacaf",
+    "design\\MeshRepeater2_Logic\\Meshcore.pretty\\SOT-23__V2_Q2.kicad_mod": "6fcfd8847f5f79c5cbacfb6c1fe80ca90d9f39a0eb0e31b6b7885c366d0a4386",
+    "design\\MeshRepeater2_Logic\\Meshcore.pretty\\SOT-23__V2_Q3.kicad_mod": "b4e4200abaada0fb33682fabd636a5ba145566781a21169c3adbfdc72ddafcda",
+    "design\\MeshRepeater2_Logic\\Meshcore.pretty\\R_0805_2012Metric__V2_R21.kicad_mod": "db0ea99a3554c910675ff07308f789f79274bae6139db5e2294f0505657ef021",
+    "design\\MeshRepeater2_Logic\\Meshcore.pretty\\R_0805_2012Metric__V2_R23.kicad_mod": "198f1ac98f34716c63a5903b2e6a4c52efd6d5264008291339ec9df6cda83732",
+    "design\\MeshRepeater2_Logic\\Meshcore.pretty\\R_0805_2012Metric__V2_R24.kicad_mod": "7496e674c6a62df58d42d9a321b90f079e694b241c90f01b1b916470ef0ec185",
+    "design\\MeshRepeater2_Logic\\Meshcore.pretty\\R_0805_2012Metric__V2_R25.kicad_mod": "d03492b5a629acc8be94533684729ac23d7fee2439e1fb319fc14b5686d3ace2",
+    "design\\MeshRepeater2_Logic\\Meshcore.pretty\\R_0805_2012Metric__V2_R26.kicad_mod": "a0c7c39cd2a0fcdf1ca3945b04ae7f6523e42967d08783814a9245000eda91f8",
+    "design\\MeshRepeater2_Logic\\Meshcore.pretty\\R_0805_2012Metric__V2_R27.kicad_mod": "2f41f12d3526d2db7dc1b3ed6eb5b6874a13dd47ecd65f7b9b12782cad4a9192",
+    "design\\MeshRepeater2_Logic\\Meshcore.pretty\\R_0805_2012Metric__V2_R28.kicad_mod": "4b588ef26bff883b7a5716c8d4445d6aaddfbf9fe628afb21d98fdaa7fc02657",
+    "design\\MeshRepeater2_Logic\\Meshcore.pretty\\R_0805_2012Metric__V2_R29.kicad_mod": "b16e63f25ba2e9e2e59c241dd7f73f21617c4b950be56f282e958b130c1aeda5",
+    "design\\MeshRepeater2_Logic\\Meshcore.pretty\\R_0805_2012Metric__V2_R30.kicad_mod": "41700aff30d5ccb302dc9a341b5e5018ea534d697c11b49c26364ba81be9b870",
+    "design\\MeshRepeater2_Logic\\Meshcore.pretty\\R_0805_2012Metric__V2_R31.kicad_mod": "89be8b9348ac8f70c12851ab45b5deb4de33b25b3314b19b05b173a8a4d8c0e8",
+    "design\\MeshRepeater2_Logic\\Meshcore.pretty\\R_0805_2012Metric__V2_R33.kicad_mod": "b35f58d1abff38479e5c5b5aefe8e3f26a133b88a605f48eced832d9ed1269c8",
+    "design\\MeshRepeater2_Logic\\Meshcore.pretty\\R_0805_2012Metric__V2_R35.kicad_mod": "b1d1d31d6f6aa92e8e46661ed4743934dc9a9c9ac1d3a1fb90b723e9c75187b7",
+    "design\\MeshRepeater2_Logic\\Meshcore.pretty\\R_0805_2012Metric__V2_R36.kicad_mod": "36e5d650a6c0a75add03c47954a83053a974e0c961a9b5fc6fc3f0b9927a0ab9",
+    "design\\MeshRepeater2_Logic\\Meshcore.pretty\\R_0805_2012Metric__V2_R37.kicad_mod": "43be8837830f09c6fa0833169f078e5d4a269f6f93d2532426afb8d2d5a924eb",
+    "design\\MeshRepeater2_Logic\\Meshcore.pretty\\R_0805_2012Metric__V2_R38.kicad_mod": "bd4b1cb33692d11299e88321cb1b884166dfb36f44ca82b9f54666aed71fbd22",
+    "design\\MeshRepeater2_Logic\\Meshcore.pretty\\R_0805_2012Metric__V2_R39.kicad_mod": "23b1a0ff2d949dc8e3abb545d1afc041186ebc51e95e9cf8a8522b074592bc4a",
+    "design\\MeshRepeater2_Logic\\Meshcore.pretty\\R_0805_2012Metric__V2_R42.kicad_mod": "d3e98c95522f18ffb9038be7e45a09c591890844d68021b1566781c191fda52e",
+    "design\\MeshRepeater2_Logic\\Meshcore.pretty\\R_0805_2012Metric__V2_R43.kicad_mod": "daa81df974960a72f0e1637a39f24d4387d422d57f953f227940972ceadb48e5",
+    "design\\MeshRepeater2_Logic\\Meshcore.pretty\\R_0805_2012Metric__V2_R44.kicad_mod": "783af511b9a605a53175a9cf8aa764b9688617c51e32dd79207984a1fb4d0f49",
+    "design\\MeshRepeater2_Logic\\Meshcore.pretty\\R_0805_2012Metric__V2_R45.kicad_mod": "28c67bf2c00b484bf23a2edd9ccc6910e110069556176e308a2e2e241338585a",
+    "design\\MeshRepeater2_Logic\\Meshcore.pretty\\R_0805_2012Metric__V2_R46.kicad_mod": "faf33bf9b17973cb9a46a43606cc875a7c729c87dd1c5d9425fa8f6831590f8c",
+    "design\\MeshRepeater2_Logic\\Meshcore.pretty\\SW_TE_1825027_2_Side__V2_SW1.kicad_mod": "5910b7fed2bcc66b32fff72dde08ef9ce3591a728e283ba78bbed18a4c665235",
+    "design\\MeshRepeater2_Logic\\Meshcore.pretty\\SW_TE_1825027_2_Side__V2_SW2.kicad_mod": "afa416d40941d0387ed88f6c1f94aafcb41e3314fe5ea2edc7587e984280298b",
+    "design\\MeshRepeater2_Logic\\Meshcore.pretty\\TestPoint_Pad_D1.5mm__V2_TP4.kicad_mod": "5f3fe60eb16e47e67d14d287b1e14f149156a846f955830f30c92f9815a1799f",
+    "design\\MeshRepeater2_Logic\\Meshcore.pretty\\TestPoint_Pad_D1.5mm__V2_TP7.kicad_mod": "e801fe860242115d0da7872680ede2db011a9be5354eb56417bdbcd4366ae96e",
+    "design\\MeshRepeater2_Logic\\Meshcore.pretty\\SOIC-8_3.9x4.9mm_P1.27mm__V2_U4.kicad_mod": "40f36afa7f2847c1bb0866538d30a428ec419bc2a505addc2e9d5fec1eebc907",
+    "design\\MeshRepeater2_Logic\\Meshcore.pretty\\SOIC-8_3.9x4.9mm_P1.27mm__V2_U6.kicad_mod": "9457e14bda446835ffd13a4b812c6d3b5ac41fe5c98647e2ab0409f101d22756",
+    "design\\MeshRepeater2_Logic\\Meshcore.pretty\\TI_DCT0008A__V2_U7.kicad_mod": "2a5b3b5efc15fb9116f5f4e2569300c734471b21bac134c3742ee35914250d34"
+  },
+  "mechanical_removal_proof": {
+    "path": "audit\\v2_frame_mount_review.json",
+    "sha256": "4b3b26a8870cf8f8f5e9ea89d922a1ed1d355c4f8d6655f96ae58c8e02c22ed1"
+  }
+}

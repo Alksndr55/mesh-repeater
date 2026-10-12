@@ -96,6 +96,12 @@ chip('ATtiny13A', [
  ('4','GND',0,27.94,'B','power_in')],30.48,45.72)
 chip('DS3231', [('2','VCC',-20.32,-15.24,'L','power_in'),('14','VBAT',-20.32,-2.54,'L','power_in'),('15','SDA',20.32,-15.24,'R','bidirectional'),('16','SCL',20.32,-7.62,'R','input'),('3','INT/SQW',20.32,2.54,'R','open_collector'),('4','RST',20.32,12.7,'R','open_collector'),('1','32kHz',20.32,20.32,'R','open_collector')]+[(str(i),'NC',-10.16+(i-5)*2.54,30.48,'B',P) for i in range(5,13)]+[('13','GND',-20.32,20.32,'L','power_in')],30.48,50.8)
 chip('DS3231M', [('2','VCC',-20.32,-15.24,'L','power_in'),('6','VBAT',-20.32,-2.54,'L','power_in'),('7','SDA',20.32,-15.24,'R','bidirectional'),('8','SCL',20.32,-7.62,'R','input'),('3','INT/SQW',20.32,2.54,'R','open_collector'),('4','RST',20.32,12.7,'R','open_collector'),('1','32kHz',20.32,20.32,'R','open_collector'),('5','GND',-20.32,20.32,'L','power_in')],30.48,50.8)
+# INA219 D/SOIC-8 ordering. DCN/SOT-23-8 has a different pinout.
+chip('INA219', [('8','IN+',-20.32,-7.62,'L','input'),('7','IN-',-20.32,7.62,'L','input'),
+ ('3','SDA',20.32,-7.62,'R','bidirectional'),('4','SCL',20.32,7.62,'R','input'),
+ ('5','VS',0,-30.48,'T','power_in'),('6','GND',0,30.48,'B','power_in'),
+ ('2','A0',-7.62,25.4,'B','input'),('1','A1',7.62,25.4,'B','input')],30.48,40.64)
+chip('BAT_HEADER_LEFT', [('1','+',-10.16,-2.54,'L',P),('2','GND',-10.16,2.54,'L',P)],10.16,10.16)
 # Headers represent the actual installed modules, not inferred clone circuitry.
 names=['P0.09 / RADIO_RST','P0.10 / DIO1','P1.11 / SCK','P1.13 / NSS','P1.15 / MOSI','P0.02 / MISO','P0.29 / BUSY','P0.31 / BAT_ADC','VCC / MOD_3V3','RESET','GND','RAW - NC','BAT - NC','P1.06 / spare','P1.04 / SDA','P0.11 / SCL','P1.00 / USER_BTN','P0.24 / GPS_EN / DIGITAL OUT','P0.22 / GPS_RX','P0.20 / GPS_TX','P0.17 / RXEN','GND','GND','P0.08 / UART_RX','P0.06 / UART_TX','GND']
 nn_names={str(i+1):n for i,n in enumerate(names)}
@@ -160,7 +166,7 @@ class Sheet:
         self.items=[];self.placed={};self.styles={};self.coords={};self.refs=[];self.power_count=0
         self.global_labels=[];self.wires=[];self.parts_table=[];self.component_annotations=[]
     def sym(self,ref,x,y,style=None, label=None):
-        p=PARTS[ref];style=style or {'R':'R_H','C':'C_V','Inductor':'L_H','Diode':'D_H','LED':'LED_V','PMOS_GSD':'PMOS','Connector2':'J2','Connector4':'J4','Connector6':'J6','ATtiny13A':'ATtiny13A','Switch':'SW_H','TestPoint':'TP','CN3722':'CN3722','TPS2116':'TPS2116','TPS63802':'TPS63802','TPS22918':'TPS22918','TPS3808':'TPS3808','DS3231':'DS3231','DS3231M':'DS3231M','Battery':'BAT_V','NiceNano_Modified':'NiceNano','HT_RA62':'HT_RA62','MountingHole':'MountingHole','NMOS_GSD':'NMOS','NTC':'NTC_V','LM285Z':'LM285Z','LM393Dual':'LM393Dual'}[p['kind']]
+        p=PARTS[ref];style=style or {'R':'R_H','C':'C_V','Inductor':'L_H','Diode':'D_H','LED':'LED_V','PMOS_GSD':'PMOS','Connector2':'J2','Connector4':'J4','Connector6':'J6','ATtiny13A':'ATtiny13A','Switch':'SW_H','TestPoint':'TP','CN3722':'CN3722','TPS2116':'TPS2116','TPS63802':'TPS63802','TPS22918':'TPS22918','TPS3808':'TPS3808','DS3231':'DS3231','DS3231M':'DS3231M','INA219':'INA219','Battery':'BAT_V','NiceNano_Modified':'NiceNano','HT_RA62':'HT_RA62','MountingHole':'MountingHole','NMOS_GSD':'NMOS','NTC':'NTC_V','LM285Z':'LM285Z','LM393Dual':'LM393Dual'}[p['kind']]
         if p['kind']=='MountingHole' and p['nets']:
             style='GND_BOLT'
             if style not in DEFS:
@@ -267,7 +273,7 @@ class Sheet:
             b=round(round(float(match[3])/1.27)*1.27,5)
             return match[1]+str(a)+' '+str(b)
         drawing=re.sub(r'(\((?:at|xy)\s+)(-?\d+(?:\.\d+)?)\s+(-?\d+(?:\.\d+)?)',snap,'\n'.join(self.items))
-        short_title={'Charger':'CN3722 / зарядка Na-ion и LTO','Powerpath':'TPS2116 / выбор источника','Converter':'TPS63802 / питание и фильтр','Modules':'Nice!Nano / HT-RA62','RTC_IO':'DS3231M / разъёмы','Watchdog':'ATtiny13A / watchdog','LTO_Balancer':'LMV431A / LTO 2S опция','Thermal':'LM393XK / холодный заряд Na-ion','Interconnect':'Межплатное соединение / POWER ↔ LOGIC'}[self.name]
+        short_title={'Charger':'CN3722 / зарядка Na-ion и LTO','Powerpath':'TPS2116 / выбор источника','Converter':'TPS63802 / питание и фильтр','Modules':'Nice!Nano / HT-RA62','RTC_IO':'DS3231M / разъёмы','Watchdog':'ATtiny13A / watchdog','LTO_Balancer':'LMV431A / LTO 2S опция','Thermal':'LM393XK / холодный заряд Na-ion','BatteryMonitor':'INA219 / батарея и ток','Interconnect':'Межплатное соединение / POWER ↔ LOGIC'}[self.name]
         content=f'(kicad_sch (version 20250114) (generator "eeschema") (uuid {q(self.id)}) (paper "A3") (title_block (title {q(short_title)}) (date {q(date)}) (rev {q(revision)}) (comment 1 "Электрическая принципиальная; прототип")) (lib_symbols {embedded}) '+ drawing
         if self.root:content+=' (sheet_instances (path "/" (page "1")))'
         content+=' (embedded_fonts no))'

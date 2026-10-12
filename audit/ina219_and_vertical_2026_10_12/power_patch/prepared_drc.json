@@ -1,0 +1,699 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-10-12T14:27:18",
+    "ignored_checks": [],
+    "included_severities": [
+        "error",
+        "warning",
+        "exclusion"
+    ],
+    "kicad_version": "10.0.6",
+    "schematic_parity": [],
+    "source": "MeshRepeater2_Power.kicad_pcb",
+    "unconnected_items": [
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Дорожка [BAT] на F.Cu, длина 0,7248 mm",
+                    "pos": {
+                        "x": 17.8,
+                        "y": 16.25
+                    },
+                    "uuid": "a5e8a4e5-79d6-459a-b8d1-fe898b67c4d9"
+                },
+                {
+                    "description": "Дорожка [BAT] на F.Cu, длина 6,0000 mm",
+                    "pos": {
+                        "x": 10.9,
+                        "y": 43.8
+                    },
+                    "uuid": "a1bbadb0-fd70-4293-9502-b29d8a60b683"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Конт. пл. 2 [BAT] от R71 на B.Cu",
+                    "pos": {
+                        "x": 28.8,
+                        "y": 3.8375
+                    },
+                    "uuid": "df1875c1-459e-49ab-b89f-1ba89cbcca2a"
+                },
+                {
+                    "description": "Дорожка [BAT] на F.Cu, длина 0,7071 mm",
+                    "pos": {
+                        "x": 26.1,
+                        "y": 6.0
+                    },
+                    "uuid": "516e90fd-04b2-4ae4-8ae6-0a88072a209d"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Дорожка [BAT] на B.Cu, длина 3,1000 mm",
+                    "pos": {
+                        "x": 44.5,
+                        "y": 8.6
+                    },
+                    "uuid": "eb68f086-d778-48fe-a0fd-302372523454"
+                },
+                {
+                    "description": "Дорожка [BAT] на F.Cu, длина 1,8000 mm",
+                    "pos": {
+                        "x": 39.5,
+                        "y": 11.0
+                    },
+                    "uuid": "80c5f418-ea09-4ba6-9509-e6015780bc54"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Дорожка [BAT] на B.Cu, длина 28,5000 mm",
+                    "pos": {
+                        "x": 25.2,
+                        "y": 6.8
+                    },
+                    "uuid": "15bdf507-9833-4f8e-95bd-fedd79c5fcaf"
+                },
+                {
+                    "description": "Конт. пл. 1 [BAT] от R73 на B.Cu",
+                    "pos": {
+                        "x": 53.0875,
+                        "y": 9.8
+                    },
+                    "uuid": "185e7f7b-b7ce-4de5-b27e-686f302f3160"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Дорожка [BAT_SYS] на B.Cu, длина 3,5355 mm",
+                    "pos": {
+                        "x": 38.0,
+                        "y": 14.1
+                    },
+                    "uuid": "27ae2d03-6822-43c5-a361-0f1cc80f37d9"
+                },
+                {
+                    "description": "Конт. пл. 1 [BAT_SYS] от R71 на B.Cu",
+                    "pos": {
+                        "x": 28.8,
+                        "y": 9.7625
+                    },
+                    "uuid": "7983dd6b-d32e-4906-9f5c-d4e43247e662"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Конт. пл. 1 [BAT_SYS] от C53 на F.Cu",
+                    "pos": {
+                        "x": 46.525,
+                        "y": 11.9
+                    },
+                    "uuid": "00c747d9-ad01-4ebf-92e4-8415fbe0c2ea"
+                },
+                {
+                    "description": "Конт. пл. 1 [BAT_SYS] от R72 на B.Cu",
+                    "pos": {
+                        "x": 53.0875,
+                        "y": 12.2
+                    },
+                    "uuid": "24c433b0-5dea-4525-ae66-131279dc3b3c"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Конт. пл. 3 [SDA] от U12 на F.Cu",
+                    "pos": {
+                        "x": 58.835,
+                        "y": 15.275
+                    },
+                    "uuid": "143ed8de-e090-48af-8317-7b4e48a6b665"
+                },
+                {
+                    "description": "PTH конт. пл. 10 [SDA] у J101",
+                    "pos": {
+                        "x": 74.31,
+                        "y": 8.46
+                    },
+                    "uuid": "6880abca-a226-4ca0-a9d1-e39e06469b68"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Конт. пл. 4 [SCL] от U12 на F.Cu",
+                    "pos": {
+                        "x": 60.105,
+                        "y": 15.275
+                    },
+                    "uuid": "9245fb8b-6dab-4cb7-a4ad-9b1b7773be68"
+                },
+                {
+                    "description": "PTH конт. пл. 12 [SCL] у J101",
+                    "pos": {
+                        "x": 76.85,
+                        "y": 8.46
+                    },
+                    "uuid": "c3413c3c-4a39-4069-875e-b8be4ca6c037"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Конт. пл. 1 [SYS_3V3] от C63 на B.Cu",
+                    "pos": {
+                        "x": 59.45,
+                        "y": 8.0
+                    },
+                    "uuid": "0797d94e-6d7a-4410-b64c-a7fe01f9a7a6"
+                },
+                {
+                    "description": "Конт. пл. 5 [SYS_3V3] от U12 на F.Cu",
+                    "pos": {
+                        "x": 60.105,
+                        "y": 10.325
+                    },
+                    "uuid": "a0f5a66d-eb39-4707-b46b-918c2320bae2"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Конт. пл. 5 [SYS_3V3] от U12 на F.Cu",
+                    "pos": {
+                        "x": 60.105,
+                        "y": 10.325
+                    },
+                    "uuid": "a0f5a66d-eb39-4707-b46b-918c2320bae2"
+                },
+                {
+                    "description": "PTH конт. пл. 7 [SYS_3V3] у J101",
+                    "pos": {
+                        "x": 71.77,
+                        "y": 11.0
+                    },
+                    "uuid": "59d91102-aae0-4ecc-8fc8-de22b222e704"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Конт. пл. 2 [INA_VIN_M] от R73 на B.Cu",
+                    "pos": {
+                        "x": 54.9125,
+                        "y": 9.8
+                    },
+                    "uuid": "5daa8a01-0cce-4ec5-8fc3-a317dd7fb4cb"
+                },
+                {
+                    "description": "Конт. пл. 7 [INA_VIN_M] от U12 на F.Cu",
+                    "pos": {
+                        "x": 57.565,
+                        "y": 10.325
+                    },
+                    "uuid": "83582468-344c-48b7-b291-2427800ff07d"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Конт. пл. 7 [INA_VIN_M] от U12 на F.Cu",
+                    "pos": {
+                        "x": 57.565,
+                        "y": 10.325
+                    },
+                    "uuid": "83582468-344c-48b7-b291-2427800ff07d"
+                },
+                {
+                    "description": "Конт. пл. 2 [INA_VIN_M] от C64 на B.Cu",
+                    "pos": {
+                        "x": 57.8,
+                        "y": 6.75
+                    },
+                    "uuid": "4ebf3210-16d3-4b30-a3b9-45a5694e1b3d"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Конт. пл. 8 [INA_VIN_P] от U12 на F.Cu",
+                    "pos": {
+                        "x": 56.295,
+                        "y": 10.325
+                    },
+                    "uuid": "ac3284f9-3334-4099-9a60-b9bdb97703b7"
+                },
+                {
+                    "description": "Конт. пл. 2 [INA_VIN_P] от R72 на B.Cu",
+                    "pos": {
+                        "x": 54.9125,
+                        "y": 12.2
+                    },
+                    "uuid": "a174775f-ba75-4e36-a08b-f406d4768114"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Конт. пл. 1 [INA_VIN_P] от C64 на B.Cu",
+                    "pos": {
+                        "x": 57.8,
+                        "y": 8.65
+                    },
+                    "uuid": "3fced56b-301c-418d-8b2c-b2f098e4eddd"
+                },
+                {
+                    "description": "Конт. пл. 8 [INA_VIN_P] от U12 на F.Cu",
+                    "pos": {
+                        "x": 56.295,
+                        "y": 10.325
+                    },
+                    "uuid": "ac3284f9-3334-4099-9a60-b9bdb97703b7"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        }
+    ],
+    "violations": [
+        {
+            "description": "Courtyards overlap",
+            "items": [
+                {
+                    "description": "Посад. место U12",
+                    "pos": {
+                        "x": 58.2,
+                        "y": 12.8
+                    },
+                    "uuid": "0d635759-a731-4e32-9930-6f91b68e532b"
+                },
+                {
+                    "description": "Посад. место J101",
+                    "pos": {
+                        "x": 64.15,
+                        "y": 11.0
+                    },
+                    "uuid": "8c0f8a8f-e57b-4d3f-9b66-a9e234974f5d"
+                }
+            ],
+            "severity": "error",
+            "type": "courtyards_overlap"
+        },
+        {
+            "description": "Courtyards overlap",
+            "items": [
+                {
+                    "description": "Посад. место C64",
+                    "pos": {
+                        "x": 57.8,
+                        "y": 7.7
+                    },
+                    "uuid": "73512aab-cff0-4c52-a571-5ab84a7e8f8b"
+                },
+                {
+                    "description": "Посад. место C63",
+                    "pos": {
+                        "x": 60.4,
+                        "y": 8.0
+                    },
+                    "uuid": "7a8df036-21b7-4f1e-9306-7ff4a70a88c3"
+                }
+            ],
+            "severity": "error",
+            "type": "courtyards_overlap"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "Дорожка [BAT] на F.Cu, длина 6,0000 mm",
+                    "pos": {
+                        "x": 10.9,
+                        "y": 43.8
+                    },
+                    "uuid": "a1bbadb0-fd70-4293-9502-b29d8a60b683"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "Перех. отв. [BAT] на F.Cu - B.Cu",
+                    "pos": {
+                        "x": 44.5,
+                        "y": 11.7
+                    },
+                    "uuid": "638d1eae-bbf4-4341-a942-6f0c841a813b"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "Перех. отв. [BAT] на F.Cu - B.Cu",
+                    "pos": {
+                        "x": 39.5,
+                        "y": 11.0
+                    },
+                    "uuid": "7ae8e33a-62c3-49cb-a7d5-53a8014c6122"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "Дорожка [BAT_SYS] на F.Cu, длина 0,1000 mm",
+                    "pos": {
+                        "x": 19.9,
+                        "y": 41.1
+                    },
+                    "uuid": "f3247ad8-6b71-46c2-b72c-736422843bad"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Надпись на плате 'L3' на F.Silkscreen",
+                    "pos": {
+                        "x": 58.0,
+                        "y": 15.425237
+                    },
+                    "uuid": "6d43f2c0-70c7-42e7-a12d-9c76cb8a8d9d"
+                },
+                {
+                    "description": "Конт. пл. 2 [GND] от U12 на F.Cu",
+                    "pos": {
+                        "x": 57.565,
+                        "y": 15.275
+                    },
+                    "uuid": "879467aa-4e14-4c5f-a317-bdc452b3ce0a"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Зазор шелкографии (ограничения настроек платы зазор 0,1000 mm; текущий 0,0036 mm)",
+            "items": [
+                {
+                    "description": "Надпись на плате 'J101\nIDC 12P' на B.Silkscreen",
+                    "pos": {
+                        "x": 29.125,
+                        "y": 7.95
+                    },
+                    "uuid": "ce7136ed-5944-4062-9b08-3139d0fd1f4f"
+                },
+                {
+                    "description": "Сегмент от R71 на B.Silkscreen",
+                    "pos": {
+                        "x": 30.51,
+                        "y": 8.977064
+                    },
+                    "uuid": "ea8c7079-c453-4be1-ad88-b7fc99807c24"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Зазор шелкографии (ограничения настроек платы зазор 0,1000 mm; текущий 0,0000 mm)",
+            "items": [
+                {
+                    "description": "Сегмент от R72 на B.Silkscreen",
+                    "pos": {
+                        "x": 53.772936,
+                        "y": 11.465
+                    },
+                    "uuid": "2bcff525-29bd-41b5-9d95-589fae926251"
+                },
+                {
+                    "description": "Надпись на плате 'G8 x1.5' на B.Silkscreen",
+                    "pos": {
+                        "x": 55.019047,
+                        "y": 11.099428
+                    },
+                    "uuid": "728ecf8e-5ecf-4a5c-8f86-6d27f5b271ed"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Зазор шелкографии (ограничения настроек платы зазор 0,1000 mm; текущий 0,0193 mm)",
+            "items": [
+                {
+                    "description": "Сегмент от R73 на B.Silkscreen",
+                    "pos": {
+                        "x": 53.772936,
+                        "y": 10.535
+                    },
+                    "uuid": "6390379d-f860-4931-96e3-b3ebc2830f82"
+                },
+                {
+                    "description": "Надпись на плате 'G8 x1.5' на B.Silkscreen",
+                    "pos": {
+                        "x": 55.019047,
+                        "y": 11.099428
+                    },
+                    "uuid": "728ecf8e-5ecf-4a5c-8f86-6d27f5b271ed"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Зазор шелкографии (ограничения настроек платы зазор 0,1000 mm; текущий 0,0640 mm)",
+            "items": [
+                {
+                    "description": "Сегмент от C64 на B.Silkscreen",
+                    "pos": {
+                        "x": 57.065,
+                        "y": 7.961252
+                    },
+                    "uuid": "acc2be75-5fe6-4446-bd7b-ea5e2c1f97cb"
+                },
+                {
+                    "description": "Надпись на плате 'R11\n10k' на B.Silkscreen",
+                    "pos": {
+                        "x": 56.0,
+                        "y": 7.0
+                    },
+                    "uuid": "de5928f6-14bf-4dad-b753-610abe8f3adb"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Надпись на плате 'G8 x1.5' на B.Silkscreen",
+                    "pos": {
+                        "x": 55.019047,
+                        "y": 11.099428
+                    },
+                    "uuid": "728ecf8e-5ecf-4a5c-8f86-6d27f5b271ed"
+                },
+                {
+                    "description": "Конт. пл. 2 [INA_VIN_P] от R72 на B.Cu",
+                    "pos": {
+                        "x": 54.9125,
+                        "y": 12.2
+                    },
+                    "uuid": "a174775f-ba75-4e36-a08b-f406d4768114"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Надпись на плате 'G8 x1.5' на B.Silkscreen",
+                    "pos": {
+                        "x": 55.019047,
+                        "y": 11.099428
+                    },
+                    "uuid": "728ecf8e-5ecf-4a5c-8f86-6d27f5b271ed"
+                },
+                {
+                    "description": "Конт. пл. 1 [BAT_SYS] от R72 на B.Cu",
+                    "pos": {
+                        "x": 53.0875,
+                        "y": 12.2
+                    },
+                    "uuid": "24c433b0-5dea-4525-ae66-131279dc3b3c"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Надпись на плате 'R11\n10k' на B.Silkscreen",
+                    "pos": {
+                        "x": 56.0,
+                        "y": 7.0
+                    },
+                    "uuid": "de5928f6-14bf-4dad-b753-610abe8f3adb"
+                },
+                {
+                    "description": "Конт. пл. 2 [INA_VIN_M] от C64 на B.Cu",
+                    "pos": {
+                        "x": 57.8,
+                        "y": 6.75
+                    },
+                    "uuid": "4ebf3210-16d3-4b30-a3b9-45a5694e1b3d"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Надпись на плате 'R11\n10k' на B.Silkscreen",
+                    "pos": {
+                        "x": 56.0,
+                        "y": 7.0
+                    },
+                    "uuid": "de5928f6-14bf-4dad-b753-610abe8f3adb"
+                },
+                {
+                    "description": "Конт. пл. 1 [INA_VIN_P] от C64 на B.Cu",
+                    "pos": {
+                        "x": 57.8,
+                        "y": 8.65
+                    },
+                    "uuid": "3fced56b-301c-418d-8b2c-b2f098e4eddd"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Надпись на плате 'R48\n120k' на B.Silkscreen",
+                    "pos": {
+                        "x": 52.049999,
+                        "y": 14.0
+                    },
+                    "uuid": "5d94021a-3830-4011-a3c4-a6a4165810eb"
+                },
+                {
+                    "description": "Конт. пл. 1 [BAT_SYS] от R72 на B.Cu",
+                    "pos": {
+                        "x": 53.0875,
+                        "y": 12.2
+                    },
+                    "uuid": "24c433b0-5dea-4525-ae66-131279dc3b3c"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Надпись на плате 'J101\nIDC 12P' на B.Silkscreen",
+                    "pos": {
+                        "x": 29.125,
+                        "y": 7.95
+                    },
+                    "uuid": "ce7136ed-5944-4062-9b08-3139d0fd1f4f"
+                },
+                {
+                    "description": "Конт. пл. 1 [BAT_SYS] от R71 на B.Cu",
+                    "pos": {
+                        "x": 28.8,
+                        "y": 9.7625
+                    },
+                    "uuid": "7983dd6b-d32e-4906-9f5c-d4e43247e662"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        }
+    ]
+}

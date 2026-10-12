@@ -1,0 +1,253 @@
+{
+  "status": "PASS",
+  "date_local": "2026-10-12",
+  "scope": "Q5 transistor selection; read-only; no CAD, BOM, model or document mutation",
+  "selected_MPN": "BSS138",
+  "manufacturer": "Hottech",
+  "package": "SOT-23",
+  "recommendation": "Retain existing BSS138. The user-requested SOT-23 package is already implemented; no electrically distinct replacement is necessary. If changing to a different MPN despite this, it must be separately selected, not automatic 2N7002 substitution.",
+  "procurement": {
+    "shop": "Danomsk",
+    "article": "79502",
+    "stock": 80,
+    "single_price_rub": 4.5,
+    "url": "https://www.danomsk.ru/shop/4-tranzistory/126-tranzistory-importnye/79502-bss138-sot23-n-kanal-50v-0-22a-6om-hottech/",
+    "timestamp_scope": "availability observed on 2026-10-12; can change"
+  },
+  "checks": {
+    "value_is_BSS138": true,
+    "footprint_is_SOT23": true,
+    "3D_model_is_SOT23": true,
+    "pin1_is_gate": true,
+    "pin2_is_source_ground": true,
+    "pin3_is_drain": true,
+    "fit_NaIon_only": true,
+    "baseline_already_same_MPN": true,
+    "baseline_already_SOT23": true,
+    "shop_has_stock": true
+  },
+  "current_native_Q5": {
+    "value": "BSS138",
+    "footprint": "Meshcore:SOT-23__V2_Q5",
+    "position_mm": [
+      37.5,
+      51.3
+    ],
+    "rotation_deg": 0.0,
+    "pads": {
+      "1": {
+        "net": "/4. Thermal/CHG_G_ENABLE",
+        "size_mm": [
+          1.475,
+          0.6
+        ],
+        "position_mm": [
+          36.5625,
+          50.35
+        ],
+        "attribute": 1
+      },
+      "2": {
+        "net": "GND",
+        "size_mm": [
+          1.475,
+          0.6
+        ],
+        "position_mm": [
+          36.5625,
+          52.25
+        ],
+        "attribute": 1
+      },
+      "3": {
+        "net": "/4. Thermal/CHG_PULLDOWN",
+        "size_mm": [
+          1.475,
+          0.6
+        ],
+        "position_mm": [
+          38.4375,
+          51.3
+        ],
+        "attribute": 1
+      }
+    },
+    "model_paths": [
+      "${KICAD10_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-23.step"
+    ]
+  },
+  "baseline_native_Q5": {
+    "value": "BSS138",
+    "footprint": "Meshcore:SOT-23",
+    "position_mm": [
+      37.5,
+      88.3
+    ],
+    "rotation_deg": 0.0,
+    "pads": {
+      "1": {
+        "net": "/7. Thermal/CHG_G_ENABLE",
+        "size_mm": [
+          1.475,
+          0.6
+        ],
+        "position_mm": [
+          36.5625,
+          87.35
+        ],
+        "attribute": 1
+      },
+      "2": {
+        "net": "GND",
+        "size_mm": [
+          1.475,
+          0.6
+        ],
+        "position_mm": [
+          36.5625,
+          89.25
+        ],
+        "attribute": 1
+      },
+      "3": {
+        "net": "/7. Thermal/CHG_PULLDOWN",
+        "size_mm": [
+          1.475,
+          0.6
+        ],
+        "position_mm": [
+          38.4375,
+          88.3
+        ],
+        "attribute": 1
+      }
+    },
+    "model_paths": [
+      "${KICAD10_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-23.step"
+    ]
+  },
+  "current_model_Q5": {
+    "ref": "Q5",
+    "kind": "NMOS_GSD",
+    "value": "BSS138",
+    "nets": {
+      "1": "CHG_G_ENABLE",
+      "2": "GND",
+      "3": "CHG_PULLDOWN"
+    },
+    "footprint": "Meshcore:SOT-23__V2_Q5",
+    "mpn": "BSS138",
+    "datasheet": "https://www.danomsk.ru/upload/iblock/3d8/79502_12cc20f0f37eb563048d7d074a63b1ac.pdf",
+    "note": "Hottech BSS138 G1/S2/D3, gate pulldown driver. Original T2 uses a Diodes surrogate model; physical startup to verify.",
+    "vendor_url": "https://www.danomsk.ru/shop/4-tranzistory/126-tranzistory-importnye/79502-bss138-sot23-n-kanal-50v-0-22a-6om-hottech/",
+    "dnp": false,
+    "vendor": "Danomsk / Hottech",
+    "x": 37.5,
+    "y": 51.3,
+    "rotation": 0.0,
+    "group": "cold_charge",
+    "fit_naion": true,
+    "fit_lto2s": false,
+    "assembly_default_dnp": false,
+    "assembly": "Na-ion cold option: FIT; LTO 2S: DNP",
+    "source_reference_T2": "Q51",
+    "schematic_uuid": "17b40c16-85b8-5539-adde-59866bf2c326",
+    "sheet_path": "/4936dedf-697f-5d13-9744-01d670b7457a/e2d8a33e-0cfd-53b0-af40-1bc9c9cc1820",
+    "native_layer": "F.Cu",
+    "source_ref": "Q5",
+    "source_revision": "S4.16",
+    "source_pose": {
+      "x": 37.5,
+      "y": 88.3,
+      "rotation": 0.0
+    },
+    "fit_naion_no_cold": false,
+    "value_lto2s": "BSS138",
+    "value_naion_no_cold": "BSS138",
+    "mpn_lto2s": "BSS138",
+    "mpn_naion_no_cold": "BSS138",
+    "source_footprint_before_v2_graphic_variant": "Meshcore:SOT-23"
+  },
+  "current_BOM_Q5": {
+    "Board": "POWER",
+    "Reference": "Q5",
+    "Kind": "NMOS_GSD",
+    "Quantity_Physical_Positions": "1",
+    "Value_NaIon_COLD": "BSS138",
+    "Fit_NaIon_COLD": "yes",
+    "Value_NaIon_NoCOLD": "BSS138",
+    "Fit_NaIon_NoCOLD": "no",
+    "Value_LTO_2S": "BSS138",
+    "Fit_LTO_2S": "no",
+    "MPN_NaIon_COLD": "BSS138",
+    "MPN_NaIon_NoCOLD": "BSS138",
+    "MPN_LTO_2S": "BSS138",
+    "Saved_Model_Footprint": "Meshcore:SOT-23__V2_Q5",
+    "Physical_Package_Footprint": "Meshcore:SOT-23",
+    "Buy_Component_NaIon_COLD": "yes",
+    "Buy_Component_NaIon_NoCOLD": "no",
+    "Buy_Component_LTO_2S": "no",
+    "Group": "cold_charge",
+    "Original_S4_16_Reference": "Q5",
+    "Vendor_URL_In_Model": "https://www.danomsk.ru/shop/4-tranzistory/126-tranzistory-importnye/79502-bss138-sot23-n-kanal-50v-0-22a-6om-hottech/",
+    "Mechanical_Selection_MPN": "",
+    "Mechanical_Selection_Article": "",
+    "Mechanical_Selection_Footprint": "",
+    "Mechanical_Selection_URL": "",
+    "Mechanical_Selection_Stock": "",
+    "Mechanical_Selection_Checked": "",
+    "Procurement_Status": "Inherited S4.16 procurement data; current stock not rechecked",
+    "Note": "Hottech BSS138 G1/S2/D3, gate pulldown driver. Original T2 uses a Diodes surrogate model; physical startup to verify."
+  },
+  "source_hashes": {
+    "power_board": {
+      "path": "design/MeshRepeater2_Power/MeshRepeater2_Power.kicad_pcb",
+      "sha256": "c4efced02420f48fea993d166091e3ba3ec7be7cf9bc30feec164d067077cc3b"
+    },
+    "power_model": {
+      "path": "design/MeshRepeater2_Power/model.json",
+      "sha256": "f6fa83e5c14def215a3f1995fed2bea787a79573c9923ba39502f0236f3f4055"
+    },
+    "power_schematic": {
+      "path": "design/MeshRepeater2_Power/Thermal.kicad_sch",
+      "sha256": "48873907fd38d51fdc8f7060f5bc5ced3abfbadce1a012a1fe711c5e52217220"
+    },
+    "power_footprint": {
+      "path": "design/MeshRepeater2_Power/Meshcore.pretty/SOT-23__V2_Q5.kicad_mod",
+      "sha256": "4067519c0ee07d2e0239bb8410cf7607a271e9d38956da9c50a55c279e0e118f"
+    },
+    "baseline_board": {
+      "path": "design/Meshcore_NaIon/Meshcore_NaIon.kicad_pcb",
+      "sha256": "742ae27bb1d13893f6dc368e5c67f5c41b35a3e6765331fc7e9871297d23dec6"
+    },
+    "baseline_schematic": {
+      "path": "design/Meshcore_NaIon/Thermal.kicad_sch",
+      "sha256": "cc08a66f43058241357ad2ef79be2ff590e72c64f4b958a5ab9cb8384b4baf4c"
+    },
+    "current_bom": {
+      "path": "bom/V2_COMPONENT_BOM.csv",
+      "sha256": "8ebf0bee2e3f157999fb040c64bbbf6e6956a051b998a8027d2cf128c1b67375"
+    },
+    "baseline_bom": {
+      "path": "bom/legacy_S4_16/shopping_S4_16_REFERENCE_ONLY.csv",
+      "sha256": "2f3fd7414c224902a54655ea35e1a69666740a12c637519ca8156afc091d4656"
+    },
+    "dan_card": {
+      "path": "audit/vertical_interconnect_2026_10_12/q5_selection_sources/dan_bss138.html",
+      "sha256": "295b60ee32868359fc069edb0122519ce2030fe8423b5ceab21460d0d936b1d1"
+    },
+    "manufacturer_pdf": {
+      "path": "audit/vertical_interconnect_2026_10_12/q5_selection_sources/hottech_bss138.pdf",
+      "sha256": "f36bf5a4457bde0c0b21de360c2b2d0ef793b47ac1032fabe5a1f62098c054e3"
+    }
+  },
+  "electrical_role": {
+    "gate": "R66=1k from CHG_WARM; R67=1M to ground; R63=100k pullup to LM285 2.5V reference. Not a 3.3V MCU or BAT gate driver.",
+    "drain": "R68=1k to CHG_G_SHUNT; R58=100k connects common PMOS gate to CS_P. Sink only gate-control current; does not carry charge power current.",
+    "nominal_static_Vgs_without_hysteresis_V": 2.270663033605813,
+    "worst_control_current_5_5V_R1percent_A": 5.5005500550055004e-05,
+    "qualification": "Manufacturer PDF lists RDS(on) max 2.5 ohm at VGS=1.8 V / ID=50mA / TA=25C; this is ample for nominal tens-of-uA drain-control current. Cold-temperature startup and full T2 transient qualification remain physical checks, not newly claimed proven."
+  },
+  "pin_mapping_exception_needed": false,
+  "baseline_preservation_exception_needed": false
+}

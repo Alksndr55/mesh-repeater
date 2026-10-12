@@ -1,0 +1,564 @@
+{
+  "audit_date": "2026-10-12",
+  "head": "547740fee937f891568f18485c7a6a3733c234c9",
+  "method": "Fresh native KiCad XML, direct native PCB pad parser, primary datasheets, independent arithmetic. No CAD mutations.",
+  "input_sha256": {
+    "design/MeshRepeater2_Power/Converter.kicad_sch": "6e91b009695bb7283a15f442cb54ec670282a9dea60c1df20886eccd286b8820",
+    "design/MeshRepeater2_Power/Interconnect.kicad_sch": "8f3744a5ff558d1f64e58697d6fac9cc34ad79ac2d7bfd0725496d754e97770d",
+    "design/MeshRepeater2_Power/LTO_Balancer.kicad_sch": "a28eb02a594f9761bdd64751da7d011adefc20dab62edd256e32237cd8bb970b",
+    "design/MeshRepeater2_Power/MeshRepeater2_Power.kicad_sch": "62e3fb44653c8f33c37c6dae277f6ddec163b0c53976149aad170373fb0e07bf",
+    "design/MeshRepeater2_Power/Thermal.kicad_sch": "48873907fd38d51fdc8f7060f5bc5ced3abfbadce1a012a1fe711c5e52217220",
+    "design/MeshRepeater2_Logic/Interconnect.kicad_sch": "34b813633f09bb2e04646bda29d41ff0d48d9044cf0f0161ba37be060308a111",
+    "design/MeshRepeater2_Logic/MeshRepeater2_Logic.kicad_sch": "fc8f0c7d775f112c7f0910022600df16e804a813fecf762757bac31d4724e375",
+    "design/MeshRepeater2_Logic/RTC_IO.kicad_sch": "6f3f41da49f799c9f473e9529e48e4fe6191e7d02848e9254d67d35167a3a353",
+    "design/MeshRepeater2_Logic/Watchdog.kicad_sch": "4d44bb8fc82632da8ed3a7c8f833ef40884944034ede255b0398c0034dce8e4b",
+    "design/MeshRepeater2_Logic/MeshRepeater2_Logic.kicad_pcb": "2750624dc6c2c7e8b50089e66e5d9eef9c29aa3ee28541f72f54186b58dc9ceb",
+    "audit/independent_2026_10_12/electrical.power.xml": "e37974ebd73a63860f2efddbce70930e674139058867dff0db356e9e8d477aad",
+    "audit/independent_2026_10_12/electrical.logic.xml": "35f7adcd39d663695f2721a999c3ecf06c3f1fbff717e11b79485eb883ab9166",
+    "design/watchdog_reference/main.c": "6aae1df101c6970fc6ba2acd2c3b5997890ed22e2c62e27717cde22b482e0089",
+    "design/watchdog_reference/Makefile": "6db1d4d6a15dc0c3f893eab0180ef9f4c84209461d83a551d6c2956de29965b8"
+  },
+  "findings_new_V2": [],
+  "inherited_accepted_risks": [
+    {
+      "id": "E-I1",
+      "severity": "high",
+      "origin": "inherited_S4.16_accepted",
+      "ref": "U8/U9.3; R47/R51",
+      "evidence": "2 ohm shunts do not bound LMV431 cathode current to recommended15mA or absolute30mA under cell imbalance.",
+      "location": "design/MeshRepeater2_Power/LTO_Balancer.kicad_sch:10703; :9957; electrical.power.xml:4594; :4650",
+      "baseline_location": "baseline/S4_16/assembly_variants_S4_16.csv:124; :130",
+      "primary_source": "https://www.ti.com/lit/ds/symlink/lmv431.pdf",
+      "recommended_fix": "If electrical redesign is later authorized, current-limit the balancing path or use a qualified balancer/protection; until then characterize current and temperature."
+    },
+    {
+      "id": "E-I2",
+      "severity": "high",
+      "origin": "inherited_S4.16_accepted",
+      "ref": "U1.14 BAT -> U2.10 VIN",
+      "evidence": "CN3722 no-battery OVP estimate exceeds TPS63802 recommended5.5V, with highcorner envelope approaching6V absolute.",
+      "location": "design/MeshRepeater2_Power/MeshRepeater2_Power.kicad_sch:16606; design/MeshRepeater2_Power/Converter.kicad_sch:21247; electrical.power.xml:1653; :3949",
+      "baseline_location": "baseline/S4_16/assembly_variants_S4_16.csv:12",
+      "primary_sources": [
+        "https://consonance-elec.com/static/upload/file/20231218/1702867485736775.pdf",
+        "https://www.ti.com/lit/ds/symlink/tps63802.pdf"
+      ],
+      "recommended_fix": "If redesign is authorized, add independently qualified voltage limiting; qualify startup/unplug transients and exclude unqualified no-battery operation."
+    }
+  ],
+  "calculated": {
+    "CN3722_CV_Na_25C": {
+      "typ_without_bias_V": 3.911504,
+      "typ_with_50nA_V": 3.914599,
+      "min_excluding_unspecified_IFB_V": 3.869689662337662,
+      "max_using_300nA_V": 3.9719723137437435,
+      "assumed_resistor_fractional_bound": 0.001
+    },
+    "CN3722_CV_LTO_25C": {
+      "typ_without_bias_V": 5.33936,
+      "typ_with_50nA_V": 5.34541,
+      "min_excluding_unspecified_IFB_V": 5.280537142857144,
+      "max_using_300nA_V": 5.434647010710711,
+      "assumed_resistor_fractional_bound": 0.001
+    },
+    "CN3722_CV_LTO_resistor_65K_offset": {
+      "typ_without_bias_V": 5.33936,
+      "typ_with_50nA_V": 5.34541,
+      "min_excluding_unspecified_IFB_V": 5.271164602917342,
+      "max_using_300nA_V": 5.444336182348979,
+      "assumed_resistor_fractional_bound": 0.002625
+    },
+    "CN3722_LTO_no_battery_typ_OVP_estimate_V": 5.773042800000001,
+    "CN3722_LTO_no_battery_25C_upper_OVP_envelope_V": 5.978111711781783,
+    "CN3722_MPPT_25C": {
+      "typ_V": 11.96,
+      "conservative_min_V": 11.46853147902098,
+      "conservative_max_V": 12.453213202702702
+    },
+    "EN_Na": {
+      "on_typ_V": 1.986172344689379,
+      "off_typ_V": 1.80561122244489,
+      "on_conservative_V": [
+        1.9222497622857304,
+        2.050211225229317
+      ],
+      "off_conservative_V": [
+        1.741849601324447,
+        1.8694888194568113
+      ]
+    },
+    "EN_LTO": {
+      "on_typ_V": 3.9657314629258518,
+      "off_typ_V": 3.6052104208416833,
+      "on_conservative_V": [
+        3.82603156958072,
+        4.105807444771424
+      ],
+      "off_conservative_V": [
+        3.4660310490591573,
+        3.74476483903944
+      ]
+    },
+    "CN3722_cold_A": {
+      "typ": 0.09615384615384616,
+      "min": 0.08806169078446306,
+      "max": 0.1044094794094794
+    },
+    "CN3722_noCold_or_LTO_A": {
+      "typ_ideal_shunt": 0.7142857142857143,
+      "min": 0.6541725601131541,
+      "max": 0.7756132756132756
+    },
+    "CN3722_warm_Rds_estimate_A": 0.6495736617716722,
+    "TPS_VOUT_25C": {
+      "typ_V": 3.3,
+      "min_excluding_unspecified_FB_bias_V": 3.2614615384615386,
+      "max_using_100nA_V": 3.344267261661661
+    },
+    "COLD_nominal_R_T8016_log_interpolation": {
+      "VTH_warm": 1.1386225253043292,
+      "VWARM": 2.189826982457796,
+      "cold_enter_NTC_ohm": 83637.53231328163,
+      "cold_enter_C": -17.39553729858801,
+      "warm_return_ideal_VOL_NTC_ohm": 70769.23076923075,
+      "warm_return_ideal_VOL_C": -14.455513804031405,
+      "warm_return_with_210mV_VOL_C": -14.74867858972429
+    },
+    "LTO_balancer": {
+      "clamp_typ_V": 2.7772495,
+      "clamp_conservative_low_V": 2.700279966533467,
+      "clamp_conservative_high_with_0p9uA_assumption_V": 2.927951840099099,
+      "current_simple_extrapolation_at_cell2p8V_lowcorner_A": 0.0503636532659256,
+      "cathode_power_if_30mA_and_typ_clamp_W": 0.083317485
+    },
+    "BAT_ADC": {
+      "ratio_typ": 0.5,
+      "ratio_resistor_bounds": [
+        0.4995,
+        0.5005
+      ],
+      "Rthevenin_ohm": 1100000,
+      "tau_s": 0.11,
+      "settling_1percent_s": 0.5065687204586901,
+      "settling_0p1percent_s": 0.759853080688035,
+      "battery_error_V_per_1nA_ADC_leak": 0.0022,
+      "stock_multiplier": 1.815,
+      "ideal_multiplier_3p6V_12bit": 1.7582417582417582,
+      "stock_vs_ideal_relative": 0.03228125000000004
+    },
+    "LC": {
+      "nominal_per_stage_uF": 1000,
+      "min_bias_factor_for_330uF_with20percent_tolerance15percent_temp": 0.4852941176470588,
+      "undamped_single_stage_frequency_at330uF_Hz": 5655.32464645475,
+      "undamped_single_stage_frequency_at1000uF_Hz": 3248.736671806984
+    },
+    "watchdog": {
+      "no_tx_nominal_seconds": 10800,
+      "reset_nominal_seconds": 1
+    }
+  },
+  "native_harness": {
+    "1": "FILTER_OUT",
+    "3": "FILTER_OUT",
+    "5": "FILTER_OUT",
+    "7": "FILTER_OUT",
+    "2": "GND",
+    "4": "GND",
+    "6": "GND",
+    "8": "GND",
+    "10": "GND",
+    "12": "GND",
+    "9": "BAT",
+    "11": "MODE"
+  },
+  "native_module_pads": {
+    "M2": [
+      {
+        "pin": "1",
+        "local_xy_mm": [
+          -8.0,
+          -7.0
+        ],
+        "net": "/ANT_RF",
+        "pinfunction": "ANT_1"
+      },
+      {
+        "pin": "2",
+        "local_xy_mm": [
+          -8.0,
+          -5.0
+        ],
+        "net": "GND",
+        "pinfunction": "GND_2"
+      },
+      {
+        "pin": "3",
+        "local_xy_mm": [
+          -8.0,
+          -3.0
+        ],
+        "net": "/RADIO_3V3",
+        "pinfunction": "3V3_3"
+      },
+      {
+        "pin": "4",
+        "local_xy_mm": [
+          -8.0,
+          -1.0
+        ],
+        "net": "/RADIO_RST",
+        "pinfunction": "RST_4"
+      },
+      {
+        "pin": "5",
+        "local_xy_mm": [
+          -8.0,
+          1.0
+        ],
+        "net": "RADIO_TXEN",
+        "pinfunction": "TXEN_=_DIO2_5"
+      },
+      {
+        "pin": "6",
+        "local_xy_mm": [
+          -8.0,
+          3.0
+        ],
+        "net": "/RADIO_DIO1",
+        "pinfunction": "DIO1_6"
+      },
+      {
+        "pin": "7",
+        "local_xy_mm": [
+          -8.0,
+          5.0
+        ],
+        "net": "RADIO_TXEN",
+        "pinfunction": "DIO2_=_TXEN_7"
+      },
+      {
+        "pin": "8",
+        "local_xy_mm": [
+          -8.0,
+          7.0
+        ],
+        "net": "unconnected-(M2-DIO3-Pad8)",
+        "pinfunction": "DIO3_8"
+      },
+      {
+        "pin": "9",
+        "local_xy_mm": [
+          8.0,
+          7.0
+        ],
+        "net": "GND",
+        "pinfunction": "GND_9"
+      },
+      {
+        "pin": "10",
+        "local_xy_mm": [
+          8.0,
+          5.0
+        ],
+        "net": "/RADIO_BUSY",
+        "pinfunction": "BUSY_10"
+      },
+      {
+        "pin": "11",
+        "local_xy_mm": [
+          8.0,
+          3.0
+        ],
+        "net": "/RADIO_RXEN",
+        "pinfunction": "RXEN_11"
+      },
+      {
+        "pin": "12",
+        "local_xy_mm": [
+          8.0,
+          1.0
+        ],
+        "net": "Net-(M2-SCK)",
+        "pinfunction": "SCK_12"
+      },
+      {
+        "pin": "13",
+        "local_xy_mm": [
+          8.0,
+          -1.0
+        ],
+        "net": "Net-(M2-MISO)",
+        "pinfunction": "MISO_13"
+      },
+      {
+        "pin": "14",
+        "local_xy_mm": [
+          8.0,
+          -3.0
+        ],
+        "net": "Net-(M2-MOSI)",
+        "pinfunction": "MOSI_14"
+      },
+      {
+        "pin": "15",
+        "local_xy_mm": [
+          8.0,
+          -5.0
+        ],
+        "net": "Net-(M2-NSS)",
+        "pinfunction": "NSS_15"
+      },
+      {
+        "pin": "16",
+        "local_xy_mm": [
+          8.0,
+          -7.0
+        ],
+        "net": "GND",
+        "pinfunction": "GND_16"
+      }
+    ],
+    "M1": [
+      {
+        "pin": "1",
+        "local_xy_mm": [
+          -7.62,
+          -15.24
+        ],
+        "net": "/RADIO_RST",
+        "pinfunction": "P0.09_/_RADIO_RST_1"
+      },
+      {
+        "pin": "2",
+        "local_xy_mm": [
+          -7.62,
+          -12.7
+        ],
+        "net": "/RADIO_DIO1",
+        "pinfunction": "P0.10_/_DIO1_2"
+      },
+      {
+        "pin": "3",
+        "local_xy_mm": [
+          -7.62,
+          -10.16
+        ],
+        "net": "Net-(M1-P1.11_{slash}_SCK)",
+        "pinfunction": "P1.11_/_SCK_3"
+      },
+      {
+        "pin": "4",
+        "local_xy_mm": [
+          -7.62,
+          -7.62
+        ],
+        "net": "Net-(M1-P1.13_{slash}_NSS)",
+        "pinfunction": "P1.13_/_NSS_4"
+      },
+      {
+        "pin": "5",
+        "local_xy_mm": [
+          -7.62,
+          -5.08
+        ],
+        "net": "Net-(M1-P1.15_{slash}_MOSI)",
+        "pinfunction": "P1.15_/_MOSI_5"
+      },
+      {
+        "pin": "6",
+        "local_xy_mm": [
+          -7.62,
+          -2.54
+        ],
+        "net": "Net-(M1-P0.02_{slash}_MISO)",
+        "pinfunction": "P0.02_/_MISO_6"
+      },
+      {
+        "pin": "7",
+        "local_xy_mm": [
+          -7.62,
+          0.0
+        ],
+        "net": "/RADIO_BUSY",
+        "pinfunction": "P0.29_/_BUSY_7"
+      },
+      {
+        "pin": "8",
+        "local_xy_mm": [
+          -7.62,
+          2.54
+        ],
+        "net": "BAT_ADC",
+        "pinfunction": "P0.31_/_BAT_ADC_8"
+      },
+      {
+        "pin": "9",
+        "local_xy_mm": [
+          -7.62,
+          5.08
+        ],
+        "net": "SYS_3V3",
+        "pinfunction": "VCC_/_MOD_3V3_9"
+      },
+      {
+        "pin": "10",
+        "local_xy_mm": [
+          -7.62,
+          7.62
+        ],
+        "net": "MCU_RESET",
+        "pinfunction": "RESET_10"
+      },
+      {
+        "pin": "11",
+        "local_xy_mm": [
+          -7.62,
+          10.16
+        ],
+        "net": "GND",
+        "pinfunction": "GND_11"
+      },
+      {
+        "pin": "12",
+        "local_xy_mm": [
+          -7.62,
+          12.7
+        ],
+        "net": "unconnected-(M1-RAW_-_NC-Pad12)",
+        "pinfunction": "RAW_-_NC_12"
+      },
+      {
+        "pin": "13",
+        "local_xy_mm": [
+          -7.62,
+          15.24
+        ],
+        "net": "unconnected-(M1-BAT_-_NC-Pad13)",
+        "pinfunction": "BAT_-_NC_13"
+      },
+      {
+        "pin": "14",
+        "local_xy_mm": [
+          7.62,
+          -15.24
+        ],
+        "net": "unconnected-(M1-P1.06_{slash}_spare-Pad14)",
+        "pinfunction": "P1.06_/_spare_14"
+      },
+      {
+        "pin": "15",
+        "local_xy_mm": [
+          7.62,
+          -12.7
+        ],
+        "net": "SDA",
+        "pinfunction": "P1.04_/_SDA_15"
+      },
+      {
+        "pin": "16",
+        "local_xy_mm": [
+          7.62,
+          -10.16
+        ],
+        "net": "SCL",
+        "pinfunction": "P0.11_/_SCL_16"
+      },
+      {
+        "pin": "17",
+        "local_xy_mm": [
+          7.62,
+          -7.62
+        ],
+        "net": "USER_BTN",
+        "pinfunction": "P1.00_/_USER_BTN_17"
+      },
+      {
+        "pin": "18",
+        "local_xy_mm": [
+          7.62,
+          -5.08
+        ],
+        "net": "GPS_EN",
+        "pinfunction": "P0.24_/_GPS_EN_/_DIGITAL_OUT_18"
+      },
+      {
+        "pin": "19",
+        "local_xy_mm": [
+          7.62,
+          -2.54
+        ],
+        "net": "GPS_RX_MCU",
+        "pinfunction": "P0.22_/_GPS_RX_19"
+      },
+      {
+        "pin": "20",
+        "local_xy_mm": [
+          7.62,
+          0.0
+        ],
+        "net": "GPS_TX_MCU",
+        "pinfunction": "P0.20_/_GPS_TX_20"
+      },
+      {
+        "pin": "21",
+        "local_xy_mm": [
+          7.62,
+          2.54
+        ],
+        "net": "/RADIO_RXEN",
+        "pinfunction": "P0.17_/_RXEN_21"
+      },
+      {
+        "pin": "22",
+        "local_xy_mm": [
+          7.62,
+          5.08
+        ],
+        "net": "GND",
+        "pinfunction": "GND_22"
+      },
+      {
+        "pin": "23",
+        "local_xy_mm": [
+          7.62,
+          7.62
+        ],
+        "net": "GND",
+        "pinfunction": "GND_23"
+      },
+      {
+        "pin": "24",
+        "local_xy_mm": [
+          7.62,
+          10.16
+        ],
+        "net": "UART_RX",
+        "pinfunction": "P0.08_/_UART_RX_24"
+      },
+      {
+        "pin": "25",
+        "local_xy_mm": [
+          7.62,
+          12.7
+        ],
+        "net": "UART_TX",
+        "pinfunction": "P0.06_/_UART_TX_25"
+      },
+      {
+        "pin": "26",
+        "local_xy_mm": [
+          7.62,
+          15.24
+        ],
+        "net": "GND",
+        "pinfunction": "GND_26"
+      }
+    ]
+  },
+  "physical_pinout_checked_sources": [
+    "https://nicekeyboards.com/docs/nice-nano/pinout-schematic/",
+    "https://resource.heltec.cn/download/HT-RA62/HT-RA62(Rev1.1).pdf",
+    "https://resource.heltec.cn/download/HT-RA62/HT-RA62_Schematic_diagram.pdf"
+  ],
+  "limitations": "This is circuit/CAD evidence, not bench qualification. Actual chosen NiceNano clone/rework, panel/cells, Ceff, transient stability, cable assembly and firmware failure recovery remain unverified."
+}

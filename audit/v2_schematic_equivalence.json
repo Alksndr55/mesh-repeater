@@ -1,8 +1,231 @@
 {
-  "scope": "Native schematic graph after cable connection; no board/bench/mechanical claim",
+  "scope": "Full native local graph and authorized INA219 circuit; immutable S4.16 legacy graph projects only R71, no board/bench/mechanical claim",
   "baseline_pcb_sha256": "742ae27bb1d13893f6dc368e5c67f5c41b35a3e6765331fc7e9871297d23dec6",
   "ok": true,
   "checks": [
+    {
+      "name": "INA219 six new positions remain only on POWER",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "INA219 exact circuit nets U12",
+      "pass": true,
+      "detail": {
+        "expected": {
+          "1": "GND",
+          "2": "GND",
+          "3": "SDA",
+          "4": "SCL",
+          "5": "SYS_3V3",
+          "6": "GND",
+          "7": "INA_VIN_M",
+          "8": "INA_VIN_P"
+        },
+        "actual": {
+          "1": "GND",
+          "2": "GND",
+          "3": "SDA",
+          "4": "SCL",
+          "5": "SYS_3V3",
+          "6": "GND",
+          "7": "INA_VIN_M",
+          "8": "INA_VIN_P"
+        }
+      }
+    },
+    {
+      "name": "INA219 exact value/MPN/package and all variant fits U12",
+      "pass": true,
+      "detail": {
+        "physical_footprint": "Meshcore:SOIC-8_3.9x4.9mm_P1.27mm",
+        "expected_footprint": "Meshcore:SOIC-8_3.9x4.9mm_P1.27mm"
+      }
+    },
+    {
+      "name": "INA219 exact circuit nets R71",
+      "pass": true,
+      "detail": {
+        "expected": {
+          "1": "BAT_SYS",
+          "2": "BAT"
+        },
+        "actual": {
+          "1": "BAT_SYS",
+          "2": "BAT"
+        }
+      }
+    },
+    {
+      "name": "INA219 exact value/MPN/package and all variant fits R71",
+      "pass": true,
+      "detail": {
+        "physical_footprint": "Meshcore:R_2512_6332Metric",
+        "expected_footprint": "Meshcore:R_2512_6332Metric"
+      }
+    },
+    {
+      "name": "INA219 exact circuit nets R72",
+      "pass": true,
+      "detail": {
+        "expected": {
+          "1": "BAT_SYS",
+          "2": "INA_VIN_P"
+        },
+        "actual": {
+          "1": "BAT_SYS",
+          "2": "INA_VIN_P"
+        }
+      }
+    },
+    {
+      "name": "INA219 exact value/MPN/package and all variant fits R72",
+      "pass": true,
+      "detail": {
+        "physical_footprint": "Meshcore:R_0805_2012Metric",
+        "expected_footprint": "Meshcore:R_0805_2012Metric"
+      }
+    },
+    {
+      "name": "INA219 exact circuit nets R73",
+      "pass": true,
+      "detail": {
+        "expected": {
+          "1": "BAT",
+          "2": "INA_VIN_M"
+        },
+        "actual": {
+          "1": "BAT",
+          "2": "INA_VIN_M"
+        }
+      }
+    },
+    {
+      "name": "INA219 exact value/MPN/package and all variant fits R73",
+      "pass": true,
+      "detail": {
+        "physical_footprint": "Meshcore:R_0805_2012Metric",
+        "expected_footprint": "Meshcore:R_0805_2012Metric"
+      }
+    },
+    {
+      "name": "INA219 exact circuit nets C63",
+      "pass": true,
+      "detail": {
+        "expected": {
+          "1": "SYS_3V3",
+          "2": "GND"
+        },
+        "actual": {
+          "1": "SYS_3V3",
+          "2": "GND"
+        }
+      }
+    },
+    {
+      "name": "INA219 exact value/MPN/package and all variant fits C63",
+      "pass": true,
+      "detail": {
+        "physical_footprint": "Meshcore:C_0805_2012Metric",
+        "expected_footprint": "Meshcore:C_0805_2012Metric"
+      }
+    },
+    {
+      "name": "INA219 exact circuit nets C64",
+      "pass": true,
+      "detail": {
+        "expected": {
+          "1": "INA_VIN_P",
+          "2": "INA_VIN_M"
+        },
+        "actual": {
+          "1": "INA_VIN_P",
+          "2": "INA_VIN_M"
+        }
+      }
+    },
+    {
+      "name": "INA219 exact value/MPN/package and all variant fits C64",
+      "pass": true,
+      "detail": {
+        "physical_footprint": "Meshcore:C_0805_2012Metric",
+        "expected_footprint": "Meshcore:C_0805_2012Metric"
+      }
+    },
+    {
+      "name": "POWER exact new twelve-pin interconnect nets",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "LOGIC exact new twelve-pin interconnect nets",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Raw pack endpoints retain BAT before measurement shunt",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Returned SYS_3V3 powers only INA219 VS and its bypass on POWER",
+      "pass": true,
+      "detail": [
+        [
+          "C63",
+          "1"
+        ],
+        [
+          "J101",
+          "7"
+        ],
+        [
+          "U12",
+          "5"
+        ]
+      ]
+    },
+    {
+      "name": "INA219 address straps fix 7-bit address 0x40",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "J11 removable bridge remains FILTER_OUT to SYS_3V3",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "FakeTec INA219 uses existing M1 I2C pads15/16",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "INA219 native SOIC8 physical pin names match TI",
+      "pass": true,
+      "detail": {
+        "expected": {
+          "1": "A1",
+          "2": "A0",
+          "3": "SDA",
+          "4": "SCL",
+          "5": "VS",
+          "6": "GND",
+          "7": "IN-",
+          "8": "IN+"
+        },
+        "actual": {
+          "1": "A1",
+          "2": "A0",
+          "3": "SDA",
+          "4": "SCL",
+          "5": "VS",
+          "6": "GND",
+          "7": "IN-",
+          "8": "IN+"
+        }
+      }
+    },
     {
       "name": "POWER native graph equals saved model",
       "pass": true,
@@ -100,16 +323,16 @@
       ]
     },
     {
-      "name": "cable contacts exist: {'net': 'FILTER_OUT', 'power': {'ref': 'J101', 'pin': '7'}, 'logic': {'ref': 'J201', 'pin': '7'}}",
+      "name": "cable contacts exist: {'net': 'SYS_3V3', 'power': {'ref': 'J101', 'pin': '7'}, 'logic': {'ref': 'J201', 'pin': '7'}}",
       "pass": true,
       "detail": null
     },
     {
-      "name": "cable same electrical net: {'net': 'FILTER_OUT', 'power': {'ref': 'J101', 'pin': '7'}, 'logic': {'ref': 'J201', 'pin': '7'}}",
+      "name": "cable same electrical net: {'net': 'SYS_3V3', 'power': {'ref': 'J101', 'pin': '7'}, 'logic': {'ref': 'J201', 'pin': '7'}}",
       "pass": true,
       "detail": [
-        "FILTER_OUT",
-        "FILTER_OUT"
+        "SYS_3V3",
+        "SYS_3V3"
       ]
     },
     {
@@ -139,16 +362,16 @@
       ]
     },
     {
-      "name": "cable contacts exist: {'net': 'GND', 'power': {'ref': 'J101', 'pin': '10'}, 'logic': {'ref': 'J201', 'pin': '10'}}",
+      "name": "cable contacts exist: {'net': 'SDA', 'power': {'ref': 'J101', 'pin': '10'}, 'logic': {'ref': 'J201', 'pin': '10'}}",
       "pass": true,
       "detail": null
     },
     {
-      "name": "cable same electrical net: {'net': 'GND', 'power': {'ref': 'J101', 'pin': '10'}, 'logic': {'ref': 'J201', 'pin': '10'}}",
+      "name": "cable same electrical net: {'net': 'SDA', 'power': {'ref': 'J101', 'pin': '10'}, 'logic': {'ref': 'J201', 'pin': '10'}}",
       "pass": true,
       "detail": [
-        "GND",
-        "GND"
+        "SDA",
+        "SDA"
       ]
     },
     {
@@ -165,26 +388,34 @@
       ]
     },
     {
-      "name": "cable contacts exist: {'net': 'GND', 'power': {'ref': 'J101', 'pin': '12'}, 'logic': {'ref': 'J201', 'pin': '12'}}",
+      "name": "cable contacts exist: {'net': 'SCL', 'power': {'ref': 'J101', 'pin': '12'}, 'logic': {'ref': 'J201', 'pin': '12'}}",
       "pass": true,
       "detail": null
     },
     {
-      "name": "cable same electrical net: {'net': 'GND', 'power': {'ref': 'J101', 'pin': '12'}, 'logic': {'ref': 'J201', 'pin': '12'}}",
+      "name": "cable same electrical net: {'net': 'SCL', 'power': {'ref': 'J101', 'pin': '12'}, 'logic': {'ref': 'J201', 'pin': '12'}}",
       "pass": true,
       "detail": [
-        "GND",
-        "GND"
+        "SCL",
+        "SCL"
       ]
     },
     {
-      "name": "exact four interboard nets",
+      "name": "exact twelve physical 1:1 interboard contacts",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "exact declared interboard nets",
       "pass": true,
       "detail": [
         "BAT",
         "FILTER_OUT",
         "GND",
-        "MODE"
+        "MODE",
+        "SCL",
+        "SDA",
+        "SYS_3V3"
       ]
     },
     {
@@ -195,12 +426,66 @@
       ]
     },
     {
+      "name": "POWER exact authorized additional positions",
+      "pass": true,
+      "detail": [
+        "C63",
+        "C64",
+        "J101",
+        "R71",
+        "R72",
+        "R73",
+        "U12"
+      ]
+    },
+    {
+      "name": "LOGIC exact authorized additional positions",
+      "pass": true,
+      "detail": [
+        "H201",
+        "H202",
+        "H203",
+        "H204",
+        "J201"
+      ]
+    },
+    {
+      "name": "original model pins unchanged except exact authorized BAT_SYS override",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "Native R71 keeps raw BAT and BAT_SYS distinct without bypass",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Native raw-battery endpoints stay on shunt BAT side",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Native Kelvin pickup follows proper shunt sides",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Native INA differential RC filter endpoints",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Native INA VS return is separate from lower converter FILTER_OUT",
+      "pass": true,
+      "detail": null
+    },
+    {
       "name": "all connected functional pins exist",
       "pass": true,
       "detail": []
     },
     {
-      "name": "functional pin graph equals S4.16 across cable",
+      "name": "legacy functional pin graph equals S4.16 with declared R71 series projection",
       "pass": true,
       "detail": {
         "expected_groups": 86,
@@ -233,27 +518,392 @@
       "name": "D3/D4 remain local to POWER",
       "pass": true,
       "detail": null
+    },
+    {
+      "name": "original native XML matches frozen hash",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "FakeTec unchanged physical pin/GPIO names M1",
+      "pass": true,
+      "detail": {
+        "baseline": {
+          "1": {
+            "name": "P0.09_/_RADIO_RST",
+            "type": "passive"
+          },
+          "2": {
+            "name": "P0.10_/_DIO1",
+            "type": "passive"
+          },
+          "3": {
+            "name": "P1.11_/_SCK",
+            "type": "passive"
+          },
+          "4": {
+            "name": "P1.13_/_NSS",
+            "type": "passive"
+          },
+          "5": {
+            "name": "P1.15_/_MOSI",
+            "type": "passive"
+          },
+          "6": {
+            "name": "P0.02_/_MISO",
+            "type": "passive"
+          },
+          "7": {
+            "name": "P0.29_/_BUSY",
+            "type": "passive"
+          },
+          "8": {
+            "name": "P0.31_/_BAT_ADC",
+            "type": "passive"
+          },
+          "9": {
+            "name": "VCC_/_MOD_3V3",
+            "type": "passive"
+          },
+          "10": {
+            "name": "RESET",
+            "type": "passive"
+          },
+          "11": {
+            "name": "GND",
+            "type": "passive"
+          },
+          "12": {
+            "name": "RAW_-_NC",
+            "type": "passive"
+          },
+          "13": {
+            "name": "BAT_-_NC",
+            "type": "passive"
+          },
+          "14": {
+            "name": "P1.06_/_spare",
+            "type": "passive"
+          },
+          "15": {
+            "name": "P1.04_/_SDA",
+            "type": "passive"
+          },
+          "16": {
+            "name": "P0.11_/_SCL",
+            "type": "passive"
+          },
+          "17": {
+            "name": "P1.00_/_USER_BTN",
+            "type": "passive"
+          },
+          "18": {
+            "name": "P0.24_/_GPS_EN_/_DIGITAL_OUT",
+            "type": "passive"
+          },
+          "19": {
+            "name": "P0.22_/_GPS_RX",
+            "type": "passive"
+          },
+          "20": {
+            "name": "P0.20_/_GPS_TX",
+            "type": "passive"
+          },
+          "21": {
+            "name": "P0.17_/_RXEN",
+            "type": "passive"
+          },
+          "22": {
+            "name": "GND",
+            "type": "passive"
+          },
+          "23": {
+            "name": "GND",
+            "type": "passive"
+          },
+          "24": {
+            "name": "P0.08_/_UART_RX",
+            "type": "passive"
+          },
+          "25": {
+            "name": "P0.06_/_UART_TX",
+            "type": "passive"
+          },
+          "26": {
+            "name": "GND",
+            "type": "passive"
+          }
+        },
+        "V2_native_XML": {
+          "1": {
+            "name": "P0.09_/_RADIO_RST",
+            "type": "passive"
+          },
+          "2": {
+            "name": "P0.10_/_DIO1",
+            "type": "passive"
+          },
+          "3": {
+            "name": "P1.11_/_SCK",
+            "type": "passive"
+          },
+          "4": {
+            "name": "P1.13_/_NSS",
+            "type": "passive"
+          },
+          "5": {
+            "name": "P1.15_/_MOSI",
+            "type": "passive"
+          },
+          "6": {
+            "name": "P0.02_/_MISO",
+            "type": "passive"
+          },
+          "7": {
+            "name": "P0.29_/_BUSY",
+            "type": "passive"
+          },
+          "8": {
+            "name": "P0.31_/_BAT_ADC",
+            "type": "passive"
+          },
+          "9": {
+            "name": "VCC_/_MOD_3V3",
+            "type": "passive"
+          },
+          "10": {
+            "name": "RESET",
+            "type": "passive"
+          },
+          "11": {
+            "name": "GND",
+            "type": "passive"
+          },
+          "12": {
+            "name": "RAW_-_NC",
+            "type": "passive"
+          },
+          "13": {
+            "name": "BAT_-_NC",
+            "type": "passive"
+          },
+          "14": {
+            "name": "P1.06_/_spare",
+            "type": "passive"
+          },
+          "15": {
+            "name": "P1.04_/_SDA",
+            "type": "passive"
+          },
+          "16": {
+            "name": "P0.11_/_SCL",
+            "type": "passive"
+          },
+          "17": {
+            "name": "P1.00_/_USER_BTN",
+            "type": "passive"
+          },
+          "18": {
+            "name": "P0.24_/_GPS_EN_/_DIGITAL_OUT",
+            "type": "passive"
+          },
+          "19": {
+            "name": "P0.22_/_GPS_RX",
+            "type": "passive"
+          },
+          "20": {
+            "name": "P0.20_/_GPS_TX",
+            "type": "passive"
+          },
+          "21": {
+            "name": "P0.17_/_RXEN",
+            "type": "passive"
+          },
+          "22": {
+            "name": "GND",
+            "type": "passive"
+          },
+          "23": {
+            "name": "GND",
+            "type": "passive"
+          },
+          "24": {
+            "name": "P0.08_/_UART_RX",
+            "type": "passive"
+          },
+          "25": {
+            "name": "P0.06_/_UART_TX",
+            "type": "passive"
+          },
+          "26": {
+            "name": "GND",
+            "type": "passive"
+          }
+        }
+      }
+    },
+    {
+      "name": "FakeTec unchanged physical pin/GPIO names M2",
+      "pass": true,
+      "detail": {
+        "baseline": {
+          "1": {
+            "name": "ANT",
+            "type": "passive"
+          },
+          "2": {
+            "name": "GND",
+            "type": "passive"
+          },
+          "3": {
+            "name": "3V3",
+            "type": "passive"
+          },
+          "4": {
+            "name": "RST",
+            "type": "passive"
+          },
+          "5": {
+            "name": "TXEN_=_DIO2",
+            "type": "passive"
+          },
+          "6": {
+            "name": "DIO1",
+            "type": "passive"
+          },
+          "7": {
+            "name": "DIO2_=_TXEN",
+            "type": "passive"
+          },
+          "8": {
+            "name": "DIO3",
+            "type": "passive"
+          },
+          "9": {
+            "name": "GND",
+            "type": "passive"
+          },
+          "10": {
+            "name": "BUSY",
+            "type": "passive"
+          },
+          "11": {
+            "name": "RXEN",
+            "type": "passive"
+          },
+          "12": {
+            "name": "SCK",
+            "type": "passive"
+          },
+          "13": {
+            "name": "MISO",
+            "type": "passive"
+          },
+          "14": {
+            "name": "MOSI",
+            "type": "passive"
+          },
+          "15": {
+            "name": "NSS",
+            "type": "passive"
+          },
+          "16": {
+            "name": "GND",
+            "type": "passive"
+          }
+        },
+        "V2_native_XML": {
+          "1": {
+            "name": "ANT",
+            "type": "passive"
+          },
+          "2": {
+            "name": "GND",
+            "type": "passive"
+          },
+          "3": {
+            "name": "3V3",
+            "type": "passive"
+          },
+          "4": {
+            "name": "RST",
+            "type": "passive"
+          },
+          "5": {
+            "name": "TXEN_=_DIO2",
+            "type": "passive"
+          },
+          "6": {
+            "name": "DIO1",
+            "type": "passive"
+          },
+          "7": {
+            "name": "DIO2_=_TXEN",
+            "type": "passive"
+          },
+          "8": {
+            "name": "DIO3",
+            "type": "passive"
+          },
+          "9": {
+            "name": "GND",
+            "type": "passive"
+          },
+          "10": {
+            "name": "BUSY",
+            "type": "passive"
+          },
+          "11": {
+            "name": "RXEN",
+            "type": "passive"
+          },
+          "12": {
+            "name": "SCK",
+            "type": "passive"
+          },
+          "13": {
+            "name": "MISO",
+            "type": "passive"
+          },
+          "14": {
+            "name": "MOSI",
+            "type": "passive"
+          },
+          "15": {
+            "name": "NSS",
+            "type": "passive"
+          },
+          "16": {
+            "name": "GND",
+            "type": "passive"
+          }
+        }
+      }
     }
   ],
   "inputs": {
     "design\\v2_electrical_contract.json": "478b416c5fa28fbe4cebbc594eb1b519e90cb6c393aba6f58130b6fecffdac08",
-    "audit\\schematic\\POWER\\netlist.xml": "c8b60e49b3b2217d2867cb1e5f104f25c931c6770672cb5b75b5289562da571e",
-    "audit\\schematic\\LOGIC\\netlist.xml": "d3539ba04100f9a10fb11c8b6d47c73252f1791b81f412a0323a5eaeec0a894d",
-    "design\\MeshRepeater2_Power\\model.json": "4ae809f8dabec401a68c193432beecf15771c0c0392094c52c7d423df961b07b",
-    "design\\MeshRepeater2_Logic\\model.json": "ef66e50d9971793f8a913534b8ea54fcb36d475d0f10a778d47b498b215070db",
-    "design\\interboard_cable.json": "f3cbf52237a6257fc11b384e1438703a8363b237d7eaef95db1f8439dfed44ac",
-    "design\\MeshRepeater2_Power\\Converter.kicad_sch": "6e91b009695bb7283a15f442cb54ec670282a9dea60c1df20886eccd286b8820",
-    "design\\MeshRepeater2_Power\\Interconnect.kicad_sch": "8f3744a5ff558d1f64e58697d6fac9cc34ad79ac2d7bfd0725496d754e97770d",
-    "design\\MeshRepeater2_Power\\LTO_Balancer.kicad_sch": "a28eb02a594f9761bdd64751da7d011adefc20dab62edd256e32237cd8bb970b",
-    "design\\MeshRepeater2_Power\\MeshRepeater2_Power.kicad_sch": "62e3fb44653c8f33c37c6dae277f6ddec163b0c53976149aad170373fb0e07bf",
-    "design\\MeshRepeater2_Power\\Thermal.kicad_sch": "48873907fd38d51fdc8f7060f5bc5ced3abfbadce1a012a1fe711c5e52217220",
-    "design\\MeshRepeater2_Power\\Meshcore.kicad_sym": "739fd6d7d8235c938bcd2d31d8d9288d7b6cd0d461a31b2e6bef7d3e53ef1c64",
-    "design\\MeshRepeater2_Power\\MeshRepeater2_Power.kicad_pro": "65a5e3dfe52eb63e95fcfc8980c70262369b402bb310eba017c4327fb44efe37",
-    "design\\MeshRepeater2_Logic\\Interconnect.kicad_sch": "34b813633f09bb2e04646bda29d41ff0d48d9044cf0f0161ba37be060308a111",
-    "design\\MeshRepeater2_Logic\\MeshRepeater2_Logic.kicad_sch": "fc8f0c7d775f112c7f0910022600df16e804a813fecf762757bac31d4724e375",
-    "design\\MeshRepeater2_Logic\\RTC_IO.kicad_sch": "6f3f41da49f799c9f473e9529e48e4fe6191e7d02848e9254d67d35167a3a353",
-    "design\\MeshRepeater2_Logic\\Watchdog.kicad_sch": "4d44bb8fc82632da8ed3a7c8f833ef40884944034ede255b0398c0034dce8e4b",
-    "design\\MeshRepeater2_Logic\\Meshcore.kicad_sym": "1d474a1fc8a59b6251260a8232e847ac95b4a159fe9d2f4a78c1f2201033bcd4",
+    "audit\\schematic\\POWER\\netlist.xml": "191b9e9c16ff9448ddd7a209b3cef117b4deea4ceae7a7361b908cc1883c57da",
+    "audit\\schematic\\LOGIC\\netlist.xml": "ed99638d565908b62af422668574854a0fd53af2e4b2acb3c2faab3038dda209",
+    "design\\MeshRepeater2_Power\\model.json": "8047db72825784315a9204b069fcbf96249d16ccbbe3642f6936bea83b4631c0",
+    "design\\MeshRepeater2_Logic\\model.json": "bd86ec187e55fda26c2089d62869faf38c81319e0b2f769aa08807a3daf57efe",
+    "design\\interboard_cable.json": "6bb676777af64ca3bf39032b7205314ba47641a2bce39509b77200df51b439f0",
+    "audit\\source_s4_16\\native_netlist.xml": "14b479e30ab779ca2c8af2465e6ccee1ccf8aeb26e435c4c3a84bb1cc51662d3",
+    "design\\feature_ina219_vertical.json": "693b5e48ba9c76f279b386b4c0329c77291013b6305e4e3bf458e72c796adf8b",
+    "tools\\v2_feature_contract.py": "36f875828c7f3e16c6917d47e6641f1fb85bbe97079add98f4f4941230736205",
+    "design\\MeshRepeater2_Power\\BatteryMonitor.kicad_sch": "b30a8d1673a737cb9605284504b40b1f518e281f47c400a22086f24413774bc3",
+    "design\\MeshRepeater2_Power\\Converter.kicad_sch": "2298eef9d0adf98a3e3c1649e2236517d06a547f2300a03e1aaa9ba0299241a4",
+    "design\\MeshRepeater2_Power\\Interconnect.kicad_sch": "733a36d7ff9bdf83b251f02f0626b1d90115d6151672bc76ec640f519822acbe",
+    "design\\MeshRepeater2_Power\\LTO_Balancer.kicad_sch": "41f77e6c58d0af4a9d9490cc840f50fffcc2d0ebf438d18d8bdb22f579092968",
+    "design\\MeshRepeater2_Power\\MeshRepeater2_Power.kicad_sch": "4a614cbd067103499edc759fb688bdc2d0d4ac247b4c41b461a2a7f054970a78",
+    "design\\MeshRepeater2_Power\\Thermal.kicad_sch": "5a52b94ebc267054040ca90d7dafec9ee989b3ccdae5c354adf29596ec0f8ae7",
+    "design\\MeshRepeater2_Power\\Meshcore.kicad_sym": "184164e1a7b5bc2559f95030e5f707be6af80fe3106b9c072b3b1c721ec73b98",
+    "design\\MeshRepeater2_Power\\MeshRepeater2_Power.kicad_pro": "0f8bb143c5b5bbc5c07a14ef9e8cf618edd894778c6a6f8fb581836a9bd21e89",
+    "design\\MeshRepeater2_Logic\\Interconnect.kicad_sch": "d9c32344af4412d78033dc9e6158424ee63262775481f32a44c35ab7b5e58a92",
+    "design\\MeshRepeater2_Logic\\MeshRepeater2_Logic.kicad_sch": "f5bc0fe46b4152e5c8c9d890306414fd29a0dcf072f5485ca6d4dcdcbecdb239",
+    "design\\MeshRepeater2_Logic\\RTC_IO.kicad_sch": "d3a172dbb1a717b14f99b89c9efc9bfe78962ab724e1ae937cdb63828a240210",
+    "design\\MeshRepeater2_Logic\\Watchdog.kicad_sch": "1895876037045950d89f70329235b5d3586aba2a9ca4eb23777b35d84a593562",
+    "design\\MeshRepeater2_Logic\\Meshcore.kicad_sym": "fabff860cb4993d5d2199175cadd32d2c8b4744e85c8fd8090e98784d6c51b23",
     "design\\MeshRepeater2_Logic\\MeshRepeater2_Logic.kicad_pro": "6b2143e9ee1c0ab33f29390652732cd7be74381df98d50c087c77630234d8144"
   }
 }

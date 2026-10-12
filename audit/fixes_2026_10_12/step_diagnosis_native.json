@@ -1,0 +1,323 @@
+{
+  "input": "design\\MeshRepeater2_Logic\\MeshRepeater2_Logic.kicad_pcb",
+  "sha256": "6cbd7850caa14163ebe4d40aba4435ac8fe17f327d68419dfb94e0a1bc361bc8",
+  "native_unchanged": true,
+  "targets_mm": [
+    [
+      36.241763,
+      11.878018,
+      36.390318,
+      11.960842
+    ],
+    [
+      32.721615,
+      11.520504,
+      32.922606,
+      11.635013
+    ]
+  ],
+  "zone_counts": {
+    "F.Cu:GND:GND_TOP": {
+      "outlines": 18,
+      "holes": 19,
+      "global_self_intersection_check": "Not used for manufacturing verdict: saved fill uses weakly-simple contour/hole link encoding; local Boolean-clipped planar areas checked separately."
+    },
+    "F.Cu:GND:RF_CPW_GND_1": {
+      "outlines": 2,
+      "holes": 1,
+      "global_self_intersection_check": "Not used for manufacturing verdict: saved fill uses weakly-simple contour/hole link encoding; local Boolean-clipped planar areas checked separately."
+    },
+    "B.Cu:GND:GND_REFERENCE": {
+      "outlines": 9,
+      "holes": 26,
+      "global_self_intersection_check": "Not used for manufacturing verdict: saved fill uses weakly-simple contour/hole link encoding; local Boolean-clipped planar areas checked separately."
+    }
+  },
+  "matching_native_contours": [],
+  "nearby_pads": [
+    {
+      "ref": "C24",
+      "pin": "2",
+      "net": "GND",
+      "at_mm": [
+        37.6,
+        13.1
+      ],
+      "size_mm": [
+        1.0,
+        1.45
+      ],
+      "layer": "F.Cu"
+    },
+    {
+      "ref": "C22",
+      "pin": "1",
+      "net": "SYS_3V3",
+      "at_mm": [
+        32.1,
+        12.25
+      ],
+      "size_mm": [
+        1.0,
+        1.45
+      ],
+      "layer": "F.Cu"
+    },
+    {
+      "ref": "C22",
+      "pin": "2",
+      "net": "GND",
+      "at_mm": [
+        32.1,
+        10.35
+      ],
+      "size_mm": [
+        1.0,
+        1.45
+      ],
+      "layer": "F.Cu"
+    },
+    {
+      "ref": "C23",
+      "pin": "1",
+      "net": "/RADIO_3V3",
+      "at_mm": [
+        35.6,
+        12.6
+      ],
+      "size_mm": [
+        1.0,
+        1.45
+      ],
+      "layer": "F.Cu"
+    },
+    {
+      "ref": "C23",
+      "pin": "2",
+      "net": "GND",
+      "at_mm": [
+        35.6,
+        10.7
+      ],
+      "size_mm": [
+        1.0,
+        1.45
+      ],
+      "layer": "F.Cu"
+    }
+  ],
+  "clipped_native_filled_area_at_warning_boxes": [
+    {
+      "target_index": 0,
+      "layer": "F.Cu",
+      "net": "GND",
+      "zone": "GND_TOP",
+      "zone_uuid": "5989b2e1-22a1-44ff-bb18-b5c6fed99116",
+      "clip_margin_mm": 0.01,
+      "polygon_self_intersecting": false,
+      "regions": [
+        {
+          "outline": {
+            "points": [
+              [
+                36.31733,
+                11.906203
+              ],
+              [
+                36.400318,
+                11.968328
+              ],
+              [
+                36.400318,
+                11.970842
+              ],
+              [
+                36.319907,
+                11.970842
+              ],
+              [
+                36.287883,
+                11.947207
+              ],
+              [
+                36.231763,
+                11.927569
+              ],
+              [
+                36.231763,
+                11.874288
+              ]
+            ],
+            "bbox_mm": [
+              36.231763,
+              11.874288,
+              36.400318,
+              11.970842
+            ],
+            "area_mm2": 0.0074269651975,
+            "closed": true
+          },
+          "holes": []
+        }
+      ],
+      "filled_area_mm2": 0.0074269651975
+    },
+    {
+      "target_index": 1,
+      "layer": "F.Cu",
+      "net": "GND",
+      "zone": "GND_TOP",
+      "zone_uuid": "5989b2e1-22a1-44ff-bb18-b5c6fed99116",
+      "clip_margin_mm": 0.01,
+      "polygon_self_intersecting": false,
+      "regions": [
+        {
+          "outline": {
+            "points": [
+              [
+                32.81733,
+                11.556203
+              ],
+              [
+                32.932546,
+                11.642454
+              ],
+              [
+                32.932606,
+                11.642534
+              ],
+              [
+                32.932606,
+                11.645013
+              ],
+              [
+                32.852658,
+                11.645013
+              ],
+              [
+                32.787883,
+                11.597207
+              ],
+              [
+                32.711615,
+                11.570519
+              ],
+              [
+                32.711615,
+                11.516774
+              ]
+            ],
+            "bbox_mm": [
+              32.711615,
+              11.516774,
+              32.932606,
+              11.645013
+            ],
+            "area_mm2": 0.0105242989845,
+            "closed": true
+          },
+          "holes": []
+        }
+      ],
+      "filled_area_mm2": 0.0105242989845
+    },
+    {
+      "target_index": 0,
+      "layer": "F.Cu",
+      "net": "GND",
+      "zone": "RF_CPW_GND_1",
+      "zone_uuid": "d9c3640b-4cc2-4529-945e-d2479332016f",
+      "clip_margin_mm": 0.01,
+      "polygon_self_intersecting": false,
+      "regions": [
+        {
+          "outline": {
+            "points": [
+              [
+                36.400318,
+                11.968327
+              ],
+              [
+                36.317329,
+                11.906202
+              ],
+              [
+                36.231763,
+                11.874288
+              ],
+              [
+                36.231763,
+                11.868018
+              ],
+              [
+                36.400318,
+                11.868018
+              ]
+            ],
+            "bbox_mm": [
+              36.231763,
+              11.868018,
+              36.400318,
+              11.968327
+            ],
+            "area_mm2": 0.0076485732705,
+            "closed": true
+          },
+          "holes": []
+        }
+      ],
+      "filled_area_mm2": 0.0076485732705
+    },
+    {
+      "target_index": 1,
+      "layer": "F.Cu",
+      "net": "GND",
+      "zone": "RF_CPW_GND_1",
+      "zone_uuid": "d9c3640b-4cc2-4529-945e-d2479332016f",
+      "clip_margin_mm": 0.01,
+      "polygon_self_intersecting": false,
+      "regions": [
+        {
+          "outline": {
+            "points": [
+              [
+                32.932606,
+                11.642534
+              ],
+              [
+                32.932546,
+                11.642454
+              ],
+              [
+                32.817329,
+                11.556202
+              ],
+              [
+                32.711615,
+                11.516774
+              ],
+              [
+                32.711615,
+                11.510504
+              ],
+              [
+                32.932606,
+                11.510504
+              ]
+            ],
+            "bbox_mm": [
+              32.711615,
+              11.510504,
+              32.932606,
+              11.642534
+            ],
+            "area_mm2": 0.012988826784,
+            "closed": true
+          },
+          "holes": []
+        }
+      ],
+      "filled_area_mm2": 0.012988826784
+    }
+  ]
+}

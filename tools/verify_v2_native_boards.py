@@ -12,11 +12,13 @@ import json
 import math
 import xml.etree.ElementTree as ET
 import pcbnew as k
+from v2_feature_contract import (FEATURE_PATH, PINMAP, NEW_NETS, INA_SOIC_PIN_NAMES, load_feature,
+    expected_original_nets, feature_checks, feature_native_checks, legacy_union)
 
 ROOT = Path(__file__).resolve().parents[1]
-WORKSPACE = ROOT.parents[1]
+WORKSPACE = ROOT.parent.parent if ROOT.parent.name == "projects" else ROOT.parent
 BOARDS = {"POWER": "MeshRepeater2_Power", "LOGIC": "MeshRepeater2_Logic"}
-EXPECTED_CABLE = {str(n): "FILTER_OUT" if n in (1, 3, 5, 7) else "BAT" if n == 9 else "MODE" if n == 11 else "GND" for n in range(1, 13)}
+LEGACY_CABLE = {str(n): "FILTER_OUT" if n in (1, 3, 5, 7) else "BAT" if n == 9 else "MODE" if n == 11 else "GND" for n in range(1, 13)}
 
 
 def sha(path):
@@ -79,6 +81,8 @@ def main():
     contract_path = ROOT / "design" / "v2_electrical_contract.json"
     cable_path = ROOT / "design" / "interboard_cable.json"
     contract = json.loads(contract_path.read_text(encoding="utf-8"))
+    feature = load_feature(contract_path)
+    expected_cable = PINMAP if feature else LEGACY_CABLE
     cable = json.loads(cable_path.read_text(encoding="utf-8"))
     source = {p["reference"]: p for p in contract["parts"]}
     # This immutable copy proves that GPIO *names* still refer to the same
@@ -86,6 +90,8 @@ def main():
     # the proof is portable and does not depend on the old workspace folders.
     original_xml_path = ROOT / "audit" / "source_s4_16" / "native_netlist.xml"
     paths = [contract_path, cable_path, original_xml_path]
+    if feature:
+        paths.extend([FEATURE_PATH, ROOT / "tools" / "v2_feature_contract.py"])
     board_inputs = {}
     for board, project in BOARDS.items():
         folder = ROOT / "design" / project
@@ -146,7 +152,7 @@ def main():
                 allowed_extra = {"4": None} if ref == "J12" else {}
                 # The accepted stack explicitly turns the four original
                 # mechanical holes into exposed GND-contact mounting lands.
-                expected_nets = {"1": "GND"} if ref in {"H1", "H2", "H3", "H4"} and original["original_model_part"]["kind"] == "MountingHole" else dict(old_nets, **allowed_extra)
+                expected_nets = {"1": "GND"} if ref in {"H1", "H2", "H3", "H4"} and original["original_model_part"]["kind"] == "MountingHole" else expected_original_nets(board, ref, dict(old_nets, **allowed_extra), feature)
                 if part["nets"] != expected_nets:
                     pin_errors.append({"reference": ref, "model_nets": part["nets"], "expected": expected_nets})
                 row = original["assembly_variant_row"]
@@ -213,10 +219,18 @@ def main():
     frame_review = json.loads(frame_review_path.read_text(encoding="utf-8"))
     check("exact documented SH1 mechanical removal", removed == ["SH1"] and shield.get("frame_fitted") is False and frame_review["accepted_decision"]["choice"] == "C", removed)
     check("retained original references allocated once", len(original_seen) == len(set(original_seen)) == 166)
+    if feature:
+        allowed_new = {"POWER": set(NEW_NETS) | {"J101"}, "LOGIC": {"J201", "H201", "H202", "H203", "H204"}}
+        for board in BOARDS:
+            extras = set(data[board]["parts"]) - set(source)
+            check(board + " exactly authorized additional positions", extras == allowed_new[board], sorted(extras))
+        checks.extend(feature_checks({board: d["model"] for board, d in data.items()}, feature))
+        ina_names = {pin: fields["name"] for pin, fields in symbol_pins(data["POWER"]["xml"][0], data["POWER"]["xml"][1], "U12").items()} if "U12" in data["POWER"]["xml"][1] else {}
+        check("INA219 native SOIC8 physical pin names match TI", ina_names == INA_SOIC_PIN_NAMES, {"expected": INA_SOIC_PIN_NAMES, "actual": ina_names})
     check("no SH1 footprint on either final board", all("SH1" not in d["footprints"] for d in data.values()))
     links = cable.get("connections", [])
     actual_cable = {str(link["power"]["pin"]): link["net"] for link in links}
-    check("exact twelve-pin 1:1 cable", len(links) == 12 and actual_cable == EXPECTED_CABLE and all(link["power"]["ref"] == "J101" and link["logic"]["ref"] == "J201" and str(link["power"]["pin"]) == str(link["logic"]["pin"]) for link in links))
+    check("exact twelve-pin 1:1 interconnect", len(links) == 12 and actual_cable == expected_cable and all(link["power"]["ref"] == "J101" and link["logic"]["ref"] == "J201" and str(link["power"]["pin"]) == str(link["logic"]["pin"]) for link in links))
     cable_errors = []
     for link in links:
         ends = []
@@ -230,6 +244,11 @@ def main():
         if all(ends):
             native_union.join(*ends)
     check("cable endpoints native assigned nets", not cable_errors, cable_errors)
+    native_pin_net = {(board, ref, pin): net for board, d in data.items() for (ref, pin), net in d["pin_net"].items()}
+    checks.extend(feature_native_checks(native_pin_net, feature))
+    # Copy the physical union. R71 is virtually collapsed only in the legacy
+    # endpoint projection; model/PCB/XML proofs above preserve both pack nets.
+    projected_union = legacy_union(native_union, native_pin_net, feature)
     expected_global, pcb_global = defaultdict(set), defaultdict(set)
     for net in contract["nets"]:
         for node in net["nodes"]:
@@ -239,15 +258,15 @@ def main():
             expected_global[net["logical_net"]].add((ref, pin))
             native_net = data[board]["pin_net"].get((ref, pin))
             if native_net is not None:
-                pcb_global[native_union.root(native_net)].add((ref, pin))
+                pcb_global[projected_union.root(native_net)].add((ref, pin))
     eg, pg = group_set(expected_global), group_set(pcb_global)
-    check("PCB functional assigned net graph equals S4.16 across cable", eg == pg, group_delta(eg, pg))
+    check("PCB legacy functional graph equals S4.16 with declared R71 series projection", eg == pg, group_delta(eg, pg))
     logic = data["LOGIC"]
     for ref in ["M1", "M2"]:
         old_pin_names = symbol_pins(original_xml[0], original_xml[1], ref)
         new_pin_names = symbol_pins(logic["xml"][0], logic["xml"][1], ref)
         check("FakeTec unchanged physical pin/GPIO names " + ref, new_pin_names == old_pin_names, {"baseline": old_pin_names, "V2_native_XML": new_pin_names})
-    check("J11 assigned FILTER_OUT remains distinct from SYS_3V3", logic["parts"]["J11"]["nets"] == {"1": "FILTER_OUT", "2": "SYS_3V3"} and logic["pin_net"][("J11", "1")] != logic["pin_net"][("J11", "2")] and all(p["nets"].get(str(n)) != "SYS_3V3" for d in data.values() for p in d["parts"].values() if p["ref"] in {"J101", "J201"} for n in range(1, 13)))
+    check("J11 assigned FILTER_OUT remains distinct from SYS_3V3", logic["parts"]["J11"]["nets"] == {"1": "FILTER_OUT", "2": "SYS_3V3"} and logic["pin_net"][("J11", "1")] != logic["pin_net"][("J11", "2")] and native_union.root(logic["pin_net"][("J11", "1")]) != native_union.root(logic["pin_net"][("J11", "2")]))
     j10 = logic["parts"]["J10"]
     old_j10 = source["J10"]["original_model_part"]
     j10_selected_footprint = j10.get("source_footprint_before_v2_graphic_variant", j10["footprint"])

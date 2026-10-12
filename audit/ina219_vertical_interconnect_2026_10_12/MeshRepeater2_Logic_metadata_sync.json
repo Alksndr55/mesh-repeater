@@ -1,0 +1,73 @@
+{
+  "pcb": "design\\MeshRepeater2_Logic\\MeshRepeater2_Logic.kicad_pcb",
+  "model": "design\\MeshRepeater2_Logic\\model.json",
+  "xml": "audit\\schematic\\LOGIC\\netlist.xml",
+  "input_sha256": {
+    "pcb": "0a174296e629f1656889efbf2430eeffb4a1df0c953f14be6d18eff6a8beb93b",
+    "model": "e9ea37e01e303f8252d05cfc11ef28fb713e3655dc2c50fc87fa949142ad6123",
+    "xml": "edde7a218d798b60d2884fc030ce8313e3d5ffbb69a6539252e0a5e540b35d4f"
+  },
+  "allowed_mutations": [
+    "footprint property text values",
+    "new hidden property fields",
+    "schematic instance path"
+  ],
+  "unchanged": [
+    "footprint library ID and UUID",
+    "placement and orientation",
+    "existing field style",
+    "pads and nets",
+    "tracks and vias",
+    "zones and filled geometry",
+    "3D models",
+    "all non-property footprint artwork",
+    "project settings"
+  ],
+  "changes": [
+    {
+      "ref": "J201",
+      "fields": {
+        "MPN": {
+          "before": "MTJ/JinSheng 2x6P H8.5",
+          "after": "MTJ H8.5 2X6P 10PCS"
+        },
+        "Value_NaIon": {
+          "before": "INTERBOARD 12P",
+          "after": "INTERBOARD 2x6 VERTICAL"
+        },
+        "Value_LTO_2S": {
+          "before": "INTERBOARD 12P",
+          "after": "INTERBOARD 2x6 VERTICAL"
+        },
+        "MPN_NaIon": {
+          "before": "Connfly DS1013-12RSIB-B-0",
+          "after": "MTJ H8.5 2X6P 10PCS"
+        },
+        "MPN_LTO_2S": {
+          "before": "Connfly DS1013-12RSIB-B-0",
+          "after": "MTJ H8.5 2X6P 10PCS"
+        },
+        "Value_NaIon_NoCold": {
+          "before": "INTERBOARD 12P",
+          "after": "INTERBOARD 2x6 VERTICAL"
+        },
+        "MPN_NaIon_NoCold": {
+          "before": "Connfly DS1013-12RSIB-B-0",
+          "after": "MTJ H8.5 2X6P 10PCS"
+        },
+        "Description": {
+          "before": "R/A drawing rotated to solder tails down.13.8mm is plan reach;9.1mm is assembled height. Body depth8.8mm. Hole1.02±0.05. Mechanical v2 package; original functional pin numbers retained.",
+          "after": "Direct vertical connection through 12 isolated screen holes. Mirrored female pad grid gives physical 1:1 after LOGIC X180. Pin7 returns SYS_3V3 to INA219 only; remove J11 before USB as before. Exact generic pin section and mating limits require sample check."
+        }
+      },
+      "path_before": "/105ad8a7-7e6b-542d-bfd4-ec797b1696df/f41cb747-67df-583a-8b1a-9bd19e8f35ea/d1ec0ec5-2e71-5f70-a3d2-eae70a9d0034",
+      "path_after": "/105ad8a7-7e6b-542d-bfd4-ec797b1696df/f41cb747-67df-583a-8b1a-9bd19e8f35ea/d1ec0ec5-2e71-5f70-a3d2-eae70a9d0034",
+      "value_before": "INTERBOARD 12P",
+      "value_after": "INTERBOARD 2x6 VERTICAL"
+    }
+  ],
+  "check_only": false,
+  "status": "SYNCED_WITH_SAVED_GEOMETRY_INVARIANT",
+  "masked_geometry_sha256": "e85e5cb623b69de89b677895529af44dc31f0c95bbfcddbf3330051734bc4f26",
+  "native_sha256": "84ebed21b4664c394ff434e9f69d1a2ff8cad086f18ba9a2ee31c5701789f812"
+}
