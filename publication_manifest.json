@@ -19,12 +19,10 @@
     "ground_pads": 111,
     "ground_vias": 237
   },
-  "status": "complete publication candidate; prototype qualification remains pending",
+  "status": "published CAD S4.21; licensing metadata updated; prototype qualification remains pending",
   "preserved_verbatim": [
     ".gitignore",
     ".gitattributes",
-    "LICENSE.md",
-    "THIRD_PARTY_NOTICES.md",
     "LICENSES/CC-BY-SA-4.0.txt",
     "LICENSES/CERN-OHL-P-2.0.txt",
     "LICENSES/KiCad-Libraries-LICENSE.md",
@@ -53,10 +51,18 @@
     },
     {
       "file": "LICENSE.md",
-      "bytes": 1105,
-      "sha256": "a9d03581c5fb34cb085fad67f831f33e41c088f060557c686550b8252d82840d",
-      "source": "release\\mesh-repeater\\LICENSE.md",
-      "source_sha256": "a9d03581c5fb34cb085fad67f831f33e41c088f060557c686550b8252d82840d"
+      "bytes": 8760,
+      "sha256": "f6ca656161874be5257687a0e75925ccd3cc10ec458fdd352ee7e075d87328ab",
+      "source": "release/mesh-repeater/LICENSE.md",
+      "source_sha256": "f6ca656161874be5257687a0e75925ccd3cc10ec458fdd352ee7e075d87328ab"
+    },
+    {
+      "file": "LICENSES/CC-BY-NC-SA-4.0.txt",
+      "bytes": 20850,
+      "sha256": "e66c269d4819aaab34b49ef5220c4ddab6756f21bb5180761a4eb8561f2b7bbd",
+      "source": "v1/audit/s4_21_license_cc_by_nc_sa_20261018/official/CC-BY-NC-SA-4.0.txt",
+      "source_sha256": "e66c269d4819aaab34b49ef5220c4ddab6756f21bb5180761a4eb8561f2b7bbd",
+      "upstream_url": "https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode.txt"
     },
     {
       "file": "LICENSES/CC-BY-SA-4.0.txt",
@@ -81,16 +87,17 @@
     },
     {
       "file": "README.md",
-      "bytes": 10711,
-      "sha256": "6df6df54a5dcdd8d8b9d84534e77eefbc5694f7f6fa9ccbb1fe75355683f86b2",
-      "source": "generated from measured S4.21 sources"
+      "bytes": 12662,
+      "sha256": "7fdd60f2eb16109b69368ef6cf40fb6026a10b229919bc8a9b12275c2579cc64",
+      "source": "release/mesh-repeater/README.md",
+      "source_sha256": "7fdd60f2eb16109b69368ef6cf40fb6026a10b229919bc8a9b12275c2579cc64"
     },
     {
       "file": "THIRD_PARTY_NOTICES.md",
-      "bytes": 9094,
-      "sha256": "031803f5f485d09b8e342884c71e50873396f0de363a787eb8e1bea17d8ce8c2",
-      "source": "release\\mesh-repeater\\THIRD_PARTY_NOTICES.md",
-      "source_sha256": "031803f5f485d09b8e342884c71e50873396f0de363a787eb8e1bea17d8ce8c2"
+      "bytes": 11249,
+      "sha256": "244f80642b97c8f105d11c10c5a2c97f79fefe13c78d3719506b51ecf62d85eb",
+      "source": "release/mesh-repeater/THIRD_PARTY_NOTICES.md",
+      "source_sha256": "244f80642b97c8f105d11c10c5a2c97f79fefe13c78d3719506b51ecf62d85eb"
     },
     {
       "file": "audit/s4_21_gerber_rezonit_20261018/manufacturing/cam_contract.json",
@@ -1031,9 +1038,10 @@
     },
     {
       "file": "design/Meshcore_NaIon/asset_manifest.json",
-      "bytes": 85897,
-      "sha256": "c6716dca515675effd58fa759c4d9b15a4044b2d30b74f51c1d7af153206c2f1",
-      "source": "generated from measured S4.21 sources"
+      "bytes": 94067,
+      "sha256": "af451f0ce000ba8a78021795e022c6430af9a307d27d7ed5adfd5d69e9e9bf79",
+      "source": "release/mesh-repeater/design/Meshcore_NaIon/asset_manifest.json",
+      "source_sha256": "af451f0ce000ba8a78021795e022c6430af9a307d27d7ed5adfd5d69e9e9bf79"
     },
     {
       "file": "design/Meshcore_NaIon/datasheets/LM285_ON_latest.pdf",
@@ -1106,6 +1114,13 @@
       "source_sha256": "8c5608bf71b3f6394ca41eb1fffb22b0e2d1df411d991fbfcab12c77c6647695"
     },
     {
+      "file": "design/watchdog_reference/LICENSE.md",
+      "bytes": 1155,
+      "sha256": "f50626425d0370c5b3c6762b97a8bb70cc5fa04650bcf183fb4123be69d5acb9",
+      "source": "release/mesh-repeater/design/watchdog_reference/LICENSE.md",
+      "source_sha256": "f50626425d0370c5b3c6762b97a8bb70cc5fa04650bcf183fb4123be69d5acb9"
+    },
+    {
       "file": "design/watchdog_reference/Makefile",
       "bytes": 1387,
       "sha256": "6db1d4d6a15dc0c3f893eab0180ef9f4c84209461d83a551d6c2956de29965b8",
@@ -1147,10 +1162,10 @@
     },
     {
       "file": "docs/S4_21_REZONIT_ORDER_RU.txt",
-      "bytes": 3183,
-      "sha256": "84ec78e7fd91c823916ec367b04d42ddafb954580ee28b59eddd7edfe8441829",
-      "source": "v1\\docs\\S4_21_REZONIT_ORDER_RU.txt",
-      "source_sha256": "84ec78e7fd91c823916ec367b04d42ddafb954580ee28b59eddd7edfe8441829"
+      "bytes": 4320,
+      "sha256": "7813bb7e4b712bc01160370b67324d9c0ad8dbb214043407f652d63117c51007",
+      "source": "release/mesh-repeater/docs/S4_21_REZONIT_ORDER_RU.txt",
+      "source_sha256": "7813bb7e4b712bc01160370b67324d9c0ad8dbb214043407f652d63117c51007"
     },
     {
       "file": "output/Mesh_Repeater_S4_21_Rezonit_Gerber.zip",
@@ -1265,5 +1280,34 @@
     }
   ],
   "hash_scope": "entries covers all payload except this self-describing manifest and SHA256SUMS; SHA256SUMS covers all files except itself.",
-  "export_provenance_note": "The independent_cam_validation_pending flag records export time. The separately included final CAM 59/59 contract supersedes it and is bound to the same board/archive hashes."
+  "export_provenance_note": "The independent_cam_validation_pending flag records export time. The separately included final CAM 59/59 contract supersedes it and is bound to the same board/archive hashes.",
+  "licensing": {
+    "revision": "2026-10-18-CC-BY-NC-SA-4.0",
+    "own_contributions": "CC-BY-NC-SA-4.0",
+    "rights_holder": "Alksndr55 / Designed by @Alksndritm",
+    "scope_and_additional_permission": "LICENSE.md",
+    "full_license_text": "LICENSES/CC-BY-NC-SA-4.0.txt",
+    "personal_pcb_order": "Paid contract PCB fabrication solely for an individual customer's personal noncommercial assembly and use is additionally permitted; supplying those ordered boards to that customer is permitted.",
+    "commercial_production_and_sale": "Prior written permission from Alksndr55 required for licensed original contributions, except the explicitly permitted personal PCB order; no restriction on independent third-party rights or statutory exceptions.",
+    "third_party_licenses_preserved": true,
+    "asset_classification": {
+      "project_generated": 30,
+      "KiCad_including_verified_duplicate": 25,
+      "unknown_origin": 34
+    },
+    "baseline_commit": "91c1bc9184fe1b18f9882664e0c94c19444f1546",
+    "cad_cam_code_and_existing_license_payload_unchanged": true,
+    "updated_metadata": [
+      "LICENSE.md",
+      "LICENSES/CC-BY-NC-SA-4.0.txt",
+      "README.md",
+      "SHA256SUMS",
+      "THIRD_PARTY_NOTICES.md",
+      "design/Meshcore_NaIon/asset_manifest.json",
+      "design/watchdog_reference/LICENSE.md",
+      "docs/S4_21_REZONIT_ORDER_RU.txt",
+      "publication_manifest.json"
+    ],
+    "historical_audit_records_and_archives": "Preserved byte-for-byte; references to earlier licensing status in frozen historical evidence describe that earlier snapshot."
+  }
 }

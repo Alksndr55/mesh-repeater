@@ -4,7 +4,7 @@
   "date": "2026-10-18",
   "board_sha256": "be14cae202912ebb00e5dc758b2eae04cbe6733d4cb73df00044fdb03670fab3",
   "scope": "All current local assets, including unused historical assets. Previous provenance is preserved where recorded; current hashes and board references are measured.",
-  "license_scope": "Existing licenses and notices are unchanged. No new license or author is assigned.",
+  "license_scope": "Original Mesh Repeater contributions in the 30 project_generated assets are licensed CC-BY-NC-SA-4.0. The 24 previously attributed KiCad assets and the verified duplicate of the KiCad 0805 model retain CC-BY-SA-4.0 with the KiCad libraries design exception. The remaining 34 assets have unrecorded provenance and an unknown license; no project ownership or new license is asserted for them. Existing third-party attributions, sources and exceptions remain applicable.",
   "assets": [
     {
       "file": "3dmodels/Coilcraft_XGL4020.step",
@@ -19,7 +19,6 @@
       ],
       "geometry_basis": "XGL4020 nominal4x4, maximum height2.1; actual terminals0.82x3.25.",
       "uncertainty": "Simplified surface details; nominal dimensions, no manufacturing tolerances.",
-      "own_license_status": "not_assigned_by_this_manifest",
       "historical_source_record": "design/build_3d_models.py",
       "geometry_provenance": {
         "file": "Coilcraft_XGL4020.step",
@@ -43,7 +42,10 @@
         "sha256": "b6bd76d01981e885ab7167550fa756113c7c8f41f9a80b5c0d8a5ae3be9c8e67"
       },
       "previous_publication_sha256": "b6bd76d01981e885ab7167550fa756113c7c8f41f9a80b5c0d8a5ae3be9c8e67",
-      "used_by_current_board": true
+      "used_by_current_board": true,
+      "license": "CC-BY-NC-SA-4.0",
+      "license_url": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+      "own_contribution_license_scope": "Original Mesh Repeater contributions only; existing third-party material retains its applicable terms."
     },
     {
       "file": "3dmodels/Connfly_DS1027_2BBN1.step",
@@ -58,10 +60,12 @@
       ],
       "geometry_basis": "CONNFLY DS1027-2BBN1 closed shunt:5x2.5mm, height6.47; contacts pitch2.54mm.",
       "uncertainty": "Body envelope based on manufacturer drawing. Installed bottomZ2.6mm above PCB is an assembly assumption; verify actual seating on header.",
-      "own_license_status": "not_assigned_by_this_manifest",
       "historical_source_record": "design/build_3d_models_s4_6.py",
       "previous_publication_sha256": "55eb4f228c1ac6c2cd0386ae04d6f0f8144c3b34d3c381d7d454a2b747f8c9d5",
-      "used_by_current_board": true
+      "used_by_current_board": true,
+      "license": "CC-BY-NC-SA-4.0",
+      "license_url": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+      "own_contribution_license_scope": "Original Mesh Repeater contributions only; existing third-party material retains its applicable terms."
     },
     {
       "file": "3dmodels/CR2032_Cell.step",
@@ -74,7 +78,6 @@
       "geometry_sources": [],
       "geometry_basis": "CR2032 nominaldiameter20mm, height3.2mm; positivefaceup.",
       "uncertainty": "Generic cell envelope. ZplacementinKeystone1060 approximate pendingholderseatingmeasurement.",
-      "own_license_status": "not_assigned_by_this_manifest",
       "historical_source_record": "design/build_3d_models.py",
       "geometry_provenance": {
         "file": "CR2032_Cell.step",
@@ -96,7 +99,10 @@
         "sha256": "2e61853937eaed4a26c043eb43a569b183f40fc3d1a451455ee6cdb7bc57140e"
       },
       "previous_publication_sha256": "2e61853937eaed4a26c043eb43a569b183f40fc3d1a451455ee6cdb7bc57140e",
-      "used_by_current_board": true
+      "used_by_current_board": true,
+      "license": "CC-BY-NC-SA-4.0",
+      "license_url": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+      "own_contribution_license_scope": "Original Mesh Repeater contributions only; existing third-party material retains its applicable terms."
     },
     {
       "file": "3dmodels/FB1_BLM21_0805.step",
@@ -120,11 +126,23 @@
     },
     {
       "file": "3dmodels/FB1_BLМ21_0805.step",
-      "origin": "not recorded in previous publication manifest",
-      "provenance_note": "Current local project asset; no additional author, manufacturer origin or license is inferred.",
+      "origin": "kicad_library_model_duplicate",
+      "provenance_note": "Byte-for-byte duplicate of 3dmodels/FB1_BLM21_0805.step; both local files were measured with identical SHA-256. The alternate name contains Cyrillic U+041C.",
       "sha256": "751a8ae26d20698bfe8303aa2fc7ec986a8b9a7154699b94bf2a13d4ad401425",
       "references": [],
-      "used_by_current_board": false
+      "used_by_current_board": false,
+      "previous_origin": "not recorded in previous publication manifest",
+      "previous_provenance_note": "Current local project asset; no additional author, manufacturer origin or license is inferred.",
+      "duplicate_of": "3dmodels/FB1_BLM21_0805.step",
+      "upstream_file": "Inductor_SMD.3dshapes/L_0805_2012Metric.step",
+      "geometry_sources": [
+        "https://gitlab.com/kicad/libraries/kicad-packages3D/-/blob/master/Inductor_SMD.3dshapes/L_0805_2012Metric.step"
+      ],
+      "license": "CC-BY-SA-4.0",
+      "exception": "KiCad libraries design exception",
+      "attribution": "KiCad Libraries contributors",
+      "uncertainty": "Representative 0805 inductor body, not a manufacturer model of Murata BLM21PG.",
+      "modifications": "Filename alias only; binary content is identical to the attributed Latin-name KiCad model."
     },
     {
       "file": "3dmodels/Heltec_HT_RA62_Approx.step",
@@ -140,7 +158,6 @@
       ],
       "geometry_basis": "HT-RA62 PCB16x17x0.8mm,2mmpitch; exposed components, no metal can.",
       "uncertainty": "PCB dimensions and pitch from official mechanical drawing. IPEXbody/height and component placement are illustrative from official photo; loadedheight not specified by manufacturer. Solderstand-off0.1mm assumed.",
-      "own_license_status": "not_assigned_by_this_manifest",
       "historical_source_record": "design/build_3d_models.py",
       "geometry_provenance": {
         "file": "Heltec_HT_RA62_Approx.step",
@@ -165,7 +182,10 @@
         "sha256": "8f01259c84ab23507bb623e440bbcba2db85635ddbbfbc85315013359566e15e"
       },
       "previous_publication_sha256": "8f01259c84ab23507bb623e440bbcba2db85635ddbbfbc85315013359566e15e",
-      "used_by_current_board": true
+      "used_by_current_board": true,
+      "license": "CC-BY-NC-SA-4.0",
+      "license_url": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+      "own_contribution_license_scope": "Original Mesh Repeater contributions only; existing third-party material retains its applicable terms."
     },
     {
       "file": "3dmodels/Jumper_2p54_Shunt.step",
@@ -173,7 +193,8 @@
       "provenance_note": "Current local project asset; no additional author, manufacturer origin or license is inferred.",
       "sha256": "a75bc33f5d27f66cc31b3868d038ded03e21c47c95f499b0bc7b2a6ed3babb98",
       "references": [],
-      "used_by_current_board": false
+      "used_by_current_board": false,
+      "license": "unknown"
     },
     {
       "file": "3dmodels/KLS_TS6604_4p3.step",
@@ -189,10 +210,12 @@
       ],
       "geometry_basis": "KLS7-TS6604-4.3-180: 6x6 body, height4.3, leads span8.0, sidelead pitch4.5mm.",
       "uncertainty": "Simplified body/actuator/lead geometry from KLS drawing archived with store204565. Electrical pin pairing is independent of this visual model.",
-      "own_license_status": "not_assigned_by_this_manifest",
       "historical_source_record": "design/build_3d_models_s4_6.py",
       "previous_publication_sha256": "12b3864afbb63c919c627dcfe6d0e122fcfd31d0f67970d48b67b4047a153e8a",
-      "used_by_current_board": true
+      "used_by_current_board": true,
+      "license": "CC-BY-NC-SA-4.0",
+      "license_url": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+      "own_contribution_license_scope": "Original Mesh Repeater contributions only; existing third-party material retains its applicable terms."
     },
     {
       "file": "3dmodels/NiceNano_Clone_Approx.step",
@@ -208,7 +231,6 @@
       ],
       "geometry_basis": "Illustrative NiceNano-compatible nRF52840 module plus two13-way2.54mm sockets. USB at footprint+Y, BLEantenna at-Y.",
       "uncertainty": "ACTUAL OZON CLONE NOT MEASURED. Representative ICBbuyclone PCB17.78x33 and26holes; PCBthickness1mm, bottomZ6.5mm, socketstack and on-modulecomponents/USB/antenna are illustrative assumptions. USBmouth localY+17.5, about1mminsidecarrieredge; do not treat as verified plugclearance or pinmap.",
-      "own_license_status": "not_assigned_by_this_manifest",
       "historical_source_record": "design/build_3d_models.py",
       "geometry_provenance": {
         "file": "NiceNano_Clone_Approx.step",
@@ -233,12 +255,15 @@
         "sha256": "d0171b50564695dc8925d020891c3b814ea1b3340944900e3f424e6dfdfda088"
       },
       "previous_publication_sha256": "d0171b50564695dc8925d020891c3b814ea1b3340944900e3f424e6dfdfda088",
-      "used_by_current_board": true
+      "used_by_current_board": true,
+      "license": "CC-BY-NC-SA-4.0",
+      "license_url": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+      "own_contribution_license_scope": "Original Mesh Repeater contributions only; existing third-party material retains its applicable terms."
     },
     {
       "file": "3dmodels/S869M000S003_Approx.step",
       "origin": "project_generated_simplified_model",
-      "license": "No new project license assigned; see LICENSE.md",
+      "license": "CC-BY-NC-SA-4.0",
       "sha256": "f014778833906a7ee87329e0ef6e8959c5eaa838f1694c58b1b39a34db635efd",
       "references": [
         "FL1"
@@ -247,7 +272,9 @@
         "https://abracon.com/datasheets/AEL-Crystals/PN/S869M000S003.pdf"
       ],
       "previous_publication_sha256": "f014778833906a7ee87329e0ef6e8959c5eaa838f1694c58b1b39a34db635efd",
-      "used_by_current_board": true
+      "used_by_current_board": true,
+      "license_url": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+      "own_contribution_license_scope": "Original Mesh Repeater contributions only; existing third-party material retains its applicable terms."
     },
     {
       "file": "3dmodels/Shield_Frame_76x43.step",
@@ -260,7 +287,6 @@
       ],
       "geometry_basis": "Customframe:76x43 wallcentre dimensions, wall0.2, top14mm. No mounting flange.",
       "uncertainty": "Proposed custom metalwork, not an available supplierpart. Frame/lid connection and retentionmechanism not designed. Outer76.2x43.2, inner75.8x42.8.",
-      "own_license_status": "not_assigned_by_this_manifest",
       "historical_source_record": "design/build_3d_models.py",
       "geometry_provenance": {
         "file": "Shield_Frame_76x43.step",
@@ -284,7 +310,10 @@
         "sha256": "36a219fac7772c7b7f1d818d9d5f43f0271e14b4739aa7205f7e6304ff25c867"
       },
       "previous_publication_sha256": "36a219fac7772c7b7f1d818d9d5f43f0271e14b4739aa7205f7e6304ff25c867",
-      "used_by_current_board": false
+      "used_by_current_board": false,
+      "license": "CC-BY-NC-SA-4.0",
+      "license_url": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+      "own_contribution_license_scope": "Original Mesh Repeater contributions only; existing third-party material retains its applicable terms."
     },
     {
       "file": "3dmodels/Shield_Frame_76x49_3_Chamfer.step",
@@ -292,7 +321,8 @@
       "provenance_note": "Current local project asset; no additional author, manufacturer origin or license is inferred.",
       "sha256": "0be7689bf118f5c03af81fce7b9a99d21cc07fabd30fa40d357447b8a662275e",
       "references": [],
-      "used_by_current_board": false
+      "used_by_current_board": false,
+      "license": "unknown"
     },
     {
       "file": "3dmodels/Shield_Lid_76x43.step",
@@ -303,7 +333,6 @@
       "geometry_sources": [],
       "geometry_basis": "Separate removablelid, underside14.0mm, thickness0.2mm.",
       "uncertainty": "Conceptual coveronly, without detailed catches or manufacturingqualification. Normally hidden inKiCad forcomponentinspection.",
-      "own_license_status": "not_assigned_by_this_manifest",
       "historical_source_record": "design/build_3d_models.py",
       "geometry_provenance": {
         "file": "Shield_Lid_76x43.step",
@@ -325,7 +354,10 @@
         "sha256": "eae413cb0dd8a1c8bb92b650392139432c92ef89365f211742fb0b5f655c1956"
       },
       "previous_publication_sha256": "eae413cb0dd8a1c8bb92b650392139432c92ef89365f211742fb0b5f655c1956",
-      "used_by_current_board": false
+      "used_by_current_board": false,
+      "license": "CC-BY-NC-SA-4.0",
+      "license_url": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+      "own_contribution_license_scope": "Original Mesh Repeater contributions only; existing third-party material retains its applicable terms."
     },
     {
       "file": "3dmodels/Shield_Lid_76x49_3_Chamfer.step",
@@ -333,12 +365,13 @@
       "provenance_note": "Current local project asset; no additional author, manufacturer origin or license is inferred.",
       "sha256": "f9e0436910fd11bdab3026dfc5bab8533d40372b4ca49a2a21eb43b31648d2a1",
       "references": [],
-      "used_by_current_board": false
+      "used_by_current_board": false,
+      "license": "unknown"
     },
     {
       "file": "3dmodels/SMA_KLS1_SMA002_B_Approx.step",
       "origin": "project_generated_simplified_model",
-      "license": "No new project license assigned; see LICENSE.md",
+      "license": "CC-BY-NC-SA-4.0",
       "sha256": "6d4fe1194d68cf1f6bb598c5a9eca8142b4ff96218b0d503e7e3cd4f3e645574",
       "references": [
         "J13"
@@ -347,7 +380,9 @@
         "https://img.klsele.com/admin/product_upload/20250828165703L-KLS1-SMA002-B&KLS1-SMA002-B-1.27.pdf"
       ],
       "previous_publication_sha256": "6d4fe1194d68cf1f6bb598c5a9eca8142b4ff96218b0d503e7e3cd4f3e645574",
-      "used_by_current_board": true
+      "used_by_current_board": true,
+      "license_url": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+      "own_contribution_license_scope": "Original Mesh Repeater contributions only; existing third-party material retains its applicable terms."
     },
     {
       "file": "3dmodels/Sumida_CDRH127_LD.step",
@@ -363,7 +398,6 @@
       ],
       "geometry_basis": "CDRH127/LD nominal12x12; maximumheight8. Terminals along footprintY.",
       "uncertainty": "Simplified surface details; nominal dimensions, no manufacturing tolerances.",
-      "own_license_status": "not_assigned_by_this_manifest",
       "historical_source_record": "design/build_3d_models.py",
       "geometry_provenance": {
         "file": "Sumida_CDRH127_LD.step",
@@ -388,7 +422,10 @@
         "sha256": "94832871efb6205b0fb77c3eaac46e01d9efcbe52f2ebd014d618ab59f0b05be"
       },
       "previous_publication_sha256": "94832871efb6205b0fb77c3eaac46e01d9efcbe52f2ebd014d618ab59f0b05be",
-      "used_by_current_board": true
+      "used_by_current_board": true,
+      "license": "CC-BY-NC-SA-4.0",
+      "license_url": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+      "own_contribution_license_scope": "Original Mesh Repeater contributions only; existing third-party material retains its applicable terms."
     },
     {
       "file": "3dmodels/Sumida_CDRH127_LD_101.step",
@@ -403,10 +440,12 @@
       ],
       "geometry_basis": "Sumida CDRH127/LDNP-101MC 100uH. Nominal12x12mm, height8mm; maximum XY envelope12.3x12.3.",
       "uncertainty": "Simplified nominal visual model. Not a manufacturer STEP or mechanical tolerance certification.",
-      "own_license_status": "not_assigned_by_this_manifest",
       "historical_source_record": "design/build_3d_models_s4_6.py",
       "previous_publication_sha256": "265f65dc07053daaac33a0108cd1bee9a0c71254f2f165f372a7b99773cb2199",
-      "used_by_current_board": true
+      "used_by_current_board": true,
+      "license": "CC-BY-NC-SA-4.0",
+      "license_url": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+      "own_contribution_license_scope": "Original Mesh Repeater contributions only; existing third-party material retains its applicable terms."
     },
     {
       "file": "3dmodels/Sunltech_SLW8040S.step",
@@ -414,12 +453,13 @@
       "provenance_note": "Current local project asset; no additional author, manufacturer origin or license is inferred.",
       "sha256": "80b262ab45085a7a9841763a76d502105e3ca58a365bfb6b96cce08b7a283626",
       "references": [],
-      "used_by_current_board": false
+      "used_by_current_board": false,
+      "license": "unknown"
     },
     {
       "file": "3dmodels/TDK_B57861S_Vertical_Approx.step",
       "origin": "project_generated_simplified_model",
-      "license": "No new project license assigned; see LICENSE.md",
+      "license": "CC-BY-NC-SA-4.0",
       "sha256": "605a437a0adc4d4ea826ad05a57c8fddf7ad756bc49f4fd55659f5e829762dc2",
       "geometry_provenance": {
         "file": "TDK_B57861S_Vertical_Approx.step",
@@ -444,7 +484,9 @@
         "https://www.tdk-electronics.tdk.com/inf/50/db/ntc/NTC_Mini_sensors_S861.pdf"
       ],
       "previous_publication_sha256": "605a437a0adc4d4ea826ad05a57c8fddf7ad756bc49f4fd55659f5e829762dc2",
-      "used_by_current_board": true
+      "used_by_current_board": true,
+      "license_url": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+      "own_contribution_license_scope": "Original Mesh Repeater contributions only; existing third-party material retains its applicable terms."
     },
     {
       "file": "3dmodels/TI_DCT0008A.step",
@@ -459,10 +501,12 @@
       ],
       "geometry_basis": "TI DCT0008A SSOP-8 envelope; simple body and leads generated locally",
       "uncertainty": "Illustrative nominal envelope; not exact internal construction or supplier tolerance certification.",
-      "own_license_status": "not_assigned_by_this_manifest",
       "historical_source_record": "design/build_gps_3d_s4_7.py",
       "previous_publication_sha256": "5507e436c9a888714db3be0ead2e8a9dd78ebebcb8ebf748070695de62ec673e",
-      "used_by_current_board": true
+      "used_by_current_board": true,
+      "license": "CC-BY-NC-SA-4.0",
+      "license_url": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+      "own_contribution_license_scope": "Original Mesh Repeater contributions only; existing third-party material retains its applicable terms."
     },
     {
       "file": "3dmodels/TPS63802_DLA0010A.step",
@@ -477,7 +521,6 @@
       ],
       "geometry_basis": "TI DLA0010A:2x3mm, nominalheight0.9, asymmetric10contacts, no exposed centrepad.",
       "uncertainty": "Simplified surface details; nominal dimensions, no manufacturing tolerances.",
-      "own_license_status": "not_assigned_by_this_manifest",
       "historical_source_record": "design/build_3d_models.py",
       "geometry_provenance": {
         "file": "TPS63802_DLA0010A.step",
@@ -501,7 +544,10 @@
         "sha256": "e5e3775caacbf170bd75cf228bb8f9e615edc705298a8c430399939a4b3fd667"
       },
       "previous_publication_sha256": "e5e3775caacbf170bd75cf228bb8f9e615edc705298a8c430399939a4b3fd667",
-      "used_by_current_board": true
+      "used_by_current_board": true,
+      "license": "CC-BY-NC-SA-4.0",
+      "license_url": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+      "own_contribution_license_scope": "Original Mesh Repeater contributions only; existing third-party material retains its applicable terms."
     },
     {
       "file": "3dmodels/Vishay_WSL1206.step",
@@ -514,7 +560,6 @@
       ],
       "geometry_basis": "WSL1206: nominal3.20x1.60x0.635mm.",
       "uncertainty": "Simplified surface details; nominal dimensions, no manufacturing tolerances.",
-      "own_license_status": "not_assigned_by_this_manifest",
       "historical_source_record": "design/build_3d_models.py",
       "geometry_provenance": {
         "file": "Vishay_WSL1206.step",
@@ -539,7 +584,10 @@
         "sha256": "4fe190ec44210285548f50b2997bedd29fb197988c23002071778e6401df17c5"
       },
       "previous_publication_sha256": "4fe190ec44210285548f50b2997bedd29fb197988c23002071778e6401df17c5",
-      "used_by_current_board": false
+      "used_by_current_board": false,
+      "license": "CC-BY-NC-SA-4.0",
+      "license_url": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+      "own_contribution_license_scope": "Original Mesh Repeater contributions only; existing third-party material retains its applicable terms."
     },
     {
       "file": "3dmodels/XKB_TS1187A.step",
@@ -547,7 +595,8 @@
       "provenance_note": "Current local project asset; no additional author, manufacturer origin or license is inferred.",
       "sha256": "522e87e1123aa58034bec3aeece8ea4439e564501aa61675a4ee8654971ff406",
       "references": [],
-      "used_by_current_board": false
+      "used_by_current_board": false,
+      "license": "unknown"
     },
     {
       "file": "Meshcore.pretty/BatteryHolder_Keystone_1060_1x2032.kicad_mod",
@@ -664,7 +713,8 @@
       "provenance_note": "Current local project asset; no additional author, manufacturer origin or license is inferred.",
       "sha256": "ae4b9760e9dc9f643015df14d27b4b1def0706731f634e2604bc2370c9410f2f",
       "references": [],
-      "used_by_current_board": false
+      "used_by_current_board": false,
+      "license": "unknown"
     },
     {
       "file": "Meshcore.pretty/C_1812_4532Metric.kicad_mod",
@@ -711,7 +761,8 @@
       "provenance_note": "Current local project asset; no additional author, manufacturer origin or license is inferred.",
       "sha256": "6283e0874ce8f2ff33daad82fc400340ccba2c5569c1f4f4527fd50b856b52bb",
       "references": [],
-      "used_by_current_board": false
+      "used_by_current_board": false,
+      "license": "unknown"
     },
     {
       "file": "Meshcore.pretty/CP_Elec_6.3x7.7.kicad_mod",
@@ -719,7 +770,8 @@
       "provenance_note": "Current local project asset; no additional author, manufacturer origin or license is inferred.",
       "sha256": "2c95e02eea974c11dc3f12c123b498ac49ffa3ad57382011b0f8579a9f865659",
       "references": [],
-      "used_by_current_board": false
+      "used_by_current_board": false,
+      "license": "unknown"
     },
     {
       "file": "Meshcore.pretty/CP_Elec_Panasonic_FK_D_6.3x5.8.kicad_mod",
@@ -749,7 +801,8 @@
       "provenance_note": "Current local project asset; no additional author, manufacturer origin or license is inferred.",
       "sha256": "068606d6b17719e0155e2f5f6e5b6078adde5b60a9b907aca4425058f33f5afc",
       "references": [],
-      "used_by_current_board": false
+      "used_by_current_board": false,
+      "license": "unknown"
     },
     {
       "file": "Meshcore.pretty/D_SMB.kicad_mod",
@@ -778,7 +831,8 @@
       "provenance_note": "Current local project asset; no additional author, manufacturer origin or license is inferred.",
       "sha256": "79114bfc4edd5dceef68178e30d2280af4fa8c8bd7914002d00fac60b48d3f13",
       "references": [],
-      "used_by_current_board": false
+      "used_by_current_board": false,
+      "license": "unknown"
     },
     {
       "file": "Meshcore.pretty/Ferrite_Murata_BLM21PG.kicad_mod",
@@ -793,10 +847,12 @@
         "https://www.murata.com/en-eu/products/productdetail?partno=BLM21PG600SN1%23",
         "https://media.digikey.com/pdf/Data%20Sheets/Murata%20PDFs/EMI_Suppression_Filters_Cat.pdf"
       ],
-      "own_license_status": "not_assigned_by_this_manifest",
       "historical_source_record": "design/audit_modem_s4_9.py",
       "previous_publication_sha256": "f80ead647ff67ad19a29f28b0b105dee32011a0a8c333acd9c58264ae7238938",
-      "used_by_current_board": true
+      "used_by_current_board": true,
+      "license": "CC-BY-NC-SA-4.0",
+      "license_url": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+      "own_contribution_license_scope": "Original Mesh Repeater contributions only; existing third-party material retains its applicable terms."
     },
     {
       "file": "Meshcore.pretty/HT_RA62.kicad_mod",
@@ -810,10 +866,12 @@
       "geometry_sources": [
         "https://resource.heltec.cn/download/HT-RA62/HT-RA62%28Rev1.1%29.pdf"
       ],
-      "own_license_status": "not_assigned_by_this_manifest",
       "historical_source_record": "design/build_integrated_board.py",
       "previous_publication_sha256": "fd2071032464197b8483f57a3e85ac808193e368e3865887e9ac70206697fe2b",
-      "used_by_current_board": true
+      "used_by_current_board": true,
+      "license": "CC-BY-NC-SA-4.0",
+      "license_url": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+      "own_contribution_license_scope": "Original Mesh Repeater contributions only; existing third-party material retains its applicable terms."
     },
     {
       "file": "Meshcore.pretty/L_Coilcraft_DO5040H_473MLD.kicad_mod",
@@ -821,7 +879,8 @@
       "provenance_note": "Current local project asset; no additional author, manufacturer origin or license is inferred.",
       "sha256": "ca4069da8647fbc4a6333c13aab547da0a3a8b4c899644130db7e9b6a0c2dff2",
       "references": [],
-      "used_by_current_board": false
+      "used_by_current_board": false,
+      "license": "unknown"
     },
     {
       "file": "Meshcore.pretty/L_Coilcraft_XGL4020_471MEC.kicad_mod",
@@ -835,10 +894,12 @@
       "geometry_sources": [
         "https://www.coilcraft.com/getmedia/76c9c081-4945-4c85-9129-9356e1ad6734/xgl4020.pdf"
       ],
-      "own_license_status": "not_assigned_by_this_manifest",
       "historical_source_record": "design/qualified_footprints/build_coilcraft_xgl4020_footprint.py",
       "previous_publication_sha256": "a2b63a35f1f34c86b353d6d746ee97464374a649726720f305b014a5d5d28bbd",
-      "used_by_current_board": true
+      "used_by_current_board": true,
+      "license": "CC-BY-NC-SA-4.0",
+      "license_url": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+      "own_contribution_license_scope": "Original Mesh Repeater contributions only; existing third-party material retains its applicable terms."
     },
     {
       "file": "Meshcore.pretty/L_Murata_DFE201612E.kicad_mod",
@@ -846,7 +907,8 @@
       "provenance_note": "Current local project asset; no additional author, manufacturer origin or license is inferred.",
       "sha256": "bae9bdbcee0d3f65d6636188be3cb2181857f8a4aaabb7eebc96d72025fd37e1",
       "references": [],
-      "used_by_current_board": false
+      "used_by_current_board": false,
+      "license": "unknown"
     },
     {
       "file": "Meshcore.pretty/L_Sumida_CDRH127_LD.kicad_mod",
@@ -861,10 +923,12 @@
       "geometry_sources": [
         "https://products.sumida.com/products/pdf/CDRH127LD%20%28en%29.pdf"
       ],
-      "own_license_status": "not_assigned_by_this_manifest",
       "historical_source_record": "design/qualified_footprints/build_inductor_footprints.py",
       "previous_publication_sha256": "183f4e5c3887defb72634f2c021cf6d6054fe2742d2f74e98362065eca28ae59",
-      "used_by_current_board": true
+      "used_by_current_board": true,
+      "license": "CC-BY-NC-SA-4.0",
+      "license_url": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+      "own_contribution_license_scope": "Original Mesh Repeater contributions only; existing third-party material retains its applicable terms."
     },
     {
       "file": "Meshcore.pretty/L_Sumida_CDRH127_LDNP_101MC.kicad_mod",
@@ -878,10 +942,12 @@
       "geometry_sources": [
         "https://products.sumida.com/products/pdf/CDRH127LD%20%28en%29.pdf"
       ],
-      "own_license_status": "not_assigned_by_this_manifest",
       "historical_source_record": "audit/s4_6_danomsk_20261009/make_footprints.py",
       "previous_publication_sha256": "c01df78bbc1a8a7743e697c5836413fe328648b9942bf04c9c19b7349014ed69",
-      "used_by_current_board": true
+      "used_by_current_board": true,
+      "license": "CC-BY-NC-SA-4.0",
+      "license_url": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+      "own_contribution_license_scope": "Original Mesh Repeater contributions only; existing third-party material retains its applicable terms."
     },
     {
       "file": "Meshcore.pretty/L_Sunltech_SLW8040S.kicad_mod",
@@ -889,7 +955,8 @@
       "provenance_note": "Current local project asset; no additional author, manufacturer origin or license is inferred.",
       "sha256": "dbcc6dcb9d9796ba838891fe2602ccc5579d5b60b6eda07550a000fc6a75823a",
       "references": [],
-      "used_by_current_board": false
+      "used_by_current_board": false,
+      "license": "unknown"
     },
     {
       "file": "Meshcore.pretty/LED_0805_2012Metric.kicad_mod",
@@ -963,7 +1030,8 @@
       "references": [
         "NT2"
       ],
-      "used_by_current_board": true
+      "used_by_current_board": true,
+      "license": "unknown"
     },
     {
       "file": "Meshcore.pretty/NiceNano_13x2_Socket.kicad_mod",
@@ -978,10 +1046,12 @@
         "https://github.com/gargomoma/fakeTec_pcb/issues/26",
         "https://wiki.icbbuy.com/doku.php?id=developmentboard:nrf52840"
       ],
-      "own_license_status": "not_assigned_by_this_manifest",
       "historical_source_record": "design/build_integrated_board.py",
       "previous_publication_sha256": "e7c3d67ad190087bc3815f1507128fc58edb6702c2933674df83903e69eae219",
-      "used_by_current_board": true
+      "used_by_current_board": true,
+      "license": "CC-BY-NC-SA-4.0",
+      "license_url": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+      "own_contribution_license_scope": "Original Mesh Repeater contributions only; existing third-party material retains its applicable terms."
     },
     {
       "file": "Meshcore.pretty/NTC_Remote_SolderPads_P2.54mm.kicad_mod",
@@ -989,12 +1059,13 @@
       "provenance_note": "Current local project asset; no additional author, manufacturer origin or license is inferred.",
       "sha256": "a5a5f130939ab58e02dbd9da0f88ac00b9528c2158805e1dfe122e22ec0d7e6e",
       "references": [],
-      "used_by_current_board": false
+      "used_by_current_board": false,
+      "license": "unknown"
     },
     {
       "file": "Meshcore.pretty/NTC_TDK_B57861S_Onboard_or_Remote_P2.54mm.kicad_mod",
       "origin": "project_generated_geometry",
-      "license": "No new project license assigned; see LICENSE.md",
+      "license": "CC-BY-NC-SA-4.0",
       "sha256": "d1d75d6ce06cd9c54e9b9d8d969cc00ac04b1c8a635f03d6e85904852d00be19",
       "references": [
         "TH1"
@@ -1004,7 +1075,9 @@
         "https://www.tdk-electronics.tdk.com/inf/50/db/ntc/NTC_Mini_sensors_S861.pdf"
       ],
       "previous_publication_sha256": "168283349342d577188df529f866752bc60e3d2b139152443f48f0df9363ff9c",
-      "used_by_current_board": true
+      "used_by_current_board": true,
+      "license_url": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+      "own_contribution_license_scope": "Original Mesh Repeater contributions only; existing third-party material retains its applicable terms."
     },
     {
       "file": "Meshcore.pretty/PinHeader_1x02_P2.54mm_Vertical.kicad_mod",
@@ -1191,7 +1264,8 @@
       "provenance_note": "Current local project asset; no additional author, manufacturer origin or license is inferred.",
       "sha256": "04124f47653dea2cfbd3d82e91c04e06176652f8d7dc7d13861e204d60726382",
       "references": [],
-      "used_by_current_board": false
+      "used_by_current_board": false,
+      "license": "unknown"
     },
     {
       "file": "Meshcore.pretty/R_2512_6332Metric__A3_R56.kicad_mod",
@@ -1201,7 +1275,8 @@
       "references": [
         "R56"
       ],
-      "used_by_current_board": true
+      "used_by_current_board": true,
+      "license": "unknown"
     },
     {
       "file": "Meshcore.pretty/R_2512_6332Metric__A3_R71.kicad_mod",
@@ -1211,7 +1286,8 @@
       "references": [
         "R71"
       ],
-      "used_by_current_board": true
+      "used_by_current_board": true,
+      "license": "unknown"
     },
     {
       "file": "Meshcore.pretty/R_Vishay_WSL1206_18.kicad_mod",
@@ -1223,10 +1299,12 @@
       "geometry_sources": [
         "https://www.vishay.com/docs/30100/wsl.pdf"
       ],
-      "own_license_status": "not_assigned_by_this_manifest",
       "historical_source_record": "design/qualified_footprints/Meshcore.pretty/R_Vishay_WSL1206_18.kicad_mod",
       "previous_publication_sha256": "022447f04f0072678b1cd06cabe1b92d512e16d0a7b02436400192aa99812ae0",
-      "used_by_current_board": false
+      "used_by_current_board": false,
+      "license": "CC-BY-NC-SA-4.0",
+      "license_url": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+      "own_contribution_license_scope": "Original Mesh Repeater contributions only; existing third-party material retains its applicable terms."
     },
     {
       "file": "Meshcore.pretty/R_Vishay_WSL2512_A3__A3_R1.kicad_mod",
@@ -1236,7 +1314,8 @@
       "references": [
         "R1"
       ],
-      "used_by_current_board": true
+      "used_by_current_board": true,
+      "license": "unknown"
     },
     {
       "file": "Meshcore.pretty/R_Vishay_WSL2512_A3__A3_R40.kicad_mod",
@@ -1246,7 +1325,8 @@
       "references": [
         "R40"
       ],
-      "used_by_current_board": true
+      "used_by_current_board": true,
+      "license": "unknown"
     },
     {
       "file": "Meshcore.pretty/R_Vishay_WSL2512_A3__A3_R41.kicad_mod",
@@ -1256,7 +1336,8 @@
       "references": [
         "R41"
       ],
-      "used_by_current_board": true
+      "used_by_current_board": true,
+      "license": "unknown"
     },
     {
       "file": "Meshcore.pretty/R_Vishay_WSL2512_A3__A3_R55.kicad_mod",
@@ -1266,12 +1347,13 @@
       "references": [
         "R55"
       ],
-      "used_by_current_board": true
+      "used_by_current_board": true,
+      "license": "unknown"
     },
     {
       "file": "Meshcore.pretty/RF_Cut_Link_0p6.kicad_mod",
       "origin": "project_generated_geometry",
-      "license": "No new project license assigned; see LICENSE.md",
+      "license": "CC-BY-NC-SA-4.0",
       "sha256": "73bd9b0b9a1fcfb75c49fc765fdea95ec68e9d3a96f232d7b901f4a69a8ef9ba",
       "references": [
         "NT1"
@@ -1279,12 +1361,14 @@
       "description": "Permanent copper net-tie bypass under optional FL1. Cut central bar before fitting SAW. Not a purchased part. 0.6mm square pads, centres 1mm; 0.6mm copper bar with exposed cut window.",
       "geometry_sources": [],
       "previous_publication_sha256": "73bd9b0b9a1fcfb75c49fc765fdea95ec68e9d3a96f232d7b901f4a69a8ef9ba",
-      "used_by_current_board": true
+      "used_by_current_board": true,
+      "license_url": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+      "own_contribution_license_scope": "Original Mesh Repeater contributions only; existing third-party material retains its applicable terms."
     },
     {
       "file": "Meshcore.pretty/SAW_AEL_DCC6C_S869M000S003.kicad_mod",
       "origin": "project_generated_geometry",
-      "license": "No new project license assigned; see LICENSE.md",
+      "license": "CC-BY-NC-SA-4.0",
       "sha256": "3b08ea99d29618d691da35c6803a66b3714d391cc34756c790a8238b57be5f9b",
       "references": [
         "FL1"
@@ -1294,7 +1378,9 @@
         "https://abracon.com/datasheets/AEL-Crystals/PN/S869M000S003.pdf"
       ],
       "previous_publication_sha256": "d2afd17d232005ebf12cb6b8d719f0dff5610c74b3ba5467b9f3285f3e6f179f",
-      "used_by_current_board": true
+      "used_by_current_board": true,
+      "license_url": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+      "own_contribution_license_scope": "Original Mesh Repeater contributions only; existing third-party material retains its applicable terms."
     },
     {
       "file": "Meshcore.pretty/Shield_Frame_104x54.kicad_mod",
@@ -1302,7 +1388,8 @@
       "provenance_note": "Current local project asset; no additional author, manufacturer origin or license is inferred.",
       "sha256": "1ab85c6e289125aa56945e49423644337748bd91f4071b0b3b5849d62dbb4663",
       "references": [],
-      "used_by_current_board": false
+      "used_by_current_board": false,
+      "license": "unknown"
     },
     {
       "file": "Meshcore.pretty/Shield_Frame_62x33.kicad_mod",
@@ -1310,7 +1397,8 @@
       "provenance_note": "Current local project asset; no additional author, manufacturer origin or license is inferred.",
       "sha256": "b1c17badee3372e170dbb85180d2107a6e15b5b0813fd9dc29ff63d07346c236",
       "references": [],
-      "used_by_current_board": false
+      "used_by_current_board": false,
+      "license": "unknown"
     },
     {
       "file": "Meshcore.pretty/Shield_Frame_76x43.kicad_mod",
@@ -1320,10 +1408,12 @@
       "origin": "project_generated_footprint",
       "geometry_basis": "Custom 76 x 43 mm wall centrelines, 0.2 mm wall, 14 mm target height; supplier design not qualified",
       "geometry_sources": [],
-      "own_license_status": "not_assigned_by_this_manifest",
       "historical_source_record": "design/board_s4_3_filter.py",
       "previous_publication_sha256": "b7eeaa0bafc4e6ccf2fe76f1790c503e3482f2995898ae02c0f3de9c3433f277",
-      "used_by_current_board": false
+      "used_by_current_board": false,
+      "license": "CC-BY-NC-SA-4.0",
+      "license_url": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+      "own_contribution_license_scope": "Original Mesh Repeater contributions only; existing third-party material retains its applicable terms."
     },
     {
       "file": "Meshcore.pretty/Shield_Frame_76x44.kicad_mod",
@@ -1331,7 +1421,8 @@
       "provenance_note": "Current local project asset; no additional author, manufacturer origin or license is inferred.",
       "sha256": "70e3b57eeb874fd2c8bf04e357ece7497e5b42a2aa8abb291f37e4117e58cac2",
       "references": [],
-      "used_by_current_board": false
+      "used_by_current_board": false,
+      "license": "unknown"
     },
     {
       "file": "Meshcore.pretty/Shield_Frame_76x49_3_Chamfer.kicad_mod",
@@ -1339,7 +1430,8 @@
       "provenance_note": "Current local project asset; no additional author, manufacturer origin or license is inferred.",
       "sha256": "ce4569dc9407e121e3b83aff6b320ddd6ace07f95b847ed23ff3f2be632fbfd9",
       "references": [],
-      "used_by_current_board": false
+      "used_by_current_board": false,
+      "license": "unknown"
     },
     {
       "file": "Meshcore.pretty/Shield_Frame_80x45.kicad_mod",
@@ -1347,7 +1439,8 @@
       "provenance_note": "Current local project asset; no additional author, manufacturer origin or license is inferred.",
       "sha256": "0427ada730b32cf8604db92f26aaa49e118b1a59e5d46fc18bd708bcbc0c2697",
       "references": [],
-      "used_by_current_board": false
+      "used_by_current_board": false,
+      "license": "unknown"
     },
     {
       "file": "Meshcore.pretty/SMA_KE_RobotClass2218_PRELIM.kicad_mod",
@@ -1355,12 +1448,13 @@
       "provenance_note": "Current local project asset; no additional author, manufacturer origin or license is inferred.",
       "sha256": "afdd3d38034f68f001518f9844242854b500e97eeee56b67b21b2f64fdaa1a5a",
       "references": [],
-      "used_by_current_board": false
+      "used_by_current_board": false,
+      "license": "unknown"
     },
     {
       "file": "Meshcore.pretty/SMA_KLS1_SMA002_B_Horizontal.kicad_mod",
       "origin": "project_generated_geometry",
-      "license": "No new project license assigned; see LICENSE.md",
+      "license": "CC-BY-NC-SA-4.0",
       "sha256": "a6ac815b98c0c3345ecf2bfcba79d1e8e9a8e513b828383c34a098945fcb21f4",
       "references": [
         "J13"
@@ -1370,7 +1464,9 @@
         "https://img.klsele.com/admin/product_upload/20250828165703L-KLS1-SMA002-B&KLS1-SMA002-B-1.27.pdf"
       ],
       "previous_publication_sha256": "a6ac815b98c0c3345ecf2bfcba79d1e8e9a8e513b828383c34a098945fcb21f4",
-      "used_by_current_board": true
+      "used_by_current_board": true,
+      "license_url": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+      "own_contribution_license_scope": "Original Mesh Repeater contributions only; existing third-party material retains its applicable terms."
     },
     {
       "file": "Meshcore.pretty/SOIC-16W_7.5x10.3mm_P1.27mm.kicad_mod",
@@ -1378,7 +1474,8 @@
       "provenance_note": "Current local project asset; no additional author, manufacturer origin or license is inferred.",
       "sha256": "798176526446820534d1276fbae0851c4a3ace094fd70c58f353050556267018",
       "references": [],
-      "used_by_current_board": false
+      "used_by_current_board": false,
+      "license": "unknown"
     },
     {
       "file": "Meshcore.pretty/SOIC-8_3.9x4.9mm_P1.27mm.kicad_mod",
@@ -1430,7 +1527,8 @@
       "provenance_note": "Current local project asset; no additional author, manufacturer origin or license is inferred.",
       "sha256": "197455da56d4cf704751c520ca66f888b9dd800a821d4a87a45b6caaecf1a228",
       "references": [],
-      "used_by_current_board": false
+      "used_by_current_board": false,
+      "license": "unknown"
     },
     {
       "file": "Meshcore.pretty/SOT-23-8.kicad_mod",
@@ -1438,7 +1536,8 @@
       "provenance_note": "Current local project asset; no additional author, manufacturer origin or license is inferred.",
       "sha256": "33fed4e9bba3f0ffc5df2c747cb3548b3e1170674a96f170a4d82d98a3bc42da",
       "references": [],
-      "used_by_current_board": false
+      "used_by_current_board": false,
+      "license": "unknown"
     },
     {
       "file": "Meshcore.pretty/SOT-23.kicad_mod",
@@ -1472,7 +1571,8 @@
       "provenance_note": "Current local project asset; no additional author, manufacturer origin or license is inferred.",
       "sha256": "fa5ef1977e977d01d917a0fd8e1683563a0bd1bc50a22c511302d3f629e86589",
       "references": [],
-      "used_by_current_board": false
+      "used_by_current_board": false,
+      "license": "unknown"
     },
     {
       "file": "Meshcore.pretty/SW_Push_1P1T_XKB_TS-1187A.kicad_mod",
@@ -1480,7 +1580,8 @@
       "provenance_note": "Current local project asset; no additional author, manufacturer origin or license is inferred.",
       "sha256": "e59b5784efadec3877120311509b2a6f832b4369a363201483f5d880482b23f9",
       "references": [],
-      "used_by_current_board": false
+      "used_by_current_board": false,
+      "license": "unknown"
     },
     {
       "file": "Meshcore.pretty/SW_Push_KLS7_TS6604_4_3_180.kicad_mod",
@@ -1495,10 +1596,12 @@
       "geometry_sources": [
         "https://www.danomsk.ru/upload/iblock/029/204565_b00964952d126ec5965c9c00b35b8fbb.pdf"
       ],
-      "own_license_status": "not_assigned_by_this_manifest",
       "historical_source_record": "audit/s4_6_danomsk_20261009/make_footprints.py",
       "previous_publication_sha256": "1d2d08bd4e2191db2efd906b0e771d5b99a57c204e8b3367ad3f527567abc248",
-      "used_by_current_board": true
+      "used_by_current_board": true,
+      "license": "CC-BY-NC-SA-4.0",
+      "license_url": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+      "own_contribution_license_scope": "Original Mesh Repeater contributions only; existing third-party material retains its applicable terms."
     },
     {
       "file": "Meshcore.pretty/SW_SPST_TL3342.kicad_mod",
@@ -1506,7 +1609,8 @@
       "provenance_note": "Current local project asset; no additional author, manufacturer origin or license is inferred.",
       "sha256": "345180066d38328e73753beb5d96a4356838d2488b26b027d755d04cbee9a490",
       "references": [],
-      "used_by_current_board": false
+      "used_by_current_board": false,
+      "license": "unknown"
     },
     {
       "file": "Meshcore.pretty/TestPoint_Pad_D1.5mm.kicad_mod",
@@ -1585,10 +1689,12 @@
       "geometry_sources": [
         "https://www.ti.com/lit/ds/symlink/tps63802.pdf"
       ],
-      "own_license_status": "not_assigned_by_this_manifest",
       "historical_source_record": "design/qualified_footprints/build_tps63802_footprint.py",
       "previous_publication_sha256": "a58190a0522c39fc5a4fee712fc5ef71ffe8f0715099edbc0fff80364a25d811",
-      "used_by_current_board": true
+      "used_by_current_board": true,
+      "license": "CC-BY-NC-SA-4.0",
+      "license_url": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+      "own_contribution_license_scope": "Original Mesh Repeater contributions only; existing third-party material retains its applicable terms."
     },
     {
       "file": "Meshcore.pretty/TSSOP-16_4.4x5mm_P0.65mm.kicad_mod",
