@@ -1,0 +1,295 @@
+(footprint "R_2512_6332Metric__A3_R56"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "Resistor SMD 2512 (6332 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf)")
+	(tags "resistor")
+	(property "Reference" "REF**"
+		(at 0 -2.63 0)
+		(layer "F.SilkS")
+		(uuid "9f59f57e-cfae-4caf-9de9-484b91599d9c")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "R_2512_6332Metric__A3_R56"
+		(at 0 2.63 0)
+		(layer "F.Fab")
+		(uuid "afc45039-c467-4f69-bf37-7f1375f6bfef")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "bff1b88e-0b2e-4ee7-bef7-897322b5f8d6")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" "Optional cold-current series shunt 1.8 ohm 1%, in series with R1 0.28 ohm. Cold CC approximately96mA, dissipation approximately16.6mW. LTO or no-thermal build: fit0R jumper here; R1 stays0.28ohm."
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "26569a08-8808-4f20-b400-d197e5156f76")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "KiLib_Generator" "SMD_2terminal_chip_molded"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "9636e2af-ffc3-4cce-a0cd-2137d10873b6")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "MPN" "RC0805FR-071R8L"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(uuid "a643fbc7-0341-4d12-ad5b-aab478efce4f")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Vendor" "Danomsk / Yageo"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(uuid "c04983b0-c8b1-46b5-a7df-10a76ae13dd2")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Vendor URL" "https://www.danomsk.ru/shop/6-rezistory/86-rezistory-postoyannye/268-rezistory-chip-0805/140061-chip-0805-1-8-1-rc0805fr-071r8l-yageo/"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(uuid "c25a7188-d28f-42ad-afb3-87c3cea6670c")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Fit_NaIon" "yes"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(uuid "d6e43372-6140-413f-8e31-9f819d71a5cb")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Fit_LTO_2S" "yes"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(uuid "7cea13e9-722e-46f3-a611-e16d39a9203f")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Value_NaIon" "1.8 ohm 1% 0.125W"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(uuid "c4300d90-0426-490d-8cac-bfb047b6b242")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Value_LTO_2S" "0R jumper"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(uuid "5f928064-44ca-460a-9cce-b472e3e52ef8")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Assembly" "Na-ion cold option: FIT; LTO 2S: 0R JUMPER"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(uuid "eef8e6fe-cdc1-4d5d-b377-e952a49f790d")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Nominal" "Na:1.8R\nLTO:0R"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(uuid "b0c973cd-aaf4-4911-a2d0-cf6d5cfff5a8")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "MPN_NaIon" "RC0805FR-071R8L"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(uuid "bfb1c608-11ae-49bb-af83-7ef19b6ae5c2")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "MPN_LTO_2S" "RC0805JR-070RL"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(uuid "eca13b39-e4c9-4cd6-9566-167021a876fa")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "LCSC" ""
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(uuid "daa536c6-b270-429d-a726-1807e3857b4b")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Fit_NaIon_NoCold" "yes"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(uuid "91d82803-e812-4697-8f4e-a793b6fcd891")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Value_NaIon_NoCold" "0R jumper"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(uuid "93b2638a-078f-4a64-aec5-c3e4aad85ddf")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "MPN_NaIon_NoCold" "RC0805JR-070RL"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(uuid "7851b2d6-ce10-43a4-a0a3-5ceac4ebc964")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(attr smd)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_line
+		(start -2.177064 -1.71)
+		(end 2.177064 -1.71)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "8ebbc8ef-d78d-4b79-93da-d99ba9eea0f3")
+	)
+	(fp_line
+		(start -2.177064 1.71)
+		(end 2.177064 1.71)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "e3cce36f-a2a6-4cb1-884d-fabe6f014aa7")
+	)
+	(fp_rect
+		(start -3.83 -1.93)
+		(end 3.83 1.93)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "42826757-abb7-46ab-a66f-ab30fd43dee8")
+	)
+	(fp_rect
+		(start -3.15 -1.6)
+		(end 3.15 1.6)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "7b1b673b-1e63-4e32-bb8f-747ad9c7d2cb")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(uuid "cdd29ec6-eafa-4e4b-ae7b-8f267dc8359f")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" smd roundrect
+		(at -2.9625 0)
+		(size 1.225 3.35)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.204082)
+		(uuid "d88f20bb-4bbd-4b0e-8826-2d57618b4812")
+	)
+	(pad "2" smd roundrect
+		(at 2.9625 0)
+		(size 1.225 3.35)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.204082)
+		(uuid "87e284ef-551c-42b6-81a5-831ccb69599b")
+	)
+	(embedded_fonts no)
+	(model "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_2512_6332Metric.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

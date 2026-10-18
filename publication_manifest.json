@@ -1,103 +1,1269 @@
 {
+  "schema_version": 2,
   "project": "Mesh Repeater ver 1.0",
   "designed_by": "@Alksndritm",
-  "cad_revision": "S4.16",
-  "date": "2026-10-11",
-  "status": "engineering prototype; manufacturing package paused; bench qualification incomplete",
-  "board_sha256": "742ae27bb1d13893f6dc368e5c67f5c41b35a3e6765331fc7e9871297d23dec6",
-  "physical_positions": 167,
+  "cad_revision": "S4.21",
+  "date": "2026-10-18",
+  "board_sha256": "be14cae202912ebb00e5dc758b2eae04cbe6733d4cb73df00044fdb03670fab3",
+  "source_project_files": 119,
+  "bom_positions": 172,
   "dimensions_mm": [
     90,
     100
   ],
   "copper_layers": 2,
-  "used_local_footprints": [
-    "BatteryHolder_Keystone_1060_1x2032",
-    "CP_Elec_Panasonic_FK_D_6.3x5.8",
-    "C_0603_1608Metric",
-    "C_0805_2012Metric",
-    "C_1206_3216Metric",
-    "C_1812_4532Metric",
-    "D_SMB",
-    "Ferrite_Murata_BLM21PG",
-    "HT_RA62",
-    "LED_0805_2012Metric",
-    "L_Coilcraft_XGL4020_471MEC",
-    "L_Sumida_CDRH127_LD",
-    "L_Sumida_CDRH127_LDNP_101MC",
-    "Molex_PicoBlade_53261-0871_1x08-1MP_P1.25mm_Horizontal",
-    "MountingHole_3.2mm_M3",
-    "NTC_TDK_B57861S_Onboard_or_Remote_P2.54mm",
-    "NiceNano_13x2_Socket",
-    "PinHeader_1x02_P2.54mm_Vertical",
-    "PinHeader_1x03_P2.54mm_Vertical",
-    "PinHeader_1x04_P2.54mm_Vertical",
-    "PinHeader_2x03_P2.54mm_Vertical",
-    "RF_Cut_Link_0p6",
-    "R_0805_2012Metric",
-    "R_1206_3216Metric",
-    "R_Vishay_WSL1206_18",
-    "SAW_AEL_DCC6C_S869M000S003",
-    "SMA_KLS1_SMA002_B_Horizontal",
-    "SOIC-8_3.9x4.9mm_P1.27mm",
-    "SOT-23",
-    "SOT-23-5",
-    "SW_Push_KLS7_TS6604_4_3_180",
-    "Shield_Frame_76x43",
-    "TI_DCT0008A",
-    "TO-92_Inline",
-    "TPS63802_DLA0010A",
-    "TSSOP-16_4.4x5mm_P0.65mm",
-    "TestPoint_Pad_D1.5mm"
+  "checks": {
+    "layout": 29,
+    "power": 14,
+    "CAM": 59,
+    "ground_pads": 111,
+    "ground_vias": 237
+  },
+  "status": "complete publication candidate; prototype qualification remains pending",
+  "preserved_verbatim": [
+    ".gitignore",
+    ".gitattributes",
+    "LICENSE.md",
+    "THIRD_PARTY_NOTICES.md",
+    "LICENSES/CC-BY-SA-4.0.txt",
+    "LICENSES/CERN-OHL-P-2.0.txt",
+    "LICENSES/KiCad-Libraries-LICENSE.md",
+    "design/watchdog_reference/INTEGRATION_RU.txt",
+    "design/watchdog_reference/main.c",
+    "design/watchdog_reference/Makefile",
+    "design/watchdog_reference/source_hashes.json",
+    "design/watchdog_reference/watchdog.hex"
   ],
-  "local_models": [
-    "CR2032_Cell.step",
-    "Coilcraft_XGL4020.step",
-    "Connfly_DS1027_2BBN1.step",
-    "FB1_BLM21_0805.step",
-    "Heltec_HT_RA62_Approx.step",
-    "KLS_TS6604_4p3.step",
-    "NiceNano_Clone_Approx.step",
-    "S869M000S003_Approx.step",
-    "SMA_KLS1_SMA002_B_Approx.step",
-    "Shield_Frame_76x43.step",
-    "Shield_Lid_76x43.step",
-    "Sumida_CDRH127_LD.step",
-    "Sumida_CDRH127_LD_101.step",
-    "TDK_B57861S_Vertical_Approx.step",
-    "TI_DCT0008A.step",
-    "TPS63802_DLA0010A.step",
-    "Vishay_WSL1206.step"
+  "pending_required_inputs": [],
+  "validation_issues": [],
+  "entries": [
+    {
+      "file": ".gitattributes",
+      "bytes": 89,
+      "sha256": "0add09eed55cbb8582f3c53ae262d2aea7d8407503adc743955f7e9b23fa1d6e",
+      "source": "release\\mesh-repeater\\.gitattributes",
+      "source_sha256": "0add09eed55cbb8582f3c53ae262d2aea7d8407503adc743955f7e9b23fa1d6e"
+    },
+    {
+      "file": ".gitignore",
+      "bytes": 213,
+      "sha256": "64f43e3ddcc378a40b93d1bf9572cbaff499648b706fd7adc83acbf15aa22fad",
+      "source": "release\\mesh-repeater\\.gitignore",
+      "source_sha256": "64f43e3ddcc378a40b93d1bf9572cbaff499648b706fd7adc83acbf15aa22fad"
+    },
+    {
+      "file": "LICENSE.md",
+      "bytes": 1105,
+      "sha256": "a9d03581c5fb34cb085fad67f831f33e41c088f060557c686550b8252d82840d",
+      "source": "release\\mesh-repeater\\LICENSE.md",
+      "source_sha256": "a9d03581c5fb34cb085fad67f831f33e41c088f060557c686550b8252d82840d"
+    },
+    {
+      "file": "LICENSES/CC-BY-SA-4.0.txt",
+      "bytes": 20138,
+      "sha256": "28a9529c7d0bb4dc51f4bf5c116a3d16ef247a052f7591466768ddf563fd1cf5",
+      "source": "release\\mesh-repeater\\LICENSES\\CC-BY-SA-4.0.txt",
+      "source_sha256": "28a9529c7d0bb4dc51f4bf5c116a3d16ef247a052f7591466768ddf563fd1cf5"
+    },
+    {
+      "file": "LICENSES/CERN-OHL-P-2.0.txt",
+      "bytes": 8852,
+      "sha256": "6e471d647db50527d0c75ee5f1a55a74012ab177c73282bef0bdc7f6562b7ded",
+      "source": "release\\mesh-repeater\\LICENSES\\CERN-OHL-P-2.0.txt",
+      "source_sha256": "6e471d647db50527d0c75ee5f1a55a74012ab177c73282bef0bdc7f6562b7ded"
+    },
+    {
+      "file": "LICENSES/KiCad-Libraries-LICENSE.md",
+      "bytes": 2105,
+      "sha256": "285b027a721577d0bc0198f36e948c6c282ddaa4b58fef8ed826749576eb0aef",
+      "source": "release\\mesh-repeater\\LICENSES\\KiCad-Libraries-LICENSE.md",
+      "source_sha256": "285b027a721577d0bc0198f36e948c6c282ddaa4b58fef8ed826749576eb0aef"
+    },
+    {
+      "file": "README.md",
+      "bytes": 10711,
+      "sha256": "6df6df54a5dcdd8d8b9d84534e77eefbc5694f7f6fa9ccbb1fe75355683f86b2",
+      "source": "generated from measured S4.21 sources"
+    },
+    {
+      "file": "THIRD_PARTY_NOTICES.md",
+      "bytes": 9094,
+      "sha256": "031803f5f485d09b8e342884c71e50873396f0de363a787eb8e1bea17d8ce8c2",
+      "source": "release\\mesh-repeater\\THIRD_PARTY_NOTICES.md",
+      "source_sha256": "031803f5f485d09b8e342884c71e50873396f0de363a787eb8e1bea17d8ce8c2"
+    },
+    {
+      "file": "audit/s4_21_gerber_rezonit_20261018/manufacturing/cam_contract.json",
+      "bytes": 21283,
+      "sha256": "e692b43e17e1d4e435449255a57b56914382dff80a8772cea69c6bbfa2987a60",
+      "source": "v1\\audit\\s4_21_gerber_rezonit_20261018\\manufacturing\\cam_contract.json",
+      "source_sha256": "e692b43e17e1d4e435449255a57b56914382dff80a8772cea69c6bbfa2987a60"
+    },
+    {
+      "file": "audit/s4_21_gerber_rezonit_20261018/manufacturing/cam_validation.json",
+      "bytes": 21283,
+      "sha256": "e692b43e17e1d4e435449255a57b56914382dff80a8772cea69c6bbfa2987a60",
+      "source": "v1\\audit\\s4_21_gerber_rezonit_20261018\\manufacturing\\cam_validation.json",
+      "source_sha256": "e692b43e17e1d4e435449255a57b56914382dff80a8772cea69c6bbfa2987a60"
+    },
+    {
+      "file": "audit/s4_21_gerber_rezonit_20261018/manufacturing/copper_mask_geometry.json",
+      "bytes": 3416,
+      "sha256": "4e132f241e55de7d91914ce1d695fda9577d5eccc98b5b0e59debbc1421ad088",
+      "source": "v1\\audit\\s4_21_gerber_rezonit_20261018\\manufacturing\\copper_mask_geometry.json",
+      "source_sha256": "4e132f241e55de7d91914ce1d695fda9577d5eccc98b5b0e59debbc1421ad088"
+    },
+    {
+      "file": "audit/s4_21_gerber_rezonit_20261018/manufacturing/drill_comparison.json",
+      "bytes": 158726,
+      "sha256": "4083424d36c4cc72cf8d8a16ee904adb7a21204f9e162c99946d6482f747817a",
+      "source": "v1\\audit\\s4_21_gerber_rezonit_20261018\\manufacturing\\drill_comparison.json",
+      "source_sha256": "4083424d36c4cc72cf8d8a16ee904adb7a21204f9e162c99946d6482f747817a"
+    },
+    {
+      "file": "audit/s4_21_gerber_rezonit_20261018/manufacturing/outline_check.json",
+      "bytes": 727,
+      "sha256": "1fe2e0606f109f7c90b46de26c5fbb0ba2bcca9af765b77bd9f58a31182bff0a",
+      "source": "v1\\audit\\s4_21_gerber_rezonit_20261018\\manufacturing\\outline_check.json",
+      "source_sha256": "1fe2e0606f109f7c90b46de26c5fbb0ba2bcca9af765b77bd9f58a31182bff0a"
+    },
+    {
+      "file": "audit/s4_21_gerber_rezonit_20261018/root/export_provenance.json",
+      "bytes": 21099,
+      "sha256": "c90a39e4f8110ea1dc17a660263de912249c56ac882c2a14c33e8b8460db6721",
+      "source": "v1\\audit\\s4_21_gerber_rezonit_20261018\\root\\export_provenance.json",
+      "source_sha256": "c90a39e4f8110ea1dc17a660263de912249c56ac882c2a14c33e8b8460db6721"
+    },
+    {
+      "file": "audit/s4_21_gerber_rezonit_20261018/root/pdf_validation.json",
+      "bytes": 1842,
+      "sha256": "6af95c3d7ec57e4e096db5555bb0f933ffa0068748f74b46f6da9d739133b41a",
+      "source": "v1\\audit\\s4_21_gerber_rezonit_20261018\\root\\pdf_validation.json",
+      "source_sha256": "6af95c3d7ec57e4e096db5555bb0f933ffa0068748f74b46f6da9d739133b41a"
+    },
+    {
+      "file": "audit/s4_21_manual_routing_review_20261017/final_checks/angles.json",
+      "bytes": 238,
+      "sha256": "1a4986c69e929ee342d268de8236572fd83f9dd5f3c549a5d2db82a14b315987",
+      "source": "v1\\audit\\s4_21_manual_routing_review_20261017\\final_checks\\angles.json",
+      "source_sha256": "1a4986c69e929ee342d268de8236572fd83f9dd5f3c549a5d2db82a14b315987"
+    },
+    {
+      "file": "audit/s4_21_manual_routing_review_20261017/final_checks/contract.json",
+      "bytes": 10759,
+      "sha256": "2399712a9d4d041f62d2d758810b755cc3da642b9c6e02ff4f67f28fbfd6ac0e",
+      "source": "v1\\audit\\s4_21_manual_routing_review_20261017\\final_checks\\contract.json",
+      "source_sha256": "2399712a9d4d041f62d2d758810b755cc3da642b9c6e02ff4f67f28fbfd6ac0e"
+    },
+    {
+      "file": "audit/s4_21_manual_routing_review_20261017/final_checks/drc.json",
+      "bytes": 410,
+      "sha256": "33b8978f209c69f9d7426625f745c59befbdee0c8605afcd6e2afd836852fed1",
+      "source": "v1\\audit\\s4_21_manual_routing_review_20261017\\final_checks\\drc.json",
+      "source_sha256": "33b8978f209c69f9d7426625f745c59befbdee0c8605afcd6e2afd836852fed1"
+    },
+    {
+      "file": "audit/s4_21_manual_routing_review_20261017/final_checks/erc.json",
+      "bytes": 1870,
+      "sha256": "dd93d640939bbcadc1e25c298d5c89ae7b92c677f303ac523ccd2e43440afd76",
+      "source": "v1\\audit\\s4_21_manual_routing_review_20261017\\final_checks\\erc.json",
+      "source_sha256": "dd93d640939bbcadc1e25c298d5c89ae7b92c677f303ac523ccd2e43440afd76"
+    },
+    {
+      "file": "audit/s4_21_manual_routing_review_20261017/final_checks/fill_freshness.json",
+      "bytes": 1296,
+      "sha256": "6c5a969f421c4f11a3bf028c113458765ccc3a9f34467a1a3e34bd4b49ff1d91",
+      "source": "v1\\audit\\s4_21_manual_routing_review_20261017\\final_checks\\fill_freshness.json",
+      "source_sha256": "6c5a969f421c4f11a3bf028c113458765ccc3a9f34467a1a3e34bd4b49ff1d91"
+    },
+    {
+      "file": "audit/s4_21_manual_routing_review_20261017/final_checks/independent_verification_ru.txt",
+      "bytes": 3248,
+      "sha256": "876603098303e17d95cb877eaec2937ff3e562fa081458b5b9cfc003b22df295",
+      "source": "v1\\audit\\s4_21_manual_routing_review_20261017\\final_checks\\independent_verification_ru.txt",
+      "source_sha256": "876603098303e17d95cb877eaec2937ff3e562fa081458b5b9cfc003b22df295"
+    },
+    {
+      "file": "audit/s4_21_manual_routing_review_20261017/final_checks/manual_copper_overlaps.json",
+      "bytes": 715,
+      "sha256": "be150efc5f8dd956bbe6b5d1d90c921eeb4b3cc078299f783f941e24f069c76a",
+      "source": "v1\\audit\\s4_21_manual_routing_review_20261017\\final_checks\\manual_copper_overlaps.json",
+      "source_sha256": "be150efc5f8dd956bbe6b5d1d90c921eeb4b3cc078299f783f941e24f069c76a"
+    },
+    {
+      "file": "audit/s4_21_manual_routing_review_20261017/final_checks/mask.json",
+      "bytes": 437,
+      "sha256": "3924c1caa4d687f2a394d86a0b3b97228f0be0bcd827cabb20269c7f650692a5",
+      "source": "v1\\audit\\s4_21_manual_routing_review_20261017\\final_checks\\mask.json",
+      "source_sha256": "3924c1caa4d687f2a394d86a0b3b97228f0be0bcd827cabb20269c7f650692a5"
+    },
+    {
+      "file": "audit/s4_21_manual_routing_review_20261017/power/final_power_check.json",
+      "bytes": 74437,
+      "sha256": "11e1d0620b495d7ea228519774a78ca63c3c76a8e2c79aa9f33dc7a2c40533af",
+      "source": "v1\\audit\\s4_21_manual_routing_review_20261017\\power\\final_power_check.json",
+      "source_sha256": "11e1d0620b495d7ea228519774a78ca63c3c76a8e2c79aa9f33dc7a2c40533af"
+    },
+    {
+      "file": "audit/s4_21_manual_routing_review_20261017/power/final_returns.json",
+      "bytes": 25845,
+      "sha256": "84dff87de578c0c5103c41279ed714b9492cf9f5d73a6f5b00cdb8476e025f4a",
+      "source": "v1\\audit\\s4_21_manual_routing_review_20261017\\power\\final_returns.json",
+      "source_sha256": "84dff87de578c0c5103c41279ed714b9492cf9f5d73a6f5b00cdb8476e025f4a"
+    },
+    {
+      "file": "audit/s4_21_manual_routing_review_20261017/root/back_caption_check.json",
+      "bytes": 484,
+      "sha256": "223aeef5acadebe22f3131194ca032bbea28c6b6d003eaee2f4dc3b41090d09c",
+      "source": "v1\\audit\\s4_21_manual_routing_review_20261017\\root\\back_caption_check.json",
+      "source_sha256": "223aeef5acadebe22f3131194ca032bbea28c6b6d003eaee2f4dc3b41090d09c"
+    },
+    {
+      "file": "audit/s4_21_manual_routing_review_20261017/root/final_local_fixes.json",
+      "bytes": 3235,
+      "sha256": "1bc6a0bf3aefb68e2bcfbd70e08fcc5cd310b176d9dcae33439cad302bf777a2",
+      "source": "v1\\audit\\s4_21_manual_routing_review_20261017\\root\\final_local_fixes.json",
+      "source_sha256": "1bc6a0bf3aefb68e2bcfbd70e08fcc5cd310b176d9dcae33439cad302bf777a2"
+    },
+    {
+      "file": "audit/s4_21_manual_routing_review_20261017/root/merged.json",
+      "bytes": 20809,
+      "sha256": "b17fdbf0630e8a057b2be615178225e986dcf6371ca42030d60b1e3814cd6f54",
+      "source": "v1\\audit\\s4_21_manual_routing_review_20261017\\root\\merged.json",
+      "source_sha256": "b17fdbf0630e8a057b2be615178225e986dcf6371ca42030d60b1e3814cd6f54"
+    },
+    {
+      "file": "audit/s4_21_manual_routing_review_20261017/root/published.json",
+      "bytes": 1197,
+      "sha256": "22c3570eb55c4075ca9f9233430771dee83742df8373ffe9d5b14917786b6aa9",
+      "source": "v1\\audit\\s4_21_manual_routing_review_20261017\\root\\published.json",
+      "source_sha256": "22c3570eb55c4075ca9f9233430771dee83742df8373ffe9d5b14917786b6aa9"
+    },
+    {
+      "file": "audit/s4_21_manual_routing_review_20261017/root/visual_review.json",
+      "bytes": 971,
+      "sha256": "d63a7d3f2b9a729580c4cc5872c927004e414e3dcf3b891fe9ee90155a7489fe",
+      "source": "v1\\audit\\s4_21_manual_routing_review_20261017\\root\\visual_review.json",
+      "source_sha256": "d63a7d3f2b9a729580c4cc5872c927004e414e3dcf3b891fe9ee90155a7489fe"
+    },
+    {
+      "file": "bom/NOTES_RU.txt",
+      "bytes": 1551,
+      "sha256": "80c7c2078175d82582bdaf4a73ac1afe013cce0f1d98b66ab3504e2664266d3d",
+      "source": "generated from measured S4.21 sources"
+    },
+    {
+      "file": "bom/S4_21_COMPONENT_BOM.csv",
+      "bytes": 87707,
+      "sha256": "916b308fea109b4bbcbb5eca59491e901b2f801565097379dbdce947e168e75e",
+      "source": "v1\\bom\\S4_21_COMPONENT_BOM.csv",
+      "source_sha256": "916b308fea109b4bbcbb5eca59491e901b2f801565097379dbdce947e168e75e"
+    },
+    {
+      "file": "design/Meshcore_NaIon/3dmodels/CR2032_Cell.step",
+      "bytes": 700270,
+      "sha256": "2e61853937eaed4a26c043eb43a569b183f40fc3d1a451455ee6cdb7bc57140e",
+      "source": "v1\\design\\Meshcore_NaIon\\3dmodels\\CR2032_Cell.step",
+      "source_sha256": "2e61853937eaed4a26c043eb43a569b183f40fc3d1a451455ee6cdb7bc57140e"
+    },
+    {
+      "file": "design/Meshcore_NaIon/3dmodels/Coilcraft_XGL4020.step",
+      "bytes": 285066,
+      "sha256": "b6bd76d01981e885ab7167550fa756113c7c8f41f9a80b5c0d8a5ae3be9c8e67",
+      "source": "v1\\design\\Meshcore_NaIon\\3dmodels\\Coilcraft_XGL4020.step",
+      "source_sha256": "b6bd76d01981e885ab7167550fa756113c7c8f41f9a80b5c0d8a5ae3be9c8e67"
+    },
+    {
+      "file": "design/Meshcore_NaIon/3dmodels/Connfly_DS1027_2BBN1.step",
+      "bytes": 46268,
+      "sha256": "55eb4f228c1ac6c2cd0386ae04d6f0f8144c3b34d3c381d7d454a2b747f8c9d5",
+      "source": "v1\\design\\Meshcore_NaIon\\3dmodels\\Connfly_DS1027_2BBN1.step",
+      "source_sha256": "55eb4f228c1ac6c2cd0386ae04d6f0f8144c3b34d3c381d7d454a2b747f8c9d5"
+    },
+    {
+      "file": "design/Meshcore_NaIon/3dmodels/FB1_BLM21_0805.step",
+      "bytes": 43618,
+      "sha256": "751a8ae26d20698bfe8303aa2fc7ec986a8b9a7154699b94bf2a13d4ad401425",
+      "source": "v1\\design\\Meshcore_NaIon\\3dmodels\\FB1_BLM21_0805.step",
+      "source_sha256": "751a8ae26d20698bfe8303aa2fc7ec986a8b9a7154699b94bf2a13d4ad401425"
+    },
+    {
+      "file": "design/Meshcore_NaIon/3dmodels/FB1_BLМ21_0805.step",
+      "bytes": 43618,
+      "sha256": "751a8ae26d20698bfe8303aa2fc7ec986a8b9a7154699b94bf2a13d4ad401425",
+      "source": "v1\\design\\Meshcore_NaIon\\3dmodels\\FB1_BLМ21_0805.step",
+      "source_sha256": "751a8ae26d20698bfe8303aa2fc7ec986a8b9a7154699b94bf2a13d4ad401425"
+    },
+    {
+      "file": "design/Meshcore_NaIon/3dmodels/Heltec_HT_RA62_Approx.step",
+      "bytes": 1913092,
+      "sha256": "8f01259c84ab23507bb623e440bbcba2db85635ddbbfbc85315013359566e15e",
+      "source": "v1\\design\\Meshcore_NaIon\\3dmodels\\Heltec_HT_RA62_Approx.step",
+      "source_sha256": "8f01259c84ab23507bb623e440bbcba2db85635ddbbfbc85315013359566e15e"
+    },
+    {
+      "file": "design/Meshcore_NaIon/3dmodels/Jumper_2p54_Shunt.step",
+      "bytes": 47369,
+      "sha256": "a75bc33f5d27f66cc31b3868d038ded03e21c47c95f499b0bc7b2a6ed3babb98",
+      "source": "v1\\design\\Meshcore_NaIon\\3dmodels\\Jumper_2p54_Shunt.step",
+      "source_sha256": "a75bc33f5d27f66cc31b3868d038ded03e21c47c95f499b0bc7b2a6ed3babb98"
+    },
+    {
+      "file": "design/Meshcore_NaIon/3dmodels/KLS_TS6604_4p3.step",
+      "bytes": 131427,
+      "sha256": "12b3864afbb63c919c627dcfe6d0e122fcfd31d0f67970d48b67b4047a153e8a",
+      "source": "v1\\design\\Meshcore_NaIon\\3dmodels\\KLS_TS6604_4p3.step",
+      "source_sha256": "12b3864afbb63c919c627dcfe6d0e122fcfd31d0f67970d48b67b4047a153e8a"
+    },
+    {
+      "file": "design/Meshcore_NaIon/3dmodels/NiceNano_Clone_Approx.step",
+      "bytes": 2792450,
+      "sha256": "d0171b50564695dc8925d020891c3b814ea1b3340944900e3f424e6dfdfda088",
+      "source": "v1\\design\\Meshcore_NaIon\\3dmodels\\NiceNano_Clone_Approx.step",
+      "source_sha256": "d0171b50564695dc8925d020891c3b814ea1b3340944900e3f424e6dfdfda088"
+    },
+    {
+      "file": "design/Meshcore_NaIon/3dmodels/README_RU.txt",
+      "bytes": 8704,
+      "sha256": "428e9252fc615d6ddce26512b61598935ad41af112851154dad03ba43872f701",
+      "source": "v1\\design\\Meshcore_NaIon\\3dmodels\\README_RU.txt",
+      "source_sha256": "428e9252fc615d6ddce26512b61598935ad41af112851154dad03ba43872f701"
+    },
+    {
+      "file": "design/Meshcore_NaIon/3dmodels/S869M000S003_Approx.step",
+      "bytes": 133553,
+      "sha256": "f014778833906a7ee87329e0ef6e8959c5eaa838f1694c58b1b39a34db635efd",
+      "source": "v1\\design\\Meshcore_NaIon\\3dmodels\\S869M000S003_Approx.step",
+      "source_sha256": "f014778833906a7ee87329e0ef6e8959c5eaa838f1694c58b1b39a34db635efd"
+    },
+    {
+      "file": "design/Meshcore_NaIon/3dmodels/SMA_KLS1_SMA002_B_Approx.step",
+      "bytes": 170981,
+      "sha256": "6d4fe1194d68cf1f6bb598c5a9eca8142b4ff96218b0d503e7e3cd4f3e645574",
+      "source": "v1\\design\\Meshcore_NaIon\\3dmodels\\SMA_KLS1_SMA002_B_Approx.step",
+      "source_sha256": "6d4fe1194d68cf1f6bb598c5a9eca8142b4ff96218b0d503e7e3cd4f3e645574"
+    },
+    {
+      "file": "design/Meshcore_NaIon/3dmodels/Shield_Frame_76x43.step",
+      "bytes": 32217,
+      "sha256": "36a219fac7772c7b7f1d818d9d5f43f0271e14b4739aa7205f7e6304ff25c867",
+      "source": "v1\\design\\Meshcore_NaIon\\3dmodels\\Shield_Frame_76x43.step",
+      "source_sha256": "36a219fac7772c7b7f1d818d9d5f43f0271e14b4739aa7205f7e6304ff25c867"
+    },
+    {
+      "file": "design/Meshcore_NaIon/3dmodels/Shield_Frame_76x49_3_Chamfer.step",
+      "bytes": 49063,
+      "sha256": "0be7689bf118f5c03af81fce7b9a99d21cc07fabd30fa40d357447b8a662275e",
+      "source": "v1\\design\\Meshcore_NaIon\\3dmodels\\Shield_Frame_76x49_3_Chamfer.step",
+      "source_sha256": "0be7689bf118f5c03af81fce7b9a99d21cc07fabd30fa40d357447b8a662275e"
+    },
+    {
+      "file": "design/Meshcore_NaIon/3dmodels/Shield_Lid_76x43.step",
+      "bytes": 17484,
+      "sha256": "eae413cb0dd8a1c8bb92b650392139432c92ef89365f211742fb0b5f655c1956",
+      "source": "v1\\design\\Meshcore_NaIon\\3dmodels\\Shield_Lid_76x43.step",
+      "source_sha256": "eae413cb0dd8a1c8bb92b650392139432c92ef89365f211742fb0b5f655c1956"
+    },
+    {
+      "file": "design/Meshcore_NaIon/3dmodels/Shield_Lid_76x49_3_Chamfer.step",
+      "bytes": 25303,
+      "sha256": "f9e0436910fd11bdab3026dfc5bab8533d40372b4ca49a2a21eb43b31648d2a1",
+      "source": "v1\\design\\Meshcore_NaIon\\3dmodels\\Shield_Lid_76x49_3_Chamfer.step",
+      "source_sha256": "f9e0436910fd11bdab3026dfc5bab8533d40372b4ca49a2a21eb43b31648d2a1"
+    },
+    {
+      "file": "design/Meshcore_NaIon/3dmodels/Sumida_CDRH127_LD.step",
+      "bytes": 344068,
+      "sha256": "94832871efb6205b0fb77c3eaac46e01d9efcbe52f2ebd014d618ab59f0b05be",
+      "source": "v1\\design\\Meshcore_NaIon\\3dmodels\\Sumida_CDRH127_LD.step",
+      "source_sha256": "94832871efb6205b0fb77c3eaac46e01d9efcbe52f2ebd014d618ab59f0b05be"
+    },
+    {
+      "file": "design/Meshcore_NaIon/3dmodels/Sumida_CDRH127_LD_101.step",
+      "bytes": 246645,
+      "sha256": "265f65dc07053daaac33a0108cd1bee9a0c71254f2f165f372a7b99773cb2199",
+      "source": "v1\\design\\Meshcore_NaIon\\3dmodels\\Sumida_CDRH127_LD_101.step",
+      "source_sha256": "265f65dc07053daaac33a0108cd1bee9a0c71254f2f165f372a7b99773cb2199"
+    },
+    {
+      "file": "design/Meshcore_NaIon/3dmodels/Sunltech_SLW8040S.step",
+      "bytes": 288751,
+      "sha256": "80b262ab45085a7a9841763a76d502105e3ca58a365bfb6b96cce08b7a283626",
+      "source": "v1\\design\\Meshcore_NaIon\\3dmodels\\Sunltech_SLW8040S.step",
+      "source_sha256": "80b262ab45085a7a9841763a76d502105e3ca58a365bfb6b96cce08b7a283626"
+    },
+    {
+      "file": "design/Meshcore_NaIon/3dmodels/TDK_B57861S_Vertical_Approx.step",
+      "bytes": 61973,
+      "sha256": "605a437a0adc4d4ea826ad05a57c8fddf7ad756bc49f4fd55659f5e829762dc2",
+      "source": "v1\\design\\Meshcore_NaIon\\3dmodels\\TDK_B57861S_Vertical_Approx.step",
+      "source_sha256": "605a437a0adc4d4ea826ad05a57c8fddf7ad756bc49f4fd55659f5e829762dc2"
+    },
+    {
+      "file": "design/Meshcore_NaIon/3dmodels/TI_DCT0008A.step",
+      "bytes": 147563,
+      "sha256": "5507e436c9a888714db3be0ead2e8a9dd78ebebcb8ebf748070695de62ec673e",
+      "source": "v1\\design\\Meshcore_NaIon\\3dmodels\\TI_DCT0008A.step",
+      "source_sha256": "5507e436c9a888714db3be0ead2e8a9dd78ebebcb8ebf748070695de62ec673e"
+    },
+    {
+      "file": "design/Meshcore_NaIon/3dmodels/TPS63802_DLA0010A.step",
+      "bytes": 189766,
+      "sha256": "e5e3775caacbf170bd75cf228bb8f9e615edc705298a8c430399939a4b3fd667",
+      "source": "v1\\design\\Meshcore_NaIon\\3dmodels\\TPS63802_DLA0010A.step",
+      "source_sha256": "e5e3775caacbf170bd75cf228bb8f9e615edc705298a8c430399939a4b3fd667"
+    },
+    {
+      "file": "design/Meshcore_NaIon/3dmodels/Vishay_WSL1206.step",
+      "bytes": 457012,
+      "sha256": "4fe190ec44210285548f50b2997bedd29fb197988c23002071778e6401df17c5",
+      "source": "v1\\design\\Meshcore_NaIon\\3dmodels\\Vishay_WSL1206.step",
+      "source_sha256": "4fe190ec44210285548f50b2997bedd29fb197988c23002071778e6401df17c5"
+    },
+    {
+      "file": "design/Meshcore_NaIon/3dmodels/XKB_TS1187A.step",
+      "bytes": 106307,
+      "sha256": "522e87e1123aa58034bec3aeece8ea4439e564501aa61675a4ee8654971ff406",
+      "source": "v1\\design\\Meshcore_NaIon\\3dmodels\\XKB_TS1187A.step",
+      "source_sha256": "522e87e1123aa58034bec3aeece8ea4439e564501aa61675a4ee8654971ff406"
+    },
+    {
+      "file": "design/Meshcore_NaIon/3dmodels/manifest.json",
+      "bytes": 8795,
+      "sha256": "ea3a0dc0862d25ccdd53859fc1452de7053ea2ab272e8f86c6f8203e9c61f72b",
+      "source": "v1\\design\\Meshcore_NaIon\\3dmodels\\manifest.json",
+      "source_sha256": "ea3a0dc0862d25ccdd53859fc1452de7053ea2ab272e8f86c6f8203e9c61f72b"
+    },
+    {
+      "file": "design/Meshcore_NaIon/3dmodels/manifest_s4_15.json",
+      "bytes": 884,
+      "sha256": "45959a02bd14986553fca4c9eeaf18588e99b62f5e037e447eb915c0eb73d08c",
+      "source": "v1\\design\\Meshcore_NaIon\\3dmodels\\manifest_s4_15.json",
+      "source_sha256": "45959a02bd14986553fca4c9eeaf18588e99b62f5e037e447eb915c0eb73d08c"
+    },
+    {
+      "file": "design/Meshcore_NaIon/3dmodels/manifest_s4_19.json",
+      "bytes": 1399,
+      "sha256": "ac46435a49aca2188e55052884caaf63d53a5c432459cfc31b06868dea09a751",
+      "source": "v1\\design\\Meshcore_NaIon\\3dmodels\\manifest_s4_19.json",
+      "source_sha256": "ac46435a49aca2188e55052884caaf63d53a5c432459cfc31b06868dea09a751"
+    },
+    {
+      "file": "design/Meshcore_NaIon/3dmodels/manifest_s4_6.json",
+      "bytes": 2417,
+      "sha256": "c8d3b1448d9326fbdd6003ec2316da0266f0130ac4924c96d1b888ec3c45c4a0",
+      "source": "v1\\design\\Meshcore_NaIon\\3dmodels\\manifest_s4_6.json",
+      "source_sha256": "c8d3b1448d9326fbdd6003ec2316da0266f0130ac4924c96d1b888ec3c45c4a0"
+    },
+    {
+      "file": "design/Meshcore_NaIon/BatteryMonitor.kicad_sch",
+      "bytes": 189952,
+      "sha256": "b1c1e2685a13ca7b1ebe4e5daf67edf054e21d00fbed97844eaee9b1fcb91da2",
+      "source": "v1\\design\\Meshcore_NaIon\\BatteryMonitor.kicad_sch",
+      "source_sha256": "b1c1e2685a13ca7b1ebe4e5daf67edf054e21d00fbed97844eaee9b1fcb91da2"
+    },
+    {
+      "file": "design/Meshcore_NaIon/Converter.kicad_sch",
+      "bytes": 423542,
+      "sha256": "fa2a3df82d9086a7dfc39def799e70addc2acee0ed29d54d1b64be3b12dd0d40",
+      "source": "v1\\design\\Meshcore_NaIon\\Converter.kicad_sch",
+      "source_sha256": "fa2a3df82d9086a7dfc39def799e70addc2acee0ed29d54d1b64be3b12dd0d40"
+    },
+    {
+      "file": "design/Meshcore_NaIon/LTO_Balancer.kicad_sch",
+      "bytes": 216091,
+      "sha256": "f837f58d22c2dbdd01627dafe27ab10651389c053fa16fe1cfd3b824b57dfd94",
+      "source": "v1\\design\\Meshcore_NaIon\\LTO_Balancer.kicad_sch",
+      "source_sha256": "f837f58d22c2dbdd01627dafe27ab10651389c053fa16fe1cfd3b824b57dfd94"
+    },
+    {
+      "file": "design/Meshcore_NaIon/Meshcore.kicad_sym",
+      "bytes": 132003,
+      "sha256": "2559b6a27c6a7942cb80c5bc152b68d719225dc729398172a90aaba6e6033dc9",
+      "source": "v1\\design\\Meshcore_NaIon\\Meshcore.kicad_sym",
+      "source_sha256": "2559b6a27c6a7942cb80c5bc152b68d719225dc729398172a90aaba6e6033dc9"
+    },
+    {
+      "file": "design/Meshcore_NaIon/Meshcore.pretty/BatteryHolder_Keystone_1060_1x2032.kicad_mod",
+      "bytes": 10945,
+      "sha256": "844d3dc38ced93cd86a83cb283033c706b8422940354ad7e46c97b2b138256d5",
+      "source": "v1\\design\\Meshcore_NaIon\\Meshcore.pretty\\BatteryHolder_Keystone_1060_1x2032.kicad_mod",
+      "source_sha256": "844d3dc38ced93cd86a83cb283033c706b8422940354ad7e46c97b2b138256d5"
+    },
+    {
+      "file": "design/Meshcore_NaIon/Meshcore.pretty/CP_Elec_6.3x5.4.kicad_mod",
+      "bytes": 5603,
+      "sha256": "6283e0874ce8f2ff33daad82fc400340ccba2c5569c1f4f4527fd50b856b52bb",
+      "source": "v1\\design\\Meshcore_NaIon\\Meshcore.pretty\\CP_Elec_6.3x5.4.kicad_mod",
+      "source_sha256": "6283e0874ce8f2ff33daad82fc400340ccba2c5569c1f4f4527fd50b856b52bb"
+    },
+    {
+      "file": "design/Meshcore_NaIon/Meshcore.pretty/CP_Elec_6.3x7.7.kicad_mod",
+      "bytes": 5598,
+      "sha256": "2c95e02eea974c11dc3f12c123b498ac49ffa3ad57382011b0f8579a9f865659",
+      "source": "v1\\design\\Meshcore_NaIon\\Meshcore.pretty\\CP_Elec_6.3x7.7.kicad_mod",
+      "source_sha256": "2c95e02eea974c11dc3f12c123b498ac49ffa3ad57382011b0f8579a9f865659"
+    },
+    {
+      "file": "design/Meshcore_NaIon/Meshcore.pretty/CP_Elec_Panasonic_FK_D_6.3x5.8.kicad_mod",
+      "bytes": 5613,
+      "sha256": "b409c4b4e6b3444a4f2012028f3e9d0b2422240aa55d707d3e787e5a3661982e",
+      "source": "v1\\design\\Meshcore_NaIon\\Meshcore.pretty\\CP_Elec_Panasonic_FK_D_6.3x5.8.kicad_mod",
+      "source_sha256": "b409c4b4e6b3444a4f2012028f3e9d0b2422240aa55d707d3e787e5a3661982e"
+    },
+    {
+      "file": "design/Meshcore_NaIon/Meshcore.pretty/C_0603_1608Metric.kicad_mod",
+      "bytes": 2040,
+      "sha256": "b572d165cd408fc7f013191402e4b4032f46d5d5042c51f2c8e89db2f02a1e54",
+      "source": "v1\\design\\Meshcore_NaIon\\Meshcore.pretty\\C_0603_1608Metric.kicad_mod",
+      "source_sha256": "b572d165cd408fc7f013191402e4b4032f46d5d5042c51f2c8e89db2f02a1e54"
+    },
+    {
+      "file": "design/Meshcore_NaIon/Meshcore.pretty/C_0805_2012Metric.kicad_mod",
+      "bytes": 2142,
+      "sha256": "6bff3ba934505c5a7085d8b655174468f264b70081e83945c771b95bf43314bc",
+      "source": "v1\\design\\Meshcore_NaIon\\Meshcore.pretty\\C_0805_2012Metric.kicad_mod",
+      "source_sha256": "6bff3ba934505c5a7085d8b655174468f264b70081e83945c771b95bf43314bc"
+    },
+    {
+      "file": "design/Meshcore_NaIon/Meshcore.pretty/C_1206_3216Metric.kicad_mod",
+      "bytes": 2050,
+      "sha256": "fd21c25e53290ffd8b2c2ee631373b0a77714771f9683b491ac4fce9ad295546",
+      "source": "v1\\design\\Meshcore_NaIon\\Meshcore.pretty\\C_1206_3216Metric.kicad_mod",
+      "source_sha256": "fd21c25e53290ffd8b2c2ee631373b0a77714771f9683b491ac4fce9ad295546"
+    },
+    {
+      "file": "design/Meshcore_NaIon/Meshcore.pretty/C_1210_3225Metric.kicad_mod",
+      "bytes": 2048,
+      "sha256": "ae4b9760e9dc9f643015df14d27b4b1def0706731f634e2604bc2370c9410f2f",
+      "source": "v1\\design\\Meshcore_NaIon\\Meshcore.pretty\\C_1210_3225Metric.kicad_mod",
+      "source_sha256": "ae4b9760e9dc9f643015df14d27b4b1def0706731f634e2604bc2370c9410f2f"
+    },
+    {
+      "file": "design/Meshcore_NaIon/Meshcore.pretty/C_1812_4532Metric.kicad_mod",
+      "bytes": 2040,
+      "sha256": "862e96a30a6f5892c67aac92c4ac764d44568109f459cc3659a1867f8925cd39",
+      "source": "v1\\design\\Meshcore_NaIon\\Meshcore.pretty\\C_1812_4532Metric.kicad_mod",
+      "source_sha256": "862e96a30a6f5892c67aac92c4ac764d44568109f459cc3659a1867f8925cd39"
+    },
+    {
+      "file": "design/Meshcore_NaIon/Meshcore.pretty/D_SMA.kicad_mod",
+      "bytes": 4816,
+      "sha256": "068606d6b17719e0155e2f5f6e5b6078adde5b60a9b907aca4425058f33f5afc",
+      "source": "v1\\design\\Meshcore_NaIon\\Meshcore.pretty\\D_SMA.kicad_mod",
+      "source_sha256": "068606d6b17719e0155e2f5f6e5b6078adde5b60a9b907aca4425058f33f5afc"
+    },
+    {
+      "file": "design/Meshcore_NaIon/Meshcore.pretty/D_SMB.kicad_mod",
+      "bytes": 4816,
+      "sha256": "3c29c34cc0ee6618264feb379e8ea6bc7256cb99c64c58a67ea81cf0001b8697",
+      "source": "v1\\design\\Meshcore_NaIon\\Meshcore.pretty\\D_SMB.kicad_mod",
+      "source_sha256": "3c29c34cc0ee6618264feb379e8ea6bc7256cb99c64c58a67ea81cf0001b8697"
+    },
+    {
+      "file": "design/Meshcore_NaIon/Meshcore.pretty/D_SOD-123.kicad_mod",
+      "bytes": 4859,
+      "sha256": "79114bfc4edd5dceef68178e30d2280af4fa8c8bd7914002d00fac60b48d3f13",
+      "source": "v1\\design\\Meshcore_NaIon\\Meshcore.pretty\\D_SOD-123.kicad_mod",
+      "source_sha256": "79114bfc4edd5dceef68178e30d2280af4fa8c8bd7914002d00fac60b48d3f13"
+    },
+    {
+      "file": "design/Meshcore_NaIon/Meshcore.pretty/Ferrite_Murata_BLM21PG.kicad_mod",
+      "bytes": 1370,
+      "sha256": "05ade9b3116576a9570b4b78f95209b59094b27b3fe21d523016d959f61f564b",
+      "source": "v1\\design\\Meshcore_NaIon\\Meshcore.pretty\\Ferrite_Murata_BLM21PG.kicad_mod",
+      "source_sha256": "05ade9b3116576a9570b4b78f95209b59094b27b3fe21d523016d959f61f564b"
+    },
+    {
+      "file": "design/Meshcore_NaIon/Meshcore.pretty/HT_RA62.kicad_mod",
+      "bytes": 1964,
+      "sha256": "fd2071032464197b8483f57a3e85ac808193e368e3865887e9ac70206697fe2b",
+      "source": "v1\\design\\Meshcore_NaIon\\Meshcore.pretty\\HT_RA62.kicad_mod",
+      "source_sha256": "fd2071032464197b8483f57a3e85ac808193e368e3865887e9ac70206697fe2b"
+    },
+    {
+      "file": "design/Meshcore_NaIon/Meshcore.pretty/LED_0805_2012Metric.kicad_mod",
+      "bytes": 2599,
+      "sha256": "4078e5088c26303c057525d7392597a0a6107d405b5d0092af6d77ca7fee9020",
+      "source": "v1\\design\\Meshcore_NaIon\\Meshcore.pretty\\LED_0805_2012Metric.kicad_mod",
+      "source_sha256": "4078e5088c26303c057525d7392597a0a6107d405b5d0092af6d77ca7fee9020"
+    },
+    {
+      "file": "design/Meshcore_NaIon/Meshcore.pretty/L_Coilcraft_DO5040H_473MLD.kicad_mod",
+      "bytes": 1494,
+      "sha256": "ca4069da8647fbc4a6333c13aab547da0a3a8b4c899644130db7e9b6a0c2dff2",
+      "source": "v1\\design\\Meshcore_NaIon\\Meshcore.pretty\\L_Coilcraft_DO5040H_473MLD.kicad_mod",
+      "source_sha256": "ca4069da8647fbc4a6333c13aab547da0a3a8b4c899644130db7e9b6a0c2dff2"
+    },
+    {
+      "file": "design/Meshcore_NaIon/Meshcore.pretty/L_Coilcraft_XGL4020_471MEC.kicad_mod",
+      "bytes": 2098,
+      "sha256": "e3cbf76ae8fc3785af6ea3310443fe7e7981c184f1725e7985099b7182cab4dd",
+      "source": "v1\\design\\Meshcore_NaIon\\Meshcore.pretty\\L_Coilcraft_XGL4020_471MEC.kicad_mod",
+      "source_sha256": "e3cbf76ae8fc3785af6ea3310443fe7e7981c184f1725e7985099b7182cab4dd"
+    },
+    {
+      "file": "design/Meshcore_NaIon/Meshcore.pretty/L_Murata_DFE201612E.kicad_mod",
+      "bytes": 1291,
+      "sha256": "bae9bdbcee0d3f65d6636188be3cb2181857f8a4aaabb7eebc96d72025fd37e1",
+      "source": "v1\\design\\Meshcore_NaIon\\Meshcore.pretty\\L_Murata_DFE201612E.kicad_mod",
+      "source_sha256": "bae9bdbcee0d3f65d6636188be3cb2181857f8a4aaabb7eebc96d72025fd37e1"
+    },
+    {
+      "file": "design/Meshcore_NaIon/Meshcore.pretty/L_Sumida_CDRH127_LD.kicad_mod",
+      "bytes": 2500,
+      "sha256": "a980e32083b08ff442be4d6ae5eaebdaf8918529ab5bb2e1a0a1922e431a0bb7",
+      "source": "v1\\design\\Meshcore_NaIon\\Meshcore.pretty\\L_Sumida_CDRH127_LD.kicad_mod",
+      "source_sha256": "a980e32083b08ff442be4d6ae5eaebdaf8918529ab5bb2e1a0a1922e431a0bb7"
+    },
+    {
+      "file": "design/Meshcore_NaIon/Meshcore.pretty/L_Sumida_CDRH127_LDNP_101MC.kicad_mod",
+      "bytes": 2523,
+      "sha256": "0e84c55693e604a1f3e7f6dbe43986e627c869f02617824f32395cc501e3d6c3",
+      "source": "v1\\design\\Meshcore_NaIon\\Meshcore.pretty\\L_Sumida_CDRH127_LDNP_101MC.kicad_mod",
+      "source_sha256": "0e84c55693e604a1f3e7f6dbe43986e627c869f02617824f32395cc501e3d6c3"
+    },
+    {
+      "file": "design/Meshcore_NaIon/Meshcore.pretty/L_Sunltech_SLW8040S.kicad_mod",
+      "bytes": 2113,
+      "sha256": "dbcc6dcb9d9796ba838891fe2602ccc5579d5b60b6eda07550a000fc6a75823a",
+      "source": "v1\\design\\Meshcore_NaIon\\Meshcore.pretty\\L_Sunltech_SLW8040S.kicad_mod",
+      "source_sha256": "dbcc6dcb9d9796ba838891fe2602ccc5579d5b60b6eda07550a000fc6a75823a"
+    },
+    {
+      "file": "design/Meshcore_NaIon/Meshcore.pretty/Molex_PicoBlade_53261-0871_1x08-1MP_P1.25mm_Horizontal.kicad_mod",
+      "bytes": 8418,
+      "sha256": "8be972e452a9e510b3809c1b97c179de972c9d812d2747177f68a5591525d589",
+      "source": "v1\\design\\Meshcore_NaIon\\Meshcore.pretty\\Molex_PicoBlade_53261-0871_1x08-1MP_P1.25mm_Horizontal.kicad_mod",
+      "source_sha256": "8be972e452a9e510b3809c1b97c179de972c9d812d2747177f68a5591525d589"
+    },
+    {
+      "file": "design/Meshcore_NaIon/Meshcore.pretty/MountingHole_3.2mm_M3.kicad_mod",
+      "bytes": 1364,
+      "sha256": "3853c52bba27d3e3e3e18db44a20dfb296eb9e6cd16ebf26fe4a96a2ee8add3b",
+      "source": "v1\\design\\Meshcore_NaIon\\Meshcore.pretty\\MountingHole_3.2mm_M3.kicad_mod",
+      "source_sha256": "3853c52bba27d3e3e3e18db44a20dfb296eb9e6cd16ebf26fe4a96a2ee8add3b"
+    },
+    {
+      "file": "design/Meshcore_NaIon/Meshcore.pretty/NTC_Remote_SolderPads_P2.54mm.kicad_mod",
+      "bytes": 579,
+      "sha256": "a5a5f130939ab58e02dbd9da0f88ac00b9528c2158805e1dfe122e22ec0d7e6e",
+      "source": "v1\\design\\Meshcore_NaIon\\Meshcore.pretty\\NTC_Remote_SolderPads_P2.54mm.kicad_mod",
+      "source_sha256": "a5a5f130939ab58e02dbd9da0f88ac00b9528c2158805e1dfe122e22ec0d7e6e"
+    },
+    {
+      "file": "design/Meshcore_NaIon/Meshcore.pretty/NTC_TDK_B57861S_Onboard_or_Remote_P2.54mm.kicad_mod",
+      "bytes": 1582,
+      "sha256": "d1d75d6ce06cd9c54e9b9d8d969cc00ac04b1c8a635f03d6e85904852d00be19",
+      "source": "v1\\design\\Meshcore_NaIon\\Meshcore.pretty\\NTC_TDK_B57861S_Onboard_or_Remote_P2.54mm.kicad_mod",
+      "source_sha256": "d1d75d6ce06cd9c54e9b9d8d969cc00ac04b1c8a635f03d6e85904852d00be19"
+    },
+    {
+      "file": "design/Meshcore_NaIon/Meshcore.pretty/NetTie_2_SMD_Power_Star_A3.kicad_mod",
+      "bytes": 723,
+      "sha256": "b42c6e9e8ab2427a7f37a80e576ddaee5b04846cab0e2b0ad87b9ccec84e4b55",
+      "source": "v1\\design\\Meshcore_NaIon\\Meshcore.pretty\\NetTie_2_SMD_Power_Star_A3.kicad_mod",
+      "source_sha256": "b42c6e9e8ab2427a7f37a80e576ddaee5b04846cab0e2b0ad87b9ccec84e4b55"
+    },
+    {
+      "file": "design/Meshcore_NaIon/Meshcore.pretty/NiceNano_13x2_Socket.kicad_mod",
+      "bytes": 3182,
+      "sha256": "e7c3d67ad190087bc3815f1507128fc58edb6702c2933674df83903e69eae219",
+      "source": "v1\\design\\Meshcore_NaIon\\Meshcore.pretty\\NiceNano_13x2_Socket.kicad_mod",
+      "source_sha256": "e7c3d67ad190087bc3815f1507128fc58edb6702c2933674df83903e69eae219"
+    },
+    {
+      "file": "design/Meshcore_NaIon/Meshcore.pretty/PinHeader_1x02_P2.54mm_Vertical.kicad_mod",
+      "bytes": 2994,
+      "sha256": "3fdc0ff6cc4592d20b418282349b6ded480490d002af3feb8ee5bfef39290404",
+      "source": "v1\\design\\Meshcore_NaIon\\Meshcore.pretty\\PinHeader_1x02_P2.54mm_Vertical.kicad_mod",
+      "source_sha256": "3fdc0ff6cc4592d20b418282349b6ded480490d002af3feb8ee5bfef39290404"
+    },
+    {
+      "file": "design/Meshcore_NaIon/Meshcore.pretty/PinHeader_1x03_P2.54mm_Vertical.kicad_mod",
+      "bytes": 3129,
+      "sha256": "39e96f5a69072c5db40dc83e099e2f7f0301f189c7db3b6c1a30bd0b2afea298",
+      "source": "v1\\design\\Meshcore_NaIon\\Meshcore.pretty\\PinHeader_1x03_P2.54mm_Vertical.kicad_mod",
+      "source_sha256": "39e96f5a69072c5db40dc83e099e2f7f0301f189c7db3b6c1a30bd0b2afea298"
+    },
+    {
+      "file": "design/Meshcore_NaIon/Meshcore.pretty/PinHeader_1x04_P2.54mm_Vertical.kicad_mod",
+      "bytes": 3250,
+      "sha256": "93dfa1e90dff992f2c8e5196bf76ec4dc04c0863da6fd0b4c43f867dfb55d9dc",
+      "source": "v1\\design\\Meshcore_NaIon\\Meshcore.pretty\\PinHeader_1x04_P2.54mm_Vertical.kicad_mod",
+      "source_sha256": "93dfa1e90dff992f2c8e5196bf76ec4dc04c0863da6fd0b4c43f867dfb55d9dc"
+    },
+    {
+      "file": "design/Meshcore_NaIon/Meshcore.pretty/PinHeader_2x03_P2.54mm_Vertical.kicad_mod",
+      "bytes": 3786,
+      "sha256": "6b25c46e5f87cc11d01fe74ff64bfa121edea445001c0207189cd24d0f196411",
+      "source": "v1\\design\\Meshcore_NaIon\\Meshcore.pretty\\PinHeader_2x03_P2.54mm_Vertical.kicad_mod",
+      "source_sha256": "6b25c46e5f87cc11d01fe74ff64bfa121edea445001c0207189cd24d0f196411"
+    },
+    {
+      "file": "design/Meshcore_NaIon/Meshcore.pretty/RF_Cut_Link_0p6.kicad_mod",
+      "bytes": 1072,
+      "sha256": "73bd9b0b9a1fcfb75c49fc765fdea95ec68e9d3a96f232d7b901f4a69a8ef9ba",
+      "source": "v1\\design\\Meshcore_NaIon\\Meshcore.pretty\\RF_Cut_Link_0p6.kicad_mod",
+      "source_sha256": "73bd9b0b9a1fcfb75c49fc765fdea95ec68e9d3a96f232d7b901f4a69a8ef9ba"
+    },
+    {
+      "file": "design/Meshcore_NaIon/Meshcore.pretty/R_0805_2012Metric.kicad_mod",
+      "bytes": 2057,
+      "sha256": "a78fa3eff59064358e58d32e3d4ea24d0f603c2b9f5bbf50fec485ad34eaa044",
+      "source": "v1\\design\\Meshcore_NaIon\\Meshcore.pretty\\R_0805_2012Metric.kicad_mod",
+      "source_sha256": "a78fa3eff59064358e58d32e3d4ea24d0f603c2b9f5bbf50fec485ad34eaa044"
+    },
+    {
+      "file": "design/Meshcore_NaIon/Meshcore.pretty/R_1206_3216Metric.kicad_mod",
+      "bytes": 2055,
+      "sha256": "33341e43c4eac85bf62ac3e1ead47ac5c95a0330221b48fce1daeb2b9642db19",
+      "source": "v1\\design\\Meshcore_NaIon\\Meshcore.pretty\\R_1206_3216Metric.kicad_mod",
+      "source_sha256": "33341e43c4eac85bf62ac3e1ead47ac5c95a0330221b48fce1daeb2b9642db19"
+    },
+    {
+      "file": "design/Meshcore_NaIon/Meshcore.pretty/R_2512_6332Metric.kicad_mod",
+      "bytes": 2053,
+      "sha256": "04124f47653dea2cfbd3d82e91c04e06176652f8d7dc7d13861e204d60726382",
+      "source": "v1\\design\\Meshcore_NaIon\\Meshcore.pretty\\R_2512_6332Metric.kicad_mod",
+      "source_sha256": "04124f47653dea2cfbd3d82e91c04e06176652f8d7dc7d13861e204d60726382"
+    },
+    {
+      "file": "design/Meshcore_NaIon/Meshcore.pretty/R_2512_6332Metric__A3_R56.kicad_mod",
+      "bytes": 6002,
+      "sha256": "2a8c6b21aa4e94ecf869a05fb844d2ef88bd19b7774902addc2fbf2a16073312",
+      "source": "v1\\design\\Meshcore_NaIon\\Meshcore.pretty\\R_2512_6332Metric__A3_R56.kicad_mod",
+      "source_sha256": "2a8c6b21aa4e94ecf869a05fb844d2ef88bd19b7774902addc2fbf2a16073312"
+    },
+    {
+      "file": "design/Meshcore_NaIon/Meshcore.pretty/R_2512_6332Metric__A3_R71.kicad_mod",
+      "bytes": 5968,
+      "sha256": "34c917b65e750c501387bb638a7e202f8dfbea59a214edc0f5f928797d5c51ba",
+      "source": "v1\\design\\Meshcore_NaIon\\Meshcore.pretty\\R_2512_6332Metric__A3_R71.kicad_mod",
+      "source_sha256": "34c917b65e750c501387bb638a7e202f8dfbea59a214edc0f5f928797d5c51ba"
+    },
+    {
+      "file": "design/Meshcore_NaIon/Meshcore.pretty/R_Vishay_WSL1206_18.kicad_mod",
+      "bytes": 1586,
+      "sha256": "7401b6f30dbf912d629ffb5533fc0bdc7827e125be82ffebdd43ff451093c76a",
+      "source": "v1\\design\\Meshcore_NaIon\\Meshcore.pretty\\R_Vishay_WSL1206_18.kicad_mod",
+      "source_sha256": "7401b6f30dbf912d629ffb5533fc0bdc7827e125be82ffebdd43ff451093c76a"
+    },
+    {
+      "file": "design/Meshcore_NaIon/Meshcore.pretty/R_Vishay_WSL2512_A3__A3_R1.kicad_mod",
+      "bytes": 6119,
+      "sha256": "1c150d56ea94c72ca771f78c0b872f0f3e5f673a6fc2461b918abbe7fa83c2fb",
+      "source": "v1\\design\\Meshcore_NaIon\\Meshcore.pretty\\R_Vishay_WSL2512_A3__A3_R1.kicad_mod",
+      "source_sha256": "1c150d56ea94c72ca771f78c0b872f0f3e5f673a6fc2461b918abbe7fa83c2fb"
+    },
+    {
+      "file": "design/Meshcore_NaIon/Meshcore.pretty/R_Vishay_WSL2512_A3__A3_R40.kicad_mod",
+      "bytes": 5921,
+      "sha256": "407ee745cd17a3c11bb0a5179152675f55176f250cc95326d14a2ffe9f83039d",
+      "source": "v1\\design\\Meshcore_NaIon\\Meshcore.pretty\\R_Vishay_WSL2512_A3__A3_R40.kicad_mod",
+      "source_sha256": "407ee745cd17a3c11bb0a5179152675f55176f250cc95326d14a2ffe9f83039d"
+    },
+    {
+      "file": "design/Meshcore_NaIon/Meshcore.pretty/R_Vishay_WSL2512_A3__A3_R41.kicad_mod",
+      "bytes": 5921,
+      "sha256": "09d813dd88a949774bd89674de816754c431eb4f58d8eb45fc00f9b44f2281e8",
+      "source": "v1\\design\\Meshcore_NaIon\\Meshcore.pretty\\R_Vishay_WSL2512_A3__A3_R41.kicad_mod",
+      "source_sha256": "09d813dd88a949774bd89674de816754c431eb4f58d8eb45fc00f9b44f2281e8"
+    },
+    {
+      "file": "design/Meshcore_NaIon/Meshcore.pretty/R_Vishay_WSL2512_A3__A3_R55.kicad_mod",
+      "bytes": 5971,
+      "sha256": "d1f4963c3160bfd4fb3b8eefe0b9b542b23f54ff55c948bdec684ca378837aeb",
+      "source": "v1\\design\\Meshcore_NaIon\\Meshcore.pretty\\R_Vishay_WSL2512_A3__A3_R55.kicad_mod",
+      "source_sha256": "d1f4963c3160bfd4fb3b8eefe0b9b542b23f54ff55c948bdec684ca378837aeb"
+    },
+    {
+      "file": "design/Meshcore_NaIon/Meshcore.pretty/SAW_AEL_DCC6C_S869M000S003.kicad_mod",
+      "bytes": 2710,
+      "sha256": "3b08ea99d29618d691da35c6803a66b3714d391cc34756c790a8238b57be5f9b",
+      "source": "v1\\design\\Meshcore_NaIon\\Meshcore.pretty\\SAW_AEL_DCC6C_S869M000S003.kicad_mod",
+      "source_sha256": "3b08ea99d29618d691da35c6803a66b3714d391cc34756c790a8238b57be5f9b"
+    },
+    {
+      "file": "design/Meshcore_NaIon/Meshcore.pretty/SMA_KE_RobotClass2218_PRELIM.kicad_mod",
+      "bytes": 2848,
+      "sha256": "afdd3d38034f68f001518f9844242854b500e97eeee56b67b21b2f64fdaa1a5a",
+      "source": "v1\\design\\Meshcore_NaIon\\Meshcore.pretty\\SMA_KE_RobotClass2218_PRELIM.kicad_mod",
+      "source_sha256": "afdd3d38034f68f001518f9844242854b500e97eeee56b67b21b2f64fdaa1a5a"
+    },
+    {
+      "file": "design/Meshcore_NaIon/Meshcore.pretty/SMA_KLS1_SMA002_B_Horizontal.kicad_mod",
+      "bytes": 2938,
+      "sha256": "a6ac815b98c0c3345ecf2bfcba79d1e8e9a8e513b828383c34a098945fcb21f4",
+      "source": "v1\\design\\Meshcore_NaIon\\Meshcore.pretty\\SMA_KLS1_SMA002_B_Horizontal.kicad_mod",
+      "source_sha256": "a6ac815b98c0c3345ecf2bfcba79d1e8e9a8e513b828383c34a098945fcb21f4"
+    },
+    {
+      "file": "design/Meshcore_NaIon/Meshcore.pretty/SOIC-16W_7.5x10.3mm_P1.27mm.kicad_mod",
+      "bytes": 5884,
+      "sha256": "798176526446820534d1276fbae0851c4a3ace094fd70c58f353050556267018",
+      "source": "v1\\design\\Meshcore_NaIon\\Meshcore.pretty\\SOIC-16W_7.5x10.3mm_P1.27mm.kicad_mod",
+      "source_sha256": "798176526446820534d1276fbae0851c4a3ace094fd70c58f353050556267018"
+    },
+    {
+      "file": "design/Meshcore_NaIon/Meshcore.pretty/SOIC-8_3.9x4.9mm_P1.27mm.kicad_mod",
+      "bytes": 4882,
+      "sha256": "90a17cb443aa344a43d7ad9e1a131dbdcd78708d6151b8b0e5608a9c19194da3",
+      "source": "v1\\design\\Meshcore_NaIon\\Meshcore.pretty\\SOIC-8_3.9x4.9mm_P1.27mm.kicad_mod",
+      "source_sha256": "90a17cb443aa344a43d7ad9e1a131dbdcd78708d6151b8b0e5608a9c19194da3"
+    },
+    {
+      "file": "design/Meshcore_NaIon/Meshcore.pretty/SOT-23-5.kicad_mod",
+      "bytes": 4700,
+      "sha256": "4e5761163aa9383ebb4b499efd5031d69a3a3e34d39c0c9c7714b2d2551ef2c7",
+      "source": "v1\\design\\Meshcore_NaIon\\Meshcore.pretty\\SOT-23-5.kicad_mod",
+      "source_sha256": "4e5761163aa9383ebb4b499efd5031d69a3a3e34d39c0c9c7714b2d2551ef2c7"
+    },
+    {
+      "file": "design/Meshcore_NaIon/Meshcore.pretty/SOT-23-6.kicad_mod",
+      "bytes": 4568,
+      "sha256": "197455da56d4cf704751c520ca66f888b9dd800a821d4a87a45b6caaecf1a228",
+      "source": "v1\\design\\Meshcore_NaIon\\Meshcore.pretty\\SOT-23-6.kicad_mod",
+      "source_sha256": "197455da56d4cf704751c520ca66f888b9dd800a821d4a87a45b6caaecf1a228"
+    },
+    {
+      "file": "design/Meshcore_NaIon/Meshcore.pretty/SOT-23-8.kicad_mod",
+      "bytes": 4873,
+      "sha256": "33fed4e9bba3f0ffc5df2c747cb3548b3e1170674a96f170a4d82d98a3bc42da",
+      "source": "v1\\design\\Meshcore_NaIon\\Meshcore.pretty\\SOT-23-8.kicad_mod",
+      "source_sha256": "33fed4e9bba3f0ffc5df2c747cb3548b3e1170674a96f170a4d82d98a3bc42da"
+    },
+    {
+      "file": "design/Meshcore_NaIon/Meshcore.pretty/SOT-23.kicad_mod",
+      "bytes": 4800,
+      "sha256": "8affa88394826df30ee8e1571c26ff7d69d4c81ea908225eb10aefe5e26cf2d7",
+      "source": "v1\\design\\Meshcore_NaIon\\Meshcore.pretty\\SOT-23.kicad_mod",
+      "source_sha256": "8affa88394826df30ee8e1571c26ff7d69d4c81ea908225eb10aefe5e26cf2d7"
+    },
+    {
+      "file": "design/Meshcore_NaIon/Meshcore.pretty/SOT-583-8.kicad_mod",
+      "bytes": 5443,
+      "sha256": "fa5ef1977e977d01d917a0fd8e1683563a0bd1bc50a22c511302d3f629e86589",
+      "source": "v1\\design\\Meshcore_NaIon\\Meshcore.pretty\\SOT-583-8.kicad_mod",
+      "source_sha256": "fa5ef1977e977d01d917a0fd8e1683563a0bd1bc50a22c511302d3f629e86589"
+    },
+    {
+      "file": "design/Meshcore_NaIon/Meshcore.pretty/SW_Push_1P1T_XKB_TS-1187A.kicad_mod",
+      "bytes": 8370,
+      "sha256": "e59b5784efadec3877120311509b2a6f832b4369a363201483f5d880482b23f9",
+      "source": "v1\\design\\Meshcore_NaIon\\Meshcore.pretty\\SW_Push_1P1T_XKB_TS-1187A.kicad_mod",
+      "source_sha256": "e59b5784efadec3877120311509b2a6f832b4369a363201483f5d880482b23f9"
+    },
+    {
+      "file": "design/Meshcore_NaIon/Meshcore.pretty/SW_Push_KLS7_TS6604_4_3_180.kicad_mod",
+      "bytes": 1400,
+      "sha256": "a20549ac52e0f79cc846af72b735bec007696ca122cf2b948ac22906175e9bab",
+      "source": "v1\\design\\Meshcore_NaIon\\Meshcore.pretty\\SW_Push_KLS7_TS6604_4_3_180.kicad_mod",
+      "source_sha256": "a20549ac52e0f79cc846af72b735bec007696ca122cf2b948ac22906175e9bab"
+    },
+    {
+      "file": "design/Meshcore_NaIon/Meshcore.pretty/SW_SPST_TL3342.kicad_mod",
+      "bytes": 9772,
+      "sha256": "345180066d38328e73753beb5d96a4356838d2488b26b027d755d04cbee9a490",
+      "source": "v1\\design\\Meshcore_NaIon\\Meshcore.pretty\\SW_SPST_TL3342.kicad_mod",
+      "source_sha256": "345180066d38328e73753beb5d96a4356838d2488b26b027d755d04cbee9a490"
+    },
+    {
+      "file": "design/Meshcore_NaIon/Meshcore.pretty/Shield_Frame_104x54.kicad_mod",
+      "bytes": 1313,
+      "sha256": "1ab85c6e289125aa56945e49423644337748bd91f4071b0b3b5849d62dbb4663",
+      "source": "v1\\design\\Meshcore_NaIon\\Meshcore.pretty\\Shield_Frame_104x54.kicad_mod",
+      "source_sha256": "1ab85c6e289125aa56945e49423644337748bd91f4071b0b3b5849d62dbb4663"
+    },
+    {
+      "file": "design/Meshcore_NaIon/Meshcore.pretty/Shield_Frame_62x33.kicad_mod",
+      "bytes": 1244,
+      "sha256": "b1c17badee3372e170dbb85180d2107a6e15b5b0813fd9dc29ff63d07346c236",
+      "source": "v1\\design\\Meshcore_NaIon\\Meshcore.pretty\\Shield_Frame_62x33.kicad_mod",
+      "source_sha256": "b1c17badee3372e170dbb85180d2107a6e15b5b0813fd9dc29ff63d07346c236"
+    },
+    {
+      "file": "design/Meshcore_NaIon/Meshcore.pretty/Shield_Frame_76x43.kicad_mod",
+      "bytes": 3059,
+      "sha256": "b7eeaa0bafc4e6ccf2fe76f1790c503e3482f2995898ae02c0f3de9c3433f277",
+      "source": "v1\\design\\Meshcore_NaIon\\Meshcore.pretty\\Shield_Frame_76x43.kicad_mod",
+      "source_sha256": "b7eeaa0bafc4e6ccf2fe76f1790c503e3482f2995898ae02c0f3de9c3433f277"
+    },
+    {
+      "file": "design/Meshcore_NaIon/Meshcore.pretty/Shield_Frame_76x44.kicad_mod",
+      "bytes": 1308,
+      "sha256": "70e3b57eeb874fd2c8bf04e357ece7497e5b42a2aa8abb291f37e4117e58cac2",
+      "source": "v1\\design\\Meshcore_NaIon\\Meshcore.pretty\\Shield_Frame_76x44.kicad_mod",
+      "source_sha256": "70e3b57eeb874fd2c8bf04e357ece7497e5b42a2aa8abb291f37e4117e58cac2"
+    },
+    {
+      "file": "design/Meshcore_NaIon/Meshcore.pretty/Shield_Frame_76x49_3_Chamfer.kicad_mod",
+      "bytes": 4574,
+      "sha256": "ce4569dc9407e121e3b83aff6b320ddd6ace07f95b847ed23ff3f2be632fbfd9",
+      "source": "v1\\design\\Meshcore_NaIon\\Meshcore.pretty\\Shield_Frame_76x49_3_Chamfer.kicad_mod",
+      "source_sha256": "ce4569dc9407e121e3b83aff6b320ddd6ace07f95b847ed23ff3f2be632fbfd9"
+    },
+    {
+      "file": "design/Meshcore_NaIon/Meshcore.pretty/Shield_Frame_80x45.kicad_mod",
+      "bytes": 1312,
+      "sha256": "0427ada730b32cf8604db92f26aaa49e118b1a59e5d46fc18bd708bcbc0c2697",
+      "source": "v1\\design\\Meshcore_NaIon\\Meshcore.pretty\\Shield_Frame_80x45.kicad_mod",
+      "source_sha256": "0427ada730b32cf8604db92f26aaa49e118b1a59e5d46fc18bd708bcbc0c2697"
+    },
+    {
+      "file": "design/Meshcore_NaIon/Meshcore.pretty/TI_DCT0008A.kicad_mod",
+      "bytes": 4826,
+      "sha256": "f34261be1ca093afc20c4ae2263b6f3c219106bac2209a8b6edb79828ab9a8b1",
+      "source": "v1\\design\\Meshcore_NaIon\\Meshcore.pretty\\TI_DCT0008A.kicad_mod",
+      "source_sha256": "f34261be1ca093afc20c4ae2263b6f3c219106bac2209a8b6edb79828ab9a8b1"
+    },
+    {
+      "file": "design/Meshcore_NaIon/Meshcore.pretty/TO-92_Inline.kicad_mod",
+      "bytes": 3994,
+      "sha256": "5f104db61ba204b99bb1ef8c50f673259b6dd4fdffab753b7d4ad2419252b3bf",
+      "source": "v1\\design\\Meshcore_NaIon\\Meshcore.pretty\\TO-92_Inline.kicad_mod",
+      "source_sha256": "5f104db61ba204b99bb1ef8c50f673259b6dd4fdffab753b7d4ad2419252b3bf"
+    },
+    {
+      "file": "design/Meshcore_NaIon/Meshcore.pretty/TPS63802_DLA0010A.kicad_mod",
+      "bytes": 3340,
+      "sha256": "24d0f2becb9ec1c6b0840ecd46221e9e3a781b94c0cc926b18d09178c4b98952",
+      "source": "v1\\design\\Meshcore_NaIon\\Meshcore.pretty\\TPS63802_DLA0010A.kicad_mod",
+      "source_sha256": "24d0f2becb9ec1c6b0840ecd46221e9e3a781b94c0cc926b18d09178c4b98952"
+    },
+    {
+      "file": "design/Meshcore_NaIon/Meshcore.pretty/TSSOP-16_4.4x5mm_P0.65mm.kicad_mod",
+      "bytes": 5580,
+      "sha256": "68f45e1e9612bc827671c5b4516af9ae11d951fd3f467a15a4331eef60db3579",
+      "source": "v1\\design\\Meshcore_NaIon\\Meshcore.pretty\\TSSOP-16_4.4x5mm_P0.65mm.kicad_mod",
+      "source_sha256": "68f45e1e9612bc827671c5b4516af9ae11d951fd3f467a15a4331eef60db3579"
+    },
+    {
+      "file": "design/Meshcore_NaIon/Meshcore.pretty/TestPoint_Pad_D1.5mm.kicad_mod",
+      "bytes": 1854,
+      "sha256": "d64c72d87dffc6df67622076639dc666022e16d236105257b39b96997c75097f",
+      "source": "v1\\design\\Meshcore_NaIon\\Meshcore.pretty\\TestPoint_Pad_D1.5mm.kicad_mod",
+      "source_sha256": "d64c72d87dffc6df67622076639dc666022e16d236105257b39b96997c75097f"
+    },
+    {
+      "file": "design/Meshcore_NaIon/Meshcore_NaIon.kicad_dru",
+      "bytes": 359,
+      "sha256": "dc3ebf97ebfeeb355d848488f8dd48d4de0c803502f0ab75ace894ae875a5b73",
+      "source": "v1\\design\\Meshcore_NaIon\\Meshcore_NaIon.kicad_dru",
+      "source_sha256": "dc3ebf97ebfeeb355d848488f8dd48d4de0c803502f0ab75ace894ae875a5b73"
+    },
+    {
+      "file": "design/Meshcore_NaIon/Meshcore_NaIon.kicad_pcb",
+      "bytes": 2495505,
+      "sha256": "be14cae202912ebb00e5dc758b2eae04cbe6733d4cb73df00044fdb03670fab3",
+      "source": "v1\\design\\Meshcore_NaIon\\Meshcore_NaIon.kicad_pcb",
+      "source_sha256": "be14cae202912ebb00e5dc758b2eae04cbe6733d4cb73df00044fdb03670fab3"
+    },
+    {
+      "file": "design/Meshcore_NaIon/Meshcore_NaIon.kicad_pro",
+      "bytes": 17312,
+      "sha256": "875da18af8e82cc2a15b76d5d1d224200dd3209ebcb9c54425a5c31355582997",
+      "source": "v1\\design\\Meshcore_NaIon\\Meshcore_NaIon.kicad_pro",
+      "source_sha256": "875da18af8e82cc2a15b76d5d1d224200dd3209ebcb9c54425a5c31355582997"
+    },
+    {
+      "file": "design/Meshcore_NaIon/Meshcore_NaIon.kicad_sch",
+      "bytes": 345926,
+      "sha256": "e0810aa195271eb03c8d3af226aa57e1c400ee1cc1d56fe9334b81a1091bcb7e",
+      "source": "v1\\design\\Meshcore_NaIon\\Meshcore_NaIon.kicad_sch",
+      "source_sha256": "e0810aa195271eb03c8d3af226aa57e1c400ee1cc1d56fe9334b81a1091bcb7e"
+    },
+    {
+      "file": "design/Meshcore_NaIon/Meshcore_NaIon.silk_patch.json",
+      "bytes": 182734,
+      "sha256": "c58802c44553137f0eb455fe0dba7f704e4a61c820d1eb742dd1cf49b5221b12",
+      "source": "v1\\design\\Meshcore_NaIon\\Meshcore_NaIon.silk_patch.json",
+      "source_sha256": "c58802c44553137f0eb455fe0dba7f704e4a61c820d1eb742dd1cf49b5221b12"
+    },
+    {
+      "file": "design/Meshcore_NaIon/Modules.kicad_sch",
+      "bytes": 295457,
+      "sha256": "607f40e4036fcf97b151e0983b42e56281465d6523fe8f8e9a444043db63eee0",
+      "source": "v1\\design\\Meshcore_NaIon\\Modules.kicad_sch",
+      "source_sha256": "607f40e4036fcf97b151e0983b42e56281465d6523fe8f8e9a444043db63eee0"
+    },
+    {
+      "file": "design/Meshcore_NaIon/RTC_IO.kicad_sch",
+      "bytes": 288738,
+      "sha256": "04a82b5ab766fa8da47e9a88868875b31b1633749294edc7038675c48f678904",
+      "source": "v1\\design\\Meshcore_NaIon\\RTC_IO.kicad_sch",
+      "source_sha256": "04a82b5ab766fa8da47e9a88868875b31b1633749294edc7038675c48f678904"
+    },
+    {
+      "file": "design/Meshcore_NaIon/Thermal.kicad_sch",
+      "bytes": 289830,
+      "sha256": "5b28be2c81fcb4ee3c012c14535b087df137b4efaafcf862cd89a7581c3357ef",
+      "source": "v1\\design\\Meshcore_NaIon\\Thermal.kicad_sch",
+      "source_sha256": "5b28be2c81fcb4ee3c012c14535b087df137b4efaafcf862cd89a7581c3357ef"
+    },
+    {
+      "file": "design/Meshcore_NaIon/Watchdog.kicad_sch",
+      "bytes": 196354,
+      "sha256": "b378784aa1d50455832e3f1cb88db0e26a34b4f3ca8bb4c4cc32f5fe1c9ccd6a",
+      "source": "v1\\design\\Meshcore_NaIon\\Watchdog.kicad_sch",
+      "source_sha256": "b378784aa1d50455832e3f1cb88db0e26a34b4f3ca8bb4c4cc32f5fe1c9ccd6a"
+    },
+    {
+      "file": "design/Meshcore_NaIon/assembly_variants_S4_17.csv",
+      "bytes": 85802,
+      "sha256": "b9e1143a698a1bf08cfc3b2d9ee50792f78361f2a88784dfbb5da58e15d9074c",
+      "source": "v1\\design\\Meshcore_NaIon\\assembly_variants_S4_17.csv",
+      "source_sha256": "b9e1143a698a1bf08cfc3b2d9ee50792f78361f2a88784dfbb5da58e15d9074c"
+    },
+    {
+      "file": "design/Meshcore_NaIon/assembly_variants_S4_19.csv",
+      "bytes": 88495,
+      "sha256": "2af32cab147f37ed8a94ff306072eaf3a5fac64646d4eb468c90b85bc244dd1e",
+      "source": "v1\\design\\Meshcore_NaIon\\assembly_variants_S4_19.csv",
+      "source_sha256": "2af32cab147f37ed8a94ff306072eaf3a5fac64646d4eb468c90b85bc244dd1e"
+    },
+    {
+      "file": "design/Meshcore_NaIon/assembly_variants_S4_21.csv",
+      "bytes": 87707,
+      "sha256": "916b308fea109b4bbcbb5eca59491e901b2f801565097379dbdce947e168e75e",
+      "source": "v1\\design\\Meshcore_NaIon\\assembly_variants_S4_21.csv",
+      "source_sha256": "916b308fea109b4bbcbb5eca59491e901b2f801565097379dbdce947e168e75e"
+    },
+    {
+      "file": "design/Meshcore_NaIon/asset_manifest.json",
+      "bytes": 85897,
+      "sha256": "c6716dca515675effd58fa759c4d9b15a4044b2d30b74f51c1d7af153206c2f1",
+      "source": "generated from measured S4.21 sources"
+    },
+    {
+      "file": "design/Meshcore_NaIon/datasheets/LM285_ON_latest.pdf",
+      "bytes": 315244,
+      "sha256": "c7441782344451064e318199b300a630a09cbbca90a3c9f93b9a6cb39e53a407",
+      "source": "v1\\design\\Meshcore_NaIon\\datasheets\\LM285_ON_latest.pdf",
+      "source_sha256": "c7441782344451064e318199b300a630a09cbbca90a3c9f93b9a6cb39e53a407"
+    },
+    {
+      "file": "design/Meshcore_NaIon/datasheets/LM393XK-Runic-datasheet.pdf",
+      "bytes": 445553,
+      "sha256": "deef619283f72ffca88edec89b63f7bb21b92f39e30a4d77501c68f83325ef71",
+      "source": "v1\\design\\Meshcore_NaIon\\datasheets\\LM393XK-Runic-datasheet.pdf",
+      "source_sha256": "deef619283f72ffca88edec89b63f7bb21b92f39e30a4d77501c68f83325ef71"
+    },
+    {
+      "file": "design/Meshcore_NaIon/datasheets/LM393XK_RunIC_Dan.pdf",
+      "bytes": 354130,
+      "sha256": "a5cd988778d0c3fd3b046514f1ab9e147c143842f33f7ed7b8546df1736c1ef3",
+      "source": "v1\\design\\Meshcore_NaIon\\datasheets\\LM393XK_RunIC_Dan.pdf",
+      "source_sha256": "a5cd988778d0c3fd3b046514f1ab9e147c143842f33f7ed7b8546df1736c1ef3"
+    },
+    {
+      "file": "design/Meshcore_NaIon/datasheets/NTC_Mini_sensors_S861.pdf",
+      "bytes": 474518,
+      "sha256": "47fc371fe4a513022b81bf27c3abcd8bf2532a84d0cf07379850054e70da2cdd",
+      "source": "v1\\design\\Meshcore_NaIon\\datasheets\\NTC_Mini_sensors_S861.pdf",
+      "source_sha256": "47fc371fe4a513022b81bf27c3abcd8bf2532a84d0cf07379850054e70da2cdd"
+    },
+    {
+      "file": "design/Meshcore_NaIon/fp-lib-table",
+      "bytes": 159,
+      "sha256": "929ebd8ad899d3a0c4231cffab5f806e51cf756a4f2dc32f538793e41bb6aac7",
+      "source": "v1\\design\\Meshcore_NaIon\\fp-lib-table",
+      "source_sha256": "929ebd8ad899d3a0c4231cffab5f806e51cf756a4f2dc32f538793e41bb6aac7"
+    },
+    {
+      "file": "design/Meshcore_NaIon/model.json",
+      "bytes": 246908,
+      "sha256": "61fc728fb7e73f0acd90cd2bcfd8f5dfa98666548e10a4ceed2f405364e0777f",
+      "source": "v1\\design\\Meshcore_NaIon\\model.json",
+      "source_sha256": "61fc728fb7e73f0acd90cd2bcfd8f5dfa98666548e10a4ceed2f405364e0777f"
+    },
+    {
+      "file": "design/Meshcore_NaIon/placed_pad_inventory.json",
+      "bytes": 81939,
+      "sha256": "43c00edca62b1f5e6670c0330c8a0e507a8d8608abe996c849ae3cb4ed592b5e",
+      "source": "v1\\design\\Meshcore_NaIon\\placed_pad_inventory.json",
+      "source_sha256": "43c00edca62b1f5e6670c0330c8a0e507a8d8608abe996c849ae3cb4ed592b5e"
+    },
+    {
+      "file": "design/Meshcore_NaIon/schematic_manifest.json",
+      "bytes": 171141,
+      "sha256": "db3ec3a4584475470a675158bd166dc2bbc3a528d2e5219261ef3d404a19e1d7",
+      "source": "v1\\design\\Meshcore_NaIon\\schematic_manifest.json",
+      "source_sha256": "db3ec3a4584475470a675158bd166dc2bbc3a528d2e5219261ef3d404a19e1d7"
+    },
+    {
+      "file": "design/Meshcore_NaIon/sym-lib-table",
+      "bytes": 179,
+      "sha256": "de9c5f16b051d9120f3e3276ba4ff164cdfd3dbf03ff7e7c7aa164f605c4678d",
+      "source": "v1\\design\\Meshcore_NaIon\\sym-lib-table",
+      "source_sha256": "de9c5f16b051d9120f3e3276ba4ff164cdfd3dbf03ff7e7c7aa164f605c4678d"
+    },
+    {
+      "file": "design/watchdog_reference/INTEGRATION_RU.txt",
+      "bytes": 2857,
+      "sha256": "8c5608bf71b3f6394ca41eb1fffb22b0e2d1df411d991fbfcab12c77c6647695",
+      "source": "release\\mesh-repeater\\design\\watchdog_reference\\INTEGRATION_RU.txt",
+      "source_sha256": "8c5608bf71b3f6394ca41eb1fffb22b0e2d1df411d991fbfcab12c77c6647695"
+    },
+    {
+      "file": "design/watchdog_reference/Makefile",
+      "bytes": 1387,
+      "sha256": "6db1d4d6a15dc0c3f893eab0180ef9f4c84209461d83a551d6c2956de29965b8",
+      "source": "release\\mesh-repeater\\design\\watchdog_reference\\Makefile",
+      "source_sha256": "6db1d4d6a15dc0c3f893eab0180ef9f4c84209461d83a551d6c2956de29965b8"
+    },
+    {
+      "file": "design/watchdog_reference/main.c",
+      "bytes": 4049,
+      "sha256": "6aae1df101c6970fc6ba2acd2c3b5997890ed22e2c62e27717cde22b482e0089",
+      "source": "release\\mesh-repeater\\design\\watchdog_reference\\main.c",
+      "source_sha256": "6aae1df101c6970fc6ba2acd2c3b5997890ed22e2c62e27717cde22b482e0089"
+    },
+    {
+      "file": "design/watchdog_reference/source_hashes.json",
+      "bytes": 251,
+      "sha256": "1a8331f3db94cf3fe54dfc29c32a26d6d386e99650b152276777185f09714ccd",
+      "source": "release\\mesh-repeater\\design\\watchdog_reference\\source_hashes.json",
+      "source_sha256": "1a8331f3db94cf3fe54dfc29c32a26d6d386e99650b152276777185f09714ccd"
+    },
+    {
+      "file": "design/watchdog_reference/watchdog.hex",
+      "bytes": 1163,
+      "sha256": "8d38a4213ea91b9ad8d99638ac21ccfd80c2d75d24d1545856dba421195e5790",
+      "source": "release\\mesh-repeater\\design\\watchdog_reference\\watchdog.hex",
+      "source_sha256": "8d38a4213ea91b9ad8d99638ac21ccfd80c2d75d24d1545856dba421195e5790"
+    },
+    {
+      "file": "docs/S4_21_ASSEMBLY_DELTA_RU.txt",
+      "bytes": 1545,
+      "sha256": "1c019a7a4cd5dd875ffd89e453b8e846b165c717a8934fd090351314b60f63b0",
+      "source": "generated from measured S4.21 sources"
+    },
+    {
+      "file": "docs/S4_21_ASSEMBLY_GUIDE_RU.md",
+      "bytes": 8222,
+      "sha256": "a75ca475868b5eef7cd194a0bc767d7730491256139ee7926fade23a038cae12",
+      "source": "generated from measured S4.21 sources"
+    },
+    {
+      "file": "docs/S4_21_REZONIT_ORDER_RU.txt",
+      "bytes": 3183,
+      "sha256": "84ec78e7fd91c823916ec367b04d42ddafb954580ee28b59eddd7edfe8441829",
+      "source": "v1\\docs\\S4_21_REZONIT_ORDER_RU.txt",
+      "source_sha256": "84ec78e7fd91c823916ec367b04d42ddafb954580ee28b59eddd7edfe8441829"
+    },
+    {
+      "file": "output/Mesh_Repeater_S4_21_Rezonit_Gerber.zip",
+      "bytes": 344314,
+      "sha256": "66ff10019797c06d933701a87469de96b19dc2ca4b960956b7c474ea98466e93",
+      "source": "v1\\output\\Mesh_Repeater_S4_21_Rezonit_Gerber.zip",
+      "source_sha256": "66ff10019797c06d933701a87469de96b19dc2ca4b960956b7c474ea98466e93"
+    },
+    {
+      "file": "output/Mesh_Repeater_v1_S4_21_KiCad.zip",
+      "bytes": 3638428,
+      "sha256": "ab302a7db23206c76d58b959946a2b9756b6ac34089b07a78bcdc71e17667c82",
+      "source": "v1\\output\\Mesh_Repeater_v1_S4_21_KiCad.zip",
+      "source_sha256": "ab302a7db23206c76d58b959946a2b9756b6ac34089b07a78bcdc71e17667c82"
+    },
+    {
+      "file": "output/S4_21_MANUAL_ROUTING_FIXES_RU.html",
+      "bytes": 6577,
+      "sha256": "1182a0738eebce3cfe108f65b48f980ae27c82bc6c387fe127dc3c3210475498",
+      "source": "v1/output/S4_21_MANUAL_ROUTING_FIXES_RU.html; CAM paragraph updated for publication"
+    },
+    {
+      "file": "output/pcb/S4_21_bottom_copper.png",
+      "bytes": 368442,
+      "sha256": "c4c8cfe48907b379c3f85950f870f7668f1f084d9800225ead296cce2809b049",
+      "source": "v1\\output\\pcb\\S4_21_bottom_copper.png",
+      "source_sha256": "c4c8cfe48907b379c3f85950f870f7668f1f084d9800225ead296cce2809b049"
+    },
+    {
+      "file": "output/pcb/S4_21_bottom_copper.svg",
+      "bytes": 235102,
+      "sha256": "27a90488e45bf6511783944889708308bdcfc591568879d9084926b19b0937ee",
+      "source": "v1\\output\\pcb\\S4_21_bottom_copper.svg",
+      "source_sha256": "27a90488e45bf6511783944889708308bdcfc591568879d9084926b19b0937ee"
+    },
+    {
+      "file": "output/pcb/S4_21_bottom_labels.png",
+      "bytes": 359058,
+      "sha256": "97c1e78a07a4b466619ab26ca53c9c3868fd93cb4b02ed6f0d9a191229a97a48",
+      "source": "v1\\output\\pcb\\S4_21_bottom_labels.png",
+      "source_sha256": "97c1e78a07a4b466619ab26ca53c9c3868fd93cb4b02ed6f0d9a191229a97a48"
+    },
+    {
+      "file": "output/pcb/S4_21_bottom_labels.svg",
+      "bytes": 376201,
+      "sha256": "0a92c2beb7eafcb4d67c1183507c802333efea5bd11a3a5559c91b4905e3f6c8",
+      "source": "v1\\output\\pcb\\S4_21_bottom_labels.svg",
+      "source_sha256": "0a92c2beb7eafcb4d67c1183507c802333efea5bd11a3a5559c91b4905e3f6c8"
+    },
+    {
+      "file": "output/pcb/S4_21_bottom_placement.png",
+      "bytes": 361178,
+      "sha256": "a55961972ab520cb7a5ed9070084b2ed8024934e497390c3f385b0e7625098c0",
+      "source": "v1\\output\\pcb\\S4_21_bottom_placement.png",
+      "source_sha256": "a55961972ab520cb7a5ed9070084b2ed8024934e497390c3f385b0e7625098c0"
+    },
+    {
+      "file": "output/pcb/S4_21_bottom_placement.svg",
+      "bytes": 362418,
+      "sha256": "58bf17106d9281205ed1766829ae52069f20e14b21712a4e48e9e91c26dd1b93",
+      "source": "v1\\output\\pcb\\S4_21_bottom_placement.svg",
+      "source_sha256": "58bf17106d9281205ed1766829ae52069f20e14b21712a4e48e9e91c26dd1b93"
+    },
+    {
+      "file": "output/pcb/S4_21_placement.png",
+      "bytes": 522870,
+      "sha256": "f5c1d32059ff4a836607193002d43b4dab38c0a1ba557037c1656e9fd64cfcfc",
+      "source": "v1\\output\\pcb\\S4_21_placement.png",
+      "source_sha256": "f5c1d32059ff4a836607193002d43b4dab38c0a1ba557037c1656e9fd64cfcfc"
+    },
+    {
+      "file": "output/pcb/S4_21_placement.svg",
+      "bytes": 489527,
+      "sha256": "288b909f6256b984ad5e65ac2853195d28415f95602e993ecf66abb466d3f474",
+      "source": "v1\\output\\pcb\\S4_21_placement.svg",
+      "source_sha256": "288b909f6256b984ad5e65ac2853195d28415f95602e993ecf66abb466d3f474"
+    },
+    {
+      "file": "output/pcb/S4_21_png_rendering.json",
+      "bytes": 1440,
+      "sha256": "947e2f1b14a354961d8b2c289702d6700d5578b184bca886b64267362779ca59",
+      "source": "v1\\output\\pcb\\S4_21_png_rendering.json",
+      "source_sha256": "947e2f1b14a354961d8b2c289702d6700d5578b184bca886b64267362779ca59"
+    },
+    {
+      "file": "output/pcb/S4_21_top_copper.png",
+      "bytes": 763447,
+      "sha256": "aab9e7a9f3398a342d1db4fddae4046d19975f2c464d09805b7495c94c7d56af",
+      "source": "v1\\output\\pcb\\S4_21_top_copper.png",
+      "source_sha256": "aab9e7a9f3398a342d1db4fddae4046d19975f2c464d09805b7495c94c7d56af"
+    },
+    {
+      "file": "output/pcb/S4_21_top_copper.svg",
+      "bytes": 1160020,
+      "sha256": "e20846062c76e4020022960dd2b3f3299bf994377ecdfa427efa1be249148d40",
+      "source": "v1\\output\\pcb\\S4_21_top_copper.svg",
+      "source_sha256": "e20846062c76e4020022960dd2b3f3299bf994377ecdfa427efa1be249148d40"
+    },
+    {
+      "file": "output/pcb/S4_21_view_rendering.json",
+      "bytes": 1454,
+      "sha256": "2cb5fc1f3951016e41f9afb89b9f9da849ad5440f48685bace580d1f00c23f5f",
+      "source": "v1\\output\\pcb\\S4_21_view_rendering.json",
+      "source_sha256": "2cb5fc1f3951016e41f9afb89b9f9da849ad5440f48685bace580d1f00c23f5f"
+    },
+    {
+      "file": "output/pdf/S4_21_schematic.pdf",
+      "bytes": 414625,
+      "sha256": "6c2bf5d116681729d9162c1c73e853c6d71d6236c6fd84591080719e101a522b",
+      "source": "v1\\output\\pdf\\S4_21_schematic.pdf",
+      "source_sha256": "6c2bf5d116681729d9162c1c73e853c6d71d6236c6fd84591080719e101a522b"
+    }
   ],
-  "standard_kicad10_model_dependencies": [
-    "Battery.3dshapes/BatteryHolder_Keystone_1060_1x2032.step",
-    "Capacitor_SMD.3dshapes/CP_Elec_6.3x5.8.step",
-    "Capacitor_SMD.3dshapes/C_0603_1608Metric.step",
-    "Capacitor_SMD.3dshapes/C_0805_2012Metric.step",
-    "Capacitor_SMD.3dshapes/C_1206_3216Metric.step",
-    "Capacitor_SMD.3dshapes/C_1812_4532Metric.step",
-    "Connector_Molex.3dshapes/Molex_PicoBlade_53261-0871_1x08-1MP_P1.25mm_Horizontal.step",
-    "Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x02_P2.54mm_Vertical.step",
-    "Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x03_P2.54mm_Vertical.step",
-    "Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x04_P2.54mm_Vertical.step",
-    "Connector_PinHeader_2.54mm.3dshapes/PinHeader_2x03_P2.54mm_Vertical.step",
-    "Diode_SMD.3dshapes/D_SMB.step",
-    "LED_SMD.3dshapes/LED_0805_2012Metric.step",
-    "Package_SO.3dshapes/SOIC-8_3.9x4.9mm_P1.27mm.step",
-    "Package_SO.3dshapes/TSSOP-16_4.4x5mm_P0.65mm.step",
-    "Package_TO_SOT_SMD.3dshapes/SOT-23-5.step",
-    "Package_TO_SOT_SMD.3dshapes/SOT-23.step",
-    "Package_TO_SOT_THT.3dshapes/TO-92_Inline.step",
-    "Resistor_SMD.3dshapes/R_0805_2012Metric.step",
-    "Resistor_SMD.3dshapes/R_1206_3216Metric.step"
-  ],
-  "native_cad_copied_without_modification": true,
-  "publication_only_changes": [
-    "portable audit source paths",
-    "current documentation and procurement notes",
-    "updated asset provenance and checksums"
-  ],
-  "substrate_nominal_mm": 1.5,
-  "native_total_thickness_mm": 1.52,
-  "schematic_sheets": 7
+  "hash_scope": "entries covers all payload except this self-describing manifest and SHA256SUMS; SHA256SUMS covers all files except itself.",
+  "export_provenance_note": "The independent_cam_validation_pending flag records export time. The separately included final CAM 59/59 contract supersedes it and is bound to the same board/archive hashes."
 }

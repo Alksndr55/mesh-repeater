@@ -1,0 +1,71 @@
+{
+  "units": "mm",
+  "generator": "CadQuery",
+  "policy": "Simplified generated geometry; use supplier drawings for final mechanical acceptance.",
+  "models": [
+    {
+      "file": "Sumida_CDRH127_LD_101.step",
+      "refs": [
+        "L1"
+      ],
+      "description": "Sumida CDRH127/LDNP-101MC 100uH. Nominal12x12mm, height8mm; maximum XY envelope12.3x12.3.",
+      "sources": [
+        "https://products.sumida.com/products/pdf/CDRH127LD%20(en).pdf"
+      ],
+      "uncertainty": "Simplified nominal visual model. Not a manufacturer STEP or mechanical tolerance certification.",
+      "bbox_mm": {
+        "xmin": -6.0,
+        "xmax": 6.0,
+        "ymin": -6.0,
+        "ymax": 6.0,
+        "zmin": 0.0,
+        "zmax": 8.0130001
+      },
+      "valid_step": true,
+      "sha256": "265f65dc07053daaac33a0108cd1bee9a0c71254f2f165f372a7b99773cb2199"
+    },
+    {
+      "file": "KLS_TS6604_4p3.step",
+      "refs": [
+        "SW1",
+        "SW2"
+      ],
+      "description": "KLS7-TS6604-4.3-180: 6x6 body, height4.3, leads span8.0, sidelead pitch4.5mm.",
+      "sources": [
+        "https://www.danomsk.ru/upload/iblock/029/204565_b00964952d126ec5965c9c00b35b8fbb.pdf"
+      ],
+      "uncertainty": "Simplified body/actuator/lead geometry from KLS drawing archived with store204565. Electrical pin pairing is independent of this visual model.",
+      "bbox_mm": {
+        "xmin": -4.0,
+        "xmax": 4.0,
+        "ymin": -3.0,
+        "ymax": 3.0,
+        "zmin": 0.0,
+        "zmax": 4.3
+      },
+      "valid_step": true,
+      "sha256": "12b3864afbb63c919c627dcfe6d0e122fcfd31d0f67970d48b67b4047a153e8a"
+    },
+    {
+      "file": "Connfly_DS1027_2BBN1.step",
+      "refs": [
+        "J11"
+      ],
+      "description": "CONNFLY DS1027-2BBN1 closed shunt:5x2.5mm, height6.47; contacts pitch2.54mm.",
+      "sources": [
+        "https://www.connfly.com/static/upload/file/pdf/DS1027.pdf"
+      ],
+      "uncertainty": "Body envelope based on manufacturer drawing. Installed bottomZ2.6mm above PCB is an assembly assumption; verify actual seating on header.",
+      "bbox_mm": {
+        "xmin": -1.25,
+        "xmax": 1.25,
+        "ymin": -3.77,
+        "ymax": 1.23,
+        "zmin": 2.6,
+        "zmax": 9.07
+      },
+      "valid_step": true,
+      "sha256": "55eb4f228c1ac6c2cd0386ae04d6f0f8144c3b34d3c381d7d454a2b747f8c9d5"
+    }
+  ]
+}

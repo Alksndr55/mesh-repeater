@@ -1,0 +1,750 @@
+{
+  "ok": true,
+  "passed": 59,
+  "total": 59,
+  "board_sha256": "be14cae202912ebb00e5dc758b2eae04cbe6733d4cb73df00044fdb03670fab3",
+  "zip_sha256": "66ff10019797c06d933701a87469de96b19dc2ca4b960956b7c474ea98466e93",
+  "zip_path": "C:\\Users\\Alksndr\\Desktop\\codex\\Meshcore\\v1\\output\\Mesh_Repeater_S4_21_Rezonit_Gerber.zip",
+  "parser": "Gerbonara 1.6.3",
+  "origin": {
+    "selection": "absolute",
+    "native_mm": [
+      0.0,
+      0.0
+    ],
+    "transform": "X=x-origin_x; Y=origin_y-y"
+  },
+  "files": [
+    "Mesh_Repeater_S4_21-F_Cu.gtl",
+    "Mesh_Repeater_S4_21-B_Cu.gbl",
+    "Mesh_Repeater_S4_21-F_Mask.gts",
+    "Mesh_Repeater_S4_21-B_Mask.gbs",
+    "Mesh_Repeater_S4_21-F_Silkscreen.gto",
+    "Mesh_Repeater_S4_21-B_Silkscreen.gbo",
+    "Mesh_Repeater_S4_21-Edge_Cuts.gko",
+    "Mesh_Repeater_S4_21-PTH.drl",
+    "Mesh_Repeater_S4_21-NPTH.drl"
+  ],
+  "checks": [
+    {
+      "name": "Source is the accepted S4.21 native PCB",
+      "pass": true,
+      "detail": "be14cae202912ebb00e5dc758b2eae04cbe6733d4cb73df00044fdb03670fab3"
+    },
+    {
+      "name": "Existing independent29/29 audit is bound to this unchanged PCB",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "ZIP has exactly nine unique CAM files at root, no other items",
+      "pass": true,
+      "detail": [
+        "Mesh_Repeater_S4_21-F_Cu.gtl",
+        "Mesh_Repeater_S4_21-B_Cu.gbl",
+        "Mesh_Repeater_S4_21-F_Mask.gts",
+        "Mesh_Repeater_S4_21-B_Mask.gbs",
+        "Mesh_Repeater_S4_21-F_Silkscreen.gto",
+        "Mesh_Repeater_S4_21-B_Silkscreen.gbo",
+        "Mesh_Repeater_S4_21-Edge_Cuts.gko",
+        "Mesh_Repeater_S4_21-PTH.drl",
+        "Mesh_Repeater_S4_21-NPTH.drl"
+      ]
+    },
+    {
+      "name": "ZIP CRC integrity passes",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Every archived CAM file exactly equals the fresh export",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "Exporter source SHA before/after is accepted and unchanged",
+      "pass": true,
+      "detail": {
+        "path": "v1\\audit\\s4_21_gerber_rezonit_20261018\\root\\export_provenance.json",
+        "sha256": "c90a39e4f8110ea1dc17a660263de912249c56ac882c2a14c33e8b8460db6721"
+      }
+    },
+    {
+      "name": "All exported source-project files match recorded byte hashes and complete file set",
+      "pass": true,
+      "detail": {
+        "count": 119,
+        "mismatched": [],
+        "unlisted": [],
+        "missing": [],
+        "non_source_metadata_excluded": [
+          ".history/**",
+          ".kicad_prl",
+          ".lck",
+          "~*"
+        ]
+      }
+    },
+    {
+      "name": "Successful native exporter commands use seven layers and matching absolute mm origins",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "All nine manifest roles/lengths/hashes match actual archive bytes",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "Native outline is the expected four-segment 90x100mm rectangle",
+      "pass": true,
+      "detail": {
+        "origin_native_mm": [
+          0.0,
+          0.0
+        ],
+        "cam_transform": "X=x-origin_x; Y=origin_y-y",
+        "native_segments_cam_mm": [
+          [
+            [
+              0.0,
+              0.0
+            ],
+            [
+              90.0,
+              0.0
+            ]
+          ],
+          [
+            [
+              0.0,
+              -100.0
+            ],
+            [
+              0.0,
+              0.0
+            ]
+          ],
+          [
+            [
+              90.0,
+              -100.0
+            ],
+            [
+              90.0,
+              0.0
+            ]
+          ],
+          [
+            [
+              0.0,
+              -100.0
+            ],
+            [
+              90.0,
+              -100.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "name": "Mesh_Repeater_S4_21-F_Cu.gtl uses explicit mm and absolute coordinates",
+      "pass": true,
+      "detail": {
+        "units": "mm",
+        "notation": "absolute",
+        "format": [
+          4,
+          6
+        ],
+        "zeros": "leading"
+      }
+    },
+    {
+      "name": "Mesh_Repeater_S4_21-F_Cu.gtl has unambiguous Protel layer role; any function comment agrees",
+      "pass": true,
+      "detail": {
+        "extension": ".gtl",
+        "layer": "F.Cu",
+        "function_comment": "Copper,L1,Top"
+      }
+    },
+    {
+      "name": "Mesh_Repeater_S4_21-F_Cu.gtl uses requested classic RS274X with no X2 attributes",
+      "pass": true,
+      "detail": {
+        "extended_attribute_commands": 0
+      }
+    },
+    {
+      "name": "Mesh_Repeater_S4_21-F_Cu.gtl contains nonempty artwork and complete M02 ending",
+      "pass": true,
+      "detail": 1713
+    },
+    {
+      "name": "Mesh_Repeater_S4_21-B_Cu.gbl uses explicit mm and absolute coordinates",
+      "pass": true,
+      "detail": {
+        "units": "mm",
+        "notation": "absolute",
+        "format": [
+          4,
+          6
+        ],
+        "zeros": "leading"
+      }
+    },
+    {
+      "name": "Mesh_Repeater_S4_21-B_Cu.gbl has unambiguous Protel layer role; any function comment agrees",
+      "pass": true,
+      "detail": {
+        "extension": ".gbl",
+        "layer": "B.Cu",
+        "function_comment": "Copper,L2,Bot"
+      }
+    },
+    {
+      "name": "Mesh_Repeater_S4_21-B_Cu.gbl uses requested classic RS274X with no X2 attributes",
+      "pass": true,
+      "detail": {
+        "extended_attribute_commands": 0
+      }
+    },
+    {
+      "name": "Mesh_Repeater_S4_21-B_Cu.gbl contains nonempty artwork and complete M02 ending",
+      "pass": true,
+      "detail": 778
+    },
+    {
+      "name": "Mesh_Repeater_S4_21-F_Mask.gts uses explicit mm and absolute coordinates",
+      "pass": true,
+      "detail": {
+        "units": "mm",
+        "notation": "absolute",
+        "format": [
+          4,
+          6
+        ],
+        "zeros": "leading"
+      }
+    },
+    {
+      "name": "Mesh_Repeater_S4_21-F_Mask.gts has unambiguous Protel layer role; any function comment agrees",
+      "pass": true,
+      "detail": {
+        "extension": ".gts",
+        "layer": "F.Mask",
+        "function_comment": "Soldermask,Top"
+      }
+    },
+    {
+      "name": "Mesh_Repeater_S4_21-F_Mask.gts uses requested classic RS274X with no X2 attributes",
+      "pass": true,
+      "detail": {
+        "extended_attribute_commands": 0
+      }
+    },
+    {
+      "name": "Mesh_Repeater_S4_21-F_Mask.gts contains nonempty artwork and complete M02 ending",
+      "pass": true,
+      "detail": 465
+    },
+    {
+      "name": "Mesh_Repeater_S4_21-B_Mask.gbs uses explicit mm and absolute coordinates",
+      "pass": true,
+      "detail": {
+        "units": "mm",
+        "notation": "absolute",
+        "format": [
+          4,
+          6
+        ],
+        "zeros": "leading"
+      }
+    },
+    {
+      "name": "Mesh_Repeater_S4_21-B_Mask.gbs has unambiguous Protel layer role; any function comment agrees",
+      "pass": true,
+      "detail": {
+        "extension": ".gbs",
+        "layer": "B.Mask",
+        "function_comment": "Soldermask,Bot"
+      }
+    },
+    {
+      "name": "Mesh_Repeater_S4_21-B_Mask.gbs uses requested classic RS274X with no X2 attributes",
+      "pass": true,
+      "detail": {
+        "extended_attribute_commands": 0
+      }
+    },
+    {
+      "name": "Mesh_Repeater_S4_21-B_Mask.gbs contains nonempty artwork and complete M02 ending",
+      "pass": true,
+      "detail": 63
+    },
+    {
+      "name": "Mesh_Repeater_S4_21-F_Silkscreen.gto uses explicit mm and absolute coordinates",
+      "pass": true,
+      "detail": {
+        "units": "mm",
+        "notation": "absolute",
+        "format": [
+          4,
+          6
+        ],
+        "zeros": "leading"
+      }
+    },
+    {
+      "name": "Mesh_Repeater_S4_21-F_Silkscreen.gto has unambiguous Protel layer role; any function comment agrees",
+      "pass": true,
+      "detail": {
+        "extension": ".gto",
+        "layer": "F.SilkS",
+        "function_comment": "Legend,Top"
+      }
+    },
+    {
+      "name": "Mesh_Repeater_S4_21-F_Silkscreen.gto uses requested classic RS274X with no X2 attributes",
+      "pass": true,
+      "detail": {
+        "extended_attribute_commands": 0
+      }
+    },
+    {
+      "name": "Mesh_Repeater_S4_21-F_Silkscreen.gto contains nonempty artwork and complete M02 ending",
+      "pass": true,
+      "detail": 7771
+    },
+    {
+      "name": "Mesh_Repeater_S4_21-B_Silkscreen.gbo uses explicit mm and absolute coordinates",
+      "pass": true,
+      "detail": {
+        "units": "mm",
+        "notation": "absolute",
+        "format": [
+          4,
+          6
+        ],
+        "zeros": "leading"
+      }
+    },
+    {
+      "name": "Mesh_Repeater_S4_21-B_Silkscreen.gbo has unambiguous Protel layer role; any function comment agrees",
+      "pass": true,
+      "detail": {
+        "extension": ".gbo",
+        "layer": "B.SilkS",
+        "function_comment": "Legend,Bot"
+      }
+    },
+    {
+      "name": "Mesh_Repeater_S4_21-B_Silkscreen.gbo uses requested classic RS274X with no X2 attributes",
+      "pass": true,
+      "detail": {
+        "extended_attribute_commands": 0
+      }
+    },
+    {
+      "name": "Mesh_Repeater_S4_21-B_Silkscreen.gbo contains nonempty artwork and complete M02 ending",
+      "pass": true,
+      "detail": 6604
+    },
+    {
+      "name": "Mesh_Repeater_S4_21-Edge_Cuts.gko uses explicit mm and absolute coordinates",
+      "pass": true,
+      "detail": {
+        "units": "mm",
+        "notation": "absolute",
+        "format": [
+          4,
+          6
+        ],
+        "zeros": "leading"
+      }
+    },
+    {
+      "name": "Mesh_Repeater_S4_21-Edge_Cuts.gko has unambiguous Protel layer role; any function comment agrees",
+      "pass": true,
+      "detail": {
+        "extension": ".gko",
+        "layer": "Edge.Cuts",
+        "function_comment": "Profile,NP"
+      }
+    },
+    {
+      "name": "Mesh_Repeater_S4_21-Edge_Cuts.gko uses requested classic RS274X with no X2 attributes",
+      "pass": true,
+      "detail": {
+        "extended_attribute_commands": 0
+      }
+    },
+    {
+      "name": "Mesh_Repeater_S4_21-Edge_Cuts.gko contains nonempty artwork and complete M02 ending",
+      "pass": true,
+      "detail": 4
+    },
+    {
+      "name": "Mesh_Repeater_S4_21-PTH.drl uses explicit mm and absolute coordinates",
+      "pass": true,
+      "detail": {
+        "units": "mm",
+        "notation": "absolute",
+        "format": [
+          null,
+          null
+        ],
+        "zeros": "leading"
+      }
+    },
+    {
+      "name": "Mesh_Repeater_S4_21-PTH.drl declares separate plating type",
+      "pass": true,
+      "detail": "Plated,1,2,PTH"
+    },
+    {
+      "name": "Mesh_Repeater_S4_21-PTH.drl coordinate values use unambiguous decimal format",
+      "pass": true,
+      "detail": {
+        "fixed_width": false
+      }
+    },
+    {
+      "name": "Mesh_Repeater_S4_21-NPTH.drl uses explicit mm and absolute coordinates",
+      "pass": true,
+      "detail": {
+        "units": "mm",
+        "notation": "absolute",
+        "format": [
+          null,
+          null
+        ],
+        "zeros": "leading"
+      }
+    },
+    {
+      "name": "Mesh_Repeater_S4_21-NPTH.drl declares separate plating type",
+      "pass": true,
+      "detail": "NonPlated,1,2,NPTH"
+    },
+    {
+      "name": "Mesh_Repeater_S4_21-NPTH.drl coordinate values use unambiguous decimal format",
+      "pass": true,
+      "detail": {
+        "fixed_width": false
+      }
+    },
+    {
+      "name": "All nine CAM files parse without errors",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "Exactly seven required Gerber layer functions and separate PTH/NPTH",
+      "pass": true,
+      "detail": {
+        "layers": {
+          "F.Cu": "Mesh_Repeater_S4_21-F_Cu.gtl",
+          "B.Cu": "Mesh_Repeater_S4_21-B_Cu.gbl",
+          "F.Mask": "Mesh_Repeater_S4_21-F_Mask.gts",
+          "B.Mask": "Mesh_Repeater_S4_21-B_Mask.gbs",
+          "F.SilkS": "Mesh_Repeater_S4_21-F_Silkscreen.gto",
+          "B.SilkS": "Mesh_Repeater_S4_21-B_Silkscreen.gbo",
+          "Edge.Cuts": "Mesh_Repeater_S4_21-Edge_Cuts.gko"
+        },
+        "drills": {
+          "PTH": "Mesh_Repeater_S4_21-PTH.drl",
+          "NPTH": "Mesh_Repeater_S4_21-NPTH.drl"
+        }
+      }
+    },
+    {
+      "name": "No unsupported parser warnings; benign KiCad G90 placement warnings documented",
+      "pass": true,
+      "detail": {
+        "unsupported": [],
+        "benign_G90_header_placement": [
+          {
+            "file": "Mesh_Repeater_S4_21-PTH.drl",
+            "message": "Mesh_Repeater_S4_21-PTH.drl:24 \"G90\": G90 header statement found after end of header"
+          },
+          {
+            "file": "Mesh_Repeater_S4_21-NPTH.drl",
+            "message": "Mesh_Repeater_S4_21-NPTH.drl:12 \"G90\": G90 header statement found after end of header"
+          }
+        ]
+      }
+    },
+    {
+      "name": "CAM contour is closed and matches native Edge.Cuts exactly",
+      "pass": true,
+      "detail": {
+        "file": "Mesh_Repeater_S4_21-Edge_Cuts.gko",
+        "segments": [
+          [
+            [
+              0.0,
+              0.0
+            ],
+            [
+              90.0,
+              0.0
+            ]
+          ],
+          [
+            [
+              0.0,
+              -100.0
+            ],
+            [
+              0.0,
+              0.0
+            ]
+          ],
+          [
+            [
+              90.0,
+              -100.0
+            ],
+            [
+              90.0,
+              0.0
+            ]
+          ],
+          [
+            [
+              0.0,
+              -100.0
+            ],
+            [
+              90.0,
+              -100.0
+            ]
+          ]
+        ],
+        "bounds_mm": [
+          0.0,
+          -100.0,
+          90.0,
+          0.0
+        ],
+        "degrees": {
+          "(0.0, 0.0)": 2,
+          "(90.0, 0.0)": 2,
+          "(0.0, -100.0)": 2,
+          "(90.0, -100.0)": 2
+        },
+        "unsupported_objects": []
+      }
+    },
+    {
+      "name": "CAM outline centreline dimensions are90x100mm",
+      "pass": true,
+      "detail": [
+        0.0,
+        -100.0,
+        90.0,
+        0.0
+      ]
+    },
+    {
+      "name": "Native holes are circular through holes with no omitted slots",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "PTH drill counts/diameters/coordinates match every native hole",
+      "pass": true,
+      "detail": {
+        "file": "Mesh_Repeater_S4_21-PTH.drl",
+        "expected_count": 452,
+        "actual_count": 452,
+        "matched": 452,
+        "missing_or_displaced": [],
+        "unexpected": [],
+        "unsupported_objects": [],
+        "diameter_counts": {
+          "0.3": 363,
+          "0.4": 30,
+          "0.75": 3,
+          "0.8": 2,
+          "1.0": 49,
+          "1.3": 1,
+          "1.7": 4
+        },
+        "max_coordinate_error_mm": 0.0005000000000023874
+      }
+    },
+    {
+      "name": "PTH file and every native tool comment explicitly agree on plating",
+      "pass": true,
+      "detail": {
+        "explicit_tool_plating": [
+          "Plated",
+          "Plated",
+          "Plated",
+          "Plated",
+          "Plated",
+          "Plated",
+          "Plated"
+        ],
+        "tool_definitions": 7,
+        "parser_plating_unspecified": 452,
+        "plating_authority": "Native KiCad TF.FileFunction and TA.AperFunction comments, independently checked; Gerbonara supplies geometry only."
+      }
+    },
+    {
+      "name": "NPTH drill counts/diameters/coordinates match every native hole",
+      "pass": true,
+      "detail": {
+        "file": "Mesh_Repeater_S4_21-NPTH.drl",
+        "expected_count": 4,
+        "actual_count": 4,
+        "matched": 4,
+        "missing_or_displaced": [],
+        "unexpected": [],
+        "unsupported_objects": [],
+        "diameter_counts": {
+          "3.2": 4
+        },
+        "max_coordinate_error_mm": 0.0
+      }
+    },
+    {
+      "name": "NPTH file and every native tool comment explicitly agree on plating",
+      "pass": true,
+      "detail": {
+        "explicit_tool_plating": [
+          "NonPlated"
+        ],
+        "tool_definitions": 1,
+        "parser_plating_unspecified": 4,
+        "plating_authority": "Native KiCad TF.FileFunction and TA.AperFunction comments, independently checked; Gerbonara supplies geometry only."
+      }
+    },
+    {
+      "name": "F.Cu artwork matches native geometry within bounded curve approximation",
+      "pass": true,
+      "detail": {
+        "layer": "F.Cu",
+        "file": "Mesh_Repeater_S4_21-F_Cu.gtl",
+        "native_counts": {
+          "pads": 460,
+          "npth_without_copper": 4,
+          "footprint_graphics": 1,
+          "tracks": 844,
+          "vias": 393,
+          "saved_zone_layers": 2
+        },
+        "cam_object_counts": {
+          "Region": 16,
+          "Flash": 853,
+          "Line": 844
+        },
+        "native_area_mm2": 7178.616388738821,
+        "cam_area_mm2": 7179.03675238127,
+        "raw_symmetric_difference_mm2": 0.43355507608992605,
+        "coverage_tolerance_mm": 0.002002,
+        "missing_beyond_tolerance_mm2": 0.0,
+        "extra_beyond_tolerance_mm2": 0.0,
+        "missing_bounds_mm": [],
+        "extra_bounds_mm": [],
+        "unsupported": [],
+        "ok": true
+      }
+    },
+    {
+      "name": "B.Cu artwork matches native geometry within bounded curve approximation",
+      "pass": true,
+      "detail": {
+        "layer": "B.Cu",
+        "file": "Mesh_Repeater_S4_21-B_Cu.gbl",
+        "native_counts": {
+          "npth_without_copper": 4,
+          "pads": 61,
+          "vias": 393,
+          "tracks": 313,
+          "saved_zone_layers": 1
+        },
+        "cam_object_counts": {
+          "Flash": 454,
+          "Line": 313,
+          "Region": 11
+        },
+        "native_area_mm2": 7960.9341642577965,
+        "cam_area_mm2": 7961.132199064053,
+        "raw_symmetric_difference_mm2": 0.20743391414313003,
+        "coverage_tolerance_mm": 0.002002,
+        "missing_beyond_tolerance_mm2": 0.0,
+        "extra_beyond_tolerance_mm2": 0.0,
+        "missing_bounds_mm": [],
+        "extra_bounds_mm": [],
+        "unsupported": [],
+        "ok": true
+      }
+    },
+    {
+      "name": "F.Mask artwork matches native geometry within bounded curve approximation",
+      "pass": true,
+      "detail": {
+        "layer": "F.Mask",
+        "file": "Mesh_Repeater_S4_21-F_Mask.gts",
+        "native_counts": {
+          "pads": 464,
+          "footprint_graphics": 1
+        },
+        "cam_object_counts": {
+          "Region": 1,
+          "Flash": 464
+        },
+        "native_area_mm2": 1028.9016676922065,
+        "cam_area_mm2": 1029.2631323688563,
+        "raw_symmetric_difference_mm2": 0.3713243337509209,
+        "coverage_tolerance_mm": 0.002002,
+        "missing_beyond_tolerance_mm2": 0.0,
+        "extra_beyond_tolerance_mm2": 0.0,
+        "missing_bounds_mm": [],
+        "extra_bounds_mm": [],
+        "unsupported": [],
+        "ok": true
+      }
+    },
+    {
+      "name": "B.Mask artwork matches native geometry within bounded curve approximation",
+      "pass": true,
+      "detail": {
+        "layer": "B.Mask",
+        "file": "Mesh_Repeater_S4_21-B_Mask.gbs",
+        "native_counts": {
+          "pads": 63
+        },
+        "cam_object_counts": {
+          "Flash": 63
+        },
+        "native_area_mm2": 187.36705752562403,
+        "cam_area_mm2": 187.49167325915408,
+        "raw_symmetric_difference_mm2": 0.1308891415916707,
+        "coverage_tolerance_mm": 0.002002,
+        "missing_beyond_tolerance_mm2": 0.0,
+        "extra_beyond_tolerance_mm2": 0.0,
+        "missing_bounds_mm": [],
+        "extra_bounds_mm": [],
+        "unsupported": [],
+        "ok": true
+      }
+    },
+    {
+      "name": "Source/export/archive inputs unchanged during CAM verification",
+      "pass": true,
+      "detail": []
+    }
+  ],
+  "limitations": [
+    "CAM structural, layer, native copper/mask polygon coverage, outline and exact drill correspondence checks; source design approval reused solely by identical native PCB SHA. This is not bench or EMI certification.",
+    "Copper/mask comparison has an explicit 0.002002mm computational boundary allowance for two independent curve approximations, not an allowance to alter the PCB.",
+    "Order settings such as FR4 1.5mm, quantity5 and coating are specified in the factory order form, not inferred from Gerbers.",
+    "No PCB source, report or preview is added to the fabrication ZIP."
+  ]
+}

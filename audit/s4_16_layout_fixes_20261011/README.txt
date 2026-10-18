@@ -1,1 +1,0 @@
-Final S4.16 CAD proofs. Numeric data and source hashes preserved. Publication-only paths made relative. Historical baseline and donor work directories are excluded. Bench qualification and manufacturing release remain incomplete.

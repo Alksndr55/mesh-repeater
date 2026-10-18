@@ -6,8 +6,8 @@
 	(paper "A3")
 	(title_block
 		(title "LM393XK / холодный заряд Na-ion")
-		(date "2026-10-11")
-		(rev "S4.16")
+		(date "2026-10-18")
+		(rev "S4.21")
 		(comment 1 "Электрическая принципиальная; прототип")
 	)
 	(lib_symbols
@@ -9001,7 +9001,7 @@
 		)
 		(uuid "ba568085-c98a-4474-a811-cd011a306421")
 	)
-	(text "S4.15 / 2026-10-11 / инженерный прототип"
+	(text "S4.17 / 2026-10-14 / инженерный прототип"
 		(exclude_from_sim no)
 		(at 15.24 21.59 0)
 		(effects
@@ -10371,6 +10371,7 @@
 		)
 		(property "Footprint" ""
 			(at 128.27 168.91 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10381,6 +10382,7 @@
 		)
 		(property "Datasheet" ""
 			(at 128.27 168.91 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10391,6 +10393,7 @@
 		)
 		(property "Description" ""
 			(at 128.27 168.91 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10457,6 +10460,7 @@
 		)
 		(property "Datasheet" ""
 			(at 76.2 179.07 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10608,6 +10612,39 @@
 				)
 			)
 		)
+		(property "Fit_NaIon_NoCold" "no"
+			(at 76.2 179.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Value_NaIon_NoCold" "10k 1%"
+			(at 76.2 179.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "MPN_NaIon_NoCold" "RC0805FR-0710KL"
+			(at 76.2 179.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "a9d0e2dc-7854-4e3d-82be-34d6ce592347")
 		)
@@ -10669,6 +10706,7 @@
 		)
 		(property "Datasheet" ""
 			(at 190.5 77.47 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10820,6 +10858,39 @@
 				)
 			)
 		)
+		(property "Fit_NaIon_NoCold" "no"
+			(at 190.5 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Value_NaIon_NoCold" "100k 1%"
+			(at 190.5 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "MPN_NaIon_NoCold" "RC0805FR-07100KL"
+			(at 190.5 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "14cbcd17-7b90-435d-b827-44db94678584")
 		)
@@ -10870,6 +10941,7 @@
 		)
 		(property "Footprint" ""
 			(at 300.99 168.91 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10880,6 +10952,7 @@
 		)
 		(property "Datasheet" ""
 			(at 300.99 168.91 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10890,6 +10963,7 @@
 		)
 		(property "Description" ""
 			(at 300.99 168.91 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10956,6 +11030,7 @@
 		)
 		(property "Datasheet" ""
 			(at 175.26 246.38 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11107,6 +11182,39 @@
 				)
 			)
 		)
+		(property "Fit_NaIon_NoCold" "no"
+			(at 175.26 246.38 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Value_NaIon_NoCold" "100k 1%"
+			(at 175.26 246.38 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "MPN_NaIon_NoCold" "RC0805FR-07100KL"
+			(at 175.26 246.38 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "40c3818d-d5fc-41fd-b475-539edcca7cf0")
 		)
@@ -11157,6 +11265,7 @@
 		)
 		(property "Footprint" ""
 			(at 38.1 101.6 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11167,6 +11276,7 @@
 		)
 		(property "Datasheet" ""
 			(at 38.1 101.6 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11177,6 +11287,7 @@
 		)
 		(property "Description" ""
 			(at 38.1 101.6 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11393,6 +11504,39 @@
 				)
 			)
 		)
+		(property "Fit_NaIon_NoCold" "no"
+			(at 245.11 120.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Value_NaIon_NoCold" "LM393XK"
+			(at 245.11 120.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "MPN_NaIon_NoCold" "LM393XK"
+			(at 245.11 120.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
 		(pin "3"
 			(uuid "0091e47a-816c-4ac6-9aaf-0aba3fbd0ab3")
 		)
@@ -11461,6 +11605,7 @@
 		)
 		(property "Footprint" ""
 			(at 321.31 93.98 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11471,6 +11616,7 @@
 		)
 		(property "Datasheet" ""
 			(at 321.31 93.98 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11481,6 +11627,7 @@
 		)
 		(property "Description" ""
 			(at 321.31 93.98 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11547,6 +11694,7 @@
 		)
 		(property "Datasheet" ""
 			(at 361.95 88.9 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11698,6 +11846,39 @@
 				)
 			)
 		)
+		(property "Fit_NaIon_NoCold" "no"
+			(at 361.95 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Value_NaIon_NoCold" "1k 1%"
+			(at 361.95 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "MPN_NaIon_NoCold" "RC0805FR-071KL"
+			(at 361.95 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "0728d47a-3f91-4717-a60c-19727fda7770")
 		)
@@ -11759,6 +11940,7 @@
 		)
 		(property "Datasheet" ""
 			(at 342.9 146.05 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11900,6 +12082,39 @@
 			)
 		)
 		(property "MPN_LTO_2S" "RC0805FR-071ML"
+			(at 342.9 146.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Fit_NaIon_NoCold" "no"
+			(at 342.9 146.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Value_NaIon_NoCold" "1M 1%"
+			(at 342.9 146.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "MPN_NaIon_NoCold" "RC0805FR-071ML"
 			(at 342.9 146.05 0)
 			(hide yes)
 			(show_name no)
@@ -12121,6 +12336,39 @@
 				)
 			)
 		)
+		(property "Fit_NaIon_NoCold" "no"
+			(at 82.55 215.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Value_NaIon_NoCold" "AO3401A"
+			(at 82.55 215.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "MPN_NaIon_NoCold" "AO3401A"
+			(at 82.55 215.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "839a6bec-907e-4fd0-932f-97ef95f04c14")
 		)
@@ -12185,6 +12433,7 @@
 		)
 		(property "Datasheet" ""
 			(at 95.25 88.9 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -12336,6 +12585,39 @@
 				)
 			)
 		)
+		(property "Fit_NaIon_NoCold" "no"
+			(at 95.25 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Value_NaIon_NoCold" "100k 1%"
+			(at 95.25 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "MPN_NaIon_NoCold" "RC0805FR-07100KL"
+			(at 95.25 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "aa999b0e-ae9e-4f27-8178-7296d9610b48")
 		)
@@ -12386,6 +12668,7 @@
 		)
 		(property "Footprint" ""
 			(at 171.45 109.22 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -12396,6 +12679,7 @@
 		)
 		(property "Datasheet" ""
 			(at 171.45 109.22 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -12406,6 +12690,7 @@
 		)
 		(property "Description" ""
 			(at 171.45 109.22 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -12472,6 +12757,7 @@
 		)
 		(property "Datasheet" ""
 			(at 38.1 44.45 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -12623,6 +12909,39 @@
 				)
 			)
 		)
+		(property "Fit_NaIon_NoCold" "no"
+			(at 38.1 44.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Value_NaIon_NoCold" "47k 1% 0.125W"
+			(at 38.1 44.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "MPN_NaIon_NoCold" "RC0805FR-0747KL"
+			(at 38.1 44.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "4d0008d8-9df0-4546-857c-716416ad476c")
 		)
@@ -12684,6 +13003,7 @@
 		)
 		(property "Datasheet" ""
 			(at 171.45 101.6 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -12825,6 +13145,39 @@
 			)
 		)
 		(property "MPN_LTO_2S" "RC0805FR-07100KL"
+			(at 171.45 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Fit_NaIon_NoCold" "no"
+			(at 171.45 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Value_NaIon_NoCold" "100k 1%"
+			(at 171.45 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "MPN_NaIon_NoCold" "RC0805FR-07100KL"
 			(at 171.45 101.6 0)
 			(hide yes)
 			(show_name no)
@@ -13036,6 +13389,39 @@
 			)
 		)
 		(property "MPN_LTO_2S" "BSS138"
+			(at 359.41 111.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Fit_NaIon_NoCold" "no"
+			(at 359.41 111.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Value_NaIon_NoCold" "BSS138"
+			(at 359.41 111.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "MPN_NaIon_NoCold" "BSS138"
 			(at 359.41 111.76 0)
 			(hide yes)
 			(show_name no)
@@ -13260,6 +13646,39 @@
 				)
 			)
 		)
+		(property "Fit_NaIon_NoCold" "no"
+			(at 40.64 215.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Value_NaIon_NoCold" "AO3401A"
+			(at 40.64 215.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "MPN_NaIon_NoCold" "AO3401A"
+			(at 40.64 215.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "84f3064a-da1b-4d48-9cf2-730ed4492fd7")
 		)
@@ -13324,6 +13743,7 @@
 		)
 		(property "Datasheet" ""
 			(at 300.99 88.9 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -13465,6 +13885,39 @@
 			)
 		)
 		(property "MPN_LTO_2S" "RC0805FR-07100KL"
+			(at 300.99 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Fit_NaIon_NoCold" "no"
+			(at 300.99 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Value_NaIon_NoCold" "100k 1%"
+			(at 300.99 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "MPN_NaIon_NoCold" "RC0805FR-07100KL"
 			(at 300.99 88.9 0)
 			(hide yes)
 			(show_name no)
@@ -13676,6 +14129,39 @@
 			)
 		)
 		(property "MPN_LTO_2S" "AO3401A"
+			(at 124.46 215.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Fit_NaIon_NoCold" "no"
+			(at 124.46 215.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Value_NaIon_NoCold" "AO3401A"
+			(at 124.46 215.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "MPN_NaIon_NoCold" "AO3401A"
 			(at 124.46 215.9 0)
 			(hide yes)
 			(show_name no)
@@ -13900,6 +14386,39 @@
 				)
 			)
 		)
+		(property "Fit_NaIon_NoCold" "no"
+			(at 95.25 158.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Value_NaIon_NoCold" "10k NTC 1% B3988"
+			(at 95.25 158.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "MPN_NaIon_NoCold" "B57861S0103F040"
+			(at 95.25 158.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "3e75f4ac-3c55-435f-8cef-b91fd0578f8b")
 		)
@@ -13961,6 +14480,7 @@
 		)
 		(property "Datasheet" ""
 			(at 128.27 158.75 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -14112,6 +14632,39 @@
 				)
 			)
 		)
+		(property "Fit_NaIon_NoCold" "no"
+			(at 128.27 158.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Value_NaIon_NoCold" "1nF 100V C0G"
+			(at 128.27 158.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "MPN_NaIon_NoCold" "CC0805JRNPO0BN102"
+			(at 128.27 158.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "cf90d2be-f075-46a0-9995-5b6a06e6336e")
 		)
@@ -14162,6 +14715,7 @@
 		)
 		(property "Footprint" ""
 			(at 76.2 189.23 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -14172,6 +14726,7 @@
 		)
 		(property "Datasheet" ""
 			(at 76.2 189.23 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -14182,6 +14737,7 @@
 		)
 		(property "Description" ""
 			(at 76.2 189.23 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -14246,6 +14802,7 @@
 		)
 		(property "Datasheet" ""
 			(at 265.43 69.85 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -14397,6 +14954,39 @@
 				)
 			)
 		)
+		(property "Fit_NaIon_NoCold" "no"
+			(at 265.43 69.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Value_NaIon_NoCold" "1M 1%"
+			(at 265.43 69.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "MPN_NaIon_NoCold" "RC0805FR-071ML"
+			(at 265.43 69.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "eacfdc3d-9e1e-4f0d-bedc-2895f31689bb")
 		)
@@ -14456,6 +15046,7 @@
 		)
 		(property "Datasheet" ""
 			(at 232.41 69.85 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -14607,6 +15198,39 @@
 				)
 			)
 		)
+		(property "Fit_NaIon_NoCold" "no"
+			(at 232.41 69.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Value_NaIon_NoCold" "150k 1%"
+			(at 232.41 69.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "MPN_NaIon_NoCold" "RC0805FR-07150KL"
+			(at 232.41 69.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "596cbafd-981c-4a64-9204-8a22af4b5556")
 		)
@@ -14668,6 +15292,7 @@
 		)
 		(property "Datasheet" ""
 			(at 300.99 158.75 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -14819,6 +15444,39 @@
 				)
 			)
 		)
+		(property "Fit_NaIon_NoCold" "no"
+			(at 300.99 158.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Value_NaIon_NoCold" "100nF 100V X7R"
+			(at 300.99 158.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "MPN_NaIon_NoCold" "CC0805KKX7R0BB104"
+			(at 300.99 158.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "398e9cb7-a202-4c52-a370-5f235266f1e8")
 		)
@@ -14880,6 +15538,7 @@
 		)
 		(property "Datasheet" ""
 			(at 190.5 90.17 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -15031,6 +15690,39 @@
 				)
 			)
 		)
+		(property "Fit_NaIon_NoCold" "no"
+			(at 190.5 90.17 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Value_NaIon_NoCold" "30k 1%"
+			(at 190.5 90.17 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "MPN_NaIon_NoCold" "RC0805FR-0730KL"
+			(at 190.5 90.17 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "3bc292d7-b325-4684-9f5f-7f56c71aa6e5")
 		)
@@ -15081,6 +15773,7 @@
 		)
 		(property "Footprint" ""
 			(at 245.11 161.29 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -15091,6 +15784,7 @@
 		)
 		(property "Datasheet" ""
 			(at 245.11 161.29 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -15101,6 +15795,7 @@
 		)
 		(property "Description" ""
 			(at 245.11 161.29 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -15156,6 +15851,7 @@
 		)
 		(property "Footprint" ""
 			(at 342.9 156.21 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -15166,6 +15862,7 @@
 		)
 		(property "Datasheet" ""
 			(at 342.9 156.21 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -15176,6 +15873,7 @@
 		)
 		(property "Description" ""
 			(at 342.9 156.21 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -15231,6 +15929,7 @@
 		)
 		(property "Footprint" ""
 			(at 361.95 124.46 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -15241,6 +15940,7 @@
 		)
 		(property "Datasheet" ""
 			(at 361.95 124.46 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -15251,6 +15951,7 @@
 		)
 		(property "Description" ""
 			(at 361.95 124.46 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -15317,6 +16018,7 @@
 		)
 		(property "Datasheet" ""
 			(at 321.31 83.82 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -15468,6 +16170,39 @@
 				)
 			)
 		)
+		(property "Fit_NaIon_NoCold" "no"
+			(at 321.31 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Value_NaIon_NoCold" "100nF 100V X7R"
+			(at 321.31 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "MPN_NaIon_NoCold" "CC0805KKX7R0BB104"
+			(at 321.31 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "8f7f6ac7-efa4-4e2b-8fa4-c7fc49259dd3")
 		)
@@ -15518,6 +16253,7 @@
 		)
 		(property "Footprint" ""
 			(at 95.25 168.91 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -15528,6 +16264,7 @@
 		)
 		(property "Datasheet" ""
 			(at 95.25 168.91 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -15538,6 +16275,7 @@
 		)
 		(property "Description" ""
 			(at 95.25 168.91 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -15754,6 +16492,39 @@
 				)
 			)
 		)
+		(property "Fit_NaIon_NoCold" "no"
+			(at 38.1 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Value_NaIon_NoCold" "LM285Z-2.5G"
+			(at 38.1 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "MPN_NaIon_NoCold" "LM285Z-2.5G"
+			(at 38.1 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "f51b754d-5215-443c-b57a-90f3ce566fa8")
 		)
@@ -15818,6 +16589,7 @@
 		)
 		(property "Datasheet" ""
 			(at 76.2 154.94 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -15969,6 +16741,39 @@
 				)
 			)
 		)
+		(property "Fit_NaIon_NoCold" "no"
+			(at 76.2 154.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Value_NaIon_NoCold" "1.2M 1%"
+			(at 76.2 154.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "MPN_NaIon_NoCold" "RC0805FR-071M2L"
+			(at 76.2 154.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "d28f9b51-f9bf-487c-a8ba-8ec39c97e83f")
 		)
@@ -16028,6 +16833,7 @@
 		)
 		(property "Datasheet" ""
 			(at 328.93 111.76 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -16169,6 +16975,39 @@
 			)
 		)
 		(property "MPN_LTO_2S" "RC0805FR-071KL"
+			(at 328.93 111.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Fit_NaIon_NoCold" "no"
+			(at 328.93 111.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Value_NaIon_NoCold" "1k 1%"
+			(at 328.93 111.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "MPN_NaIon_NoCold" "RC0805FR-071KL"
 			(at 328.93 111.76 0)
 			(hide yes)
 			(show_name no)

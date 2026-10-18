@@ -1,0 +1,2539 @@
+{
+  "board_sha256": "be14cae202912ebb00e5dc758b2eae04cbe6733d4cb73df00044fdb03670fab3",
+  "read_only": true,
+  "native_unchanged": true,
+  "ok": true,
+  "passed": 14,
+  "total": 14,
+  "checks": [
+    {
+      "name": "Native local INA, shunt, pre-filter FB and separate supply branch routes exist",
+      "pass": true,
+      "evidence": {
+        "INA_positive_Kelvin": {
+          "start": [
+            "R71",
+            "1"
+          ],
+          "end": [
+            "R72",
+            "1"
+          ],
+          "found_without_zones": true,
+          "route_segment_length_mm": 5.848617,
+          "widths_mm": [
+            0.2
+          ],
+          "via_drills_mm": [],
+          "assumed_current_A": 0,
+          "one_route_R20_mohm": 14.404309190805158,
+          "one_route_drop20_mV": 0.0,
+          "one_route_copper_loss20_mW": 0.0,
+          "track_UUIDs": [
+            "96e32c6f-9a3d-46c0-b14c-21993c7a150b",
+            "1594f684-2ee0-444d-b494-041b1e35d0f5",
+            "7a1a77c7-ff8b-40a6-820d-520b9bd1288b",
+            "e087a606-9a28-4d90-9194-23ef48f349fd",
+            "b38f5112-6211-4b4f-894b-19690149d6e8"
+          ],
+          "via_UUIDs": [],
+          "pads_traversed": [
+            [
+              "R71",
+              "1"
+            ],
+            [
+              "R72",
+              "1"
+            ]
+          ]
+        },
+        "INA_negative_Kelvin": {
+          "start": [
+            "R71",
+            "2"
+          ],
+          "end": [
+            "R73",
+            "1"
+          ],
+          "found_without_zones": true,
+          "route_segment_length_mm": 10.167399,
+          "widths_mm": [
+            0.2
+          ],
+          "via_drills_mm": [
+            0.3,
+            0.3
+          ],
+          "assumed_current_A": 0,
+          "one_route_R20_mohm": 27.821266855361625,
+          "one_route_drop20_mV": 0.0,
+          "one_route_copper_loss20_mW": 0.0,
+          "track_UUIDs": [
+            "952c3f6a-e0b6-486c-b94b-ff5531611622",
+            "761d6a2b-95cc-4084-a000-3b67e077138f",
+            "696ac2bc-503d-4f3e-acc2-39a5d6f5f536",
+            "68b35d0d-3399-4424-a477-7da40076d180",
+            "fcba685a-388c-4e0b-a37f-771a37fd2c65"
+          ],
+          "via_UUIDs": [
+            "cac1bff4-5606-4079-a394-e4a68d4580c7",
+            "0b2f8eb9-cc71-4287-8400-dce8c309f779"
+          ],
+          "pads_traversed": [
+            [
+              "R71",
+              "2"
+            ],
+            [
+              "R73",
+              "1"
+            ]
+          ]
+        },
+        "INA_supply_bypass": {
+          "start": [
+            "U12",
+            "5"
+          ],
+          "end": [
+            "C63",
+            "1"
+          ],
+          "found_without_zones": true,
+          "route_segment_length_mm": 1.325772,
+          "widths_mm": [
+            0.3
+          ],
+          "via_drills_mm": [],
+          "assumed_current_A": 0,
+          "one_route_R20_mohm": 2.176790776570084,
+          "one_route_drop20_mV": 0.0,
+          "one_route_copper_loss20_mW": 0.0,
+          "track_UUIDs": [
+            "e0e92d5d-a829-4ad0-80cd-5b9ede11e897",
+            "6cf2bbc7-f04e-41b8-b45c-a5bd2a7197a9"
+          ],
+          "via_UUIDs": [],
+          "pads_traversed": [
+            [
+              "U12",
+              "5"
+            ],
+            [
+              "C63",
+              "1"
+            ]
+          ]
+        },
+        "INA_plus_RC": {
+          "start": [
+            "R72",
+            "2"
+          ],
+          "end": [
+            "U12",
+            "8"
+          ],
+          "found_without_zones": true,
+          "route_segment_length_mm": 5.4475,
+          "widths_mm": [
+            0.2
+          ],
+          "via_drills_mm": [],
+          "assumed_current_A": 0,
+          "one_route_R20_mohm": 13.416414285714287,
+          "one_route_drop20_mV": 0.0,
+          "one_route_copper_loss20_mW": 0.0,
+          "track_UUIDs": [
+            "bdf7c901-c9a0-4379-9dca-7ac7cae27cd8",
+            "0f6b642f-e012-433c-ae28-8c5715ff0c62"
+          ],
+          "via_UUIDs": [],
+          "pads_traversed": [
+            [
+              "R72",
+              "2"
+            ],
+            [
+              "C64",
+              "1"
+            ],
+            [
+              "U12",
+              "8"
+            ]
+          ]
+        },
+        "INA_minus_RC": {
+          "start": [
+            "R73",
+            "2"
+          ],
+          "end": [
+            "U12",
+            "7"
+          ],
+          "found_without_zones": true,
+          "route_segment_length_mm": 6.342632,
+          "widths_mm": [
+            0.2
+          ],
+          "via_drills_mm": [],
+          "assumed_current_A": 0,
+          "one_route_R20_mohm": 15.620997494339901,
+          "one_route_drop20_mV": 0.0,
+          "one_route_copper_loss20_mW": 0.0,
+          "track_UUIDs": [
+            "a8a9df29-b4d9-4e8c-83ae-e10d960c753a",
+            "05e8738f-a573-4e6d-bf21-f01042d7b152",
+            "4e8c95a2-ea58-4384-9eca-894459fa2cc0",
+            "1a222185-ea81-4a19-a211-87738f0942fe"
+          ],
+          "via_UUIDs": [],
+          "pads_traversed": [
+            [
+              "R73",
+              "2"
+            ],
+            [
+              "U12",
+              "7"
+            ]
+          ]
+        },
+        "INA_diff_cap_plus": {
+          "start": [
+            "C64",
+            "1"
+          ],
+          "end": [
+            "U12",
+            "8"
+          ],
+          "found_without_zones": true,
+          "route_segment_length_mm": 2.61,
+          "widths_mm": [
+            0.2
+          ],
+          "via_drills_mm": [],
+          "assumed_current_A": 0,
+          "one_route_R20_mohm": 6.428057142857144,
+          "one_route_drop20_mV": 0.0,
+          "one_route_copper_loss20_mW": 0.0,
+          "track_UUIDs": [
+            "0f6b642f-e012-433c-ae28-8c5715ff0c62"
+          ],
+          "via_UUIDs": [],
+          "pads_traversed": [
+            [
+              "C64",
+              "1"
+            ],
+            [
+              "U12",
+              "8"
+            ]
+          ]
+        },
+        "INA_diff_cap_minus": {
+          "start": [
+            "C64",
+            "2"
+          ],
+          "end": [
+            "U12",
+            "7"
+          ],
+          "found_without_zones": true,
+          "route_segment_length_mm": 2.944472,
+          "widths_mm": [
+            0.2
+          ],
+          "via_drills_mm": [],
+          "assumed_current_A": 0,
+          "one_route_R20_mohm": 7.251814442699311,
+          "one_route_drop20_mV": 0.0,
+          "one_route_copper_loss20_mW": 0.0,
+          "track_UUIDs": [
+            "4e8c95a2-ea58-4384-9eca-894459fa2cc0",
+            "1a222185-ea81-4a19-a211-87738f0942fe"
+          ],
+          "via_UUIDs": [],
+          "pads_traversed": [
+            [
+              "C64",
+              "2"
+            ],
+            [
+              "U12",
+              "7"
+            ]
+          ]
+        },
+        "BAT_RAW_ADC": {
+          "start": [
+            "J8",
+            "1"
+          ],
+          "end": [
+            "R27",
+            "1"
+          ],
+          "found_without_zones": true,
+          "route_segment_length_mm": 82.536594,
+          "widths_mm": [
+            0.25,
+            1.2
+          ],
+          "via_drills_mm": [
+            0.3,
+            0.3,
+            0.3
+          ],
+          "assumed_current_A": 0,
+          "one_route_R20_mohm": 132.87232678609885,
+          "one_route_drop20_mV": 0.0,
+          "one_route_copper_loss20_mW": 0.0,
+          "track_UUIDs": [
+            "ba9b29bb-896d-474e-9595-785affb913c3",
+            "0f197e83-196f-4092-a611-60af13b0b532",
+            "b5100bef-a4de-43f0-8e8a-9fd654a45197",
+            "98432c33-f574-4ac8-8eae-1fd4a2e6bc5b",
+            "9f889083-a45a-4662-9118-d64e2bf12c72",
+            "24dfd417-33cb-489e-a066-264d4f7712b0",
+            "56725cfe-f23c-47d2-815a-ba23d256b852",
+            "0fa2d23a-eabf-4165-8ebc-031246854621",
+            "9a1f7364-cbd6-4233-aa41-2dee999243a2",
+            "6c2a3fec-5f68-422f-b3c6-8b41ba1a9c39",
+            "13a5379d-2c49-4854-b741-2bd6d9bae27e"
+          ],
+          "via_UUIDs": [
+            "824d716f-0cd9-47ba-914f-b5aeda317edd",
+            "cb13cfe1-4230-430b-a2c4-550e0b2db09a",
+            "3cb4d879-67bb-4f6e-97f4-06c49dff7b63"
+          ],
+          "pads_traversed": [
+            [
+              "J8",
+              "1"
+            ],
+            [
+              "R27",
+              "1"
+            ]
+          ]
+        },
+        "SYS_STAR_TO_MCU": {
+          "start": [
+            "NT2",
+            "1"
+          ],
+          "end": [
+            "M1",
+            "9"
+          ],
+          "found_without_zones": true,
+          "route_segment_length_mm": 56.487365,
+          "widths_mm": [
+            0.6
+          ],
+          "via_drills_mm": [
+            0.3,
+            0.3,
+            0.4
+          ],
+          "assumed_current_A": 0,
+          "one_route_R20_mohm": 50.19650804002095,
+          "one_route_drop20_mV": 0.0,
+          "one_route_copper_loss20_mW": 0.0,
+          "track_UUIDs": [
+            "29314626-594c-4d9c-97ef-d88604aef94e",
+            "5e9b9d7b-7250-4760-a73e-7a560b50f1a5",
+            "3d22abc0-a9c3-4025-8bdf-1af256c069a2",
+            "6fcf30ec-b820-45ff-8ba1-ae7c32eef094",
+            "f71ff851-8a26-46ad-89b5-d3975ce33eed",
+            "8051f471-b154-4b70-a6b6-fd309bcb4c90",
+            "cdc3cb1c-f599-4e7e-8ab7-f8d872c27a30",
+            "fd800d1b-9af6-4eb6-8ec5-ff5f5758ad47",
+            "d887e1b4-5132-4aee-b0cd-7202c1e6b4dd",
+            "5d782500-2b9c-4b06-a00b-f68ce409e1c7",
+            "1ef2f793-9bf8-43ed-8458-dbecc4a2281a",
+            "3594677e-0177-4ae2-b62a-16fd27e247ba",
+            "02404674-6bf6-487f-8086-72327a524301",
+            "5104f787-3ddd-4073-8991-784dc88ba94b",
+            "0cfe7fa0-0756-497e-9c04-e362610eb329"
+          ],
+          "via_UUIDs": [
+            "fae5969f-e8ce-4261-8035-676618494979",
+            "c75e0958-9cf1-4d24-8f4f-80827a2ac49b",
+            "c97bd9a9-fcb3-4601-a61b-2c08e20eab41"
+          ],
+          "pads_traversed": [
+            [
+              "NT2",
+              "1"
+            ],
+            [
+              "M1",
+              "9"
+            ]
+          ]
+        },
+        "RADIO_STAR_TO_FB1": {
+          "start": [
+            "NT2",
+            "2"
+          ],
+          "end": [
+            "FB1",
+            "1"
+          ],
+          "found_without_zones": true,
+          "route_segment_length_mm": 39.637522,
+          "widths_mm": [
+            0.6
+          ],
+          "via_drills_mm": [
+            0.3
+          ],
+          "assumed_current_A": 0,
+          "one_route_R20_mohm": 33.93072555016781,
+          "one_route_drop20_mV": 0.0,
+          "one_route_copper_loss20_mW": 0.0,
+          "track_UUIDs": [
+            "e31a3a8b-da68-42ad-b6f6-3a21cb9eb3c4",
+            "890d390a-1bee-4abd-be4b-177350c09c14",
+            "b16cd516-d8c1-44d0-913e-7d3e2b92fda3",
+            "d9e9c62c-e1e6-4664-bb94-4f7e143359ad",
+            "cea0a227-ca12-442f-959c-5e00387addca",
+            "2efa24f3-e414-4b98-984b-9caefeeef1ff"
+          ],
+          "via_UUIDs": [
+            "90ca6a83-195d-408a-9b76-42f0bcef13b4"
+          ],
+          "pads_traversed": [
+            [
+              "NT2",
+              "2"
+            ],
+            [
+              "FB1",
+              "1"
+            ]
+          ]
+        },
+        "SYS_STAR_TO_INA": {
+          "start": [
+            "NT2",
+            "1"
+          ],
+          "end": [
+            "U12",
+            "5"
+          ],
+          "found_without_zones": true,
+          "route_segment_length_mm": 77.300908,
+          "widths_mm": [
+            0.3,
+            0.6
+          ],
+          "via_drills_mm": [
+            0.3,
+            0.3,
+            0.3
+          ],
+          "assumed_current_A": 0,
+          "one_route_R20_mohm": 129.15390558984092,
+          "one_route_drop20_mV": 0.0,
+          "one_route_copper_loss20_mW": 0.0,
+          "track_UUIDs": [
+            "29314626-594c-4d9c-97ef-d88604aef94e",
+            "5e9b9d7b-7250-4760-a73e-7a560b50f1a5",
+            "0a7e8ebe-fec2-4f01-8128-72059cc4b450",
+            "e4fa406a-0498-4765-b6ff-485f9c546434",
+            "75ef3d6a-234c-469d-91b0-dbcbc08aa0b4",
+            "81c1bcc7-100a-4644-8738-f32aba433bce",
+            "5a80096c-2252-45a6-8197-6c53ffdcf25e",
+            "9f3144d2-4639-4d40-b295-f0b9ba88d5b7",
+            "4a9ff3df-aee4-46f0-a8d6-97d104d4c945",
+            "bf94adf4-d553-4496-ad21-23b1d4eb6850",
+            "bbf1f0fc-c14f-41c9-82ae-2c4cb435aeb8",
+            "22e71ffb-8049-4d41-8f71-67adb45e12a9",
+            "a9310743-ce7e-4a86-93ff-b254d073a82c",
+            "eaea051f-623c-4bf5-9b21-6d92c3d48040",
+            "fb697e8d-dc36-4e7c-ad7e-28903678c9ce",
+            "a7c2402c-e508-4044-b62e-480f72dc6708",
+            "7eb3cbe4-dd45-41f6-abc4-a06a9633b819",
+            "db76b972-2518-48ce-8a82-2bad5aaf5a0e",
+            "d9f2a2c8-5e3b-4f3c-a24e-aab9165077b1",
+            "865dfed1-939c-44c4-99e7-44949549957d",
+            "5f30163c-9dda-406f-a2a0-e9386150d757",
+            "11faabdc-26dc-4c15-9067-5c9116161fea",
+            "6cf2bbc7-f04e-41b8-b45c-a5bd2a7197a9",
+            "e0e92d5d-a829-4ad0-80cd-5b9ede11e897"
+          ],
+          "via_UUIDs": [
+            "7626201a-2f9c-45d3-83a5-6d30e9b70575",
+            "103a4060-2c92-4edb-adc3-013fa65f2d97",
+            "90033379-d2a9-4775-9ec6-57d59b5f769b"
+          ],
+          "pads_traversed": [
+            [
+              "NT2",
+              "1"
+            ],
+            [
+              "C63",
+              "1"
+            ],
+            [
+              "U12",
+              "5"
+            ]
+          ]
+        },
+        "FILTER_TO_J11": {
+          "start": [
+            "L4",
+            "2"
+          ],
+          "end": [
+            "J11",
+            "1"
+          ],
+          "found_without_zones": true,
+          "route_segment_length_mm": 33.041883,
+          "widths_mm": [
+            1.2
+          ],
+          "via_drills_mm": [
+            0.4
+          ],
+          "assumed_current_A": 0,
+          "one_route_R20_mohm": 14.605562160962538,
+          "one_route_drop20_mV": 0.0,
+          "one_route_copper_loss20_mW": 0.0,
+          "track_UUIDs": [
+            "eecd9f3d-dfb4-43af-af30-c320eec270dd",
+            "b79ee1aa-575d-44f8-bfca-5cc71b4fd480",
+            "e15bd196-5428-492d-98e3-690a0e2715c3"
+          ],
+          "via_UUIDs": [
+            "608cc384-19d0-4c96-8af0-cc4cfaa4b27e"
+          ],
+          "pads_traversed": [
+            [
+              "L4",
+              "2"
+            ],
+            [
+              "J11",
+              "1"
+            ]
+          ]
+        },
+        "J11_TO_STAR": {
+          "start": [
+            "J11",
+            "2"
+          ],
+          "end": [
+            "NT2",
+            "1"
+          ],
+          "found_without_zones": true,
+          "route_segment_length_mm": 2.0,
+          "widths_mm": [
+            0.8
+          ],
+          "via_drills_mm": [],
+          "assumed_current_A": 0,
+          "one_route_R20_mohm": 1.2314285714285715,
+          "one_route_drop20_mV": 0.0,
+          "one_route_copper_loss20_mW": 0.0,
+          "track_UUIDs": [
+            "c014841a-eba9-4990-9c8d-6584a6f76d9f"
+          ],
+          "via_UUIDs": [],
+          "pads_traversed": [
+            [
+              "J11",
+              "2"
+            ],
+            [
+              "NT2",
+              "1"
+            ]
+          ]
+        },
+        "CHARGER_CSP_BEFORE_R56": {
+          "start": [
+            "R56",
+            "1"
+          ],
+          "end": [
+            "U1",
+            "13"
+          ],
+          "found_without_zones": true,
+          "route_segment_length_mm": 9.345343,
+          "widths_mm": [
+            0.2
+          ],
+          "via_drills_mm": [],
+          "assumed_current_A": 0,
+          "one_route_R20_mohm": 23.016244175780148,
+          "one_route_drop20_mV": 0.0,
+          "one_route_copper_loss20_mW": 0.0,
+          "track_UUIDs": [
+            "c64a47e1-79d3-4735-b29a-276e21f3aceb",
+            "cf7096d5-f45c-4572-9b0a-2c21b3c4ee56",
+            "24c385d8-d8c4-48f9-badc-0ce5a5378547",
+            "0fc6a1c4-7f16-4b3b-a666-3c1402a8abfe",
+            "d2acad9a-8b02-4dcd-804d-a98c92545838"
+          ],
+          "via_UUIDs": [],
+          "pads_traversed": [
+            [
+              "R56",
+              "1"
+            ],
+            [
+              "U1",
+              "13"
+            ]
+          ]
+        },
+        "R1_UPSTREAM_FORCE": {
+          "start": [
+            "R1",
+            "1"
+          ],
+          "end": [
+            "R56",
+            "2"
+          ],
+          "found_without_zones": true,
+          "route_segment_length_mm": 10.094113,
+          "widths_mm": [
+            0.8
+          ],
+          "via_drills_mm": [],
+          "assumed_current_A": 0,
+          "one_route_R20_mohm": 6.215089298455329,
+          "one_route_drop20_mV": 0.0,
+          "one_route_copper_loss20_mW": 0.0,
+          "track_UUIDs": [
+            "ea2a05f0-d647-4aae-9db4-4b4d97df6e6b",
+            "ccead82c-b5c9-4d97-9745-1b906e435562",
+            "dc9b7fa6-db44-4e65-9388-0decd20f8aa8"
+          ],
+          "via_UUIDs": [],
+          "pads_traversed": [
+            [
+              "R1",
+              "1"
+            ],
+            [
+              "R56",
+              "2"
+            ]
+          ]
+        },
+        "R1_BAT_SENSE": {
+          "start": [
+            "R1",
+            "2"
+          ],
+          "end": [
+            "U1",
+            "14"
+          ],
+          "found_without_zones": true,
+          "route_segment_length_mm": 3.8175,
+          "widths_mm": [
+            0.15
+          ],
+          "via_drills_mm": [],
+          "assumed_current_A": 0,
+          "one_route_R20_mohm": 12.535942857142862,
+          "one_route_drop20_mV": 0.0,
+          "one_route_copper_loss20_mW": 0.0,
+          "track_UUIDs": [
+            "efc63ecf-24a3-4265-88a8-20db44f87c85",
+            "5c059550-9af3-49f8-b164-95a4655bedc4"
+          ],
+          "via_UUIDs": [],
+          "pads_traversed": [
+            [
+              "R1",
+              "2"
+            ],
+            [
+              "U1",
+              "14"
+            ]
+          ]
+        },
+        "TPS_PRE_FILTER_FB_PICKUP": {
+          "start": [
+            "U2",
+            "6"
+          ],
+          "end": [
+            "R13",
+            "1"
+          ],
+          "found_without_zones": true,
+          "route_segment_length_mm": 17.120343,
+          "widths_mm": [
+            0.2,
+            0.25,
+            0.6
+          ],
+          "via_drills_mm": [
+            0.3,
+            0.3
+          ],
+          "assumed_current_A": 0,
+          "one_route_R20_mohm": 34.69522079530218,
+          "one_route_drop20_mV": 0.0,
+          "one_route_copper_loss20_mW": 0.0,
+          "track_UUIDs": [
+            "b5e2e62a-d859-4f19-b459-009abfc3a51f",
+            "5c03b9e7-1cc1-4ffc-89d7-a14784a28ffc",
+            "68f63fcd-30e5-4bf7-8c1c-1b66812d8079",
+            "e763daec-08b0-45a9-8a35-f5733b042f7b",
+            "5c01a55d-3f22-4685-8c67-93d3daf96823",
+            "39871334-9dbd-4097-8432-d3d75ffc7564",
+            "239f4c91-5b12-47a3-87d5-fcd468d81979",
+            "87c1cfa4-5700-4668-b332-6c539fd5b87b"
+          ],
+          "via_UUIDs": [
+            "938972a1-4c50-4c69-afe4-a62477cf67fa",
+            "62509cc6-eadd-4397-94da-fcf7e162b0b6"
+          ],
+          "pads_traversed": [
+            [
+              "U2",
+              "6"
+            ],
+            [
+              "C14",
+              "1"
+            ],
+            [
+              "R13",
+              "1"
+            ]
+          ]
+        },
+        "TPS_FB_NODE": {
+          "start": [
+            "R13",
+            "2"
+          ],
+          "end": [
+            "U2",
+            "4"
+          ],
+          "found_without_zones": true,
+          "route_segment_length_mm": 2.850242,
+          "widths_mm": [
+            0.15
+          ],
+          "via_drills_mm": [],
+          "assumed_current_A": 0,
+          "one_route_R20_mohm": 9.35965083895228,
+          "one_route_drop20_mV": 0.0,
+          "one_route_copper_loss20_mW": 0.0,
+          "track_UUIDs": [
+            "ab28e805-b00f-4e68-9363-235c19b1af6a",
+            "f44f090e-d922-4240-b139-fd3d1726af5e"
+          ],
+          "via_UUIDs": [],
+          "pads_traversed": [
+            [
+              "R13",
+              "2"
+            ],
+            [
+              "U2",
+              "4"
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "name": "Only H/V/45-degree route segments",
+      "pass": true,
+      "evidence": []
+    },
+    {
+      "name": "Main force paths use power-width copper through C53, with only qualified original U2.10 pin escape",
+      "pass": true,
+      "evidence": {
+        "paths": {
+          "R71_RAW_to_J8": {
+            "start": [
+              "R71",
+              "2"
+            ],
+            "end": [
+              "J8",
+              "1"
+            ],
+            "found_without_zones": true,
+            "route_segment_length_mm": 46.894102,
+            "widths_mm": [
+              0.8,
+              1.0
+            ],
+            "via_drills_mm": [],
+            "assumed_current_A": 1.25,
+            "one_route_R20_mohm": 23.318812531852615,
+            "one_route_drop20_mV": 29.14851566481577,
+            "one_route_copper_loss20_mW": 36.435644581019716,
+            "track_UUIDs": [
+              "0e764474-3e3e-451f-b1b3-ab7f5b20fb35",
+              "d4429ed6-b410-43b5-9755-ae11d3da73bd",
+              "d5e56b58-67c9-4960-8d53-ad7bb3d607d3",
+              "471ab799-7269-4463-966b-e68d33e07b47",
+              "3e73c372-d2e7-4b3e-9ff1-5a7cd37beb0e",
+              "cbcbe428-cd39-4a68-b581-7dc370f1849a",
+              "168783ce-7180-45f5-b28b-750cb276160a"
+            ],
+            "via_UUIDs": [],
+            "pads_traversed": [
+              [
+                "R71",
+                "2"
+              ],
+              [
+                "J8",
+                "1"
+              ]
+            ],
+            "native_segments": [
+              {
+                "uuid": "0e764474-3e3e-451f-b1b3-ab7f5b20fb35",
+                "start_mm": [
+                  35.9625,
+                  94.25
+                ],
+                "end_mm": [
+                  37.75,
+                  94.25
+                ],
+                "width_mm": 0.8,
+                "length_mm": 1.7875,
+                "layer": "F.Cu"
+              },
+              {
+                "uuid": "d4429ed6-b410-43b5-9755-ae11d3da73bd",
+                "start_mm": [
+                  38.0,
+                  97.0
+                ],
+                "end_mm": [
+                  38.0,
+                  94.5
+                ],
+                "width_mm": 1.0,
+                "length_mm": 2.5,
+                "layer": "F.Cu"
+              },
+              {
+                "uuid": "d5e56b58-67c9-4960-8d53-ad7bb3d607d3",
+                "start_mm": [
+                  37.0,
+                  98.0
+                ],
+                "end_mm": [
+                  38.0,
+                  97.0
+                ],
+                "width_mm": 1.0,
+                "length_mm": 1.4142135623730951,
+                "layer": "F.Cu"
+              },
+              {
+                "uuid": "471ab799-7269-4463-966b-e68d33e07b47",
+                "start_mm": [
+                  9.5,
+                  98.0
+                ],
+                "end_mm": [
+                  37.0,
+                  98.0
+                ],
+                "width_mm": 1.0,
+                "length_mm": 27.5,
+                "layer": "F.Cu"
+              },
+              {
+                "uuid": "3e73c372-d2e7-4b3e-9ff1-5a7cd37beb0e",
+                "start_mm": [
+                  4.5,
+                  93.0
+                ],
+                "end_mm": [
+                  9.5,
+                  98.0
+                ],
+                "width_mm": 1.0,
+                "length_mm": 7.071067811865476,
+                "layer": "F.Cu"
+              },
+              {
+                "uuid": "cbcbe428-cd39-4a68-b581-7dc370f1849a",
+                "start_mm": [
+                  4.5,
+                  88.5
+                ],
+                "end_mm": [
+                  4.5,
+                  93.0
+                ],
+                "width_mm": 1.0,
+                "length_mm": 4.5,
+                "layer": "F.Cu"
+              },
+              {
+                "uuid": "168783ce-7180-45f5-b28b-750cb276160a",
+                "start_mm": [
+                  4.5,
+                  88.5
+                ],
+                "end_mm": [
+                  3.0,
+                  87.0
+                ],
+                "width_mm": 1.0,
+                "length_mm": 2.121320343559643,
+                "layer": "F.Cu"
+              }
+            ]
+          },
+          "R71_SYS_to_C53": {
+            "start": [
+              "R71",
+              "1"
+            ],
+            "end": [
+              "C53",
+              "1"
+            ],
+            "found_without_zones": true,
+            "route_segment_length_mm": 70.122623,
+            "widths_mm": [
+              0.8,
+              1.0
+            ],
+            "via_drills_mm": [
+              0.3,
+              0.3
+            ],
+            "assumed_current_A": 1.25,
+            "one_route_R20_mohm": 41.0470162661466,
+            "one_route_drop20_mV": 51.308770332683245,
+            "one_route_copper_loss20_mW": 64.13596291585405,
+            "track_UUIDs": [
+              "9e60cba2-fb4f-4eae-9d74-df788aa44034",
+              "5313de4e-aa88-4aa8-82b6-e12552bff5af",
+              "f851d39f-780d-41b0-9db5-2b1a286c6f61",
+              "2a76e297-3835-41db-bae5-bf12255be9aa",
+              "694e0561-8052-4087-a004-dd1fad936806",
+              "486aa60a-d9fc-4b83-8aaa-66dc19a8dd75",
+              "97ef7147-82f3-4b75-906c-366516a2683a",
+              "d273dddd-90ff-40ce-b9c7-7edb50505945",
+              "aefe0dff-2908-41bb-92c6-5922a35254a0",
+              "3ffc3158-552b-4feb-9817-d21554a5d49d",
+              "545c002b-9175-4a0e-888e-8972c048652a"
+            ],
+            "via_UUIDs": [
+              "38676989-aac9-440c-a8fa-3a6472406220",
+              "cf113f7f-307a-43e4-963d-937251ac7562"
+            ],
+            "pads_traversed": [
+              [
+                "R71",
+                "1"
+              ],
+              [
+                "C53",
+                "1"
+              ]
+            ],
+            "native_segments": [
+              {
+                "uuid": "9e60cba2-fb4f-4eae-9d74-df788aa44034",
+                "start_mm": [
+                  30.5,
+                  94.5
+                ],
+                "end_mm": [
+                  31.5,
+                  94.5
+                ],
+                "width_mm": 0.8,
+                "length_mm": 1.0,
+                "layer": "F.Cu"
+              },
+              {
+                "uuid": "5313de4e-aa88-4aa8-82b6-e12552bff5af",
+                "start_mm": [
+                  31.5,
+                  94.5
+                ],
+                "end_mm": [
+                  22.7,
+                  85.7
+                ],
+                "width_mm": 0.8,
+                "length_mm": 12.445079348883239,
+                "layer": "B.Cu"
+              },
+              {
+                "uuid": "f851d39f-780d-41b0-9db5-2b1a286c6f61",
+                "start_mm": [
+                  22.7,
+                  85.7
+                ],
+                "end_mm": [
+                  22.7,
+                  75.8
+                ],
+                "width_mm": 0.8,
+                "length_mm": 9.9,
+                "layer": "B.Cu"
+              },
+              {
+                "uuid": "2a76e297-3835-41db-bae5-bf12255be9aa",
+                "start_mm": [
+                  22.7,
+                  75.8
+                ],
+                "end_mm": [
+                  28.6,
+                  69.9
+                ],
+                "width_mm": 1.0,
+                "length_mm": 8.34386001800126,
+                "layer": "B.Cu"
+              },
+              {
+                "uuid": "694e0561-8052-4087-a004-dd1fad936806",
+                "start_mm": [
+                  28.6,
+                  69.9
+                ],
+                "end_mm": [
+                  43.4,
+                  69.9
+                ],
+                "width_mm": 1.0,
+                "length_mm": 14.8,
+                "layer": "B.Cu"
+              },
+              {
+                "uuid": "486aa60a-d9fc-4b83-8aaa-66dc19a8dd75",
+                "start_mm": [
+                  43.4,
+                  69.9
+                ],
+                "end_mm": [
+                  49.0,
+                  64.3
+                ],
+                "width_mm": 1.0,
+                "length_mm": 7.919595949289333,
+                "layer": "B.Cu"
+              },
+              {
+                "uuid": "97ef7147-82f3-4b75-906c-366516a2683a",
+                "start_mm": [
+                  49.0,
+                  64.3
+                ],
+                "end_mm": [
+                  49.0,
+                  55.5
+                ],
+                "width_mm": 1.0,
+                "length_mm": 8.8,
+                "layer": "B.Cu"
+              },
+              {
+                "uuid": "d273dddd-90ff-40ce-b9c7-7edb50505945",
+                "start_mm": [
+                  49.0,
+                  55.45
+                ],
+                "end_mm": [
+                  48.25,
+                  54.7
+                ],
+                "width_mm": 0.8,
+                "length_mm": 1.0606601717798214,
+                "layer": "B.Cu"
+              },
+              {
+                "uuid": "aefe0dff-2908-41bb-92c6-5922a35254a0",
+                "start_mm": [
+                  48.25,
+                  54.7
+                ],
+                "end_mm": [
+                  46.25,
+                  54.7
+                ],
+                "width_mm": 0.8,
+                "length_mm": 2.0,
+                "layer": "B.Cu"
+              },
+              {
+                "uuid": "3ffc3158-552b-4feb-9817-d21554a5d49d",
+                "start_mm": [
+                  46.25,
+                  54.7
+                ],
+                "end_mm": [
+                  44.25,
+                  52.7
+                ],
+                "width_mm": 0.8,
+                "length_mm": 2.8284271247461903,
+                "layer": "B.Cu"
+              },
+              {
+                "uuid": "545c002b-9175-4a0e-888e-8972c048652a",
+                "start_mm": [
+                  44.25,
+                  52.7
+                ],
+                "end_mm": [
+                  44.25,
+                  51.675
+                ],
+                "width_mm": 0.8,
+                "length_mm": 1.025,
+                "layer": "F.Cu"
+              }
+            ]
+          },
+          "C53_to_TPS": {
+            "start": [
+              "C53",
+              "1"
+            ],
+            "end": [
+              "U2",
+              "10"
+            ],
+            "found_without_zones": true,
+            "route_segment_length_mm": 4.775,
+            "widths_mm": [
+              0.25,
+              0.6
+            ],
+            "via_drills_mm": [],
+            "assumed_current_A": 1.25,
+            "one_route_R20_mohm": 4.896980952380953,
+            "one_route_drop20_mV": 6.121226190476191,
+            "one_route_copper_loss20_mW": 7.65153273809524,
+            "track_UUIDs": [
+              "b9bcc2e6-a617-472f-b066-dcc2246eab08",
+              "87a70f41-2f90-4ed2-8640-e37f755ccd6d",
+              "3ba317f4-46d6-47c5-aa36-d722a672fdee",
+              "6f809040-6ab4-4905-9823-cab46274f58e"
+            ],
+            "via_UUIDs": [],
+            "pads_traversed": [
+              [
+                "C53",
+                "1"
+              ],
+              [
+                "C52",
+                "1"
+              ],
+              [
+                "U2",
+                "10"
+              ]
+            ],
+            "native_segments": [
+              {
+                "uuid": "b9bcc2e6-a617-472f-b066-dcc2246eab08",
+                "start_mm": [
+                  44.25,
+                  51.675
+                ],
+                "end_mm": [
+                  43.525,
+                  51.675
+                ],
+                "width_mm": 0.6,
+                "length_mm": 0.725,
+                "layer": "F.Cu"
+              },
+              {
+                "uuid": "87a70f41-2f90-4ed2-8640-e37f755ccd6d",
+                "start_mm": [
+                  42.95,
+                  52.25
+                ],
+                "end_mm": [
+                  42.95,
+                  54.65
+                ],
+                "width_mm": 0.6,
+                "length_mm": 2.4,
+                "layer": "F.Cu"
+              },
+              {
+                "uuid": "3ba317f4-46d6-47c5-aa36-d722a672fdee",
+                "start_mm": [
+                  42.75,
+                  54.85
+                ],
+                "end_mm": [
+                  42.75,
+                  55.65
+                ],
+                "width_mm": 0.6,
+                "length_mm": 0.8,
+                "layer": "F.Cu"
+              },
+              {
+                "uuid": "6f809040-6ab4-4905-9823-cab46274f58e",
+                "start_mm": [
+                  42.75,
+                  55.65
+                ],
+                "end_mm": [
+                  42.75,
+                  56.5
+                ],
+                "width_mm": 0.25,
+                "length_mm": 0.85,
+                "layer": "F.Cu"
+              }
+            ]
+          },
+          "R71_SYS_to_CHARGER": {
+            "start": [
+              "R71",
+              "1"
+            ],
+            "end": [
+              "R1",
+              "2"
+            ],
+            "found_without_zones": true,
+            "route_segment_length_mm": 39.042745,
+            "widths_mm": [
+              0.8
+            ],
+            "via_drills_mm": [
+              0.3,
+              0.3
+            ],
+            "assumed_current_A": 1.25,
+            "one_route_R20_mohm": 26.819591663203628,
+            "one_route_drop20_mV": 33.52448957900454,
+            "one_route_copper_loss20_mW": 41.90561197375567,
+            "track_UUIDs": [
+              "9e60cba2-fb4f-4eae-9d74-df788aa44034",
+              "5313de4e-aa88-4aa8-82b6-e12552bff5af",
+              "f851d39f-780d-41b0-9db5-2b1a286c6f61",
+              "0975cdfa-1074-45ab-af33-983f9f470237",
+              "dcb11f8b-10c9-4ed9-954c-2eca7e6cf937",
+              "2956ac71-7d4c-4b2d-acb7-3aff0263f741",
+              "bdd09ef7-9d8c-4f2c-bbc9-a82dc1526b04",
+              "422685f5-cc0b-4037-8d33-19b74f49d808"
+            ],
+            "via_UUIDs": [
+              "38676989-aac9-440c-a8fa-3a6472406220",
+              "b778c929-d04d-424e-a130-060674c6898b"
+            ],
+            "pads_traversed": [
+              [
+                "R71",
+                "1"
+              ],
+              [
+                "R1",
+                "2"
+              ]
+            ],
+            "native_segments": [
+              {
+                "uuid": "9e60cba2-fb4f-4eae-9d74-df788aa44034",
+                "start_mm": [
+                  30.5,
+                  94.5
+                ],
+                "end_mm": [
+                  31.5,
+                  94.5
+                ],
+                "width_mm": 0.8,
+                "length_mm": 1.0,
+                "layer": "F.Cu"
+              },
+              {
+                "uuid": "5313de4e-aa88-4aa8-82b6-e12552bff5af",
+                "start_mm": [
+                  31.5,
+                  94.5
+                ],
+                "end_mm": [
+                  22.7,
+                  85.7
+                ],
+                "width_mm": 0.8,
+                "length_mm": 12.445079348883239,
+                "layer": "B.Cu"
+              },
+              {
+                "uuid": "f851d39f-780d-41b0-9db5-2b1a286c6f61",
+                "start_mm": [
+                  22.7,
+                  85.7
+                ],
+                "end_mm": [
+                  22.7,
+                  75.8
+                ],
+                "width_mm": 0.8,
+                "length_mm": 9.9,
+                "layer": "B.Cu"
+              },
+              {
+                "uuid": "0975cdfa-1074-45ab-af33-983f9f470237",
+                "start_mm": [
+                  22.7,
+                  67.55
+                ],
+                "end_mm": [
+                  22.7,
+                  75.8
+                ],
+                "width_mm": 0.8,
+                "length_mm": 8.25,
+                "layer": "B.Cu"
+              },
+              {
+                "uuid": "dcb11f8b-10c9-4ed9-954c-2eca7e6cf937",
+                "start_mm": [
+                  23.65,
+                  66.6
+                ],
+                "end_mm": [
+                  22.7,
+                  67.55
+                ],
+                "width_mm": 0.8,
+                "length_mm": 1.3435028842544405,
+                "layer": "B.Cu"
+              },
+              {
+                "uuid": "2956ac71-7d4c-4b2d-acb7-3aff0263f741",
+                "start_mm": [
+                  25.3,
+                  64.9
+                ],
+                "end_mm": [
+                  23.6,
+                  66.6
+                ],
+                "width_mm": 0.8,
+                "length_mm": 2.4041630560342617,
+                "layer": "B.Cu"
+              },
+              {
+                "uuid": "bdd09ef7-9d8c-4f2c-bbc9-a82dc1526b04",
+                "start_mm": [
+                  26.8,
+                  64.9
+                ],
+                "end_mm": [
+                  25.3,
+                  64.9
+                ],
+                "width_mm": 0.8,
+                "length_mm": 1.5,
+                "layer": "B.Cu"
+              },
+              {
+                "uuid": "422685f5-cc0b-4037-8d33-19b74f49d808",
+                "start_mm": [
+                  24.6,
+                  64.9
+                ],
+                "end_mm": [
+                  26.8,
+                  64.9
+                ],
+                "width_mm": 0.8,
+                "length_mm": 2.2,
+                "layer": "F.Cu"
+              }
+            ]
+          }
+        },
+        "narrow_segments": [
+          {
+            "uuid": "6f809040-6ab4-4905-9823-cab46274f58e",
+            "start_mm": [
+              42.75,
+              55.65
+            ],
+            "end_mm": [
+              42.75,
+              56.5
+            ],
+            "width_mm": 0.25,
+            "length_mm": 0.85,
+            "layer": "F.Cu",
+            "qualified_unchanged_U2_10_neck": true,
+            "estimated_R20_mohm": 1.6747428571428575,
+            "estimated_drop_at_1_25A_mV": 2.093428571428572
+          }
+        ],
+        "R71_to_TPS_with_C53_copper_removed": {
+          "start": [
+            "R71",
+            "1"
+          ],
+          "end": [
+            "U2",
+            "10"
+          ],
+          "found_without_zones": false
+        },
+        "neck_scope": "Exact unchanged baseline 0.25mm x0.85mm U2.10 pin escape only; remainder >=0.6mm. R20 uses35um copper, not IPC2152 or empirical current qualification."
+      }
+    },
+    {
+      "name": "Both R71 Kelvin routes have no shared segments with primary force paths",
+      "pass": true,
+      "evidence": [
+        {
+          "side": "negative",
+          "shared_force_track_UUIDs": [],
+          "separate_route_after_force_exclusion": {
+            "start": [
+              "R71",
+              "2"
+            ],
+            "end": [
+              "R73",
+              "1"
+            ],
+            "found_without_zones": true,
+            "route_segment_length_mm": 10.167399,
+            "widths_mm": [
+              0.2
+            ],
+            "via_drills_mm": [
+              0.3,
+              0.3
+            ],
+            "assumed_current_A": 0,
+            "one_route_R20_mohm": 27.821266855361625,
+            "one_route_drop20_mV": 0.0,
+            "one_route_copper_loss20_mW": 0.0,
+            "track_UUIDs": [
+              "952c3f6a-e0b6-486c-b94b-ff5531611622",
+              "761d6a2b-95cc-4084-a000-3b67e077138f",
+              "696ac2bc-503d-4f3e-acc2-39a5d6f5f536",
+              "68b35d0d-3399-4424-a477-7da40076d180",
+              "fcba685a-388c-4e0b-a37f-771a37fd2c65"
+            ],
+            "via_UUIDs": [
+              "cac1bff4-5606-4079-a394-e4a68d4580c7",
+              "0b2f8eb9-cc71-4287-8400-dce8c309f779"
+            ],
+            "pads_traversed": [
+              [
+                "R71",
+                "2"
+              ],
+              [
+                "R73",
+                "1"
+              ]
+            ]
+          },
+          "tap_starts": [
+            {
+              "at_mm": [
+                35.5,
+                96.0
+              ],
+              "inward_from_pad_center_mm": 0.4625
+            }
+          ]
+        },
+        {
+          "side": "positive",
+          "shared_force_track_UUIDs": [],
+          "separate_route_after_force_exclusion": {
+            "start": [
+              "R71",
+              "1"
+            ],
+            "end": [
+              "R72",
+              "1"
+            ],
+            "found_without_zones": true,
+            "route_segment_length_mm": 5.848617,
+            "widths_mm": [
+              0.2
+            ],
+            "via_drills_mm": [],
+            "assumed_current_A": 0,
+            "one_route_R20_mohm": 14.404309190805158,
+            "one_route_drop20_mV": 0.0,
+            "one_route_copper_loss20_mW": 0.0,
+            "track_UUIDs": [
+              "96e32c6f-9a3d-46c0-b14c-21993c7a150b",
+              "1594f684-2ee0-444d-b494-041b1e35d0f5",
+              "7a1a77c7-ff8b-40a6-820d-520b9bd1288b",
+              "e087a606-9a28-4d90-9194-23ef48f349fd",
+              "b38f5112-6211-4b4f-894b-19690149d6e8"
+            ],
+            "via_UUIDs": [],
+            "pads_traversed": [
+              [
+                "R71",
+                "1"
+              ],
+              [
+                "R72",
+                "1"
+              ]
+            ]
+          },
+          "tap_starts": [
+            {
+              "at_mm": [
+                30.0375,
+                95.0
+              ],
+              "inward_from_pad_center_mm": 0.0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "R71 Kelvin taps originate on internal half of each pad",
+      "pass": true,
+      "evidence": [
+        {
+          "side": "negative",
+          "shared_force_track_UUIDs": [],
+          "separate_route_after_force_exclusion": {
+            "start": [
+              "R71",
+              "2"
+            ],
+            "end": [
+              "R73",
+              "1"
+            ],
+            "found_without_zones": true,
+            "route_segment_length_mm": 10.167399,
+            "widths_mm": [
+              0.2
+            ],
+            "via_drills_mm": [
+              0.3,
+              0.3
+            ],
+            "assumed_current_A": 0,
+            "one_route_R20_mohm": 27.821266855361625,
+            "one_route_drop20_mV": 0.0,
+            "one_route_copper_loss20_mW": 0.0,
+            "track_UUIDs": [
+              "952c3f6a-e0b6-486c-b94b-ff5531611622",
+              "761d6a2b-95cc-4084-a000-3b67e077138f",
+              "696ac2bc-503d-4f3e-acc2-39a5d6f5f536",
+              "68b35d0d-3399-4424-a477-7da40076d180",
+              "fcba685a-388c-4e0b-a37f-771a37fd2c65"
+            ],
+            "via_UUIDs": [
+              "cac1bff4-5606-4079-a394-e4a68d4580c7",
+              "0b2f8eb9-cc71-4287-8400-dce8c309f779"
+            ],
+            "pads_traversed": [
+              [
+                "R71",
+                "2"
+              ],
+              [
+                "R73",
+                "1"
+              ]
+            ]
+          },
+          "tap_starts": [
+            {
+              "at_mm": [
+                35.5,
+                96.0
+              ],
+              "inward_from_pad_center_mm": 0.4625
+            }
+          ]
+        },
+        {
+          "side": "positive",
+          "shared_force_track_UUIDs": [],
+          "separate_route_after_force_exclusion": {
+            "start": [
+              "R71",
+              "1"
+            ],
+            "end": [
+              "R72",
+              "1"
+            ],
+            "found_without_zones": true,
+            "route_segment_length_mm": 5.848617,
+            "widths_mm": [
+              0.2
+            ],
+            "via_drills_mm": [],
+            "assumed_current_A": 0,
+            "one_route_R20_mohm": 14.404309190805158,
+            "one_route_drop20_mV": 0.0,
+            "one_route_copper_loss20_mW": 0.0,
+            "track_UUIDs": [
+              "96e32c6f-9a3d-46c0-b14c-21993c7a150b",
+              "1594f684-2ee0-444d-b494-041b1e35d0f5",
+              "7a1a77c7-ff8b-40a6-820d-520b9bd1288b",
+              "e087a606-9a28-4d90-9194-23ef48f349fd",
+              "b38f5112-6211-4b4f-894b-19690149d6e8"
+            ],
+            "via_UUIDs": [],
+            "pads_traversed": [
+              [
+                "R71",
+                "1"
+              ],
+              [
+                "R72",
+                "1"
+              ]
+            ]
+          },
+          "tap_starts": [
+            {
+              "at_mm": [
+                30.0375,
+                95.0
+              ],
+              "inward_from_pad_center_mm": 0.0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Battery ADC has separate native takeoff from J8 ahead of R71",
+      "pass": true,
+      "evidence": {
+        "start": [
+          "J8",
+          "1"
+        ],
+        "end": [
+          "R27",
+          "1"
+        ],
+        "found_without_zones": true,
+        "route_segment_length_mm": 82.536594,
+        "widths_mm": [
+          0.25,
+          1.2
+        ],
+        "via_drills_mm": [
+          0.3,
+          0.3,
+          0.3
+        ],
+        "assumed_current_A": 0,
+        "one_route_R20_mohm": 132.87232678609885,
+        "one_route_drop20_mV": 0.0,
+        "one_route_copper_loss20_mW": 0.0,
+        "track_UUIDs": [
+          "ba9b29bb-896d-474e-9595-785affb913c3",
+          "0f197e83-196f-4092-a611-60af13b0b532",
+          "b5100bef-a4de-43f0-8e8a-9fd654a45197",
+          "98432c33-f574-4ac8-8eae-1fd4a2e6bc5b",
+          "9f889083-a45a-4662-9118-d64e2bf12c72",
+          "24dfd417-33cb-489e-a066-264d4f7712b0",
+          "56725cfe-f23c-47d2-815a-ba23d256b852",
+          "0fa2d23a-eabf-4165-8ebc-031246854621",
+          "9a1f7364-cbd6-4233-aa41-2dee999243a2",
+          "6c2a3fec-5f68-422f-b3c6-8b41ba1a9c39",
+          "13a5379d-2c49-4854-b741-2bd6d9bae27e"
+        ],
+        "via_UUIDs": [
+          "824d716f-0cd9-47ba-914f-b5aeda317edd",
+          "cb13cfe1-4230-430b-a2c4-550e0b2db09a",
+          "3cb4d879-67bb-4f6e-97f4-06c49dff7b63"
+        ],
+        "pads_traversed": [
+          [
+            "J8",
+            "1"
+          ],
+          [
+            "R27",
+            "1"
+          ]
+        ]
+      }
+    },
+    {
+      "name": "CN3722 Kelvin BAT/CSP sensing remains independent of charge force copper",
+      "pass": true,
+      "evidence": [
+        {
+          "title": "BAT downstream of R1",
+          "sense_route": {
+            "start": [
+              "R1",
+              "2"
+            ],
+            "end": [
+              "U1",
+              "14"
+            ],
+            "found_without_zones": true,
+            "route_segment_length_mm": 3.8175,
+            "widths_mm": [
+              0.15
+            ],
+            "via_drills_mm": [],
+            "assumed_current_A": 0,
+            "one_route_R20_mohm": 12.535942857142862,
+            "one_route_drop20_mV": 0.0,
+            "one_route_copper_loss20_mW": 0.0,
+            "track_UUIDs": [
+              "efc63ecf-24a3-4265-88a8-20db44f87c85",
+              "5c059550-9af3-49f8-b164-95a4655bedc4"
+            ],
+            "via_UUIDs": [],
+            "pads_traversed": [
+              [
+                "R1",
+                "2"
+              ],
+              [
+                "U1",
+                "14"
+              ]
+            ]
+          },
+          "shared_force_segments": [],
+          "sense_route_after_force_exclusion": {
+            "start": [
+              "R1",
+              "2"
+            ],
+            "end": [
+              "U1",
+              "14"
+            ],
+            "found_without_zones": true,
+            "route_segment_length_mm": 3.8175,
+            "widths_mm": [
+              0.15
+            ],
+            "via_drills_mm": [],
+            "assumed_current_A": 0,
+            "one_route_R20_mohm": 12.535942857142862,
+            "one_route_drop20_mV": 0.0,
+            "one_route_copper_loss20_mW": 0.0,
+            "track_UUIDs": [
+              "efc63ecf-24a3-4265-88a8-20db44f87c85",
+              "5c059550-9af3-49f8-b164-95a4655bedc4"
+            ],
+            "via_UUIDs": [],
+            "pads_traversed": [
+              [
+                "R1",
+                "2"
+              ],
+              [
+                "U1",
+                "14"
+              ]
+            ]
+          }
+        },
+        {
+          "title": "CSP upstream of R56",
+          "sense_route": {
+            "start": [
+              "R56",
+              "1"
+            ],
+            "end": [
+              "U1",
+              "13"
+            ],
+            "found_without_zones": true,
+            "route_segment_length_mm": 9.345343,
+            "widths_mm": [
+              0.2
+            ],
+            "via_drills_mm": [],
+            "assumed_current_A": 0,
+            "one_route_R20_mohm": 23.016244175780148,
+            "one_route_drop20_mV": 0.0,
+            "one_route_copper_loss20_mW": 0.0,
+            "track_UUIDs": [
+              "c64a47e1-79d3-4735-b29a-276e21f3aceb",
+              "cf7096d5-f45c-4572-9b0a-2c21b3c4ee56",
+              "24c385d8-d8c4-48f9-badc-0ce5a5378547",
+              "0fc6a1c4-7f16-4b3b-a666-3c1402a8abfe",
+              "d2acad9a-8b02-4dcd-804d-a98c92545838"
+            ],
+            "via_UUIDs": [],
+            "pads_traversed": [
+              [
+                "R56",
+                "1"
+              ],
+              [
+                "U1",
+                "13"
+              ]
+            ]
+          },
+          "shared_force_segments": [],
+          "sense_route_after_force_exclusion": {
+            "start": [
+              "R56",
+              "1"
+            ],
+            "end": [
+              "U1",
+              "13"
+            ],
+            "found_without_zones": true,
+            "route_segment_length_mm": 9.345343,
+            "widths_mm": [
+              0.2
+            ],
+            "via_drills_mm": [],
+            "assumed_current_A": 0,
+            "one_route_R20_mohm": 23.016244175780148,
+            "one_route_drop20_mV": 0.0,
+            "one_route_copper_loss20_mW": 0.0,
+            "track_UUIDs": [
+              "c64a47e1-79d3-4735-b29a-276e21f3aceb",
+              "cf7096d5-f45c-4572-9b0a-2c21b3c4ee56",
+              "24c385d8-d8c4-48f9-badc-0ce5a5378547",
+              "0fc6a1c4-7f16-4b3b-a666-3c1402a8abfe",
+              "d2acad9a-8b02-4dcd-804d-a98c92545838"
+            ],
+            "via_UUIDs": [],
+            "pads_traversed": [
+              [
+                "R56",
+                "1"
+              ],
+              [
+                "U1",
+                "13"
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "MCU and RADIO feed routes share no track outside NT2 star",
+      "pass": true,
+      "evidence": []
+    },
+    {
+      "name": "SYS loads branch at NT2, and J11 has only its incoming star feed",
+      "pass": true,
+      "evidence": {
+        "J11_touching_copper_UUIDs": [
+          "c014841a-eba9-4990-9c8d-6584a6f76d9f"
+        ],
+        "J11_incoming_star_UUIDs": [
+          "c014841a-eba9-4990-9c8d-6584a6f76d9f"
+        ],
+        "SYS_routes_excluding_J11": {
+          "MCU": {
+            "start": [
+              "NT2",
+              "1"
+            ],
+            "end": [
+              "M1",
+              "9"
+            ],
+            "found_without_zones": true,
+            "route_segment_length_mm": 56.487365,
+            "widths_mm": [
+              0.6
+            ],
+            "via_drills_mm": [
+              0.3,
+              0.3,
+              0.4
+            ],
+            "assumed_current_A": 0,
+            "one_route_R20_mohm": 50.19650804002095,
+            "one_route_drop20_mV": 0.0,
+            "one_route_copper_loss20_mW": 0.0,
+            "track_UUIDs": [
+              "29314626-594c-4d9c-97ef-d88604aef94e",
+              "5e9b9d7b-7250-4760-a73e-7a560b50f1a5",
+              "3d22abc0-a9c3-4025-8bdf-1af256c069a2",
+              "6fcf30ec-b820-45ff-8ba1-ae7c32eef094",
+              "f71ff851-8a26-46ad-89b5-d3975ce33eed",
+              "8051f471-b154-4b70-a6b6-fd309bcb4c90",
+              "cdc3cb1c-f599-4e7e-8ab7-f8d872c27a30",
+              "fd800d1b-9af6-4eb6-8ec5-ff5f5758ad47",
+              "d887e1b4-5132-4aee-b0cd-7202c1e6b4dd",
+              "5d782500-2b9c-4b06-a00b-f68ce409e1c7",
+              "1ef2f793-9bf8-43ed-8458-dbecc4a2281a",
+              "3594677e-0177-4ae2-b62a-16fd27e247ba",
+              "02404674-6bf6-487f-8086-72327a524301",
+              "5104f787-3ddd-4073-8991-784dc88ba94b",
+              "0cfe7fa0-0756-497e-9c04-e362610eb329"
+            ],
+            "via_UUIDs": [
+              "fae5969f-e8ce-4261-8035-676618494979",
+              "c75e0958-9cf1-4d24-8f4f-80827a2ac49b",
+              "c97bd9a9-fcb3-4601-a61b-2c08e20eab41"
+            ],
+            "pads_traversed": [
+              [
+                "NT2",
+                "1"
+              ],
+              [
+                "M1",
+                "9"
+              ]
+            ]
+          },
+          "INA": {
+            "start": [
+              "NT2",
+              "1"
+            ],
+            "end": [
+              "U12",
+              "5"
+            ],
+            "found_without_zones": true,
+            "route_segment_length_mm": 77.300908,
+            "widths_mm": [
+              0.3,
+              0.6
+            ],
+            "via_drills_mm": [
+              0.3,
+              0.3,
+              0.3
+            ],
+            "assumed_current_A": 0,
+            "one_route_R20_mohm": 129.15390558984092,
+            "one_route_drop20_mV": 0.0,
+            "one_route_copper_loss20_mW": 0.0,
+            "track_UUIDs": [
+              "29314626-594c-4d9c-97ef-d88604aef94e",
+              "5e9b9d7b-7250-4760-a73e-7a560b50f1a5",
+              "0a7e8ebe-fec2-4f01-8128-72059cc4b450",
+              "e4fa406a-0498-4765-b6ff-485f9c546434",
+              "75ef3d6a-234c-469d-91b0-dbcbc08aa0b4",
+              "81c1bcc7-100a-4644-8738-f32aba433bce",
+              "5a80096c-2252-45a6-8197-6c53ffdcf25e",
+              "9f3144d2-4639-4d40-b295-f0b9ba88d5b7",
+              "4a9ff3df-aee4-46f0-a8d6-97d104d4c945",
+              "bf94adf4-d553-4496-ad21-23b1d4eb6850",
+              "bbf1f0fc-c14f-41c9-82ae-2c4cb435aeb8",
+              "22e71ffb-8049-4d41-8f71-67adb45e12a9",
+              "a9310743-ce7e-4a86-93ff-b254d073a82c",
+              "eaea051f-623c-4bf5-9b21-6d92c3d48040",
+              "fb697e8d-dc36-4e7c-ad7e-28903678c9ce",
+              "a7c2402c-e508-4044-b62e-480f72dc6708",
+              "7eb3cbe4-dd45-41f6-abc4-a06a9633b819",
+              "db76b972-2518-48ce-8a82-2bad5aaf5a0e",
+              "d9f2a2c8-5e3b-4f3c-a24e-aab9165077b1",
+              "865dfed1-939c-44c4-99e7-44949549957d",
+              "5f30163c-9dda-406f-a2a0-e9386150d757",
+              "11faabdc-26dc-4c15-9067-5c9116161fea",
+              "6cf2bbc7-f04e-41b8-b45c-a5bd2a7197a9",
+              "e0e92d5d-a829-4ad0-80cd-5b9ede11e897"
+            ],
+            "via_UUIDs": [
+              "7626201a-2f9c-45d3-83a5-6d30e9b70575",
+              "103a4060-2c92-4edb-adc3-013fa65f2d97",
+              "90033379-d2a9-4775-9ec6-57d59b5f769b"
+            ],
+            "pads_traversed": [
+              [
+                "NT2",
+                "1"
+              ],
+              [
+                "C63",
+                "1"
+              ],
+              [
+                "U12",
+                "5"
+              ]
+            ]
+          },
+          "periphery": {
+            "start": [
+              "NT2",
+              "1"
+            ],
+            "end": [
+              "U4",
+              "2"
+            ],
+            "found_without_zones": true,
+            "route_segment_length_mm": 54.000704,
+            "widths_mm": [
+              0.4,
+              0.6
+            ],
+            "via_drills_mm": [
+              0.3,
+              0.3,
+              0.3,
+              0.3,
+              0.3
+            ],
+            "assumed_current_A": 0,
+            "one_route_R20_mohm": 69.08586951458824,
+            "one_route_drop20_mV": 0.0,
+            "one_route_copper_loss20_mW": 0.0,
+            "track_UUIDs": [
+              "29314626-594c-4d9c-97ef-d88604aef94e",
+              "5e9b9d7b-7250-4760-a73e-7a560b50f1a5",
+              "3d22abc0-a9c3-4025-8bdf-1af256c069a2",
+              "6fcf30ec-b820-45ff-8ba1-ae7c32eef094",
+              "f71ff851-8a26-46ad-89b5-d3975ce33eed",
+              "ddafeedf-e1da-4010-ab8a-44ce2c497d12",
+              "c4a881f7-f56e-42ca-bd23-165ffbaf61af",
+              "1667f5c6-c430-4d78-b05f-3d327f390cc7",
+              "5de93719-53a7-4850-8688-7812dbe6ece3",
+              "1b38572b-bb5a-4eb6-81cd-bb811c461b5d",
+              "e7fdccb1-4614-43cc-8ee5-ceed4cdaaaf1",
+              "713e7aef-60e4-4e7d-b47e-36b362adf9b3",
+              "72776385-e140-445a-ba77-61d8143ee7c4",
+              "7d8c1f94-1450-439c-a168-a26c017c9bbf",
+              "946a4da2-da4c-47a6-a200-c815b12733b8",
+              "507e4922-7ca7-48b1-8657-274aee730f2a",
+              "b0324fea-4e42-48fb-a1e8-24c81714fd00"
+            ],
+            "via_UUIDs": [
+              "fae5969f-e8ce-4261-8035-676618494979",
+              "d259cf22-8443-476e-8e5d-9b21ff0b50f1",
+              "2fd2a515-ce22-4f55-bc72-e3470fd03e69",
+              "c84ed668-75bb-4dd1-b5a4-073fcd6dd864",
+              "df2a07de-6611-4a77-a3cc-feb14b971296"
+            ],
+            "pads_traversed": [
+              [
+                "NT2",
+                "1"
+              ],
+              [
+                "U4",
+                "2"
+              ]
+            ]
+          }
+        }
+      }
+    },
+    {
+      "name": "R71/J11/star opposite pads have independent assigned copper nets",
+      "pass": true,
+      "evidence": null
+    },
+    {
+      "name": "U12 supply still traverses C63 with short front connection",
+      "pass": true,
+      "evidence": {
+        "local": {
+          "start": [
+            "C63",
+            "1"
+          ],
+          "end": [
+            "U12",
+            "5"
+          ],
+          "found_without_zones": true,
+          "route_segment_length_mm": 1.325772,
+          "widths_mm": [
+            0.3
+          ],
+          "via_drills_mm": [],
+          "assumed_current_A": 0,
+          "one_route_R20_mohm": 2.176790776570084,
+          "one_route_drop20_mV": 0.0,
+          "one_route_copper_loss20_mW": 0.0,
+          "track_UUIDs": [
+            "6cf2bbc7-f04e-41b8-b45c-a5bd2a7197a9",
+            "e0e92d5d-a829-4ad0-80cd-5b9ede11e897"
+          ],
+          "via_UUIDs": [],
+          "pads_traversed": [
+            [
+              "C63",
+              "1"
+            ],
+            [
+              "U12",
+              "5"
+            ]
+          ]
+        },
+        "feed": {
+          "start": [
+            "NT2",
+            "1"
+          ],
+          "end": [
+            "C63",
+            "1"
+          ],
+          "found_without_zones": true,
+          "route_segment_length_mm": 75.975137,
+          "widths_mm": [
+            0.3,
+            0.6
+          ],
+          "via_drills_mm": [
+            0.3,
+            0.3,
+            0.3
+          ],
+          "assumed_current_A": 0,
+          "one_route_R20_mohm": 126.97711481327082,
+          "one_route_drop20_mV": 0.0,
+          "one_route_copper_loss20_mW": 0.0,
+          "track_UUIDs": [
+            "29314626-594c-4d9c-97ef-d88604aef94e",
+            "5e9b9d7b-7250-4760-a73e-7a560b50f1a5",
+            "0a7e8ebe-fec2-4f01-8128-72059cc4b450",
+            "e4fa406a-0498-4765-b6ff-485f9c546434",
+            "75ef3d6a-234c-469d-91b0-dbcbc08aa0b4",
+            "81c1bcc7-100a-4644-8738-f32aba433bce",
+            "5a80096c-2252-45a6-8197-6c53ffdcf25e",
+            "9f3144d2-4639-4d40-b295-f0b9ba88d5b7",
+            "4a9ff3df-aee4-46f0-a8d6-97d104d4c945",
+            "bf94adf4-d553-4496-ad21-23b1d4eb6850",
+            "bbf1f0fc-c14f-41c9-82ae-2c4cb435aeb8",
+            "22e71ffb-8049-4d41-8f71-67adb45e12a9",
+            "a9310743-ce7e-4a86-93ff-b254d073a82c",
+            "eaea051f-623c-4bf5-9b21-6d92c3d48040",
+            "fb697e8d-dc36-4e7c-ad7e-28903678c9ce",
+            "a7c2402c-e508-4044-b62e-480f72dc6708",
+            "7eb3cbe4-dd45-41f6-abc4-a06a9633b819",
+            "db76b972-2518-48ce-8a82-2bad5aaf5a0e",
+            "d9f2a2c8-5e3b-4f3c-a24e-aab9165077b1",
+            "865dfed1-939c-44c4-99e7-44949549957d",
+            "5f30163c-9dda-406f-a2a0-e9386150d757",
+            "11faabdc-26dc-4c15-9067-5c9116161fea"
+          ],
+          "via_UUIDs": [
+            "7626201a-2f9c-45d3-83a5-6d30e9b70575",
+            "103a4060-2c92-4edb-adc3-013fa65f2d97",
+            "90033379-d2a9-4775-9ec6-57d59b5f769b"
+          ],
+          "pads_traversed": [
+            [
+              "NT2",
+              "1"
+            ],
+            [
+              "C63",
+              "1"
+            ]
+          ]
+        },
+        "bypass_without_C63_copper": {
+          "start": [
+            "NT2",
+            "1"
+          ],
+          "end": [
+            "U12",
+            "5"
+          ],
+          "found_without_zones": false
+        }
+      }
+    },
+    {
+      "name": "Direct PGND to C12/C14 0.2mm B-ground strips preserved",
+      "pass": true,
+      "evidence": [
+        {
+          "name": "PGND_to_C12",
+          "start_mm": [
+            43.65,
+            57.5
+          ],
+          "end_mm": [
+            40.2,
+            53.7
+          ],
+          "width_mm": 0.2,
+          "covered": true,
+          "gap_mm": 0.0
+        },
+        {
+          "name": "PGND_to_C14",
+          "start_mm": [
+            43.65,
+            57.5
+          ],
+          "end_mm": [
+            41.05,
+            61.6
+          ],
+          "width_mm": 0.2,
+          "covered": true,
+          "gap_mm": 0.0
+        }
+      ]
+    },
+    {
+      "name": "All 12 selected force current paths exist in current manual PCB",
+      "pass": true,
+      "evidence": null
+    },
+    {
+      "name": "Saved manual snapshot not changed",
+      "pass": true,
+      "evidence": null
+    }
+  ],
+  "dc_paths": {
+    "J8_to_R71": {
+      "found": true,
+      "net": "BAT",
+      "from": [
+        "J8",
+        "1"
+      ],
+      "to": [
+        "R71",
+        "2"
+      ],
+      "length_mm": 46.34410171779822,
+      "copper_resistance_ohm": 0.0230492351311874,
+      "min_track_width_mm": 0.8,
+      "drop_at_trace_stress_1_25A_mV": 28.81154391398425,
+      "loss_at_trace_stress_1_25A_mW": 36.014429892480315,
+      "track_via_uuids": [
+        "d62d3f73-62e4-4357-9003-eb3bf52167a7",
+        "d4429ed6-b410-43b5-9755-ae11d3da73bd",
+        "d5e56b58-67c9-4960-8d53-ad7bb3d607d3",
+        "471ab799-7269-4463-966b-e68d33e07b47",
+        "3e73c372-d2e7-4b3e-9ff1-5a7cd37beb0e",
+        "cbcbe428-cd39-4a68-b581-7dc370f1849a",
+        "168783ce-7180-45f5-b28b-750cb276160a"
+      ]
+    },
+    "R71_to_TPS": {
+      "found": true,
+      "net": "BAT_SYS",
+      "from": [
+        "R71",
+        "1"
+      ],
+      "to": [
+        "U2",
+        "10"
+      ],
+      "length_mm": 74.14762261269985,
+      "copper_resistance_ohm": 0.04532064968356342,
+      "min_track_width_mm": 0.25,
+      "drop_at_trace_stress_1_25A_mV": 56.650812104454275,
+      "loss_at_trace_stress_1_25A_mW": 70.81351513056784,
+      "track_via_uuids": [
+        "6f809040-6ab4-4905-9823-cab46274f58e",
+        "87a70f41-2f90-4ed2-8640-e37f755ccd6d",
+        "b9bcc2e6-a617-472f-b066-dcc2246eab08",
+        "545c002b-9175-4a0e-888e-8972c048652a",
+        "cf113f7f-307a-43e4-963d-937251ac7562",
+        "3ffc3158-552b-4feb-9817-d21554a5d49d",
+        "aefe0dff-2908-41bb-92c6-5922a35254a0",
+        "d273dddd-90ff-40ce-b9c7-7edb50505945",
+        "97ef7147-82f3-4b75-906c-366516a2683a",
+        "486aa60a-d9fc-4b83-8aaa-66dc19a8dd75",
+        "694e0561-8052-4087-a004-dd1fad936806",
+        "2a76e297-3835-41db-bae5-bf12255be9aa",
+        "f851d39f-780d-41b0-9db5-2b1a286c6f61",
+        "5313de4e-aa88-4aa8-82b6-e12552bff5af",
+        "38676989-aac9-440c-a8fa-3a6472406220",
+        "9e60cba2-fb4f-4eae-9d74-df788aa44034"
+      ]
+    },
+    "R71_to_C53": {
+      "found": true,
+      "net": "BAT_SYS",
+      "from": [
+        "R71",
+        "1"
+      ],
+      "to": [
+        "C53",
+        "1"
+      ],
+      "length_mm": 70.17262261269985,
+      "copper_resistance_ohm": 0.04108018468356342,
+      "min_track_width_mm": 0.8,
+      "drop_at_trace_stress_1_25A_mV": 51.350230854454274,
+      "loss_at_trace_stress_1_25A_mW": 64.18778856806784,
+      "track_via_uuids": [
+        "545c002b-9175-4a0e-888e-8972c048652a",
+        "cf113f7f-307a-43e4-963d-937251ac7562",
+        "3ffc3158-552b-4feb-9817-d21554a5d49d",
+        "aefe0dff-2908-41bb-92c6-5922a35254a0",
+        "d273dddd-90ff-40ce-b9c7-7edb50505945",
+        "97ef7147-82f3-4b75-906c-366516a2683a",
+        "486aa60a-d9fc-4b83-8aaa-66dc19a8dd75",
+        "694e0561-8052-4087-a004-dd1fad936806",
+        "2a76e297-3835-41db-bae5-bf12255be9aa",
+        "f851d39f-780d-41b0-9db5-2b1a286c6f61",
+        "5313de4e-aa88-4aa8-82b6-e12552bff5af",
+        "38676989-aac9-440c-a8fa-3a6472406220",
+        "9e60cba2-fb4f-4eae-9d74-df788aa44034"
+      ]
+    },
+    "C53_to_TPS": {
+      "found": true,
+      "net": "BAT_SYS",
+      "from": [
+        "C53",
+        "1"
+      ],
+      "to": [
+        "U2",
+        "10"
+      ],
+      "length_mm": 3.9750000000000014,
+      "copper_resistance_ohm": 0.004240465000000003,
+      "min_track_width_mm": 0.25,
+      "drop_at_trace_stress_1_25A_mV": 5.300581250000004,
+      "loss_at_trace_stress_1_25A_mW": 6.625726562500005,
+      "track_via_uuids": [
+        "6f809040-6ab4-4905-9823-cab46274f58e",
+        "87a70f41-2f90-4ed2-8640-e37f755ccd6d",
+        "b9bcc2e6-a617-472f-b066-dcc2246eab08"
+      ]
+    },
+    "R1_to_R71": {
+      "found": true,
+      "net": "BAT_SYS",
+      "from": [
+        "R1",
+        "2"
+      ],
+      "to": [
+        "R71",
+        "1"
+      ],
+      "length_mm": 36.77203461105329,
+      "copper_resistance_ohm": 0.02542295722392139,
+      "min_track_width_mm": 0.8,
+      "drop_at_trace_stress_1_25A_mV": 31.77869652990174,
+      "loss_at_trace_stress_1_25A_mW": 39.72337066237718,
+      "track_via_uuids": [
+        "9e60cba2-fb4f-4eae-9d74-df788aa44034",
+        "38676989-aac9-440c-a8fa-3a6472406220",
+        "5313de4e-aa88-4aa8-82b6-e12552bff5af",
+        "f851d39f-780d-41b0-9db5-2b1a286c6f61",
+        "0975cdfa-1074-45ab-af33-983f9f470237",
+        "dcb11f8b-10c9-4ed9-954c-2eca7e6cf937",
+        "2956ac71-7d4c-4b2d-acb7-3aff0263f741",
+        "bdd09ef7-9d8c-4f2c-bbc9-a82dc1526b04",
+        "b778c929-d04d-424e-a130-060674c6898b"
+      ]
+    },
+    "TPS_to_R55": {
+      "found": true,
+      "net": "/2. Converter/SYS_PRE",
+      "from": [
+        "U2",
+        "6"
+      ],
+      "to": [
+        "R55",
+        "1"
+      ],
+      "length_mm": 2.9328427124746215,
+      "copper_resistance_ohm": 0.0033273838669416606,
+      "min_track_width_mm": 0.25,
+      "drop_at_trace_stress_1_25A_mV": 4.159229833677076,
+      "loss_at_trace_stress_1_25A_mW": 5.199037292096345,
+      "track_via_uuids": [
+        "68f63fcd-30e5-4bf7-8c1c-1b66812d8079",
+        "b5e2e62a-d859-4f19-b459-009abfc3a51f"
+      ]
+    },
+    "R55_to_L3": {
+      "found": true,
+      "net": "/2. Converter/SYS_LC_IN",
+      "from": [
+        "R55",
+        "2"
+      ],
+      "to": [
+        "L3",
+        "1"
+      ],
+      "length_mm": 3.394112549695431,
+      "copper_resistance_ohm": 0.0020899248024749614,
+      "min_track_width_mm": 0.8,
+      "drop_at_trace_stress_1_25A_mV": 2.6124060030937017,
+      "loss_at_trace_stress_1_25A_mW": 3.265507503867127,
+      "track_via_uuids": [
+        "6ab37b88-c35a-43fa-a31a-6338237f9141"
+      ]
+    },
+    "L3_to_L4": {
+      "found": true,
+      "net": "/2. Converter/FILTER_MID",
+      "from": [
+        "L3",
+        "2"
+      ],
+      "to": [
+        "L4",
+        "1"
+      ],
+      "length_mm": 4.099999999999994,
+      "copper_resistance_ohm": 0.0016830499999999974,
+      "min_track_width_mm": 1.2,
+      "drop_at_trace_stress_1_25A_mV": 2.1038124999999965,
+      "loss_at_trace_stress_1_25A_mW": 2.6297656249999957,
+      "track_via_uuids": [
+        "aacd88f3-bd40-4b4d-b8d5-9fc39a6b20a4"
+      ]
+    },
+    "L4_to_J11": {
+      "found": true,
+      "net": "/2. Converter/FILTER_OUT",
+      "from": [
+        "L4",
+        "2"
+      ],
+      "to": [
+        "J11",
+        "1"
+      ],
+      "length_mm": 31.041883092036787,
+      "copper_resistance_ohm": 0.0137854093513431,
+      "min_track_width_mm": 1.2,
+      "drop_at_trace_stress_1_25A_mV": 17.231761689178875,
+      "loss_at_trace_stress_1_25A_mW": 21.539702111473595,
+      "track_via_uuids": [
+        "e15bd196-5428-492d-98e3-690a0e2715c3",
+        "b79ee1aa-575d-44f8-bfca-5cc71b4fd480",
+        "608cc384-19d0-4c96-8af0-cc4cfaa4b27e"
+      ]
+    },
+    "J11_to_NT2": {
+      "found": true,
+      "net": "SYS_3V3",
+      "from": [
+        "J11",
+        "2"
+      ],
+      "to": [
+        "NT2",
+        "1"
+      ],
+      "length_mm": 2.0,
+      "copper_resistance_ohm": 0.0012314999999999997,
+      "min_track_width_mm": 0.8,
+      "drop_at_trace_stress_1_25A_mV": 1.5393749999999997,
+      "loss_at_trace_stress_1_25A_mW": 1.9242187499999994,
+      "track_via_uuids": [
+        "c014841a-eba9-4990-9c8d-6584a6f76d9f"
+      ]
+    },
+    "NT2_to_FB1": {
+      "found": true,
+      "net": "RADIO_3V3",
+      "from": [
+        "NT2",
+        "2"
+      ],
+      "to": [
+        "FB1",
+        "1"
+      ],
+      "length_mm": 39.637521600022176,
+      "copper_resistance_ohm": 0.03393269368970087,
+      "min_track_width_mm": 0.6,
+      "drop_at_trace_stress_1_25A_mV": 42.415867112126094,
+      "loss_at_trace_stress_1_25A_mW": 53.019833890157614,
+      "track_via_uuids": [
+        "2efa24f3-e414-4b98-984b-9caefeeef1ff",
+        "90ca6a83-195d-408a-9b76-42f0bcef13b4",
+        "cea0a227-ca12-442f-959c-5e00387addca",
+        "d9e9c62c-e1e6-4664-bb94-4f7e143359ad",
+        "b16cd516-d8c1-44d0-913e-7d3e2b92fda3",
+        "890d390a-1bee-4abd-be4b-177350c09c14",
+        "e31a3a8b-da68-42ad-b6f6-3a21cb9eb3c4"
+      ]
+    },
+    "FB1_to_modem": {
+      "found": true,
+      "net": "/3. Modules/RADIO_LOCAL_3V3",
+      "from": [
+        "FB1",
+        "2"
+      ],
+      "to": [
+        "M2",
+        "3"
+      ],
+      "length_mm": 4.627817459305202,
+      "copper_resistance_ohm": 0.0037994381340895706,
+      "min_track_width_mm": 0.6,
+      "drop_at_trace_stress_1_25A_mV": 4.749297667611963,
+      "loss_at_trace_stress_1_25A_mW": 5.936622084514954,
+      "track_via_uuids": [
+        "c52eb7c9-6b70-4d48-84ac-4a2cab525f12",
+        "b7c3dd44-6e54-4c6b-a09e-a96c1d365f03",
+        "4dd35b9e-e692-4496-8468-1a11461e0eab"
+      ]
+    }
+  },
+  "dc_assumptions": "35um Cu, minimum via plating20um; 1.25A trace stress, selected centreline path not current-field or thermal proof. Uses current manual board only."
+}

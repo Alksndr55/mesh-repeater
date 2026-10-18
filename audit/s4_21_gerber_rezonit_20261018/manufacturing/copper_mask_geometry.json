@@ -1,0 +1,105 @@
+{
+  "ok": true,
+  "board_sha256": "be14cae202912ebb00e5dc758b2eae04cbe6733d4cb73df00044fdb03670fab3",
+  "zip_sha256": "66ff10019797c06d933701a87469de96b19dc2ca4b960956b7c474ea98466e93",
+  "curve_approximation_mm": 0.001,
+  "comparison_tolerance_mm": 0.002002,
+  "method": "Independent Gerbonara film reconstruction vs pcbnew native pads/tracks/vias/graphics and saved filled zones. Bidirectional polygon coverage allowance is two 1um curve approximations plus 2nm coordinate rounding; not fabrication tolerance. Mechanical NPTH pads equal to their drill have no copper film; native mask expansions and via tenting are included.",
+  "layers": [
+    {
+      "layer": "F.Cu",
+      "file": "Mesh_Repeater_S4_21-F_Cu.gtl",
+      "native_counts": {
+        "pads": 460,
+        "npth_without_copper": 4,
+        "footprint_graphics": 1,
+        "tracks": 844,
+        "vias": 393,
+        "saved_zone_layers": 2
+      },
+      "cam_object_counts": {
+        "Region": 16,
+        "Flash": 853,
+        "Line": 844
+      },
+      "native_area_mm2": 7178.616388738821,
+      "cam_area_mm2": 7179.03675238127,
+      "raw_symmetric_difference_mm2": 0.43355507608992605,
+      "coverage_tolerance_mm": 0.002002,
+      "missing_beyond_tolerance_mm2": 0.0,
+      "extra_beyond_tolerance_mm2": 0.0,
+      "missing_bounds_mm": [],
+      "extra_bounds_mm": [],
+      "unsupported": [],
+      "ok": true
+    },
+    {
+      "layer": "B.Cu",
+      "file": "Mesh_Repeater_S4_21-B_Cu.gbl",
+      "native_counts": {
+        "npth_without_copper": 4,
+        "pads": 61,
+        "vias": 393,
+        "tracks": 313,
+        "saved_zone_layers": 1
+      },
+      "cam_object_counts": {
+        "Flash": 454,
+        "Line": 313,
+        "Region": 11
+      },
+      "native_area_mm2": 7960.9341642577965,
+      "cam_area_mm2": 7961.132199064053,
+      "raw_symmetric_difference_mm2": 0.20743391414313003,
+      "coverage_tolerance_mm": 0.002002,
+      "missing_beyond_tolerance_mm2": 0.0,
+      "extra_beyond_tolerance_mm2": 0.0,
+      "missing_bounds_mm": [],
+      "extra_bounds_mm": [],
+      "unsupported": [],
+      "ok": true
+    },
+    {
+      "layer": "F.Mask",
+      "file": "Mesh_Repeater_S4_21-F_Mask.gts",
+      "native_counts": {
+        "pads": 464,
+        "footprint_graphics": 1
+      },
+      "cam_object_counts": {
+        "Region": 1,
+        "Flash": 464
+      },
+      "native_area_mm2": 1028.9016676922065,
+      "cam_area_mm2": 1029.2631323688563,
+      "raw_symmetric_difference_mm2": 0.3713243337509209,
+      "coverage_tolerance_mm": 0.002002,
+      "missing_beyond_tolerance_mm2": 0.0,
+      "extra_beyond_tolerance_mm2": 0.0,
+      "missing_bounds_mm": [],
+      "extra_bounds_mm": [],
+      "unsupported": [],
+      "ok": true
+    },
+    {
+      "layer": "B.Mask",
+      "file": "Mesh_Repeater_S4_21-B_Mask.gbs",
+      "native_counts": {
+        "pads": 63
+      },
+      "cam_object_counts": {
+        "Flash": 63
+      },
+      "native_area_mm2": 187.36705752562403,
+      "cam_area_mm2": 187.49167325915408,
+      "raw_symmetric_difference_mm2": 0.1308891415916707,
+      "coverage_tolerance_mm": 0.002002,
+      "missing_beyond_tolerance_mm2": 0.0,
+      "extra_beyond_tolerance_mm2": 0.0,
+      "missing_bounds_mm": [],
+      "extra_bounds_mm": [],
+      "unsupported": [],
+      "ok": true
+    }
+  ]
+}
