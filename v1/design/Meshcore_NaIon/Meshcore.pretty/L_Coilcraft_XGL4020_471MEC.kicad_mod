@@ -1,0 +1,29 @@
+(footprint "L_Coilcraft_XGL4020_471MEC"
+  (version 20241229)
+  (generator "pcbnew")
+  (layer "F.Cu")
+  (descr "Coilcraft XGL4020-471MEC, shielded 0.47uH; official recommended rectangular copper lands 0.98x3.40mm, 2.37mm centre pitch. Body 4.0+/-0.3 x 4.0+/-0.3mm; height max 2.10mm. Coilcraft Document 1529-3, revised 02/19/26. Mask +0.05mm and paste 1:1 are engineering choices, not manufacturer stencil specifications. See Coilcraft_XGL4020_471MEC_evidence.json.")
+  (tags "Coilcraft XGL4020 471MEC 0.47uH shielded power inductor")
+  (attr smd)
+  (property "Reference" "REF**" (at 0 -3) (layer "F.SilkS") (effects (font (size 0.8 0.8) (thickness 0.12))))
+  (property "Value" "L_Coilcraft_XGL4020_471MEC" (at 0 3) (layer "F.Fab") (effects (font (size 0.8 0.8) (thickness 0.12))))
+  (fp_text user "${REFERENCE}" (at 0 0) (layer "F.Fab") (effects (font (size 0.7 0.7) (thickness 0.1))))
+  (fp_rect (start -2 -2) (end 2 2) (stroke (width 0.1) (type solid)) (fill none) (layer "F.Fab"))
+  (fp_rect (start -2.15 -2.15) (end 2.15 2.15) (stroke (width 0.05) (type dash)) (fill none) (layer "F.Fab"))
+  (fp_rect (start -2.26 -2.26) (end 2.26 2.26) (stroke (width 0.15) (type solid)) (fill none) (layer "F.SilkS"))
+  (fp_rect (start -2.4 -2.4) (end 2.4 2.4) (stroke (width 0.05) (type solid)) (fill none) (layer "F.CrtYd"))
+  (pad "1" smd rect (at -1.185 0) (size 0.98 3.4) (layers "F.Cu" "F.Paste" "F.Mask") (solder_mask_margin 0.05) (solder_paste_margin 0) (solder_paste_margin_ratio 0))
+  (pad "2" smd rect (at 1.185 0) (size 0.98 3.4) (layers "F.Cu" "F.Paste" "F.Mask") (solder_mask_margin 0.05) (solder_paste_margin 0) (solder_paste_margin_ratio 0))
+  (zone (net 0) (net_name "") (layer "F.Cu") (hatch edge 0.5)
+    (connect_pads (clearance 0)) (min_thickness 0.25)
+    (keepout (tracks not_allowed) (vias not_allowed) (pads allowed) (copperpour not_allowed) (footprints allowed))
+    (polygon (pts (xy -0.695 -2.15) (xy 0.695 -2.15) (xy 0.695 2.15) (xy -0.695 2.15))))
+
+	
+
+	(model "${KIPRJMOD}/3dmodels/Coilcraft_XGL4020.step"
+		(offset (xyz 0 0 0))
+		(scale (xyz 1 1 1))
+		(rotate (xyz 0 0 0))
+	)
+)

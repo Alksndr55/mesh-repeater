@@ -1,0 +1,269 @@
+{
+  "status": "PASS",
+  "leading_product": "v1",
+  "authority": "Shared native circuit is the electrical authority; it derives from leading v1. Physical product schematics are checked projections, not automatically generated files.",
+  "canonical": "shared/schematic/MeshRepeater.kicad_sch",
+  "canonical_components": 150,
+  "canonical_net_groups": 106,
+  "products": {
+    "v1": {
+      "version": "v1.22",
+      "native_components": 154,
+      "canonical_components": 150,
+      "physical_extras": 4,
+      "projected_net_groups": 106,
+      "models_checked": [
+        "MAIN"
+      ]
+    }
+  },
+  "passed": 18,
+  "total": 18,
+  "checks": [
+    {
+      "name": "v1 remains leading electrical and layout design",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "COMMON: fresh native netlist export",
+      "passed": true,
+      "detail": {
+        "returncode": 0,
+        "file": "C:\\Users\\Alksndr\\Desktop\\codex\\Meshcore\\v1\\audit\\current\\circuit\\COMMON.xml"
+      }
+    },
+    {
+      "name": "canonical component count",
+      "passed": true,
+      "detail": 150
+    },
+    {
+      "name": "canonical contains functional circuit only",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "canonical fresh ERC zero without exclusions",
+      "passed": true,
+      "detail": {
+        "returncode": 0,
+        "violations": 0,
+        "ignored_checks": 0
+      }
+    },
+    {
+      "name": "canonical project-local editing dependencies resolve",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "v1: physical profile cannot override functional values or assembly fits",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "v1_MAIN: fresh native netlist export",
+      "passed": true,
+      "detail": {
+        "returncode": 0,
+        "file": "C:\\Users\\Alksndr\\Desktop\\codex\\Meshcore\\v1\\audit\\current\\circuit\\v1_MAIN.xml"
+      }
+    },
+    {
+      "name": "v1: references unique across boards",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "v1: exact functional and physical component set",
+      "passed": true,
+      "detail": {
+        "missing": [],
+        "unexpected": []
+      }
+    },
+    {
+      "name": "v1: board profile covers every native reference exactly once",
+      "passed": true,
+      "detail": {
+        "missing_references": [],
+        "unexpected_references": [],
+        "duplicate_references": [],
+        "missing_boards": [],
+        "unexpected_boards": []
+      }
+    },
+    {
+      "name": "v1: declared board allocation",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "v1: canonical values, assembly variants and physical profile",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "v1: available product models match native fields",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "v1: declared mechanical, testpoint and connector extras",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "v1: permitted extra pins are explicitly NC",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "v1: full native pin graph equals canonical circuit",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "verification preserves native schematic/model/PCB source bytes",
+      "passed": true,
+      "detail": []
+    }
+  ],
+  "source_sha256": {
+    "shared/schematic/3dmodels/Coilcraft_XGL4020.step": "b6bd76d01981e885ab7167550fa756113c7c8f41f9a80b5c0d8a5ae3be9c8e67",
+    "shared/schematic/3dmodels/CR2032_Cell.step": "2e61853937eaed4a26c043eb43a569b183f40fc3d1a451455ee6cdb7bc57140e",
+    "shared/schematic/3dmodels/FB1_BLM21_0805.step": "751a8ae26d20698bfe8303aa2fc7ec986a8b9a7154699b94bf2a13d4ad401425",
+    "shared/schematic/3dmodels/Heltec_HT_RA62_Approx.step": "8f01259c84ab23507bb623e440bbcba2db85635ddbbfbc85315013359566e15e",
+    "shared/schematic/3dmodels/KLS_TS6604_4p3.step": "12b3864afbb63c919c627dcfe6d0e122fcfd31d0f67970d48b67b4047a153e8a",
+    "shared/schematic/3dmodels/NiceNano_Clone_Approx.step": "d0171b50564695dc8925d020891c3b814ea1b3340944900e3f424e6dfdfda088",
+    "shared/schematic/3dmodels/Panasonic_EEEFK1E471P.step": "8725db6b1c1b39e6fd1d8c27f2a8772d692146a237296cada7101262b555b776",
+    "shared/schematic/3dmodels/S869M000S003_Approx.step": "f014778833906a7ee87329e0ef6e8959c5eaa838f1694c58b1b39a34db635efd",
+    "shared/schematic/3dmodels/SMA_KLS1_SMA002_B_Approx.step": "6d4fe1194d68cf1f6bb598c5a9eca8142b4ff96218b0d503e7e3cd4f3e645574",
+    "shared/schematic/3dmodels/Sumida_CDRH127_LD.step": "94832871efb6205b0fb77c3eaac46e01d9efcbe52f2ebd014d618ab59f0b05be",
+    "shared/schematic/3dmodels/Sumida_CDRH127_LD_101.step": "265f65dc07053daaac33a0108cd1bee9a0c71254f2f165f372a7b99773cb2199",
+    "shared/schematic/3dmodels/TDK_B57861S_Vertical_Approx.step": "605a437a0adc4d4ea826ad05a57c8fddf7ad756bc49f4fd55659f5e829762dc2",
+    "shared/schematic/3dmodels/TI_DCT0008A.step": "5507e436c9a888714db3be0ead2e8a9dd78ebebcb8ebf748070695de62ec673e",
+    "shared/schematic/3dmodels/TPS63802_DLA0010A.step": "e5e3775caacbf170bd75cf228bb8f9e615edc705298a8c430399939a4b3fd667",
+    "shared/schematic/BatteryMonitor.kicad_sch": "8ab1ee3266a6498d10c671091d2f429af487ea8c66a62c0fba659e4777534a6f",
+    "shared/schematic/Converter.kicad_sch": "eb0fd07214710e0b86c7e83fd2ee8d1ded3cc3398c172381903e53c59c6b5085",
+    "shared/schematic/datasheets/LM393XK-Runic-datasheet.pdf": "deef619283f72ffca88edec89b63f7bb21b92f39e30a4d77501c68f83325ef71",
+    "shared/schematic/fp-lib-table": "929ebd8ad899d3a0c4231cffab5f806e51cf756a4f2dc32f538793e41bb6aac7",
+    "shared/schematic/LTO_Balancer.kicad_sch": "d93aa9f4db77637f6ebd28608af3b0797585c5cb4e7bd81e215c847e75aa2913",
+    "shared/schematic/Meshcore.kicad_sym": "19d4253538c44e5035b8866fef46422965dbf2c815ba1079547e4142a655886c",
+    "shared/schematic/Meshcore.pretty/BatteryHolder_Keystone_1060_1x2032.kicad_mod": "844d3dc38ced93cd86a83cb283033c706b8422940354ad7e46c97b2b138256d5",
+    "shared/schematic/Meshcore.pretty/C_0603_1608Metric.kicad_mod": "b572d165cd408fc7f013191402e4b4032f46d5d5042c51f2c8e89db2f02a1e54",
+    "shared/schematic/Meshcore.pretty/C_0805_2012Metric.kicad_mod": "6bff3ba934505c5a7085d8b655174468f264b70081e83945c771b95bf43314bc",
+    "shared/schematic/Meshcore.pretty/C_1206_3216Metric.kicad_mod": "fd21c25e53290ffd8b2c2ee631373b0a77714771f9683b491ac4fce9ad295546",
+    "shared/schematic/Meshcore.pretty/CP_Elec_10x10.2.kicad_mod": "f168d5807d1652894dc96a4d313a880066dcec89e626523d0f15a3ff3040c895",
+    "shared/schematic/Meshcore.pretty/CP_Elec_Panasonic_FK_D_6.3x5.8.kicad_mod": "b409c4b4e6b3444a4f2012028f3e9d0b2422240aa55d707d3e787e5a3661982e",
+    "shared/schematic/Meshcore.pretty/D_SMB.kicad_mod": "3c29c34cc0ee6618264feb379e8ea6bc7256cb99c64c58a67ea81cf0001b8697",
+    "shared/schematic/Meshcore.pretty/Ferrite_Murata_BLM21PG.kicad_mod": "05ade9b3116576a9570b4b78f95209b59094b27b3fe21d523016d959f61f564b",
+    "shared/schematic/Meshcore.pretty/HT_RA62.kicad_mod": "fd2071032464197b8483f57a3e85ac808193e368e3865887e9ac70206697fe2b",
+    "shared/schematic/Meshcore.pretty/L_Coilcraft_XGL4020_471MEC.kicad_mod": "e3cbf76ae8fc3785af6ea3310443fe7e7981c184f1725e7985099b7182cab4dd",
+    "shared/schematic/Meshcore.pretty/L_Sumida_CDRH127_LD.kicad_mod": "a980e32083b08ff442be4d6ae5eaebdaf8918529ab5bb2e1a0a1922e431a0bb7",
+    "shared/schematic/Meshcore.pretty/L_Sumida_CDRH127_LDNP_101MC.kicad_mod": "0e84c55693e604a1f3e7f6dbe43986e627c869f02617824f32395cc501e3d6c3",
+    "shared/schematic/Meshcore.pretty/LED_0805_2012Metric.kicad_mod": "4078e5088c26303c057525d7392597a0a6107d405b5d0092af6d77ca7fee9020",
+    "shared/schematic/Meshcore.pretty/Molex_PicoBlade_53261-0871_1x08-1MP_P1.25mm_Horizontal.kicad_mod": "8be972e452a9e510b3809c1b97c179de972c9d812d2747177f68a5591525d589",
+    "shared/schematic/Meshcore.pretty/NetTie_2_SMD_Power_Star_A3.kicad_mod": "b42c6e9e8ab2427a7f37a80e576ddaee5b04846cab0e2b0ad87b9ccec84e4b55",
+    "shared/schematic/Meshcore.pretty/NiceNano_13x2_Socket.kicad_mod": "e7c3d67ad190087bc3815f1507128fc58edb6702c2933674df83903e69eae219",
+    "shared/schematic/Meshcore.pretty/NTC_TDK_B57861S_Onboard_or_Remote_P2.54mm.kicad_mod": "d1d75d6ce06cd9c54e9b9d8d969cc00ac04b1c8a635f03d6e85904852d00be19",
+    "shared/schematic/Meshcore.pretty/PinHeader_1x02_P2.54mm_Vertical.kicad_mod": "3fdc0ff6cc4592d20b418282349b6ded480490d002af3feb8ee5bfef39290404",
+    "shared/schematic/Meshcore.pretty/PinHeader_1x03_P2.54mm_Vertical.kicad_mod": "39e96f5a69072c5db40dc83e099e2f7f0301f189c7db3b6c1a30bd0b2afea298",
+    "shared/schematic/Meshcore.pretty/PinHeader_1x04_P2.54mm_Vertical.kicad_mod": "93dfa1e90dff992f2c8e5196bf76ec4dc04c0863da6fd0b4c43f867dfb55d9dc",
+    "shared/schematic/Meshcore.pretty/PinHeader_2x03_P2.54mm_Vertical.kicad_mod": "6b25c46e5f87cc11d01fe74ff64bfa121edea445001c0207189cd24d0f196411",
+    "shared/schematic/Meshcore.pretty/R_0805_2012Metric.kicad_mod": "a78fa3eff59064358e58d32e3d4ea24d0f603c2b9f5bbf50fec485ad34eaa044",
+    "shared/schematic/Meshcore.pretty/R_2512_6332Metric__A3_R56.kicad_mod": "2a8c6b21aa4e94ecf869a05fb844d2ef88bd19b7774902addc2fbf2a16073312",
+    "shared/schematic/Meshcore.pretty/R_2512_6332Metric__A3_R71.kicad_mod": "34c917b65e750c501387bb638a7e202f8dfbea59a214edc0f5f928797d5c51ba",
+    "shared/schematic/Meshcore.pretty/R_Vishay_WSL2512_A3__A3_R1.kicad_mod": "1c150d56ea94c72ca771f78c0b872f0f3e5f673a6fc2461b918abbe7fa83c2fb",
+    "shared/schematic/Meshcore.pretty/R_Vishay_WSL2512_A3__A3_R40.kicad_mod": "407ee745cd17a3c11bb0a5179152675f55176f250cc95326d14a2ffe9f83039d",
+    "shared/schematic/Meshcore.pretty/R_Vishay_WSL2512_A3__A3_R41.kicad_mod": "09d813dd88a949774bd89674de816754c431eb4f58d8eb45fc00f9b44f2281e8",
+    "shared/schematic/Meshcore.pretty/R_Vishay_WSL2512_A3__A3_R55.kicad_mod": "d1f4963c3160bfd4fb3b8eefe0b9b542b23f54ff55c948bdec684ca378837aeb",
+    "shared/schematic/Meshcore.pretty/RF_Cut_Link_0p6.kicad_mod": "73bd9b0b9a1fcfb75c49fc765fdea95ec68e9d3a96f232d7b901f4a69a8ef9ba",
+    "shared/schematic/Meshcore.pretty/SAW_AEL_DCC6C_S869M000S003.kicad_mod": "3b08ea99d29618d691da35c6803a66b3714d391cc34756c790a8238b57be5f9b",
+    "shared/schematic/Meshcore.pretty/SMA_KLS1_SMA002_B_Horizontal.kicad_mod": "a6ac815b98c0c3345ecf2bfcba79d1e8e9a8e513b828383c34a098945fcb21f4",
+    "shared/schematic/Meshcore.pretty/SOIC-8_3.9x4.9mm_P1.27mm.kicad_mod": "90a17cb443aa344a43d7ad9e1a131dbdcd78708d6151b8b0e5608a9c19194da3",
+    "shared/schematic/Meshcore.pretty/SOT-23-5.kicad_mod": "4e5761163aa9383ebb4b499efd5031d69a3a3e34d39c0c9c7714b2d2551ef2c7",
+    "shared/schematic/Meshcore.pretty/SOT-23.kicad_mod": "8affa88394826df30ee8e1571c26ff7d69d4c81ea908225eb10aefe5e26cf2d7",
+    "shared/schematic/Meshcore.pretty/SW_Push_KLS7_TS6604_4_3_180.kicad_mod": "a20549ac52e0f79cc846af72b735bec007696ca122cf2b948ac22906175e9bab",
+    "shared/schematic/Meshcore.pretty/TestPoint_Pad_D1.5mm.kicad_mod": "d64c72d87dffc6df67622076639dc666022e16d236105257b39b96997c75097f",
+    "shared/schematic/Meshcore.pretty/TI_DCT0008A.kicad_mod": "f34261be1ca093afc20c4ae2263b6f3c219106bac2209a8b6edb79828ab9a8b1",
+    "shared/schematic/Meshcore.pretty/TO-92_Inline.kicad_mod": "5f104db61ba204b99bb1ef8c50f673259b6dd4fdffab753b7d4ad2419252b3bf",
+    "shared/schematic/Meshcore.pretty/TPS63802_DLA0010A.kicad_mod": "24d0f2becb9ec1c6b0840ecd46221e9e3a781b94c0cc926b18d09178c4b98952",
+    "shared/schematic/Meshcore.pretty/TSSOP-16_4.4x5mm_P0.65mm.kicad_mod": "68f45e1e9612bc827671c5b4516af9ae11d951fd3f467a15a4331eef60db3579",
+    "shared/schematic/MeshRepeater.kicad_pro": "803dbee50a78b732c6a49bb499e3ff0db99058fe5e3bbadee11c2f4d1a93c8e7",
+    "shared/schematic/MeshRepeater.kicad_sch": "cb56886f82e853e4d47d4977345bcc5e2b5c5df3309de274032d443e8de4b577",
+    "shared/schematic/Modules.kicad_sch": "62ecfe92eab7be44fb763b80930b71476482b9784c858fa4dfb1a489bbc1dac8",
+    "shared/schematic/RTC_IO.kicad_sch": "04b8044d87eeb693edc46364f4f3fa118789667f7e7d2415f6178d5911b0561b",
+    "shared/schematic/sym-lib-table": "de9c5f16b051d9120f3e3276ba4ff164cdfd3dbf03ff7e7c7aa164f605c4678d",
+    "shared/schematic/Thermal.kicad_sch": "9eda8008be8812a67102357a367091e6bdbc24575dc1c8443762302789e6fbba",
+    "shared/schematic/Watchdog.kicad_sch": "d189c82dedc6234e69f1f5aeb25687501de7b32aa549320d64a50f9b9e9572d7",
+    "v1/design/Meshcore_NaIon/BatteryMonitor.kicad_sch": "92094b566db2fd51b74fab50264822f6c5d12f13aeba8408ebff10f9176be97f",
+    "v1/design/Meshcore_NaIon/Converter.kicad_sch": "faee8ff9ab96f14f4d9ade43f98a6292aac93af571373d7b6955e240cc2a82bf",
+    "v1/design/Meshcore_NaIon/fp-lib-table": "929ebd8ad899d3a0c4231cffab5f806e51cf756a4f2dc32f538793e41bb6aac7",
+    "v1/design/Meshcore_NaIon/LTO_Balancer.kicad_sch": "ddf452b0280f65974e6c81263d2aebbc8b4c09b05a8066b9ad4c2a0783047d0e",
+    "v1/design/Meshcore_NaIon/Meshcore.kicad_sym": "19d4253538c44e5035b8866fef46422965dbf2c815ba1079547e4142a655886c",
+    "v1/design/Meshcore_NaIon/Meshcore_NaIon.kicad_pcb": "b8d259e13b1fa1cd246f4ea07c4f85a01ab7223ca347c85803bb55b7460e7e43",
+    "v1/design/Meshcore_NaIon/Meshcore_NaIon.kicad_pro": "875da18af8e82cc2a15b76d5d1d224200dd3209ebcb9c54425a5c31355582997",
+    "v1/design/Meshcore_NaIon/Meshcore_NaIon.kicad_sch": "8fa7d69c083a36cd35d0280e4da816937d42e96a39fd965bd87c58886d60b856",
+    "v1/design/Meshcore_NaIon/model.json": "6d77c1b76a9f87da58e2c68dedf629be8c6dccb37ead00effb24e911d2993f3c",
+    "v1/design/Meshcore_NaIon/Modules.kicad_sch": "16474958a915c901d5228dd5cd353cab33974fe9888006dc64e508b02b4f1d4f",
+    "v1/design/Meshcore_NaIon/RTC_IO.kicad_sch": "0a3a16be35832852aa928153701061be3a05d810b97e0b87baf0ade397409087",
+    "v1/design/Meshcore_NaIon/sym-lib-table": "de9c5f16b051d9120f3e3276ba4ff164cdfd3dbf03ff7e7c7aa164f605c4678d",
+    "v1/design/Meshcore_NaIon/Thermal.kicad_sch": "1fc71234377209669ed8daa2999e658c05e2879fed59222182e627410a41ae91",
+    "v1/design/Meshcore_NaIon/Watchdog.kicad_sch": "1fb364203c03e63a67c855c58284856f0d20c77be25ba979c2cf1f3228aa3961"
+  },
+  "configuration_sha256": {
+    "project.json": "b3013f43a298c3ca5e278c641baaa060b6fac17294f94a3056ede3f4c3604b2f",
+    "shared/variants.json": "7dd299d41b5a80925cae61938947d0ad8cc17d6c4279230c0f6da701826355b2"
+  },
+  "commands": [
+    {
+      "arguments": [
+        "sch",
+        "export",
+        "netlist",
+        "--format",
+        "kicadxml",
+        "-o",
+        "C:\\Users\\Alksndr\\Desktop\\codex\\Meshcore\\v1\\audit\\current\\circuit\\COMMON.xml",
+        "C:\\Users\\Alksndr\\Desktop\\codex\\Meshcore\\shared\\schematic\\MeshRepeater.kicad_sch"
+      ],
+      "returncode": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "arguments": [
+        "sch",
+        "erc",
+        "--format",
+        "json",
+        "--severity-all",
+        "--exit-code-violations",
+        "-o",
+        "C:\\Users\\Alksndr\\Desktop\\codex\\Meshcore\\v1\\audit\\current\\circuit\\COMMON_erc.json",
+        "C:\\Users\\Alksndr\\Desktop\\codex\\Meshcore\\shared\\schematic\\MeshRepeater.kicad_sch"
+      ],
+      "returncode": 0,
+      "stdout": "Найдено 0 нарушений\nОтчёт ERC сохранен в C:/Users/Alksndr/Desktop/codex/Meshcore/v1/audit/current/circuit/COMMON_erc.json\n",
+      "stderr": ""
+    },
+    {
+      "arguments": [
+        "sch",
+        "export",
+        "netlist",
+        "--format",
+        "kicadxml",
+        "-o",
+        "C:\\Users\\Alksndr\\Desktop\\codex\\Meshcore\\v1\\audit\\current\\circuit\\v1_MAIN.xml",
+        "C:\\Users\\Alksndr\\Desktop\\codex\\Meshcore\\v1\\design\\Meshcore_NaIon\\Meshcore_NaIon.kicad_sch"
+      ],
+      "returncode": 0,
+      "stdout": "",
+      "stderr": ""
+    }
+  ],
+  "limits": "Native schematic equivalence/ERC and source preservation. This gate does not replace PCB DRC/parity, manufacture review or measurements. No accepted PCB is regenerated or synchronized by this command."
+}

@@ -1,0 +1,1120 @@
+{
+  "format_version": 1,
+  "leading_product": "v1",
+  "decision_policy": "Ведущая схема и разводка — v1. Каноническая native-схема shared создаётся из v1; электрические решения сначала согласуются с v1, затем переносятся в физическое исполнение v2. Разводку не копировать между исполнениями.",
+  "canonical_component_count": 150,
+  "net_anchors": {
+    "GND": [
+      "U12",
+      "6"
+    ],
+    "SYS_3V3": [
+      "M1",
+      "9"
+    ],
+    "RADIO_3V3": [
+      "FB1",
+      "1"
+    ],
+    "BAT": [
+      "R71",
+      "2"
+    ],
+    "SDA": [
+      "M1",
+      "15"
+    ],
+    "SCL": [
+      "M1",
+      "16"
+    ],
+    "MODE": [
+      "U2",
+      "2"
+    ]
+  },
+  "products": {
+    "v1": {
+      "board_references": {
+        "MAIN": [
+          "BT1",
+          "C1",
+          "C12",
+          "C13",
+          "C14",
+          "C15",
+          "C16",
+          "C2",
+          "C21",
+          "C22",
+          "C23",
+          "C24",
+          "C25",
+          "C26",
+          "C27",
+          "C3",
+          "C30",
+          "C33",
+          "C4",
+          "C5",
+          "C52",
+          "C53",
+          "C54",
+          "C55",
+          "C56",
+          "C57",
+          "C58",
+          "C59",
+          "C6",
+          "C60",
+          "C61",
+          "C62",
+          "C63",
+          "C64",
+          "C7",
+          "C8",
+          "D1",
+          "D2",
+          "D3",
+          "D4",
+          "FB1",
+          "FL1",
+          "H1",
+          "H2",
+          "H3",
+          "H4",
+          "J10",
+          "J11",
+          "J12",
+          "J13",
+          "J3",
+          "J4",
+          "J5",
+          "J7",
+          "J8",
+          "L1",
+          "L2",
+          "L3",
+          "L4",
+          "M1",
+          "M2",
+          "NT1",
+          "NT2",
+          "Q1",
+          "Q2",
+          "Q3",
+          "Q4",
+          "Q5",
+          "Q6",
+          "Q7",
+          "R1",
+          "R10",
+          "R11",
+          "R13",
+          "R14",
+          "R15",
+          "R16",
+          "R17",
+          "R21",
+          "R23",
+          "R24",
+          "R25",
+          "R26",
+          "R27",
+          "R28",
+          "R29",
+          "R3",
+          "R30",
+          "R31",
+          "R33",
+          "R35",
+          "R36",
+          "R37",
+          "R38",
+          "R39",
+          "R4",
+          "R40",
+          "R41",
+          "R42",
+          "R43",
+          "R44",
+          "R45",
+          "R46",
+          "R47",
+          "R48",
+          "R49",
+          "R5",
+          "R50",
+          "R51",
+          "R52",
+          "R53",
+          "R54",
+          "R55",
+          "R56",
+          "R57",
+          "R58",
+          "R59",
+          "R6",
+          "R60",
+          "R61",
+          "R62",
+          "R63",
+          "R64",
+          "R65",
+          "R66",
+          "R67",
+          "R68",
+          "R69",
+          "R7",
+          "R70",
+          "R71",
+          "R72",
+          "R73",
+          "R8",
+          "R9",
+          "SW1",
+          "SW2",
+          "TH1",
+          "TP1",
+          "TP3",
+          "TP4",
+          "TP7",
+          "TP8",
+          "TP9",
+          "U1",
+          "U10",
+          "U11",
+          "U12",
+          "U2",
+          "U4",
+          "U6",
+          "U7",
+          "U8",
+          "U9"
+        ]
+      },
+      "physical_overrides": {},
+      "extra_components": [
+        {
+          "reference": "H1",
+          "board": "MAIN",
+          "reason": "Physical mounting/GND contact",
+          "fields": {
+            "Value": "M3 NPTH",
+            "Footprint": "Meshcore:MountingHole_3.2mm_M3",
+            "MPN": ""
+          },
+          "pins": {}
+        },
+        {
+          "reference": "H2",
+          "board": "MAIN",
+          "reason": "Physical mounting/GND contact",
+          "fields": {
+            "Value": "M3 NPTH",
+            "Footprint": "Meshcore:MountingHole_3.2mm_M3",
+            "MPN": ""
+          },
+          "pins": {}
+        },
+        {
+          "reference": "H3",
+          "board": "MAIN",
+          "reason": "Physical mounting/GND contact",
+          "fields": {
+            "Value": "M3 NPTH",
+            "Footprint": "Meshcore:MountingHole_3.2mm_M3",
+            "MPN": ""
+          },
+          "pins": {}
+        },
+        {
+          "reference": "H4",
+          "board": "MAIN",
+          "reason": "Physical mounting/GND contact",
+          "fields": {
+            "Value": "M3 NPTH",
+            "Footprint": "Meshcore:MountingHole_3.2mm_M3",
+            "MPN": ""
+          },
+          "pins": {}
+        }
+      ],
+      "allowed_extra_nc_pins": [],
+      "interconnects": []
+    },
+    "v2": {
+      "board_references": {
+        "POWER": [
+          "C1",
+          "C12",
+          "C13",
+          "C14",
+          "C15",
+          "C16",
+          "C2",
+          "C3",
+          "C30",
+          "C4",
+          "C5",
+          "C52",
+          "C53",
+          "C54",
+          "C55",
+          "C58",
+          "C59",
+          "C6",
+          "C60",
+          "C61",
+          "C62",
+          "C63",
+          "C64",
+          "C7",
+          "C8",
+          "D1",
+          "D2",
+          "D3",
+          "D4",
+          "H1",
+          "H2",
+          "H3",
+          "H4",
+          "J101",
+          "J11",
+          "J12",
+          "J7",
+          "J8",
+          "L1",
+          "L2",
+          "L3",
+          "L4",
+          "NT2",
+          "Q1",
+          "Q4",
+          "Q5",
+          "Q6",
+          "Q7",
+          "R1",
+          "R10",
+          "R11",
+          "R13",
+          "R14",
+          "R15",
+          "R16",
+          "R17",
+          "R3",
+          "R4",
+          "R40",
+          "R41",
+          "R47",
+          "R48",
+          "R49",
+          "R5",
+          "R50",
+          "R51",
+          "R52",
+          "R53",
+          "R54",
+          "R55",
+          "R56",
+          "R57",
+          "R58",
+          "R59",
+          "R6",
+          "R60",
+          "R61",
+          "R62",
+          "R63",
+          "R64",
+          "R65",
+          "R66",
+          "R67",
+          "R68",
+          "R69",
+          "R7",
+          "R70",
+          "R71",
+          "R72",
+          "R73",
+          "R8",
+          "R9",
+          "TH1",
+          "TP1",
+          "TP3",
+          "TP6",
+          "TP8",
+          "TP9",
+          "U1",
+          "U10",
+          "U11",
+          "U12",
+          "U2",
+          "U8",
+          "U9"
+        ],
+        "LOGIC": [
+          "BT1",
+          "C21",
+          "C22",
+          "C23",
+          "C24",
+          "C25",
+          "C26",
+          "C27",
+          "C33",
+          "C56",
+          "C57",
+          "FB1",
+          "FL1",
+          "H201",
+          "H202",
+          "H203",
+          "H204",
+          "J10",
+          "J13",
+          "J201",
+          "J3",
+          "J4",
+          "J5",
+          "M1",
+          "M2",
+          "NT1",
+          "Q2",
+          "Q3",
+          "R21",
+          "R23",
+          "R24",
+          "R25",
+          "R26",
+          "R27",
+          "R28",
+          "R29",
+          "R30",
+          "R31",
+          "R33",
+          "R35",
+          "R36",
+          "R37",
+          "R38",
+          "R39",
+          "R42",
+          "R43",
+          "R44",
+          "R45",
+          "R46",
+          "SW1",
+          "SW2",
+          "TP4",
+          "TP7",
+          "U4",
+          "U6",
+          "U7"
+        ]
+      },
+      "physical_overrides": {
+        "C1": {
+          "Footprint": "Meshcore:C_1206_3216Metric__V2_C1"
+        },
+        "C2": {
+          "Footprint": "Meshcore:C_0805_2012Metric__V2_C2"
+        },
+        "C3": {
+          "Footprint": "Meshcore:C_0805_2012Metric__V2_C3"
+        },
+        "C4": {
+          "Footprint": "Meshcore:C_0805_2012Metric__V2_C4"
+        },
+        "C5": {
+          "Footprint": "Meshcore:C_0805_2012Metric__V2_C5"
+        },
+        "C6": {
+          "Footprint": "Meshcore:C_0805_2012Metric__V2_C6"
+        },
+        "C7": {
+          "Footprint": "Meshcore:C_0805_2012Metric__V2_C7"
+        },
+        "C8": {
+          "Footprint": "Meshcore:CP_Elec_Panasonic_FK_D_6.3x5.8__V2_C8"
+        },
+        "C30": {
+          "Footprint": "Meshcore:C_0805_2012Metric__V2_C30"
+        },
+        "D1": {
+          "Footprint": "Meshcore:D_SMB__V2_D1"
+        },
+        "D2": {
+          "Footprint": "Meshcore:D_SMB__V2_D2"
+        },
+        "D3": {
+          "Footprint": "Meshcore:LED_0805_2012Metric__V2_D3"
+        },
+        "D4": {
+          "Footprint": "Meshcore:LED_0805_2012Metric__V2_D4"
+        },
+        "J7": {
+          "Footprint": "Meshcore:JST_XH_S2B-XH-A_1x02_P2.50mm_Horizontal__V2_J7",
+          "MPN": "JST S2B-XH-A(LF)(SN)",
+          "MPN_NaIon": "JST S2B-XH-A(LF)(SN)",
+          "MPN_NaIon_NoCold": "JST S2B-XH-A(LF)(SN)",
+          "MPN_LTO_2S": "JST S2B-XH-A(LF)(SN)"
+        },
+        "L1": {
+          "Footprint": "Meshcore:L_Sumida_CDRH127_LDNP_101MC__V2_L1"
+        },
+        "Q1": {
+          "Footprint": "Meshcore:SOT-23__V2_Q1"
+        },
+        "R3": {
+          "Footprint": "Meshcore:R_0805_2012Metric__V2_R3"
+        },
+        "R4": {
+          "Footprint": "Meshcore:R_0805_2012Metric__V2_R4"
+        },
+        "R5": {
+          "Footprint": "Meshcore:R_0805_2012Metric__V2_R5"
+        },
+        "R6": {
+          "Footprint": "Meshcore:R_0805_2012Metric__V2_R6"
+        },
+        "R7": {
+          "Footprint": "Meshcore:R_0805_2012Metric__V2_R7"
+        },
+        "R8": {
+          "Footprint": "Meshcore:R_0805_2012Metric__V2_R8"
+        },
+        "R9": {
+          "Footprint": "Meshcore:R_0805_2012Metric__V2_R9"
+        },
+        "R10": {
+          "Footprint": "Meshcore:R_0805_2012Metric__V2_R10"
+        },
+        "R11": {
+          "Footprint": "Meshcore:R_0805_2012Metric__V2_R11"
+        },
+        "TP9": {
+          "Footprint": "Meshcore:TestPoint_Pad_D1p5mm_A3_Edge_R0p9"
+        },
+        "U1": {
+          "Footprint": "Meshcore:TSSOP-16_4.4x5mm_P0.65mm__V2_U1"
+        },
+        "C12": {
+          "Footprint": "Meshcore:C_0805_2012Metric__V2_C12"
+        },
+        "C13": {
+          "Footprint": "Meshcore:C_0603_1608Metric__V2_C13"
+        },
+        "C14": {
+          "Footprint": "Meshcore:C_0805_2012Metric__V2_C14"
+        },
+        "C52": {
+          "Footprint": "Meshcore:C_0805_2012Metric__V2_C52"
+        },
+        "C53": {
+          "Footprint": "Meshcore:C_1206_3216Metric__V2_C53"
+        },
+        "C54": {
+          "Footprint": "Meshcore:C_1206_3216Metric__V2_C54"
+        },
+        "C55": {
+          "Footprint": "Meshcore:C_1206_3216Metric__V2_C55"
+        },
+        "L2": {
+          "Footprint": "Meshcore:L_Coilcraft_XGL4020_471MEC__V2_L2"
+        },
+        "L3": {
+          "Footprint": "Meshcore:L_Sumida_CDRH127_LD__V2_L3"
+        },
+        "L4": {
+          "Footprint": "Meshcore:L_Sumida_CDRH127_LD__V2_L4"
+        },
+        "R13": {
+          "Footprint": "Meshcore:R_0805_2012Metric__V2_R13"
+        },
+        "R14": {
+          "Footprint": "Meshcore:R_0805_2012Metric__V2_R14"
+        },
+        "R15": {
+          "Footprint": "Meshcore:R_0805_2012Metric__V2_R15"
+        },
+        "R16": {
+          "Footprint": "Meshcore:R_0805_2012Metric__V2_R16"
+        },
+        "R17": {
+          "Footprint": "Meshcore:R_0805_2012Metric__V2_R17"
+        },
+        "TP1": {
+          "Footprint": "Meshcore:TestPoint_Pad_D1p5mm_A3_Edge_R0p9"
+        },
+        "TP3": {
+          "Footprint": "Meshcore:TestPoint_Pad_D1.5mm__V2_TP3"
+        },
+        "TP8": {
+          "Footprint": "Meshcore:TestPoint_Pad_D1.5mm__V2_TP8"
+        },
+        "U2": {
+          "Footprint": "Meshcore:TPS63802_DLA0010A__V2_U2"
+        },
+        "C58": {
+          "Footprint": "Meshcore:C_0805_2012Metric__V2_C58"
+        },
+        "C59": {
+          "Footprint": "Meshcore:C_0805_2012Metric__V2_C59"
+        },
+        "J12": {
+          "Value": "LTO",
+          "Footprint": "Meshcore:KLS_XH_L_KLS1_2_50_04_R_Horizontal__V2_J12",
+          "MPN": "KLS L-KLS1-2.50-04-R",
+          "Value_NaIon": "LTO",
+          "Value_NaIon_NoCold": "LTO",
+          "Value_LTO_2S": "LTO",
+          "MPN_NaIon": "KLS L-KLS1-2.50-04-R",
+          "MPN_NaIon_NoCold": "KLS L-KLS1-2.50-04-R",
+          "MPN_LTO_2S": "KLS L-KLS1-2.50-04-R"
+        },
+        "R47": {
+          "Footprint": "Meshcore:R_0805_2012Metric__V2_R47"
+        },
+        "R48": {
+          "Footprint": "Meshcore:R_0805_2012Metric__V2_R48"
+        },
+        "R49": {
+          "Footprint": "Meshcore:R_0805_2012Metric__V2_R49"
+        },
+        "R50": {
+          "Footprint": "Meshcore:R_0805_2012Metric__V2_R50"
+        },
+        "R51": {
+          "Footprint": "Meshcore:R_0805_2012Metric__V2_R51"
+        },
+        "R52": {
+          "Footprint": "Meshcore:R_0805_2012Metric__V2_R52"
+        },
+        "R53": {
+          "Footprint": "Meshcore:R_0805_2012Metric__V2_R53"
+        },
+        "R54": {
+          "Footprint": "Meshcore:R_0805_2012Metric__V2_R54"
+        },
+        "U8": {
+          "Footprint": "Meshcore:SOT-23-5__V2_U8"
+        },
+        "U9": {
+          "Footprint": "Meshcore:SOT-23-5__V2_U9"
+        },
+        "C60": {
+          "Footprint": "Meshcore:C_0805_2012Metric__V2_C60"
+        },
+        "C61": {
+          "Footprint": "Meshcore:C_0805_2012Metric__V2_C61"
+        },
+        "C62": {
+          "Footprint": "Meshcore:C_0805_2012Metric__V2_C62"
+        },
+        "Q4": {
+          "Footprint": "Meshcore:SOT-23__V2_Q4"
+        },
+        "Q5": {
+          "Footprint": "Meshcore:SOT-23__V2_Q5"
+        },
+        "Q6": {
+          "Footprint": "Meshcore:SOT-23__V2_Q6"
+        },
+        "Q7": {
+          "Footprint": "Meshcore:SOT-23__V2_Q7"
+        },
+        "R57": {
+          "Footprint": "Meshcore:R_0805_2012Metric__V2_R57"
+        },
+        "R58": {
+          "Footprint": "Meshcore:R_0805_2012Metric__V2_R58"
+        },
+        "R59": {
+          "Footprint": "Meshcore:R_0805_2012Metric__V2_R59"
+        },
+        "R60": {
+          "Footprint": "Meshcore:R_0805_2012Metric__V2_R60"
+        },
+        "R61": {
+          "Footprint": "Meshcore:R_0805_2012Metric__V2_R61"
+        },
+        "R62": {
+          "Footprint": "Meshcore:R_0805_2012Metric__V2_R62"
+        },
+        "R63": {
+          "Footprint": "Meshcore:R_0805_2012Metric__V2_R63"
+        },
+        "R64": {
+          "Footprint": "Meshcore:R_0805_2012Metric__V2_R64"
+        },
+        "R65": {
+          "Footprint": "Meshcore:R_0805_2012Metric__V2_R65"
+        },
+        "R66": {
+          "Footprint": "Meshcore:R_0805_2012Metric__V2_R66"
+        },
+        "R67": {
+          "Footprint": "Meshcore:R_0805_2012Metric__V2_R67"
+        },
+        "R68": {
+          "Footprint": "Meshcore:R_0805_2012Metric__V2_R68"
+        },
+        "R69": {
+          "Footprint": "Meshcore:R_0805_2012Metric__V2_R69"
+        },
+        "R70": {
+          "Footprint": "Meshcore:R_0805_2012Metric__V2_R70"
+        },
+        "TH1": {
+          "Footprint": "Meshcore:NTC_TDK_B57861S_Onboard_or_Remote_P2.54mm__V2_TH1"
+        },
+        "U10": {
+          "Footprint": "Meshcore:SOIC-8_3.9x4.9mm_P1.27mm__V2_U10"
+        },
+        "U11": {
+          "Footprint": "Meshcore:TO-92_Inline__V2_U11"
+        },
+        "C63": {
+          "Footprint": "Meshcore:C_0805_2012Metric__V2_C63"
+        },
+        "C64": {
+          "Footprint": "Meshcore:C_0805_2012Metric__V2_C64"
+        },
+        "J8": {
+          "Value": "Na-ion",
+          "Footprint": "Meshcore:JST_XH_S2B-XH-A_1x02_P2.50mm_Horizontal__V2_J8",
+          "MPN": "JST S2B-XH-A(LF)(SN)",
+          "Value_NaIon": "Na-ion",
+          "Value_NaIon_NoCold": "Na-ion",
+          "Value_LTO_2S": "Na-ion",
+          "MPN_NaIon": "JST S2B-XH-A(LF)(SN)",
+          "MPN_NaIon_NoCold": "JST S2B-XH-A(LF)(SN)",
+          "MPN_LTO_2S": "JST S2B-XH-A(LF)(SN)"
+        },
+        "R72": {
+          "Footprint": "Meshcore:R_0805_2012Metric__V2_R72"
+        },
+        "R73": {
+          "Footprint": "Meshcore:R_0805_2012Metric__V2_R73"
+        },
+        "U12": {
+          "Footprint": "Meshcore:SOIC-8_3.9x4.9mm_P1.27mm__V2_U12"
+        },
+        "J11": {
+          "Value": "LC OUT - 3V3",
+          "Footprint": "Meshcore:Connfly_DS1022_1x02RUF11_B_Horizontal",
+          "MPN": "Connfly DS1022-1x40RUF11-B cut to2pins",
+          "Value_NaIon": "LC OUT - 3V3",
+          "Value_NaIon_NoCold": "LC OUT - 3V3",
+          "Value_LTO_2S": "LC OUT - 3V3",
+          "MPN_NaIon": "Connfly DS1022-1x40RUF11-B cut to2pins",
+          "MPN_NaIon_NoCold": "Connfly DS1022-1x40RUF11-B cut to2pins",
+          "MPN_LTO_2S": "Connfly DS1022-1x40RUF11-B cut to2pins"
+        },
+        "C21": {
+          "Footprint": "Meshcore:C_0805_2012Metric__V2_C21"
+        },
+        "C22": {
+          "Footprint": "Meshcore:C_0805_2012Metric__V2_C22"
+        },
+        "C23": {
+          "Footprint": "Meshcore:C_0805_2012Metric__V2_C23"
+        },
+        "C24": {
+          "Footprint": "Meshcore:C_0805_2012Metric__V2_C24"
+        },
+        "C25": {
+          "Footprint": "Meshcore:C_0805_2012Metric__V2_C25"
+        },
+        "C26": {
+          "Footprint": "Meshcore:C_0805_2012Metric__V2_C26"
+        },
+        "FB1": {
+          "Footprint": "Meshcore:Ferrite_Murata_BLM21PG__V2_FB1"
+        },
+        "FL1": {
+          "Footprint": "Meshcore:SAW_AEL_DCC6C_S869M000S003__V2_FL1"
+        },
+        "J13": {
+          "Footprint": "Meshcore:SMA_KLS1_SMA002_B_Horizontal__V2_J13"
+        },
+        "M1": {
+          "Footprint": "Meshcore:NiceNano_13x2_Socket__V2_M1"
+        },
+        "M2": {
+          "Footprint": "Meshcore:HT_RA62__V2_M2"
+        },
+        "NT1": {
+          "Footprint": "Meshcore:RF_Cut_Link_0p6__V2_NT1"
+        },
+        "R23": {
+          "Footprint": "Meshcore:R_0805_2012Metric__V2_R23"
+        },
+        "R24": {
+          "Footprint": "Meshcore:R_0805_2012Metric__V2_R24"
+        },
+        "R25": {
+          "Footprint": "Meshcore:R_0805_2012Metric__V2_R25"
+        },
+        "R26": {
+          "Footprint": "Meshcore:R_0805_2012Metric__V2_R26"
+        },
+        "R27": {
+          "Footprint": "Meshcore:R_0805_2012Metric__V2_R27"
+        },
+        "R28": {
+          "Footprint": "Meshcore:R_0805_2012Metric__V2_R28"
+        },
+        "R31": {
+          "Footprint": "Meshcore:R_0805_2012Metric__V2_R31"
+        },
+        "R35": {
+          "Footprint": "Meshcore:R_0805_2012Metric__V2_R35"
+        },
+        "SW1": {
+          "Footprint": "Meshcore:SW_TE_1825027_2_Side__V2_SW1",
+          "MPN": "TE1825027-2 / FSMRA1JH04",
+          "MPN_NaIon": "TE1825027-2 / FSMRA1JH04",
+          "MPN_NaIon_NoCold": "TE1825027-2 / FSMRA1JH04",
+          "MPN_LTO_2S": "TE1825027-2 / FSMRA1JH04"
+        },
+        "SW2": {
+          "Footprint": "Meshcore:SW_TE_1825027_2_Side__V2_SW2",
+          "MPN": "TE1825027-2 / FSMRA1JH04",
+          "MPN_NaIon": "TE1825027-2 / FSMRA1JH04",
+          "MPN_NaIon_NoCold": "TE1825027-2 / FSMRA1JH04",
+          "MPN_LTO_2S": "TE1825027-2 / FSMRA1JH04"
+        },
+        "BT1": {
+          "Footprint": "Meshcore:BatteryHolder_Keystone_1060_1x2032__V2_BT1"
+        },
+        "C27": {
+          "Footprint": "Meshcore:C_0805_2012Metric__V2_C27"
+        },
+        "C56": {
+          "Footprint": "Meshcore:C_0805_2012Metric__V2_C56"
+        },
+        "C57": {
+          "Footprint": "Meshcore:C_0805_2012Metric__V2_C57"
+        },
+        "J3": {
+          "Footprint": "Meshcore:Connfly_DS1022_1x04RUF11_B_Horizontal__V2_J3",
+          "MPN": "DS1022-1x40RUF11-B cut to4pins",
+          "MPN_NaIon": "DS1022-1x40RUF11-B cut to4pins",
+          "MPN_NaIon_NoCold": "DS1022-1x40RUF11-B cut to4pins",
+          "MPN_LTO_2S": "DS1022-1x40RUF11-B cut to4pins"
+        },
+        "J4": {
+          "Footprint": "Meshcore:Molex_PicoBlade_53261-0871_1x08-1MP_P1.25mm_Horizontal__V2_J4"
+        },
+        "J5": {
+          "Footprint": "Meshcore:Connfly_DS1022_1x04RUF11_B_Horizontal__V2_J5",
+          "MPN": "DS1022-1x40RUF11-B cut to4pins",
+          "MPN_NaIon": "DS1022-1x40RUF11-B cut to4pins",
+          "MPN_NaIon_NoCold": "DS1022-1x40RUF11-B cut to4pins",
+          "MPN_LTO_2S": "DS1022-1x40RUF11-B cut to4pins"
+        },
+        "Q2": {
+          "Footprint": "Meshcore:SOT-23__V2_Q2"
+        },
+        "Q3": {
+          "Footprint": "Meshcore:SOT-23__V2_Q3"
+        },
+        "R29": {
+          "Footprint": "Meshcore:R_0805_2012Metric__V2_R29"
+        },
+        "R30": {
+          "Footprint": "Meshcore:R_0805_2012Metric__V2_R30"
+        },
+        "R42": {
+          "Footprint": "Meshcore:R_0805_2012Metric__V2_R42"
+        },
+        "R43": {
+          "Footprint": "Meshcore:R_0805_2012Metric__V2_R43"
+        },
+        "R44": {
+          "Footprint": "Meshcore:R_0805_2012Metric__V2_R44"
+        },
+        "R45": {
+          "Footprint": "Meshcore:R_0805_2012Metric__V2_R45"
+        },
+        "R46": {
+          "Footprint": "Meshcore:R_0805_2012Metric__V2_R46"
+        },
+        "U4": {
+          "Footprint": "Meshcore:SOIC-8_3.9x4.9mm_P1.27mm__V2_U4"
+        },
+        "U7": {
+          "Footprint": "Meshcore:TI_DCT0008A__V2_U7"
+        },
+        "C33": {
+          "Footprint": "Meshcore:C_0805_2012Metric__V2_C33"
+        },
+        "J10": {
+          "Footprint": "Meshcore:PinHeader_2x03_P2.54mm_Vertical__V2_J10"
+        },
+        "R33": {
+          "Footprint": "Meshcore:R_0805_2012Metric__V2_R33"
+        },
+        "R36": {
+          "Footprint": "Meshcore:R_0805_2012Metric__V2_R36"
+        },
+        "R37": {
+          "Footprint": "Meshcore:R_0805_2012Metric__V2_R37"
+        },
+        "R38": {
+          "Footprint": "Meshcore:R_0805_2012Metric__V2_R38"
+        },
+        "R39": {
+          "Footprint": "Meshcore:R_0805_2012Metric__V2_R39"
+        },
+        "U6": {
+          "Footprint": "Meshcore:SOIC-8_3.9x4.9mm_P1.27mm__V2_U6"
+        },
+        "R21": {
+          "Footprint": "Meshcore:R_0805_2012Metric__V2_R21"
+        },
+        "TP4": {
+          "Footprint": "Meshcore:TestPoint_Pad_D1.5mm__V2_TP4"
+        },
+        "TP7": {
+          "Footprint": "Meshcore:TestPoint_Pad_D1.5mm__V2_TP7"
+        }
+      },
+      "extra_components": [
+        {
+          "reference": "TP6",
+          "board": "POWER",
+          "reason": "Additional GND test pad",
+          "fields": {
+            "Value": "GND",
+            "Footprint": "Meshcore:TestPoint_Pad_D1p5mm_A3_Edge_R0p9",
+            "MPN": ""
+          },
+          "pins": {
+            "1": "GND"
+          }
+        },
+        {
+          "reference": "H1",
+          "board": "POWER",
+          "reason": "Physical mounting/GND contact",
+          "fields": {
+            "Value": "M3 GND contact",
+            "Footprint": "Meshcore:GND_M3_D3.2_OD6__V2_H1",
+            "MPN": "PCB land M3 GND OD6 drill3.2"
+          },
+          "pins": {
+            "1": "GND"
+          }
+        },
+        {
+          "reference": "H2",
+          "board": "POWER",
+          "reason": "Physical mounting/GND contact",
+          "fields": {
+            "Value": "M3 GND contact",
+            "Footprint": "Meshcore:GND_M3_D3.2_OD6__V2_H2",
+            "MPN": "PCB land M3 GND OD6 drill3.2"
+          },
+          "pins": {
+            "1": "GND"
+          }
+        },
+        {
+          "reference": "H3",
+          "board": "POWER",
+          "reason": "Physical mounting/GND contact",
+          "fields": {
+            "Value": "M3 GND contact",
+            "Footprint": "Meshcore:GND_M3_D3.2_OD6__V2_H3",
+            "MPN": "PCB land M3 GND OD6 drill3.2"
+          },
+          "pins": {
+            "1": "GND"
+          }
+        },
+        {
+          "reference": "H4",
+          "board": "POWER",
+          "reason": "Physical mounting/GND contact",
+          "fields": {
+            "Value": "M3 GND contact",
+            "Footprint": "Meshcore:GND_M3_D3.2_OD6__V2_H4",
+            "MPN": "PCB land M3 GND OD6 drill3.2"
+          },
+          "pins": {
+            "1": "GND"
+          }
+        },
+        {
+          "reference": "J101",
+          "board": "POWER",
+          "reason": "Two-board interconnect only",
+          "fields": {
+            "Value": "INTERBOARD 2x6 VERTICAL",
+            "Footprint": "Meshcore:Ali_PinHeader_2x06_P2.54_L35_A3C6__V2_J101",
+            "MPN": "E-SIMPO L35mm A3C6 2x6P"
+          },
+          "pins": {
+            "1": "SYS_3V3",
+            "2": "GND",
+            "3": "SYS_3V3",
+            "4": "GND",
+            "5": "RADIO_3V3",
+            "6": "GND",
+            "7": "RADIO_3V3",
+            "8": null,
+            "9": "BAT",
+            "10": "SDA",
+            "11": "MODE",
+            "12": "SCL"
+          }
+        },
+        {
+          "reference": "H201",
+          "board": "LOGIC",
+          "reason": "Physical mounting/GND contact",
+          "fields": {
+            "Value": "M3 GND contact",
+            "Footprint": "Meshcore:GND_M3_D3.2_OD6__V2_H201",
+            "MPN": "PCB land M3 GND OD6 drill3.2"
+          },
+          "pins": {
+            "1": "GND"
+          }
+        },
+        {
+          "reference": "H202",
+          "board": "LOGIC",
+          "reason": "Physical mounting/GND contact",
+          "fields": {
+            "Value": "M3 GND contact",
+            "Footprint": "Meshcore:GND_M3_D3.2_OD6__V2_H202",
+            "MPN": "PCB land M3 GND OD6 drill3.2"
+          },
+          "pins": {
+            "1": "GND"
+          }
+        },
+        {
+          "reference": "H203",
+          "board": "LOGIC",
+          "reason": "Physical mounting/GND contact",
+          "fields": {
+            "Value": "M3 GND contact",
+            "Footprint": "Meshcore:GND_M3_D3.2_OD6__V2_H203",
+            "MPN": "PCB land M3 GND OD6 drill3.2"
+          },
+          "pins": {
+            "1": "GND"
+          }
+        },
+        {
+          "reference": "H204",
+          "board": "LOGIC",
+          "reason": "Physical mounting/GND contact",
+          "fields": {
+            "Value": "M3 GND contact",
+            "Footprint": "Meshcore:GND_M3_D3.2_OD6__V2_H204",
+            "MPN": "PCB land M3 GND OD6 drill3.2"
+          },
+          "pins": {
+            "1": "GND"
+          }
+        },
+        {
+          "reference": "J201",
+          "board": "LOGIC",
+          "reason": "Two-board interconnect only",
+          "fields": {
+            "Value": "INTERBOARD 2x6 VERTICAL",
+            "Footprint": "Meshcore:Ali_PinSocket_2x06_P2.54_H8.5_v2_mirror__V2_J201",
+            "MPN": "MTJ H8.5 2X6P 10PCS"
+          },
+          "pins": {
+            "1": "SYS_3V3",
+            "2": "GND",
+            "3": "SYS_3V3",
+            "4": "GND",
+            "5": "RADIO_3V3",
+            "6": "GND",
+            "7": "RADIO_3V3",
+            "8": null,
+            "9": "BAT",
+            "10": "SDA",
+            "11": "MODE",
+            "12": "SCL"
+          }
+        }
+      ],
+      "allowed_extra_nc_pins": [
+        [
+          "J12",
+          "4"
+        ]
+      ],
+      "interconnects": [
+        {
+          "first": {
+            "board": "POWER",
+            "reference": "J101"
+          },
+          "second": {
+            "board": "LOGIC",
+            "reference": "J201"
+          },
+          "pin_pairs": [
+            [
+              "1",
+              "1"
+            ],
+            [
+              "2",
+              "2"
+            ],
+            [
+              "3",
+              "3"
+            ],
+            [
+              "4",
+              "4"
+            ],
+            [
+              "5",
+              "5"
+            ],
+            [
+              "6",
+              "6"
+            ],
+            [
+              "7",
+              "7"
+            ],
+            [
+              "9",
+              "9"
+            ],
+            [
+              "10",
+              "10"
+            ],
+            [
+              "11",
+              "11"
+            ],
+            [
+              "12",
+              "12"
+            ]
+          ],
+          "no_connect_pins": [
+            "8"
+          ],
+          "note": "Physical contacts mate 1:1; no circuit net is virtually joined across R71 or NT2."
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,9 @@
+(footprint "HT_RA62" (version 20241229) (generator "pcbnew") (layer "F.Cu") (descr "HeltecHT-RA62 16x17mm stampmodule,2mm pitch. IPEXmoduleantenna used.") (attr smd) (property "Reference" "REF**" (at 0 -19) (layer "F.Fab") (effects (font (size .8 .8) (thickness .12)))) (property "Value" "HT_RA62" (at 0 19) (layer "F.Fab") (effects (font (size .8 .8) (thickness .12))))(fp_rect (start -8 -8.5) (end 8 8.5) (stroke (width 0.1) (type solid)) (fill none) (layer "F.Fab"))(fp_rect (start -9.2 -9.0) (end 9.2 9.0) (stroke (width 0.05) (type solid)) (fill none) (layer "F.CrtYd"))(pad "1" smd rect (at -8 -7) (size 1.8 1.2) (layers "F.Cu" "F.Paste" "F.Mask"))(pad "2" smd rect (at -8 -5) (size 1.8 1.2) (layers "F.Cu" "F.Paste" "F.Mask"))(pad "3" smd rect (at -8 -3) (size 1.8 1.2) (layers "F.Cu" "F.Paste" "F.Mask"))(pad "4" smd rect (at -8 -1) (size 1.8 1.2) (layers "F.Cu" "F.Paste" "F.Mask"))(pad "5" smd rect (at -8 1) (size 1.8 1.2) (layers "F.Cu" "F.Paste" "F.Mask"))(pad "6" smd rect (at -8 3) (size 1.8 1.2) (layers "F.Cu" "F.Paste" "F.Mask"))(pad "7" smd rect (at -8 5) (size 1.8 1.2) (layers "F.Cu" "F.Paste" "F.Mask"))(pad "8" smd rect (at -8 7) (size 1.8 1.2) (layers "F.Cu" "F.Paste" "F.Mask"))(pad "16" smd rect (at 8 -7) (size 1.8 1.2) (layers "F.Cu" "F.Paste" "F.Mask"))(pad "15" smd rect (at 8 -5) (size 1.8 1.2) (layers "F.Cu" "F.Paste" "F.Mask"))(pad "14" smd rect (at 8 -3) (size 1.8 1.2) (layers "F.Cu" "F.Paste" "F.Mask"))(pad "13" smd rect (at 8 -1) (size 1.8 1.2) (layers "F.Cu" "F.Paste" "F.Mask"))(pad "12" smd rect (at 8 1) (size 1.8 1.2) (layers "F.Cu" "F.Paste" "F.Mask"))(pad "11" smd rect (at 8 3) (size 1.8 1.2) (layers "F.Cu" "F.Paste" "F.Mask"))(pad "10" smd rect (at 8 5) (size 1.8 1.2) (layers "F.Cu" "F.Paste" "F.Mask"))(pad "9" smd rect (at 8 7) (size 1.8 1.2) (layers "F.Cu" "F.Paste" "F.Mask"))
+	
+
+	(model "${KIPRJMOD}/3dmodels/Heltec_HT_RA62_Approx.step"
+		(offset (xyz 0 0 0))
+		(scale (xyz 1 1 1))
+		(rotate (xyz 0 0 0))
+	)
+)

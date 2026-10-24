@@ -1,4 +1,4 @@
-# Local KiCad state and backups
+# Local CAD state and recovery files
 *.kicad_prl
 *.lck
 ~*.lck
@@ -7,8 +7,9 @@
 *.kicad_pcb-bak
 *.kicad_sch-bak
 *.kicad_wks-bak
+*.FCBak
 fp-info-cache
-# Local build results
+# Local compiler/runtime products
 __pycache__/
 *.pyc
 *.o
@@ -16,3 +17,6 @@ __pycache__/
 *.map
 .DS_Store
 Thumbs.db
+# Temporary work; current native reports remain versionable
+/tmp/
+.publication_tmp/

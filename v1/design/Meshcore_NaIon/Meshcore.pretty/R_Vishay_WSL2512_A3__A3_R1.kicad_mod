@@ -1,0 +1,310 @@
+(footprint "R_Vishay_WSL2512_A3__A3_R1"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "Vishay WSL2512 manufacturer recommended lands, doc30100p2:1.65x3.68mm, gap4.06mm, pitch5.71mm. Courtyard outer7.36x3.68+0.25mm. Body and STEP are nominal envelopes.")
+	(property "Reference" "REF**"
+		(at 0 -2.6 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "af05a43e-3876-451c-aabd-02f407d21f74")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.12)
+			)
+		)
+	)
+	(property "Value" "R_Vishay_WSL2512_A3__A3_R1"
+		(at 0 2.6 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "cd20db18-3022-448c-a311-551b04dc2a05")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.12)
+			)
+		)
+	)
+	(property "Datasheet" "https://www.vishay.com/docs/30100/wsl.pdf"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "c2e71971-558c-4e34-b1e8-791fe40e8006")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" "Base 0.28 ohm 1% 0.5W current shunt, unchanged for both batteries. Thermal option adds R56 upstream. CN3722 CSP senses upstream of R56, BAT downstream of R1; Kelvin connections. Cold ~96mA; warm ~665mA with three parallel AO3401A; bypass/no thermal nominal 714mA."
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "d4f4d115-e1b6-488c-96ea-95d1b3bb9df9")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "KiLib_Generator" "SMD_2terminal_chip_molded"
+		(at 0 0 180)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "f2fae4b8-f93e-421b-a926-4e9fe8499893")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "MPN" "WSL2512R2800FEA"
+		(at 0 0 180)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "35865d12-f44f-42b8-83af-85bfd50c7831")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "LCSC" "C5710536"
+		(at 0 0 180)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "fecfc42e-3fb4-4ca1-9c70-15130968d42e")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Vendor" ""
+		(at 0 0 180)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "c69854f4-38cf-419b-b322-f35cca0f2837")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Vendor URL" ""
+		(at 0 0 180)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "5e2f1973-24df-4a3d-9c20-336f8eee31cf")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Fit_NaIon" "yes"
+		(at 0 0 180)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "a944aff5-ec1a-407e-b30a-b4146f4d1d75")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Fit_LTO_2S" "yes"
+		(at 0 0 180)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "e1038e2d-43e9-404d-b35a-a46819cae688")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Value_NaIon" "0.28R 1%"
+		(at 0 0 180)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "9eb94840-c888-4b3b-83db-2a7f372cc36b")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Value_LTO_2S" "0.28R 1%"
+		(at 0 0 180)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "ae0e1172-0a5e-409f-8efe-6c28fe290368")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Assembly" "Na-ion: FIT; LTO 2S: FIT"
+		(at 0 0 180)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "707e0383-e94f-4ef2-aee7-3dbf9762b733")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Nominal" "0.28R"
+		(at 0 0 180)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "94b9f28a-b02a-4bcd-a2c0-160cc976f4e5")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "MPN_NaIon" "WSL2512R2800FEA"
+		(at 0 0 180)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "1b701efc-c74a-4575-be99-3506fcec0be9")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "MPN_LTO_2S" "WSL2512R2800FEA"
+		(at 0 0 180)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "4d909b9b-f5cb-4fa0-9486-fa8b8b4c2eba")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Fit_NaIon_NoCold" "yes"
+		(at 0 0 180)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "4ee6c4c5-b8a6-472e-b623-14c1e567006c")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Value_NaIon_NoCold" "0.28R 1%"
+		(at 0 0 180)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "e1646a97-c83f-4e34-ae05-aa13af84c71b")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "MPN_NaIon_NoCold" "WSL2512R2800FEA"
+		(at 0 0 180)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "2f2b0c76-1124-4889-9948-6c07cb905da9")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Package" "2512 / 6.3 x 3.2 mm"
+		(at 0 0 180)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "8ffe0f6d-40a0-477b-a70b-dd65d5ce0ded")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(attr smd)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_line
+		(start -1.65 -1.71)
+		(end 1.65 -1.71)
+		(stroke
+			(width 0.15)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "1e103528-dd82-411a-a43d-0ff2284268ab")
+	)
+	(fp_line
+		(start -1.65 1.71)
+		(end 1.65 1.71)
+		(stroke
+			(width 0.15)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "5dfcc02d-a040-4418-9324-cb7eb762fc6c")
+	)
+	(fp_rect
+		(start -3.93 -2.09)
+		(end 3.93 2.09)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "e5f98b07-c699-4e8e-a44f-bea96af8f7fa")
+	)
+	(fp_rect
+		(start -3.175 -1.59)
+		(end 3.175 1.59)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "fabba3cd-749e-4884-b0f4-b3e668fa8baa")
+	)
+	(pad "1" smd rect
+		(at -2.855 0)
+		(size 1.65 3.68)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(solder_mask_margin 0.05)
+		(uuid "9176c1d8-05c6-4108-b411-16984bcf37d9")
+	)
+	(pad "2" smd rect
+		(at 2.855 0)
+		(size 1.65 3.68)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(solder_mask_margin 0.05)
+		(uuid "58ea60f3-d9b8-4795-b742-d09d8ae78983")
+	)
+	(embedded_fonts no)
+	(model "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_2512_6332Metric.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)
