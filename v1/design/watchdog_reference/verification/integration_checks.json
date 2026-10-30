@@ -1,0 +1,115 @@
+{
+  "status": "PASS",
+  "date": "2026-10-29",
+  "product_version": "v1.25",
+  "watchdog_version": "v1.00",
+  "canonical_commit": "93ec8164aae9651f4b13c2208c52109bee66e181",
+  "exact_canonical_copies": [
+    {
+      "path": "main.c",
+      "origin": "../../../watchdog/main.c",
+      "sha256": "0c0f57a739c4bf24668ffb39984ebda6414ff91f85c58bf115416285744566f8",
+      "exact_copy": true
+    },
+    {
+      "path": "watchdog.hex",
+      "origin": "../../../watchdog/watchdog.hex",
+      "sha256": "f3309241f54871913d068f74021697b4a4a3982eab620c1d9da5364b210b788b",
+      "exact_copy": true
+    },
+    {
+      "path": "build.ps1",
+      "origin": "../../../watchdog/build.ps1",
+      "sha256": "d1e5803c48ba239d75332924d52c3489dc5e19391cd1047ab9179ce86ea61166",
+      "exact_copy": true
+    },
+    {
+      "path": "VERSION",
+      "origin": "../../../watchdog/VERSION",
+      "sha256": "80aabb827ab4678bd7b1a0a681191b1899eefe630accdcb1c265f70f73132ed4",
+      "exact_copy": true
+    },
+    {
+      "path": "LICENSE.md",
+      "origin": "../../../watchdog/LICENSE.md",
+      "sha256": "e66c269d4819aaab34b49ef5220c4ddab6756f21bb5180761a4eb8561f2b7bbd",
+      "exact_copy": true
+    },
+    {
+      "path": "verification/software_checks.json",
+      "origin": "../../../watchdog/verification/software_checks.json",
+      "sha256": "c02723125be4484f4ba61636f63216670ba3bdc6591ff2ea1c4956add104232f",
+      "exact_copy": true
+    },
+    {
+      "path": "tests/README.md",
+      "origin": "../../../watchdog/tests/README.md",
+      "sha256": "239533be8a19cbf370e6c167b8e9f8934bdb59c6dce5ad35fba2ff740e753667",
+      "exact_copy": true
+    },
+    {
+      "path": "tests/run.ps1",
+      "origin": "../../../watchdog/tests/run.ps1",
+      "sha256": "61bacc678dab1951e3b1550f26acee57ac3119f24ba70db61d40970770cbd44e",
+      "exact_copy": true
+    },
+    {
+      "path": "tests/test_firmware.cpp",
+      "origin": "../../../watchdog/tests/test_firmware.cpp",
+      "sha256": "8134fb6089879ff363ebabf8962412366ea5aedc4434742d0a6078baf79ded03",
+      "exact_copy": true
+    },
+    {
+      "path": "tests/include/avr/interrupt.h",
+      "origin": "../../../watchdog/tests/include/avr/interrupt.h",
+      "sha256": "4dc3bc43c08a1a4cdd078d6e4796edd891db446dc99fae527f2f94b0142f6b46",
+      "exact_copy": true
+    },
+    {
+      "path": "tests/include/avr/io.h",
+      "origin": "../../../watchdog/tests/include/avr/io.h",
+      "sha256": "f10cf62078112d6b6d31fcbd92b1f21f2f4780f26c39657698aa68d8a583041e",
+      "exact_copy": true
+    },
+    {
+      "path": "tests/include/avr/sleep.h",
+      "origin": "../../../watchdog/tests/include/avr/sleep.h",
+      "sha256": "2536b1349e31ee7f3c53d8965b46fdd228925a935132c75300a4fc8ace57e70f",
+      "exact_copy": true
+    },
+    {
+      "path": "tests/include/avr/wdt.h",
+      "origin": "../../../watchdog/tests/include/avr/wdt.h",
+      "sha256": "81c334792a70365ca5796b59fd061dba7d50bc143f032dfa8d652794a89de62c",
+      "exact_copy": true
+    }
+  ],
+  "makefile": {
+    "origin": "../../../watchdog/Makefile",
+    "origin_sha256": "1ad33182e94adce28b3231c7e0393782d620210f68f25d41c2010e7498a7d2c1",
+    "sha256": "93f5776e2f76552c5dd94ef89edd210e4d29cce60c3cdf1d0f549b72c7ec35a7",
+    "sole_change": "ISP_BITCLOCK_US default: 50 -> 100 us",
+    "LFUSE": "0x73",
+    "HFUSE": "0xFB"
+  },
+  "intel_hex": {
+    "records": 35,
+    "checksums_valid": true,
+    "eof_present": true,
+    "flash_payload_bytes": 534
+  },
+  "reused_software_validation": {
+    "path": "software_checks.json",
+    "basis": "Source, HEX, test harness and test headers match the canonical v1.00 validation inputs byte for byte",
+    "host_tests_passed": 19,
+    "host_tests_failed": 0,
+    "flash_bytes": 534,
+    "sram_bytes": 5,
+    "canonical_rebuild_hex_matches": true,
+    "rerun_for_copy": false
+  },
+  "hardware_programmed": false,
+  "hardware_tested": false,
+  "pcb_or_schematic_changed_by_firmware_copy": false,
+  "input_10nf_capacitor_fitted": false
+}

@@ -1,18 +1,20 @@
 {
   "format_version": 1,
   "product": "v1",
-  "version": "v1.22",
+  "version": "v1.25",
   "legacy_revision": "S4.22",
-  "date": "2026-10-24",
+  "date": "2026-10-30",
   "repository": "https://github.com/Alksndr55/mesh-repeater",
-  "kicad_version": "10.0.6",
+  "kicad_version": "10.0.7",
   "source_sha256": {
-    "AGENTS.md": "2d0f6b942ff96242d936a3e4004afaf25d9fca2b472147e69b0f66e76e7a64d6",
-    "docs/ASSEMBLY_COMMON_RU.md": "d902daa023a1132a895f1552e9e43bf933abaaff56710ce6d15ca9525deed6fb",
-    "docs/LIMITATIONS_RU.md": "ef4de652808e6e0fdac56d2b07b9dfc20d5198fd1592ce24bd5e5dfc60148dec",
-    "docs/WORKFLOW_RU.md": "e7a366600ce19d264681235039a6b92ecdc93a66e6e698fd2997502a6917d05c",
-    "project.json": "b3013f43a298c3ca5e278c641baaa060b6fac17294f94a3056ede3f4c3604b2f",
-    "shared/README.md": "6cfd4d981e3d4ee1dd5bbe2610f9b81c31194ede6a1ab6746eba519d01959dca",
+    "AGENTS.md": "9aa44b770ff41cbd7cbc6c04168ec98eea216eba2cbff853c00ad0de58442ee5",
+    "docs/ASSEMBLY_COMMON_RU.md": "effb5af7461f1dd962399de241b1184103fe5a532b4ca6455a59d2ac0b5c7492",
+    "docs/LIMITATIONS_RU.md": "90622e056277989cd73d6c732595303509151f848c82b282cbfbd578907ac819",
+    "docs/ROUTING_RESULT_RU.md": "34f854b7e00726629571563262d210225aaee520ff36ff034f3c94f34678fca0",
+    "docs/ROUTING_RULES_RU.md": "26f038a39374ff1cfc7b3dcae02dad225e189007ad149e3b87bf90618bc5e0b9",
+    "docs/WORKFLOW_RU.md": "3030b01a7a8f6733a675908b460423dc524f26752e22569eef33001ff4d4cd51",
+    "project.json": "ad59623cc0499a76c76f960ad4aa16badd4de8872f7891699d3267c6fe86a03d",
+    "shared/README.md": "2196a1344078aa9e17707691797c4e7a3dfe42b9b679e610102e00cb7c85c06e",
     "shared/schematic/3dmodels/Coilcraft_XGL4020.step": "b6bd76d01981e885ab7167550fa756113c7c8f41f9a80b5c0d8a5ae3be9c8e67",
     "shared/schematic/3dmodels/CR2032_Cell.step": "2e61853937eaed4a26c043eb43a569b183f40fc3d1a451455ee6cdb7bc57140e",
     "shared/schematic/3dmodels/FB1_BLM21_0805.step": "751a8ae26d20698bfe8303aa2fc7ec986a8b9a7154699b94bf2a13d4ad401425",
@@ -27,11 +29,11 @@
     "shared/schematic/3dmodels/TDK_B57861S_Vertical_Approx.step": "605a437a0adc4d4ea826ad05a57c8fddf7ad756bc49f4fd55659f5e829762dc2",
     "shared/schematic/3dmodels/TI_DCT0008A.step": "5507e436c9a888714db3be0ead2e8a9dd78ebebcb8ebf748070695de62ec673e",
     "shared/schematic/3dmodels/TPS63802_DLA0010A.step": "e5e3775caacbf170bd75cf228bb8f9e615edc705298a8c430399939a4b3fd667",
-    "shared/schematic/BatteryMonitor.kicad_sch": "8ab1ee3266a6498d10c671091d2f429af487ea8c66a62c0fba659e4777534a6f",
-    "shared/schematic/Converter.kicad_sch": "eb0fd07214710e0b86c7e83fd2ee8d1ded3cc3398c172381903e53c59c6b5085",
+    "shared/schematic/BatteryMonitor.kicad_sch": "eb90deec12ed359cc50679f693b724431c14602457c96b8ee76d317395f98b59",
+    "shared/schematic/Converter.kicad_sch": "6888d65cdb62f39a8c71bba32b1eea65466644841b144b053735c2b190232f2b",
     "shared/schematic/datasheets/LM393XK-Runic-datasheet.pdf": "deef619283f72ffca88edec89b63f7bb21b92f39e30a4d77501c68f83325ef71",
     "shared/schematic/fp-lib-table": "929ebd8ad899d3a0c4231cffab5f806e51cf756a4f2dc32f538793e41bb6aac7",
-    "shared/schematic/LTO_Balancer.kicad_sch": "d93aa9f4db77637f6ebd28608af3b0797585c5cb4e7bd81e215c847e75aa2913",
+    "shared/schematic/LTO_Balancer.kicad_sch": "c998f899383e88ce9c31eabfb4f6e53a6e78a89e4a1a8fa580992f1905ac8e06",
     "shared/schematic/Meshcore.kicad_sym": "19d4253538c44e5035b8866fef46422965dbf2c815ba1079547e4142a655886c",
     "shared/schematic/Meshcore.pretty/BatteryHolder_Keystone_1060_1x2032.kicad_mod": "844d3dc38ced93cd86a83cb283033c706b8422940354ad7e46c97b2b138256d5",
     "shared/schematic/Meshcore.pretty/C_0603_1608Metric.kicad_mod": "b572d165cd408fc7f013191402e4b4032f46d5d5042c51f2c8e89db2f02a1e54",
@@ -74,21 +76,24 @@
     "shared/schematic/Meshcore.pretty/TPS63802_DLA0010A.kicad_mod": "24d0f2becb9ec1c6b0840ecd46221e9e3a781b94c0cc926b18d09178c4b98952",
     "shared/schematic/Meshcore.pretty/TSSOP-16_4.4x5mm_P0.65mm.kicad_mod": "68f45e1e9612bc827671c5b4516af9ae11d951fd3f467a15a4331eef60db3579",
     "shared/schematic/MeshRepeater.kicad_pro": "803dbee50a78b732c6a49bb499e3ff0db99058fe5e3bbadee11c2f4d1a93c8e7",
-    "shared/schematic/MeshRepeater.kicad_sch": "cb56886f82e853e4d47d4977345bcc5e2b5c5df3309de274032d443e8de4b577",
-    "shared/schematic/Modules.kicad_sch": "62ecfe92eab7be44fb763b80930b71476482b9784c858fa4dfb1a489bbc1dac8",
-    "shared/schematic/RTC_IO.kicad_sch": "04b8044d87eeb693edc46364f4f3fa118789667f7e7d2415f6178d5911b0561b",
+    "shared/schematic/MeshRepeater.kicad_sch": "459d53babd93ef772f83e896f954e4c19f6010535a4bc6c0d51eefe816a99697",
+    "shared/schematic/Modules.kicad_sch": "3a8b31d51766c15edd619c67f715a38caa65eb57334132246e9f633760409c32",
+    "shared/schematic/RTC_IO.kicad_sch": "ef10bbca80898bcb3812ce8c589589c6491aa22ee39031121b58e315978b325d",
     "shared/schematic/sym-lib-table": "de9c5f16b051d9120f3e3276ba4ff164cdfd3dbf03ff7e7c7aa164f605c4678d",
-    "shared/schematic/Thermal.kicad_sch": "9eda8008be8812a67102357a367091e6bdbc24575dc1c8443762302789e6fbba",
-    "shared/schematic/Watchdog.kicad_sch": "d189c82dedc6234e69f1f5aeb25687501de7b32aa549320d64a50f9b9e9572d7",
+    "shared/schematic/Thermal.kicad_sch": "b9ae6de8b60e7457153c6a2c036cc3cdb45ed527d9de97670b9ba2e42abc42db",
+    "shared/schematic/Watchdog.kicad_sch": "536af3553192cb2f3e2a2baa3d37921be9614fd6474b0de7d7b689ce2d85c1c4",
     "shared/variants.json": "7dd299d41b5a80925cae61938947d0ad8cc17d6c4279230c0f6da701826355b2",
-    "tools/project/build_bom.py": "b6bb2fe0885d0e40d8f340b46adeadd5670708c07ad2468193df3b89d9e7e0f4",
+    "tools/project/build_bom.py": "afd4fa60ed0b6184b1d399cff0b4fed72ff12a4d8c18751d0e2e8310cb58c6e0",
     "tools/project/circuit_io.py": "0b3ea20d82c7cf36cc74226cfd0ec413ed975a317c1a85ec88b9c73592f72c83",
-    "tools/project/release.py": "970b00dcfdb4cf82f12335a5b432e8d63848a5efaabfd506fc6d1aa302a605a3",
+    "tools/project/release.py": "dbe0c928f3608120a3b2fc5e1a8fd5ce405cd09c91fcaaa76d468b77a2044219",
     "tools/project/release_bom.py": "426c7d0bd949c369803714823c514504c45e5893d1688e40c4b01e6f814c523f",
-    "tools/project/set_versions.py": "ab633e5bd78faf6b928c2469ac303aae43948249993af172e1322afcf97f4873",
+    "tools/project/release_routing.py": "2418c03a203bccb1ff85411d45d985687434538aa9a419853d1d88414b19fea3",
+    "tools/project/release_watchdog.py": "dd8877a2d80b0f793fe7eb9aa446c73c11af1aaca35cba5fae1fa7cb37dde0c8",
+    "tools/project/set_versions.py": "a131e3ef8b0ad2ec45ea80df0045d85d7ca03928fd72c2038e1ee6856bf2c7dc",
+    "tools/project/tests/test_release_routing.py": "6919319565873e1ce0db917eaca07979ef96cd11df56b3d3bf602bbfd69f7066",
     "tools/project/verify_circuit.py": "5243485bd74b6aa45fde5432697172f28d44f03e4815633fc3921e9c0d5c0b31",
     "v1/AGENTS.md": "a82493ac15572ce37799818e9b56f9d3ccbffad8b9de7ec3e45e44621acc29e8",
-    "v1/bom/COMPONENT_BOM.csv": "873fd62e09f9aab31581f4ba5c85f341739fd710aa8fa82aa5618c3ae345533b",
+    "v1/bom/COMPONENT_BOM.csv": "06beefbfcc0acdf1d20cb73439e86e35dbc57abdb23caf9fac5431995ba3411e",
     "v1/design/Meshcore_NaIon/3dmodels/Coilcraft_XGL4020.step": "b6bd76d01981e885ab7167550fa756113c7c8f41f9a80b5c0d8a5ae3be9c8e67",
     "v1/design/Meshcore_NaIon/3dmodels/Connfly_DS1027_2BBN1.step": "55eb4f228c1ac6c2cd0386ae04d6f0f8144c3b34d3c381d7d454a2b747f8c9d5",
     "v1/design/Meshcore_NaIon/3dmodels/CR2032_Cell.step": "2e61853937eaed4a26c043eb43a569b183f40fc3d1a451455ee6cdb7bc57140e",
@@ -104,12 +109,12 @@
     "v1/design/Meshcore_NaIon/3dmodels/TDK_B57861S_Vertical_Approx.step": "605a437a0adc4d4ea826ad05a57c8fddf7ad756bc49f4fd55659f5e829762dc2",
     "v1/design/Meshcore_NaIon/3dmodels/TI_DCT0008A.step": "5507e436c9a888714db3be0ead2e8a9dd78ebebcb8ebf748070695de62ec673e",
     "v1/design/Meshcore_NaIon/3dmodels/TPS63802_DLA0010A.step": "e5e3775caacbf170bd75cf228bb8f9e615edc705298a8c430399939a4b3fd667",
-    "v1/design/Meshcore_NaIon/asset_manifest.json": "dd8bdb4fceb97ee6c2605570af53af45df6152c3ea68daa1f6c7f9e58c87a290",
-    "v1/design/Meshcore_NaIon/BatteryMonitor.kicad_sch": "92094b566db2fd51b74fab50264822f6c5d12f13aeba8408ebff10f9176be97f",
-    "v1/design/Meshcore_NaIon/Converter.kicad_sch": "faee8ff9ab96f14f4d9ade43f98a6292aac93af571373d7b6955e240cc2a82bf",
+    "v1/design/Meshcore_NaIon/asset_manifest.json": "061b5ffc09e4ede8d79c8cf9c70750d5f22ee40bef9b31e108390d26c20a2f19",
+    "v1/design/Meshcore_NaIon/BatteryMonitor.kicad_sch": "03fb4e36a41b68acb1dc8b9466bdbe1c896351686e8eb31a9983e5176f22dbf6",
+    "v1/design/Meshcore_NaIon/Converter.kicad_sch": "48a67c396e97b43acff7240619e7ce4e2d24a885fb60ff327a724f0b8eba0a4e",
     "v1/design/Meshcore_NaIon/datasheets/LM393XK-Runic-datasheet.pdf": "deef619283f72ffca88edec89b63f7bb21b92f39e30a4d77501c68f83325ef71",
     "v1/design/Meshcore_NaIon/fp-lib-table": "929ebd8ad899d3a0c4231cffab5f806e51cf756a4f2dc32f538793e41bb6aac7",
-    "v1/design/Meshcore_NaIon/LTO_Balancer.kicad_sch": "ddf452b0280f65974e6c81263d2aebbc8b4c09b05a8066b9ad4c2a0783047d0e",
+    "v1/design/Meshcore_NaIon/LTO_Balancer.kicad_sch": "9e26054df8c36f4a0a1b13a87f405815b2b3d6395cec4588ee9cac08ed926850",
     "v1/design/Meshcore_NaIon/Meshcore.kicad_sym": "19d4253538c44e5035b8866fef46422965dbf2c815ba1079547e4142a655886c",
     "v1/design/Meshcore_NaIon/Meshcore.pretty/BatteryHolder_Keystone_1060_1x2032.kicad_mod": "844d3dc38ced93cd86a83cb283033c706b8422940354ad7e46c97b2b138256d5",
     "v1/design/Meshcore_NaIon/Meshcore.pretty/C_0603_1608Metric.kicad_mod": "b572d165cd408fc7f013191402e4b4032f46d5d5042c51f2c8e89db2f02a1e54",
@@ -153,27 +158,41 @@
     "v1/design/Meshcore_NaIon/Meshcore.pretty/TPS63802_DLA0010A.kicad_mod": "24d0f2becb9ec1c6b0840ecd46221e9e3a781b94c0cc926b18d09178c4b98952",
     "v1/design/Meshcore_NaIon/Meshcore.pretty/TSSOP-16_4.4x5mm_P0.65mm.kicad_mod": "68f45e1e9612bc827671c5b4516af9ae11d951fd3f467a15a4331eef60db3579",
     "v1/design/Meshcore_NaIon/Meshcore_NaIon.kicad_dru": "dc3ebf97ebfeeb355d848488f8dd48d4de0c803502f0ab75ace894ae875a5b73",
-    "v1/design/Meshcore_NaIon/Meshcore_NaIon.kicad_pcb": "b8d259e13b1fa1cd246f4ea07c4f85a01ab7223ca347c85803bb55b7460e7e43",
+    "v1/design/Meshcore_NaIon/Meshcore_NaIon.kicad_pcb": "b1f3fc0baf6ee688be2306a5ae98df3402eac52454768b09f6a6743ff283ff90",
     "v1/design/Meshcore_NaIon/Meshcore_NaIon.kicad_pro": "875da18af8e82cc2a15b76d5d1d224200dd3209ebcb9c54425a5c31355582997",
-    "v1/design/Meshcore_NaIon/Meshcore_NaIon.kicad_sch": "8fa7d69c083a36cd35d0280e4da816937d42e96a39fd965bd87c58886d60b856",
-    "v1/design/Meshcore_NaIon/model.json": "6d77c1b76a9f87da58e2c68dedf629be8c6dccb37ead00effb24e911d2993f3c",
-    "v1/design/Meshcore_NaIon/Modules.kicad_sch": "16474958a915c901d5228dd5cd353cab33974fe9888006dc64e508b02b4f1d4f",
-    "v1/design/Meshcore_NaIon/RTC_IO.kicad_sch": "0a3a16be35832852aa928153701061be3a05d810b97e0b87baf0ade397409087",
+    "v1/design/Meshcore_NaIon/Meshcore_NaIon.kicad_sch": "d1bc1a7df9bcd43dfd2b18a9e06dfb28aeb3cde1b6ecf71c21ac0a0f46697150",
+    "v1/design/Meshcore_NaIon/model.json": "459d3aeb2c1058dda34ccf77f4777dfeb5bc80da680c92f4a291ef62e88bb63e",
+    "v1/design/Meshcore_NaIon/Modules.kicad_sch": "6d34937fa9d0242b6442328e35393e953f0332ef7b0d90a7de725dde76ea713e",
+    "v1/design/Meshcore_NaIon/routing_review.json": "58532c923bd036628b8ff260963b49e3896fff2b84232eaeddd237bf1d8517a4",
+    "v1/design/Meshcore_NaIon/RTC_IO.kicad_sch": "8924e066b7229da7cb864d458abc5388ec26dd3134039f4b237f0207221c9834",
     "v1/design/Meshcore_NaIon/sym-lib-table": "de9c5f16b051d9120f3e3276ba4ff164cdfd3dbf03ff7e7c7aa164f605c4678d",
-    "v1/design/Meshcore_NaIon/Thermal.kicad_sch": "1fc71234377209669ed8daa2999e658c05e2879fed59222182e627410a41ae91",
-    "v1/design/Meshcore_NaIon/Watchdog.kicad_sch": "1fb364203c03e63a67c855c58284856f0d20c77be25ba979c2cf1f3228aa3961",
-    "v1/design/watchdog_reference/INTEGRATION_RU.txt": "800b2c37a3dad888b8ff26b08eab17338cb1da41355f5acf8da52c2d66d94ba9",
-    "v1/design/watchdog_reference/main.c": "6aae1df101c6970fc6ba2acd2c3b5997890ed22e2c62e27717cde22b482e0089",
-    "v1/design/watchdog_reference/Makefile": "323a4f289fc7baaf90bf8c31d5c8deadea852146df344e7389f1627a6d0ea433",
-    "v1/design/watchdog_reference/source_hashes.json": "c2de7611ed98a06bbbf01d2252a70642ff9160636d5d391a98ec6fd20c4a1ca3",
-    "v1/design/watchdog_reference/watchdog.hex": "8d38a4213ea91b9ad8d99638ac21ccfd80c2d75d24d1545856dba421195e5790",
-    "v1/docs/ASSEMBLY_RU.md": "739c21aa66e754f6932db0d724469a0b0e0bc782928e3c54f4a09edc5365f283",
+    "v1/design/Meshcore_NaIon/Thermal.kicad_sch": "2769e755687ae2a8d611176f57b3ddd5823785fcb76a25cbdfae6cf09bfe3494",
+    "v1/design/Meshcore_NaIon/Watchdog.kicad_sch": "07ba140588dc59b5adf1bf6cae320c8967161d48b328de416bd3f45466d1163d",
+    "v1/design/watchdog_reference/build.ps1": "d1e5803c48ba239d75332924d52c3489dc5e19391cd1047ab9179ce86ea61166",
+    "v1/design/watchdog_reference/INTEGRATION_RU.txt": "3561a93701e33d8367715b535fc789727cb866e12077bbf105cc09d37f3e85da",
+    "v1/design/watchdog_reference/LICENSE.md": "e66c269d4819aaab34b49ef5220c4ddab6756f21bb5180761a4eb8561f2b7bbd",
+    "v1/design/watchdog_reference/main.c": "0c0f57a739c4bf24668ffb39984ebda6414ff91f85c58bf115416285744566f8",
+    "v1/design/watchdog_reference/Makefile": "93f5776e2f76552c5dd94ef89edd210e4d29cce60c3cdf1d0f549b72c7ec35a7",
+    "v1/design/watchdog_reference/source_hashes.json": "78e4410b1386ec7de2881500709f8a3beb53628da181f528a3f54a39591d7ee5",
+    "v1/design/watchdog_reference/tests/include/avr/interrupt.h": "4dc3bc43c08a1a4cdd078d6e4796edd891db446dc99fae527f2f94b0142f6b46",
+    "v1/design/watchdog_reference/tests/include/avr/io.h": "f10cf62078112d6b6d31fcbd92b1f21f2f4780f26c39657698aa68d8a583041e",
+    "v1/design/watchdog_reference/tests/include/avr/sleep.h": "2536b1349e31ee7f3c53d8965b46fdd228925a935132c75300a4fc8ace57e70f",
+    "v1/design/watchdog_reference/tests/include/avr/wdt.h": "81c334792a70365ca5796b59fd061dba7d50bc143f032dfa8d652794a89de62c",
+    "v1/design/watchdog_reference/tests/README.md": "239533be8a19cbf370e6c167b8e9f8934bdb59c6dce5ad35fba2ff740e753667",
+    "v1/design/watchdog_reference/tests/run.ps1": "61bacc678dab1951e3b1550f26acee57ac3119f24ba70db61d40970770cbd44e",
+    "v1/design/watchdog_reference/tests/test_firmware.cpp": "8134fb6089879ff363ebabf8962412366ea5aedc4434742d0a6078baf79ded03",
+    "v1/design/watchdog_reference/THIRD_PARTY_NOTICES.md": "ba902b91cc42baacd18386125c6f26ffa9951c5dc475d254dca4ba9df6b65096",
+    "v1/design/watchdog_reference/verification/integration_checks.json": "5e3ecd8064c6f48c132979c1f57dfb7d419f4fb9692e3b1f1ad44938f6b7ea8e",
+    "v1/design/watchdog_reference/verification/software_checks.json": "c02723125be4484f4ba61636f63216670ba3bdc6591ff2ea1c4956add104232f",
+    "v1/design/watchdog_reference/VERSION": "80aabb827ab4678bd7b1a0a681191b1899eefe630accdcb1c265f70f73132ed4",
+    "v1/design/watchdog_reference/watchdog.hex": "f3309241f54871913d068f74021697b4a4a3982eab620c1d9da5364b210b788b",
+    "v1/docs/ASSEMBLY_RU.md": "76dafa1affce2074a0aa1696470e9a9a56c83cbf0c3f5ca127fa2c0810d85dba",
     "v1/LICENSE.md": "f6ca656161874be5257687a0e75925ccd3cc10ec458fdd352ee7e075d87328ab",
     "v1/LICENSES/CC-BY-NC-SA-4.0.txt": "e66c269d4819aaab34b49ef5220c4ddab6756f21bb5180761a4eb8561f2b7bbd",
     "v1/LICENSES/CC-BY-SA-4.0.txt": "28a9529c7d0bb4dc51f4bf5c116a3d16ef247a052f7591466768ddf563fd1cf5",
     "v1/LICENSES/CERN-OHL-P-2.0.txt": "6e471d647db50527d0c75ee5f1a55a74012ab177c73282bef0bdc7f6562b7ded",
     "v1/LICENSES/KiCad-Libraries-LICENSE.md": "285b027a721577d0bc0198f36e948c6c282ddaa4b58fef8ed826749576eb0aef",
-    "v1/README.md": "0fdf388bddd43ebeca3e51566d4f41c506c0682700c36c9f3f60ff114565d625",
+    "v1/README.md": "db15230c9e377c0696376ccf91e4218cf3fcf7365aab0cf89e57a5a17e4be141",
     "v1/THIRD_PARTY_NOTICES.md": "244f80642b97c8f105d11c10c5a2c97f79fefe13c78d3719506b51ecf62d85eb"
   },
   "local_dependencies": {
@@ -347,36 +366,44 @@
   ],
   "files": {
     "AGENTS.md": {
-      "sha256": "2d0f6b942ff96242d936a3e4004afaf25d9fca2b472147e69b0f66e76e7a64d6",
-      "bytes": 2976
+      "sha256": "9aa44b770ff41cbd7cbc6c04168ec98eea216eba2cbff853c00ad0de58442ee5",
+      "bytes": 4128
     },
     "RELEASE_README_RU.txt": {
-      "sha256": "996379007aded4993612a9dd1473d3b0f8bd36f4ac6a25709058e692177c3f3f",
-      "bytes": 628
+      "sha256": "96bb071c9238d252937444ed63eaa3f28b218da41b2eac68df336fb9c4124c83",
+      "bytes": 1037
     },
     "docs/ASSEMBLY_COMMON_RU.md": {
-      "sha256": "d902daa023a1132a895f1552e9e43bf933abaaff56710ce6d15ca9525deed6fb",
-      "bytes": 4656
+      "sha256": "effb5af7461f1dd962399de241b1184103fe5a532b4ca6455a59d2ac0b5c7492",
+      "bytes": 5989
     },
     "docs/LIMITATIONS_RU.md": {
-      "sha256": "ef4de652808e6e0fdac56d2b07b9dfc20d5198fd1592ce24bd5e5dfc60148dec",
-      "bytes": 17255
+      "sha256": "90622e056277989cd73d6c732595303509151f848c82b282cbfbd578907ac819",
+      "bytes": 18581
+    },
+    "docs/ROUTING_RESULT_RU.md": {
+      "sha256": "34f854b7e00726629571563262d210225aaee520ff36ff034f3c94f34678fca0",
+      "bytes": 11880
+    },
+    "docs/ROUTING_RULES_RU.md": {
+      "sha256": "26f038a39374ff1cfc7b3dcae02dad225e189007ad149e3b87bf90618bc5e0b9",
+      "bytes": 7751
     },
     "docs/WORKFLOW_RU.md": {
-      "sha256": "e7a366600ce19d264681235039a6b92ecdc93a66e6e698fd2997502a6917d05c",
-      "bytes": 4612
+      "sha256": "3030b01a7a8f6733a675908b460423dc524f26752e22569eef33001ff4d4cd51",
+      "bytes": 9029
     },
     "project.json": {
-      "sha256": "714446341affcf70ce7cfbd803a84add391c24ed39256e4e0b5f1a3b1d033651",
-      "bytes": 964
+      "sha256": "aebfdf53846d74c678074cd9c3eebd49319d32b05ca9a9b92e5eda4d86ef1ad1",
+      "bytes": 1037
     },
     "shared/README.md": {
-      "sha256": "6cfd4d981e3d4ee1dd5bbe2610f9b81c31194ede6a1ab6746eba519d01959dca",
-      "bytes": 7669
+      "sha256": "2196a1344078aa9e17707691797c4e7a3dfe42b9b679e610102e00cb7c85c06e",
+      "bytes": 8450
     },
     "shared/output/pdf/MeshRepeater_schematic.pdf": {
-      "sha256": "c69ed4ec8ed4f7b7dd2dd26c9441a8e3ddda730009b0b3489c2aa490167d72ea",
-      "bytes": 877404
+      "sha256": "0cf404411e42758094393ab4580301cb6d2cec9c0f64745ec62ff2a4c2a25883",
+      "bytes": 877811
     },
     "shared/schematic/3dmodels/CR2032_Cell.step": {
       "sha256": "2e61853937eaed4a26c043eb43a569b183f40fc3d1a451455ee6cdb7bc57140e",
@@ -435,24 +462,24 @@
       "bytes": 189766
     },
     "shared/schematic/BatteryMonitor.kicad_sch": {
-      "sha256": "8ab1ee3266a6498d10c671091d2f429af487ea8c66a62c0fba659e4777534a6f",
-      "bytes": 122109
+      "sha256": "eb90deec12ed359cc50679f693b724431c14602457c96b8ee76d317395f98b59",
+      "bytes": 122108
     },
     "shared/schematic/Converter.kicad_sch": {
-      "sha256": "eb0fd07214710e0b86c7e83fd2ee8d1ded3cc3398c172381903e53c59c6b5085",
-      "bytes": 222694
+      "sha256": "6888d65cdb62f39a8c71bba32b1eea65466644841b144b053735c2b190232f2b",
+      "bytes": 222693
     },
     "shared/schematic/LTO_Balancer.kicad_sch": {
-      "sha256": "d93aa9f4db77637f6ebd28608af3b0797585c5cb4e7bd81e215c847e75aa2913",
-      "bytes": 143292
+      "sha256": "c998f899383e88ce9c31eabfb4f6e53a6e78a89e4a1a8fa580992f1905ac8e06",
+      "bytes": 143291
     },
     "shared/schematic/MeshRepeater.kicad_pro": {
       "sha256": "803dbee50a78b732c6a49bb499e3ff0db99058fe5e3bbadee11c2f4d1a93c8e7",
       "bytes": 7958
     },
     "shared/schematic/MeshRepeater.kicad_sch": {
-      "sha256": "cb56886f82e853e4d47d4977345bcc5e2b5c5df3309de274032d443e8de4b577",
-      "bytes": 242156
+      "sha256": "459d53babd93ef772f83e896f954e4c19f6010535a4bc6c0d51eefe816a99697",
+      "bytes": 242155
     },
     "shared/schematic/Meshcore.kicad_sym": {
       "sha256": "19d4253538c44e5035b8866fef46422965dbf2c815ba1079547e4142a655886c",
@@ -619,20 +646,20 @@
       "bytes": 1854
     },
     "shared/schematic/Modules.kicad_sch": {
-      "sha256": "62ecfe92eab7be44fb763b80930b71476482b9784c858fa4dfb1a489bbc1dac8",
-      "bytes": 204775
+      "sha256": "3a8b31d51766c15edd619c67f715a38caa65eb57334132246e9f633760409c32",
+      "bytes": 204774
     },
     "shared/schematic/RTC_IO.kicad_sch": {
-      "sha256": "04b8044d87eeb693edc46364f4f3fa118789667f7e7d2415f6178d5911b0561b",
-      "bytes": 186189
+      "sha256": "ef10bbca80898bcb3812ce8c589589c6491aa22ee39031121b58e315978b325d",
+      "bytes": 186188
     },
     "shared/schematic/Thermal.kicad_sch": {
-      "sha256": "9eda8008be8812a67102357a367091e6bdbc24575dc1c8443762302789e6fbba",
-      "bytes": 199699
+      "sha256": "b9ae6de8b60e7457153c6a2c036cc3cdb45ed527d9de97670b9ba2e42abc42db",
+      "bytes": 199698
     },
     "shared/schematic/Watchdog.kicad_sch": {
-      "sha256": "d189c82dedc6234e69f1f5aeb25687501de7b32aa549320d64a50f9b9e9572d7",
-      "bytes": 128206
+      "sha256": "536af3553192cb2f3e2a2baa3d37921be9614fd6474b0de7d7b689ce2d85c1c4",
+      "bytes": 128276
     },
     "shared/schematic/datasheets/LM393XK-Runic-datasheet.pdf": {
       "sha256": "deef619283f72ffca88edec89b63f7bb21b92f39e30a4d77501c68f83325ef71",
@@ -651,28 +678,40 @@
       "bytes": 29435
     },
     "shared/verification/circuit.json": {
-      "sha256": "5adae309e2e3ebdc1e0a83cb2c70cac4bab02d3c30d67c78e6a5cc7343409277",
+      "sha256": "04b0daa36f9ee96ee353913c25d4ff32030403e122cf2c0fd63aa3edc63864a9",
       "bytes": 16110
     },
     "tools/project/build_bom.py": {
-      "sha256": "b6bb2fe0885d0e40d8f340b46adeadd5670708c07ad2468193df3b89d9e7e0f4",
-      "bytes": 3560
+      "sha256": "afd4fa60ed0b6184b1d399cff0b4fed72ff12a4d8c18751d0e2e8310cb58c6e0",
+      "bytes": 3700
     },
     "tools/project/circuit_io.py": {
       "sha256": "0b3ea20d82c7cf36cc74226cfd0ec413ed975a317c1a85ec88b9c73592f72c83",
       "bytes": 3424
     },
     "tools/project/release.py": {
-      "sha256": "970b00dcfdb4cf82f12335a5b432e8d63848a5efaabfd506fc6d1aa302a605a3",
-      "bytes": 29575
+      "sha256": "dbe0c928f3608120a3b2fc5e1a8fd5ce405cd09c91fcaaa76d468b77a2044219",
+      "bytes": 31368
     },
     "tools/project/release_bom.py": {
       "sha256": "426c7d0bd949c369803714823c514504c45e5893d1688e40c4b01e6f814c523f",
       "bytes": 7519
     },
+    "tools/project/release_routing.py": {
+      "sha256": "2418c03a203bccb1ff85411d45d985687434538aa9a419853d1d88414b19fea3",
+      "bytes": 11916
+    },
+    "tools/project/release_watchdog.py": {
+      "sha256": "dd8877a2d80b0f793fe7eb9aa446c73c11af1aaca35cba5fae1fa7cb37dde0c8",
+      "bytes": 4651
+    },
     "tools/project/set_versions.py": {
-      "sha256": "ab633e5bd78faf6b928c2469ac303aae43948249993af172e1322afcf97f4873",
-      "bytes": 4531
+      "sha256": "a131e3ef8b0ad2ec45ea80df0045d85d7ca03928fd72c2038e1ee6856bf2c7dc",
+      "bytes": 7115
+    },
+    "tools/project/tests/test_release_routing.py": {
+      "sha256": "6919319565873e1ce0db917eaca07979ef96cd11df56b3d3bf602bbfd69f7066",
+      "bytes": 15167
     },
     "tools/project/verify_circuit.py": {
       "sha256": "5243485bd74b6aa45fde5432697172f28d44f03e4815633fc3921e9c0d5c0b31",
@@ -703,56 +742,64 @@
       "bytes": 2105
     },
     "v1/README.md": {
-      "sha256": "0fdf388bddd43ebeca3e51566d4f41c506c0682700c36c9f3f60ff114565d625",
-      "bytes": 995
+      "sha256": "db15230c9e377c0696376ccf91e4218cf3fcf7365aab0cf89e57a5a17e4be141",
+      "bytes": 1768
     },
     "v1/THIRD_PARTY_NOTICES.md": {
       "sha256": "244f80642b97c8f105d11c10c5a2c97f79fefe13c78d3719506b51ecf62d85eb",
       "bytes": 11249
     },
     "v1/audit/current/MAIN/drc.json": {
-      "sha256": "7cf530808a481393d4d5b446f75e305121264fa3c905ff6d25da557815cf614a",
+      "sha256": "79270f9bb13afcfe5a7236fbc3e287f2c197b3001bf66d5fac0b7fd204f4c574",
       "bytes": 410
     },
     "v1/audit/current/MAIN/erc.json": {
-      "sha256": "7a6d3df238f7de6edc0dd7bf00305081d0668ab43a1c0a63f4d97a3fa32468a0",
+      "sha256": "bac59094199a475d8ce02fe3b1fac26bfd9aa3113cd63f1c9ef6990f25e9b3e9",
       "bytes": 1870
     },
     "v1/audit/current/MAIN/netlist.xml": {
-      "sha256": "e8268e0ae918e8b4d2306f1fc1094238b0c0497d809eb2bfc2eda7e69b92982b",
-      "bytes": 513349
+      "sha256": "4d6fdda7c6f9df9c7240d889f90c408c2b1afe4db2913498557bc9471821a960",
+      "bytes": 513491
     },
     "v1/audit/current/bom.json": {
       "sha256": "9198917a641deef499a6947c41e428d55e887c49edd3d540feab00c82c17be8b",
       "bytes": 455
     },
     "v1/audit/current/checks.json": {
-      "sha256": "9b1f941f77a4fbd4f62af9819c81a425209d8e8273d70e428f10180d71e7c5af",
-      "bytes": 26316
+      "sha256": "9838cd2fb1c7008dff89c6af3607595568eb6653374166fd55795e1e7465d85f",
+      "bytes": 29064
     },
     "v1/audit/current/circuit/COMMON.xml": {
-      "sha256": "2953447d2b5bc343a9864ac87bc9c35f618d2640ee8bb13c7c981e4b06e2ea67",
-      "bytes": 503871
+      "sha256": "a9260185d8357723b7bfcbcbdb72ad2cad94676d1e5b240ceb59a2ba722059df",
+      "bytes": 504013
     },
     "v1/audit/current/circuit/COMMON_erc.json": {
-      "sha256": "2420cd00283a769572152a8ccd2f9992c5616e0417b17dce8732f9b20c1879a6",
+      "sha256": "9d1127c004ed2ba18f3bbd8ac23df4199e25a0fa500b6a08992b56f97da41277",
       "bytes": 1868
     },
     "v1/audit/current/circuit/circuit.json": {
-      "sha256": "5adae309e2e3ebdc1e0a83cb2c70cac4bab02d3c30d67c78e6a5cc7343409277",
+      "sha256": "04b0daa36f9ee96ee353913c25d4ff32030403e122cf2c0fd63aa3edc63864a9",
       "bytes": 16110
     },
     "v1/audit/current/circuit/v1_MAIN.xml": {
-      "sha256": "faed2d9e0c2dd90d0f2dd24acba154f467b462dbfba88e9b28231a024aa112ba",
-      "bytes": 513349
+      "sha256": "700ceb1d8f88deeaebfe143132ca7c53bfbb09f80852624e55c7e66c210f18a5",
+      "bytes": 513491
     },
     "v1/audit/current/exports.json": {
-      "sha256": "4199c76661681035c34c635e293a7dfde01cc8b377f8edcc0d979181ec86dbc0",
-      "bytes": 24806
+      "sha256": "fa12a8f12d04ab25cd4c846e1c0135f6584fe577a483cfaad3781337d3f48332",
+      "bytes": 27095
+    },
+    "v1/audit/current/routing.json": {
+      "sha256": "753a8b14839dc0c1a4cd070fb9e41596bd407d337ae0e654050ec67b9815c5e7",
+      "bytes": 4298
+    },
+    "v1/audit/current/watchdog.json": {
+      "sha256": "36487aea47d2301fa18439542c8b8e994d392a96367eb1fa2dc2757535b0e9e6",
+      "bytes": 567
     },
     "v1/bom/COMPONENT_BOM.csv": {
-      "sha256": "873fd62e09f9aab31581f4ba5c85f341739fd710aa8fa82aa5618c3ae345533b",
-      "bytes": 70648
+      "sha256": "06beefbfcc0acdf1d20cb73439e86e35dbc57abdb23caf9fac5431995ba3411e",
+      "bytes": 70719
     },
     "v1/design/Meshcore_NaIon/3dmodels/CR2032_Cell.step": {
       "sha256": "2e61853937eaed4a26c043eb43a569b183f40fc3d1a451455ee6cdb7bc57140e",
@@ -815,15 +862,15 @@
       "bytes": 189766
     },
     "v1/design/Meshcore_NaIon/BatteryMonitor.kicad_sch": {
-      "sha256": "92094b566db2fd51b74fab50264822f6c5d12f13aeba8408ebff10f9176be97f",
+      "sha256": "03fb4e36a41b68acb1dc8b9466bdbe1c896351686e8eb31a9983e5176f22dbf6",
       "bytes": 122107
     },
     "v1/design/Meshcore_NaIon/Converter.kicad_sch": {
-      "sha256": "faee8ff9ab96f14f4d9ade43f98a6292aac93af571373d7b6955e240cc2a82bf",
+      "sha256": "48a67c396e97b43acff7240619e7ce4e2d24a885fb60ff327a724f0b8eba0a4e",
       "bytes": 222756
     },
     "v1/design/Meshcore_NaIon/LTO_Balancer.kicad_sch": {
-      "sha256": "ddf452b0280f65974e6c81263d2aebbc8b4c09b05a8066b9ad4c2a0783047d0e",
+      "sha256": "9e26054df8c36f4a0a1b13a87f405815b2b3d6395cec4588ee9cac08ed926850",
       "bytes": 143300
     },
     "v1/design/Meshcore_NaIon/Meshcore.kicad_sym": {
@@ -999,35 +1046,35 @@
       "bytes": 359
     },
     "v1/design/Meshcore_NaIon/Meshcore_NaIon.kicad_pcb": {
-      "sha256": "b8d259e13b1fa1cd246f4ea07c4f85a01ab7223ca347c85803bb55b7460e7e43",
-      "bytes": 2237872
+      "sha256": "b1f3fc0baf6ee688be2306a5ae98df3402eac52454768b09f6a6743ff283ff90",
+      "bytes": 2175742
     },
     "v1/design/Meshcore_NaIon/Meshcore_NaIon.kicad_pro": {
       "sha256": "875da18af8e82cc2a15b76d5d1d224200dd3209ebcb9c54425a5c31355582997",
       "bytes": 17312
     },
     "v1/design/Meshcore_NaIon/Meshcore_NaIon.kicad_sch": {
-      "sha256": "8fa7d69c083a36cd35d0280e4da816937d42e96a39fd965bd87c58886d60b856",
+      "sha256": "d1bc1a7df9bcd43dfd2b18a9e06dfb28aeb3cde1b6ecf71c21ac0a0f46697150",
       "bytes": 242246
     },
     "v1/design/Meshcore_NaIon/Modules.kicad_sch": {
-      "sha256": "16474958a915c901d5228dd5cd353cab33974fe9888006dc64e508b02b4f1d4f",
+      "sha256": "6d34937fa9d0242b6442328e35393e953f0332ef7b0d90a7de725dde76ea713e",
       "bytes": 204821
     },
     "v1/design/Meshcore_NaIon/RTC_IO.kicad_sch": {
-      "sha256": "0a3a16be35832852aa928153701061be3a05d810b97e0b87baf0ade397409087",
+      "sha256": "8924e066b7229da7cb864d458abc5388ec26dd3134039f4b237f0207221c9834",
       "bytes": 198197
     },
     "v1/design/Meshcore_NaIon/Thermal.kicad_sch": {
-      "sha256": "1fc71234377209669ed8daa2999e658c05e2879fed59222182e627410a41ae91",
+      "sha256": "2769e755687ae2a8d611176f57b3ddd5823785fcb76a25cbdfae6cf09bfe3494",
       "bytes": 199743
     },
     "v1/design/Meshcore_NaIon/Watchdog.kicad_sch": {
-      "sha256": "1fb364203c03e63a67c855c58284856f0d20c77be25ba979c2cf1f3228aa3961",
-      "bytes": 128206
+      "sha256": "07ba140588dc59b5adf1bf6cae320c8967161d48b328de416bd3f45466d1163d",
+      "bytes": 128277
     },
     "v1/design/Meshcore_NaIon/asset_manifest.json": {
-      "sha256": "dd8bdb4fceb97ee6c2605570af53af45df6152c3ea68daa1f6c7f9e58c87a290",
+      "sha256": "061b5ffc09e4ede8d79c8cf9c70750d5f22ee40bef9b31e108390d26c20a2f19",
       "bytes": 96204
     },
     "v1/design/Meshcore_NaIon/datasheets/LM393XK-Runic-datasheet.pdf": {
@@ -1039,52 +1086,108 @@
       "bytes": 159
     },
     "v1/design/Meshcore_NaIon/model.json": {
-      "sha256": "6d77c1b76a9f87da58e2c68dedf629be8c6dccb37ead00effb24e911d2993f3c",
-      "bytes": 231835
+      "sha256": "459d3aeb2c1058dda34ccf77f4777dfeb5bc80da680c92f4a291ef62e88bb63e",
+      "bytes": 231906
+    },
+    "v1/design/Meshcore_NaIon/routing_review.json": {
+      "sha256": "58532c923bd036628b8ff260963b49e3896fff2b84232eaeddd237bf1d8517a4",
+      "bytes": 13955
     },
     "v1/design/Meshcore_NaIon/sym-lib-table": {
       "sha256": "de9c5f16b051d9120f3e3276ba4ff164cdfd3dbf03ff7e7c7aa164f605c4678d",
       "bytes": 179
     },
     "v1/design/watchdog_reference/INTEGRATION_RU.txt": {
-      "sha256": "800b2c37a3dad888b8ff26b08eab17338cb1da41355f5acf8da52c2d66d94ba9",
-      "bytes": 5700
+      "sha256": "3561a93701e33d8367715b535fc789727cb866e12077bbf105cc09d37f3e85da",
+      "bytes": 8603
+    },
+    "v1/design/watchdog_reference/LICENSE.md": {
+      "sha256": "e66c269d4819aaab34b49ef5220c4ddab6756f21bb5180761a4eb8561f2b7bbd",
+      "bytes": 20850
     },
     "v1/design/watchdog_reference/Makefile": {
-      "sha256": "323a4f289fc7baaf90bf8c31d5c8deadea852146df344e7389f1627a6d0ea433",
-      "bytes": 1395
+      "sha256": "93f5776e2f76552c5dd94ef89edd210e4d29cce60c3cdf1d0f549b72c7ec35a7",
+      "bytes": 1612
+    },
+    "v1/design/watchdog_reference/THIRD_PARTY_NOTICES.md": {
+      "sha256": "ba902b91cc42baacd18386125c6f26ffa9951c5dc475d254dca4ba9df6b65096",
+      "bytes": 797
+    },
+    "v1/design/watchdog_reference/VERSION": {
+      "sha256": "80aabb827ab4678bd7b1a0a681191b1899eefe630accdcb1c265f70f73132ed4",
+      "bytes": 7
+    },
+    "v1/design/watchdog_reference/build.ps1": {
+      "sha256": "d1e5803c48ba239d75332924d52c3489dc5e19391cd1047ab9179ce86ea61166",
+      "bytes": 2673
     },
     "v1/design/watchdog_reference/main.c": {
-      "sha256": "6aae1df101c6970fc6ba2acd2c3b5997890ed22e2c62e27717cde22b482e0089",
-      "bytes": 4049
+      "sha256": "0c0f57a739c4bf24668ffb39984ebda6414ff91f85c58bf115416285744566f8",
+      "bytes": 5840
     },
     "v1/design/watchdog_reference/source_hashes.json": {
-      "sha256": "c2de7611ed98a06bbbf01d2252a70642ff9160636d5d391a98ec6fd20c4a1ca3",
-      "bytes": 443
+      "sha256": "78e4410b1386ec7de2881500709f8a3beb53628da181f528a3f54a39591d7ee5",
+      "bytes": 5719
+    },
+    "v1/design/watchdog_reference/tests/README.md": {
+      "sha256": "239533be8a19cbf370e6c167b8e9f8934bdb59c6dce5ad35fba2ff740e753667",
+      "bytes": 1643
+    },
+    "v1/design/watchdog_reference/tests/include/avr/interrupt.h": {
+      "sha256": "4dc3bc43c08a1a4cdd078d6e4796edd891db446dc99fae527f2f94b0142f6b46",
+      "bytes": 137
+    },
+    "v1/design/watchdog_reference/tests/include/avr/io.h": {
+      "sha256": "f10cf62078112d6b6d31fcbd92b1f21f2f4780f26c39657698aa68d8a583041e",
+      "bytes": 1096
+    },
+    "v1/design/watchdog_reference/tests/include/avr/sleep.h": {
+      "sha256": "2536b1349e31ee7f3c53d8965b46fdd228925a935132c75300a4fc8ace57e70f",
+      "bytes": 222
+    },
+    "v1/design/watchdog_reference/tests/include/avr/wdt.h": {
+      "sha256": "81c334792a70365ca5796b59fd061dba7d50bc143f032dfa8d652794a89de62c",
+      "bytes": 90
+    },
+    "v1/design/watchdog_reference/tests/run.ps1": {
+      "sha256": "61bacc678dab1951e3b1550f26acee57ac3119f24ba70db61d40970770cbd44e",
+      "bytes": 1068
+    },
+    "v1/design/watchdog_reference/tests/test_firmware.cpp": {
+      "sha256": "8134fb6089879ff363ebabf8962412366ea5aedc4434742d0a6078baf79ded03",
+      "bytes": 5773
+    },
+    "v1/design/watchdog_reference/verification/integration_checks.json": {
+      "sha256": "5e3ecd8064c6f48c132979c1f57dfb7d419f4fb9692e3b1f1ad44938f6b7ea8e",
+      "bytes": 3958
+    },
+    "v1/design/watchdog_reference/verification/software_checks.json": {
+      "sha256": "c02723125be4484f4ba61636f63216670ba3bdc6591ff2ea1c4956add104232f",
+      "bytes": 653
     },
     "v1/design/watchdog_reference/watchdog.hex": {
-      "sha256": "8d38a4213ea91b9ad8d99638ac21ccfd80c2d75d24d1545856dba421195e5790",
-      "bytes": 1163
+      "sha256": "f3309241f54871913d068f74021697b4a4a3982eab620c1d9da5364b210b788b",
+      "bytes": 1523
     },
     "v1/docs/ASSEMBLY_RU.md": {
-      "sha256": "739c21aa66e754f6932db0d724469a0b0e0bc782928e3c54f4a09edc5365f283",
-      "bytes": 1374
+      "sha256": "76dafa1affce2074a0aa1696470e9a9a56c83cbf0c3f5ca127fa2c0810d85dba",
+      "bytes": 1965
     },
     "v1/output/current/MAIN/MAIN_back.svg": {
-      "sha256": "740cbc80a11ffabfd200e8bde352147a4717f1f1b521aae5ecbcd293dd509339",
-      "bytes": 607355
+      "sha256": "cda2712fee2422ca67812fd61ac282a7a5f5de4a90e879a45f43edc9654ebf76",
+      "bytes": 588993
     },
     "v1/output/current/MAIN/MAIN_front.svg": {
-      "sha256": "b4cb17570b670b26de450e25731b4ef9f00672a3d241e5776beb0188bfe18aa8",
-      "bytes": 1087457
+      "sha256": "239f2ed029fa4ca0b7f1af72a824787cafbd2b871ed20031ac4b26983660ebed",
+      "bytes": 1057868
     },
     "v1/output/current/MAIN/MAIN_schematic.pdf": {
-      "sha256": "f56b5e4437713daf27ff43a7cb2598da65639af5d969b82fb0e91e6e966b0958",
-      "bytes": 878348
+      "sha256": "865c3d4e092a1d06d84cc6faa9864b70c550679a2859ae0138899a45ba94b836",
+      "bytes": 878753
     },
     "v1/output/current/shared_schematic.pdf": {
-      "sha256": "c69ed4ec8ed4f7b7dd2dd26c9441a8e3ddda730009b0b3489c2aa490167d72ea",
-      "bytes": 877404
+      "sha256": "0cf404411e42758094393ab4580301cb6d2cec9c0f64745ec62ff2a4c2a25883",
+      "bytes": 877811
     }
   },
   "note": "Manifest excludes its own recursive checksum. ZIP checksum is provided separately."

@@ -1,0 +1,21 @@
+{
+  "status": "PASS",
+  "date": "2026-10-29",
+  "main_c_sha256": "0c0f57a739c4bf24668ffb39984ebda6414ff91f85c58bf115416285744566f8",
+  "hex_sha256": "f3309241f54871913d068f74021697b4a4a3982eab620c1d9da5364b210b788b",
+  "avr_compiler": "avr-gcc 7.3.0-atmel3.6.1-arduino7",
+  "flash_bytes": 534,
+  "sram_bytes": 5,
+  "fresh_rebuild_hex_matches": true,
+  "host_tests": {
+    "passed": 19,
+    "failed": 0,
+    "compiler": "Zig 0.13.0 C++17"
+  },
+  "wdt_timed_write_sequence": "OUT WDTCR at 0x3A; ORI at 0x3C; OUT at 0x3E; within four CPU cycles",
+  "fuses": {
+    "LFUSE": "0x73",
+    "HFUSE": "0xFB"
+  },
+  "hardware_tested": false
+}

@@ -1,7 +1,7 @@
 {
   "project": "Meshcore_NaIon",
-  "revision": "v1.22",
-  "schematic_revision": "v1.22",
+  "revision": "v1.25",
+  "schematic_revision": "v1.25",
   "schematic_date": "2026-10-24",
   "board": {
     "width": 90,
@@ -2783,7 +2783,7 @@
       "rotation": 180.0,
       "mpn": "ATTINY13A-SSU",
       "lcsc": "",
-      "note": "User project watchdog/main.c: PB3 rising-edge heartbeat, PB0 open-drain reset. 1350 WDT ticks (~3h) then1s reset; source firmware unchanged. Danomsk S4.6 approved substitution. Совпадает точный MPN; в наличии две детали.",
+      "note": "Watchdog v1.00: PB3 activity input, PB0 open-drain reset; full WDT restart, boundary-edge handling, stuck-HIGH timeout. 1350 WDT periods (typ. ~3.5h at 3.3V), one nominal 1s reset period; LFUSE=0x73, HFUSE=0xFB. Danomsk S4.6 approved substitution. Совпадает точный MPN; в наличии две детали.",
       "dnp": false,
       "group": "watchdog",
       "vendor": "Danomsk",
@@ -5666,7 +5666,7 @@
     "GPIO_preserved": true,
     "new_placement_owned_by_routing": true
   },
-  "board_revision": "v1.22",
+  "board_revision": "v1.25",
   "board_date": "2026-10-24",
   "manual_routing_review": {
     "revision": "S4.21",

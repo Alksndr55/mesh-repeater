@@ -2,14 +2,14 @@
 <export version="E">
   <design>
     <source>C:\Users\Alksndr\Desktop\codex\Meshcore\v1\design\Meshcore_NaIon\Meshcore_NaIon.kicad_sch</source>
-    <date>2026-10-24T20:20:42</date>
-    <tool>Eeschema 10.0.6</tool>
+    <date>2026-10-30T23:19:08</date>
+    <tool>Eeschema 10.0.7</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
         <title>CN3722 / зарядка Na-ion и LTO</title>
         <company/>
-        <rev>v1.22</rev>
-        <date>2026-10-24</date>
+        <rev>v1.25</rev>
+        <date>2026-10-30</date>
         <source>Meshcore_NaIon.kicad_sch</source>
         <comment number="1" value="Электрическая принципиальная; прототип"/>
         <comment number="2" value=""/>
@@ -26,8 +26,8 @@
       <title_block>
         <title>TPS63802 / питание и фильтр</title>
         <company/>
-        <rev>v1.22</rev>
-        <date>2026-10-24</date>
+        <rev>v1.25</rev>
+        <date>2026-10-30</date>
         <source>Converter.kicad_sch</source>
         <comment number="1" value="Электрическая принципиальная; прототип"/>
         <comment number="2" value=""/>
@@ -44,8 +44,8 @@
       <title_block>
         <title>Nice!Nano / HT-RA62</title>
         <company/>
-        <rev>v1.22</rev>
-        <date>2026-10-24</date>
+        <rev>v1.25</rev>
+        <date>2026-10-30</date>
         <source>Modules.kicad_sch</source>
         <comment number="1" value="Электрическая принципиальная; прототип"/>
         <comment number="2" value=""/>
@@ -62,8 +62,8 @@
       <title_block>
         <title>DS3231M / разъёмы</title>
         <company/>
-        <rev>v1.22</rev>
-        <date>2026-10-24</date>
+        <rev>v1.25</rev>
+        <date>2026-10-30</date>
         <source>RTC_IO.kicad_sch</source>
         <comment number="1" value="Электрическая принципиальная; прототип"/>
         <comment number="2" value=""/>
@@ -80,8 +80,8 @@
       <title_block>
         <title>ATtiny13A / watchdog</title>
         <company/>
-        <rev>v1.22</rev>
-        <date>2026-10-24</date>
+        <rev>v1.25</rev>
+        <date>2026-10-30</date>
         <source>Watchdog.kicad_sch</source>
         <comment number="1" value="Электрическая принципиальная; прототип"/>
         <comment number="2" value=""/>
@@ -98,8 +98,8 @@
       <title_block>
         <title>LMV431A / LTO 2S опция</title>
         <company/>
-        <rev>v1.22</rev>
-        <date>2026-10-24</date>
+        <rev>v1.25</rev>
+        <date>2026-10-30</date>
         <source>LTO_Balancer.kicad_sch</source>
         <comment number="1" value="Электрическая принципиальная; прототип"/>
         <comment number="2" value=""/>
@@ -116,8 +116,8 @@
       <title_block>
         <title>LM393XK / холодный заряд Na-ion</title>
         <company/>
-        <rev>v1.22</rev>
-        <date>2026-10-24</date>
+        <rev>v1.25</rev>
+        <date>2026-10-30</date>
         <source>Thermal.kicad_sch</source>
         <comment number="1" value="Электрическая принципиальная; прототип"/>
         <comment number="2" value=""/>
@@ -134,8 +134,8 @@
       <title_block>
         <title>INA219 / батарея и ток</title>
         <company/>
-        <rev>v1.22</rev>
-        <date>2026-10-24</date>
+        <rev>v1.25</rev>
+        <date>2026-10-30</date>
         <source>BatteryMonitor.kicad_sch</source>
         <comment number="1" value="Электрическая принципиальная; прототип"/>
         <comment number="2" value=""/>
@@ -6118,7 +6118,7 @@ LTO:49.9k</field>
     <comp ref="U6">
       <value>ATtiny13A-SSU</value>
       <footprint>Meshcore:SOIC-8_3.9x4.9mm_P1.27mm</footprint>
-      <description>User project watchdog/main.c: PB3 rising-edge heartbeat, PB0 open-drain reset. 1350 WDT ticks (~3h) then1s reset; source firmware unchanged. Danomsk S4.6 approved substitution. Совпадает точный MPN; в наличии две детали.</description>
+      <description>Watchdog v1.00: PB3 activity input, PB0 open-drain reset; full WDT restart, boundary-edge handling, stuck-HIGH timeout. 1350 WDT periods (typ. ~3.5h at 3.3V), one nominal 1s reset period; LFUSE=0x73, HFUSE=0xFB. Danomsk S4.6 approved substitution. Совпадает точный MPN; в наличии две детали.</description>
       <fields>
         <field name="MPN">ATTINY13A-SSU</field>
         <field name="LCSC"/>
@@ -6137,7 +6137,7 @@ LTO:49.9k</field>
         <field name="MPN_NaIon_NoCold">ATTINY13A-SSU</field>
         <field name="Footprint">Meshcore:SOIC-8_3.9x4.9mm_P1.27mm</field>
         <field name="Datasheet"/>
-        <field name="Description">User project watchdog/main.c: PB3 rising-edge heartbeat, PB0 open-drain reset. 1350 WDT ticks (~3h) then1s reset; source firmware unchanged. Danomsk S4.6 approved substitution. Совпадает точный MPN; в наличии две детали.</field>
+        <field name="Description">Watchdog v1.00: PB3 activity input, PB0 open-drain reset; full WDT restart, boundary-edge handling, stuck-HIGH timeout. 1350 WDT periods (typ. ~3.5h at 3.3V), one nominal 1s reset period; LFUSE=0x73, HFUSE=0xFB. Danomsk S4.6 approved substitution. Совпадает точный MPN; в наличии две детали.</field>
       </fields>
       <libsource lib="Meshcore" part="ATtiny13A" description=""/>
       <property name="MPN" value="ATTINY13A-SSU"/>

@@ -21,6 +21,8 @@ from urllib.parse import unquote, urlsplit
 import zipfile
 
 from release_bom import verify_bom
+from release_watchdog import verify_watchdog
+from release_routing import verify_routing
 
 
 ROOT = Path(__file__).resolve().parents[2]
@@ -128,6 +130,7 @@ class Product:
         sources, sheets = [], set()
         if pcb:
             self.add(pcb)
+            self.add(folder / 'routing_review.json')
             sources.append(pcb)
         pending = [self.path(record['schematic'])] if record.get('schematic') else []
         while pending:
@@ -216,13 +219,14 @@ class Product:
                         self.add(file)
         watchdog = self.product_root / 'design/watchdog_reference'
         require(watchdog.is_dir(), 'Missing current watchdog firmware directory: ' + self.rel(watchdog))
-        for name in ('main.c', 'Makefile', 'watchdog.hex', 'source_hashes.json', 'INTEGRATION_RU.txt'):
+        for name in ('main.c', 'Makefile', 'watchdog.hex', 'source_hashes.json', 'INTEGRATION_RU.txt',
+                     'build.ps1', 'VERSION', 'LICENSE.md', 'verification/software_checks.json'):
             self.add(watchdog / name)
         for file in watchdog.rglob('*'):
-            if file.is_file() and file.suffix.lower() in ('.c', '.h', '.s'):
+            if file.is_file() and file.suffix.lower() in ('.c', '.h', '.s', '.cpp', '.ps1', '.md', '.json', '.txt'):
                 self.add(file)
         # These are small current stdlib commands, not the historical builders.
-        for file in (ROOT / 'tools/project').glob('*.py'):
+        for file in (ROOT / 'tools/project').rglob('*.py'):
             self.add(file)
         if (ROOT / 'AGENTS.md').is_file():
             self.add(ROOT / 'AGENTS.md')
@@ -312,6 +316,16 @@ class Product:
         reports['bom.json'] = digest(self.audit / 'bom.json')
         checks.append({'name': 'BOM identities, assembly variants and actual PCB metadata',
                        'passed': bom_report['status'] == 'PASS', 'failures': len(bom_report['failures'])})
+        watchdog_report = verify_watchdog(ROOT, self.spec)
+        write_json(self.audit / 'watchdog.json', watchdog_report)
+        reports['watchdog.json'] = digest(self.audit / 'watchdog.json')
+        checks.append({'name': 'watchdog source, HEX, fuse profile and verified build provenance',
+                       'passed': watchdog_report['status'] == 'PASS', 'failures': len(watchdog_report['failures'])})
+        routing_report = verify_routing(ROOT, self.spec)
+        write_json(self.audit / 'routing.json', routing_report)
+        reports['routing.json'] = digest(self.audit / 'routing.json')
+        checks.append({'name': 'routing geometry, 5mm ground ledger and exact-PCB two-face review',
+                       'passed': routing_report['status'] == 'PASS', 'failures': len(routing_report['failures'])})
         unchanged = all(self.path(p).exists() and digest(self.path(p)) == h for p, h in frozen.items())
         checks.append({'name': 'all editable sources and dependencies unchanged', 'passed': unchanged})
         report = {'format_version': 1, 'product': self.key, 'version': self.version,
@@ -405,10 +419,16 @@ class Product:
         members['shared/output/pdf/MeshRepeater_schematic.pdf'] = (self.output / 'shared_schematic.pdf').read_bytes()
         members['shared/verification/circuit.json'] = (self.audit / 'circuit/circuit.json').read_bytes()
         # Notes are release-specific and do not overwrite the maintained README.
+        board_entries = ''.join('  ' + b['name'] + ': ' + b['project'] + '\n'
+                                for b in self.spec['boards'])
         members['RELEASE_README_RU.txt'] = (
             'Mesh Repeater ' + self.version + '\n\n'
-            'Откройте проект из project.json в KiCad 10 с официальными библиотеками.\n'
+            'Полностью распакуйте ZIP в обычную папку до открытия файлов KiCad.\n'
+            'Откройте нужный проект платы в KiCad 10 с официальными библиотеками:\n'
+            + board_entries +
+            'Для 3D включите категории «Модели выводные» и «Модели SMD».\n'
             'Общая схема: ' + self.config['circuit']['schematic'] + '\n'
+            'У общей схемы нет собственной PCB; физические платы перечислены выше.\n'
             'Проверка: python tools/project/release.py check --product ' + self.key + '\n'
             'Пакет содержит выбранную аппаратную версию и общую схему/профили.\n'
             'Производственные пакеты, расчёты заказа, исторические снимки и среды сборки исключены.\n'
@@ -435,9 +455,11 @@ class Product:
         self.release_dir.mkdir(parents=True, exist_ok=True)
         archive = self.release_dir / ('Mesh_Repeater_' + self.version + '_KiCad.zip')
         prefix = 'Mesh_Repeater_' + self.version + '/'
+        edition = datetime.strptime(self.config['date'], '%Y-%m-%d')
+        zip_date = (edition.year, edition.month, edition.day, 0, 0, 0)
         with zipfile.ZipFile(archive, 'w', zipfile.ZIP_DEFLATED, compresslevel=6) as z:
             for path, raw in sorted(members.items()):
-                entry = zipfile.ZipInfo(prefix + path, (2026, 1, 1, 0, 0, 0))
+                entry = zipfile.ZipInfo(prefix + path, zip_date)
                 entry.compress_type = zipfile.ZIP_DEFLATED
                 entry.external_attr = 0o100644 << 16
                 z.writestr(entry, raw)

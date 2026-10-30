@@ -1,0 +1,394 @@
+{
+  "format_version": 1,
+  "status": "PASS",
+  "product_version": "v1.25",
+  "date": "2026-10-30",
+  "pcb_sha256": "b1f3fc0baf6ee688be2306a5ae98df3402eac52454768b09f6a6743ff283ff90",
+  "reviewer": "root independent native geometry and two-face visual review; Astra 6 Ultra board audit; independent LOGIC agent cross-review",
+  "reviewed_faces": [
+    "F.Cu",
+    "B.Cu"
+  ],
+  "audit_model": "gpt-6-astra",
+  "reasoning_effort": "ultra",
+  "checks": {
+    "whole_paths": "PASS",
+    "parallel_spacing": "PASS",
+    "signal_and_ground_duplicates": "PASS",
+    "critical_returns": "PASS",
+    "pad_entries_and_junctions": "PASS",
+    "ground_plane_connections": "PASS",
+    "thermal_reliefs": "PASS"
+  },
+  "grid_mm": 5,
+  "grid_origin_mm": [
+    0,
+    0
+  ],
+  "off_grid_vias": [
+    {
+      "uuid": "0f57477a-c222-4a0d-984b-0532f2ab62ca",
+      "xy_mm": [
+        43.5,
+        10.0
+      ],
+      "category": "rf_fence",
+      "electrical_reason": "ANT_RF diagonal lower/right return fence beside preserved 1.3mm CPW copper"
+    },
+    {
+      "uuid": "1e0079bf-bf34-46ad-bb4b-6713ed4d0219",
+      "xy_mm": [
+        39.8,
+        57.5
+      ],
+      "category": "local_return",
+      "electrical_reason": "U2.3: TPS63802 local switching ground return"
+    },
+    {
+      "uuid": "32288860-80e5-4208-b269-a32ef67840e5",
+      "xy_mm": [
+        41.8,
+        11.8
+      ],
+      "category": "rf_fence",
+      "electrical_reason": "RF return at ANT_RF/M2 antenna endpoint; coordinate chosen to preserve clearance to underlying MCU_RESET/GPS_EN corridors."
+    },
+    {
+      "uuid": "419fbcb0-efca-4c9b-a40e-2bfd7a7c0910",
+      "xy_mm": [
+        38.45,
+        14.1
+      ],
+      "category": "local_return",
+      "electrical_reason": "C24.2: HT-RA62 high-frequency decoupling return"
+    },
+    {
+      "uuid": "43572d57-b48e-493f-b0cc-8bc6d7803ae3",
+      "xy_mm": [
+        57.5,
+        25.0
+      ],
+      "category": "local_return",
+      "electrical_reason": "HT-RA62 M2.9 local RF/module return to B.Cu beside the fixed module pad; redundant 1.5mm front ground track removed, native thermal/plane connection verified."
+    },
+    {
+      "uuid": "4aee3143-502b-4f9d-978a-284454be399a",
+      "xy_mm": [
+        39.0,
+        9.5
+      ],
+      "category": "rf_fence",
+      "electrical_reason": "ANT_RF diagonal upper/left return fence, 2.5mm x/y pitch from41.5,7.0"
+    },
+    {
+      "uuid": "4b28f474-902d-4545-8ad0-cc9406c4806e",
+      "xy_mm": [
+        41.9,
+        6.1
+      ],
+      "category": "local_return",
+      "electrical_reason": "FL1.1: SAW/CPW local RF ground return"
+    },
+    {
+      "uuid": "5a8c041a-07d2-4059-ac3e-e6c8146b62db",
+      "xy_mm": [
+        41.9,
+        2.4
+      ],
+      "category": "local_return",
+      "electrical_reason": "FL1.3: SAW/CPW local RF ground return"
+    },
+    {
+      "uuid": "5ff5e060-f26c-4d2b-b72d-1e93a6030b3c",
+      "xy_mm": [
+        22.7,
+        96.2
+      ],
+      "category": "local_return",
+      "electrical_reason": "C63.2: INA219 local VS decoupling return Via moved outside the pad thermal gap; redundant direct ground feed removed; native same-layer thermal connection remains."
+    },
+    {
+      "uuid": "65570d5d-aeca-40bc-a6c6-10be85c6e8b8",
+      "xy_mm": [
+        41.5,
+        7.0
+      ],
+      "category": "rf_fence",
+      "electrical_reason": "ANT_RF upper/left return at the vertical-to-diagonal CPW corner, continuing FL1 ground stitches"
+    },
+    {
+      "uuid": "6b59b5ac-94c5-4103-b1fd-1d9fdc0bc3b4",
+      "xy_mm": [
+        30.5,
+        60.0
+      ],
+      "category": "island_bridge",
+      "electrical_reason": "C1.2/D2.2 local charger input/flyback ground island: all six 5mm points in its bounds are blocked by other-net copper or D2 thermal clearance; moved the former30,60 stitch outside the D2 thermal gap. Fresh isolated removal/refill proof: 1 unconnected, 0 other violations; C1_D2.json."
+    },
+    {
+      "uuid": "6b936299-a962-4f4d-933e-65f376e20b78",
+      "xy_mm": [
+        38.3,
+        2.4
+      ],
+      "category": "local_return",
+      "electrical_reason": "J13.2: SMA local RF ground return"
+    },
+    {
+      "uuid": "6e82173d-4442-4fc3-80ea-32785e892e8a",
+      "xy_mm": [
+        12.7,
+        63.875
+      ],
+      "category": "local_return",
+      "electrical_reason": "CN3722 U1.2/U1.3 local controller switching-current return to B.Cu reference, 1.94mm from the pins; pins now contact the same native F.Cu GND_TOP outline through thermals, with no explicit GND tracks or thermal-gap via overlap."
+    },
+    {
+      "uuid": "709b8375-49c2-4d8d-8df8-b7529eae7566",
+      "xy_mm": [
+        42.325,
+        79.155
+      ],
+      "category": "island_bridge",
+      "electrical_reason": "U10.4: native all-severity DRC reports this component ground island disconnected; exact filled-poly/pad/via graph including poly-poly shows separate component; no allowed 5mm grid point reaches it. Fresh isolated removal/refill proof: 1 unconnected, 0 other violations; U10.json."
+    },
+    {
+      "uuid": "7161f34b-970d-4243-a085-d3c12100c7b3",
+      "xy_mm": [
+        43.75,
+        57.5
+      ],
+      "category": "local_return",
+      "electrical_reason": "U2.8: TPS63802 local switching ground return"
+    },
+    {
+      "uuid": "85b35878-462a-4160-9a85-70d371281fbf",
+      "xy_mm": [
+        18.85,
+        73.85
+      ],
+      "category": "island_bridge",
+      "electrical_reason": "C6.2: Necessary bridge from an isolated component GND island to the common return; no legal 5mm-grid via reaches this island. Fresh isolated removal/refill proof: 1 unconnected, 0 other violations; C6.json."
+    },
+    {
+      "uuid": "8b845308-9438-4f25-801a-afa5c7065dfb",
+      "xy_mm": [
+        73.8,
+        83.35
+      ],
+      "category": "local_return",
+      "electrical_reason": "C16.2: LC second-stage bulk capacitor return Native four-spoke thermal connection replaces the redundant 1mm track; local via stays outside the gap and beside the capacitor to shorten ripple-current return to the reference layer."
+    },
+    {
+      "uuid": "936b3079-8973-4327-89be-2fe37bd4c0c5",
+      "xy_mm": [
+        38.2,
+        6.0
+      ],
+      "category": "local_return",
+      "electrical_reason": "J13.2: SMA local RF ground return"
+    },
+    {
+      "uuid": "9d15dd28-585d-4a42-a287-69ea5b25eaac",
+      "xy_mm": [
+        62.1,
+        12.0
+      ],
+      "category": "island_bridge",
+      "electrical_reason": "U7.1, U7.4: Necessary bridge from an isolated component GND island to the common return; no legal 5mm-grid via reaches this island. Fresh isolated removal/refill proof: 1 unconnected, 0 other violations; U7_left.json."
+    },
+    {
+      "uuid": "c6b4765c-0d13-4ae3-bd69-f0cbe022ff6a",
+      "xy_mm": [
+        54.45,
+        11.05
+      ],
+      "category": "local_return",
+      "electrical_reason": "M2.16: HT-RA62 RF/module ground return"
+    },
+    {
+      "uuid": "d1d9de19-0d76-49c3-a58e-dd2a3ac6a35c",
+      "xy_mm": [
+        48.0,
+        53.4
+      ],
+      "category": "local_return",
+      "electrical_reason": "C13.2: TPS63802 high-frequency input decoupling return Via moved outside the pad thermal gap; redundant direct ground feed removed; native same-layer thermal connection remains."
+    },
+    {
+      "uuid": "e9a4aa7d-9a87-4c62-aa48-33764a6ef6f7",
+      "xy_mm": [
+        40.0,
+        53.5
+      ],
+      "category": "local_return",
+      "electrical_reason": "C12.2: TPS63802 input decoupling return"
+    },
+    {
+      "uuid": "eb2ef5af-a3fb-4e02-b305-c5a04cd7bf1a",
+      "xy_mm": [
+        59.2,
+        83.35
+      ],
+      "category": "local_return",
+      "electrical_reason": "C15.2: LC first-stage bulk capacitor return Native four-spoke thermal connection replaces the redundant 1mm track; local via stays outside the gap and beside the capacitor to shorten ripple-current return to the reference layer."
+    },
+    {
+      "uuid": "f52890f6-2c64-449b-afae-355c413d11bb",
+      "xy_mm": [
+        39.4,
+        6.1
+      ],
+      "category": "local_return",
+      "electrical_reason": "FL1.6: SAW/CPW local RF ground return"
+    },
+    {
+      "uuid": "f98af6f1-15b8-46df-af31-39f4513822c7",
+      "xy_mm": [
+        45.0,
+        7.5
+      ],
+      "category": "rf_fence",
+      "electrical_reason": "ANT_RF vertical CPW right-side return; 2.5mm local pitch from the common-grid stitch at45,5"
+    },
+    {
+      "uuid": "fb27f651-34c8-45f7-a5c7-1e0f531fd250",
+      "xy_mm": [
+        39.4,
+        2.4
+      ],
+      "category": "local_return",
+      "electrical_reason": "FL1.4: SAW/CPW local RF ground return"
+    },
+    {
+      "uuid": "fc72ed76-8533-4c71-bf3b-711c44aece6b",
+      "xy_mm": [
+        66.999999,
+        9.8
+      ],
+      "category": "island_bridge",
+      "electrical_reason": "C56.2, U7.7: Necessary bridge from an isolated component GND island to the common return; no legal 5mm-grid via reaches this island. Fresh isolated removal/refill proof: 1 unconnected, 0 other violations; U7_right.json."
+    }
+  ],
+  "retained_ground_tracks": [
+    {
+      "uuid": "2e8df374-fcc8-467b-8809-b31cc6395ecc",
+      "layer": "F.Cu",
+      "start_mm": [
+        41.1,
+        57.5
+      ],
+      "end_mm": [
+        39.8,
+        57.5
+      ],
+      "width_mm": 0.15,
+      "electrical_reason": "U2.3 analog/control GND: explicit short 1.3mm connection from the 0.25mm-high IC pad to the adjacent quiet-reference via39.8,57.5; keeps the control-ground tie at the IC instead of depending on a remote plane thermal path."
+    },
+    {
+      "uuid": "64d5172a-4749-421a-9ba6-d2fe4956a17d",
+      "layer": "F.Cu",
+      "start_mm": [
+        41.1,
+        57.5
+      ],
+      "end_mm": [
+        42.55,
+        57.5
+      ],
+      "width_mm": 0.2,
+      "electrical_reason": "U2.3-to-U2.8 control/power ground join directly beneath the TPS63802 package; maintains the device-local ground join required for the switching/control loop. This 1.45mm bridge is distinct from the removed capacitor-to-capacitor plane shunt."
+    },
+    {
+      "uuid": "a16f59c4-a430-4b62-ad30-4f05b13ff99e",
+      "layer": "F.Cu",
+      "start_mm": [
+        42.55,
+        57.5
+      ],
+      "end_mm": [
+        43.75,
+        57.5
+      ],
+      "width_mm": 0.3,
+      "electrical_reason": "U2.8 PGND: short 1.2mm,0.3mm-wide direct connection from the narrow IC ground land to via43.75,57.5 immediately between the switch-node escapes; via shifted0.1mm outside the thermal gap. Preserves the local high-frequency power return and its original width."
+    }
+  ],
+  "solid_ground_connections": [
+    {
+      "kind": "pad",
+      "uuid": "ce8f67fc-077a-4e93-bd6c-0bfda1e10b82",
+      "ref": "FL1",
+      "pin": "1",
+      "electrical_reason": "RF SAW/connector ground: low-inductance uninterrupted CPW return and RF shielding; preserve native solid RF landing"
+    },
+    {
+      "kind": "pad",
+      "uuid": "771b27e4-e18e-4f21-be4f-84f1dcc5f2dc",
+      "ref": "FL1",
+      "pin": "3",
+      "electrical_reason": "RF SAW/connector ground: low-inductance uninterrupted CPW return and RF shielding; preserve native solid RF landing"
+    },
+    {
+      "kind": "pad",
+      "uuid": "e559047a-8859-4192-932f-856f394541df",
+      "ref": "FL1",
+      "pin": "4",
+      "electrical_reason": "RF SAW/connector ground: low-inductance uninterrupted CPW return and RF shielding; preserve native solid RF landing"
+    },
+    {
+      "kind": "pad",
+      "uuid": "5febe98b-45e3-4dc5-b8d5-885d1b55d2d2",
+      "ref": "FL1",
+      "pin": "6",
+      "electrical_reason": "RF SAW/connector ground: low-inductance uninterrupted CPW return and RF shielding; preserve native solid RF landing"
+    },
+    {
+      "kind": "pad",
+      "uuid": "502fb986-22b1-4f4f-b0b6-6c0f66cd4df3",
+      "ref": "J13",
+      "pin": "2",
+      "electrical_reason": "RF SAW/connector ground: low-inductance uninterrupted CPW return and RF shielding; preserve native solid RF landing"
+    },
+    {
+      "kind": "pad",
+      "uuid": "7c3d72cf-572d-43e9-81f5-98533c491c2d",
+      "ref": "J13",
+      "pin": "2",
+      "electrical_reason": "RF SAW/connector ground: low-inductance uninterrupted CPW return and RF shielding; preserve native solid RF landing"
+    },
+    {
+      "kind": "pad",
+      "uuid": "df96336b-a7e5-4e6c-accd-416f546a1d2d",
+      "ref": "J13",
+      "pin": "2",
+      "electrical_reason": "RF SAW/connector ground: low-inductance uninterrupted CPW return and RF shielding; preserve native solid RF landing"
+    },
+    {
+      "kind": "pad",
+      "uuid": "aa957578-b5e1-45c8-a327-422a0bf31bd0",
+      "ref": "J13",
+      "pin": "2",
+      "electrical_reason": "RF SAW/connector ground: low-inductance uninterrupted CPW return and RF shielding; preserve native solid RF landing"
+    },
+    {
+      "kind": "zone",
+      "uuid": "abb9ee9f-3d22-4850-9d1c-db778733636a",
+      "name": "RF_CPW_GND",
+      "electrical_reason": "RF CPW ground zone must preserve continuous RF return and native coplanar gap"
+    }
+  ],
+  "audited_candidate_sha256": "54fb1eb97f12f9d0713134b4427e1e0700f5c12bcd46063ae25dfa50a89dbf5b",
+  "copper_unchanged_after_version_date_labels": {
+    "segment": true,
+    "via": true,
+    "arc": true,
+    "zone": true,
+    "net": true,
+    "layers": true,
+    "setup": true,
+    "general": true,
+    "footprint": true
+  },
+  "scope": "User-listed and analogous pad approaches, whole paths, parallel groups, GND overlays, real thermal reliefs, width changes, grid and exceptions. Preserves component/zone geometry, RF and critical returns. Native/static CAD evidence; no physical bench or RF approval."
+}

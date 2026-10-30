@@ -13,7 +13,8 @@
 #define RESET_OUT_BIT      PB0
 #define UNUSED_PULLUPS     ((uint8_t)((1u << PB1) | (1u << PB2) | (1u << PB4)))
 
-/* WDT oscillator is used as the only time base. 8 s * 1350 = 3 h nominal. */
+/* WDT is the only time base. The "8 s" setting is 1048576 oscillator cycles;
+   1350 periods give about 3.5 h on the datasheet's typical 3.3 V curves. */
 #define WDT_8S_CONFIG       ((uint8_t)((1u << WDP3) | (1u << WDP0)))
 /* 1 s: WDP[3:0] = 0110. */
 #define WDT_1S_CONFIG       ((uint8_t)((1u << WDP2) | (1u << WDP1)))
@@ -26,6 +27,7 @@ typedef enum {
 
 static volatile uint16_t elapsed_8s_ticks;
 static volatile watchdog_state_t state;
+static volatile uint8_t input_high_seen;
 
 static void wdt_configure(uint8_t config)
 {
@@ -37,9 +39,32 @@ static void wdt_configure(uint8_t config)
     /* Timed sequence required by WDTCR.WDCE (datasheet section 8.4). */
     WDTCR = (uint8_t)((1u << WDCE) | (1u << WDE));
     /* Within four CPU cycles: WDE=0, WDTIE=1, and the requested prescaler. */
-    WDTCR = (uint8_t)(config | (1u << WDTIE));
+    WDTCR = (uint8_t)(config | (1u << WDTIE) | (1u << WDTIF));
 
     SREG = saved_sreg;
+}
+
+/* Called only with interrupts disabled (initialization or an ISR). Clearing
+   a queued WDT interrupt prevents an old tick from shortening a new interval. */
+static void restart_wait_interval(void)
+{
+    elapsed_8s_ticks = 0u;
+    wdt_reset();
+    WDTCR |= (uint8_t)(1u << WDTIF);
+}
+
+/* The timer may sample a previously unseen high, but must never repeatedly
+   feed on a stuck-high input. PCINT handles actual input changes separately. */
+static uint8_t sample_input_level(void)
+{
+    if ((PINB & (1u << INPUT_BIT)) == 0u) {
+        input_high_seen = 0u;
+    } else if (input_high_seen == 0u) {
+        input_high_seen = 1u;
+        restart_wait_interval();
+        return 1u;
+    }
+    return 0u;
 }
 
 static void reset_output_release(void)
@@ -63,7 +88,7 @@ static void enter_reset_pulse(void)
 
     /* Ignore input changes while reset is asserted. */
     GIMSK &= (uint8_t)~(1u << PCIE);
-    GIFR |= (uint8_t)(1u << PCIF);
+    GIFR = (uint8_t)(1u << PCIF);
 
     reset_output_assert();
     wdt_configure(WDT_1S_CONFIG);
@@ -71,27 +96,44 @@ static void enter_reset_pulse(void)
 
 static void finish_reset_pulse(void)
 {
-    reset_output_release();
-    elapsed_8s_ticks = 0;
+    /* Prepare reception while PB0 is still asserted. Never clear PCIF after
+       releasing PB0: that would erase a new post-reset rising edge. */
+    elapsed_8s_ticks = 0u;
+    input_high_seen = 0u;
     wdt_configure(WDT_8S_CONFIG);
-
-    GIFR |= (uint8_t)(1u << PCIF);
-    GIMSK |= (uint8_t)(1u << PCIE);
     state = STATE_WAITING;
+    GIFR = (uint8_t)(1u << PCIF);
+    GIMSK |= (uint8_t)(1u << PCIE);
+    reset_output_release();
+    restart_wait_interval();
+    /* Also accept a high which began during reset and is still present. */
+    (void)sample_input_level();
 }
 
 ISR(PCINT0_vect)
 {
-    /* PCINT is asynchronous and wakes the MCU from Power-down.  Accept only a
-       sampled high level, so the falling edge of a pulse is ignored. */
-    if ((PINB & (1u << INPUT_BIT)) != 0u) {
-        elapsed_8s_ticks = 0;
+    /* Asynchronous PCINT wakes from Power-down on both edges. A falling edge
+       only re-arms reception; it does not feed the watchdog. */
+    if (state == STATE_WAITING) {
+        if ((PINB & (1u << INPUT_BIT)) != 0u) {
+            /* Accept even if a short low followed by a high coalesced into one
+               PCIF while another ISR was running. A static high has no edges. */
+            input_high_seen = 1u;
+            restart_wait_interval();
+        } else {
+            input_high_seen = 0u;
+        }
     }
 }
 
 ISR(WDT_vect)
 {
     if (state == STATE_WAITING) {
+        /* A new high visible at this decision point wins over the timeout.
+           Once reset is committed, later input belongs to the reset window. */
+        if (sample_input_level() != 0u) {
+            return;
+        }
         if (elapsed_8s_ticks < WATCHDOG_TICKS) {
             ++elapsed_8s_ticks;
         }
@@ -127,7 +169,7 @@ static void io_and_peripheral_init(void)
     MCUCR = (uint8_t)(1u << SM1);
 
     PCMSK = (uint8_t)(1u << PCINT3);
-    GIFR |= (uint8_t)(1u << PCIF);
+    GIFR = (uint8_t)(1u << PCIF);
     GIMSK |= (uint8_t)(1u << PCIE);
 }
 
@@ -140,13 +182,15 @@ int main(void)
     io_and_peripheral_init();
     state = STATE_WAITING;
     elapsed_8s_ticks = 0u;
+    input_high_seen = 0u;
     wdt_configure(WDT_8S_CONFIG);
+    (void)sample_input_level();
 
     set_sleep_mode(SLEEP_MODE_PWR_DOWN);
-    sei();
-
     for (;;) {
+        cli();
         sleep_enable();
+        /* BOD remains enabled in Power-down (HFUSE=0xFB). */
         sei();
         sleep_cpu();
         sleep_disable();

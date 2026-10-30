@@ -1,15 +1,31 @@
-# Mesh Repeater v1.22
+# Mesh Repeater v1.25
 
-Designed by @Alksndritm. Одноплатное исполнение 90×100 мм, ведущая разводка общего проекта. Общая схема содержит 150 функциональных позиций; текущая BOM — 154 позиции и три варианта сборки. Прежнее обозначение этой редакции — S4.22.
+Одноплатное ведущее исполнение 90×100 мм.
 
-[Скачать готовый KiCad ZIP](https://github.com/Alksndr55/mesh-repeater/releases/download/v1.22/Mesh_Repeater_v1.22_KiCad.zip) · [SHA256](https://github.com/Alksndr55/mesh-repeater/releases/download/v1.22/SHA256SUMS.txt) · [Описание выпуска](https://github.com/Alksndr55/mesh-repeater/releases/tag/v1.22).
+[Готовый архив KiCad](https://github.com/Alksndr55/mesh-repeater/releases/download/v1.25/Mesh_Repeater_v1.25_KiCad.zip) · [Страница выпуска](https://github.com/Alksndr55/mesh-repeater/releases/tag/v1.25)
 
-- [Открыть плату MAIN в KiCad](v1/design/Meshcore_NaIon/Meshcore_NaIon.kicad_pro).
-- [Общая электрическая схема](shared/schematic/MeshRepeater.kicad_pro), [PDF](shared/output/pdf/MeshRepeater_schematic.pdf), [физические профили](shared/variants.json).
-- [BOM](v1/bom/COMPONENT_BOM.csv), [сборка v1](v1/docs/ASSEMBLY_RU.md), [общая сборка](docs/ASSEMBLY_COMMON_RU.md).
-- [Свежие проверки CAD](v1/audit/current/checks.json), [проверка BOM](v1/audit/current/bom.json), [состав выпуска](RELEASE_MANIFEST.json).
-- [Единый процесс выпуска](docs/WORKFLOW_RU.md), [лицензия](v1/LICENSE.md).
+## Открытие проекта
 
-Для редактирования нужен KiCad 10 со стандартными библиотеками. Локальные библиотеки, модели, watchdog и текущие проверяющие команды входят в проект. Производственный экспорт выполняется отдельно.
+Полностью распакуйте архив перед открытием. Используйте KiCad 10 с официальными библиотеками; локальные модели и посадочные места включены.
 
-Инженерный прототип. Нулевые ERC/DRC не заменяют испытаний собранной платы. Перед USB снять J11; доработка Nice!Nano и принятые ограничения LTO сохраняются. [Полный перечень ограничений](docs/LIMITATIONS_RU.md).
+- [MAIN](v1/design/Meshcore_NaIon/Meshcore_NaIon.kicad_pro)
+
+Общая электрическая схема: [KiCad](shared/schematic/MeshRepeater.kicad_pro), [PDF](shared/output/pdf/MeshRepeater_schematic.pdf).
+
+## Состав выпуска
+
+Исправлены подводы дорожек и острые стыки, удалены лишние GND-дорожки поверх заливки, восстановлены реальные термобарьеры. Земляные vias расположены по сетке 5 мм; местные исключения записаны в `routing_review.json` каждой платы. Расстановка и критические RF/Kelvin-участки сохранены.
+
+Watchdog **v1.00** включён в [v1/design/watchdog_reference](v1/design/watchdog_reference). Исходник и HEX совпадают с [канонической прошивкой](https://github.com/Alksndr55/watchdog/releases/tag/v1.00). Прошивка микросхемы и установка fuse выполняются отдельно.
+
+- [Полный список изменений разводки](docs/ROUTING_RESULT_RU.md)
+- [BOM](v1/bom/COMPONENT_BOM.csv) и [сборка](v1/docs/ASSEMBLY_RU.md)
+- [Свежие проверки](v1/audit/current/checks.json)
+- [Порядок выпуска](docs/WORKFLOW_RU.md), [аппаратные ограничения](docs/LIMITATIONS_RU.md)
+- [Лицензия](v1/LICENSE.md)
+
+ERC/DRC и соответствие общей схеме проверены для точных файлов выпуска. Проверка распакованного пакета выполнена независимо. Это инженерный прототип; CAD-проверки не являются испытанием платы.
+
+Каталоги `v1/`, `shared/`, `docs/`, `tools/project/` составляют переносимый проект этого исполнения. Архив другого исполнения, исторические снимки и производственные пакеты в него не включены.
+
+Designed by @Alksndritm.

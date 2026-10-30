@@ -1,12 +1,131 @@
-[
-  {
-    "Algorithm": "SHA256",
-    "Hash": "6AAE1DF101C6970FC6BA2ACD2C3B5997890ED22E2C62E27717CDE22B482E0089",
-    "Path": "C:\\Users\\Alksndr\\Desktop\\codex\\Meshcore\\design\\watchdog_reference\\main.c"
+{
+  "schema_version": 1,
+  "watchdog_version": "v1.00",
+  "product_version": "v1.25",
+  "canonical": {
+    "root": "../../../watchdog",
+    "release_url": "https://github.com/Alksndr55/watchdog/releases/tag/v1.00",
+    "commit": "93ec8164aae9651f4b13c2208c52109bee66e181",
+    "source_manifest_sha256": "3eb7a1da4056088f073e2cc6faf34ec0ddb09254ada2611e9d221bbf70a61f7a"
   },
-  {
-    "Algorithm": "SHA256",
-    "Hash": "8D38A4213EA91B9AD8D99638AC21CCFD80C2D75D24D1545856DBA421195E5790",
-    "Path": "C:\\Users\\Alksndr\\Desktop\\codex\\Meshcore\\design\\watchdog_reference\\watchdog.hex"
-  }
-]
+  "files": {
+    "build.ps1": {
+      "bytes": 2673,
+      "sha256": "d1e5803c48ba239d75332924d52c3489dc5e19391cd1047ab9179ce86ea61166",
+      "origin": "../../../watchdog/build.ps1",
+      "origin_sha256": "d1e5803c48ba239d75332924d52c3489dc5e19391cd1047ab9179ce86ea61166",
+      "exact_copy": true
+    },
+    "INTEGRATION_RU.txt": {
+      "bytes": 8603,
+      "sha256": "3561a93701e33d8367715b535fc789727cb866e12077bbf105cc09d37f3e85da",
+      "origin": "Mesh Repeater board integration",
+      "exact_copy": false
+    },
+    "LICENSE.md": {
+      "bytes": 20850,
+      "sha256": "e66c269d4819aaab34b49ef5220c4ddab6756f21bb5180761a4eb8561f2b7bbd",
+      "origin": "../../../watchdog/LICENSE.md",
+      "origin_sha256": "e66c269d4819aaab34b49ef5220c4ddab6756f21bb5180761a4eb8561f2b7bbd",
+      "exact_copy": true
+    },
+    "main.c": {
+      "bytes": 5840,
+      "sha256": "0c0f57a739c4bf24668ffb39984ebda6414ff91f85c58bf115416285744566f8",
+      "origin": "../../../watchdog/main.c",
+      "origin_sha256": "0c0f57a739c4bf24668ffb39984ebda6414ff91f85c58bf115416285744566f8",
+      "exact_copy": true
+    },
+    "Makefile": {
+      "bytes": 1612,
+      "sha256": "93f5776e2f76552c5dd94ef89edd210e4d29cce60c3cdf1d0f549b72c7ec35a7",
+      "origin": "../../../watchdog/Makefile",
+      "origin_sha256": "1ad33182e94adce28b3231c7e0393782d620210f68f25d41c2010e7498a7d2c1",
+      "exact_copy": false,
+      "change": "ISP_BITCLOCK_US default: 50 -> 100 us"
+    },
+    "tests/include/avr/interrupt.h": {
+      "bytes": 137,
+      "sha256": "4dc3bc43c08a1a4cdd078d6e4796edd891db446dc99fae527f2f94b0142f6b46",
+      "origin": "../../../watchdog/tests/include/avr/interrupt.h",
+      "origin_sha256": "4dc3bc43c08a1a4cdd078d6e4796edd891db446dc99fae527f2f94b0142f6b46",
+      "exact_copy": true
+    },
+    "tests/include/avr/io.h": {
+      "bytes": 1096,
+      "sha256": "f10cf62078112d6b6d31fcbd92b1f21f2f4780f26c39657698aa68d8a583041e",
+      "origin": "../../../watchdog/tests/include/avr/io.h",
+      "origin_sha256": "f10cf62078112d6b6d31fcbd92b1f21f2f4780f26c39657698aa68d8a583041e",
+      "exact_copy": true
+    },
+    "tests/include/avr/sleep.h": {
+      "bytes": 222,
+      "sha256": "2536b1349e31ee7f3c53d8965b46fdd228925a935132c75300a4fc8ace57e70f",
+      "origin": "../../../watchdog/tests/include/avr/sleep.h",
+      "origin_sha256": "2536b1349e31ee7f3c53d8965b46fdd228925a935132c75300a4fc8ace57e70f",
+      "exact_copy": true
+    },
+    "tests/include/avr/wdt.h": {
+      "bytes": 90,
+      "sha256": "81c334792a70365ca5796b59fd061dba7d50bc143f032dfa8d652794a89de62c",
+      "origin": "../../../watchdog/tests/include/avr/wdt.h",
+      "origin_sha256": "81c334792a70365ca5796b59fd061dba7d50bc143f032dfa8d652794a89de62c",
+      "exact_copy": true
+    },
+    "tests/README.md": {
+      "bytes": 1643,
+      "sha256": "239533be8a19cbf370e6c167b8e9f8934bdb59c6dce5ad35fba2ff740e753667",
+      "origin": "../../../watchdog/tests/README.md",
+      "origin_sha256": "239533be8a19cbf370e6c167b8e9f8934bdb59c6dce5ad35fba2ff740e753667",
+      "exact_copy": true
+    },
+    "tests/run.ps1": {
+      "bytes": 1068,
+      "sha256": "61bacc678dab1951e3b1550f26acee57ac3119f24ba70db61d40970770cbd44e",
+      "origin": "../../../watchdog/tests/run.ps1",
+      "origin_sha256": "61bacc678dab1951e3b1550f26acee57ac3119f24ba70db61d40970770cbd44e",
+      "exact_copy": true
+    },
+    "tests/test_firmware.cpp": {
+      "bytes": 5773,
+      "sha256": "8134fb6089879ff363ebabf8962412366ea5aedc4434742d0a6078baf79ded03",
+      "origin": "../../../watchdog/tests/test_firmware.cpp",
+      "origin_sha256": "8134fb6089879ff363ebabf8962412366ea5aedc4434742d0a6078baf79ded03",
+      "exact_copy": true
+    },
+    "THIRD_PARTY_NOTICES.md": {
+      "bytes": 797,
+      "sha256": "ba902b91cc42baacd18386125c6f26ffa9951c5dc475d254dca4ba9df6b65096",
+      "origin": "Mesh Repeater board integration",
+      "exact_copy": false
+    },
+    "verification/integration_checks.json": {
+      "bytes": 3958,
+      "sha256": "5e3ecd8064c6f48c132979c1f57dfb7d419f4fb9692e3b1f1ad44938f6b7ea8e",
+      "origin": "Mesh Repeater board integration",
+      "exact_copy": false
+    },
+    "verification/software_checks.json": {
+      "bytes": 653,
+      "sha256": "c02723125be4484f4ba61636f63216670ba3bdc6591ff2ea1c4956add104232f",
+      "origin": "../../../watchdog/verification/software_checks.json",
+      "origin_sha256": "c02723125be4484f4ba61636f63216670ba3bdc6591ff2ea1c4956add104232f",
+      "exact_copy": true
+    },
+    "VERSION": {
+      "bytes": 7,
+      "sha256": "80aabb827ab4678bd7b1a0a681191b1899eefe630accdcb1c265f70f73132ed4",
+      "origin": "../../../watchdog/VERSION",
+      "origin_sha256": "80aabb827ab4678bd7b1a0a681191b1899eefe630accdcb1c265f70f73132ed4",
+      "exact_copy": true
+    },
+    "watchdog.hex": {
+      "bytes": 1523,
+      "sha256": "f3309241f54871913d068f74021697b4a4a3982eab620c1d9da5364b210b788b",
+      "origin": "../../../watchdog/watchdog.hex",
+      "origin_sha256": "f3309241f54871913d068f74021697b4a4a3982eab620c1d9da5364b210b788b",
+      "exact_copy": true
+    }
+  },
+  "note": "SHA256 is calculated from actual local file bytes; paths are relative to this directory. This manifest does not hash itself."
+}

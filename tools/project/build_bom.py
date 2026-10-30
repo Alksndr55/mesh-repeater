@@ -8,9 +8,12 @@ import re
 import sys
 
 ROOT = Path(__file__).resolve().parents[2]
+# Keep wx's active log target alive until native shutdown.
+_WX_LOG_TARGET = None
 
 
 def main():
+    global _WX_LOG_TARGET
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--product', choices=['v1', 'v2'], action='append')
     args = parser.parse_args()
@@ -18,10 +21,10 @@ def main():
     if (font_config / 'fonts.conf').is_file():
         os.environ.setdefault('FONTCONFIG_PATH', str(font_config))
     import wx
-    log = wx.LogStderr()
-    wx.Log.SetActiveTarget(log)
+    _WX_LOG_TARGET = wx.LogStderr()
+    wx.Log.SetActiveTarget(_WX_LOG_TARGET)
     import pcbnew
-    wx.Log.SetActiveTarget(log)
+    wx.Log.SetActiveTarget(_WX_LOG_TARGET)
     config = json.loads((ROOT / 'project.json').read_text('utf-8'))
     fields = ['Board', 'Reference', 'Kind', 'Value_NaIon_COLD', 'Fit_NaIon_COLD', 'MPN_NaIon_COLD',
               'Value_NaIon_NoCOLD', 'Fit_NaIon_NoCOLD', 'MPN_NaIon_NoCOLD',
