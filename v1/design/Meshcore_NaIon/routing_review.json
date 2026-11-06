@@ -1,16 +1,14 @@
 {
   "format_version": 1,
   "status": "PASS",
-  "product_version": "v1.25",
-  "date": "2026-10-30",
-  "pcb_sha256": "b1f3fc0baf6ee688be2306a5ae98df3402eac52454768b09f6a6743ff283ff90",
-  "reviewer": "root independent native geometry and two-face visual review; Astra 6 Ultra board audit; independent LOGIC agent cross-review",
+  "product_version": "v1.26",
+  "date": "2026-11-06",
+  "pcb_sha256": "d63c8ce9715893fdf1ac01ed96e5871e03829d34514db07938c6bd416b29f462",
+  "reviewer": "footprint_standardization agent: independent native topology, filled-copper and two-face visual review, 2026-11-06",
   "reviewed_faces": [
     "F.Cu",
     "B.Cu"
   ],
-  "audit_model": "gpt-6-astra",
-  "reasoning_effort": "ultra",
   "checks": {
     "whole_paths": "PASS",
     "parallel_spacing": "PASS",
@@ -390,5 +388,33 @@
     "general": true,
     "footprint": true
   },
-  "scope": "User-listed and analogous pad approaches, whole paths, parallel groups, GND overlays, real thermal reliefs, width changes, grid and exceptions. Preserves component/zone geometry, RF and critical returns. Native/static CAD evidence; no physical bench or RF approval."
+  "scope": "User-listed and analogous pad approaches, whole paths, parallel groups, GND overlays, real thermal reliefs, width changes, grid and exceptions. Preserves component/zone geometry, RF and critical returns. Native/static CAD evidence; no physical bench or RF approval.",
+  "evidence": [
+    "history/assembly-standard-2026-11-06/footprints/geometry-final/REVIEW_RU.md",
+    "history/assembly-standard-2026-11-06/footprints/geometry-final/MAIN.json",
+    "history/assembly-standard-2026-11-06/footprints/geometry-final/MAIN_F_Cu.png",
+    "history/assembly-standard-2026-11-06/footprints/geometry-final/MAIN_B_Cu.png",
+    "history/assembly-standard-2026-11-06/footprints/thermals-final/MAIN.json",
+    "history/assembly-standard-2026-11-06/footprints/geometry-final/reviewed_geometry_freeze.json",
+    "history/assembly-standard-2026-11-06/footprints/geometry-final/reviewed_geometry_current.json",
+    "history/assembly-standard-2026-11-06/footprints/geometry-final/render_manifest.json",
+    "history/assembly-standard-2026-11-06/footprints/thermals-final/render_manifest.json",
+    "history/assembly-standard-2026-11-06/footprints/thermals-final/MAIN_copper.png"
+  ],
+  "skipped_grid_points": [
+    {
+      "xy_mm": [
+        45,
+        55
+      ],
+      "electrical_reason": "Expanded L2 land conflicts with this 5 mm ground grid point"
+    },
+    {
+      "xy_mm": [
+        45,
+        60
+      ],
+      "electrical_reason": "Expanded L2 land conflicts with this 5 mm ground grid point"
+    }
+  ]
 }

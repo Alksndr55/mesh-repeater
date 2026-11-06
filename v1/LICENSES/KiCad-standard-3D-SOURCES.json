@@ -1,0 +1,651 @@
+{
+  "format_version": 1,
+  "models_unmodified": true,
+  "license_files": [
+    {
+      "name": "GPL-3.0-COPYING3",
+      "blob_sha1": "94a9ed024d3859793618152ea559a168bbcbb5e2",
+      "url": "https://github.com/gcc-mirror/gcc/blob/master/COPYING3",
+      "encoding": "base64",
+      "packaged_path": "shared/LICENSES/GPL-3.0.txt",
+      "sha256": "8ceb4b9ee5adedde47b31e975c1d90c73ad27b6b165a1dcd80c7c545eb65b903",
+      "bytes": 35147
+    },
+    {
+      "name": "KiCad-packages3D-LICENSE",
+      "blob_sha1": "327317f61dd65cd0da7af643a9ace96da9d90c8f",
+      "url": "https://github.com/KiCad/kicad-packages3D/blob/master/LICENSE.md",
+      "encoding": "base64",
+      "packaged_path": "shared/LICENSES/KiCad-packages3D-LICENSE.md",
+      "sha256": "285b027a721577d0bc0198f36e948c6c282ddaa4b58fef8ed826749576eb0aef",
+      "bytes": 2105
+    },
+    {
+      "name": "Creative Commons Attribution-ShareAlike 4.0",
+      "origin_existing_file": "v1/LICENSES/CC-BY-SA-4.0.txt",
+      "packaged_path": "shared/LICENSES/CC-BY-SA-4.0.txt",
+      "sha256": "28a9529c7d0bb4dc51f4bf5c116a3d16ef247a052f7591466768ddf563fd1cf5",
+      "bytes": 20138
+    }
+  ],
+  "projects": {
+    "MAIN": {
+      "project": "v1/design/Meshcore_NaIon/Meshcore_NaIon.kicad_pro",
+      "models": [
+        {
+          "source_uri": "${KICAD10_3DMODEL_DIR}/Battery.3dshapes/BatteryHolder_Keystone_1060_1x2032.step",
+          "portable_uri": "${KIPRJMOD}/3dmodels/kicad_standard/Battery.3dshapes/BatteryHolder_Keystone_1060_1x2032.step",
+          "source_installed_file": "C:\\Program Files\\KiCad\\10.0\\share\\kicad\\3dmodels\\Battery.3dshapes\\BatteryHolder_Keystone_1060_1x2032.step",
+          "source_repository": "https://github.com/KiCad/kicad-packages3D",
+          "destination": "v1/design/Meshcore_NaIon/3dmodels/kicad_standard/Battery.3dshapes/BatteryHolder_Keystone_1060_1x2032.step",
+          "sha256": "221c5c6510ed7e6fa3bd621ccee0bb883d86eb1e0e34ab2e2a32fb4d4ae7548d",
+          "bytes": 162098,
+          "copied_byte_identical": true,
+          "license": "CC-BY-SA-4.0 WITH embedded KiCad design exception",
+          "license_basis": "License and exception retained verbatim in STEP HEADER.",
+          "original_STEP_HEADER": "ISO-10303-21;\r\nHEADER;\r\n/* BatteryHolder_Keystone_1060_1x2032.step 3D STEP model for use in ECAD systems\r\n * Copyright (C) 2019, kicad StepUp\r\n * \r\n * This work is licensed under the [Creative Commons CC-BY-SA 4.0 License](https://creativecommons.org/licenses/by-sa/4.0/legalcode), \r\n * with the following exception:\r\n * To the extent that the creation of electronic designs that use 'Licensed Material' can be considered to be 'Adapted Material', \r\n * then the copyright holder waives article 3 of the license with respect to these designs and any generated files which use data provided \r\n * as part of the 'Licensed Material'.\r\n * You are free to use the library data in your own projects without the obligation to share your project files under this or any other license agreement.\r\n * However, if you wish to redistribute these libraries, or parts thereof (including in modified form) as a collection then the exception above does not apply. \r\n * Please refer to https://github.com/KiCad/kicad-packages3D/blob/master/LICENSE.md for further clarification of the exception.\r\n * Disclaimer of Warranties and Limitation of Liability.\r\n * These libraries are provided in the hope that they will be useful, but are provided without warranty of any kind, express or implied.\r\n * *USE 3D CAD DATA AT YOUR OWN RISK*\r\n * *DO NOT RELY UPON ANY INFORMATION FOUND HERE WITHOUT INDEPENDENT VERIFICATION.*\r\n * \r\n */\r\n\r\nFILE_DESCRIPTION(\r\n/* description */ ('model of BatteryHolder_Keystone_1060_1x2032'),\r\n/* implementation_level */ '2;1');\r\n\r\nFILE_NAME(\r\n/* name */ 'BatteryHolder_Keystone_1060_1x2032.step',\r\n/* time_stamp */ '2019-02-14T16:03:19',\r\n/* author */ ('kicad StepUp','ksu'),\r\n/* organization */ ('FreeCAD'),\r\n/* preprocessor_version */ 'OCC',\r\n/* originating_system */ 'kicad StepUp',\r\n/* authorisation */ '');\r\n\r\nFILE_SCHEMA(('AUTOMOTIVE_DESIGN { 1 0 10303 214 1 1 1 1 }'));\r\n",
+          "referenced_by": [
+            "v1/design/Meshcore_NaIon/Meshcore.pretty/BatteryHolder_Keystone_1060_1x2032.kicad_mod",
+            "v1/design/Meshcore_NaIon/Meshcore_NaIon.kicad_pcb"
+          ]
+        },
+        {
+          "source_uri": "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/CP_Elec_6.3x5.8.step",
+          "portable_uri": "${KIPRJMOD}/3dmodels/kicad_standard/Capacitor_SMD.3dshapes/CP_Elec_6.3x5.8.step",
+          "source_installed_file": "C:\\Program Files\\KiCad\\10.0\\share\\kicad\\3dmodels\\Capacitor_SMD.3dshapes\\CP_Elec_6.3x5.8.step",
+          "source_repository": "https://github.com/KiCad/kicad-packages3D",
+          "destination": "v1/design/Meshcore_NaIon/3dmodels/kicad_standard/Capacitor_SMD.3dshapes/CP_Elec_6.3x5.8.step",
+          "sha256": "887e13de4f738fc711dad723623bb52ad8f0688a7e6c9319c5394b960618fff2",
+          "bytes": 81892,
+          "copied_byte_identical": true,
+          "license": "CC-BY-SA-4.0 WITH embedded KiCad design exception",
+          "license_basis": "License and exception retained verbatim in STEP HEADER.",
+          "original_STEP_HEADER": "ISO-10303-21;\nHEADER;\n/* CP_Elec_6.3x5.8.step 3D STEP model for use in ECAD systems\n * Copyright (C) 2018, kicad StepUp\n * \n * This work is licensed under the [Creative Commons CC-BY-SA 4.0 License](https://creativecommons.org/licenses/by-sa/4.0/legalcode), \n * with the following exception:\n * To the extent that the creation of electronic designs that use 'Licensed Material' can be considered to be 'Adapted Material', \n * then the copyright holder waives article 3 of the license with respect to these designs and any generated files which use data provided \n * as part of the 'Licensed Material'.\n * You are free to use the library data in your own projects without the obligation to share your project files under this or any other license agreement.\n * However, if you wish to redistribute these libraries, or parts thereof (including in modified form) as a collection then the exception above does not apply. \n * Please refer to https://github.com/KiCad/kicad-packages3D/blob/master/LICENSE.md for further clarification of the exception.\n * Disclaimer of Warranties and Limitation of Liability.\n * These libraries are provided in the hope that they will be useful, but are provided without warranty of any kind, express or implied.\n * *USE 3D CAD DATA AT YOUR OWN RISK*\n * *DO NOT RELY UPON ANY INFORMATION FOUND HERE WITHOUT INDEPENDENT VERIFICATION.*\n * \n */\n\nFILE_DESCRIPTION(\n/* description */ ('model of CP_Elec_6.3x5.8'),\n/* implementation_level */ '2;1');\n\nFILE_NAME(\n/* name */ 'CP_Elec_6.3x5.8.step',\n/* time_stamp */ '2018-06-25T02:15:02',\n/* author */ ('kicad StepUp','ksu'),\n/* organization */ ('FreeCAD'),\n/* preprocessor_version */ 'OCC',\n/* originating_system */ 'kicad StepUp',\n/* authorisation */ '');\n\nFILE_SCHEMA(('AUTOMOTIVE_DESIGN { 1 0 10303 214 1 1 1 1 }'));\n",
+          "referenced_by": [
+            "v1/design/Meshcore_NaIon/Meshcore.pretty/CP_Elec_Panasonic_FK_D_6.3x5.8.kicad_mod",
+            "v1/design/Meshcore_NaIon/Meshcore_NaIon.kicad_pcb"
+          ]
+        },
+        {
+          "source_uri": "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.step",
+          "portable_uri": "${KIPRJMOD}/3dmodels/kicad_standard/Capacitor_SMD.3dshapes/C_0805_2012Metric.step",
+          "source_installed_file": "C:\\Program Files\\KiCad\\10.0\\share\\kicad\\3dmodels\\Capacitor_SMD.3dshapes\\C_0805_2012Metric.step",
+          "source_repository": "https://github.com/KiCad/kicad-packages3D",
+          "destination": "v1/design/Meshcore_NaIon/3dmodels/kicad_standard/Capacitor_SMD.3dshapes/C_0805_2012Metric.step",
+          "sha256": "9a669c1a2f1ea25b88b401acef6efeaa80a067bd7da9db6993de719a7fbe155c",
+          "bytes": 43618,
+          "copied_byte_identical": true,
+          "license": "CC-BY-SA-4.0 WITH embedded KiCad design exception",
+          "license_basis": "License and exception retained verbatim in STEP HEADER.",
+          "original_STEP_HEADER": "ISO-10303-21;\nHEADER;\n/* C_0805_2012Metric.step 3D STEP model for use in ECAD systems\n * Copyright (C) 2017, kicad StepUp\n * \n * This work is licensed under the [Creative Commons CC-BY-SA 4.0 License](https://creativecommons.org/licenses/by-sa/4.0/legalcode), \n * with the following exception:\n * To the extent that the creation of electronic designs that use 'Licensed Material' can be considered to be 'Adapted Material', \n * then the copyright holder waives article 3 of the license with respect to these designs and any generated files which use data provided \n * as part of the 'Licensed Material'.\n * You are free to use the library data in your own projects without the obligation to share your project files under this or any other license agreement.\n * However, if you wish to redistribute these libraries, or parts thereof (including in modified form) as a collection then the exception above does not apply. \n * Please refer to https://github.com/KiCad/kicad-packages3D/blob/master/LICENSE.md for further clarification of the exception.\n * Disclaimer of Warranties and Limitation of Liability.\n * These libraries are provided in the hope that they will be useful, but are provided without warranty of any kind, express or implied.\n * *USE 3D CAD DATA AT YOUR OWN RISK*\n * *DO NOT RELY UPON ANY INFORMATION FOUND HERE WITHOUT INDEPENDENT VERIFICATION.*\n * \n */\n\nFILE_DESCRIPTION(\n/* description */ ('model of C_0805_2012Metric'),\n/* implementation_level */ '2;1');\n\nFILE_NAME(\n/* name */ 'C_0805_2012Metric.step',\n/* time_stamp */ '2017-12-10T01:08:45',\n/* author */ ('kicad StepUp','ksu'),\n/* organization */ ('FreeCAD'),\n/* preprocessor_version */ 'OCC',\n/* originating_system */ 'kicad StepUp',\n/* authorisation */ '');\n\nFILE_SCHEMA(('AUTOMOTIVE_DESIGN { 1 0 10303 214 1 1 1 1 }'));\n",
+          "referenced_by": [
+            "v1/design/Meshcore_NaIon/Meshcore.pretty/C_0805_2012Metric.kicad_mod",
+            "v1/design/Meshcore_NaIon/Meshcore_NaIon.kicad_pcb"
+          ]
+        },
+        {
+          "source_uri": "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_1206_3216Metric.step",
+          "portable_uri": "${KIPRJMOD}/3dmodels/kicad_standard/Capacitor_SMD.3dshapes/C_1206_3216Metric.step",
+          "source_installed_file": "C:\\Program Files\\KiCad\\10.0\\share\\kicad\\3dmodels\\Capacitor_SMD.3dshapes\\C_1206_3216Metric.step",
+          "source_repository": "https://github.com/KiCad/kicad-packages3D",
+          "destination": "v1/design/Meshcore_NaIon/3dmodels/kicad_standard/Capacitor_SMD.3dshapes/C_1206_3216Metric.step",
+          "sha256": "11e948c72c90e2b6322436b72745f40ff4e8ba0da64fb2a0df943dfa61e89c1a",
+          "bytes": 43450,
+          "copied_byte_identical": true,
+          "license": "CC-BY-SA-4.0 WITH embedded KiCad design exception",
+          "license_basis": "License and exception retained verbatim in STEP HEADER.",
+          "original_STEP_HEADER": "ISO-10303-21;\nHEADER;\n/* C_1206_3216Metric.step 3D STEP model for use in ECAD systems\n * Copyright (C) 2017, kicad StepUp\n * \n * This work is licensed under the [Creative Commons CC-BY-SA 4.0 License](https://creativecommons.org/licenses/by-sa/4.0/legalcode), \n * with the following exception:\n * To the extent that the creation of electronic designs that use 'Licensed Material' can be considered to be 'Adapted Material', \n * then the copyright holder waives article 3 of the license with respect to these designs and any generated files which use data provided \n * as part of the 'Licensed Material'.\n * You are free to use the library data in your own projects without the obligation to share your project files under this or any other license agreement.\n * However, if you wish to redistribute these libraries, or parts thereof (including in modified form) as a collection then the exception above does not apply. \n * Please refer to https://github.com/KiCad/kicad-packages3D/blob/master/LICENSE.md for further clarification of the exception.\n * Disclaimer of Warranties and Limitation of Liability.\n * These libraries are provided in the hope that they will be useful, but are provided without warranty of any kind, express or implied.\n * *USE 3D CAD DATA AT YOUR OWN RISK*\n * *DO NOT RELY UPON ANY INFORMATION FOUND HERE WITHOUT INDEPENDENT VERIFICATION.*\n * \n */\n\nFILE_DESCRIPTION(\n/* description */ ('model of C_1206_3216Metric'),\n/* implementation_level */ '2;1');\n\nFILE_NAME(\n/* name */ 'C_1206_3216Metric.step',\n/* time_stamp */ '2017-12-10T01:08:41',\n/* author */ ('kicad StepUp','ksu'),\n/* organization */ ('FreeCAD'),\n/* preprocessor_version */ 'OCC',\n/* originating_system */ 'kicad StepUp',\n/* authorisation */ '');\n\nFILE_SCHEMA(('AUTOMOTIVE_DESIGN { 1 0 10303 214 1 1 1 1 }'));\n",
+          "referenced_by": [
+            "v1/design/Meshcore_NaIon/Meshcore.pretty/C_1206_3216Metric.kicad_mod",
+            "v1/design/Meshcore_NaIon/Meshcore_NaIon.kicad_pcb"
+          ]
+        },
+        {
+          "source_uri": "${KICAD10_3DMODEL_DIR}/Connector_Molex.3dshapes/Molex_PicoBlade_53261-0871_1x08-1MP_P1.25mm_Horizontal.step",
+          "portable_uri": "${KIPRJMOD}/3dmodels/kicad_standard/Connector_Molex.3dshapes/Molex_PicoBlade_53261-0871_1x08-1MP_P1.25mm_Horizontal.step",
+          "source_installed_file": "C:\\Program Files\\KiCad\\10.0\\share\\kicad\\3dmodels\\Connector_Molex.3dshapes\\Molex_PicoBlade_53261-0871_1x08-1MP_P1.25mm_Horizontal.step",
+          "source_repository": "https://github.com/KiCad/kicad-packages3D",
+          "destination": "v1/design/Meshcore_NaIon/3dmodels/kicad_standard/Connector_Molex.3dshapes/Molex_PicoBlade_53261-0871_1x08-1MP_P1.25mm_Horizontal.step",
+          "sha256": "3da19b40bda2d292798cafcbcfaba62e7925ee5fbd0c99701aa26417d1683ba2",
+          "bytes": 457640,
+          "copied_byte_identical": true,
+          "license": "CC-BY-SA-4.0 WITH embedded KiCad design exception",
+          "license_basis": "License and exception retained verbatim in STEP HEADER.",
+          "original_STEP_HEADER": "ISO-10303-21;\nHEADER;\n/* Molex_PicoBlade_53261-0871_1x08-1MP_P1.25mm_Horizontal.step 3D STEP model for use in ECAD systems\n * Copyright (C) 2018, Rene Poeschl\n * \n * This work is licensed under the [Creative Commons CC-BY-SA 4.0 License](https://creativecommons.org/licenses/by-sa/4.0/legalcode), \n * with the following exception:\n * To the extent that the creation of electronic designs that use 'Licensed Material' can be considered to be 'Adapted Material', \n * then the copyright holder waives article 3 of the license with respect to these designs and any generated files which use data provided \n * as part of the 'Licensed Material'.\n * You are free to use the library data in your own projects without the obligation to share your project files under this or any other license agreement.\n * However, if you wish to redistribute these libraries, or parts thereof (including in modified form) as a collection then the exception above does not apply. \n * Please refer to https://github.com/KiCad/kicad-packages3D/blob/master/LICENSE.md for further clarification of the exception.\n * Disclaimer of Warranties and Limitation of Liability.\n * These libraries are provided in the hope that they will be useful, but are provided without warranty of any kind, express or implied.\n * *USE 3D CAD DATA AT YOUR OWN RISK*\n * *DO NOT RELY UPON ANY INFORMATION FOUND HERE WITHOUT INDEPENDENT VERIFICATION.*\n * \n * \n * \n * \n * \n * \n * \n */\n\nFILE_DESCRIPTION(\n/* description */ ('model of Molex_PicoBlade_53261-0871_1x08-1MP_P1.25mm_Horizontal'),\n/* implementation_level */ '2;1');\n\nFILE_NAME(\n/* name */ 'Molex_PicoBlade_53261-0871_1x08-1MP_P1.25mm_Horizontal.step',\n/* time_stamp */ '2018-06-18T10:23:30',\n/* author */ ('Rene Poeschl','poeschlr@gmail.com'),\n/* organization */ (''),\n/* preprocessor_version */ '',\n/* originating_system */ '',\n/* authorisation */ '');\n\nFILE_SCHEMA(('AUTOMOTIVE_DESIGN { 1 0 10303 214 1 1 1 1 }'));\n",
+          "referenced_by": [
+            "v1/design/Meshcore_NaIon/Meshcore.pretty/Molex_PicoBlade_53261-0871_1x08-1MP_P1.25mm_Horizontal.kicad_mod",
+            "v1/design/Meshcore_NaIon/Meshcore_NaIon.kicad_pcb"
+          ]
+        },
+        {
+          "source_uri": "${KICAD10_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x02_P2.54mm_Vertical.step",
+          "portable_uri": "${KIPRJMOD}/3dmodels/kicad_standard/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x02_P2.54mm_Vertical.step",
+          "source_installed_file": "C:\\Program Files\\KiCad\\10.0\\share\\kicad\\3dmodels\\Connector_PinHeader_2.54mm.3dshapes\\PinHeader_1x02_P2.54mm_Vertical.step",
+          "source_repository": "https://github.com/KiCad/kicad-packages3D",
+          "destination": "v1/design/Meshcore_NaIon/3dmodels/kicad_standard/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x02_P2.54mm_Vertical.step",
+          "sha256": "ea4d0799007ebdd3945072bf255d673d2fe87eb05fda85fd8d7993ad9397da41",
+          "bytes": 75616,
+          "copied_byte_identical": true,
+          "license": "CC-BY-SA-4.0 WITH embedded KiCad design exception",
+          "license_basis": "License and exception retained verbatim in STEP HEADER.",
+          "original_STEP_HEADER": "ISO-10303-21;\nHEADER;\n/* PinHeader_1x02_P2.54mm_Vertical.step 3D STEP model for use in ECAD systems\n * Copyright (C) 2017, kicad StepUp\n * \n * This work is licensed under the [Creative Commons CC-BY-SA 4.0 License](https://creativecommons.org/licenses/by-sa/4.0/legalcode), \n * with the following exception:\n * To the extent that the creation of electronic designs that use 'Licensed Material' can be considered to be 'Adapted Material', \n * then the copyright holder waives article 3 of the license with respect to these designs and any generated files which use data provided \n * as part of the 'Licensed Material'.\n * You are free to use the library data in your own projects without the obligation to share your project files under this or any other license agreement.\n * However, if you wish to redistribute these libraries, or parts thereof (including in modified form) as a collection then the exception above does not apply. \n * Please refer to https://github.com/KiCad/kicad-packages3D/blob/master/LICENSE.md for further clarification of the exception.\n * Disclaimer of Warranties and Limitation of Liability.\n * These libraries are provided in the hope that they will be useful, but are provided without warranty of any kind, express or implied.\n * *USE 3D CAD DATA AT YOUR OWN RISK*\n * *DO NOT RELY UPON ANY INFORMATION FOUND HERE WITHOUT INDEPENDENT VERIFICATION.*\n * \n */\n\nFILE_DESCRIPTION(\n/* description */ ('model of PinHeader_1x02_P2.54mm_Vertical'),\n/* implementation_level */ '2;1');\n\nFILE_NAME(\n/* name */ 'PinHeader_1x02_P2.54mm_Vertical.step',\n/* time_stamp */ '2017-12-09T23:53:40',\n/* author */ ('kicad StepUp','ksu'),\n/* organization */ ('FreeCAD'),\n/* preprocessor_version */ 'OCC',\n/* originating_system */ 'kicad StepUp',\n/* authorisation */ '');\n\nFILE_SCHEMA(('AUTOMOTIVE_DESIGN { 1 0 10303 214 1 1 1 1 }'));\n",
+          "referenced_by": [
+            "v1/design/Meshcore_NaIon/Meshcore.pretty/PinHeader_1x02_P2.54mm_Vertical.kicad_mod",
+            "v1/design/Meshcore_NaIon/Meshcore_NaIon.kicad_pcb"
+          ]
+        },
+        {
+          "source_uri": "${KICAD10_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x03_P2.54mm_Vertical.step",
+          "portable_uri": "${KIPRJMOD}/3dmodels/kicad_standard/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x03_P2.54mm_Vertical.step",
+          "source_installed_file": "C:\\Program Files\\KiCad\\10.0\\share\\kicad\\3dmodels\\Connector_PinHeader_2.54mm.3dshapes\\PinHeader_1x03_P2.54mm_Vertical.step",
+          "source_repository": "https://github.com/KiCad/kicad-packages3D",
+          "destination": "v1/design/Meshcore_NaIon/3dmodels/kicad_standard/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x03_P2.54mm_Vertical.step",
+          "sha256": "b91b4ac5acf1a0d28a676703db972d17b8f11ef26a85b58d60786a69246b921b",
+          "bytes": 110633,
+          "copied_byte_identical": true,
+          "license": "CC-BY-SA-4.0 WITH embedded KiCad design exception",
+          "license_basis": "License and exception retained verbatim in STEP HEADER.",
+          "original_STEP_HEADER": "ISO-10303-21;\nHEADER;\n/* PinHeader_1x03_P2.54mm_Vertical.step 3D STEP model for use in ECAD systems\n * Copyright (C) 2017, kicad StepUp\n * \n * This work is licensed under the [Creative Commons CC-BY-SA 4.0 License](https://creativecommons.org/licenses/by-sa/4.0/legalcode), \n * with the following exception:\n * To the extent that the creation of electronic designs that use 'Licensed Material' can be considered to be 'Adapted Material', \n * then the copyright holder waives article 3 of the license with respect to these designs and any generated files which use data provided \n * as part of the 'Licensed Material'.\n * You are free to use the library data in your own projects without the obligation to share your project files under this or any other license agreement.\n * However, if you wish to redistribute these libraries, or parts thereof (including in modified form) as a collection then the exception above does not apply. \n * Please refer to https://github.com/KiCad/kicad-packages3D/blob/master/LICENSE.md for further clarification of the exception.\n * Disclaimer of Warranties and Limitation of Liability.\n * These libraries are provided in the hope that they will be useful, but are provided without warranty of any kind, express or implied.\n * *USE 3D CAD DATA AT YOUR OWN RISK*\n * *DO NOT RELY UPON ANY INFORMATION FOUND HERE WITHOUT INDEPENDENT VERIFICATION.*\n * \n */\n\nFILE_DESCRIPTION(\n/* description */ ('model of PinHeader_1x03_P2.54mm_Vertical'),\n/* implementation_level */ '2;1');\n\nFILE_NAME(\n/* name */ 'PinHeader_1x03_P2.54mm_Vertical.step',\n/* time_stamp */ '2017-12-09T23:53:41',\n/* author */ ('kicad StepUp','ksu'),\n/* organization */ ('FreeCAD'),\n/* preprocessor_version */ 'OCC',\n/* originating_system */ 'kicad StepUp',\n/* authorisation */ '');\n\nFILE_SCHEMA(('AUTOMOTIVE_DESIGN { 1 0 10303 214 1 1 1 1 }'));\n",
+          "referenced_by": [
+            "v1/design/Meshcore_NaIon/Meshcore.pretty/PinHeader_1x03_P2.54mm_Vertical.kicad_mod",
+            "v1/design/Meshcore_NaIon/Meshcore_NaIon.kicad_pcb"
+          ]
+        },
+        {
+          "source_uri": "${KICAD10_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x04_P2.54mm_Vertical.step",
+          "portable_uri": "${KIPRJMOD}/3dmodels/kicad_standard/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x04_P2.54mm_Vertical.step",
+          "source_installed_file": "C:\\Program Files\\KiCad\\10.0\\share\\kicad\\3dmodels\\Connector_PinHeader_2.54mm.3dshapes\\PinHeader_1x04_P2.54mm_Vertical.step",
+          "source_repository": "https://github.com/KiCad/kicad-packages3D",
+          "destination": "v1/design/Meshcore_NaIon/3dmodels/kicad_standard/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x04_P2.54mm_Vertical.step",
+          "sha256": "a74079b8d06bda78847623b39ee1855ffd1d9a8c1e896b349e4f1dc2056d44d9",
+          "bytes": 145684,
+          "copied_byte_identical": true,
+          "license": "CC-BY-SA-4.0 WITH embedded KiCad design exception",
+          "license_basis": "License and exception retained verbatim in STEP HEADER.",
+          "original_STEP_HEADER": "ISO-10303-21;\nHEADER;\n/* PinHeader_1x04_P2.54mm_Vertical.step 3D STEP model for use in ECAD systems\n * Copyright (C) 2017, kicad StepUp\n * \n * This work is licensed under the [Creative Commons CC-BY-SA 4.0 License](https://creativecommons.org/licenses/by-sa/4.0/legalcode), \n * with the following exception:\n * To the extent that the creation of electronic designs that use 'Licensed Material' can be considered to be 'Adapted Material', \n * then the copyright holder waives article 3 of the license with respect to these designs and any generated files which use data provided \n * as part of the 'Licensed Material'.\n * You are free to use the library data in your own projects without the obligation to share your project files under this or any other license agreement.\n * However, if you wish to redistribute these libraries, or parts thereof (including in modified form) as a collection then the exception above does not apply. \n * Please refer to https://github.com/KiCad/kicad-packages3D/blob/master/LICENSE.md for further clarification of the exception.\n * Disclaimer of Warranties and Limitation of Liability.\n * These libraries are provided in the hope that they will be useful, but are provided without warranty of any kind, express or implied.\n * *USE 3D CAD DATA AT YOUR OWN RISK*\n * *DO NOT RELY UPON ANY INFORMATION FOUND HERE WITHOUT INDEPENDENT VERIFICATION.*\n * \n */\n\nFILE_DESCRIPTION(\n/* description */ ('model of PinHeader_1x04_P2.54mm_Vertical'),\n/* implementation_level */ '2;1');\n\nFILE_NAME(\n/* name */ 'PinHeader_1x04_P2.54mm_Vertical.step',\n/* time_stamp */ '2017-12-09T23:53:42',\n/* author */ ('kicad StepUp','ksu'),\n/* organization */ ('FreeCAD'),\n/* preprocessor_version */ 'OCC',\n/* originating_system */ 'kicad StepUp',\n/* authorisation */ '');\n\nFILE_SCHEMA(('AUTOMOTIVE_DESIGN { 1 0 10303 214 1 1 1 1 }'));\n",
+          "referenced_by": [
+            "v1/design/Meshcore_NaIon/Meshcore.pretty/PinHeader_1x04_P2.54mm_Vertical.kicad_mod",
+            "v1/design/Meshcore_NaIon/Meshcore_NaIon.kicad_pcb"
+          ]
+        },
+        {
+          "source_uri": "${KICAD10_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_2x03_P2.54mm_Vertical.step",
+          "portable_uri": "${KIPRJMOD}/3dmodels/kicad_standard/Connector_PinHeader_2.54mm.3dshapes/PinHeader_2x03_P2.54mm_Vertical.step",
+          "source_installed_file": "C:\\Program Files\\KiCad\\10.0\\share\\kicad\\3dmodels\\Connector_PinHeader_2.54mm.3dshapes\\PinHeader_2x03_P2.54mm_Vertical.step",
+          "source_repository": "https://github.com/KiCad/kicad-packages3D",
+          "destination": "v1/design/Meshcore_NaIon/3dmodels/kicad_standard/Connector_PinHeader_2.54mm.3dshapes/PinHeader_2x03_P2.54mm_Vertical.step",
+          "sha256": "30c87dd7aa515b02055124826d8c4054084971d49d819c644cd6b21295ac52c8",
+          "bytes": 185520,
+          "copied_byte_identical": true,
+          "license": "CC-BY-SA-4.0 WITH embedded KiCad design exception",
+          "license_basis": "License and exception retained verbatim in STEP HEADER.",
+          "original_STEP_HEADER": "ISO-10303-21;\nHEADER;\n/* PinHeader_2x03_P2.54mm_Vertical.step 3D STEP model for use in ECAD systems\n * Copyright (C) 2017, kicad StepUp\n * \n * This work is licensed under the [Creative Commons CC-BY-SA 4.0 License](https://creativecommons.org/licenses/by-sa/4.0/legalcode), \n * with the following exception:\n * To the extent that the creation of electronic designs that use 'Licensed Material' can be considered to be 'Adapted Material', \n * then the copyright holder waives article 3 of the license with respect to these designs and any generated files which use data provided \n * as part of the 'Licensed Material'.\n * You are free to use the library data in your own projects without the obligation to share your project files under this or any other license agreement.\n * However, if you wish to redistribute these libraries, or parts thereof (including in modified form) as a collection then the exception above does not apply. \n * Please refer to https://github.com/KiCad/kicad-packages3D/blob/master/LICENSE.md for further clarification of the exception.\n * Disclaimer of Warranties and Limitation of Liability.\n * These libraries are provided in the hope that they will be useful, but are provided without warranty of any kind, express or implied.\n * *USE 3D CAD DATA AT YOUR OWN RISK*\n * *DO NOT RELY UPON ANY INFORMATION FOUND HERE WITHOUT INDEPENDENT VERIFICATION.*\n * \n */\n\nFILE_DESCRIPTION(\n/* description */ ('model of PinHeader_2x03_P2.54mm_Vertical'),\n/* implementation_level */ '2;1');\n\nFILE_NAME(\n/* name */ 'PinHeader_2x03_P2.54mm_Vertical.step',\n/* time_stamp */ '2017-12-10T00:20:16',\n/* author */ ('kicad StepUp','ksu'),\n/* organization */ ('FreeCAD'),\n/* preprocessor_version */ 'OCC',\n/* originating_system */ 'kicad StepUp',\n/* authorisation */ '');\n\nFILE_SCHEMA(('AUTOMOTIVE_DESIGN { 1 0 10303 214 1 1 1 1 }'));\n",
+          "referenced_by": [
+            "v1/design/Meshcore_NaIon/Meshcore.pretty/PinHeader_2x03_P2.54mm_Vertical.kicad_mod",
+            "v1/design/Meshcore_NaIon/Meshcore_NaIon.kicad_pcb"
+          ]
+        },
+        {
+          "source_uri": "${KICAD10_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SMB.step",
+          "portable_uri": "${KIPRJMOD}/3dmodels/kicad_standard/Diode_SMD.3dshapes/D_SMB.step",
+          "source_installed_file": "C:\\Program Files\\KiCad\\10.0\\share\\kicad\\3dmodels\\Diode_SMD.3dshapes\\D_SMB.step",
+          "source_repository": "https://github.com/KiCad/kicad-packages3D",
+          "destination": "v1/design/Meshcore_NaIon/3dmodels/kicad_standard/Diode_SMD.3dshapes/D_SMB.step",
+          "sha256": "029466277d91e9f5492556be93e46611049e07115c7913880c547afa96058ed4",
+          "bytes": 70508,
+          "copied_byte_identical": true,
+          "license": "GPL-3.0-or-later WITH embedded KiCad design exception",
+          "license_basis": "License and exception retained verbatim in STEP HEADER.",
+          "original_STEP_HEADER": "ISO-10303-21;\nHEADER;\n/* D_SMB.step 3D STEP model for use in ECAD systems\n * Copyright (C) 2017, kicad StepUp\n * \n * This program is free software: you can redistribute it and/or modify\n * it under the terms of the GNU General Public License as published by\n * the Free Software Foundation, either version 3 of the License, or\n * any later version.\n * \n * This program is distributed in the hope that it will be useful,\n * but WITHOUT ANY WARRANTY; without even the implied warranty of\n * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n * GNU General Public License for more details.\n * \n * You should have received a copy of the GNU General Public License\n * along with this program.  If not, see http://www.gnu.org/licenses/.\n * \n * As a special exception, if you create a design which uses this symbol,\n * and embed this symbol or unaltered portions of this symbol into the design,\n * this symbol does not by itself cause the resulting design to be covered by\n * the GNU General Public License.\n * This exception does not however invalidate any other reasons why the design\n * itself might be covered by the GNU General Public License. \n * If you modify this symbol, you may extend this exception to your version of the symbol,\n * but you are not obligated to do so.\n * If you do not wish to do so, delete this exception statement from your version\n * Risk disclaimer\n * *USE 3D CAD DATA AT YOUR OWN RISK*\n * *DO NOT RELY UPON ANY INFORMATION FOUND HERE WITHOUT INDEPENDENT VERIFICATION.*\n * \n */\n\nFILE_DESCRIPTION(\n/* description */ ('model of D_SMB'),\n/* implementation_level */ '2;1');\n\nFILE_NAME(\n/* name */ 'D_SMB.step',\n/* time_stamp */ '2017-05-08T20:37:23',\n/* author */ ('kicad StepUp','ksu'),\n/* organization */ ('FreeCAD'),\n/* preprocessor_version */ 'OCC',\n/* originating_system */ 'kicad StepUp',\n/* authorisation */ '');\n\nFILE_SCHEMA(('AUTOMOTIVE_DESIGN_CC2 { 1 2 10303 214 -1 1 5 4 }'));\n",
+          "referenced_by": [
+            "v1/design/Meshcore_NaIon/Meshcore.pretty/D_SMB.kicad_mod",
+            "v1/design/Meshcore_NaIon/Meshcore_NaIon.kicad_pcb"
+          ]
+        },
+        {
+          "source_uri": "${KICAD10_3DMODEL_DIR}/LED_SMD.3dshapes/LED_0805_2012Metric.step",
+          "portable_uri": "${KIPRJMOD}/3dmodels/kicad_standard/LED_SMD.3dshapes/LED_0805_2012Metric.step",
+          "source_installed_file": "C:\\Program Files\\KiCad\\10.0\\share\\kicad\\3dmodels\\LED_SMD.3dshapes\\LED_0805_2012Metric.step",
+          "source_repository": "https://github.com/KiCad/kicad-packages3D",
+          "destination": "v1/design/Meshcore_NaIon/3dmodels/kicad_standard/LED_SMD.3dshapes/LED_0805_2012Metric.step",
+          "sha256": "0aa8b791804f5d72a2fc7d1bf231dd9959207d83df8ad801176fbc459f575b98",
+          "bytes": 78220,
+          "copied_byte_identical": true,
+          "license": "CC-BY-SA-4.0 WITH embedded KiCad design exception",
+          "license_basis": "License and exception retained verbatim in STEP HEADER.",
+          "original_STEP_HEADER": "ISO-10303-21;\nHEADER;\n/* LED_0805_2012Metric.step 3D STEP model for use in ECAD systems\n * Copyright (C) 2018, kicad StepUp\n * \n * This work is licensed under the [Creative Commons CC-BY-SA 4.0 License](https://creativecommons.org/licenses/by-sa/4.0/legalcode), \n * with the following exception:\n * To the extent that the creation of electronic designs that use 'Licensed Material' can be considered to be 'Adapted Material', \n * then the copyright holder waives article 3 of the license with respect to these designs and any generated files which use data provided \n * as part of the 'Licensed Material'.\n * You are free to use the library data in your own projects without the obligation to share your project files under this or any other license agreement.\n * However, if you wish to redistribute these libraries, or parts thereof (including in modified form) as a collection then the exception above does not apply. \n * Please refer to https://github.com/KiCad/kicad-packages3D/blob/master/LICENSE.md for further clarification of the exception.\n * Disclaimer of Warranties and Limitation of Liability.\n * These libraries are provided in the hope that they will be useful, but are provided without warranty of any kind, express or implied.\n * *USE 3D CAD DATA AT YOUR OWN RISK*\n * *DO NOT RELY UPON ANY INFORMATION FOUND HERE WITHOUT INDEPENDENT VERIFICATION.*\n * \n */\n\nFILE_DESCRIPTION(\n/* description */ ('model of LED_0805_2012Metric'),\n/* implementation_level */ '2;1');\n\nFILE_NAME(\n/* name */ 'LED_0805_2012Metric.step',\n/* time_stamp */ '2018-03-14T23:50:52',\n/* author */ ('kicad StepUp','ksu'),\n/* organization */ ('FreeCAD'),\n/* preprocessor_version */ 'OCC',\n/* originating_system */ 'kicad StepUp',\n/* authorisation */ '');\n\nFILE_SCHEMA(('AUTOMOTIVE_DESIGN { 1 0 10303 214 1 1 1 1 }'));\n",
+          "referenced_by": [
+            "v1/design/Meshcore_NaIon/Meshcore.pretty/LED_0805_2012Metric.kicad_mod",
+            "v1/design/Meshcore_NaIon/Meshcore_NaIon.kicad_pcb"
+          ]
+        },
+        {
+          "source_uri": "${KICAD10_3DMODEL_DIR}/Package_SO.3dshapes/SOIC-8_3.9x4.9mm_P1.27mm.step",
+          "portable_uri": "${KIPRJMOD}/3dmodels/kicad_standard/Package_SO.3dshapes/SOIC-8_3.9x4.9mm_P1.27mm.step",
+          "source_installed_file": "C:\\Program Files\\KiCad\\10.0\\share\\kicad\\3dmodels\\Package_SO.3dshapes\\SOIC-8_3.9x4.9mm_P1.27mm.step",
+          "source_repository": "https://github.com/KiCad/kicad-packages3D",
+          "destination": "v1/design/Meshcore_NaIon/3dmodels/kicad_standard/Package_SO.3dshapes/SOIC-8_3.9x4.9mm_P1.27mm.step",
+          "sha256": "07f46cff378d30e6c27dfd5a03092c795323f86d91c71fc7e743f4f418dc553a",
+          "bytes": 125320,
+          "copied_byte_identical": true,
+          "license": "CC-BY-SA-4.0 WITH embedded KiCad design exception",
+          "license_basis": "License and exception retained verbatim in STEP HEADER.",
+          "original_STEP_HEADER": "ISO-10303-21;\nHEADER;\n/* SOIC-8_3.9x4.9mm_P1.27mm.step 3D STEP model for use in ECAD systems\n * Copyright (C) 2025, KiCAD\n *\n * This work is licensed under the\n * [Creative Commons CC-BY-SA 4.0 License](https://creativecommons.org/licenses/by-sa/4.0/legalcode),\n * with the following exception:\n *\n * To the extent that the creation of electronic designs that use 'Licensed Material' can be\n * considered to be 'Adapted Material', then the copyright holder waives article 3 of the license\n * with respect to these designs and any generated files which use data provided as part of the\n * 'Licensed Material'.\n *\n * You are free to use the library data in your own projects without the obligation to share your\n * project files under this or any other license agreement. However, if you wish to distribute\n * these libraries, or parts thereof (including in modified form) as a collection then the exception\n * above does not apply. Please refer to\n * https://gitlab.com/kicad/libraries/kicad-packages3D/-/blob/master/LICENSE.md for further clarification\n * of the exception.\n *\n * Disclaimer of Warranties and Limitation of Liability.\n * These libraries are provided in the hope that they will be useful, but are provided without warranty of any kind, express or implied.\n * USE 3D CAD DATA AT YOUR OWN RISK\n * DO NOT RELY UPON ANY INFORMATION FOUND HERE WITHOUT INDEPENDENT VERIFICATION.\n */\n\nFILE_DESCRIPTION(\n/* description */ ('model of SOIC-8_3.9x4.9mm_P1.27mm'),\n/* implementation_level */ '2;1');\n\nFILE_NAME(\n/* name */ 'SOIC-8_3.9x4.9mm_P1.27mm.step',\n/* time_stamp */ '1970-01-01T00:00:00',\n/* author */ ('KiCAD','kicad'),\n/* organization */ ('OCCT'),\n/* preprocessor_version */ '',\n/* originating_system */ 'KiCAD',\n/* authorisation */ '');\n\nFILE_SCHEMA(('AUTOMOTIVE_DESIGN { 1 0 10303 214 1 1 1 1 }'));\n",
+          "referenced_by": [
+            "v1/design/Meshcore_NaIon/Meshcore.pretty/SOIC-8_3.9x4.9mm_P1.27mm.kicad_mod",
+            "v1/design/Meshcore_NaIon/Meshcore_NaIon.kicad_pcb"
+          ]
+        },
+        {
+          "source_uri": "${KICAD10_3DMODEL_DIR}/Package_SO.3dshapes/TSSOP-16_4.4x5mm_P0.65mm.step",
+          "portable_uri": "${KIPRJMOD}/3dmodels/kicad_standard/Package_SO.3dshapes/TSSOP-16_4.4x5mm_P0.65mm.step",
+          "source_installed_file": "C:\\Program Files\\KiCad\\10.0\\share\\kicad\\3dmodels\\Package_SO.3dshapes\\TSSOP-16_4.4x5mm_P0.65mm.step",
+          "source_repository": "https://github.com/KiCad/kicad-packages3D",
+          "destination": "v1/design/Meshcore_NaIon/3dmodels/kicad_standard/Package_SO.3dshapes/TSSOP-16_4.4x5mm_P0.65mm.step",
+          "sha256": "6ad5e98224d02a427d9a6b929a28dbc158b9925fba5adec12db05079f1016948",
+          "bytes": 210031,
+          "copied_byte_identical": true,
+          "license": "CC-BY-SA-4.0 WITH embedded KiCad design exception",
+          "license_basis": "License and exception retained verbatim in STEP HEADER.",
+          "original_STEP_HEADER": "ISO-10303-21;\nHEADER;\n/* TSSOP-16_4.4x5mm_P0.65mm.step 3D STEP model for use in ECAD systems\n * Copyright (C) 2025, KiCAD\n *\n * This work is licensed under the\n * [Creative Commons CC-BY-SA 4.0 License](https://creativecommons.org/licenses/by-sa/4.0/legalcode),\n * with the following exception:\n *\n * To the extent that the creation of electronic designs that use 'Licensed Material' can be\n * considered to be 'Adapted Material', then the copyright holder waives article 3 of the license\n * with respect to these designs and any generated files which use data provided as part of the\n * 'Licensed Material'.\n *\n * You are free to use the library data in your own projects without the obligation to share your\n * project files under this or any other license agreement. However, if you wish to distribute\n * these libraries, or parts thereof (including in modified form) as a collection then the exception\n * above does not apply. Please refer to\n * https://gitlab.com/kicad/libraries/kicad-packages3D/-/blob/master/LICENSE.md for further clarification\n * of the exception.\n *\n * Disclaimer of Warranties and Limitation of Liability.\n * These libraries are provided in the hope that they will be useful, but are provided without warranty of any kind, express or implied.\n * USE 3D CAD DATA AT YOUR OWN RISK\n * DO NOT RELY UPON ANY INFORMATION FOUND HERE WITHOUT INDEPENDENT VERIFICATION.\n */\n\nFILE_DESCRIPTION(\n/* description */ ('model of TSSOP-16_4.4x5mm_P0.65mm'),\n/* implementation_level */ '2;1');\n\nFILE_NAME(\n/* name */ 'TSSOP-16_4.4x5mm_P0.65mm.step',\n/* time_stamp */ '1970-01-01T00:00:00',\n/* author */ ('KiCAD','kicad'),\n/* organization */ ('OCCT'),\n/* preprocessor_version */ '',\n/* originating_system */ 'KiCAD',\n/* authorisation */ '');\n\nFILE_SCHEMA(('AUTOMOTIVE_DESIGN { 1 0 10303 214 1 1 1 1 }'));\n",
+          "referenced_by": [
+            "v1/design/Meshcore_NaIon/Meshcore.pretty/TSSOP-16_4.4x5mm_P0.65mm.kicad_mod",
+            "v1/design/Meshcore_NaIon/Meshcore_NaIon.kicad_pcb"
+          ]
+        },
+        {
+          "source_uri": "${KICAD10_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-23-5.step",
+          "portable_uri": "${KIPRJMOD}/3dmodels/kicad_standard/Package_TO_SOT_SMD.3dshapes/SOT-23-5.step",
+          "source_installed_file": "C:\\Program Files\\KiCad\\10.0\\share\\kicad\\3dmodels\\Package_TO_SOT_SMD.3dshapes\\SOT-23-5.step",
+          "source_repository": "https://github.com/KiCad/kicad-packages3D",
+          "destination": "v1/design/Meshcore_NaIon/3dmodels/kicad_standard/Package_TO_SOT_SMD.3dshapes/SOT-23-5.step",
+          "sha256": "720a6eab0024069bbee68e7cb4c3ff1149468a34611225cdc852662c5d0ec2b7",
+          "bytes": 87532,
+          "copied_byte_identical": true,
+          "license": "CC-BY-SA-4.0 WITH embedded KiCad design exception",
+          "license_basis": "License and exception retained verbatim in STEP HEADER.",
+          "original_STEP_HEADER": "ISO-10303-21;\nHEADER;\n/* SOT-23-5.step 3D STEP model for use in ECAD systems\n * Copyright (C) 2025, KiCAD\n *\n * This work is licensed under the\n * [Creative Commons CC-BY-SA 4.0 License](https://creativecommons.org/licenses/by-sa/4.0/legalcode),\n * with the following exception:\n *\n * To the extent that the creation of electronic designs that use 'Licensed Material' can be\n * considered to be 'Adapted Material', then the copyright holder waives article 3 of the license\n * with respect to these designs and any generated files which use data provided as part of the\n * 'Licensed Material'.\n *\n * You are free to use the library data in your own projects without the obligation to share your\n * project files under this or any other license agreement. However, if you wish to distribute\n * these libraries, or parts thereof (including in modified form) as a collection then the exception\n * above does not apply. Please refer to\n * https://gitlab.com/kicad/libraries/kicad-packages3D/-/blob/master/LICENSE.md for further clarification\n * of the exception.\n *\n * Disclaimer of Warranties and Limitation of Liability.\n * These libraries are provided in the hope that they will be useful, but are provided without warranty of any kind, express or implied.\n * USE 3D CAD DATA AT YOUR OWN RISK\n * DO NOT RELY UPON ANY INFORMATION FOUND HERE WITHOUT INDEPENDENT VERIFICATION.\n */\n\nFILE_DESCRIPTION(\n/* description */ ('model of SOT-23-5'),\n/* implementation_level */ '2;1');\n\nFILE_NAME(\n/* name */ 'SOT-23-5.step',\n/* time_stamp */ '1970-01-01T00:00:00',\n/* author */ ('KiCAD','kicad'),\n/* organization */ ('OCCT'),\n/* preprocessor_version */ '',\n/* originating_system */ 'KiCAD',\n/* authorisation */ '');\n\nFILE_SCHEMA(('AUTOMOTIVE_DESIGN { 1 0 10303 214 1 1 1 1 }'));\n",
+          "referenced_by": [
+            "v1/design/Meshcore_NaIon/Meshcore.pretty/SOT-23-5.kicad_mod",
+            "v1/design/Meshcore_NaIon/Meshcore_NaIon.kicad_pcb"
+          ]
+        },
+        {
+          "source_uri": "${KICAD10_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-23.step",
+          "portable_uri": "${KIPRJMOD}/3dmodels/kicad_standard/Package_TO_SOT_SMD.3dshapes/SOT-23.step",
+          "source_installed_file": "C:\\Program Files\\KiCad\\10.0\\share\\kicad\\3dmodels\\Package_TO_SOT_SMD.3dshapes\\SOT-23.step",
+          "source_repository": "https://github.com/KiCad/kicad-packages3D",
+          "destination": "v1/design/Meshcore_NaIon/3dmodels/kicad_standard/Package_TO_SOT_SMD.3dshapes/SOT-23.step",
+          "sha256": "dd5d1711204e1d8d26cd11490923bd84340820baa69538c385a4300ec2539bc0",
+          "bytes": 60296,
+          "copied_byte_identical": true,
+          "license": "CC-BY-SA-4.0 WITH embedded KiCad design exception",
+          "license_basis": "License and exception retained verbatim in STEP HEADER.",
+          "original_STEP_HEADER": "ISO-10303-21;\nHEADER;\n/* SOT-23.step 3D STEP model for use in ECAD systems\n * Copyright (C) 2025, KiCAD\n *\n * This work is licensed under the\n * [Creative Commons CC-BY-SA 4.0 License](https://creativecommons.org/licenses/by-sa/4.0/legalcode),\n * with the following exception:\n *\n * To the extent that the creation of electronic designs that use 'Licensed Material' can be\n * considered to be 'Adapted Material', then the copyright holder waives article 3 of the license\n * with respect to these designs and any generated files which use data provided as part of the\n * 'Licensed Material'.\n *\n * You are free to use the library data in your own projects without the obligation to share your\n * project files under this or any other license agreement. However, if you wish to distribute\n * these libraries, or parts thereof (including in modified form) as a collection then the exception\n * above does not apply. Please refer to\n * https://gitlab.com/kicad/libraries/kicad-packages3D/-/blob/master/LICENSE.md for further clarification\n * of the exception.\n *\n * Disclaimer of Warranties and Limitation of Liability.\n * These libraries are provided in the hope that they will be useful, but are provided without warranty of any kind, express or implied.\n * USE 3D CAD DATA AT YOUR OWN RISK\n * DO NOT RELY UPON ANY INFORMATION FOUND HERE WITHOUT INDEPENDENT VERIFICATION.\n */\n\nFILE_DESCRIPTION(\n/* description */ ('model of SOT-23'),\n/* implementation_level */ '2;1');\n\nFILE_NAME(\n/* name */ 'SOT-23.step',\n/* time_stamp */ '1970-01-01T00:00:00',\n/* author */ ('KiCAD','kicad'),\n/* organization */ ('OCCT'),\n/* preprocessor_version */ '',\n/* originating_system */ 'KiCAD',\n/* authorisation */ '');\n\nFILE_SCHEMA(('AUTOMOTIVE_DESIGN { 1 0 10303 214 1 1 1 1 }'));\n",
+          "referenced_by": [
+            "v1/design/Meshcore_NaIon/Meshcore.pretty/SOT-23.kicad_mod",
+            "v1/design/Meshcore_NaIon/Meshcore_NaIon.kicad_pcb"
+          ]
+        },
+        {
+          "source_uri": "${KICAD10_3DMODEL_DIR}/Package_TO_SOT_THT.3dshapes/TO-92_Inline.step",
+          "portable_uri": "${KIPRJMOD}/3dmodels/kicad_standard/Package_TO_SOT_THT.3dshapes/TO-92_Inline.step",
+          "source_installed_file": "C:\\Program Files\\KiCad\\10.0\\share\\kicad\\3dmodels\\Package_TO_SOT_THT.3dshapes\\TO-92_Inline.step",
+          "source_repository": "https://github.com/KiCad/kicad-packages3D",
+          "destination": "v1/design/Meshcore_NaIon/3dmodels/kicad_standard/Package_TO_SOT_THT.3dshapes/TO-92_Inline.step",
+          "sha256": "f0b61c32ecbf0067157adc5a3d4966ceadf5d6dafe93c51af35f76c41c71a54a",
+          "bytes": 27693,
+          "copied_byte_identical": true,
+          "license": "KiCad library CC-BY-SA-4.0 WITH design exception",
+          "license_basis": "No per-file license notice; common official KiCad library LICENSE.md applies. STEP HEADER attribution retained.",
+          "original_STEP_HEADER": "ISO-10303-21;\r\nHEADER;\r\nFILE_DESCRIPTION(('FreeCAD Model'),'2;1');\r\nFILE_NAME(\r\n'D:/KiCAD/packages3D-source/Package_TO_SOT_THT.3dshapes\\\\\r\nTO-92_Inline_Narrow.step','2017-11-28T22:16:31',('kicad StepUp'),(\r\n    'ksu MCAD'),'Open CASCADE STEP processor 6.8','FreeCAD','Unknown');\r\nFILE_SCHEMA(('AUTOMOTIVE_DESIGN_CC2 { 1 2 10303 214 -1 1 5 4 }'));\r\n",
+          "referenced_by": [
+            "v1/design/Meshcore_NaIon/Meshcore.pretty/TO-92_Inline.kicad_mod",
+            "v1/design/Meshcore_NaIon/Meshcore_NaIon.kicad_pcb"
+          ]
+        },
+        {
+          "source_uri": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+          "portable_uri": "${KIPRJMOD}/3dmodels/kicad_standard/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+          "source_installed_file": "C:\\Program Files\\KiCad\\10.0\\share\\kicad\\3dmodels\\Resistor_SMD.3dshapes\\R_0805_2012Metric.step",
+          "source_repository": "https://github.com/KiCad/kicad-packages3D",
+          "destination": "v1/design/Meshcore_NaIon/3dmodels/kicad_standard/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+          "sha256": "ded342cdb394fb45395227beaaa75cc390613cf2581b29cd6d22c12abd6103b2",
+          "bytes": 40592,
+          "copied_byte_identical": true,
+          "license": "CC-BY-SA-4.0 WITH embedded KiCad design exception",
+          "license_basis": "License and exception retained verbatim in STEP HEADER.",
+          "original_STEP_HEADER": "ISO-10303-21;\nHEADER;\n/* R_0805_2012Metric.step 3D STEP model for use in ECAD systems\n * Copyright (C) 2018, kicad StepUp\n * \n * This work is licensed under the [Creative Commons CC-BY-SA 4.0 License](https://creativecommons.org/licenses/by-sa/4.0/legalcode), \n * with the following exception:\n * To the extent that the creation of electronic designs that use 'Licensed Material' can be considered to be 'Adapted Material', \n * then the copyright holder waives article 3 of the license with respect to these designs and any generated files which use data provided \n * as part of the 'Licensed Material'.\n * You are free to use the library data in your own projects without the obligation to share your project files under this or any other license agreement.\n * However, if you wish to redistribute these libraries, or parts thereof (including in modified form) as a collection then the exception above does not apply. \n * Please refer to https://github.com/KiCad/kicad-packages3D/blob/master/LICENSE.md for further clarification of the exception.\n * Disclaimer of Warranties and Limitation of Liability.\n * These libraries are provided in the hope that they will be useful, but are provided without warranty of any kind, express or implied.\n * *USE 3D CAD DATA AT YOUR OWN RISK*\n * *DO NOT RELY UPON ANY INFORMATION FOUND HERE WITHOUT INDEPENDENT VERIFICATION.*\n * \n */\n\nFILE_DESCRIPTION(\n/* description */ ('model of R_0805_2012Metric'),\n/* implementation_level */ '2;1');\n\nFILE_NAME(\n/* name */ 'R_0805_2012Metric.step',\n/* time_stamp */ '2018-01-04T00:45:37',\n/* author */ ('kicad StepUp','ksu'),\n/* organization */ ('FreeCAD'),\n/* preprocessor_version */ 'OCC',\n/* originating_system */ 'kicad StepUp',\n/* authorisation */ '');\n\nFILE_SCHEMA(('AUTOMOTIVE_DESIGN { 1 0 10303 214 1 1 1 1 }'));\n",
+          "referenced_by": [
+            "v1/design/Meshcore_NaIon/Meshcore.pretty/R_0805_2012Metric.kicad_mod",
+            "v1/design/Meshcore_NaIon/Meshcore_NaIon.kicad_pcb"
+          ]
+        },
+        {
+          "source_uri": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_2512_6332Metric.step",
+          "portable_uri": "${KIPRJMOD}/3dmodels/kicad_standard/Resistor_SMD.3dshapes/R_2512_6332Metric.step",
+          "source_installed_file": "C:\\Program Files\\KiCad\\10.0\\share\\kicad\\3dmodels\\Resistor_SMD.3dshapes\\R_2512_6332Metric.step",
+          "source_repository": "https://github.com/KiCad/kicad-packages3D",
+          "destination": "v1/design/Meshcore_NaIon/3dmodels/kicad_standard/Resistor_SMD.3dshapes/R_2512_6332Metric.step",
+          "sha256": "76b2052a3c120193de7cdc0af99157b6f375e9a4af7721e3e3d012968c877f27",
+          "bytes": 40272,
+          "copied_byte_identical": true,
+          "license": "CC-BY-SA-4.0 WITH embedded KiCad design exception",
+          "license_basis": "License and exception retained verbatim in STEP HEADER.",
+          "original_STEP_HEADER": "ISO-10303-21;\nHEADER;\n/* R_2512_6332Metric.step 3D STEP model for use in ECAD systems\n * Copyright (C) 2018, kicad StepUp\n * \n * This work is licensed under the [Creative Commons CC-BY-SA 4.0 License](https://creativecommons.org/licenses/by-sa/4.0/legalcode), \n * with the following exception:\n * To the extent that the creation of electronic designs that use 'Licensed Material' can be considered to be 'Adapted Material', \n * then the copyright holder waives article 3 of the license with respect to these designs and any generated files which use data provided \n * as part of the 'Licensed Material'.\n * You are free to use the library data in your own projects without the obligation to share your project files under this or any other license agreement.\n * However, if you wish to redistribute these libraries, or parts thereof (including in modified form) as a collection then the exception above does not apply. \n * Please refer to https://github.com/KiCad/kicad-packages3D/blob/master/LICENSE.md for further clarification of the exception.\n * Disclaimer of Warranties and Limitation of Liability.\n * These libraries are provided in the hope that they will be useful, but are provided without warranty of any kind, express or implied.\n * *USE 3D CAD DATA AT YOUR OWN RISK*\n * *DO NOT RELY UPON ANY INFORMATION FOUND HERE WITHOUT INDEPENDENT VERIFICATION.*\n * \n */\n\nFILE_DESCRIPTION(\n/* description */ ('model of R_2512_6332Metric'),\n/* implementation_level */ '2;1');\n\nFILE_NAME(\n/* name */ 'R_2512_6332Metric.step',\n/* time_stamp */ '2018-01-04T00:45:29',\n/* author */ ('kicad StepUp','ksu'),\n/* organization */ ('FreeCAD'),\n/* preprocessor_version */ 'OCC',\n/* originating_system */ 'kicad StepUp',\n/* authorisation */ '');\n\nFILE_SCHEMA(('AUTOMOTIVE_DESIGN { 1 0 10303 214 1 1 1 1 }'));\n",
+          "referenced_by": [
+            "v1/design/Meshcore_NaIon/Meshcore.pretty/R_2512_6332Metric__A3_R56.kicad_mod",
+            "v1/design/Meshcore_NaIon/Meshcore.pretty/R_2512_6332Metric__A3_R71.kicad_mod",
+            "v1/design/Meshcore_NaIon/Meshcore.pretty/R_Vishay_WSL2512_A3__A3_R1.kicad_mod",
+            "v1/design/Meshcore_NaIon/Meshcore.pretty/R_Vishay_WSL2512_A3__A3_R40.kicad_mod",
+            "v1/design/Meshcore_NaIon/Meshcore.pretty/R_Vishay_WSL2512_A3__A3_R41.kicad_mod",
+            "v1/design/Meshcore_NaIon/Meshcore.pretty/R_Vishay_WSL2512_A3__A3_R55.kicad_mod",
+            "v1/design/Meshcore_NaIon/Meshcore_NaIon.kicad_pcb"
+          ]
+        }
+      ],
+      "model_bytes": 2046615,
+      "models_count": 18
+    },
+    "COMMON_CIRCUIT": {
+      "project": "shared/schematic/MeshRepeater.kicad_pro",
+      "models": [
+        {
+          "source_uri": "${KICAD10_3DMODEL_DIR}/Battery.3dshapes/BatteryHolder_Keystone_1060_1x2032.step",
+          "portable_uri": "${KIPRJMOD}/3dmodels/kicad_standard/Battery.3dshapes/BatteryHolder_Keystone_1060_1x2032.step",
+          "source_installed_file": "C:\\Program Files\\KiCad\\10.0\\share\\kicad\\3dmodels\\Battery.3dshapes\\BatteryHolder_Keystone_1060_1x2032.step",
+          "source_repository": "https://github.com/KiCad/kicad-packages3D",
+          "destination": "shared/schematic/3dmodels/kicad_standard/Battery.3dshapes/BatteryHolder_Keystone_1060_1x2032.step",
+          "sha256": "221c5c6510ed7e6fa3bd621ccee0bb883d86eb1e0e34ab2e2a32fb4d4ae7548d",
+          "bytes": 162098,
+          "copied_byte_identical": true,
+          "license": "CC-BY-SA-4.0 WITH embedded KiCad design exception",
+          "license_basis": "License and exception retained verbatim in STEP HEADER.",
+          "original_STEP_HEADER": "ISO-10303-21;\r\nHEADER;\r\n/* BatteryHolder_Keystone_1060_1x2032.step 3D STEP model for use in ECAD systems\r\n * Copyright (C) 2019, kicad StepUp\r\n * \r\n * This work is licensed under the [Creative Commons CC-BY-SA 4.0 License](https://creativecommons.org/licenses/by-sa/4.0/legalcode), \r\n * with the following exception:\r\n * To the extent that the creation of electronic designs that use 'Licensed Material' can be considered to be 'Adapted Material', \r\n * then the copyright holder waives article 3 of the license with respect to these designs and any generated files which use data provided \r\n * as part of the 'Licensed Material'.\r\n * You are free to use the library data in your own projects without the obligation to share your project files under this or any other license agreement.\r\n * However, if you wish to redistribute these libraries, or parts thereof (including in modified form) as a collection then the exception above does not apply. \r\n * Please refer to https://github.com/KiCad/kicad-packages3D/blob/master/LICENSE.md for further clarification of the exception.\r\n * Disclaimer of Warranties and Limitation of Liability.\r\n * These libraries are provided in the hope that they will be useful, but are provided without warranty of any kind, express or implied.\r\n * *USE 3D CAD DATA AT YOUR OWN RISK*\r\n * *DO NOT RELY UPON ANY INFORMATION FOUND HERE WITHOUT INDEPENDENT VERIFICATION.*\r\n * \r\n */\r\n\r\nFILE_DESCRIPTION(\r\n/* description */ ('model of BatteryHolder_Keystone_1060_1x2032'),\r\n/* implementation_level */ '2;1');\r\n\r\nFILE_NAME(\r\n/* name */ 'BatteryHolder_Keystone_1060_1x2032.step',\r\n/* time_stamp */ '2019-02-14T16:03:19',\r\n/* author */ ('kicad StepUp','ksu'),\r\n/* organization */ ('FreeCAD'),\r\n/* preprocessor_version */ 'OCC',\r\n/* originating_system */ 'kicad StepUp',\r\n/* authorisation */ '');\r\n\r\nFILE_SCHEMA(('AUTOMOTIVE_DESIGN { 1 0 10303 214 1 1 1 1 }'));\r\n",
+          "referenced_by": [
+            "shared/schematic/Meshcore.pretty/BatteryHolder_Keystone_1060_1x2032.kicad_mod"
+          ]
+        },
+        {
+          "source_uri": "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/CP_Elec_6.3x5.8.step",
+          "portable_uri": "${KIPRJMOD}/3dmodels/kicad_standard/Capacitor_SMD.3dshapes/CP_Elec_6.3x5.8.step",
+          "source_installed_file": "C:\\Program Files\\KiCad\\10.0\\share\\kicad\\3dmodels\\Capacitor_SMD.3dshapes\\CP_Elec_6.3x5.8.step",
+          "source_repository": "https://github.com/KiCad/kicad-packages3D",
+          "destination": "shared/schematic/3dmodels/kicad_standard/Capacitor_SMD.3dshapes/CP_Elec_6.3x5.8.step",
+          "sha256": "887e13de4f738fc711dad723623bb52ad8f0688a7e6c9319c5394b960618fff2",
+          "bytes": 81892,
+          "copied_byte_identical": true,
+          "license": "CC-BY-SA-4.0 WITH embedded KiCad design exception",
+          "license_basis": "License and exception retained verbatim in STEP HEADER.",
+          "original_STEP_HEADER": "ISO-10303-21;\nHEADER;\n/* CP_Elec_6.3x5.8.step 3D STEP model for use in ECAD systems\n * Copyright (C) 2018, kicad StepUp\n * \n * This work is licensed under the [Creative Commons CC-BY-SA 4.0 License](https://creativecommons.org/licenses/by-sa/4.0/legalcode), \n * with the following exception:\n * To the extent that the creation of electronic designs that use 'Licensed Material' can be considered to be 'Adapted Material', \n * then the copyright holder waives article 3 of the license with respect to these designs and any generated files which use data provided \n * as part of the 'Licensed Material'.\n * You are free to use the library data in your own projects without the obligation to share your project files under this or any other license agreement.\n * However, if you wish to redistribute these libraries, or parts thereof (including in modified form) as a collection then the exception above does not apply. \n * Please refer to https://github.com/KiCad/kicad-packages3D/blob/master/LICENSE.md for further clarification of the exception.\n * Disclaimer of Warranties and Limitation of Liability.\n * These libraries are provided in the hope that they will be useful, but are provided without warranty of any kind, express or implied.\n * *USE 3D CAD DATA AT YOUR OWN RISK*\n * *DO NOT RELY UPON ANY INFORMATION FOUND HERE WITHOUT INDEPENDENT VERIFICATION.*\n * \n */\n\nFILE_DESCRIPTION(\n/* description */ ('model of CP_Elec_6.3x5.8'),\n/* implementation_level */ '2;1');\n\nFILE_NAME(\n/* name */ 'CP_Elec_6.3x5.8.step',\n/* time_stamp */ '2018-06-25T02:15:02',\n/* author */ ('kicad StepUp','ksu'),\n/* organization */ ('FreeCAD'),\n/* preprocessor_version */ 'OCC',\n/* originating_system */ 'kicad StepUp',\n/* authorisation */ '');\n\nFILE_SCHEMA(('AUTOMOTIVE_DESIGN { 1 0 10303 214 1 1 1 1 }'));\n",
+          "referenced_by": [
+            "shared/schematic/Meshcore.pretty/CP_Elec_Panasonic_FK_D_6.3x5.8.kicad_mod"
+          ]
+        },
+        {
+          "source_uri": "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.step",
+          "portable_uri": "${KIPRJMOD}/3dmodels/kicad_standard/Capacitor_SMD.3dshapes/C_0805_2012Metric.step",
+          "source_installed_file": "C:\\Program Files\\KiCad\\10.0\\share\\kicad\\3dmodels\\Capacitor_SMD.3dshapes\\C_0805_2012Metric.step",
+          "source_repository": "https://github.com/KiCad/kicad-packages3D",
+          "destination": "shared/schematic/3dmodels/kicad_standard/Capacitor_SMD.3dshapes/C_0805_2012Metric.step",
+          "sha256": "9a669c1a2f1ea25b88b401acef6efeaa80a067bd7da9db6993de719a7fbe155c",
+          "bytes": 43618,
+          "copied_byte_identical": true,
+          "license": "CC-BY-SA-4.0 WITH embedded KiCad design exception",
+          "license_basis": "License and exception retained verbatim in STEP HEADER.",
+          "original_STEP_HEADER": "ISO-10303-21;\nHEADER;\n/* C_0805_2012Metric.step 3D STEP model for use in ECAD systems\n * Copyright (C) 2017, kicad StepUp\n * \n * This work is licensed under the [Creative Commons CC-BY-SA 4.0 License](https://creativecommons.org/licenses/by-sa/4.0/legalcode), \n * with the following exception:\n * To the extent that the creation of electronic designs that use 'Licensed Material' can be considered to be 'Adapted Material', \n * then the copyright holder waives article 3 of the license with respect to these designs and any generated files which use data provided \n * as part of the 'Licensed Material'.\n * You are free to use the library data in your own projects without the obligation to share your project files under this or any other license agreement.\n * However, if you wish to redistribute these libraries, or parts thereof (including in modified form) as a collection then the exception above does not apply. \n * Please refer to https://github.com/KiCad/kicad-packages3D/blob/master/LICENSE.md for further clarification of the exception.\n * Disclaimer of Warranties and Limitation of Liability.\n * These libraries are provided in the hope that they will be useful, but are provided without warranty of any kind, express or implied.\n * *USE 3D CAD DATA AT YOUR OWN RISK*\n * *DO NOT RELY UPON ANY INFORMATION FOUND HERE WITHOUT INDEPENDENT VERIFICATION.*\n * \n */\n\nFILE_DESCRIPTION(\n/* description */ ('model of C_0805_2012Metric'),\n/* implementation_level */ '2;1');\n\nFILE_NAME(\n/* name */ 'C_0805_2012Metric.step',\n/* time_stamp */ '2017-12-10T01:08:45',\n/* author */ ('kicad StepUp','ksu'),\n/* organization */ ('FreeCAD'),\n/* preprocessor_version */ 'OCC',\n/* originating_system */ 'kicad StepUp',\n/* authorisation */ '');\n\nFILE_SCHEMA(('AUTOMOTIVE_DESIGN { 1 0 10303 214 1 1 1 1 }'));\n",
+          "referenced_by": [
+            "shared/schematic/Meshcore.pretty/C_0805_2012Metric.kicad_mod"
+          ]
+        },
+        {
+          "source_uri": "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_1206_3216Metric.step",
+          "portable_uri": "${KIPRJMOD}/3dmodels/kicad_standard/Capacitor_SMD.3dshapes/C_1206_3216Metric.step",
+          "source_installed_file": "C:\\Program Files\\KiCad\\10.0\\share\\kicad\\3dmodels\\Capacitor_SMD.3dshapes\\C_1206_3216Metric.step",
+          "source_repository": "https://github.com/KiCad/kicad-packages3D",
+          "destination": "shared/schematic/3dmodels/kicad_standard/Capacitor_SMD.3dshapes/C_1206_3216Metric.step",
+          "sha256": "11e948c72c90e2b6322436b72745f40ff4e8ba0da64fb2a0df943dfa61e89c1a",
+          "bytes": 43450,
+          "copied_byte_identical": true,
+          "license": "CC-BY-SA-4.0 WITH embedded KiCad design exception",
+          "license_basis": "License and exception retained verbatim in STEP HEADER.",
+          "original_STEP_HEADER": "ISO-10303-21;\nHEADER;\n/* C_1206_3216Metric.step 3D STEP model for use in ECAD systems\n * Copyright (C) 2017, kicad StepUp\n * \n * This work is licensed under the [Creative Commons CC-BY-SA 4.0 License](https://creativecommons.org/licenses/by-sa/4.0/legalcode), \n * with the following exception:\n * To the extent that the creation of electronic designs that use 'Licensed Material' can be considered to be 'Adapted Material', \n * then the copyright holder waives article 3 of the license with respect to these designs and any generated files which use data provided \n * as part of the 'Licensed Material'.\n * You are free to use the library data in your own projects without the obligation to share your project files under this or any other license agreement.\n * However, if you wish to redistribute these libraries, or parts thereof (including in modified form) as a collection then the exception above does not apply. \n * Please refer to https://github.com/KiCad/kicad-packages3D/blob/master/LICENSE.md for further clarification of the exception.\n * Disclaimer of Warranties and Limitation of Liability.\n * These libraries are provided in the hope that they will be useful, but are provided without warranty of any kind, express or implied.\n * *USE 3D CAD DATA AT YOUR OWN RISK*\n * *DO NOT RELY UPON ANY INFORMATION FOUND HERE WITHOUT INDEPENDENT VERIFICATION.*\n * \n */\n\nFILE_DESCRIPTION(\n/* description */ ('model of C_1206_3216Metric'),\n/* implementation_level */ '2;1');\n\nFILE_NAME(\n/* name */ 'C_1206_3216Metric.step',\n/* time_stamp */ '2017-12-10T01:08:41',\n/* author */ ('kicad StepUp','ksu'),\n/* organization */ ('FreeCAD'),\n/* preprocessor_version */ 'OCC',\n/* originating_system */ 'kicad StepUp',\n/* authorisation */ '');\n\nFILE_SCHEMA(('AUTOMOTIVE_DESIGN { 1 0 10303 214 1 1 1 1 }'));\n",
+          "referenced_by": [
+            "shared/schematic/Meshcore.pretty/C_1206_3216Metric.kicad_mod"
+          ]
+        },
+        {
+          "source_uri": "${KICAD10_3DMODEL_DIR}/Connector_Molex.3dshapes/Molex_PicoBlade_53261-0871_1x08-1MP_P1.25mm_Horizontal.step",
+          "portable_uri": "${KIPRJMOD}/3dmodels/kicad_standard/Connector_Molex.3dshapes/Molex_PicoBlade_53261-0871_1x08-1MP_P1.25mm_Horizontal.step",
+          "source_installed_file": "C:\\Program Files\\KiCad\\10.0\\share\\kicad\\3dmodels\\Connector_Molex.3dshapes\\Molex_PicoBlade_53261-0871_1x08-1MP_P1.25mm_Horizontal.step",
+          "source_repository": "https://github.com/KiCad/kicad-packages3D",
+          "destination": "shared/schematic/3dmodels/kicad_standard/Connector_Molex.3dshapes/Molex_PicoBlade_53261-0871_1x08-1MP_P1.25mm_Horizontal.step",
+          "sha256": "3da19b40bda2d292798cafcbcfaba62e7925ee5fbd0c99701aa26417d1683ba2",
+          "bytes": 457640,
+          "copied_byte_identical": true,
+          "license": "CC-BY-SA-4.0 WITH embedded KiCad design exception",
+          "license_basis": "License and exception retained verbatim in STEP HEADER.",
+          "original_STEP_HEADER": "ISO-10303-21;\nHEADER;\n/* Molex_PicoBlade_53261-0871_1x08-1MP_P1.25mm_Horizontal.step 3D STEP model for use in ECAD systems\n * Copyright (C) 2018, Rene Poeschl\n * \n * This work is licensed under the [Creative Commons CC-BY-SA 4.0 License](https://creativecommons.org/licenses/by-sa/4.0/legalcode), \n * with the following exception:\n * To the extent that the creation of electronic designs that use 'Licensed Material' can be considered to be 'Adapted Material', \n * then the copyright holder waives article 3 of the license with respect to these designs and any generated files which use data provided \n * as part of the 'Licensed Material'.\n * You are free to use the library data in your own projects without the obligation to share your project files under this or any other license agreement.\n * However, if you wish to redistribute these libraries, or parts thereof (including in modified form) as a collection then the exception above does not apply. \n * Please refer to https://github.com/KiCad/kicad-packages3D/blob/master/LICENSE.md for further clarification of the exception.\n * Disclaimer of Warranties and Limitation of Liability.\n * These libraries are provided in the hope that they will be useful, but are provided without warranty of any kind, express or implied.\n * *USE 3D CAD DATA AT YOUR OWN RISK*\n * *DO NOT RELY UPON ANY INFORMATION FOUND HERE WITHOUT INDEPENDENT VERIFICATION.*\n * \n * \n * \n * \n * \n * \n * \n */\n\nFILE_DESCRIPTION(\n/* description */ ('model of Molex_PicoBlade_53261-0871_1x08-1MP_P1.25mm_Horizontal'),\n/* implementation_level */ '2;1');\n\nFILE_NAME(\n/* name */ 'Molex_PicoBlade_53261-0871_1x08-1MP_P1.25mm_Horizontal.step',\n/* time_stamp */ '2018-06-18T10:23:30',\n/* author */ ('Rene Poeschl','poeschlr@gmail.com'),\n/* organization */ (''),\n/* preprocessor_version */ '',\n/* originating_system */ '',\n/* authorisation */ '');\n\nFILE_SCHEMA(('AUTOMOTIVE_DESIGN { 1 0 10303 214 1 1 1 1 }'));\n",
+          "referenced_by": [
+            "shared/schematic/Meshcore.pretty/Molex_PicoBlade_53261-0871_1x08-1MP_P1.25mm_Horizontal.kicad_mod"
+          ]
+        },
+        {
+          "source_uri": "${KICAD10_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x02_P2.54mm_Vertical.step",
+          "portable_uri": "${KIPRJMOD}/3dmodels/kicad_standard/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x02_P2.54mm_Vertical.step",
+          "source_installed_file": "C:\\Program Files\\KiCad\\10.0\\share\\kicad\\3dmodels\\Connector_PinHeader_2.54mm.3dshapes\\PinHeader_1x02_P2.54mm_Vertical.step",
+          "source_repository": "https://github.com/KiCad/kicad-packages3D",
+          "destination": "shared/schematic/3dmodels/kicad_standard/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x02_P2.54mm_Vertical.step",
+          "sha256": "ea4d0799007ebdd3945072bf255d673d2fe87eb05fda85fd8d7993ad9397da41",
+          "bytes": 75616,
+          "copied_byte_identical": true,
+          "license": "CC-BY-SA-4.0 WITH embedded KiCad design exception",
+          "license_basis": "License and exception retained verbatim in STEP HEADER.",
+          "original_STEP_HEADER": "ISO-10303-21;\nHEADER;\n/* PinHeader_1x02_P2.54mm_Vertical.step 3D STEP model for use in ECAD systems\n * Copyright (C) 2017, kicad StepUp\n * \n * This work is licensed under the [Creative Commons CC-BY-SA 4.0 License](https://creativecommons.org/licenses/by-sa/4.0/legalcode), \n * with the following exception:\n * To the extent that the creation of electronic designs that use 'Licensed Material' can be considered to be 'Adapted Material', \n * then the copyright holder waives article 3 of the license with respect to these designs and any generated files which use data provided \n * as part of the 'Licensed Material'.\n * You are free to use the library data in your own projects without the obligation to share your project files under this or any other license agreement.\n * However, if you wish to redistribute these libraries, or parts thereof (including in modified form) as a collection then the exception above does not apply. \n * Please refer to https://github.com/KiCad/kicad-packages3D/blob/master/LICENSE.md for further clarification of the exception.\n * Disclaimer of Warranties and Limitation of Liability.\n * These libraries are provided in the hope that they will be useful, but are provided without warranty of any kind, express or implied.\n * *USE 3D CAD DATA AT YOUR OWN RISK*\n * *DO NOT RELY UPON ANY INFORMATION FOUND HERE WITHOUT INDEPENDENT VERIFICATION.*\n * \n */\n\nFILE_DESCRIPTION(\n/* description */ ('model of PinHeader_1x02_P2.54mm_Vertical'),\n/* implementation_level */ '2;1');\n\nFILE_NAME(\n/* name */ 'PinHeader_1x02_P2.54mm_Vertical.step',\n/* time_stamp */ '2017-12-09T23:53:40',\n/* author */ ('kicad StepUp','ksu'),\n/* organization */ ('FreeCAD'),\n/* preprocessor_version */ 'OCC',\n/* originating_system */ 'kicad StepUp',\n/* authorisation */ '');\n\nFILE_SCHEMA(('AUTOMOTIVE_DESIGN { 1 0 10303 214 1 1 1 1 }'));\n",
+          "referenced_by": [
+            "shared/schematic/Meshcore.pretty/PinHeader_1x02_P2.54mm_Vertical.kicad_mod"
+          ]
+        },
+        {
+          "source_uri": "${KICAD10_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x03_P2.54mm_Vertical.step",
+          "portable_uri": "${KIPRJMOD}/3dmodels/kicad_standard/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x03_P2.54mm_Vertical.step",
+          "source_installed_file": "C:\\Program Files\\KiCad\\10.0\\share\\kicad\\3dmodels\\Connector_PinHeader_2.54mm.3dshapes\\PinHeader_1x03_P2.54mm_Vertical.step",
+          "source_repository": "https://github.com/KiCad/kicad-packages3D",
+          "destination": "shared/schematic/3dmodels/kicad_standard/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x03_P2.54mm_Vertical.step",
+          "sha256": "b91b4ac5acf1a0d28a676703db972d17b8f11ef26a85b58d60786a69246b921b",
+          "bytes": 110633,
+          "copied_byte_identical": true,
+          "license": "CC-BY-SA-4.0 WITH embedded KiCad design exception",
+          "license_basis": "License and exception retained verbatim in STEP HEADER.",
+          "original_STEP_HEADER": "ISO-10303-21;\nHEADER;\n/* PinHeader_1x03_P2.54mm_Vertical.step 3D STEP model for use in ECAD systems\n * Copyright (C) 2017, kicad StepUp\n * \n * This work is licensed under the [Creative Commons CC-BY-SA 4.0 License](https://creativecommons.org/licenses/by-sa/4.0/legalcode), \n * with the following exception:\n * To the extent that the creation of electronic designs that use 'Licensed Material' can be considered to be 'Adapted Material', \n * then the copyright holder waives article 3 of the license with respect to these designs and any generated files which use data provided \n * as part of the 'Licensed Material'.\n * You are free to use the library data in your own projects without the obligation to share your project files under this or any other license agreement.\n * However, if you wish to redistribute these libraries, or parts thereof (including in modified form) as a collection then the exception above does not apply. \n * Please refer to https://github.com/KiCad/kicad-packages3D/blob/master/LICENSE.md for further clarification of the exception.\n * Disclaimer of Warranties and Limitation of Liability.\n * These libraries are provided in the hope that they will be useful, but are provided without warranty of any kind, express or implied.\n * *USE 3D CAD DATA AT YOUR OWN RISK*\n * *DO NOT RELY UPON ANY INFORMATION FOUND HERE WITHOUT INDEPENDENT VERIFICATION.*\n * \n */\n\nFILE_DESCRIPTION(\n/* description */ ('model of PinHeader_1x03_P2.54mm_Vertical'),\n/* implementation_level */ '2;1');\n\nFILE_NAME(\n/* name */ 'PinHeader_1x03_P2.54mm_Vertical.step',\n/* time_stamp */ '2017-12-09T23:53:41',\n/* author */ ('kicad StepUp','ksu'),\n/* organization */ ('FreeCAD'),\n/* preprocessor_version */ 'OCC',\n/* originating_system */ 'kicad StepUp',\n/* authorisation */ '');\n\nFILE_SCHEMA(('AUTOMOTIVE_DESIGN { 1 0 10303 214 1 1 1 1 }'));\n",
+          "referenced_by": [
+            "shared/schematic/Meshcore.pretty/PinHeader_1x03_P2.54mm_Vertical.kicad_mod"
+          ]
+        },
+        {
+          "source_uri": "${KICAD10_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x04_P2.54mm_Vertical.step",
+          "portable_uri": "${KIPRJMOD}/3dmodels/kicad_standard/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x04_P2.54mm_Vertical.step",
+          "source_installed_file": "C:\\Program Files\\KiCad\\10.0\\share\\kicad\\3dmodels\\Connector_PinHeader_2.54mm.3dshapes\\PinHeader_1x04_P2.54mm_Vertical.step",
+          "source_repository": "https://github.com/KiCad/kicad-packages3D",
+          "destination": "shared/schematic/3dmodels/kicad_standard/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x04_P2.54mm_Vertical.step",
+          "sha256": "a74079b8d06bda78847623b39ee1855ffd1d9a8c1e896b349e4f1dc2056d44d9",
+          "bytes": 145684,
+          "copied_byte_identical": true,
+          "license": "CC-BY-SA-4.0 WITH embedded KiCad design exception",
+          "license_basis": "License and exception retained verbatim in STEP HEADER.",
+          "original_STEP_HEADER": "ISO-10303-21;\nHEADER;\n/* PinHeader_1x04_P2.54mm_Vertical.step 3D STEP model for use in ECAD systems\n * Copyright (C) 2017, kicad StepUp\n * \n * This work is licensed under the [Creative Commons CC-BY-SA 4.0 License](https://creativecommons.org/licenses/by-sa/4.0/legalcode), \n * with the following exception:\n * To the extent that the creation of electronic designs that use 'Licensed Material' can be considered to be 'Adapted Material', \n * then the copyright holder waives article 3 of the license with respect to these designs and any generated files which use data provided \n * as part of the 'Licensed Material'.\n * You are free to use the library data in your own projects without the obligation to share your project files under this or any other license agreement.\n * However, if you wish to redistribute these libraries, or parts thereof (including in modified form) as a collection then the exception above does not apply. \n * Please refer to https://github.com/KiCad/kicad-packages3D/blob/master/LICENSE.md for further clarification of the exception.\n * Disclaimer of Warranties and Limitation of Liability.\n * These libraries are provided in the hope that they will be useful, but are provided without warranty of any kind, express or implied.\n * *USE 3D CAD DATA AT YOUR OWN RISK*\n * *DO NOT RELY UPON ANY INFORMATION FOUND HERE WITHOUT INDEPENDENT VERIFICATION.*\n * \n */\n\nFILE_DESCRIPTION(\n/* description */ ('model of PinHeader_1x04_P2.54mm_Vertical'),\n/* implementation_level */ '2;1');\n\nFILE_NAME(\n/* name */ 'PinHeader_1x04_P2.54mm_Vertical.step',\n/* time_stamp */ '2017-12-09T23:53:42',\n/* author */ ('kicad StepUp','ksu'),\n/* organization */ ('FreeCAD'),\n/* preprocessor_version */ 'OCC',\n/* originating_system */ 'kicad StepUp',\n/* authorisation */ '');\n\nFILE_SCHEMA(('AUTOMOTIVE_DESIGN { 1 0 10303 214 1 1 1 1 }'));\n",
+          "referenced_by": [
+            "shared/schematic/Meshcore.pretty/PinHeader_1x04_P2.54mm_Vertical.kicad_mod"
+          ]
+        },
+        {
+          "source_uri": "${KICAD10_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_2x03_P2.54mm_Vertical.step",
+          "portable_uri": "${KIPRJMOD}/3dmodels/kicad_standard/Connector_PinHeader_2.54mm.3dshapes/PinHeader_2x03_P2.54mm_Vertical.step",
+          "source_installed_file": "C:\\Program Files\\KiCad\\10.0\\share\\kicad\\3dmodels\\Connector_PinHeader_2.54mm.3dshapes\\PinHeader_2x03_P2.54mm_Vertical.step",
+          "source_repository": "https://github.com/KiCad/kicad-packages3D",
+          "destination": "shared/schematic/3dmodels/kicad_standard/Connector_PinHeader_2.54mm.3dshapes/PinHeader_2x03_P2.54mm_Vertical.step",
+          "sha256": "30c87dd7aa515b02055124826d8c4054084971d49d819c644cd6b21295ac52c8",
+          "bytes": 185520,
+          "copied_byte_identical": true,
+          "license": "CC-BY-SA-4.0 WITH embedded KiCad design exception",
+          "license_basis": "License and exception retained verbatim in STEP HEADER.",
+          "original_STEP_HEADER": "ISO-10303-21;\nHEADER;\n/* PinHeader_2x03_P2.54mm_Vertical.step 3D STEP model for use in ECAD systems\n * Copyright (C) 2017, kicad StepUp\n * \n * This work is licensed under the [Creative Commons CC-BY-SA 4.0 License](https://creativecommons.org/licenses/by-sa/4.0/legalcode), \n * with the following exception:\n * To the extent that the creation of electronic designs that use 'Licensed Material' can be considered to be 'Adapted Material', \n * then the copyright holder waives article 3 of the license with respect to these designs and any generated files which use data provided \n * as part of the 'Licensed Material'.\n * You are free to use the library data in your own projects without the obligation to share your project files under this or any other license agreement.\n * However, if you wish to redistribute these libraries, or parts thereof (including in modified form) as a collection then the exception above does not apply. \n * Please refer to https://github.com/KiCad/kicad-packages3D/blob/master/LICENSE.md for further clarification of the exception.\n * Disclaimer of Warranties and Limitation of Liability.\n * These libraries are provided in the hope that they will be useful, but are provided without warranty of any kind, express or implied.\n * *USE 3D CAD DATA AT YOUR OWN RISK*\n * *DO NOT RELY UPON ANY INFORMATION FOUND HERE WITHOUT INDEPENDENT VERIFICATION.*\n * \n */\n\nFILE_DESCRIPTION(\n/* description */ ('model of PinHeader_2x03_P2.54mm_Vertical'),\n/* implementation_level */ '2;1');\n\nFILE_NAME(\n/* name */ 'PinHeader_2x03_P2.54mm_Vertical.step',\n/* time_stamp */ '2017-12-10T00:20:16',\n/* author */ ('kicad StepUp','ksu'),\n/* organization */ ('FreeCAD'),\n/* preprocessor_version */ 'OCC',\n/* originating_system */ 'kicad StepUp',\n/* authorisation */ '');\n\nFILE_SCHEMA(('AUTOMOTIVE_DESIGN { 1 0 10303 214 1 1 1 1 }'));\n",
+          "referenced_by": [
+            "shared/schematic/Meshcore.pretty/PinHeader_2x03_P2.54mm_Vertical.kicad_mod"
+          ]
+        },
+        {
+          "source_uri": "${KICAD10_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SMB.step",
+          "portable_uri": "${KIPRJMOD}/3dmodels/kicad_standard/Diode_SMD.3dshapes/D_SMB.step",
+          "source_installed_file": "C:\\Program Files\\KiCad\\10.0\\share\\kicad\\3dmodels\\Diode_SMD.3dshapes\\D_SMB.step",
+          "source_repository": "https://github.com/KiCad/kicad-packages3D",
+          "destination": "shared/schematic/3dmodels/kicad_standard/Diode_SMD.3dshapes/D_SMB.step",
+          "sha256": "029466277d91e9f5492556be93e46611049e07115c7913880c547afa96058ed4",
+          "bytes": 70508,
+          "copied_byte_identical": true,
+          "license": "GPL-3.0-or-later WITH embedded KiCad design exception",
+          "license_basis": "License and exception retained verbatim in STEP HEADER.",
+          "original_STEP_HEADER": "ISO-10303-21;\nHEADER;\n/* D_SMB.step 3D STEP model for use in ECAD systems\n * Copyright (C) 2017, kicad StepUp\n * \n * This program is free software: you can redistribute it and/or modify\n * it under the terms of the GNU General Public License as published by\n * the Free Software Foundation, either version 3 of the License, or\n * any later version.\n * \n * This program is distributed in the hope that it will be useful,\n * but WITHOUT ANY WARRANTY; without even the implied warranty of\n * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n * GNU General Public License for more details.\n * \n * You should have received a copy of the GNU General Public License\n * along with this program.  If not, see http://www.gnu.org/licenses/.\n * \n * As a special exception, if you create a design which uses this symbol,\n * and embed this symbol or unaltered portions of this symbol into the design,\n * this symbol does not by itself cause the resulting design to be covered by\n * the GNU General Public License.\n * This exception does not however invalidate any other reasons why the design\n * itself might be covered by the GNU General Public License. \n * If you modify this symbol, you may extend this exception to your version of the symbol,\n * but you are not obligated to do so.\n * If you do not wish to do so, delete this exception statement from your version\n * Risk disclaimer\n * *USE 3D CAD DATA AT YOUR OWN RISK*\n * *DO NOT RELY UPON ANY INFORMATION FOUND HERE WITHOUT INDEPENDENT VERIFICATION.*\n * \n */\n\nFILE_DESCRIPTION(\n/* description */ ('model of D_SMB'),\n/* implementation_level */ '2;1');\n\nFILE_NAME(\n/* name */ 'D_SMB.step',\n/* time_stamp */ '2017-05-08T20:37:23',\n/* author */ ('kicad StepUp','ksu'),\n/* organization */ ('FreeCAD'),\n/* preprocessor_version */ 'OCC',\n/* originating_system */ 'kicad StepUp',\n/* authorisation */ '');\n\nFILE_SCHEMA(('AUTOMOTIVE_DESIGN_CC2 { 1 2 10303 214 -1 1 5 4 }'));\n",
+          "referenced_by": [
+            "shared/schematic/Meshcore.pretty/D_SMB.kicad_mod"
+          ]
+        },
+        {
+          "source_uri": "${KICAD10_3DMODEL_DIR}/LED_SMD.3dshapes/LED_0805_2012Metric.step",
+          "portable_uri": "${KIPRJMOD}/3dmodels/kicad_standard/LED_SMD.3dshapes/LED_0805_2012Metric.step",
+          "source_installed_file": "C:\\Program Files\\KiCad\\10.0\\share\\kicad\\3dmodels\\LED_SMD.3dshapes\\LED_0805_2012Metric.step",
+          "source_repository": "https://github.com/KiCad/kicad-packages3D",
+          "destination": "shared/schematic/3dmodels/kicad_standard/LED_SMD.3dshapes/LED_0805_2012Metric.step",
+          "sha256": "0aa8b791804f5d72a2fc7d1bf231dd9959207d83df8ad801176fbc459f575b98",
+          "bytes": 78220,
+          "copied_byte_identical": true,
+          "license": "CC-BY-SA-4.0 WITH embedded KiCad design exception",
+          "license_basis": "License and exception retained verbatim in STEP HEADER.",
+          "original_STEP_HEADER": "ISO-10303-21;\nHEADER;\n/* LED_0805_2012Metric.step 3D STEP model for use in ECAD systems\n * Copyright (C) 2018, kicad StepUp\n * \n * This work is licensed under the [Creative Commons CC-BY-SA 4.0 License](https://creativecommons.org/licenses/by-sa/4.0/legalcode), \n * with the following exception:\n * To the extent that the creation of electronic designs that use 'Licensed Material' can be considered to be 'Adapted Material', \n * then the copyright holder waives article 3 of the license with respect to these designs and any generated files which use data provided \n * as part of the 'Licensed Material'.\n * You are free to use the library data in your own projects without the obligation to share your project files under this or any other license agreement.\n * However, if you wish to redistribute these libraries, or parts thereof (including in modified form) as a collection then the exception above does not apply. \n * Please refer to https://github.com/KiCad/kicad-packages3D/blob/master/LICENSE.md for further clarification of the exception.\n * Disclaimer of Warranties and Limitation of Liability.\n * These libraries are provided in the hope that they will be useful, but are provided without warranty of any kind, express or implied.\n * *USE 3D CAD DATA AT YOUR OWN RISK*\n * *DO NOT RELY UPON ANY INFORMATION FOUND HERE WITHOUT INDEPENDENT VERIFICATION.*\n * \n */\n\nFILE_DESCRIPTION(\n/* description */ ('model of LED_0805_2012Metric'),\n/* implementation_level */ '2;1');\n\nFILE_NAME(\n/* name */ 'LED_0805_2012Metric.step',\n/* time_stamp */ '2018-03-14T23:50:52',\n/* author */ ('kicad StepUp','ksu'),\n/* organization */ ('FreeCAD'),\n/* preprocessor_version */ 'OCC',\n/* originating_system */ 'kicad StepUp',\n/* authorisation */ '');\n\nFILE_SCHEMA(('AUTOMOTIVE_DESIGN { 1 0 10303 214 1 1 1 1 }'));\n",
+          "referenced_by": [
+            "shared/schematic/Meshcore.pretty/LED_0805_2012Metric.kicad_mod"
+          ]
+        },
+        {
+          "source_uri": "${KICAD10_3DMODEL_DIR}/Package_SO.3dshapes/SOIC-8_3.9x4.9mm_P1.27mm.step",
+          "portable_uri": "${KIPRJMOD}/3dmodels/kicad_standard/Package_SO.3dshapes/SOIC-8_3.9x4.9mm_P1.27mm.step",
+          "source_installed_file": "C:\\Program Files\\KiCad\\10.0\\share\\kicad\\3dmodels\\Package_SO.3dshapes\\SOIC-8_3.9x4.9mm_P1.27mm.step",
+          "source_repository": "https://github.com/KiCad/kicad-packages3D",
+          "destination": "shared/schematic/3dmodels/kicad_standard/Package_SO.3dshapes/SOIC-8_3.9x4.9mm_P1.27mm.step",
+          "sha256": "07f46cff378d30e6c27dfd5a03092c795323f86d91c71fc7e743f4f418dc553a",
+          "bytes": 125320,
+          "copied_byte_identical": true,
+          "license": "CC-BY-SA-4.0 WITH embedded KiCad design exception",
+          "license_basis": "License and exception retained verbatim in STEP HEADER.",
+          "original_STEP_HEADER": "ISO-10303-21;\nHEADER;\n/* SOIC-8_3.9x4.9mm_P1.27mm.step 3D STEP model for use in ECAD systems\n * Copyright (C) 2025, KiCAD\n *\n * This work is licensed under the\n * [Creative Commons CC-BY-SA 4.0 License](https://creativecommons.org/licenses/by-sa/4.0/legalcode),\n * with the following exception:\n *\n * To the extent that the creation of electronic designs that use 'Licensed Material' can be\n * considered to be 'Adapted Material', then the copyright holder waives article 3 of the license\n * with respect to these designs and any generated files which use data provided as part of the\n * 'Licensed Material'.\n *\n * You are free to use the library data in your own projects without the obligation to share your\n * project files under this or any other license agreement. However, if you wish to distribute\n * these libraries, or parts thereof (including in modified form) as a collection then the exception\n * above does not apply. Please refer to\n * https://gitlab.com/kicad/libraries/kicad-packages3D/-/blob/master/LICENSE.md for further clarification\n * of the exception.\n *\n * Disclaimer of Warranties and Limitation of Liability.\n * These libraries are provided in the hope that they will be useful, but are provided without warranty of any kind, express or implied.\n * USE 3D CAD DATA AT YOUR OWN RISK\n * DO NOT RELY UPON ANY INFORMATION FOUND HERE WITHOUT INDEPENDENT VERIFICATION.\n */\n\nFILE_DESCRIPTION(\n/* description */ ('model of SOIC-8_3.9x4.9mm_P1.27mm'),\n/* implementation_level */ '2;1');\n\nFILE_NAME(\n/* name */ 'SOIC-8_3.9x4.9mm_P1.27mm.step',\n/* time_stamp */ '1970-01-01T00:00:00',\n/* author */ ('KiCAD','kicad'),\n/* organization */ ('OCCT'),\n/* preprocessor_version */ '',\n/* originating_system */ 'KiCAD',\n/* authorisation */ '');\n\nFILE_SCHEMA(('AUTOMOTIVE_DESIGN { 1 0 10303 214 1 1 1 1 }'));\n",
+          "referenced_by": [
+            "shared/schematic/Meshcore.pretty/SOIC-8_3.9x4.9mm_P1.27mm.kicad_mod"
+          ]
+        },
+        {
+          "source_uri": "${KICAD10_3DMODEL_DIR}/Package_SO.3dshapes/TSSOP-16_4.4x5mm_P0.65mm.step",
+          "portable_uri": "${KIPRJMOD}/3dmodels/kicad_standard/Package_SO.3dshapes/TSSOP-16_4.4x5mm_P0.65mm.step",
+          "source_installed_file": "C:\\Program Files\\KiCad\\10.0\\share\\kicad\\3dmodels\\Package_SO.3dshapes\\TSSOP-16_4.4x5mm_P0.65mm.step",
+          "source_repository": "https://github.com/KiCad/kicad-packages3D",
+          "destination": "shared/schematic/3dmodels/kicad_standard/Package_SO.3dshapes/TSSOP-16_4.4x5mm_P0.65mm.step",
+          "sha256": "6ad5e98224d02a427d9a6b929a28dbc158b9925fba5adec12db05079f1016948",
+          "bytes": 210031,
+          "copied_byte_identical": true,
+          "license": "CC-BY-SA-4.0 WITH embedded KiCad design exception",
+          "license_basis": "License and exception retained verbatim in STEP HEADER.",
+          "original_STEP_HEADER": "ISO-10303-21;\nHEADER;\n/* TSSOP-16_4.4x5mm_P0.65mm.step 3D STEP model for use in ECAD systems\n * Copyright (C) 2025, KiCAD\n *\n * This work is licensed under the\n * [Creative Commons CC-BY-SA 4.0 License](https://creativecommons.org/licenses/by-sa/4.0/legalcode),\n * with the following exception:\n *\n * To the extent that the creation of electronic designs that use 'Licensed Material' can be\n * considered to be 'Adapted Material', then the copyright holder waives article 3 of the license\n * with respect to these designs and any generated files which use data provided as part of the\n * 'Licensed Material'.\n *\n * You are free to use the library data in your own projects without the obligation to share your\n * project files under this or any other license agreement. However, if you wish to distribute\n * these libraries, or parts thereof (including in modified form) as a collection then the exception\n * above does not apply. Please refer to\n * https://gitlab.com/kicad/libraries/kicad-packages3D/-/blob/master/LICENSE.md for further clarification\n * of the exception.\n *\n * Disclaimer of Warranties and Limitation of Liability.\n * These libraries are provided in the hope that they will be useful, but are provided without warranty of any kind, express or implied.\n * USE 3D CAD DATA AT YOUR OWN RISK\n * DO NOT RELY UPON ANY INFORMATION FOUND HERE WITHOUT INDEPENDENT VERIFICATION.\n */\n\nFILE_DESCRIPTION(\n/* description */ ('model of TSSOP-16_4.4x5mm_P0.65mm'),\n/* implementation_level */ '2;1');\n\nFILE_NAME(\n/* name */ 'TSSOP-16_4.4x5mm_P0.65mm.step',\n/* time_stamp */ '1970-01-01T00:00:00',\n/* author */ ('KiCAD','kicad'),\n/* organization */ ('OCCT'),\n/* preprocessor_version */ '',\n/* originating_system */ 'KiCAD',\n/* authorisation */ '');\n\nFILE_SCHEMA(('AUTOMOTIVE_DESIGN { 1 0 10303 214 1 1 1 1 }'));\n",
+          "referenced_by": [
+            "shared/schematic/Meshcore.pretty/TSSOP-16_4.4x5mm_P0.65mm.kicad_mod"
+          ]
+        },
+        {
+          "source_uri": "${KICAD10_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-23-5.step",
+          "portable_uri": "${KIPRJMOD}/3dmodels/kicad_standard/Package_TO_SOT_SMD.3dshapes/SOT-23-5.step",
+          "source_installed_file": "C:\\Program Files\\KiCad\\10.0\\share\\kicad\\3dmodels\\Package_TO_SOT_SMD.3dshapes\\SOT-23-5.step",
+          "source_repository": "https://github.com/KiCad/kicad-packages3D",
+          "destination": "shared/schematic/3dmodels/kicad_standard/Package_TO_SOT_SMD.3dshapes/SOT-23-5.step",
+          "sha256": "720a6eab0024069bbee68e7cb4c3ff1149468a34611225cdc852662c5d0ec2b7",
+          "bytes": 87532,
+          "copied_byte_identical": true,
+          "license": "CC-BY-SA-4.0 WITH embedded KiCad design exception",
+          "license_basis": "License and exception retained verbatim in STEP HEADER.",
+          "original_STEP_HEADER": "ISO-10303-21;\nHEADER;\n/* SOT-23-5.step 3D STEP model for use in ECAD systems\n * Copyright (C) 2025, KiCAD\n *\n * This work is licensed under the\n * [Creative Commons CC-BY-SA 4.0 License](https://creativecommons.org/licenses/by-sa/4.0/legalcode),\n * with the following exception:\n *\n * To the extent that the creation of electronic designs that use 'Licensed Material' can be\n * considered to be 'Adapted Material', then the copyright holder waives article 3 of the license\n * with respect to these designs and any generated files which use data provided as part of the\n * 'Licensed Material'.\n *\n * You are free to use the library data in your own projects without the obligation to share your\n * project files under this or any other license agreement. However, if you wish to distribute\n * these libraries, or parts thereof (including in modified form) as a collection then the exception\n * above does not apply. Please refer to\n * https://gitlab.com/kicad/libraries/kicad-packages3D/-/blob/master/LICENSE.md for further clarification\n * of the exception.\n *\n * Disclaimer of Warranties and Limitation of Liability.\n * These libraries are provided in the hope that they will be useful, but are provided without warranty of any kind, express or implied.\n * USE 3D CAD DATA AT YOUR OWN RISK\n * DO NOT RELY UPON ANY INFORMATION FOUND HERE WITHOUT INDEPENDENT VERIFICATION.\n */\n\nFILE_DESCRIPTION(\n/* description */ ('model of SOT-23-5'),\n/* implementation_level */ '2;1');\n\nFILE_NAME(\n/* name */ 'SOT-23-5.step',\n/* time_stamp */ '1970-01-01T00:00:00',\n/* author */ ('KiCAD','kicad'),\n/* organization */ ('OCCT'),\n/* preprocessor_version */ '',\n/* originating_system */ 'KiCAD',\n/* authorisation */ '');\n\nFILE_SCHEMA(('AUTOMOTIVE_DESIGN { 1 0 10303 214 1 1 1 1 }'));\n",
+          "referenced_by": [
+            "shared/schematic/Meshcore.pretty/SOT-23-5.kicad_mod"
+          ]
+        },
+        {
+          "source_uri": "${KICAD10_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-23.step",
+          "portable_uri": "${KIPRJMOD}/3dmodels/kicad_standard/Package_TO_SOT_SMD.3dshapes/SOT-23.step",
+          "source_installed_file": "C:\\Program Files\\KiCad\\10.0\\share\\kicad\\3dmodels\\Package_TO_SOT_SMD.3dshapes\\SOT-23.step",
+          "source_repository": "https://github.com/KiCad/kicad-packages3D",
+          "destination": "shared/schematic/3dmodels/kicad_standard/Package_TO_SOT_SMD.3dshapes/SOT-23.step",
+          "sha256": "dd5d1711204e1d8d26cd11490923bd84340820baa69538c385a4300ec2539bc0",
+          "bytes": 60296,
+          "copied_byte_identical": true,
+          "license": "CC-BY-SA-4.0 WITH embedded KiCad design exception",
+          "license_basis": "License and exception retained verbatim in STEP HEADER.",
+          "original_STEP_HEADER": "ISO-10303-21;\nHEADER;\n/* SOT-23.step 3D STEP model for use in ECAD systems\n * Copyright (C) 2025, KiCAD\n *\n * This work is licensed under the\n * [Creative Commons CC-BY-SA 4.0 License](https://creativecommons.org/licenses/by-sa/4.0/legalcode),\n * with the following exception:\n *\n * To the extent that the creation of electronic designs that use 'Licensed Material' can be\n * considered to be 'Adapted Material', then the copyright holder waives article 3 of the license\n * with respect to these designs and any generated files which use data provided as part of the\n * 'Licensed Material'.\n *\n * You are free to use the library data in your own projects without the obligation to share your\n * project files under this or any other license agreement. However, if you wish to distribute\n * these libraries, or parts thereof (including in modified form) as a collection then the exception\n * above does not apply. Please refer to\n * https://gitlab.com/kicad/libraries/kicad-packages3D/-/blob/master/LICENSE.md for further clarification\n * of the exception.\n *\n * Disclaimer of Warranties and Limitation of Liability.\n * These libraries are provided in the hope that they will be useful, but are provided without warranty of any kind, express or implied.\n * USE 3D CAD DATA AT YOUR OWN RISK\n * DO NOT RELY UPON ANY INFORMATION FOUND HERE WITHOUT INDEPENDENT VERIFICATION.\n */\n\nFILE_DESCRIPTION(\n/* description */ ('model of SOT-23'),\n/* implementation_level */ '2;1');\n\nFILE_NAME(\n/* name */ 'SOT-23.step',\n/* time_stamp */ '1970-01-01T00:00:00',\n/* author */ ('KiCAD','kicad'),\n/* organization */ ('OCCT'),\n/* preprocessor_version */ '',\n/* originating_system */ 'KiCAD',\n/* authorisation */ '');\n\nFILE_SCHEMA(('AUTOMOTIVE_DESIGN { 1 0 10303 214 1 1 1 1 }'));\n",
+          "referenced_by": [
+            "shared/schematic/Meshcore.pretty/SOT-23.kicad_mod"
+          ]
+        },
+        {
+          "source_uri": "${KICAD10_3DMODEL_DIR}/Package_TO_SOT_THT.3dshapes/TO-92_Inline.step",
+          "portable_uri": "${KIPRJMOD}/3dmodels/kicad_standard/Package_TO_SOT_THT.3dshapes/TO-92_Inline.step",
+          "source_installed_file": "C:\\Program Files\\KiCad\\10.0\\share\\kicad\\3dmodels\\Package_TO_SOT_THT.3dshapes\\TO-92_Inline.step",
+          "source_repository": "https://github.com/KiCad/kicad-packages3D",
+          "destination": "shared/schematic/3dmodels/kicad_standard/Package_TO_SOT_THT.3dshapes/TO-92_Inline.step",
+          "sha256": "f0b61c32ecbf0067157adc5a3d4966ceadf5d6dafe93c51af35f76c41c71a54a",
+          "bytes": 27693,
+          "copied_byte_identical": true,
+          "license": "KiCad library CC-BY-SA-4.0 WITH design exception",
+          "license_basis": "No per-file license notice; common official KiCad library LICENSE.md applies. STEP HEADER attribution retained.",
+          "original_STEP_HEADER": "ISO-10303-21;\r\nHEADER;\r\nFILE_DESCRIPTION(('FreeCAD Model'),'2;1');\r\nFILE_NAME(\r\n'D:/KiCAD/packages3D-source/Package_TO_SOT_THT.3dshapes\\\\\r\nTO-92_Inline_Narrow.step','2017-11-28T22:16:31',('kicad StepUp'),(\r\n    'ksu MCAD'),'Open CASCADE STEP processor 6.8','FreeCAD','Unknown');\r\nFILE_SCHEMA(('AUTOMOTIVE_DESIGN_CC2 { 1 2 10303 214 -1 1 5 4 }'));\r\n",
+          "referenced_by": [
+            "shared/schematic/Meshcore.pretty/TO-92_Inline.kicad_mod"
+          ]
+        },
+        {
+          "source_uri": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+          "portable_uri": "${KIPRJMOD}/3dmodels/kicad_standard/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+          "source_installed_file": "C:\\Program Files\\KiCad\\10.0\\share\\kicad\\3dmodels\\Resistor_SMD.3dshapes\\R_0805_2012Metric.step",
+          "source_repository": "https://github.com/KiCad/kicad-packages3D",
+          "destination": "shared/schematic/3dmodels/kicad_standard/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+          "sha256": "ded342cdb394fb45395227beaaa75cc390613cf2581b29cd6d22c12abd6103b2",
+          "bytes": 40592,
+          "copied_byte_identical": true,
+          "license": "CC-BY-SA-4.0 WITH embedded KiCad design exception",
+          "license_basis": "License and exception retained verbatim in STEP HEADER.",
+          "original_STEP_HEADER": "ISO-10303-21;\nHEADER;\n/* R_0805_2012Metric.step 3D STEP model for use in ECAD systems\n * Copyright (C) 2018, kicad StepUp\n * \n * This work is licensed under the [Creative Commons CC-BY-SA 4.0 License](https://creativecommons.org/licenses/by-sa/4.0/legalcode), \n * with the following exception:\n * To the extent that the creation of electronic designs that use 'Licensed Material' can be considered to be 'Adapted Material', \n * then the copyright holder waives article 3 of the license with respect to these designs and any generated files which use data provided \n * as part of the 'Licensed Material'.\n * You are free to use the library data in your own projects without the obligation to share your project files under this or any other license agreement.\n * However, if you wish to redistribute these libraries, or parts thereof (including in modified form) as a collection then the exception above does not apply. \n * Please refer to https://github.com/KiCad/kicad-packages3D/blob/master/LICENSE.md for further clarification of the exception.\n * Disclaimer of Warranties and Limitation of Liability.\n * These libraries are provided in the hope that they will be useful, but are provided without warranty of any kind, express or implied.\n * *USE 3D CAD DATA AT YOUR OWN RISK*\n * *DO NOT RELY UPON ANY INFORMATION FOUND HERE WITHOUT INDEPENDENT VERIFICATION.*\n * \n */\n\nFILE_DESCRIPTION(\n/* description */ ('model of R_0805_2012Metric'),\n/* implementation_level */ '2;1');\n\nFILE_NAME(\n/* name */ 'R_0805_2012Metric.step',\n/* time_stamp */ '2018-01-04T00:45:37',\n/* author */ ('kicad StepUp','ksu'),\n/* organization */ ('FreeCAD'),\n/* preprocessor_version */ 'OCC',\n/* originating_system */ 'kicad StepUp',\n/* authorisation */ '');\n\nFILE_SCHEMA(('AUTOMOTIVE_DESIGN { 1 0 10303 214 1 1 1 1 }'));\n",
+          "referenced_by": [
+            "shared/schematic/Meshcore.pretty/R_0805_2012Metric.kicad_mod"
+          ]
+        },
+        {
+          "source_uri": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_2512_6332Metric.step",
+          "portable_uri": "${KIPRJMOD}/3dmodels/kicad_standard/Resistor_SMD.3dshapes/R_2512_6332Metric.step",
+          "source_installed_file": "C:\\Program Files\\KiCad\\10.0\\share\\kicad\\3dmodels\\Resistor_SMD.3dshapes\\R_2512_6332Metric.step",
+          "source_repository": "https://github.com/KiCad/kicad-packages3D",
+          "destination": "shared/schematic/3dmodels/kicad_standard/Resistor_SMD.3dshapes/R_2512_6332Metric.step",
+          "sha256": "76b2052a3c120193de7cdc0af99157b6f375e9a4af7721e3e3d012968c877f27",
+          "bytes": 40272,
+          "copied_byte_identical": true,
+          "license": "CC-BY-SA-4.0 WITH embedded KiCad design exception",
+          "license_basis": "License and exception retained verbatim in STEP HEADER.",
+          "original_STEP_HEADER": "ISO-10303-21;\nHEADER;\n/* R_2512_6332Metric.step 3D STEP model for use in ECAD systems\n * Copyright (C) 2018, kicad StepUp\n * \n * This work is licensed under the [Creative Commons CC-BY-SA 4.0 License](https://creativecommons.org/licenses/by-sa/4.0/legalcode), \n * with the following exception:\n * To the extent that the creation of electronic designs that use 'Licensed Material' can be considered to be 'Adapted Material', \n * then the copyright holder waives article 3 of the license with respect to these designs and any generated files which use data provided \n * as part of the 'Licensed Material'.\n * You are free to use the library data in your own projects without the obligation to share your project files under this or any other license agreement.\n * However, if you wish to redistribute these libraries, or parts thereof (including in modified form) as a collection then the exception above does not apply. \n * Please refer to https://github.com/KiCad/kicad-packages3D/blob/master/LICENSE.md for further clarification of the exception.\n * Disclaimer of Warranties and Limitation of Liability.\n * These libraries are provided in the hope that they will be useful, but are provided without warranty of any kind, express or implied.\n * *USE 3D CAD DATA AT YOUR OWN RISK*\n * *DO NOT RELY UPON ANY INFORMATION FOUND HERE WITHOUT INDEPENDENT VERIFICATION.*\n * \n */\n\nFILE_DESCRIPTION(\n/* description */ ('model of R_2512_6332Metric'),\n/* implementation_level */ '2;1');\n\nFILE_NAME(\n/* name */ 'R_2512_6332Metric.step',\n/* time_stamp */ '2018-01-04T00:45:29',\n/* author */ ('kicad StepUp','ksu'),\n/* organization */ ('FreeCAD'),\n/* preprocessor_version */ 'OCC',\n/* originating_system */ 'kicad StepUp',\n/* authorisation */ '');\n\nFILE_SCHEMA(('AUTOMOTIVE_DESIGN { 1 0 10303 214 1 1 1 1 }'));\n",
+          "referenced_by": [
+            "shared/schematic/Meshcore.pretty/R_2512_6332Metric__A3_R56.kicad_mod",
+            "shared/schematic/Meshcore.pretty/R_2512_6332Metric__A3_R71.kicad_mod",
+            "shared/schematic/Meshcore.pretty/R_Vishay_WSL2512_A3__A3_R1.kicad_mod",
+            "shared/schematic/Meshcore.pretty/R_Vishay_WSL2512_A3__A3_R40.kicad_mod",
+            "shared/schematic/Meshcore.pretty/R_Vishay_WSL2512_A3__A3_R41.kicad_mod",
+            "shared/schematic/Meshcore.pretty/R_Vishay_WSL2512_A3__A3_R55.kicad_mod"
+          ]
+        }
+      ],
+      "model_bytes": 2046615,
+      "models_count": 18
+    }
+  }
+}

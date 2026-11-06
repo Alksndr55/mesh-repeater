@@ -1,0 +1,28 @@
+Enabled,Marker,Type,Number of pins,Contains,Pins In,Pins Out,Package
+1,"C, PC",Capacitor,2,"","","",""
+1,"PD, D",Diode,2,"","","",""
+1,"PF, F, PFB, FB",Fuse,2,"","","",""
+1,"PJ, J",Jumper,2,"","","",""
+1,PL,Inductor,4,CHOKE-PCMC063T,1,2,""
+1,"PL, L",Inductor,2,"","","",""
+1,PQ,Mosfet,5,AON6414AL,5,1-3,PDFN-8(5.9x5.2)
+1,PQ,Mosfet,5,AONS32314,5,1-3,DFN-8
+1,PQ,Mosfet,8,AON6403,5-8,1-3,DFN-8
+1,PQ,Mosfet,5,AONS32310,5,1-3,DFN-8
+1,PQ,Mosfet,5,AONS32304,1-3,5,DFN-8
+1,PR,Resistor,4,0.005_1206_1% R_1206_4P-D,"1,2","4,3",""
+1,PR,Resistor,4,3W_0.004_1%_2512_50PPM/C,"1,3","2,4",""
+1,PU,DrMOS,24,AOZ5049QI,"6,22","5,13",QFN-24L 3.5X5mm
+1,PU,DrMOS,33,"UP9646BQDBA,NCP302155MNTWG",8-11,16-26,PQFN33 5X5
+1,PU,DrMOS,24,AOZ5516QI-A,6-8,12-16,QFN22 3.5X4.5
+1,PU,Step down regulator,19,MP2941FGL-Z,2,"11-12,16",QFN19 3X4
+1,PU,Step down regulator,17,"SYV138D3RHC,SY8388ARHC",2-4,"5,15-16",QFN-16 2.5X2.5
+1,PU,Step down regulator,17,SYV786RHC,2-4,"5,15-16",QFN-16 2.5X2.5
+1,PU,Step down regulator,21,RT6585CGQW,12,"8,18",WQFN20 3X3
+1,PU,DrMOS,33,AOZ5517QI,8-11,16-26,""
+1,"R, PR, RC",Resistor,2,"","","",""
+1,U,Switch,15,G2898KD1U,"1-2,6-7","13-14,8-9",TDFN2X3-14
+
+# Added by NexusBV update
+1,CHOKE,Inductor,2,"",1,2,""
+1,Q,Mosfet,5,NTMFS4C08NT1G,5,1-3,SOT669

@@ -1,0 +1,120 @@
+version: 1
+
+categories:
+  laptops:
+    title: Laptops
+    hints:
+      - id: no_backlight_aux
+        title: No backlight: check the panel communication used by this board
+        triggers:
+          - no backlight
+          - missing backlight
+          - backlight missing
+          - no image backlight
+          - display has image but no backlight
+          - backlight not working
+          - no lcd backlight
+          - missing bl_en
+          - no bl_en
+          - bl_en missing
+          - edp backlight
+          - нет подсветки
+          - подсветка
+        text: >
+          When listing possible checks, include panel communication only as an
+          additional thing to verify, and only for the interface used by this
+          board. If the display path is eDP or DisplayPort, mention AUX
+          communication. If it is an older LVDS-style panel, do not call it AUX
+          and do not imply EDID/DDC is always required; mention DDC/I2C/EDID only
+          if those lines are present or relevant. Also include panel power, BL_EN,
+          PWM, and the backlight driver or inverter.
+
+      - id: no_vcccore_vid_bus
+        title: Missing CPU core rail: check the VID control interface if used
+        triggers:
+          - no vcccore
+          - missing vcccore
+          - vcccore missing
+          - no +vcccore
+          - missing +vcccore
+          - +vcccore missing
+          - no vcore
+          - missing vcore
+          - vcore missing
+          - no cpu core voltage
+          - missing cpu core voltage
+          - cpu core rail missing
+          - no cpu vcore
+          - missing cpu vcore
+        text: >
+          When listing possible checks for a missing CPU core rail, include the
+          CPU voltage identification/control bus only as an additional thing to
+          verify, and only if the platform uses it. For modern Intel platforms,
+          mention SVID between the CPU and CPU core VR controller. For AMD
+          platforms, mention the SVI/SVI2/SVI3 interface instead of SVID. For
+          older CPUs or simpler regulators, do not imply SVID is required; they
+          may use parallel VID pins, fixed feedback, or another enable/control
+          scheme. Also include VR enable, controller supply, VIN/PVIN, power-good
+          sequencing, PWM/DrMOS activity, and shorts on the core rail.
+
+      - id: locate_functional_board_item
+        title: Locating functional board items by role
+        triggers:
+          - select
+          - find
+          - locate
+          - where is
+          - input
+          - output
+          - connector
+          - port
+          - socket
+          - jack
+          - dc input
+          - dc-in
+          - dcin
+          - adapter input
+          - adapter in
+          - main adapter input
+          - adapter connector
+          - adapter jack
+          - audio input
+          - audio jack
+          - headphone jack
+          - microphone input
+          - usb input
+          - usb port
+          - type-c
+          - type c
+          - dc connector
+          - dc jack
+          - power jack
+          - powerjack
+        text: >
+          When the user asks to find or select something by function rather than
+          exact refdes, first infer the role they asked for and only then choose
+          a component. Start with a heuristic scan of the active board using
+          component info/package, refdes style, pin names, and connected nets;
+          use exact labels or plain text matches only as a fallback when the
+          local board evidence is inconclusive. Do not first report that a plain
+          label was not found, and do not just pick the strongest text match. If
+          the request explicitly says connector, jack, port,
+          socket, input connector, or output connector, prefer a connector-like
+          component only when its pins/nets match the requested role. For DC or
+          adapter input, strong evidence includes adapter/DCIN/DC_IN/DC-in/ADP/
+          ADPIN style nets; +B+, DCBATOUT, VIN/PVIN, VBUS, and ACDET are
+          supporting evidence; GND or shield pins on the same connector make the
+          connector candidate stronger. For USB, prefer connectors with USB,
+          VBUS, CC, D+/D-, SSRX/SSTX, TX/RX, shield, and GND evidence. For audio
+          input/output, prefer jacks/connectors/codecs with HP, MIC, SPK, LINE,
+          JACK, SENSE, HDA/AZALIA/I2S, AGND, and codec-related evidence. Avoid
+          choosing unrelated connectors such as USB, audio, LCD/eDP/LVDS,
+          keyboard, camera, fan, WLAN/LAN, debug, DIMM, or storage connectors
+          unless their pins/nets match the requested role. If the user asks for
+          where a rail or signal is formed or where it comes from, do not force a
+          connector: consider the connector, fuse, protection device, switch or
+          MOSFET, sense resistor, controller, inductor, and downstream rail path,
+          then select the best-supported source or say which candidates need
+          schematic confirmation. If the user asks for a simple value/part search
+          such as 10K, AOZ5517QI, or a package name, treat it as a normal parts
+          search, not functional inference.

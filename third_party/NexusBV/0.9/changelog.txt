@@ -1,0 +1,315 @@
+v0.9 - 2026.09.20
+
+- Добавлена тёмная тема интерфейса и опция отображения PDF-страниц в тёмном режиме (Options -> UI Theme)
+- Добавлена функция закрепления результатов поиска в PDF вьювере
+- Исправлен быстрый поиск по индексу для слов, разделённых символом подчёркивания (для существующего индекса необходимо выполнить Sync index)
+- Улучшены парсеры: BRD (Allegro, Landrex), GenCAD, GR, TVW, F2B, XZZPCB
+- Другие мелкие исправления и улучшения
+
+- Added a dark UI theme and dark-mode rendering option for PDF pages (Options -> UI Theme)
+- Added the Lock search results function to the PDF viewer
+- Fixed quick indexed search for underscore separated words (existing index require Sync index)
+- Improved BRD (Allegro, Landrex), GenCAD, GR, TVW, F2B, XZZPCB parsers
+- Other minor fixes and improvements
+
+
+v0.8.1 - 2026.07.26
+
+- Добавлена функция притемнения компонентов без info
+- Улучшены парсеры: BRD (Toptest), BV, TVW
+- Другие мелкие исправления и улучшения
+
+- Added function darken components without info
+- Improved BRD (Toptest), BV, TVW parsers
+- Other minor fixes and improvements
+
+
+v0.8 - 2026.07.12
+
+- Добавлен редактор борд (Tools -> Board editor) и возможность экспортировать бордвью в новый формат NBV
+- Добавлен редактор заметок (Tools -> Notes)
+- Улучшены парсеры: BDV, BRD (TopTest), FZ, GenCAD, TVW, XZZPCB
+- Добавлена настройка восстановления ранее открытых вкладок при запуске бордвьювера (General -> Restore open tabs on boardviewer launch)
+- Добавлена настройка масштабирования PDF колесиком мышки (General -> PDF viewer -> Zoom with mouse wheel (hold Ctrl to scroll))
+- Добавлен поиск по регулярным выражениям в PDF-вьювере
+- Добавлена функция закрепления недавних файлов на главном экране
+- Добавлен точный поиск в Find Parts, Search for Files and Content и PDF Viewer. Для поиска точных совпадений используйте кавычки
+- Другие мелкие исправления и улучшения
+
+- Added board editor (Tools -> Board editor) and the ability to export boardviews to the NBV format
+- Added notes editor (Tools -> Notes)
+- Improved BDV, BRD (TopTest), FZ, GenCAD, TVW, XZZPCB parsers
+- Added an option to restore previously opened tabs on boardviewer launch (General -> Restore open tabs on boardviewer launch)
+- Added an option to zoom PDFs with the mouse wheel (General -> PDF viewer -> Zoom with mouse wheel (hold Ctrl to scroll))
+- Added regex search to the PDF viewer
+- Added the ability to pin recent files on the Home screen
+- Added exact search in Find Parts, Search for Files and Content, and the PDF Viewer. To search for exact matches, use quotes
+- Other minor fixes and improvements
+
+
+v0.7.4 - 2026.06.26
+
+- Исправлено отключение MCP-клиента Claude
+- PDF-вьювер теперь корректно восстанавливает состояние окна при открытии борды, если до этого окно было свернуто
+
+- Fixed Claude MCP client disconnecting
+- The PDF viewer now correctly restores its window state when opening a board if the window was minimized before
+
+
+v0.7.3 - 2026.06.25
+
+- Уменьшено количество ложных срабатываний от ESET и Windows Defender
+
+- Reduced the number of false positives from ESET and Windows Defender
+
+
+v0.7.2 - 2026.06.25
+
+- BRD: улучшен парсер TopTest
+- Исправлена причина ложных срабатываний от Windows Defender
+- Переход из PDF-вьювера к компоненту на бордвью теперь учитывает настройки "Всегда переворачивать борду по оси X" и "Всегда переворачивать борду без зеркалирования"
+- Другие мелкие исправления и улучшения
+
+- BRD: improved TopTest parser
+- Fixed the cause of false positives from Windows Defender
+- Jumping from the PDF viewer to a component on the boardview now respects the "Always flip the board over X-axis" and "Always flip the board without mirroring" settings
+- Other minor fixes and improvements
+
+
+v0.7.1 - 2026.06.23
+
+- Добавлена поддержка длинных путей
+- Добавлен автономный режим PDF-вьювера, при прямом открытии PDF теперь открывается только окно PDF-вьювера
+- Исправлен индексируемый поиск
+- Другие мелкие исправления и улучшения
+
+- Added support for long file paths
+- Added standalone PDF viewer mode, opening a PDF directly now opens only the PDF viewer window
+- Fixed indexed search
+- Other minor fixes and improvements
+
+
+v0.7 - 2026.06.21
+- Добавлена интеграция AI/MCP: теперь можно подключить ИИ к NexusBV и взаимодействовать с бордвьювером через него, а также спрашивать любые вопросы касательно работы тех
+или иных узлов/компонентов на бордвью и многое другое! (см. Options -> MCP)
+- Добавлена функция индексированного поиска по PDF и бордам (Tools -> Search for files and content...)
+- Добавлена поддержка закладок (горячая клавиша по умолчанию: Ctrl+D)
+- Добавлена настройка позволяющая выделить заголовки столбцов (Options -> Accessibility -> Make column headers stand out)
+- Добавлен выпадающий список недавних поисковых запросов в поле поиска PDF-вьювера
+- В PDF-вьювер добавлены кнопки поворота по часовой и против часовой стрелки
+- Улучшен парсер TVW, также слой DRL теперь всегда отображается поверх других слоев, когда он включен
+- Улучшен парсер A3P, также теперь поддерживается отображение суб-плат, если они присутствуют в боардвью (появится новая вкладка Sub-boards в правой панели)
+- Улучшен парсер XZZPCB
+- Улучшен парсер GenCAD
+- Открытие борды и PDF сразу теперь автоматически связывает PDF к бордой, вместо того, чтобы открывать PDF отдельно, также добавлена возможность открывать несколько борд сразу
+- Добавлена поддержка открытия PDF файлов защищенных паролем
+- Другие мелкие исправления и улучшения
+
+- Added AI/MCP integration: you can now connect your favorite AI to NexusBV and interact with the boardviewer through it, ask questions about how specific circuits or components
+work on the boardview, and much more! (See Options -> MCP)
+- Added indexed search functionality for PDFs and boardviews (Tools -> Search for files and content...)
+- Added bookmarks support (Ctrl+D is the default hotkey)
+- Added a setting that allows column headers to stand out (Options -> Accessibility -> Make column headers stand out)
+- Added recent searches dropdown to the PDF viewer search field
+- Added clockwise and counterclockwise rotation buttons to the PDF viewer
+- Improved TVW parser, also the DRL layer is now always displayed above other layers when enabled
+- Improved A3P parser, also sub-boards are now supported if they are present in the boardview (a new Sub-boards tab appears in the right panel)
+- Improved XZZPCB parser
+- Improved GenCAD parser
+- Opening a board and PDF together now automatically pairs the PDF with the board instead of opening it separately, also added supported for opening multiple boards at once
+- Added support for opening password protected PDFs
+- Other minor fixes and improvements
+
+
+v0.6.1 - 2026.06.04
+- Добавлена поддержка формата A3P/GenCAM
+- Улучшен парсер TVW
+- Улучшен парсер BV
+- Улучшен парсер GR
+- Улучшен парсер XZZPCB
+- BRD: улучшен парсер TopTest
+- CAD Улучшена поддержка GenCAD борд экспортированных RSI-TRANSLATOR CAMCAD Professional 3.9.6b, а также GenCAD борд с мусорными данными в начале
+- Улучшен режим слоев
+- Добавлен функционал трассировки сигнала через перемычки, дроссели, диоды, конденсаторы и нулевики, ШИМ, мосфеты, свитчи и т.д. (сигналы при переходе
+выделяются разным цветом). Также добавлен Trace Editor в меню Tools. Данная функция на данное время экспериментальная
+- Улучшено отображение наложенных друг на друга пинов/подложек в компоненте: на борде теперь отображается последний пин/подложка (при выборе пина во
+вкладке Parts, его имя корректно меняется) 
+- Во сплывающем окне при наведении на компонент список пинов теперь сортируется в возрастающем порядке
+- Исправлено восстановление открепленного окна PDF вьювера: если оно было развернуто, то при восстановлении главного окна теперь оно остается развернутым
+- Вкладка Net теперь больше не переключается автоматически на вкладку Part или Layers, если она была выбрана до этого, а выбранный сигнал не сбрасывается
+до выбора другого сигнала или сброса выделения
+- Добавлена опциональная автоматическая проверка обновлений при запуске бордвьювера (проверка обновлений осуществляется раз в сутки). Если доступна новая
+версия, NexusBV показывает уведомление в правом верхнем углу. Также бордвьювер теперь автоматически запускает новую версию после обновления
+- Добавлена новая горячая клавиша (по умолчанию Ctrl+Space) для переворота платы на другую сторону по горизонтальной оси
+- Оптимизация рендера
+- Другие мелкие улучшения и исправления
+
+- Added support for A3P/GenCAM file format
+- Improved TVW parser
+- Improved BV parser
+- Improved GR parser
+- Improved XZZPCB parser
+- BRD: Improved TopTest parser
+- CAD Improved GenCAD boards support exported by RSI-TRANSLATOR CAMCAD Professional 3.9.6b, as well as GenCAD boards with junk data at the beginning of the file
+- Improved layer mode
+- Added signal tracing through jumpers, inductors, diodes, capacitors, and zero-ohm resistors, PWM, mosfets, switches etc., with signals highlighted in
+different colors as the trace passes through them. Also added Trace Editor in Tools menu. This feature is experimental as of now
+- Improved display of overlapping pins/pads in components: the board now shows the last pin/pad, while selecting a pin in the Parts tab correctly updates its name
+- Component hover tooltips now show pins in ascending order
+- Fixed restoring a maximized detached PDF viewer window: if it was maximized, it now stays maximized when restoring the main window
+- The Net tab no longer automatically switches to the Part or Layers tab if it was selected before, and the selected net is no longer cleared until another
+net is selected or the selection is cleared
+- Added optional automatic update checks (can be enabled in settings) on boardviewer launch (updates are checked once per day). When a new version is
+available, NexusBV shows an update notification in the top-right corner. NexusBV now also automatically launches the new version after updating
+- Added a new hotkey (default is Ctrl+Space) for flipping the board side over the X-axis
+- Render optimization
+- Other minor improvements and fixes
+
+
+v0.5.1 - 2026.05.21 
+- Allegro BRD: Улучшена поддержка редких allegro борд
+- Allegro BRD: Исправлен неверный размер подложек в некоторых бордах
+- GenCAD: Исправлено некорректное отображение информации о компонентах в некоторых файлах
+- PDF: Диалог открытия файла теперь запускается из папки, где лежит бордвью, а последняя папка с PDF запоминается только для текущей вкладки
+- PDF вьювер теперь запоминает состояние и положение открепленного окна
+- Открепленное окно PDF теперь остается поверх основного окна бордвьювера
+- Добавлена кнопка сокрытия/показа правой панели при открытом PDF вьювере в главном окне
+- Улучшено выделение и поиск текста (позиционников и сигналов) в некоторых PDF
+- Контактные площадки тестпоинтов теперь выделяются контуром при наведении
+- Другие мелкие исправления
+
+
+- AllegroBRD: Improved support of some rare allegro boardviews
+- Allegro BRD: Fixed incorrect PAD size in some boards
+- GenCAD: Fixed incorrect component info in some files
+- PDF: The file open dialog now starts from the folder where boardview is located and remembers the last PDF folder only per tab
+- Detached PDF window now stay above the main boardviewer window
+- PDF viewer now remembers the detached window state and position
+- Added a button to hide/show the right sidebar when PDF view is open in the main window
+- Improved text selection and search (for refdes and signals) in some PDFs
+- Test point pads are now highlighted with a round outline when hovered
+- Other minor fixes
+
+
+
+v0.5 - 2026.05.20
+- Добавлена поддержка PDF! Поддерживается: двухсторонняя навигация, как из борды в PDF, так и из PDF в борду (двойным кликом по позиционному номеру, либо имени сигнала). Для
+приближения или отдаления можно использовать как Ctrl + прокрутку колеса, так и удерживая правую кнопку мышки + прокрутку колеса. Также можно открывать PDF в отдельном окне,
+либо его откреплять и закреплять. Можно просматривать PDF отдельно и без загрузки борды. Также поддерживается фильтрация водяных знаков
+- Добавлен функционал обновления NexusBV. Чтобы проверить наличие обновления, откройте окно About и нажмите Check for updates
+- Добавлен функционал загрузки инструментария Allegro для конвертации Allegro борд версий ниже 16 в более новую версию формата
+- Добавлена поддержка отмены/повтора (undo/redo) для бордвьювера и PDF вьювера. Данные горячие клавиши (по умолчанию Ctrl+Z - отмена / Ctrl+X - повтор) работают только
+тогда, когда соответствующее окно находится в фокусе
+- Добавлена опция подсветки всех экземпляров выбранного компонента на борде
+- CAD: Улучшена поддержка GenCAD файлов из-под кастомных конвертеров
+- TVW: Улучшена поддержка борд с некорректным форматом названий сигналов
+- PCB: Улучшен парсер XZZPCB
+- FAZ: Добавлена поддержка слоев формата FAZ
+- FZ/CAE: Добавлена поддержка слоев формата FZ/CAE
+- Исправлена ошибка из-за которой при открытии файла в новой вкладке развернутое окно сбрасывалось в обычный размер
+- Сразу несколько выбранных файлов из проводника открывались в отдельных окнах, теперь все выбранные файлы открываются в новых вкладках, если эта опция включена
+- Исправлено: если файл не удавалось открыть из-за неверного расширения (например, .tvw переименованный в .cad), то бордвьювер выдывал ошибку, теперь же бордвьювер
+попытается определить тип борды по заголовку и предложит поменять расширение на верное (файл откроется в любом случае, если он поддерживается)
+- Улучшена поддержка горячих клавиш и добавлена возможность назначать альтернативную горячую клавишу
+- Улучшена всплывающая подсказка с информацией о компонентах
+- Ctrl+C теперь копирует позиционное обозначение, если выбран компонент, либо имя сигнала, если выбран пин
+- Улучшен детект NC пинов
+- Оптимизация рендера
+- Другие небольшие улучшения и исправления
+
+
+- Added PDF support! Two-way navigation is supported: from the board to the PDF, and from the PDF to the board by double-clicking a refdes or signal name. Zooming works
+with Ctrl + mouse wheel or by holding the right mouse button while scrolling. PDFs can be opened in a separate window, detached, and reattached. PDFs can also be viewed
+standalone without loading a board. Watermark filtering is also supported
+- Added NexusBV updater. To check for updates, open the About window and click Check for updates
+- Added Allegro tools downloader for converting pre-v16 Allegro boards to a newer format version
+- Added Undo/Redo support for the board viewer and PDF viewer. These hotkeys (Ctrl+Z for undo/Ctrl+X for redo by default) work only when the corresponding window is focused
+- Added an option to highlight all instances of the selected part on the board
+- CAD: Improved support for GenCAD files from custom converters
+- TVW: Improved support for boards with malformed signal name formatting
+- PCB: Improved XZZPCB parser
+- FAZ: Added layers support for FAZ file format
+- FZ: Added layers support for FZ file format
+- Fixed a bug where opening a file in a new tab could unmaximize the main window
+- Multiple selected files from Explorer used to open in separate windows, now all selected files open in new tabs if this option is enabled
+- Fixed: if a file could not be opened because of an incorrect extension (such as a .tvw file renamed to .cad), boardviewer would show an error. Now it tries to
+detect the board type by the file header and suggests changing the extension to the correct one. The file will open either way if the format is supported
+- Improved hotkey support and added the ability to assign an alternative hotkey
+- Improved the component information tooltip
+- Ctrl+C now copies the RefDes when a component is selected, or the signal name when a pin is selected
+- Improved NC pins detection
+- Render optimization
+- Other minor improvements and bug fixes
+
+
+v0.4 - 2026.05.10
+- CAD: Добавлена поддержка борд в формате Mentor Neutral File
+- CAD: Некоторые GenCAD борды экспортированные TESTCAD 4.2 IMPACT и RSI-TRANSLATOR CAMCAD Professional 3.9.6b имеют неправильные
+полигональные подложки, в таких случаях теперь они заменяются на круги
+- XZZPCB: Улучшено отображение пинов, когда отрисовка подложек отключена
+- FZ/CAE: Улучшена поддержка некоторых борд из-под кастомных конвертеров
+- TVW: Улучшена поддержка битых TVW борд
+- BRD (Allegro): Улучшена поддержка двухсторонних коннекторов, а также фильтрация ненужных компонентов
+- Исправлена поддержка слоев в бордах Fabmaster
+- Добавлена опция не зеркалировать борду при смене сторон
+- Добавлена опция переворачивания борды по оси X
+- Добавлена опция позволяющая открывать борду в новой вкладке, а не в новом окне (если опция включена, удерживая Shift борда откроется в новом окне)
+- Добавлен редактор быстрых клавиш (можно сохранять в файлы .keybindings)
+- Добавлена возможность копировать имя пина и сигнала прямо из списка во вкладке Part через контекстное меню, либо через Ctrl+C (скопируется только имя сигнала)
+- Добавлена сортировка столбцов во вкладках Net, Find parts
+- В двойном режиме теперь можно менять размер окон
+- Исправлен баг при котором переключение между позиционниками во вкладке Net и Find parts сбивало зуммирование
+- Улучшена работа с несколькими мониторами
+- Улучшено детектирование NC пинов
+- Улучшения в режиме слоев
+- Добавлена поддержка Windows 7 (для корректной работы требуется обновление KB2670838 (обычно оно уже установлено): https://www.microsoft.com/en-us/download/details.aspx?id=36805, также
+на Windows 7 не будет работать dbdoctor от allegro)
+- При запуске на неподдерживаемом 3D ускорителе, бордвьювер теперь автоматически переключается в софтварный режим рендеринга
+- Другие мелкие исправления
+
+- CAD: Added support for Mentor Neutral File boardview files
+- CAD: Some GenCAD boards exported from TESTCAD 4.2 IMPACT and RSI-TRANSLATOR CAMCAD Professional 3.9.6b had incorrect polygonal underlays, in such cases, they are now replaced with circles
+- XZZPCB: Improved pin display when draw pin pads is disabled
+- FZ/CAE: Improved support for some boards from custom converters
+- TVW: Improved support for broken TVW boards
+- BRD (Allegro): Improved support for double-sided connectors and filtering of unnecessary components
+- Added an options to flip the board without mirroring
+- Added option to flip the board over X-axis
+- Fixed layer support in Fabmaster boards
+- Added an option to open a board in a new tab instead of a new window (if this option is enabled, holding Shift opens the board in a new window)
+- Added a keyboard shortcut editor (can be saved to .keybindings files)
+- Added the ability to copy pin and signal names directly from the list in the Part tab via the context menu or Ctrl+C (only the signal name will be copied)
+- Added column sorting in the Net and Find Parts tabs
+- Windows can now be resized in dual mode
+- Fixed a bug where switching between parts in the Net and Find Parts tabs disrupted zooming
+- Improved multi-monitor support
+- Improved NC pin detection
+- Improved layer mode
+- Added Windows 7 support. The following update is required to be installed (usually it's already installed):  KB2670838: https://www.microsoft.com/en-us/download/details.aspx?id=36805, also
+on Windows 7 dbdoctor from allegro tools does not work
+- Running on unsupported 3D adapter, the boardviewer will now automatically switch to software rendering 
+- Other minor fixes
+
+
+v0.3 - 2026.05.04
+- Исправлен и улучшен GenCAD парсер
+- Улучшен парсер FZ (не открывались некоторые варианты файлы этого формата)
+
+
+v0.2 - 2026.05.03
+- Исправлена проблема с настройками масштабирования (бордвьювер имеет полноценную поддержку HiDPI!)
+- Исправления в GenCAD парсере (быстрее работает рендер на некоторых бордах, также исправлено неверное отображание подложек в некоторых бордах)
+- Добавлена горячая клавиша: пробел (и также среднее колесо мышки) переворачивает сторону борды
+- Добавлена возможность ассоциации с бордвью файлами
+- Добавлена возможность запускать файлы из проводника (и др. файловых менеджеров) и консоли
+- Добавлено запоминание/восстановление последней позиции/статуса окна
+- Добавлена сортировка по пинам/сигналам во вкладке Parts
+- Ctrl+F активирует меню Parts, также можно переключаться посредством Tab между меню Parts и Nets, находясь в каком-либо из них 
+- Оптимизация рендера для слоев борд Allegro
+- Небольшая оптимизация TVW парсера (уменьшено потребление памяти на больших бордах)
+- Состояние поле с галкой во вкладке "слои" теперь откликаются моментально не дожидаясь пока завершится рендеринг слоя 
+- Улучшено детектировние NC пинов 
+
+
+v0.1 - 2026.05.03
+Первая версия бордвьювера

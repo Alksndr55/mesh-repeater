@@ -1,48 +1,11 @@
 {
   "schema_version": 2,
-  "revision": "v1.25",
-  "date": "2026-10-30",
-  "board_sha256": "b1f3fc0baf6ee688be2306a5ae98df3402eac52454768b09f6a6743ff283ff90",
+  "revision": "v1.26",
+  "date": "2026-11-06",
+  "board_sha256": "d63c8ce9715893fdf1ac01ed96e5871e03829d34514db07938c6bd416b29f462",
   "scope": "Current local assets, preserving previously recorded origin and licensing. References are derived from current model/footprint assignments.",
   "license_scope": "Original project_generated contributions remain CC-BY-NC-SA-4.0. Previously attributed KiCad assets retain their KiCad library licence and exception. Unrecorded provenance remains unknown; no ownership or new licence is inferred.",
   "assets": [
-    {
-      "file": "3dmodels/CR2032_Cell.step",
-      "sha256": "2e61853937eaed4a26c043eb43a569b183f40fc3d1a451455ee6cdb7bc57140e",
-      "origin": "project_generated_step",
-      "references": [
-        "BT1"
-      ],
-      "generator": "CadQuery",
-      "geometry_sources": [],
-      "geometry_basis": "CR2032 nominaldiameter20mm, height3.2mm; positivefaceup.",
-      "uncertainty": "Generic cell envelope. ZplacementinKeystone1060 approximate pendingholderseatingmeasurement.",
-      "historical_source_record": "design/build_3d_models.py",
-      "geometry_provenance": {
-        "file": "CR2032_Cell.step",
-        "refs": [
-          "BT1"
-        ],
-        "description": "CR2032 nominaldiameter20mm, height3.2mm; positivefaceup.",
-        "sources": [],
-        "uncertainty": "Generic cell envelope. ZplacementinKeystone1060 approximate pendingholderseatingmeasurement.",
-        "bbox_mm": {
-          "xmin": -10.0,
-          "xmax": 10.0,
-          "ymin": -10.0,
-          "ymax": 10.0,
-          "zmin": 0.0,
-          "zmax": 3.2110000999999997
-        },
-        "valid_step": true,
-        "sha256": "2e61853937eaed4a26c043eb43a569b183f40fc3d1a451455ee6cdb7bc57140e"
-      },
-      "previous_publication_sha256": "2e61853937eaed4a26c043eb43a569b183f40fc3d1a451455ee6cdb7bc57140e",
-      "used_by_current_board": true,
-      "license": "CC-BY-NC-SA-4.0",
-      "license_url": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
-      "own_contribution_license_scope": "Original Mesh Repeater contributions only; existing third-party material retains its applicable terms."
-    },
     {
       "file": "3dmodels/Coilcraft_XGL4020.step",
       "sha256": "b6bd76d01981e885ab7167550fa756113c7c8f41f9a80b5c0d8a5ae3be9c8e67",
@@ -99,6 +62,43 @@
       "uncertainty": "Body envelope based on manufacturer drawing. Installed bottomZ2.6mm above PCB is an assembly assumption; verify actual seating on header.",
       "historical_source_record": "design/build_3d_models_s4_6.py",
       "previous_publication_sha256": "55eb4f228c1ac6c2cd0386ae04d6f0f8144c3b34d3c381d7d454a2b747f8c9d5",
+      "used_by_current_board": true,
+      "license": "CC-BY-NC-SA-4.0",
+      "license_url": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+      "own_contribution_license_scope": "Original Mesh Repeater contributions only; existing third-party material retains its applicable terms."
+    },
+    {
+      "file": "3dmodels/CR2032_Cell.step",
+      "sha256": "2e61853937eaed4a26c043eb43a569b183f40fc3d1a451455ee6cdb7bc57140e",
+      "origin": "project_generated_step",
+      "references": [
+        "BT1"
+      ],
+      "generator": "CadQuery",
+      "geometry_sources": [],
+      "geometry_basis": "CR2032 nominaldiameter20mm, height3.2mm; positivefaceup.",
+      "uncertainty": "Generic cell envelope. ZplacementinKeystone1060 approximate pendingholderseatingmeasurement.",
+      "historical_source_record": "design/build_3d_models.py",
+      "geometry_provenance": {
+        "file": "CR2032_Cell.step",
+        "refs": [
+          "BT1"
+        ],
+        "description": "CR2032 nominaldiameter20mm, height3.2mm; positivefaceup.",
+        "sources": [],
+        "uncertainty": "Generic cell envelope. ZplacementinKeystone1060 approximate pendingholderseatingmeasurement.",
+        "bbox_mm": {
+          "xmin": -10.0,
+          "xmax": 10.0,
+          "ymin": -10.0,
+          "ymax": 10.0,
+          "zmin": 0.0,
+          "zmax": 3.2110000999999997
+        },
+        "valid_step": true,
+        "sha256": "2e61853937eaed4a26c043eb43a569b183f40fc3d1a451455ee6cdb7bc57140e"
+      },
+      "previous_publication_sha256": "2e61853937eaed4a26c043eb43a569b183f40fc3d1a451455ee6cdb7bc57140e",
       "used_by_current_board": true,
       "license": "CC-BY-NC-SA-4.0",
       "license_url": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
@@ -197,6 +197,438 @@
       "license": "unknown"
     },
     {
+      "origin": "kicad_standard_3d_model",
+      "license": "CC-BY-SA-4.0 WITH embedded KiCad design exception",
+      "license_basis": "License and exception retained verbatim in STEP HEADER.",
+      "source_repository": "https://github.com/KiCad/kicad-packages3D",
+      "source_installed_file": "C:\\Program Files\\KiCad\\10.0\\share\\kicad\\3dmodels\\Battery.3dshapes\\BatteryHolder_Keystone_1060_1x2032.step",
+      "source_uri": "${KICAD10_3DMODEL_DIR}/Battery.3dshapes/BatteryHolder_Keystone_1060_1x2032.step",
+      "source_sha256": "221c5c6510ed7e6fa3bd621ccee0bb883d86eb1e0e34ab2e2a32fb4d4ae7548d",
+      "copied_byte_identical": true,
+      "original_STEP_HEADER": "ISO-10303-21;\r\nHEADER;\r\n/* BatteryHolder_Keystone_1060_1x2032.step 3D STEP model for use in ECAD systems\r\n * Copyright (C) 2019, kicad StepUp\r\n * \r\n * This work is licensed under the [Creative Commons CC-BY-SA 4.0 License](https://creativecommons.org/licenses/by-sa/4.0/legalcode), \r\n * with the following exception:\r\n * To the extent that the creation of electronic designs that use 'Licensed Material' can be considered to be 'Adapted Material', \r\n * then the copyright holder waives article 3 of the license with respect to these designs and any generated files which use data provided \r\n * as part of the 'Licensed Material'.\r\n * You are free to use the library data in your own projects without the obligation to share your project files under this or any other license agreement.\r\n * However, if you wish to redistribute these libraries, or parts thereof (including in modified form) as a collection then the exception above does not apply. \r\n * Please refer to https://github.com/KiCad/kicad-packages3D/blob/master/LICENSE.md for further clarification of the exception.\r\n * Disclaimer of Warranties and Limitation of Liability.\r\n * These libraries are provided in the hope that they will be useful, but are provided without warranty of any kind, express or implied.\r\n * *USE 3D CAD DATA AT YOUR OWN RISK*\r\n * *DO NOT RELY UPON ANY INFORMATION FOUND HERE WITHOUT INDEPENDENT VERIFICATION.*\r\n * \r\n */\r\n\r\nFILE_DESCRIPTION(\r\n/* description */ ('model of BatteryHolder_Keystone_1060_1x2032'),\r\n/* implementation_level */ '2;1');\r\n\r\nFILE_NAME(\r\n/* name */ 'BatteryHolder_Keystone_1060_1x2032.step',\r\n/* time_stamp */ '2019-02-14T16:03:19',\r\n/* author */ ('kicad StepUp','ksu'),\r\n/* organization */ ('FreeCAD'),\r\n/* preprocessor_version */ 'OCC',\r\n/* originating_system */ 'kicad StepUp',\r\n/* authorisation */ '');\r\n\r\nFILE_SCHEMA(('AUTOMOTIVE_DESIGN { 1 0 10303 214 1 1 1 1 }'));\r\n",
+      "license_and_source_manifest": "../../LICENSES/KiCad-standard-3D-SOURCES.json",
+      "file": "3dmodels/kicad_standard/Battery.3dshapes/BatteryHolder_Keystone_1060_1x2032.step",
+      "sha256": "221c5c6510ed7e6fa3bd621ccee0bb883d86eb1e0e34ab2e2a32fb4d4ae7548d",
+      "references": [
+        "BT1"
+      ],
+      "used_by_current_board": true
+    },
+    {
+      "origin": "kicad_standard_3d_model",
+      "license": "CC-BY-SA-4.0 WITH embedded KiCad design exception",
+      "license_basis": "License and exception retained verbatim in STEP HEADER.",
+      "source_repository": "https://github.com/KiCad/kicad-packages3D",
+      "source_installed_file": "C:\\Program Files\\KiCad\\10.0\\share\\kicad\\3dmodels\\Capacitor_SMD.3dshapes\\C_0805_2012Metric.step",
+      "source_uri": "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.step",
+      "source_sha256": "9a669c1a2f1ea25b88b401acef6efeaa80a067bd7da9db6993de719a7fbe155c",
+      "copied_byte_identical": true,
+      "original_STEP_HEADER": "ISO-10303-21;\nHEADER;\n/* C_0805_2012Metric.step 3D STEP model for use in ECAD systems\n * Copyright (C) 2017, kicad StepUp\n * \n * This work is licensed under the [Creative Commons CC-BY-SA 4.0 License](https://creativecommons.org/licenses/by-sa/4.0/legalcode), \n * with the following exception:\n * To the extent that the creation of electronic designs that use 'Licensed Material' can be considered to be 'Adapted Material', \n * then the copyright holder waives article 3 of the license with respect to these designs and any generated files which use data provided \n * as part of the 'Licensed Material'.\n * You are free to use the library data in your own projects without the obligation to share your project files under this or any other license agreement.\n * However, if you wish to redistribute these libraries, or parts thereof (including in modified form) as a collection then the exception above does not apply. \n * Please refer to https://github.com/KiCad/kicad-packages3D/blob/master/LICENSE.md for further clarification of the exception.\n * Disclaimer of Warranties and Limitation of Liability.\n * These libraries are provided in the hope that they will be useful, but are provided without warranty of any kind, express or implied.\n * *USE 3D CAD DATA AT YOUR OWN RISK*\n * *DO NOT RELY UPON ANY INFORMATION FOUND HERE WITHOUT INDEPENDENT VERIFICATION.*\n * \n */\n\nFILE_DESCRIPTION(\n/* description */ ('model of C_0805_2012Metric'),\n/* implementation_level */ '2;1');\n\nFILE_NAME(\n/* name */ 'C_0805_2012Metric.step',\n/* time_stamp */ '2017-12-10T01:08:45',\n/* author */ ('kicad StepUp','ksu'),\n/* organization */ ('FreeCAD'),\n/* preprocessor_version */ 'OCC',\n/* originating_system */ 'kicad StepUp',\n/* authorisation */ '');\n\nFILE_SCHEMA(('AUTOMOTIVE_DESIGN { 1 0 10303 214 1 1 1 1 }'));\n",
+      "license_and_source_manifest": "../../LICENSES/KiCad-standard-3D-SOURCES.json",
+      "file": "3dmodels/kicad_standard/Capacitor_SMD.3dshapes/C_0805_2012Metric.step",
+      "sha256": "9a669c1a2f1ea25b88b401acef6efeaa80a067bd7da9db6993de719a7fbe155c",
+      "references": [
+        "C2",
+        "C3",
+        "C4",
+        "C5",
+        "C6",
+        "C7",
+        "C12",
+        "C13",
+        "C14",
+        "C21",
+        "C22",
+        "C23",
+        "C24",
+        "C25",
+        "C26",
+        "C27",
+        "C30",
+        "C33",
+        "C52",
+        "C56",
+        "C57",
+        "C58",
+        "C59",
+        "C60",
+        "C61",
+        "C62",
+        "C63",
+        "C64"
+      ],
+      "used_by_current_board": true
+    },
+    {
+      "origin": "kicad_standard_3d_model",
+      "license": "CC-BY-SA-4.0 WITH embedded KiCad design exception",
+      "license_basis": "License and exception retained verbatim in STEP HEADER.",
+      "source_repository": "https://github.com/KiCad/kicad-packages3D",
+      "source_installed_file": "C:\\Program Files\\KiCad\\10.0\\share\\kicad\\3dmodels\\Capacitor_SMD.3dshapes\\C_1206_3216Metric.step",
+      "source_uri": "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_1206_3216Metric.step",
+      "source_sha256": "11e948c72c90e2b6322436b72745f40ff4e8ba0da64fb2a0df943dfa61e89c1a",
+      "copied_byte_identical": true,
+      "original_STEP_HEADER": "ISO-10303-21;\nHEADER;\n/* C_1206_3216Metric.step 3D STEP model for use in ECAD systems\n * Copyright (C) 2017, kicad StepUp\n * \n * This work is licensed under the [Creative Commons CC-BY-SA 4.0 License](https://creativecommons.org/licenses/by-sa/4.0/legalcode), \n * with the following exception:\n * To the extent that the creation of electronic designs that use 'Licensed Material' can be considered to be 'Adapted Material', \n * then the copyright holder waives article 3 of the license with respect to these designs and any generated files which use data provided \n * as part of the 'Licensed Material'.\n * You are free to use the library data in your own projects without the obligation to share your project files under this or any other license agreement.\n * However, if you wish to redistribute these libraries, or parts thereof (including in modified form) as a collection then the exception above does not apply. \n * Please refer to https://github.com/KiCad/kicad-packages3D/blob/master/LICENSE.md for further clarification of the exception.\n * Disclaimer of Warranties and Limitation of Liability.\n * These libraries are provided in the hope that they will be useful, but are provided without warranty of any kind, express or implied.\n * *USE 3D CAD DATA AT YOUR OWN RISK*\n * *DO NOT RELY UPON ANY INFORMATION FOUND HERE WITHOUT INDEPENDENT VERIFICATION.*\n * \n */\n\nFILE_DESCRIPTION(\n/* description */ ('model of C_1206_3216Metric'),\n/* implementation_level */ '2;1');\n\nFILE_NAME(\n/* name */ 'C_1206_3216Metric.step',\n/* time_stamp */ '2017-12-10T01:08:41',\n/* author */ ('kicad StepUp','ksu'),\n/* organization */ ('FreeCAD'),\n/* preprocessor_version */ 'OCC',\n/* originating_system */ 'kicad StepUp',\n/* authorisation */ '');\n\nFILE_SCHEMA(('AUTOMOTIVE_DESIGN { 1 0 10303 214 1 1 1 1 }'));\n",
+      "license_and_source_manifest": "../../LICENSES/KiCad-standard-3D-SOURCES.json",
+      "file": "3dmodels/kicad_standard/Capacitor_SMD.3dshapes/C_1206_3216Metric.step",
+      "sha256": "11e948c72c90e2b6322436b72745f40ff4e8ba0da64fb2a0df943dfa61e89c1a",
+      "references": [
+        "C1",
+        "C53",
+        "C54",
+        "C55"
+      ],
+      "used_by_current_board": true
+    },
+    {
+      "origin": "kicad_standard_3d_model",
+      "license": "CC-BY-SA-4.0 WITH embedded KiCad design exception",
+      "license_basis": "License and exception retained verbatim in STEP HEADER.",
+      "source_repository": "https://github.com/KiCad/kicad-packages3D",
+      "source_installed_file": "C:\\Program Files\\KiCad\\10.0\\share\\kicad\\3dmodels\\Capacitor_SMD.3dshapes\\CP_Elec_6.3x5.8.step",
+      "source_uri": "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/CP_Elec_6.3x5.8.step",
+      "source_sha256": "887e13de4f738fc711dad723623bb52ad8f0688a7e6c9319c5394b960618fff2",
+      "copied_byte_identical": true,
+      "original_STEP_HEADER": "ISO-10303-21;\nHEADER;\n/* CP_Elec_6.3x5.8.step 3D STEP model for use in ECAD systems\n * Copyright (C) 2018, kicad StepUp\n * \n * This work is licensed under the [Creative Commons CC-BY-SA 4.0 License](https://creativecommons.org/licenses/by-sa/4.0/legalcode), \n * with the following exception:\n * To the extent that the creation of electronic designs that use 'Licensed Material' can be considered to be 'Adapted Material', \n * then the copyright holder waives article 3 of the license with respect to these designs and any generated files which use data provided \n * as part of the 'Licensed Material'.\n * You are free to use the library data in your own projects without the obligation to share your project files under this or any other license agreement.\n * However, if you wish to redistribute these libraries, or parts thereof (including in modified form) as a collection then the exception above does not apply. \n * Please refer to https://github.com/KiCad/kicad-packages3D/blob/master/LICENSE.md for further clarification of the exception.\n * Disclaimer of Warranties and Limitation of Liability.\n * These libraries are provided in the hope that they will be useful, but are provided without warranty of any kind, express or implied.\n * *USE 3D CAD DATA AT YOUR OWN RISK*\n * *DO NOT RELY UPON ANY INFORMATION FOUND HERE WITHOUT INDEPENDENT VERIFICATION.*\n * \n */\n\nFILE_DESCRIPTION(\n/* description */ ('model of CP_Elec_6.3x5.8'),\n/* implementation_level */ '2;1');\n\nFILE_NAME(\n/* name */ 'CP_Elec_6.3x5.8.step',\n/* time_stamp */ '2018-06-25T02:15:02',\n/* author */ ('kicad StepUp','ksu'),\n/* organization */ ('FreeCAD'),\n/* preprocessor_version */ 'OCC',\n/* originating_system */ 'kicad StepUp',\n/* authorisation */ '');\n\nFILE_SCHEMA(('AUTOMOTIVE_DESIGN { 1 0 10303 214 1 1 1 1 }'));\n",
+      "license_and_source_manifest": "../../LICENSES/KiCad-standard-3D-SOURCES.json",
+      "file": "3dmodels/kicad_standard/Capacitor_SMD.3dshapes/CP_Elec_6.3x5.8.step",
+      "sha256": "887e13de4f738fc711dad723623bb52ad8f0688a7e6c9319c5394b960618fff2",
+      "references": [
+        "C8"
+      ],
+      "used_by_current_board": true
+    },
+    {
+      "origin": "kicad_standard_3d_model",
+      "license": "CC-BY-SA-4.0 WITH embedded KiCad design exception",
+      "license_basis": "License and exception retained verbatim in STEP HEADER.",
+      "source_repository": "https://github.com/KiCad/kicad-packages3D",
+      "source_installed_file": "C:\\Program Files\\KiCad\\10.0\\share\\kicad\\3dmodels\\Connector_Molex.3dshapes\\Molex_PicoBlade_53261-0871_1x08-1MP_P1.25mm_Horizontal.step",
+      "source_uri": "${KICAD10_3DMODEL_DIR}/Connector_Molex.3dshapes/Molex_PicoBlade_53261-0871_1x08-1MP_P1.25mm_Horizontal.step",
+      "source_sha256": "3da19b40bda2d292798cafcbcfaba62e7925ee5fbd0c99701aa26417d1683ba2",
+      "copied_byte_identical": true,
+      "original_STEP_HEADER": "ISO-10303-21;\nHEADER;\n/* Molex_PicoBlade_53261-0871_1x08-1MP_P1.25mm_Horizontal.step 3D STEP model for use in ECAD systems\n * Copyright (C) 2018, Rene Poeschl\n * \n * This work is licensed under the [Creative Commons CC-BY-SA 4.0 License](https://creativecommons.org/licenses/by-sa/4.0/legalcode), \n * with the following exception:\n * To the extent that the creation of electronic designs that use 'Licensed Material' can be considered to be 'Adapted Material', \n * then the copyright holder waives article 3 of the license with respect to these designs and any generated files which use data provided \n * as part of the 'Licensed Material'.\n * You are free to use the library data in your own projects without the obligation to share your project files under this or any other license agreement.\n * However, if you wish to redistribute these libraries, or parts thereof (including in modified form) as a collection then the exception above does not apply. \n * Please refer to https://github.com/KiCad/kicad-packages3D/blob/master/LICENSE.md for further clarification of the exception.\n * Disclaimer of Warranties and Limitation of Liability.\n * These libraries are provided in the hope that they will be useful, but are provided without warranty of any kind, express or implied.\n * *USE 3D CAD DATA AT YOUR OWN RISK*\n * *DO NOT RELY UPON ANY INFORMATION FOUND HERE WITHOUT INDEPENDENT VERIFICATION.*\n * \n * \n * \n * \n * \n * \n * \n */\n\nFILE_DESCRIPTION(\n/* description */ ('model of Molex_PicoBlade_53261-0871_1x08-1MP_P1.25mm_Horizontal'),\n/* implementation_level */ '2;1');\n\nFILE_NAME(\n/* name */ 'Molex_PicoBlade_53261-0871_1x08-1MP_P1.25mm_Horizontal.step',\n/* time_stamp */ '2018-06-18T10:23:30',\n/* author */ ('Rene Poeschl','poeschlr@gmail.com'),\n/* organization */ (''),\n/* preprocessor_version */ '',\n/* originating_system */ '',\n/* authorisation */ '');\n\nFILE_SCHEMA(('AUTOMOTIVE_DESIGN { 1 0 10303 214 1 1 1 1 }'));\n",
+      "license_and_source_manifest": "../../LICENSES/KiCad-standard-3D-SOURCES.json",
+      "file": "3dmodels/kicad_standard/Connector_Molex.3dshapes/Molex_PicoBlade_53261-0871_1x08-1MP_P1.25mm_Horizontal.step",
+      "sha256": "3da19b40bda2d292798cafcbcfaba62e7925ee5fbd0c99701aa26417d1683ba2",
+      "references": [
+        "J4"
+      ],
+      "used_by_current_board": true
+    },
+    {
+      "origin": "kicad_standard_3d_model",
+      "license": "CC-BY-SA-4.0 WITH embedded KiCad design exception",
+      "license_basis": "License and exception retained verbatim in STEP HEADER.",
+      "source_repository": "https://github.com/KiCad/kicad-packages3D",
+      "source_installed_file": "C:\\Program Files\\KiCad\\10.0\\share\\kicad\\3dmodels\\Connector_PinHeader_2.54mm.3dshapes\\PinHeader_1x02_P2.54mm_Vertical.step",
+      "source_uri": "${KICAD10_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x02_P2.54mm_Vertical.step",
+      "source_sha256": "ea4d0799007ebdd3945072bf255d673d2fe87eb05fda85fd8d7993ad9397da41",
+      "copied_byte_identical": true,
+      "original_STEP_HEADER": "ISO-10303-21;\nHEADER;\n/* PinHeader_1x02_P2.54mm_Vertical.step 3D STEP model for use in ECAD systems\n * Copyright (C) 2017, kicad StepUp\n * \n * This work is licensed under the [Creative Commons CC-BY-SA 4.0 License](https://creativecommons.org/licenses/by-sa/4.0/legalcode), \n * with the following exception:\n * To the extent that the creation of electronic designs that use 'Licensed Material' can be considered to be 'Adapted Material', \n * then the copyright holder waives article 3 of the license with respect to these designs and any generated files which use data provided \n * as part of the 'Licensed Material'.\n * You are free to use the library data in your own projects without the obligation to share your project files under this or any other license agreement.\n * However, if you wish to redistribute these libraries, or parts thereof (including in modified form) as a collection then the exception above does not apply. \n * Please refer to https://github.com/KiCad/kicad-packages3D/blob/master/LICENSE.md for further clarification of the exception.\n * Disclaimer of Warranties and Limitation of Liability.\n * These libraries are provided in the hope that they will be useful, but are provided without warranty of any kind, express or implied.\n * *USE 3D CAD DATA AT YOUR OWN RISK*\n * *DO NOT RELY UPON ANY INFORMATION FOUND HERE WITHOUT INDEPENDENT VERIFICATION.*\n * \n */\n\nFILE_DESCRIPTION(\n/* description */ ('model of PinHeader_1x02_P2.54mm_Vertical'),\n/* implementation_level */ '2;1');\n\nFILE_NAME(\n/* name */ 'PinHeader_1x02_P2.54mm_Vertical.step',\n/* time_stamp */ '2017-12-09T23:53:40',\n/* author */ ('kicad StepUp','ksu'),\n/* organization */ ('FreeCAD'),\n/* preprocessor_version */ 'OCC',\n/* originating_system */ 'kicad StepUp',\n/* authorisation */ '');\n\nFILE_SCHEMA(('AUTOMOTIVE_DESIGN { 1 0 10303 214 1 1 1 1 }'));\n",
+      "license_and_source_manifest": "../../LICENSES/KiCad-standard-3D-SOURCES.json",
+      "file": "3dmodels/kicad_standard/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x02_P2.54mm_Vertical.step",
+      "sha256": "ea4d0799007ebdd3945072bf255d673d2fe87eb05fda85fd8d7993ad9397da41",
+      "references": [
+        "J7",
+        "J8",
+        "J11"
+      ],
+      "used_by_current_board": true
+    },
+    {
+      "origin": "kicad_standard_3d_model",
+      "license": "CC-BY-SA-4.0 WITH embedded KiCad design exception",
+      "license_basis": "License and exception retained verbatim in STEP HEADER.",
+      "source_repository": "https://github.com/KiCad/kicad-packages3D",
+      "source_installed_file": "C:\\Program Files\\KiCad\\10.0\\share\\kicad\\3dmodels\\Connector_PinHeader_2.54mm.3dshapes\\PinHeader_1x03_P2.54mm_Vertical.step",
+      "source_uri": "${KICAD10_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x03_P2.54mm_Vertical.step",
+      "source_sha256": "b91b4ac5acf1a0d28a676703db972d17b8f11ef26a85b58d60786a69246b921b",
+      "copied_byte_identical": true,
+      "original_STEP_HEADER": "ISO-10303-21;\nHEADER;\n/* PinHeader_1x03_P2.54mm_Vertical.step 3D STEP model for use in ECAD systems\n * Copyright (C) 2017, kicad StepUp\n * \n * This work is licensed under the [Creative Commons CC-BY-SA 4.0 License](https://creativecommons.org/licenses/by-sa/4.0/legalcode), \n * with the following exception:\n * To the extent that the creation of electronic designs that use 'Licensed Material' can be considered to be 'Adapted Material', \n * then the copyright holder waives article 3 of the license with respect to these designs and any generated files which use data provided \n * as part of the 'Licensed Material'.\n * You are free to use the library data in your own projects without the obligation to share your project files under this or any other license agreement.\n * However, if you wish to redistribute these libraries, or parts thereof (including in modified form) as a collection then the exception above does not apply. \n * Please refer to https://github.com/KiCad/kicad-packages3D/blob/master/LICENSE.md for further clarification of the exception.\n * Disclaimer of Warranties and Limitation of Liability.\n * These libraries are provided in the hope that they will be useful, but are provided without warranty of any kind, express or implied.\n * *USE 3D CAD DATA AT YOUR OWN RISK*\n * *DO NOT RELY UPON ANY INFORMATION FOUND HERE WITHOUT INDEPENDENT VERIFICATION.*\n * \n */\n\nFILE_DESCRIPTION(\n/* description */ ('model of PinHeader_1x03_P2.54mm_Vertical'),\n/* implementation_level */ '2;1');\n\nFILE_NAME(\n/* name */ 'PinHeader_1x03_P2.54mm_Vertical.step',\n/* time_stamp */ '2017-12-09T23:53:41',\n/* author */ ('kicad StepUp','ksu'),\n/* organization */ ('FreeCAD'),\n/* preprocessor_version */ 'OCC',\n/* originating_system */ 'kicad StepUp',\n/* authorisation */ '');\n\nFILE_SCHEMA(('AUTOMOTIVE_DESIGN { 1 0 10303 214 1 1 1 1 }'));\n",
+      "license_and_source_manifest": "../../LICENSES/KiCad-standard-3D-SOURCES.json",
+      "file": "3dmodels/kicad_standard/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x03_P2.54mm_Vertical.step",
+      "sha256": "b91b4ac5acf1a0d28a676703db972d17b8f11ef26a85b58d60786a69246b921b",
+      "references": [
+        "J12"
+      ],
+      "used_by_current_board": true
+    },
+    {
+      "origin": "kicad_standard_3d_model",
+      "license": "CC-BY-SA-4.0 WITH embedded KiCad design exception",
+      "license_basis": "License and exception retained verbatim in STEP HEADER.",
+      "source_repository": "https://github.com/KiCad/kicad-packages3D",
+      "source_installed_file": "C:\\Program Files\\KiCad\\10.0\\share\\kicad\\3dmodels\\Connector_PinHeader_2.54mm.3dshapes\\PinHeader_1x04_P2.54mm_Vertical.step",
+      "source_uri": "${KICAD10_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x04_P2.54mm_Vertical.step",
+      "source_sha256": "a74079b8d06bda78847623b39ee1855ffd1d9a8c1e896b349e4f1dc2056d44d9",
+      "copied_byte_identical": true,
+      "original_STEP_HEADER": "ISO-10303-21;\nHEADER;\n/* PinHeader_1x04_P2.54mm_Vertical.step 3D STEP model for use in ECAD systems\n * Copyright (C) 2017, kicad StepUp\n * \n * This work is licensed under the [Creative Commons CC-BY-SA 4.0 License](https://creativecommons.org/licenses/by-sa/4.0/legalcode), \n * with the following exception:\n * To the extent that the creation of electronic designs that use 'Licensed Material' can be considered to be 'Adapted Material', \n * then the copyright holder waives article 3 of the license with respect to these designs and any generated files which use data provided \n * as part of the 'Licensed Material'.\n * You are free to use the library data in your own projects without the obligation to share your project files under this or any other license agreement.\n * However, if you wish to redistribute these libraries, or parts thereof (including in modified form) as a collection then the exception above does not apply. \n * Please refer to https://github.com/KiCad/kicad-packages3D/blob/master/LICENSE.md for further clarification of the exception.\n * Disclaimer of Warranties and Limitation of Liability.\n * These libraries are provided in the hope that they will be useful, but are provided without warranty of any kind, express or implied.\n * *USE 3D CAD DATA AT YOUR OWN RISK*\n * *DO NOT RELY UPON ANY INFORMATION FOUND HERE WITHOUT INDEPENDENT VERIFICATION.*\n * \n */\n\nFILE_DESCRIPTION(\n/* description */ ('model of PinHeader_1x04_P2.54mm_Vertical'),\n/* implementation_level */ '2;1');\n\nFILE_NAME(\n/* name */ 'PinHeader_1x04_P2.54mm_Vertical.step',\n/* time_stamp */ '2017-12-09T23:53:42',\n/* author */ ('kicad StepUp','ksu'),\n/* organization */ ('FreeCAD'),\n/* preprocessor_version */ 'OCC',\n/* originating_system */ 'kicad StepUp',\n/* authorisation */ '');\n\nFILE_SCHEMA(('AUTOMOTIVE_DESIGN { 1 0 10303 214 1 1 1 1 }'));\n",
+      "license_and_source_manifest": "../../LICENSES/KiCad-standard-3D-SOURCES.json",
+      "file": "3dmodels/kicad_standard/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x04_P2.54mm_Vertical.step",
+      "sha256": "a74079b8d06bda78847623b39ee1855ffd1d9a8c1e896b349e4f1dc2056d44d9",
+      "references": [
+        "J3",
+        "J5"
+      ],
+      "used_by_current_board": true
+    },
+    {
+      "origin": "kicad_standard_3d_model",
+      "license": "CC-BY-SA-4.0 WITH embedded KiCad design exception",
+      "license_basis": "License and exception retained verbatim in STEP HEADER.",
+      "source_repository": "https://github.com/KiCad/kicad-packages3D",
+      "source_installed_file": "C:\\Program Files\\KiCad\\10.0\\share\\kicad\\3dmodels\\Connector_PinHeader_2.54mm.3dshapes\\PinHeader_2x03_P2.54mm_Vertical.step",
+      "source_uri": "${KICAD10_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_2x03_P2.54mm_Vertical.step",
+      "source_sha256": "30c87dd7aa515b02055124826d8c4054084971d49d819c644cd6b21295ac52c8",
+      "copied_byte_identical": true,
+      "original_STEP_HEADER": "ISO-10303-21;\nHEADER;\n/* PinHeader_2x03_P2.54mm_Vertical.step 3D STEP model for use in ECAD systems\n * Copyright (C) 2017, kicad StepUp\n * \n * This work is licensed under the [Creative Commons CC-BY-SA 4.0 License](https://creativecommons.org/licenses/by-sa/4.0/legalcode), \n * with the following exception:\n * To the extent that the creation of electronic designs that use 'Licensed Material' can be considered to be 'Adapted Material', \n * then the copyright holder waives article 3 of the license with respect to these designs and any generated files which use data provided \n * as part of the 'Licensed Material'.\n * You are free to use the library data in your own projects without the obligation to share your project files under this or any other license agreement.\n * However, if you wish to redistribute these libraries, or parts thereof (including in modified form) as a collection then the exception above does not apply. \n * Please refer to https://github.com/KiCad/kicad-packages3D/blob/master/LICENSE.md for further clarification of the exception.\n * Disclaimer of Warranties and Limitation of Liability.\n * These libraries are provided in the hope that they will be useful, but are provided without warranty of any kind, express or implied.\n * *USE 3D CAD DATA AT YOUR OWN RISK*\n * *DO NOT RELY UPON ANY INFORMATION FOUND HERE WITHOUT INDEPENDENT VERIFICATION.*\n * \n */\n\nFILE_DESCRIPTION(\n/* description */ ('model of PinHeader_2x03_P2.54mm_Vertical'),\n/* implementation_level */ '2;1');\n\nFILE_NAME(\n/* name */ 'PinHeader_2x03_P2.54mm_Vertical.step',\n/* time_stamp */ '2017-12-10T00:20:16',\n/* author */ ('kicad StepUp','ksu'),\n/* organization */ ('FreeCAD'),\n/* preprocessor_version */ 'OCC',\n/* originating_system */ 'kicad StepUp',\n/* authorisation */ '');\n\nFILE_SCHEMA(('AUTOMOTIVE_DESIGN { 1 0 10303 214 1 1 1 1 }'));\n",
+      "license_and_source_manifest": "../../LICENSES/KiCad-standard-3D-SOURCES.json",
+      "file": "3dmodels/kicad_standard/Connector_PinHeader_2.54mm.3dshapes/PinHeader_2x03_P2.54mm_Vertical.step",
+      "sha256": "30c87dd7aa515b02055124826d8c4054084971d49d819c644cd6b21295ac52c8",
+      "references": [
+        "J10"
+      ],
+      "used_by_current_board": true
+    },
+    {
+      "origin": "kicad_standard_3d_model",
+      "license": "GPL-3.0-or-later WITH embedded KiCad design exception",
+      "license_basis": "License and exception retained verbatim in STEP HEADER.",
+      "source_repository": "https://github.com/KiCad/kicad-packages3D",
+      "source_installed_file": "C:\\Program Files\\KiCad\\10.0\\share\\kicad\\3dmodels\\Diode_SMD.3dshapes\\D_SMB.step",
+      "source_uri": "${KICAD10_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SMB.step",
+      "source_sha256": "029466277d91e9f5492556be93e46611049e07115c7913880c547afa96058ed4",
+      "copied_byte_identical": true,
+      "original_STEP_HEADER": "ISO-10303-21;\nHEADER;\n/* D_SMB.step 3D STEP model for use in ECAD systems\n * Copyright (C) 2017, kicad StepUp\n * \n * This program is free software: you can redistribute it and/or modify\n * it under the terms of the GNU General Public License as published by\n * the Free Software Foundation, either version 3 of the License, or\n * any later version.\n * \n * This program is distributed in the hope that it will be useful,\n * but WITHOUT ANY WARRANTY; without even the implied warranty of\n * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n * GNU General Public License for more details.\n * \n * You should have received a copy of the GNU General Public License\n * along with this program.  If not, see http://www.gnu.org/licenses/.\n * \n * As a special exception, if you create a design which uses this symbol,\n * and embed this symbol or unaltered portions of this symbol into the design,\n * this symbol does not by itself cause the resulting design to be covered by\n * the GNU General Public License.\n * This exception does not however invalidate any other reasons why the design\n * itself might be covered by the GNU General Public License. \n * If you modify this symbol, you may extend this exception to your version of the symbol,\n * but you are not obligated to do so.\n * If you do not wish to do so, delete this exception statement from your version\n * Risk disclaimer\n * *USE 3D CAD DATA AT YOUR OWN RISK*\n * *DO NOT RELY UPON ANY INFORMATION FOUND HERE WITHOUT INDEPENDENT VERIFICATION.*\n * \n */\n\nFILE_DESCRIPTION(\n/* description */ ('model of D_SMB'),\n/* implementation_level */ '2;1');\n\nFILE_NAME(\n/* name */ 'D_SMB.step',\n/* time_stamp */ '2017-05-08T20:37:23',\n/* author */ ('kicad StepUp','ksu'),\n/* organization */ ('FreeCAD'),\n/* preprocessor_version */ 'OCC',\n/* originating_system */ 'kicad StepUp',\n/* authorisation */ '');\n\nFILE_SCHEMA(('AUTOMOTIVE_DESIGN_CC2 { 1 2 10303 214 -1 1 5 4 }'));\n",
+      "license_and_source_manifest": "../../LICENSES/KiCad-standard-3D-SOURCES.json",
+      "file": "3dmodels/kicad_standard/Diode_SMD.3dshapes/D_SMB.step",
+      "sha256": "029466277d91e9f5492556be93e46611049e07115c7913880c547afa96058ed4",
+      "references": [
+        "D1",
+        "D2"
+      ],
+      "used_by_current_board": true
+    },
+    {
+      "origin": "kicad_standard_3d_model",
+      "license": "CC-BY-SA-4.0 WITH embedded KiCad design exception",
+      "license_basis": "License and exception retained verbatim in STEP HEADER.",
+      "source_repository": "https://github.com/KiCad/kicad-packages3D",
+      "source_installed_file": "C:\\Program Files\\KiCad\\10.0\\share\\kicad\\3dmodels\\LED_SMD.3dshapes\\LED_0805_2012Metric.step",
+      "source_uri": "${KICAD10_3DMODEL_DIR}/LED_SMD.3dshapes/LED_0805_2012Metric.step",
+      "source_sha256": "0aa8b791804f5d72a2fc7d1bf231dd9959207d83df8ad801176fbc459f575b98",
+      "copied_byte_identical": true,
+      "original_STEP_HEADER": "ISO-10303-21;\nHEADER;\n/* LED_0805_2012Metric.step 3D STEP model for use in ECAD systems\n * Copyright (C) 2018, kicad StepUp\n * \n * This work is licensed under the [Creative Commons CC-BY-SA 4.0 License](https://creativecommons.org/licenses/by-sa/4.0/legalcode), \n * with the following exception:\n * To the extent that the creation of electronic designs that use 'Licensed Material' can be considered to be 'Adapted Material', \n * then the copyright holder waives article 3 of the license with respect to these designs and any generated files which use data provided \n * as part of the 'Licensed Material'.\n * You are free to use the library data in your own projects without the obligation to share your project files under this or any other license agreement.\n * However, if you wish to redistribute these libraries, or parts thereof (including in modified form) as a collection then the exception above does not apply. \n * Please refer to https://github.com/KiCad/kicad-packages3D/blob/master/LICENSE.md for further clarification of the exception.\n * Disclaimer of Warranties and Limitation of Liability.\n * These libraries are provided in the hope that they will be useful, but are provided without warranty of any kind, express or implied.\n * *USE 3D CAD DATA AT YOUR OWN RISK*\n * *DO NOT RELY UPON ANY INFORMATION FOUND HERE WITHOUT INDEPENDENT VERIFICATION.*\n * \n */\n\nFILE_DESCRIPTION(\n/* description */ ('model of LED_0805_2012Metric'),\n/* implementation_level */ '2;1');\n\nFILE_NAME(\n/* name */ 'LED_0805_2012Metric.step',\n/* time_stamp */ '2018-03-14T23:50:52',\n/* author */ ('kicad StepUp','ksu'),\n/* organization */ ('FreeCAD'),\n/* preprocessor_version */ 'OCC',\n/* originating_system */ 'kicad StepUp',\n/* authorisation */ '');\n\nFILE_SCHEMA(('AUTOMOTIVE_DESIGN { 1 0 10303 214 1 1 1 1 }'));\n",
+      "license_and_source_manifest": "../../LICENSES/KiCad-standard-3D-SOURCES.json",
+      "file": "3dmodels/kicad_standard/LED_SMD.3dshapes/LED_0805_2012Metric.step",
+      "sha256": "0aa8b791804f5d72a2fc7d1bf231dd9959207d83df8ad801176fbc459f575b98",
+      "references": [
+        "D3",
+        "D4"
+      ],
+      "used_by_current_board": true
+    },
+    {
+      "origin": "kicad_standard_3d_model",
+      "license": "CC-BY-SA-4.0 WITH embedded KiCad design exception",
+      "license_basis": "License and exception retained verbatim in STEP HEADER.",
+      "source_repository": "https://github.com/KiCad/kicad-packages3D",
+      "source_installed_file": "C:\\Program Files\\KiCad\\10.0\\share\\kicad\\3dmodels\\Package_SO.3dshapes\\SOIC-8_3.9x4.9mm_P1.27mm.step",
+      "source_uri": "${KICAD10_3DMODEL_DIR}/Package_SO.3dshapes/SOIC-8_3.9x4.9mm_P1.27mm.step",
+      "source_sha256": "07f46cff378d30e6c27dfd5a03092c795323f86d91c71fc7e743f4f418dc553a",
+      "copied_byte_identical": true,
+      "original_STEP_HEADER": "ISO-10303-21;\nHEADER;\n/* SOIC-8_3.9x4.9mm_P1.27mm.step 3D STEP model for use in ECAD systems\n * Copyright (C) 2025, KiCAD\n *\n * This work is licensed under the\n * [Creative Commons CC-BY-SA 4.0 License](https://creativecommons.org/licenses/by-sa/4.0/legalcode),\n * with the following exception:\n *\n * To the extent that the creation of electronic designs that use 'Licensed Material' can be\n * considered to be 'Adapted Material', then the copyright holder waives article 3 of the license\n * with respect to these designs and any generated files which use data provided as part of the\n * 'Licensed Material'.\n *\n * You are free to use the library data in your own projects without the obligation to share your\n * project files under this or any other license agreement. However, if you wish to distribute\n * these libraries, or parts thereof (including in modified form) as a collection then the exception\n * above does not apply. Please refer to\n * https://gitlab.com/kicad/libraries/kicad-packages3D/-/blob/master/LICENSE.md for further clarification\n * of the exception.\n *\n * Disclaimer of Warranties and Limitation of Liability.\n * These libraries are provided in the hope that they will be useful, but are provided without warranty of any kind, express or implied.\n * USE 3D CAD DATA AT YOUR OWN RISK\n * DO NOT RELY UPON ANY INFORMATION FOUND HERE WITHOUT INDEPENDENT VERIFICATION.\n */\n\nFILE_DESCRIPTION(\n/* description */ ('model of SOIC-8_3.9x4.9mm_P1.27mm'),\n/* implementation_level */ '2;1');\n\nFILE_NAME(\n/* name */ 'SOIC-8_3.9x4.9mm_P1.27mm.step',\n/* time_stamp */ '1970-01-01T00:00:00',\n/* author */ ('KiCAD','kicad'),\n/* organization */ ('OCCT'),\n/* preprocessor_version */ '',\n/* originating_system */ 'KiCAD',\n/* authorisation */ '');\n\nFILE_SCHEMA(('AUTOMOTIVE_DESIGN { 1 0 10303 214 1 1 1 1 }'));\n",
+      "license_and_source_manifest": "../../LICENSES/KiCad-standard-3D-SOURCES.json",
+      "file": "3dmodels/kicad_standard/Package_SO.3dshapes/SOIC-8_3.9x4.9mm_P1.27mm.step",
+      "sha256": "07f46cff378d30e6c27dfd5a03092c795323f86d91c71fc7e743f4f418dc553a",
+      "references": [
+        "U4",
+        "U6",
+        "U10",
+        "U12"
+      ],
+      "used_by_current_board": true
+    },
+    {
+      "origin": "kicad_standard_3d_model",
+      "license": "CC-BY-SA-4.0 WITH embedded KiCad design exception",
+      "license_basis": "License and exception retained verbatim in STEP HEADER.",
+      "source_repository": "https://github.com/KiCad/kicad-packages3D",
+      "source_installed_file": "C:\\Program Files\\KiCad\\10.0\\share\\kicad\\3dmodels\\Package_SO.3dshapes\\TSSOP-16_4.4x5mm_P0.65mm.step",
+      "source_uri": "${KICAD10_3DMODEL_DIR}/Package_SO.3dshapes/TSSOP-16_4.4x5mm_P0.65mm.step",
+      "source_sha256": "6ad5e98224d02a427d9a6b929a28dbc158b9925fba5adec12db05079f1016948",
+      "copied_byte_identical": true,
+      "original_STEP_HEADER": "ISO-10303-21;\nHEADER;\n/* TSSOP-16_4.4x5mm_P0.65mm.step 3D STEP model for use in ECAD systems\n * Copyright (C) 2025, KiCAD\n *\n * This work is licensed under the\n * [Creative Commons CC-BY-SA 4.0 License](https://creativecommons.org/licenses/by-sa/4.0/legalcode),\n * with the following exception:\n *\n * To the extent that the creation of electronic designs that use 'Licensed Material' can be\n * considered to be 'Adapted Material', then the copyright holder waives article 3 of the license\n * with respect to these designs and any generated files which use data provided as part of the\n * 'Licensed Material'.\n *\n * You are free to use the library data in your own projects without the obligation to share your\n * project files under this or any other license agreement. However, if you wish to distribute\n * these libraries, or parts thereof (including in modified form) as a collection then the exception\n * above does not apply. Please refer to\n * https://gitlab.com/kicad/libraries/kicad-packages3D/-/blob/master/LICENSE.md for further clarification\n * of the exception.\n *\n * Disclaimer of Warranties and Limitation of Liability.\n * These libraries are provided in the hope that they will be useful, but are provided without warranty of any kind, express or implied.\n * USE 3D CAD DATA AT YOUR OWN RISK\n * DO NOT RELY UPON ANY INFORMATION FOUND HERE WITHOUT INDEPENDENT VERIFICATION.\n */\n\nFILE_DESCRIPTION(\n/* description */ ('model of TSSOP-16_4.4x5mm_P0.65mm'),\n/* implementation_level */ '2;1');\n\nFILE_NAME(\n/* name */ 'TSSOP-16_4.4x5mm_P0.65mm.step',\n/* time_stamp */ '1970-01-01T00:00:00',\n/* author */ ('KiCAD','kicad'),\n/* organization */ ('OCCT'),\n/* preprocessor_version */ '',\n/* originating_system */ 'KiCAD',\n/* authorisation */ '');\n\nFILE_SCHEMA(('AUTOMOTIVE_DESIGN { 1 0 10303 214 1 1 1 1 }'));\n",
+      "license_and_source_manifest": "../../LICENSES/KiCad-standard-3D-SOURCES.json",
+      "file": "3dmodels/kicad_standard/Package_SO.3dshapes/TSSOP-16_4.4x5mm_P0.65mm.step",
+      "sha256": "6ad5e98224d02a427d9a6b929a28dbc158b9925fba5adec12db05079f1016948",
+      "references": [
+        "U1"
+      ],
+      "used_by_current_board": true
+    },
+    {
+      "origin": "kicad_standard_3d_model",
+      "license": "CC-BY-SA-4.0 WITH embedded KiCad design exception",
+      "license_basis": "License and exception retained verbatim in STEP HEADER.",
+      "source_repository": "https://github.com/KiCad/kicad-packages3D",
+      "source_installed_file": "C:\\Program Files\\KiCad\\10.0\\share\\kicad\\3dmodels\\Package_TO_SOT_SMD.3dshapes\\SOT-23-5.step",
+      "source_uri": "${KICAD10_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-23-5.step",
+      "source_sha256": "720a6eab0024069bbee68e7cb4c3ff1149468a34611225cdc852662c5d0ec2b7",
+      "copied_byte_identical": true,
+      "original_STEP_HEADER": "ISO-10303-21;\nHEADER;\n/* SOT-23-5.step 3D STEP model for use in ECAD systems\n * Copyright (C) 2025, KiCAD\n *\n * This work is licensed under the\n * [Creative Commons CC-BY-SA 4.0 License](https://creativecommons.org/licenses/by-sa/4.0/legalcode),\n * with the following exception:\n *\n * To the extent that the creation of electronic designs that use 'Licensed Material' can be\n * considered to be 'Adapted Material', then the copyright holder waives article 3 of the license\n * with respect to these designs and any generated files which use data provided as part of the\n * 'Licensed Material'.\n *\n * You are free to use the library data in your own projects without the obligation to share your\n * project files under this or any other license agreement. However, if you wish to distribute\n * these libraries, or parts thereof (including in modified form) as a collection then the exception\n * above does not apply. Please refer to\n * https://gitlab.com/kicad/libraries/kicad-packages3D/-/blob/master/LICENSE.md for further clarification\n * of the exception.\n *\n * Disclaimer of Warranties and Limitation of Liability.\n * These libraries are provided in the hope that they will be useful, but are provided without warranty of any kind, express or implied.\n * USE 3D CAD DATA AT YOUR OWN RISK\n * DO NOT RELY UPON ANY INFORMATION FOUND HERE WITHOUT INDEPENDENT VERIFICATION.\n */\n\nFILE_DESCRIPTION(\n/* description */ ('model of SOT-23-5'),\n/* implementation_level */ '2;1');\n\nFILE_NAME(\n/* name */ 'SOT-23-5.step',\n/* time_stamp */ '1970-01-01T00:00:00',\n/* author */ ('KiCAD','kicad'),\n/* organization */ ('OCCT'),\n/* preprocessor_version */ '',\n/* originating_system */ 'KiCAD',\n/* authorisation */ '');\n\nFILE_SCHEMA(('AUTOMOTIVE_DESIGN { 1 0 10303 214 1 1 1 1 }'));\n",
+      "license_and_source_manifest": "../../LICENSES/KiCad-standard-3D-SOURCES.json",
+      "file": "3dmodels/kicad_standard/Package_TO_SOT_SMD.3dshapes/SOT-23-5.step",
+      "sha256": "720a6eab0024069bbee68e7cb4c3ff1149468a34611225cdc852662c5d0ec2b7",
+      "references": [
+        "U8",
+        "U9"
+      ],
+      "used_by_current_board": true
+    },
+    {
+      "origin": "kicad_standard_3d_model",
+      "license": "CC-BY-SA-4.0 WITH embedded KiCad design exception",
+      "license_basis": "License and exception retained verbatim in STEP HEADER.",
+      "source_repository": "https://github.com/KiCad/kicad-packages3D",
+      "source_installed_file": "C:\\Program Files\\KiCad\\10.0\\share\\kicad\\3dmodels\\Package_TO_SOT_SMD.3dshapes\\SOT-23.step",
+      "source_uri": "${KICAD10_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-23.step",
+      "source_sha256": "dd5d1711204e1d8d26cd11490923bd84340820baa69538c385a4300ec2539bc0",
+      "copied_byte_identical": true,
+      "original_STEP_HEADER": "ISO-10303-21;\nHEADER;\n/* SOT-23.step 3D STEP model for use in ECAD systems\n * Copyright (C) 2025, KiCAD\n *\n * This work is licensed under the\n * [Creative Commons CC-BY-SA 4.0 License](https://creativecommons.org/licenses/by-sa/4.0/legalcode),\n * with the following exception:\n *\n * To the extent that the creation of electronic designs that use 'Licensed Material' can be\n * considered to be 'Adapted Material', then the copyright holder waives article 3 of the license\n * with respect to these designs and any generated files which use data provided as part of the\n * 'Licensed Material'.\n *\n * You are free to use the library data in your own projects without the obligation to share your\n * project files under this or any other license agreement. However, if you wish to distribute\n * these libraries, or parts thereof (including in modified form) as a collection then the exception\n * above does not apply. Please refer to\n * https://gitlab.com/kicad/libraries/kicad-packages3D/-/blob/master/LICENSE.md for further clarification\n * of the exception.\n *\n * Disclaimer of Warranties and Limitation of Liability.\n * These libraries are provided in the hope that they will be useful, but are provided without warranty of any kind, express or implied.\n * USE 3D CAD DATA AT YOUR OWN RISK\n * DO NOT RELY UPON ANY INFORMATION FOUND HERE WITHOUT INDEPENDENT VERIFICATION.\n */\n\nFILE_DESCRIPTION(\n/* description */ ('model of SOT-23'),\n/* implementation_level */ '2;1');\n\nFILE_NAME(\n/* name */ 'SOT-23.step',\n/* time_stamp */ '1970-01-01T00:00:00',\n/* author */ ('KiCAD','kicad'),\n/* organization */ ('OCCT'),\n/* preprocessor_version */ '',\n/* originating_system */ 'KiCAD',\n/* authorisation */ '');\n\nFILE_SCHEMA(('AUTOMOTIVE_DESIGN { 1 0 10303 214 1 1 1 1 }'));\n",
+      "license_and_source_manifest": "../../LICENSES/KiCad-standard-3D-SOURCES.json",
+      "file": "3dmodels/kicad_standard/Package_TO_SOT_SMD.3dshapes/SOT-23.step",
+      "sha256": "dd5d1711204e1d8d26cd11490923bd84340820baa69538c385a4300ec2539bc0",
+      "references": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4",
+        "Q5",
+        "Q6",
+        "Q7"
+      ],
+      "used_by_current_board": true
+    },
+    {
+      "origin": "kicad_standard_3d_model",
+      "license": "KiCad library CC-BY-SA-4.0 WITH design exception",
+      "license_basis": "No per-file license notice; common official KiCad library LICENSE.md applies. STEP HEADER attribution retained.",
+      "source_repository": "https://github.com/KiCad/kicad-packages3D",
+      "source_installed_file": "C:\\Program Files\\KiCad\\10.0\\share\\kicad\\3dmodels\\Package_TO_SOT_THT.3dshapes\\TO-92_Inline.step",
+      "source_uri": "${KICAD10_3DMODEL_DIR}/Package_TO_SOT_THT.3dshapes/TO-92_Inline.step",
+      "source_sha256": "f0b61c32ecbf0067157adc5a3d4966ceadf5d6dafe93c51af35f76c41c71a54a",
+      "copied_byte_identical": true,
+      "original_STEP_HEADER": "ISO-10303-21;\r\nHEADER;\r\nFILE_DESCRIPTION(('FreeCAD Model'),'2;1');\r\nFILE_NAME(\r\n'D:/KiCAD/packages3D-source/Package_TO_SOT_THT.3dshapes\\\\\r\nTO-92_Inline_Narrow.step','2017-11-28T22:16:31',('kicad StepUp'),(\r\n    'ksu MCAD'),'Open CASCADE STEP processor 6.8','FreeCAD','Unknown');\r\nFILE_SCHEMA(('AUTOMOTIVE_DESIGN_CC2 { 1 2 10303 214 -1 1 5 4 }'));\r\n",
+      "license_and_source_manifest": "../../LICENSES/KiCad-standard-3D-SOURCES.json",
+      "file": "3dmodels/kicad_standard/Package_TO_SOT_THT.3dshapes/TO-92_Inline.step",
+      "sha256": "f0b61c32ecbf0067157adc5a3d4966ceadf5d6dafe93c51af35f76c41c71a54a",
+      "references": [
+        "U11"
+      ],
+      "used_by_current_board": true
+    },
+    {
+      "origin": "kicad_standard_3d_model",
+      "license": "CC-BY-SA-4.0 WITH embedded KiCad design exception",
+      "license_basis": "License and exception retained verbatim in STEP HEADER.",
+      "source_repository": "https://github.com/KiCad/kicad-packages3D",
+      "source_installed_file": "C:\\Program Files\\KiCad\\10.0\\share\\kicad\\3dmodels\\Resistor_SMD.3dshapes\\R_0805_2012Metric.step",
+      "source_uri": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+      "source_sha256": "ded342cdb394fb45395227beaaa75cc390613cf2581b29cd6d22c12abd6103b2",
+      "copied_byte_identical": true,
+      "original_STEP_HEADER": "ISO-10303-21;\nHEADER;\n/* R_0805_2012Metric.step 3D STEP model for use in ECAD systems\n * Copyright (C) 2018, kicad StepUp\n * \n * This work is licensed under the [Creative Commons CC-BY-SA 4.0 License](https://creativecommons.org/licenses/by-sa/4.0/legalcode), \n * with the following exception:\n * To the extent that the creation of electronic designs that use 'Licensed Material' can be considered to be 'Adapted Material', \n * then the copyright holder waives article 3 of the license with respect to these designs and any generated files which use data provided \n * as part of the 'Licensed Material'.\n * You are free to use the library data in your own projects without the obligation to share your project files under this or any other license agreement.\n * However, if you wish to redistribute these libraries, or parts thereof (including in modified form) as a collection then the exception above does not apply. \n * Please refer to https://github.com/KiCad/kicad-packages3D/blob/master/LICENSE.md for further clarification of the exception.\n * Disclaimer of Warranties and Limitation of Liability.\n * These libraries are provided in the hope that they will be useful, but are provided without warranty of any kind, express or implied.\n * *USE 3D CAD DATA AT YOUR OWN RISK*\n * *DO NOT RELY UPON ANY INFORMATION FOUND HERE WITHOUT INDEPENDENT VERIFICATION.*\n * \n */\n\nFILE_DESCRIPTION(\n/* description */ ('model of R_0805_2012Metric'),\n/* implementation_level */ '2;1');\n\nFILE_NAME(\n/* name */ 'R_0805_2012Metric.step',\n/* time_stamp */ '2018-01-04T00:45:37',\n/* author */ ('kicad StepUp','ksu'),\n/* organization */ ('FreeCAD'),\n/* preprocessor_version */ 'OCC',\n/* originating_system */ 'kicad StepUp',\n/* authorisation */ '');\n\nFILE_SCHEMA(('AUTOMOTIVE_DESIGN { 1 0 10303 214 1 1 1 1 }'));\n",
+      "license_and_source_manifest": "../../LICENSES/KiCad-standard-3D-SOURCES.json",
+      "file": "3dmodels/kicad_standard/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+      "sha256": "ded342cdb394fb45395227beaaa75cc390613cf2581b29cd6d22c12abd6103b2",
+      "references": [
+        "R3",
+        "R4",
+        "R5",
+        "R6",
+        "R7",
+        "R8",
+        "R9",
+        "R10",
+        "R11",
+        "R13",
+        "R14",
+        "R15",
+        "R16",
+        "R17",
+        "R21",
+        "R23",
+        "R24",
+        "R25",
+        "R26",
+        "R27",
+        "R28",
+        "R29",
+        "R30",
+        "R31",
+        "R33",
+        "R35",
+        "R36",
+        "R37",
+        "R38",
+        "R39",
+        "R42",
+        "R43",
+        "R44",
+        "R45",
+        "R46",
+        "R47",
+        "R48",
+        "R49",
+        "R50",
+        "R51",
+        "R52",
+        "R53",
+        "R54",
+        "R57",
+        "R58",
+        "R59",
+        "R60",
+        "R61",
+        "R62",
+        "R63",
+        "R64",
+        "R65",
+        "R66",
+        "R67",
+        "R68",
+        "R69",
+        "R70",
+        "R72",
+        "R73"
+      ],
+      "used_by_current_board": true
+    },
+    {
+      "origin": "kicad_standard_3d_model",
+      "license": "CC-BY-SA-4.0 WITH embedded KiCad design exception",
+      "license_basis": "License and exception retained verbatim in STEP HEADER.",
+      "source_repository": "https://github.com/KiCad/kicad-packages3D",
+      "source_installed_file": "C:\\Program Files\\KiCad\\10.0\\share\\kicad\\3dmodels\\Resistor_SMD.3dshapes\\R_2512_6332Metric.step",
+      "source_uri": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_2512_6332Metric.step",
+      "source_sha256": "76b2052a3c120193de7cdc0af99157b6f375e9a4af7721e3e3d012968c877f27",
+      "copied_byte_identical": true,
+      "original_STEP_HEADER": "ISO-10303-21;\nHEADER;\n/* R_2512_6332Metric.step 3D STEP model for use in ECAD systems\n * Copyright (C) 2018, kicad StepUp\n * \n * This work is licensed under the [Creative Commons CC-BY-SA 4.0 License](https://creativecommons.org/licenses/by-sa/4.0/legalcode), \n * with the following exception:\n * To the extent that the creation of electronic designs that use 'Licensed Material' can be considered to be 'Adapted Material', \n * then the copyright holder waives article 3 of the license with respect to these designs and any generated files which use data provided \n * as part of the 'Licensed Material'.\n * You are free to use the library data in your own projects without the obligation to share your project files under this or any other license agreement.\n * However, if you wish to redistribute these libraries, or parts thereof (including in modified form) as a collection then the exception above does not apply. \n * Please refer to https://github.com/KiCad/kicad-packages3D/blob/master/LICENSE.md for further clarification of the exception.\n * Disclaimer of Warranties and Limitation of Liability.\n * These libraries are provided in the hope that they will be useful, but are provided without warranty of any kind, express or implied.\n * *USE 3D CAD DATA AT YOUR OWN RISK*\n * *DO NOT RELY UPON ANY INFORMATION FOUND HERE WITHOUT INDEPENDENT VERIFICATION.*\n * \n */\n\nFILE_DESCRIPTION(\n/* description */ ('model of R_2512_6332Metric'),\n/* implementation_level */ '2;1');\n\nFILE_NAME(\n/* name */ 'R_2512_6332Metric.step',\n/* time_stamp */ '2018-01-04T00:45:29',\n/* author */ ('kicad StepUp','ksu'),\n/* organization */ ('FreeCAD'),\n/* preprocessor_version */ 'OCC',\n/* originating_system */ 'kicad StepUp',\n/* authorisation */ '');\n\nFILE_SCHEMA(('AUTOMOTIVE_DESIGN { 1 0 10303 214 1 1 1 1 }'));\n",
+      "license_and_source_manifest": "../../LICENSES/KiCad-standard-3D-SOURCES.json",
+      "file": "3dmodels/kicad_standard/Resistor_SMD.3dshapes/R_2512_6332Metric.step",
+      "sha256": "76b2052a3c120193de7cdc0af99157b6f375e9a4af7721e3e3d012968c877f27",
+      "references": [
+        "R1",
+        "R40",
+        "R41",
+        "R55",
+        "R56",
+        "R71"
+      ],
+      "used_by_current_board": true
+    },
+    {
       "file": "3dmodels/KLS_TS6604_4p3.step",
       "sha256": "12b3864afbb63c919c627dcfe6d0e122fcfd31d0f67970d48b67b4047a153e8a",
       "origin": "project_generated_step",
@@ -216,6 +648,42 @@
       "license": "CC-BY-NC-SA-4.0",
       "license_url": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
       "own_contribution_license_scope": "Original Mesh Repeater contributions only; existing third-party material retains its applicable terms."
+    },
+    {
+      "file": "3dmodels/manifest.json",
+      "origin": "unrecorded",
+      "license": "unknown",
+      "note": "Provenance not inferred during project consolidation; existing third-party rights apply.",
+      "sha256": "ea3a0dc0862d25ccdd53859fc1452de7053ea2ab272e8f86c6f8203e9c61f72b",
+      "references": [],
+      "used_by_current_board": false
+    },
+    {
+      "file": "3dmodels/manifest_s4_15.json",
+      "origin": "unrecorded",
+      "license": "unknown",
+      "note": "Provenance not inferred during project consolidation; existing third-party rights apply.",
+      "sha256": "45959a02bd14986553fca4c9eeaf18588e99b62f5e037e447eb915c0eb73d08c",
+      "references": [],
+      "used_by_current_board": false
+    },
+    {
+      "file": "3dmodels/manifest_s4_19.json",
+      "origin": "unrecorded",
+      "license": "unknown",
+      "note": "Provenance not inferred during project consolidation; existing third-party rights apply.",
+      "sha256": "ac46435a49aca2188e55052884caaf63d53a5c432459cfc31b06868dea09a751",
+      "references": [],
+      "used_by_current_board": false
+    },
+    {
+      "file": "3dmodels/manifest_s4_6.json",
+      "origin": "unrecorded",
+      "license": "unknown",
+      "note": "Provenance not inferred during project consolidation; existing third-party rights apply.",
+      "sha256": "c8d3b1448d9326fbdd6003ec2316da0266f0130ac4924c96d1b888ec3c45c4a0",
+      "references": [],
+      "used_by_current_board": false
     },
     {
       "file": "3dmodels/NiceNano_Clone_Approx.step",
@@ -293,22 +761,6 @@
         "https://abracon.com/datasheets/AEL-Crystals/PN/S869M000S003.pdf"
       ],
       "previous_publication_sha256": "f014778833906a7ee87329e0ef6e8959c5eaa838f1694c58b1b39a34db635efd",
-      "used_by_current_board": true,
-      "license_url": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
-      "own_contribution_license_scope": "Original Mesh Repeater contributions only; existing third-party material retains its applicable terms."
-    },
-    {
-      "file": "3dmodels/SMA_KLS1_SMA002_B_Approx.step",
-      "origin": "project_generated_simplified_model",
-      "license": "CC-BY-NC-SA-4.0",
-      "sha256": "6d4fe1194d68cf1f6bb598c5a9eca8142b4ff96218b0d503e7e3cd4f3e645574",
-      "references": [
-        "J13"
-      ],
-      "geometry_sources": [
-        "https://img.klsele.com/admin/product_upload/20250828165703L-KLS1-SMA002-B&KLS1-SMA002-B-1.27.pdf"
-      ],
-      "previous_publication_sha256": "6d4fe1194d68cf1f6bb598c5a9eca8142b4ff96218b0d503e7e3cd4f3e645574",
       "used_by_current_board": true,
       "license_url": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
       "own_contribution_license_scope": "Original Mesh Repeater contributions only; existing third-party material retains its applicable terms."
@@ -404,6 +856,22 @@
       "references": [],
       "used_by_current_board": false,
       "license": "unknown"
+    },
+    {
+      "file": "3dmodels/SMA_KLS1_SMA002_B_Approx.step",
+      "origin": "project_generated_simplified_model",
+      "license": "CC-BY-NC-SA-4.0",
+      "sha256": "6d4fe1194d68cf1f6bb598c5a9eca8142b4ff96218b0d503e7e3cd4f3e645574",
+      "references": [
+        "J13"
+      ],
+      "geometry_sources": [
+        "https://img.klsele.com/admin/product_upload/20250828165703L-KLS1-SMA002-B&KLS1-SMA002-B-1.27.pdf"
+      ],
+      "previous_publication_sha256": "6d4fe1194d68cf1f6bb598c5a9eca8142b4ff96218b0d503e7e3cd4f3e645574",
+      "used_by_current_board": true,
+      "license_url": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+      "own_contribution_license_scope": "Original Mesh Repeater contributions only; existing third-party material retains its applicable terms."
     },
     {
       "file": "3dmodels/Sumida_CDRH127_LD.step",
@@ -620,44 +1088,8 @@
       "license": "unknown"
     },
     {
-      "file": "3dmodels/manifest.json",
-      "origin": "unrecorded",
-      "license": "unknown",
-      "note": "Provenance not inferred during project consolidation; existing third-party rights apply.",
-      "sha256": "ea3a0dc0862d25ccdd53859fc1452de7053ea2ab272e8f86c6f8203e9c61f72b",
-      "references": [],
-      "used_by_current_board": false
-    },
-    {
-      "file": "3dmodels/manifest_s4_15.json",
-      "origin": "unrecorded",
-      "license": "unknown",
-      "note": "Provenance not inferred during project consolidation; existing third-party rights apply.",
-      "sha256": "45959a02bd14986553fca4c9eeaf18588e99b62f5e037e447eb915c0eb73d08c",
-      "references": [],
-      "used_by_current_board": false
-    },
-    {
-      "file": "3dmodels/manifest_s4_19.json",
-      "origin": "unrecorded",
-      "license": "unknown",
-      "note": "Provenance not inferred during project consolidation; existing third-party rights apply.",
-      "sha256": "ac46435a49aca2188e55052884caaf63d53a5c432459cfc31b06868dea09a751",
-      "references": [],
-      "used_by_current_board": false
-    },
-    {
-      "file": "3dmodels/manifest_s4_6.json",
-      "origin": "unrecorded",
-      "license": "unknown",
-      "note": "Provenance not inferred during project consolidation; existing third-party rights apply.",
-      "sha256": "c8d3b1448d9326fbdd6003ec2316da0266f0130ac4924c96d1b888ec3c45c4a0",
-      "references": [],
-      "used_by_current_board": false
-    },
-    {
       "file": "Meshcore.pretty/BatteryHolder_Keystone_1060_1x2032.kicad_mod",
-      "sha256": "844d3dc38ced93cd86a83cb283033c706b8422940354ad7e46c97b2b138256d5",
+      "sha256": "318b78aa5d1358a85ee459ab3066c94891e282421ccde246afc1680b9b5e97f9",
       "references": [
         "BT1"
       ],
@@ -676,63 +1108,9 @@
       "used_by_current_board": true
     },
     {
-      "file": "Meshcore.pretty/CP_Elec_10x10.2.kicad_mod",
-      "origin": "unrecorded",
-      "license": "unknown",
-      "note": "Provenance not inferred during project consolidation; existing third-party rights apply.",
-      "sha256": "f168d5807d1652894dc96a4d313a880066dcec89e626523d0f15a3ff3040c895",
-      "references": [
-        "C15",
-        "C16"
-      ],
-      "used_by_current_board": true
-    },
-    {
-      "file": "Meshcore.pretty/CP_Elec_6.3x5.4.kicad_mod",
-      "origin": "not recorded in previous publication manifest",
-      "provenance_note": "Current local project asset; no additional author, manufacturer origin or license is inferred.",
-      "sha256": "6283e0874ce8f2ff33daad82fc400340ccba2c5569c1f4f4527fd50b856b52bb",
-      "references": [],
-      "used_by_current_board": false,
-      "license": "unknown"
-    },
-    {
-      "file": "Meshcore.pretty/CP_Elec_6.3x7.7.kicad_mod",
-      "origin": "not recorded in previous publication manifest",
-      "provenance_note": "Current local project asset; no additional author, manufacturer origin or license is inferred.",
-      "sha256": "2c95e02eea974c11dc3f12c123b498ac49ffa3ad57382011b0f8579a9f865659",
-      "references": [],
-      "used_by_current_board": false,
-      "license": "unknown"
-    },
-    {
-      "file": "Meshcore.pretty/CP_Elec_Panasonic_FK_D_6.3x5.8.kicad_mod",
-      "sha256": "b409c4b4e6b3444a4f2012028f3e9d0b2422240aa55d707d3e787e5a3661982e",
-      "references": [
-        "C8"
-      ],
-      "description": "SMD capacitor, aluminum electrolytic, Nichicon, 6.3x5.8mm",
-      "origin": "kicad_library_derivative",
-      "upstream_file": "Capacitor_SMD.pretty/CP_Elec_6.3x5.8.kicad_mod",
-      "geometry_sources": [
-        "https://github.com/KiCad/kicad-footprints/blob/master/Capacitor_SMD.pretty/CP_Elec_6.3x5.8.kicad_mod"
-      ],
-      "license": "CC-BY-SA-4.0",
-      "exception": "KiCad libraries design exception",
-      "license_notice_url": "https://raw.githubusercontent.com/KiCad/kicad-footprints/master/LICENSE.md",
-      "attribution": "KiCad Libraries contributors",
-      "modifications": "Local library name, model links and display fields may differ; preserve upstream geometric-description metadata.",
-      "geometry_basis": "KiCad CP_Elec_6.3x5.8 adapted: pad centre +/-2.7 to +/-2.5 mm, pad length 3.5 to 3.2 mm for selected Panasonic FK part",
-      "historical_source_record": "audit/s4_6_danomsk_20261009/make_footprints.py",
-      "previous_publication_sha256": "01102c99a9201c119feabed7ec149abfdb8a025c16b7d16582de91f0141d0afe",
-      "used_by_current_board": true
-    },
-    {
       "file": "Meshcore.pretty/C_0603_1608Metric.kicad_mod",
       "sha256": "b572d165cd408fc7f013191402e4b4032f46d5d5042c51f2c8e89db2f02a1e54",
-      "references": [
-        "C13"
-      ],
+      "references": [],
       "description": "Capacitor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf)",
       "origin": "kicad_library_derivative",
       "upstream_file": "Capacitor_SMD.pretty/C_0603_1608Metric.kicad_mod",
@@ -745,15 +1123,21 @@
       "attribution": "KiCad Libraries contributors",
       "modifications": "Local library name, model links and display fields may differ; preserve upstream geometric-description metadata.",
       "previous_publication_sha256": "d45eebd5cb9faace255d4ec95a0f9484efde898359507b02e2ba9bbb3ef6d857",
-      "used_by_current_board": true
+      "used_by_current_board": false
     },
     {
       "file": "Meshcore.pretty/C_0805_2012Metric.kicad_mod",
-      "sha256": "6bff3ba934505c5a7085d8b655174468f264b70081e83945c771b95bf43314bc",
+      "sha256": "0245e163141ea35355f5f869c5fbb49e9341062d4bf9fcfd2bc6828619e17b55",
       "references": [
-        "C12",
-        "C14",
         "C2",
+        "C3",
+        "C4",
+        "C5",
+        "C6",
+        "C7",
+        "C12",
+        "C13",
+        "C14",
         "C21",
         "C22",
         "C23",
@@ -761,23 +1145,18 @@
         "C25",
         "C26",
         "C27",
-        "C3",
         "C30",
         "C33",
-        "C4",
-        "C5",
         "C52",
         "C56",
         "C57",
         "C58",
         "C59",
-        "C6",
         "C60",
         "C61",
         "C62",
         "C63",
-        "C64",
-        "C7"
+        "C64"
       ],
       "description": "Capacitor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf, https://docs.google.com/spreadsheets/d/1BsfQQcO9C6DZCsRaXUlFlo91Tg2WpOkGARC1WS5S8t0/edit?usp=sharing)",
       "origin": "kicad_library_derivative",
@@ -795,7 +1174,7 @@
     },
     {
       "file": "Meshcore.pretty/C_1206_3216Metric.kicad_mod",
-      "sha256": "fd21c25e53290ffd8b2c2ee631373b0a77714771f9683b491ac4fce9ad295546",
+      "sha256": "f3edc714e67d7692a1b69be6d55d0510da3827e65e6e319a0f650d234eabc6df",
       "references": [
         "C1",
         "C53",
@@ -823,7 +1202,8 @@
       "sha256": "ae4b9760e9dc9f643015df14d27b4b1def0706731f634e2604bc2370c9410f2f",
       "references": [],
       "used_by_current_board": false,
-      "license": "unknown"
+      "license": "unknown",
+      "description": "Capacitor SMD 1210 (3225 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf)"
     },
     {
       "file": "Meshcore.pretty/C_1812_4532Metric.kicad_mod",
@@ -844,17 +1224,73 @@
       "used_by_current_board": false
     },
     {
+      "file": "Meshcore.pretty/CP_Elec_10x10.2.kicad_mod",
+      "origin": "unrecorded",
+      "license": "unknown",
+      "note": "Provenance not inferred during project consolidation; existing third-party rights apply.",
+      "sha256": "f168d5807d1652894dc96a4d313a880066dcec89e626523d0f15a3ff3040c895",
+      "references": [
+        "C15",
+        "C16"
+      ],
+      "used_by_current_board": true,
+      "description": "Panasonic EEEFK1E471P; standard FK size G, D10.0 L10.2+/-0.3mm, base10.3+/-0.2mm. Official FK datasheet10-Feb-26 pp1-2: pad4.1x2.0mm, gap4.6mm, pitch8.7mm; positive pad1. Not vibration-proof variant. https://industrial.panasonic.com/cdbs/www-data/pdf/RDE0000/ABA0000C1181.pdf"
+    },
+    {
+      "file": "Meshcore.pretty/CP_Elec_6.3x5.4.kicad_mod",
+      "origin": "not recorded in previous publication manifest",
+      "provenance_note": "Current local project asset; no additional author, manufacturer origin or license is inferred.",
+      "sha256": "6283e0874ce8f2ff33daad82fc400340ccba2c5569c1f4f4527fd50b856b52bb",
+      "references": [],
+      "used_by_current_board": false,
+      "license": "unknown",
+      "description": "SMD capacitor, aluminum electrolytic, Panasonic C55, 6.3x5.4mm"
+    },
+    {
+      "file": "Meshcore.pretty/CP_Elec_6.3x7.7.kicad_mod",
+      "origin": "not recorded in previous publication manifest",
+      "provenance_note": "Current local project asset; no additional author, manufacturer origin or license is inferred.",
+      "sha256": "2c95e02eea974c11dc3f12c123b498ac49ffa3ad57382011b0f8579a9f865659",
+      "references": [],
+      "used_by_current_board": false,
+      "license": "unknown",
+      "description": "SMD capacitor, aluminum electrolytic, Nichicon, 6.3x7.7mm"
+    },
+    {
+      "file": "Meshcore.pretty/CP_Elec_Panasonic_FK_D_6.3x5.8.kicad_mod",
+      "sha256": "f708ddb39401254d61ae133a1c9fa7503bf0807057d07d5ae4a77ae8988d7a9d",
+      "references": [
+        "C8"
+      ],
+      "description": "SMD capacitor, aluminum electrolytic, Nichicon, 6.3x5.8mm",
+      "origin": "kicad_library_derivative",
+      "upstream_file": "Capacitor_SMD.pretty/CP_Elec_6.3x5.8.kicad_mod",
+      "geometry_sources": [
+        "https://github.com/KiCad/kicad-footprints/blob/master/Capacitor_SMD.pretty/CP_Elec_6.3x5.8.kicad_mod"
+      ],
+      "license": "CC-BY-SA-4.0",
+      "exception": "KiCad libraries design exception",
+      "license_notice_url": "https://raw.githubusercontent.com/KiCad/kicad-footprints/master/LICENSE.md",
+      "attribution": "KiCad Libraries contributors",
+      "modifications": "Local library name, model links and display fields may differ; preserve upstream geometric-description metadata.",
+      "geometry_basis": "KiCad CP_Elec_6.3x5.8 adapted: pad centre +/-2.7 to +/-2.5 mm, pad length 3.5 to 3.2 mm for selected Panasonic FK part",
+      "historical_source_record": "audit/s4_6_danomsk_20261009/make_footprints.py",
+      "previous_publication_sha256": "01102c99a9201c119feabed7ec149abfdb8a025c16b7d16582de91f0141d0afe",
+      "used_by_current_board": true
+    },
+    {
       "file": "Meshcore.pretty/D_SMA.kicad_mod",
       "origin": "not recorded in previous publication manifest",
       "provenance_note": "Current local project asset; no additional author, manufacturer origin or license is inferred.",
       "sha256": "068606d6b17719e0155e2f5f6e5b6078adde5b60a9b907aca4425058f33f5afc",
       "references": [],
       "used_by_current_board": false,
-      "license": "unknown"
+      "license": "unknown",
+      "description": "Diode SMA (DO-214AC)"
     },
     {
       "file": "Meshcore.pretty/D_SMB.kicad_mod",
-      "sha256": "3c29c34cc0ee6618264feb379e8ea6bc7256cb99c64c58a67ea81cf0001b8697",
+      "sha256": "6fda1a86ab98cd0e176e27f5bd08903ae616be6b07fdd2d009e8f565955e18b7",
       "references": [
         "D1",
         "D2"
@@ -880,7 +1316,8 @@
       "sha256": "79114bfc4edd5dceef68178e30d2280af4fa8c8bd7914002d00fac60b48d3f13",
       "references": [],
       "used_by_current_board": false,
-      "license": "unknown"
+      "license": "unknown",
+      "description": "SOD-123"
     },
     {
       "file": "Meshcore.pretty/Ferrite_Murata_BLM21PG.kicad_mod",
@@ -922,41 +1359,19 @@
       "own_contribution_license_scope": "Original Mesh Repeater contributions only; existing third-party material retains its applicable terms."
     },
     {
-      "file": "Meshcore.pretty/LED_0805_2012Metric.kicad_mod",
-      "sha256": "4078e5088c26303c057525d7392597a0a6107d405b5d0092af6d77ca7fee9020",
-      "references": [
-        "D3",
-        "D4"
-      ],
-      "description": "LED SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: https://docs.google.com/spreadsheets/d/1BsfQQcO9C6DZCsRaXUlFlo91Tg2WpOkGARC1WS5S8t0/edit?usp=sharing)",
-      "origin": "kicad_library_derivative",
-      "upstream_file": "LED_SMD.pretty/LED_0805_2012Metric.kicad_mod",
-      "geometry_sources": [
-        "https://github.com/KiCad/kicad-footprints/blob/master/LED_SMD.pretty/LED_0805_2012Metric.kicad_mod"
-      ],
-      "license": "CC-BY-SA-4.0",
-      "exception": "KiCad libraries design exception",
-      "license_notice_url": "https://raw.githubusercontent.com/KiCad/kicad-footprints/master/LICENSE.md",
-      "attribution": "KiCad Libraries contributors",
-      "modifications": "Local library name, model links and display fields may differ; preserve upstream geometric-description metadata.",
-      "previous_publication_sha256": "ce3a8266ee445b343374e2391b3b931a2bbc27f83d4f06af397cbea91df53178",
-      "used_by_current_board": true
-    },
-    {
       "file": "Meshcore.pretty/L_Coilcraft_DO5040H_473MLD.kicad_mod",
       "origin": "not recorded in previous publication manifest",
       "provenance_note": "Current local project asset; no additional author, manufacturer origin or license is inferred.",
       "sha256": "ca4069da8647fbc4a6333c13aab547da0a3a8b4c899644130db7e9b6a0c2dff2",
       "references": [],
       "used_by_current_board": false,
-      "license": "unknown"
+      "license": "unknown",
+      "description": "Coilcraft DO5040H-473MLD, unshielded 47uH, official 15uH-1400uH variant land pattern; pads 1.90x6.35mm, centre pitch 15.90mm. Maximum envelope 18.54x15.24x12.00mm. Source Coilcraft Document 479-2 revised 10/04/18. F.Fab dashed rectangle is maximum envelope, not exact body contour."
     },
     {
       "file": "Meshcore.pretty/L_Coilcraft_XGL4020_471MEC.kicad_mod",
       "sha256": "e3cbf76ae8fc3785af6ea3310443fe7e7981c184f1725e7985099b7182cab4dd",
-      "references": [
-        "L2"
-      ],
+      "references": [],
       "description": "Coilcraft XGL4020-471MEC, shielded 0.47uH; official recommended rectangular copper lands 0.98x3.40mm, 2.37mm centre pitch. Body 4.0+/-0.3 x 4.0+/-0.3mm; height max 2.10mm. Coilcraft Document 1529-3, revised 02/19/26. Mask +0.05mm and paste 1:1 are engineering choices, not manufacturer stencil specifications. See Coilcraft_XGL4020_471MEC_evidence.json.",
       "origin": "project_generated_footprint",
       "geometry_basis": "Coilcraft recommended lands, 1529-3 revised 2026-02-19",
@@ -965,10 +1380,54 @@
       ],
       "historical_source_record": "design/qualified_footprints/build_coilcraft_xgl4020_footprint.py",
       "previous_publication_sha256": "a2b63a35f1f34c86b353d6d746ee97464374a649726720f305b014a5d5d28bbd",
-      "used_by_current_board": true,
+      "used_by_current_board": false,
       "license": "CC-BY-NC-SA-4.0",
       "license_url": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
       "own_contribution_license_scope": "Original Mesh Repeater contributions only; existing third-party material retains its applicable terms."
+    },
+    {
+      "file": "Meshcore.pretty/L_Coilcraft_XGL4020_471MEC_HandSolderUniversal.kicad_mod",
+      "sha256": "473b20fa7136b5122648a3611793aa0520de9c7f2236916fe187fa14f415b247",
+      "references": [
+        "L2"
+      ],
+      "description": "Coilcraft XGL4020-471MEC 0.47uH with user-requested hand-solder land extension: each outer copper edge extended by 0.50mm, original inner edges preserved. Copper 1.48x3.40mm, centre pitch 2.87mm, inner gap 1.39mm, outer span 4.35mm. Original 0.98x3.40mm paste apertures at 2.37mm pitch retained. Derived from Coilcraft Document 1529-3, revised 02/19/26; extended copper, mask +0.05mm, stencil and courtyard are engineering choices, not manufacturer recommendations. Does not qualify an unidentified donor inductor.",
+      "origin": "project_generated_footprint",
+      "geometry_basis": "Coilcraft recommended lands, 1529-3 revised 2026-02-19",
+      "geometry_sources": [
+        "https://www.coilcraft.com/getmedia/76c9c081-4945-4c85-9129-9356e1ad6734/xgl4020.pdf"
+      ],
+      "historical_source_record": "design/qualified_footprints/build_coilcraft_xgl4020_footprint.py",
+      "used_by_current_board": true,
+      "license": "CC-BY-NC-SA-4.0",
+      "license_url": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+      "own_contribution_license_scope": "Original Mesh Repeater contributions only; existing third-party material retains its applicable terms.",
+      "source_asset_record": {
+        "manifest": "v1/design/Meshcore_NaIon/asset_manifest.json",
+        "file": "Meshcore.pretty/L_Coilcraft_XGL4020_471MEC.kicad_mod",
+        "attribution_basis": "Engineering extension of the explicitly retained XGL4020 source footprint.",
+        "record_before_refresh": {
+          "file": "Meshcore.pretty/L_Coilcraft_XGL4020_471MEC.kicad_mod",
+          "sha256": "e3cbf76ae8fc3785af6ea3310443fe7e7981c184f1725e7985099b7182cab4dd",
+          "references": [
+            "L2"
+          ],
+          "description": "Coilcraft XGL4020-471MEC, shielded 0.47uH; official recommended rectangular copper lands 0.98x3.40mm, 2.37mm centre pitch. Body 4.0+/-0.3 x 4.0+/-0.3mm; height max 2.10mm. Coilcraft Document 1529-3, revised 02/19/26. Mask +0.05mm and paste 1:1 are engineering choices, not manufacturer stencil specifications. See Coilcraft_XGL4020_471MEC_evidence.json.",
+          "origin": "project_generated_footprint",
+          "geometry_basis": "Coilcraft recommended lands, 1529-3 revised 2026-02-19",
+          "geometry_sources": [
+            "https://www.coilcraft.com/getmedia/76c9c081-4945-4c85-9129-9356e1ad6734/xgl4020.pdf"
+          ],
+          "historical_source_record": "design/qualified_footprints/build_coilcraft_xgl4020_footprint.py",
+          "previous_publication_sha256": "a2b63a35f1f34c86b353d6d746ee97464374a649726720f305b014a5d5d28bbd",
+          "used_by_current_board": true,
+          "license": "CC-BY-NC-SA-4.0",
+          "license_url": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "own_contribution_license_scope": "Original Mesh Repeater contributions only; existing third-party material retains its applicable terms."
+        }
+      },
+      "engineering_extension_note": "2026-11-06: engineering hand-solder extension of the outer copper land edges by 0.5mm per side, with associated courtyard/paste/mask treatment as recorded in the footprint. This is not a manufacturer land-pattern revision and does not qualify an unidentified donor inductor.",
+      "derived_from_file": "Meshcore.pretty/L_Coilcraft_XGL4020_471MEC.kicad_mod"
     },
     {
       "file": "Meshcore.pretty/L_Murata_DFE201612E.kicad_mod",
@@ -977,7 +1436,8 @@
       "sha256": "bae9bdbcee0d3f65d6636188be3cb2181857f8a4aaabb7eebc96d72025fd37e1",
       "references": [],
       "used_by_current_board": false,
-      "license": "unknown"
+      "license": "unknown",
+      "description": "Murata DFE201612E-R47M=P2; body 2.0x1.6mm, maximum height 1.2mm. See inductor_footprint_evidence.json for source and derived-pattern status."
     },
     {
       "file": "Meshcore.pretty/L_Sumida_CDRH127_LD.kicad_mod",
@@ -1025,11 +1485,33 @@
       "sha256": "dbcc6dcb9d9796ba838891fe2602ccc5579d5b60b6eda07550a000fc6a75823a",
       "references": [],
       "used_by_current_board": false,
-      "license": "unknown"
+      "license": "unknown",
+      "description": "Sunltech SLW8040S101MST; body 8.0x8.0mm, maximum height 4.2mm. See inductor_footprint_evidence.json for source and derived-pattern status."
+    },
+    {
+      "file": "Meshcore.pretty/LED_0805_2012Metric.kicad_mod",
+      "sha256": "cf411dd95dab5fe0328bb91e21f50e36223e4f0ea61dfedc1127f34b468ccc8e",
+      "references": [
+        "D3",
+        "D4"
+      ],
+      "description": "LED SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: https://docs.google.com/spreadsheets/d/1BsfQQcO9C6DZCsRaXUlFlo91Tg2WpOkGARC1WS5S8t0/edit?usp=sharing)",
+      "origin": "kicad_library_derivative",
+      "upstream_file": "LED_SMD.pretty/LED_0805_2012Metric.kicad_mod",
+      "geometry_sources": [
+        "https://github.com/KiCad/kicad-footprints/blob/master/LED_SMD.pretty/LED_0805_2012Metric.kicad_mod"
+      ],
+      "license": "CC-BY-SA-4.0",
+      "exception": "KiCad libraries design exception",
+      "license_notice_url": "https://raw.githubusercontent.com/KiCad/kicad-footprints/master/LICENSE.md",
+      "attribution": "KiCad Libraries contributors",
+      "modifications": "Local library name, model links and display fields may differ; preserve upstream geometric-description metadata.",
+      "previous_publication_sha256": "ce3a8266ee445b343374e2391b3b931a2bbc27f83d4f06af397cbea91df53178",
+      "used_by_current_board": true
     },
     {
       "file": "Meshcore.pretty/Molex_PicoBlade_53261-0871_1x08-1MP_P1.25mm_Horizontal.kicad_mod",
-      "sha256": "8be972e452a9e510b3809c1b97c179de972c9d812d2747177f68a5591525d589",
+      "sha256": "9333ce84456f5cbd85bcc36980085a2d2b35bf668a6043598612aae652f0f6bf",
       "references": [
         "J4"
       ],
@@ -1071,32 +1553,6 @@
       "used_by_current_board": true
     },
     {
-      "file": "Meshcore.pretty/NTC_Remote_SolderPads_P2.54mm.kicad_mod",
-      "origin": "not recorded in previous publication manifest",
-      "provenance_note": "Current local project asset; no additional author, manufacturer origin or license is inferred.",
-      "sha256": "a5a5f130939ab58e02dbd9da0f88ac00b9528c2158805e1dfe122e22ec0d7e6e",
-      "references": [],
-      "used_by_current_board": false,
-      "license": "unknown"
-    },
-    {
-      "file": "Meshcore.pretty/NTC_TDK_B57861S_Onboard_or_Remote_P2.54mm.kicad_mod",
-      "origin": "project_generated_geometry",
-      "license": "CC-BY-NC-SA-4.0",
-      "sha256": "d1d75d6ce06cd9c54e9b9d8d969cc00ac04b1c8a635f03d6e85904852d00be19",
-      "references": [
-        "TH1"
-      ],
-      "description": "TDK B57861S0103F040; formed flexible leads P2.54; body diameter <=2.41mm, body length <=6.5mm, vertical assembly <=12.5mm; keep4.5mm straight at body and bend radius>=0.75mm. Fit ONE sensor onboard or ONE remote sensor to these pads. Board pitch is assembly choice, not native factory lead pitch.",
-      "geometry_sources": [
-        "https://www.tdk-electronics.tdk.com/inf/50/db/ntc/NTC_Mini_sensors_S861.pdf"
-      ],
-      "previous_publication_sha256": "168283349342d577188df529f866752bc60e3d2b139152443f48f0df9363ff9c",
-      "used_by_current_board": true,
-      "license_url": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
-      "own_contribution_license_scope": "Original Mesh Repeater contributions only; existing third-party material retains its applicable terms."
-    },
-    {
       "file": "Meshcore.pretty/NetTie_2_SMD_Power_Star_A3.kicad_mod",
       "origin": "not recorded in previous publication manifest",
       "provenance_note": "Current local project asset; no additional author, manufacturer origin or license is inferred.",
@@ -1105,7 +1561,8 @@
         "NT2"
       ],
       "used_by_current_board": true,
-      "license": "unknown"
+      "license": "unknown",
+      "description": "Copper star immediately after J11; two independent outgoing power branches, no populated component."
     },
     {
       "file": "Meshcore.pretty/NiceNano_13x2_Socket.kicad_mod",
@@ -1128,12 +1585,39 @@
       "own_contribution_license_scope": "Original Mesh Repeater contributions only; existing third-party material retains its applicable terms."
     },
     {
-      "file": "Meshcore.pretty/PinHeader_1x02_P2.54mm_Vertical.kicad_mod",
-      "sha256": "3fdc0ff6cc4592d20b418282349b6ded480490d002af3feb8ee5bfef39290404",
+      "file": "Meshcore.pretty/NTC_Remote_SolderPads_P2.54mm.kicad_mod",
+      "origin": "not recorded in previous publication manifest",
+      "provenance_note": "Current local project asset; no additional author, manufacturer origin or license is inferred.",
+      "sha256": "a5a5f130939ab58e02dbd9da0f88ac00b9528c2158805e1dfe122e22ec0d7e6e",
+      "references": [],
+      "used_by_current_board": false,
+      "license": "unknown",
+      "description": "Two solder pads for cell-mounted NTC leads; 2.54mm board-pad spacing"
+    },
+    {
+      "file": "Meshcore.pretty/NTC_TDK_B57861S_Onboard_or_Remote_P2.54mm.kicad_mod",
+      "origin": "project_generated_geometry",
+      "license": "CC-BY-NC-SA-4.0",
+      "sha256": "d1d75d6ce06cd9c54e9b9d8d969cc00ac04b1c8a635f03d6e85904852d00be19",
       "references": [
-        "J11",
+        "TH1"
+      ],
+      "description": "TDK B57861S0103F040; formed flexible leads P2.54; body diameter <=2.41mm, body length <=6.5mm, vertical assembly <=12.5mm; keep4.5mm straight at body and bend radius>=0.75mm. Fit ONE sensor onboard or ONE remote sensor to these pads. Board pitch is assembly choice, not native factory lead pitch.",
+      "geometry_sources": [
+        "https://www.tdk-electronics.tdk.com/inf/50/db/ntc/NTC_Mini_sensors_S861.pdf"
+      ],
+      "previous_publication_sha256": "168283349342d577188df529f866752bc60e3d2b139152443f48f0df9363ff9c",
+      "used_by_current_board": true,
+      "license_url": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+      "own_contribution_license_scope": "Original Mesh Repeater contributions only; existing third-party material retains its applicable terms."
+    },
+    {
+      "file": "Meshcore.pretty/PinHeader_1x02_P2.54mm_Vertical.kicad_mod",
+      "sha256": "90b45314629b57ac278649ebafdfa8aeb3f79c6e20bc71f294b279b784be02b5",
+      "references": [
         "J7",
-        "J8"
+        "J8",
+        "J11"
       ],
       "description": "Through hole straight pin header, 1x02, 2.54mm pitch, single row",
       "origin": "kicad_library_derivative",
@@ -1151,7 +1635,7 @@
     },
     {
       "file": "Meshcore.pretty/PinHeader_1x03_P2.54mm_Vertical.kicad_mod",
-      "sha256": "39e96f5a69072c5db40dc83e099e2f7f0301f189c7db3b6c1a30bd0b2afea298",
+      "sha256": "892f6289bf311ef6810ce42606e71cbaf4e4feb8493fb83b6d1391b6998f02c1",
       "references": [
         "J12"
       ],
@@ -1171,7 +1655,7 @@
     },
     {
       "file": "Meshcore.pretty/PinHeader_1x04_P2.54mm_Vertical.kicad_mod",
-      "sha256": "93dfa1e90dff992f2c8e5196bf76ec4dc04c0863da6fd0b4c43f867dfb55d9dc",
+      "sha256": "906bc3adf7c87d2b3496fe94df71a27770b52209927afba229bbe8897538df50",
       "references": [
         "J3",
         "J5"
@@ -1192,7 +1676,7 @@
     },
     {
       "file": "Meshcore.pretty/PinHeader_2x03_P2.54mm_Vertical.kicad_mod",
-      "sha256": "6b25c46e5f87cc11d01fe74ff64bfa121edea445001c0207189cd24d0f196411",
+      "sha256": "02640a7f224591afefc46b0772b221054f92a78501e62ded52c166c7e4b62344",
       "references": [
         "J10"
       ],
@@ -1211,24 +1695,16 @@
       "used_by_current_board": true
     },
     {
-      "file": "Meshcore.pretty/RF_Cut_Link_0p6.kicad_mod",
-      "origin": "project_generated_geometry",
-      "license": "CC-BY-NC-SA-4.0",
-      "sha256": "73bd9b0b9a1fcfb75c49fc765fdea95ec68e9d3a96f232d7b901f4a69a8ef9ba",
-      "references": [
-        "NT1"
-      ],
-      "description": "Permanent copper net-tie bypass under optional FL1. Cut central bar before fitting SAW. Not a purchased part. 0.6mm square pads, centres 1mm; 0.6mm copper bar with exposed cut window.",
-      "geometry_sources": [],
-      "previous_publication_sha256": "73bd9b0b9a1fcfb75c49fc765fdea95ec68e9d3a96f232d7b901f4a69a8ef9ba",
-      "used_by_current_board": true,
-      "license_url": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
-      "own_contribution_license_scope": "Original Mesh Repeater contributions only; existing third-party material retains its applicable terms."
-    },
-    {
       "file": "Meshcore.pretty/R_0805_2012Metric.kicad_mod",
-      "sha256": "a78fa3eff59064358e58d32e3d4ea24d0f603c2b9f5bbf50fec485ad34eaa044",
+      "sha256": "41c0c5c598372e0192c80b5da923156b1ebf0d448ba7594620b461b4558dfb7a",
       "references": [
+        "R3",
+        "R4",
+        "R5",
+        "R6",
+        "R7",
+        "R8",
+        "R9",
         "R10",
         "R11",
         "R13",
@@ -1244,7 +1720,6 @@
         "R27",
         "R28",
         "R29",
-        "R3",
         "R30",
         "R31",
         "R33",
@@ -1253,7 +1728,6 @@
         "R37",
         "R38",
         "R39",
-        "R4",
         "R42",
         "R43",
         "R44",
@@ -1262,7 +1736,6 @@
         "R47",
         "R48",
         "R49",
-        "R5",
         "R50",
         "R51",
         "R52",
@@ -1271,7 +1744,6 @@
         "R57",
         "R58",
         "R59",
-        "R6",
         "R60",
         "R61",
         "R62",
@@ -1282,12 +1754,9 @@
         "R67",
         "R68",
         "R69",
-        "R7",
         "R70",
         "R72",
-        "R73",
-        "R8",
-        "R9"
+        "R73"
       ],
       "description": "Resistor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf)",
       "origin": "kicad_library_derivative",
@@ -1328,29 +1797,32 @@
       "sha256": "04124f47653dea2cfbd3d82e91c04e06176652f8d7dc7d13861e204d60726382",
       "references": [],
       "used_by_current_board": false,
-      "license": "unknown"
+      "license": "unknown",
+      "description": "Resistor SMD 2512 (6332 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf)"
     },
     {
       "file": "Meshcore.pretty/R_2512_6332Metric__A3_R56.kicad_mod",
       "origin": "not recorded in previous publication manifest",
       "provenance_note": "Current local project asset; no additional author, manufacturer origin or license is inferred.",
-      "sha256": "2a8c6b21aa4e94ecf869a05fb844d2ef88bd19b7774902addc2fbf2a16073312",
+      "sha256": "65d990d3d97c7f9b96560bee64cb106b6fa378fb1cbad8828d4fc0373f526fa8",
       "references": [
         "R56"
       ],
       "used_by_current_board": true,
-      "license": "unknown"
+      "license": "unknown",
+      "description": "Resistor SMD 2512 (6332 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf)"
     },
     {
       "file": "Meshcore.pretty/R_2512_6332Metric__A3_R71.kicad_mod",
       "origin": "not recorded in previous publication manifest",
       "provenance_note": "Current local project asset; no additional author, manufacturer origin or license is inferred.",
-      "sha256": "34c917b65e750c501387bb638a7e202f8dfbea59a214edc0f5f928797d5c51ba",
+      "sha256": "f11a7b7ad099eddf683d6bed4d859f24b1cb04bf8799c6b80c3024bf407dbad0",
       "references": [
         "R71"
       ],
       "used_by_current_board": true,
-      "license": "unknown"
+      "license": "unknown",
+      "description": "Resistor SMD 2512 (6332 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf)"
     },
     {
       "file": "Meshcore.pretty/R_Vishay_WSL1206_18.kicad_mod",
@@ -1373,45 +1845,64 @@
       "file": "Meshcore.pretty/R_Vishay_WSL2512_A3__A3_R1.kicad_mod",
       "origin": "not recorded in previous publication manifest",
       "provenance_note": "Current local project asset; no additional author, manufacturer origin or license is inferred.",
-      "sha256": "1c150d56ea94c72ca771f78c0b872f0f3e5f673a6fc2461b918abbe7fa83c2fb",
+      "sha256": "2ce2c5b92ac40c28d7c12bf41822d00bb2753b40b98674b09341553ebe85a925",
       "references": [
         "R1"
       ],
       "used_by_current_board": true,
-      "license": "unknown"
+      "license": "unknown",
+      "description": "Vishay WSL2512 manufacturer recommended lands, doc30100p2:1.65x3.68mm, gap4.06mm, pitch5.71mm. Courtyard outer7.36x3.68+0.25mm. Body and STEP are nominal envelopes."
     },
     {
       "file": "Meshcore.pretty/R_Vishay_WSL2512_A3__A3_R40.kicad_mod",
       "origin": "not recorded in previous publication manifest",
       "provenance_note": "Current local project asset; no additional author, manufacturer origin or license is inferred.",
-      "sha256": "407ee745cd17a3c11bb0a5179152675f55176f250cc95326d14a2ffe9f83039d",
+      "sha256": "9ae6f1bfb0e065070675e54da24667edacdf4301032bbccdf26df6660ea72ad5",
       "references": [
         "R40"
       ],
       "used_by_current_board": true,
-      "license": "unknown"
+      "license": "unknown",
+      "description": "Vishay WSL2512 manufacturer recommended lands, doc30100p2:1.65x3.68mm, gap4.06mm, pitch5.71mm. Courtyard outer7.36x3.68+0.25mm. Body and STEP are nominal envelopes."
     },
     {
       "file": "Meshcore.pretty/R_Vishay_WSL2512_A3__A3_R41.kicad_mod",
       "origin": "not recorded in previous publication manifest",
       "provenance_note": "Current local project asset; no additional author, manufacturer origin or license is inferred.",
-      "sha256": "09d813dd88a949774bd89674de816754c431eb4f58d8eb45fc00f9b44f2281e8",
+      "sha256": "a2edca61e99f9d526fa3b20536bd9ac9954ef45d78458dc5fecb5ae142b5c0fd",
       "references": [
         "R41"
       ],
       "used_by_current_board": true,
-      "license": "unknown"
+      "license": "unknown",
+      "description": "Vishay WSL2512 manufacturer recommended lands, doc30100p2:1.65x3.68mm, gap4.06mm, pitch5.71mm. Courtyard outer7.36x3.68+0.25mm. Body and STEP are nominal envelopes."
     },
     {
       "file": "Meshcore.pretty/R_Vishay_WSL2512_A3__A3_R55.kicad_mod",
       "origin": "not recorded in previous publication manifest",
       "provenance_note": "Current local project asset; no additional author, manufacturer origin or license is inferred.",
-      "sha256": "d1f4963c3160bfd4fb3b8eefe0b9b542b23f54ff55c948bdec684ca378837aeb",
+      "sha256": "dac7237fe73581b3e094456591c62bdec1719fe7a749c416e0a9d62c3f9678d3",
       "references": [
         "R55"
       ],
       "used_by_current_board": true,
-      "license": "unknown"
+      "license": "unknown",
+      "description": "Vishay WSL2512 manufacturer recommended lands, doc30100p2:1.65x3.68mm, gap4.06mm, pitch5.71mm. Courtyard outer7.36x3.68+0.25mm. Body and STEP are nominal envelopes."
+    },
+    {
+      "file": "Meshcore.pretty/RF_Cut_Link_0p6.kicad_mod",
+      "origin": "project_generated_geometry",
+      "license": "CC-BY-NC-SA-4.0",
+      "sha256": "73bd9b0b9a1fcfb75c49fc765fdea95ec68e9d3a96f232d7b901f4a69a8ef9ba",
+      "references": [
+        "NT1"
+      ],
+      "description": "Permanent copper net-tie bypass under optional FL1. Cut central bar before fitting SAW. Not a purchased part. 0.6mm square pads, centres 1mm; 0.6mm copper bar with exposed cut window.",
+      "geometry_sources": [],
+      "previous_publication_sha256": "73bd9b0b9a1fcfb75c49fc765fdea95ec68e9d3a96f232d7b901f4a69a8ef9ba",
+      "used_by_current_board": true,
+      "license_url": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+      "own_contribution_license_scope": "Original Mesh Repeater contributions only; existing third-party material retains its applicable terms."
     },
     {
       "file": "Meshcore.pretty/SAW_AEL_DCC6C_S869M000S003.kicad_mod",
@@ -1431,13 +1922,79 @@
       "own_contribution_license_scope": "Original Mesh Repeater contributions only; existing third-party material retains its applicable terms."
     },
     {
+      "file": "Meshcore.pretty/Shield_Frame_104x54.kicad_mod",
+      "origin": "not recorded in previous publication manifest",
+      "provenance_note": "Current local project asset; no additional author, manufacturer origin or license is inferred.",
+      "sha256": "1ab85c6e289125aa56945e49423644337748bd91f4071b0b3b5849d62dbb4663",
+      "references": [],
+      "used_by_current_board": false,
+      "license": "unknown",
+      "description": "Custom104x54mm shieldframe wall centerlines,0.2mm wall,14mm internalheight. Requires supplier mechanical approval; four GND solderlands, no stencil paste."
+    },
+    {
+      "file": "Meshcore.pretty/Shield_Frame_62x33.kicad_mod",
+      "origin": "not recorded in previous publication manifest",
+      "provenance_note": "Current local project asset; no additional author, manufacturer origin or license is inferred.",
+      "sha256": "b1c17badee3372e170dbb85180d2107a6e15b5b0813fd9dc29ff63d07346c236",
+      "references": [],
+      "used_by_current_board": false,
+      "license": "unknown",
+      "description": "Customshieldframe62x33mm wallcentrelines,14mm internalheight,0.2mm wall. FourcontinuousGNDsolderlands."
+    },
+    {
+      "file": "Meshcore.pretty/Shield_Frame_76x43.kicad_mod",
+      "sha256": "b7eeaa0bafc4e6ccf2fe76f1790c503e3482f2995898ae02c0f3de9c3433f277",
+      "references": [],
+      "description": "Custom 76x43mm shield wall centerlines; 0.2mm wall; 14mm target internal height. Supplier mechanical qualification required. Four GND solderlands; separate manual assembly, no stencil paste.",
+      "origin": "project_generated_footprint",
+      "geometry_basis": "Custom 76 x 43 mm wall centrelines, 0.2 mm wall, 14 mm target height; supplier design not qualified",
+      "geometry_sources": [],
+      "historical_source_record": "design/board_s4_3_filter.py",
+      "previous_publication_sha256": "b7eeaa0bafc4e6ccf2fe76f1790c503e3482f2995898ae02c0f3de9c3433f277",
+      "used_by_current_board": false,
+      "license": "CC-BY-NC-SA-4.0",
+      "license_url": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+      "own_contribution_license_scope": "Original Mesh Repeater contributions only; existing third-party material retains its applicable terms."
+    },
+    {
+      "file": "Meshcore.pretty/Shield_Frame_76x44.kicad_mod",
+      "origin": "not recorded in previous publication manifest",
+      "provenance_note": "Current local project asset; no additional author, manufacturer origin or license is inferred.",
+      "sha256": "70e3b57eeb874fd2c8bf04e357ece7497e5b42a2aa8abb291f37e4117e58cac2",
+      "references": [],
+      "used_by_current_board": false,
+      "license": "unknown",
+      "description": "Custom76x44mm shieldframe wall centerlines,0.2mm wall,14mm internalheight. Requires supplier mechanical approval; four GND solderlands, no stencil paste."
+    },
+    {
+      "file": "Meshcore.pretty/Shield_Frame_76x49_3_Chamfer.kicad_mod",
+      "origin": "not recorded in previous publication manifest",
+      "provenance_note": "Current local project asset; no additional author, manufacturer origin or license is inferred.",
+      "sha256": "ce4569dc9407e121e3b83aff6b320ddd6ace07f95b847ed23ff3f2be632fbfd9",
+      "references": [],
+      "used_by_current_board": false,
+      "license": "unknown",
+      "description": "Custom six-wall shield; centreline bbox 76x49.3mm, lower45deg chamfers4.6mm; H14mm, wall0.2mm. Manual soldered frame, no paste. Supplier mechanical qualification required."
+    },
+    {
+      "file": "Meshcore.pretty/Shield_Frame_80x45.kicad_mod",
+      "origin": "not recorded in previous publication manifest",
+      "provenance_note": "Current local project asset; no additional author, manufacturer origin or license is inferred.",
+      "sha256": "0427ada730b32cf8604db92f26aaa49e118b1a59e5d46fc18bd708bcbc0c2697",
+      "references": [],
+      "used_by_current_board": false,
+      "license": "unknown",
+      "description": "Custom80x45mm shieldframe wall centerlines,0.2mm wall,14mm internalheight. Requires supplier mechanical approval; four GND solderlands, no stencil paste."
+    },
+    {
       "file": "Meshcore.pretty/SMA_KE_RobotClass2218_PRELIM.kicad_mod",
       "origin": "not recorded in previous publication manifest",
       "provenance_note": "Current local project asset; no additional author, manufacturer origin or license is inferred.",
       "sha256": "afdd3d38034f68f001518f9844242854b500e97eeee56b67b21b2f64fdaa1a5a",
       "references": [],
       "used_by_current_board": false,
-      "license": "unknown"
+      "license": "unknown",
+      "description": "PRELIMINARY RobotClass item2218 SMA-KE/KWE right-angle female. Merchant says anchor distance4mm without drawing. ASSUMED square pin pitch5.1mm from candidate SAMZO SMA-KWE-145-W4-3 drawing. Body6mm square, horizontal length14.55mm, RFpin0.9mm, GNDpin0.9mm square from candidate only. Verify actual item before fabrication."
     },
     {
       "file": "Meshcore.pretty/SMA_KLS1_SMA002_B_Horizontal.kicad_mod",
@@ -1463,16 +2020,17 @@
       "sha256": "798176526446820534d1276fbae0851c4a3ace094fd70c58f353050556267018",
       "references": [],
       "used_by_current_board": false,
-      "license": "unknown"
+      "license": "unknown",
+      "description": "SOIC, 16 Pin (JEDEC MS-013AA, https://www.analog.com/media/en/package-pcb-resources/package/pkg_pdf/soic_wide-rw/rw_16.pdf)"
     },
     {
       "file": "Meshcore.pretty/SOIC-8_3.9x4.9mm_P1.27mm.kicad_mod",
-      "sha256": "90a17cb443aa344a43d7ad9e1a131dbdcd78708d6151b8b0e5608a9c19194da3",
+      "sha256": "3735754922b6f61720e7067f8a9ae94e7c76c8097d2facfbab80c0d3282e7de6",
       "references": [
-        "U10",
-        "U12",
         "U4",
-        "U6"
+        "U6",
+        "U10",
+        "U12"
       ],
       "description": "SOIC, 8 Pin (JEDEC MS-012AA, https://www.analog.com/media/en/package-pcb-resources/package/pkg_pdf/soic_narrow-r/r_8.pdf)",
       "origin": "kicad_library_derivative",
@@ -1490,7 +2048,7 @@
     },
     {
       "file": "Meshcore.pretty/SOT-23-5.kicad_mod",
-      "sha256": "4e5761163aa9383ebb4b499efd5031d69a3a3e34d39c0c9c7714b2d2551ef2c7",
+      "sha256": "9a3428ef20b7a780652f37a3acf5485d489cb8da8707cf9254bf250fd9095008",
       "references": [
         "U8",
         "U9"
@@ -1516,7 +2074,8 @@
       "sha256": "197455da56d4cf704751c520ca66f888b9dd800a821d4a87a45b6caaecf1a228",
       "references": [],
       "used_by_current_board": false,
-      "license": "unknown"
+      "license": "unknown",
+      "description": "SOT, 6 Pin (JEDEC MO-178 Var AB https://www.jedec.org/document_search?search_api_views_fulltext=MO-178)"
     },
     {
       "file": "Meshcore.pretty/SOT-23-8.kicad_mod",
@@ -1525,11 +2084,12 @@
       "sha256": "33fed4e9bba3f0ffc5df2c747cb3548b3e1170674a96f170a4d82d98a3bc42da",
       "references": [],
       "used_by_current_board": false,
-      "license": "unknown"
+      "license": "unknown",
+      "description": "SOT, 8 Pin (JEDEC MO-178 Var BA https://www.jedec.org/document_search?search_api_views_fulltext=MO-178)"
     },
     {
       "file": "Meshcore.pretty/SOT-23.kicad_mod",
-      "sha256": "8affa88394826df30ee8e1571c26ff7d69d4c81ea908225eb10aefe5e26cf2d7",
+      "sha256": "3af1937d19f61e6cfdf17ec86a4aeb6c66ea61d58009dc836b59f3aa79b436e8",
       "references": [
         "Q1",
         "Q2",
@@ -1560,7 +2120,8 @@
       "sha256": "fa5ef1977e977d01d917a0fd8e1683563a0bd1bc50a22c511302d3f629e86589",
       "references": [],
       "used_by_current_board": false,
-      "license": "unknown"
+      "license": "unknown",
+      "description": "https://www.ti.com/lit/ds/symlink/tps62933.pdf"
     },
     {
       "file": "Meshcore.pretty/SW_Push_1P1T_XKB_TS-1187A.kicad_mod",
@@ -1569,7 +2130,8 @@
       "sha256": "e59b5784efadec3877120311509b2a6f832b4369a363201483f5d880482b23f9",
       "references": [],
       "used_by_current_board": false,
-      "license": "unknown"
+      "license": "unknown",
+      "description": "SMD Tactile Switch, http://www.helloxkb.com/public/images/pdf/TS-1187A-X-X-X.pdf"
     },
     {
       "file": "Meshcore.pretty/SW_Push_KLS7_TS6604_4_3_180.kicad_mod",
@@ -1598,75 +2160,41 @@
       "sha256": "345180066d38328e73753beb5d96a4356838d2488b26b027d755d04cbee9a490",
       "references": [],
       "used_by_current_board": false,
-      "license": "unknown"
+      "license": "unknown",
+      "description": "Low-profile SMD Tactile Switch, https://www.e-switch.com/system/asset/product_line/data_sheet/165/TL3342.pdf"
     },
     {
-      "file": "Meshcore.pretty/Shield_Frame_104x54.kicad_mod",
-      "origin": "not recorded in previous publication manifest",
-      "provenance_note": "Current local project asset; no additional author, manufacturer origin or license is inferred.",
-      "sha256": "1ab85c6e289125aa56945e49423644337748bd91f4071b0b3b5849d62dbb4663",
-      "references": [],
-      "used_by_current_board": false,
-      "license": "unknown"
-    },
-    {
-      "file": "Meshcore.pretty/Shield_Frame_62x33.kicad_mod",
-      "origin": "not recorded in previous publication manifest",
-      "provenance_note": "Current local project asset; no additional author, manufacturer origin or license is inferred.",
-      "sha256": "b1c17badee3372e170dbb85180d2107a6e15b5b0813fd9dc29ff63d07346c236",
-      "references": [],
-      "used_by_current_board": false,
-      "license": "unknown"
-    },
-    {
-      "file": "Meshcore.pretty/Shield_Frame_76x43.kicad_mod",
-      "sha256": "b7eeaa0bafc4e6ccf2fe76f1790c503e3482f2995898ae02c0f3de9c3433f277",
-      "references": [],
-      "description": "Custom 76x43mm shield wall centerlines; 0.2mm wall; 14mm target internal height. Supplier mechanical qualification required. Four GND solderlands; separate manual assembly, no stencil paste.",
-      "origin": "project_generated_footprint",
-      "geometry_basis": "Custom 76 x 43 mm wall centrelines, 0.2 mm wall, 14 mm target height; supplier design not qualified",
-      "geometry_sources": [],
-      "historical_source_record": "design/board_s4_3_filter.py",
-      "previous_publication_sha256": "b7eeaa0bafc4e6ccf2fe76f1790c503e3482f2995898ae02c0f3de9c3433f277",
-      "used_by_current_board": false,
-      "license": "CC-BY-NC-SA-4.0",
-      "license_url": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
-      "own_contribution_license_scope": "Original Mesh Repeater contributions only; existing third-party material retains its applicable terms."
-    },
-    {
-      "file": "Meshcore.pretty/Shield_Frame_76x44.kicad_mod",
-      "origin": "not recorded in previous publication manifest",
-      "provenance_note": "Current local project asset; no additional author, manufacturer origin or license is inferred.",
-      "sha256": "70e3b57eeb874fd2c8bf04e357ece7497e5b42a2aa8abb291f37e4117e58cac2",
-      "references": [],
-      "used_by_current_board": false,
-      "license": "unknown"
-    },
-    {
-      "file": "Meshcore.pretty/Shield_Frame_76x49_3_Chamfer.kicad_mod",
-      "origin": "not recorded in previous publication manifest",
-      "provenance_note": "Current local project asset; no additional author, manufacturer origin or license is inferred.",
-      "sha256": "ce4569dc9407e121e3b83aff6b320ddd6ace07f95b847ed23ff3f2be632fbfd9",
-      "references": [],
-      "used_by_current_board": false,
-      "license": "unknown"
-    },
-    {
-      "file": "Meshcore.pretty/Shield_Frame_80x45.kicad_mod",
-      "origin": "not recorded in previous publication manifest",
-      "provenance_note": "Current local project asset; no additional author, manufacturer origin or license is inferred.",
-      "sha256": "0427ada730b32cf8604db92f26aaa49e118b1a59e5d46fc18bd708bcbc0c2697",
-      "references": [],
-      "used_by_current_board": false,
-      "license": "unknown"
+      "file": "Meshcore.pretty/TestPoint_Pad_D1.5mm.kicad_mod",
+      "sha256": "d64c72d87dffc6df67622076639dc666022e16d236105257b39b96997c75097f",
+      "references": [
+        "TP1",
+        "TP3",
+        "TP4",
+        "TP7",
+        "TP8",
+        "TP9"
+      ],
+      "description": "SMD pad as test Point, diameter 1.5mm",
+      "origin": "kicad_library_derivative",
+      "upstream_file": "TestPoint.pretty/TestPoint_Pad_D1.5mm.kicad_mod",
+      "geometry_sources": [
+        "https://github.com/KiCad/kicad-footprints/blob/master/TestPoint.pretty/TestPoint_Pad_D1.5mm.kicad_mod"
+      ],
+      "license": "CC-BY-SA-4.0",
+      "exception": "KiCad libraries design exception",
+      "license_notice_url": "https://raw.githubusercontent.com/KiCad/kicad-footprints/master/LICENSE.md",
+      "attribution": "KiCad Libraries contributors",
+      "modifications": "Local library name, model links and display fields may differ; preserve upstream geometric-description metadata.",
+      "previous_publication_sha256": "501dd0ac7ff91f9b1b6f7906a9ac2404c862f91dcfc9bbc9533f769f1a36b984",
+      "used_by_current_board": true
     },
     {
       "file": "Meshcore.pretty/TI_DCT0008A.kicad_mod",
-      "sha256": "f34261be1ca093afc20c4ae2263b6f3c219106bac2209a8b6edb79828ab9a8b1",
+      "sha256": "0d215579c036c47a4f69af30f397573f5d06bfee17ad8fa8dd9dcbf53199aa83",
       "references": [
         "U7"
       ],
-      "description": "TI DCT0008A, 4220784/D 10/2025: body max3.1x3.1, lead span4.25, H1.3; pads1.1x0.4, centres +/-1.9, pitch0.65.",
+      "description": "TI SSOP (DCT), DCT0008A; visible F.SilkS triangle above pin 1 added 2026-11-06. TI DCT0008A, 4220784/D 10/2025: body max3.1x3.1, lead span4.25, H1.3; pads1.1x0.4, centres +/-1.9, pitch0.65.",
       "origin": "kicad_library_derivative",
       "upstream_file": "Package_TO_SOT_SMD.pretty/SOT-23-8.kicad_mod",
       "geometry_sources": [
@@ -1681,13 +2209,14 @@
       "geometry_basis": "Adapted KiCad SOT-23-8 template; lands and outlines changed to TI DCT0008A drawing 4220784/D 2025-10",
       "historical_source_record": "design/build_gps_footprint_s4_7.py",
       "previous_publication_sha256": "efb41f5c1417301dadee459fa81a4d1ddb7b045eb57aed84b3ce6d8cd8bd9be8",
-      "used_by_current_board": true
+      "used_by_current_board": true,
+      "engineering_modification_note": "2026-11-06: pin-1 silkscreen marker added; pad geometry and electrical pin numbering preserved."
     },
     {
       "file": "Meshcore.pretty/TO-92_Inline.kicad_mod",
       "origin": "kicad_library_derivative",
       "license": "CC-BY-SA-4.0",
-      "sha256": "5f104db61ba204b99bb1ef8c50f673259b6dd4fdffab753b7d4ad2419252b3bf",
+      "sha256": "b3b1292f098ae1e8197761170e29fa91c56ddae16a96cb9936b6d893a1d7e778",
       "references": [
         "U11"
       ],
@@ -1721,7 +2250,7 @@
     },
     {
       "file": "Meshcore.pretty/TSSOP-16_4.4x5mm_P0.65mm.kicad_mod",
-      "sha256": "68f45e1e9612bc827671c5b4516af9ae11d951fd3f467a15a4331eef60db3579",
+      "sha256": "13f3e661d41daf99a48abae25d82fff9e31d24f7361004050d3e087208ca7f5a",
       "references": [
         "U1"
       ],
@@ -1738,279 +2267,14 @@
       "modifications": "Local library name, model links and display fields may differ; preserve upstream geometric-description metadata.",
       "previous_publication_sha256": "639c5bfa7d9f028326a201ce1507171d1a2093361a4b16c0db055b2bf858ab9f",
       "used_by_current_board": true
-    },
-    {
-      "file": "Meshcore.pretty/TestPoint_Pad_D1.5mm.kicad_mod",
-      "sha256": "d64c72d87dffc6df67622076639dc666022e16d236105257b39b96997c75097f",
-      "references": [
-        "TP1",
-        "TP3",
-        "TP4",
-        "TP7",
-        "TP8",
-        "TP9"
-      ],
-      "description": "SMD pad as test Point, diameter 1.5mm",
-      "origin": "kicad_library_derivative",
-      "upstream_file": "TestPoint.pretty/TestPoint_Pad_D1.5mm.kicad_mod",
-      "geometry_sources": [
-        "https://github.com/KiCad/kicad-footprints/blob/master/TestPoint.pretty/TestPoint_Pad_D1.5mm.kicad_mod"
-      ],
-      "license": "CC-BY-SA-4.0",
-      "exception": "KiCad libraries design exception",
-      "license_notice_url": "https://raw.githubusercontent.com/KiCad/kicad-footprints/master/LICENSE.md",
-      "attribution": "KiCad Libraries contributors",
-      "modifications": "Local library name, model links and display fields may differ; preserve upstream geometric-description metadata.",
-      "previous_publication_sha256": "501dd0ac7ff91f9b1b6f7906a9ac2404c862f91dcfc9bbc9533f769f1a36b984",
-      "used_by_current_board": true
     }
   ],
-  "external_models": [
-    {
-      "path": "${KICAD10_3DMODEL_DIR}/Battery.3dshapes/BatteryHolder_Keystone_1060_1x2032.step",
-      "references": [
-        "BT1"
-      ]
-    },
-    {
-      "path": "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/CP_Elec_6.3x5.8.step",
-      "references": [
-        "C8"
-      ]
-    },
-    {
-      "path": "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step",
-      "references": [
-        "C13"
-      ]
-    },
-    {
-      "path": "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.step",
-      "references": [
-        "C30",
-        "C56",
-        "C23",
-        "C26",
-        "C59",
-        "C7",
-        "C3",
-        "C21",
-        "C57",
-        "C61",
-        "C62",
-        "C6",
-        "C58",
-        "C63",
-        "C14",
-        "C4",
-        "C52",
-        "C25",
-        "C64",
-        "C33",
-        "C12",
-        "C2",
-        "C60",
-        "C27",
-        "C24",
-        "C22",
-        "C5"
-      ]
-    },
-    {
-      "path": "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_1206_3216Metric.step",
-      "references": [
-        "C55",
-        "C53",
-        "C1",
-        "C54"
-      ]
-    },
-    {
-      "path": "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_1812_4532Metric.step",
-      "references": [
-        "C44",
-        "C42",
-        "C50",
-        "C40",
-        "C47",
-        "C35",
-        "C43",
-        "C39",
-        "C38",
-        "C34",
-        "C15",
-        "C49",
-        "C36",
-        "C46",
-        "C41",
-        "C51",
-        "C45",
-        "C48",
-        "C37",
-        "C16"
-      ]
-    },
-    {
-      "path": "${KICAD10_3DMODEL_DIR}/Connector_Molex.3dshapes/Molex_PicoBlade_53261-0871_1x08-1MP_P1.25mm_Horizontal.step",
-      "references": [
-        "J4"
-      ]
-    },
-    {
-      "path": "${KICAD10_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x02_P2.54mm_Vertical.step",
-      "references": [
-        "J7",
-        "J8",
-        "J11"
-      ]
-    },
-    {
-      "path": "${KICAD10_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x03_P2.54mm_Vertical.step",
-      "references": [
-        "J12"
-      ]
-    },
-    {
-      "path": "${KICAD10_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x04_P2.54mm_Vertical.step",
-      "references": [
-        "J5",
-        "J3"
-      ]
-    },
-    {
-      "path": "${KICAD10_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_2x03_P2.54mm_Vertical.step",
-      "references": [
-        "J10"
-      ]
-    },
-    {
-      "path": "${KICAD10_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SMB.step",
-      "references": [
-        "D1",
-        "D2"
-      ]
-    },
-    {
-      "path": "${KICAD10_3DMODEL_DIR}/LED_SMD.3dshapes/LED_0805_2012Metric.step",
-      "references": [
-        "D3",
-        "D4"
-      ]
-    },
-    {
-      "path": "${KICAD10_3DMODEL_DIR}/Package_SO.3dshapes/SOIC-8_3.9x4.9mm_P1.27mm.step",
-      "references": [
-        "U10",
-        "U12",
-        "U4",
-        "U6"
-      ]
-    },
-    {
-      "path": "${KICAD10_3DMODEL_DIR}/Package_SO.3dshapes/TSSOP-16_4.4x5mm_P0.65mm.step",
-      "references": [
-        "U1"
-      ]
-    },
-    {
-      "path": "${KICAD10_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-23-5.step",
-      "references": [
-        "U8",
-        "U9"
-      ]
-    },
-    {
-      "path": "${KICAD10_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-23.step",
-      "references": [
-        "Q2",
-        "Q1",
-        "Q4",
-        "Q7",
-        "Q3",
-        "Q5",
-        "Q6"
-      ]
-    },
-    {
-      "path": "${KICAD10_3DMODEL_DIR}/Package_TO_SOT_THT.3dshapes/TO-92_Inline.step",
-      "references": [
-        "U11"
-      ]
-    },
-    {
-      "path": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
-      "references": [
-        "R58",
-        "R33",
-        "R68",
-        "R11",
-        "R45",
-        "R15",
-        "R29",
-        "R67",
-        "R64",
-        "R30",
-        "R7",
-        "R42",
-        "R3",
-        "R38",
-        "R59",
-        "R60",
-        "R5",
-        "R10",
-        "R52",
-        "R8",
-        "R70",
-        "R39",
-        "R17",
-        "R66",
-        "R14",
-        "R73",
-        "R4",
-        "R27",
-        "R53",
-        "R35",
-        "R50",
-        "R28",
-        "R63",
-        "R57",
-        "R61",
-        "R72",
-        "R37",
-        "R54",
-        "R51",
-        "R62",
-        "R44",
-        "R65",
-        "R47",
-        "R31",
-        "R24",
-        "R23",
-        "R26",
-        "R16",
-        "R36",
-        "R6",
-        "R48",
-        "R21",
-        "R46",
-        "R13",
-        "R43",
-        "R25",
-        "R9",
-        "R69",
-        "R49"
-      ]
-    },
-    {
-      "path": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_2512_6332Metric.step",
-      "references": [
-        "R56",
-        "R71",
-        "R40",
-        "R1",
-        "R41",
-        "R55"
-      ]
-    }
-  ]
+  "external_models": [],
+  "asset_refresh": {
+    "date": "2026-11-06",
+    "basis": "Current native PCB footprint library IDs and embedded 3D links, checked against model.json.",
+    "licensing_policy": "Existing attribution is retained. New derivative records carry their exact source record; unidentified provenance remains unknown.",
+    "input_pcb_sha256": "3d396d1e097644c88a30c6e78cd51b6b89793a8ebff235a50cf1842e4160fd0a",
+    "input_model_sha256": "280fcc3bd82a321d6297f5eeea0074a093b5d9eb3519be77bf2b5fc0df161c3c"
+  }
 }
