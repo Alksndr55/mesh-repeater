@@ -510,11 +510,12 @@ class Product:
         """Create launchers for this product without requiring CAD associations."""
         executable = NEXUS_BUNDLE + '/NexusBV.exe'
         require(executable in members, 'Missing packaged NexusBV executable')
-        launchers, entries = {}, []
-        for board in self.spec['boards']:
-            name = board['name']
-            require(re.fullmatch(r'[A-Za-z0-9_-]+', name), 'Unsafe launcher board name: ' + name)
-            for variant in BOARDVIEW_VARIANTS:
+        launchers = {}
+        for variant in BOARDVIEW_VARIANTS:
+            entries = []
+            for board in self.spec['boards']:
+                name = board['name']
+                require(re.fullmatch(r'[A-Za-z0-9_-]+', name), 'Unsafe launcher board name: ' + name)
                 cad, _ = self.boardview_paths(board, variant)
                 targets = [self.spec['root'] + '/output/current/' + cad]
                 if board.get('schematic'):
@@ -523,35 +524,28 @@ class Product:
                     require(target in members, 'Missing NexusBV launcher target: ' + target)
                     require(not any(c in target for c in ('%', '"', '\r', '\n')),
                             'Unsafe NexusBV launcher target: ' + target)
-                filename = 'START_' + name + '_' + variant + '.cmd'
                 paths = ['%~dp0' + p.replace('/', '\\') for p in [executable, *targets]]
-                lines = ['@echo off', 'setlocal DisableDelayedExpansion']
+                entries.append((name, paths))
+            require(1 <= len(entries) <= 9, 'NexusBV launcher supports one to nine boardviews')
+            lines = ['@echo off', 'setlocal DisableDelayedExpansion']
+            if len(entries) > 1:
+                lines += ['echo Mesh Repeater ' + self.version + ' - ' + variant, 'echo.']
+                lines += [f'echo {i}. {name}' for i, (name, _) in enumerate(entries, 1)]
+                choices = ''.join(str(i) for i in range(1, len(entries) + 1))
+                lines += ['echo Q. Exit', 'choice /C ' + choices + 'Q /N /M "Open boardview: "',
+                          'if errorlevel 255 exit /b 1', f'if errorlevel {len(entries)+1} exit /b 0']
+                lines += [f'if errorlevel {i} goto board{i}' for i in range(len(entries), 0, -1)]
+                lines += ['exit /b 1']
+            for i, (_, paths) in enumerate(entries, 1):
+                lines.append(':board' + str(i))
                 lines += ['if not exist "' + path + '" goto missing' for path in paths]
                 lines += ['start "" /D "%~dp0' + NEXUS_BUNDLE.replace('/', '\\') + '" '
                           + ' '.join('"' + path + '"' for path in paths),
-                          'if errorlevel 1 goto failed', 'exit /b 0', ':missing',
-                          'echo Required files are missing. Extract the complete ZIP before starting.',
-                          'pause', 'exit /b 1', ':failed', 'echo NexusBV could not start.',
-                          'pause', 'exit /b 1']
-                launchers[filename] = ('\r\n'.join(lines) + '\r\n').encode('ascii')
-                entries.append((filename, name + ' - ' + variant))
-        require(1 <= len(entries) <= 9, 'NexusBV launch menu supports one to nine boardviews')
-        choices = ''.join(str(i) for i in range(1, len(entries) + 1)) + 'Q'
-        lines = ['@echo off', 'setlocal DisableDelayedExpansion',
-                 'echo Mesh Repeater ' + self.version + ' - NexusBV 0.9', 'echo.']
-        lines += ['echo ' + str(i) + '. ' + label for i, (_, label) in enumerate(entries, 1)]
-        lines += ['echo Q. Exit', 'choice /C ' + choices + ' /N /M "Open boardview: "',
-                  'if errorlevel 255 exit /b 1', 'if errorlevel ' + str(len(entries) + 1) + ' exit /b 0']
-        lines += ['if errorlevel ' + str(i) + ' goto board' + str(i)
-                  for i in range(len(entries), 0, -1)]
-        lines += ['exit /b 1']
-        for i, (filename, _) in enumerate(entries, 1):
-            # Transfer directly to the other batch file: CALL would expand path
-            # characters a second time when the extracted directory contains %.
-            lines += [':board' + str(i), 'if not exist "%~dp0' + filename + '" goto missing',
-                      '"%~dp0' + filename + '"', 'exit /b']
-        lines += [':missing', 'echo Extract the complete ZIP before starting.', 'pause', 'exit /b 1']
-        launchers['START.cmd'] = ('\r\n'.join(lines) + '\r\n').encode('ascii')
+                          'if errorlevel 1 goto failed', 'exit /b 0']
+            lines += [':missing', 'echo Extract the complete ZIP before starting.',
+                      'pause', 'exit /b 1', ':failed', 'echo NexusBV could not start.',
+                      'pause', 'exit /b 1']
+            launchers['START_' + variant + '.cmd'] = ('\r\n'.join(lines) + '\r\n').encode('ascii')
         return launchers
 
     def package(self):
@@ -591,10 +585,10 @@ class Product:
                                     for b in self.spec['boards'] for variant in BOARDVIEW_VARIANTS)
         members['RELEASE_README_RU.txt'] = (
             'Mesh Repeater ' + self.version + '\n\n'
-            'Полностью распакуйте ZIP в обычную папку до запуска START.cmd или открытия файлов.\n'
+            'Полностью распакуйте ZIP в обычную папку перед открытием файлов.\n'
             'Portable NexusBV 0.9 для Windows 10/11 x64 включён; установка не требуется.\n'
-            'Откройте START.cmd в корне распакованного пакета и выберите плату и химию.\n'
-            'Или запустите START_<плата>_<химия>.cmd: CAD и PDF этой платы откроются вместе.\n'
+            'Запустите START_NaIon_COLD.cmd или START_LTO_2S.cmd в корне пакета.\n'
+            'Для v2 выберите плату в меню. CAD и PDF выбранной платы откроются вместе.\n'
             'Для SHIELD открывается только CAD. Не запускайте команды прямо из ZIP.\n'
             'Сохраняйте структуру папок пакета: программа и схемы нужны для запуска.\n'
             'Откройте нужный проект платы в KiCad 10:\n'
@@ -632,7 +626,7 @@ class Product:
                     'external_standard_models': sorted(self.standard_models),
                     'package_transformations': ['project.json selects only this product and omits local chat metadata',
                         'shared PDF and verification entry points alias the current product run bytes',
-                        'START.cmd and board/assembly launchers use package-relative NexusBV, CAD and PDF paths'],
+                        'two battery-specific launchers use package-relative NexusBV, CAD and PDF paths'],
                     'files': {p: {'sha256': hashlib.sha256(raw).hexdigest(), 'bytes': len(raw)}
                               for p, raw in sorted(members.items())},
                     'note': 'Manifest excludes its own recursive checksum. ZIP checksum is provided separately.'}

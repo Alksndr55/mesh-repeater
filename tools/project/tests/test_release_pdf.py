@@ -90,6 +90,23 @@ class PdfBodyTargetTests(unittest.TestCase):
         self.assertIn('R110k',PdfReader(pdf).pages[0].extract_text())
         self.assertEqual(enhance_schematic_pdf(sch,pdf)['components'],1)
 
+    def test_mentions_in_notes_do_not_become_search_targets(self):
+        sch, pdf = self.schematic(), self.pdf()
+        sch.write_text(sch.read_text('utf-8').replace(
+            '(property "Reference" "R1")', '(property "Reference" "R1" (at 48 45 0))'), 'utf-8')
+        writer = PdfWriter(clone_from=pdf)
+        page = writer.pages[0]
+        stream = DecodedStreamObject()
+        stream.set_data(b'BT /F1 5 Tf 1 0 0 1 210 420 Tm (R1) Tj ET\n'
+                        b'BT /F1 5 Tf 1 0 0 1 230 410 Tm (Check R1.) Tj ET\n'
+                        + page.get_contents().get_data())
+        page.replace_contents(stream)
+        with pdf.open('wb') as handle:
+            writer.write(handle)
+        result = enhance_schematic_pdf(sch, pdf)
+        self.assertEqual(result['suppressed_reference_mentions'], {1: ['R1', 'R1']})
+        self.assertTrue(result['verification'][0]['render_144dpi_identical'])
+
     def test_shared_original_font_dictionary_does_not_share_body_font(self):
         sch,pdf = self.schematic(),self.pdf()
         child = self.folder / 'child.kicad_sch'

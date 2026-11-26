@@ -1,7 +1,7 @@
 {
   "project": "Meshcore_NaIon",
-  "revision": "v1.26",
-  "schematic_revision": "v1.26",
+  "revision": "v1.27",
+  "schematic_revision": "v1.27",
   "schematic_date": "2026-10-24",
   "board": {
     "width": 90,
@@ -5109,6 +5109,39 @@
       "value_naion_no_cold": "3V3 STAR",
       "mpn_naion_no_cold": "",
       "native_layer": "B.Cu"
+    },
+    {
+      "ref": "C65",
+      "kind": "C",
+      "value": "100nF 50V X7R",
+      "nets": {
+        "1": "MCU_RESET",
+        "2": "GND"
+      },
+      "footprint": "Meshcore:C_0805_2012Metric",
+      "x": 28.7,
+      "y": 4.0,
+      "rotation": 90,
+      "mpn": "CL21B104KBCNNNC",
+      "lcsc": "",
+      "note": "100 нФ между MCU_RESET и GND.",
+      "dnp": false,
+      "group": "watchdog",
+      "vendor": "Danomsk",
+      "vendor_url": "https://www.danomsk.ru/shop/5-kondensatory/89-kondensatory-keramicheskie/732-kondensatory-smd-0805/196705-chip-kond-0805-x7r-0-10uf-10-50v-cl21b104kbcnnnc-cc0805-sam/",
+      "qualification": "Замена развязки ATtiny на доступный Samsung с теми же ёмкостью, допуском, диэлектриком и напряжением.",
+      "procurement_package": "0805 (2012), X7R, 100nF ±10%, 50V",
+      "procurement_checked_at": "2026-10-09T21:23:39+06:00",
+      "schematic_uuid": "af722c3c-41cb-4dcf-9f86-92bf5f2620c7",
+      "sheet_path": "/d05d4919-6348-5c78-8cfc-0476c0d7a5be/0b909388-8ec5-5738-a7ec-d62a884a8428",
+      "fit_naion": true,
+      "fit_lto2s": true,
+      "assembly_default_dnp": false,
+      "assembly": "Na-ion: FIT; LTO 2S: FIT",
+      "fit_naion_no_cold": true,
+      "value_naion_no_cold": "100nF 50V X7R",
+      "mpn_naion_no_cold": "CL21B104KBCNNNC",
+      "native_layer": "F.Cu"
     }
   ],
   "usb_isolation_jumper": {
@@ -5674,7 +5707,7 @@
     "GPIO_preserved": true,
     "new_placement_owned_by_routing": true
   },
-  "board_revision": "v1.26",
+  "board_revision": "v1.27",
   "board_date": "2026-10-24",
   "manual_routing_review": {
     "revision": "S4.21",

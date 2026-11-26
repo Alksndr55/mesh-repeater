@@ -170,24 +170,22 @@ class NexusBundleTests(unittest.TestCase):
                 self.set_boards(key, boards)
                 members = self.launcher_members()
                 launchers = self.product.nexus_launchers(members)
-                self.assertEqual(len(launchers), 1 + 2 * len(boards))
-                menu = launchers['START.cmd'].decode('ascii')
-                self.assertIn(self.product.version, menu)
-                self.assertNotIn('call ', menu.lower())
-                for board in self.product.spec['boards']:
-                    for variant in BOARDVIEW_VARIANTS:
-                        filename = 'START_' + board['name'] + '_' + variant + '.cmd'
-                        raw = launchers[filename]
-                        text = raw.decode('ascii')
-                        self.assertNotIn(b'\n', raw.replace(b'\r\n', b''))
-                        self.assertIn('setlocal DisableDelayedExpansion', text)
-                        self.assertNotIn(str(self.root), text)
+                self.assertEqual(set(launchers), {'START_' + v + '.cmd' for v in BOARDVIEW_VARIANTS})
+                for variant in BOARDVIEW_VARIANTS:
+                    raw = launchers['START_' + variant + '.cmd']
+                    text = raw.decode('ascii')
+                    self.assertNotIn(b'\n', raw.replace(b'\r\n', b''))
+                    self.assertIn('setlocal DisableDelayedExpansion', text)
+                    self.assertNotIn(str(self.root), text)
+                    self.assertNotIn('call ', text.lower())
+                    self.assertEqual('choice /C' in text, len(boards) > 1)
+                    commands = [line for line in text.splitlines() if line.startswith('start ')]
+                    self.assertEqual(len(commands), len(boards))
+                    for board, command in zip(self.product.spec['boards'], commands):
                         cad, _ = self.product.boardview_paths(board, variant)
-                        command = next(line for line in text.splitlines() if line.startswith('start '))
                         self.assertIn('start "" /D "%~dp0third_party\\NexusBV\\0.9" ', command)
                         self.assertIn('"%~dp0' + (key + '/output/current/' + cad).replace('/', '\\') + '"', command)
                         self.assertEqual(command.count('.pdf"'), 0 if board['name'] == 'SHIELD' else 1)
-                        self.assertIn('"%~dp0' + filename + '"', menu)
 
     def test_launchers_reject_missing_exe_cad_or_pdf(self):
         original = self.launcher_members()
@@ -228,7 +226,7 @@ class NexusBundleTests(unittest.TestCase):
             prefix = 'Mesh_Repeater_' + self.product.version + '/'
             manifest = json.loads(zipped.read(prefix + 'RELEASE_MANIFEST.json'))
             launchers = [p for p in manifest['files'] if p.endswith('.cmd')]
-            self.assertEqual(len(launchers), 7)
+            self.assertEqual(set(launchers), {'START_' + v + '.cmd' for v in BOARDVIEW_VARIANTS})
             expected = set(launchers) | {NEXUS_BUNDLE + '/' + p for p in self.manifest['files']}
             expected.add(NEXUS_BUNDLE + '/bundle_manifest.json')
             for path in expected:

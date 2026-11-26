@@ -1,9 +1,9 @@
-Mesh Repeater v1.26
+Mesh Repeater v1.27
 
-Полностью распакуйте ZIP в обычную папку до запуска START.cmd или открытия файлов.
+Полностью распакуйте ZIP в обычную папку перед открытием файлов.
 Portable NexusBV 0.9 для Windows 10/11 x64 включён; установка не требуется.
-Откройте START.cmd в корне распакованного пакета и выберите плату и химию.
-Или запустите START_<плата>_<химия>.cmd: CAD и PDF этой платы откроются вместе.
+Запустите START_NaIon_COLD.cmd или START_LTO_2S.cmd в корне пакета.
+Для v2 выберите плату в меню. CAD и PDF выбранной платы откроются вместе.
 Для SHIELD открывается только CAD. Не запускайте команды прямо из ZIP.
 Сохраняйте структуру папок пакета: программа и схемы нужны для запуска.
 Откройте нужный проект платы в KiCad 10:
@@ -13,8 +13,8 @@ Portable NexusBV 0.9 для Windows 10/11 x64 включён; установка
 Общая схема: shared/schematic/MeshRepeater.kicad_sch
 У общей схемы нет собственной PCB; физические платы перечислены выше.
 Boardview с номиналами: откройте CAD через File → Open в NexusBV:
-  v1/output/current/MAIN/Mesh_Repeater_v1.26_MAIN_NaIon_COLD.cad
-  v1/output/current/MAIN/Mesh_Repeater_v1.26_MAIN_LTO_2S.cad
+  v1/output/current/MAIN/Mesh_Repeater_v1.27_MAIN_NaIon_COLD.cad
+  v1/output/current/MAIN/Mesh_Repeater_v1.27_MAIN_LTO_2S.cad
 NaIon_COLD — натрий с COLD-защитой; LTO_2S — LTO 2S.
 Номиналы соответствуют сборке; DNP означает «не устанавливать».
 Top / Bottom — стороны; номинал виден в Info и карточке компонента.

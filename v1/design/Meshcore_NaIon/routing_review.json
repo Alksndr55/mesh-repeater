@@ -1,10 +1,10 @@
 {
   "format_version": 1,
   "status": "PASS",
-  "product_version": "v1.26",
-  "date": "2026-11-06",
-  "pcb_sha256": "d63c8ce9715893fdf1ac01ed96e5871e03829d34514db07938c6bd416b29f462",
-  "reviewer": "footprint_standardization agent: independent native topology, filled-copper and two-face visual review, 2026-11-06",
+  "product_version": "v1.27",
+  "date": "2026-11-26",
+  "pcb_sha256": "2bfeed198162f9dbff2d4fe1f1bbf42338202a2093b40b03af518be6b4c98258",
+  "reviewer": "Codex: 2026-11-26 exact copper comparison and two-face review",
   "reviewed_faces": [
     "F.Cu",
     "B.Cu"
@@ -416,5 +416,6 @@
       ],
       "electrical_reason": "Expanded L2 land conflicts with this 5 mm ground grid point"
     }
-  ]
+  ],
+  "current_revision_review": "C65 is on F.Cu, with a direct MCU_RESET segment and a thermal GND pad. Reviewed local filled copper on both sides; inherited tracks, vias and exception geometry compared with the previous revision."
 }

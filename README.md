@@ -4,11 +4,11 @@
 
 ### Плата LoRa-репитера для MeshCore и Meshtastic
 
-**v1.26 · одна плата · 90 × 100 мм**
+**v1.27 · одна плата · 90 × 100 мм**
 
 Солнечное питание · Na-ion 1S / LTO 2S · аппаратный watchdog
 
-[Скачать готовый комплект](https://github.com/Alksndr55/mesh-repeater/releases/download/v1.26/Mesh_Repeater_v1.26_KiCad.zip) · [Релиз v1.26](https://github.com/Alksndr55/mesh-repeater/releases/tag/v1.26) · [Двухплатная версия v2](https://github.com/Alksndr55/mesh-repeater-2.0)
+[Скачать готовый комплект](https://github.com/Alksndr55/mesh-repeater/releases/download/v1.27/Mesh_Repeater_v1.27_KiCad.zip) · [Релиз v1.27](https://github.com/Alksndr55/mesh-repeater/releases/tag/v1.27) · [Двухплатная версия v2](https://github.com/Alksndr55/mesh-repeater-2.0)
 
 <img src="media/main-hero.png" alt="Mesh Repeater v1.26 — 3D-вид платы со стороны компонентов" width="880">
 
@@ -73,9 +73,11 @@ Mesh Repeater объединяет радиочасть, солнечный за
 
 При 3,3 В и комнатной температуре расчётные ориентиры составляют около **3,5 часа** ожидания и **1,2 секунды** сброса. При длительном молчании радиомодуля или застрявшем высоком TXEN тайм-аут тоже срабатывает. [Подключение и прошивка watchdog](v1/design/watchdog_reference/INTEGRATION_RU.txt)
 
+В v1.27 на стороне NiceNano платы MAIN установлен C65 (100 нФ, 0805) между MCU_RESET и GND.
+
 ## От схемы — к детали на плате
 
-В ZIP уже включён **portable NexusBV**. Запуск `START.cmd` открывает меню с CAD и PDF-схемой нужной сборки. Двойной щелчок по обозначению или свободной части тела символа в PDF помогает найти компонент на бордвью.
+В ZIP уже включён **portable NexusBV**. Запустите `START_NaIon_COLD.cmd` для Na-ion с COLD или `START_LTO_2S.cmd` для LTO. Двойной щелчок по обозначению или телу символа в PDF находит компонент на плате.
 
 - Два CAD: **NaIon_COLD** и **LTO_2S**, с номиналами и отметками DNP.
 - PDF-схемы, BOM и инструкции по сборке.
@@ -91,20 +93,20 @@ Mesh Repeater объединяет радиочасть, солнечный за
 
 ## С чего начать
 
-1. Скачайте **Mesh_Repeater_v1.26_KiCad.zip** из [релиза](https://github.com/Alksndr55/mesh-repeater/releases/tag/v1.26) и полностью распакуйте его.
-2. Для просмотра запустите `START.cmd` в Windows; для редактирования откройте [проект MAIN](v1/design/Meshcore_NaIon/Meshcore_NaIon.kicad_pro) в KiCad 10.
+1. Скачайте **Mesh_Repeater_v1.27_KiCad.zip** из [релиза](https://github.com/Alksndr55/mesh-repeater/releases/tag/v1.27) и полностью распакуйте его.
+2. Для просмотра запустите файл для нужной химии в Windows; для редактирования откройте [проект MAIN](v1/design/Meshcore_NaIon/Meshcore_NaIon.kicad_pro) в KiCad 10.
 3. Выберите вариант аккумулятора и собирайте плату по [BOM](v1/bom/COMPONENT_BOM.csv) и [общей инструкции](docs/ASSEMBLY_COMMON_RU.md).
 
 **Перед первым включением:** модуль NiceNano требует указанной в инструкции доработки питания. Перед подключением USB нужно снять шунт **J11**, а вернуть его после отключения USB. J8 и J12 соединены с общей BAT: независимые аккумуляторы к ним одновременно не подключают.
 
 ## Документация
 
-[Общая схема PDF](shared/output/pdf/MeshRepeater_schematic.pdf) · [Схема KiCad](shared/schematic/MeshRepeater.kicad_pro) · [Сборка v1](v1/docs/ASSEMBLY_RU.md) · [Аппаратные ограничения](docs/LIMITATIONS_RU.md) · [Изменения выпуска](https://github.com/Alksndr55/mesh-repeater/releases/tag/v1.26)
+[Общая схема PDF](shared/output/pdf/MeshRepeater_schematic.pdf) · [Схема KiCad](shared/schematic/MeshRepeater.kicad_pro) · [Сборка v1](v1/docs/ASSEMBLY_RU.md) · [Аппаратные ограничения](docs/LIMITATIONS_RU.md) · [Изменения выпуска](https://github.com/Alksndr55/mesh-repeater/releases/tag/v1.27)
 
 <details>
 <summary><strong>Статус проекта и проверки</strong></summary>
 
-Это предварительный инженерный выпуск. Для точных файлов v1.26 проверены общая схема, BOM, ERC/DRC, соответствие платы схеме и комплектность архива. Эти проверки не заменяют испытания собранного устройства: дальность связи, автономность, температурные режимы и работа конкретных модулей здесь не заявляются как измеренные характеристики.
+Это предварительный инженерный выпуск. Для точных файлов v1.27 проверены общая схема, BOM, ERC/DRC, соответствие платы схеме и комплектность архива. Эти проверки не заменяют испытания собранного устройства: дальность связи, автономность, температурные режимы и работа конкретных модулей здесь не заявляются как измеренные характеристики.
 
 [Отчёт проверок](v1/audit/current/checks.json) · [Экспорт CAD/PDF](v1/audit/current/exports.json) · [Манифест файлов](RELEASE_MANIFEST.json)
 

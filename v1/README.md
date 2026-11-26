@@ -1,10 +1,9 @@
-# Mesh Repeater v1.26
+# Mesh Repeater v1.27
 
 Designed by @Alksndritm. Текущее исполнение общего проекта.
 Ведущая разводка.
-Предыдущий опубликованный выпуск от 30.10.2026: [v1.25 на GitHub](https://github.com/Alksndr55/mesh-repeater/releases/tag/v1.25).
-Предыдущая публикация — [v1.22](https://github.com/Alksndr55/mesh-repeater/releases/tag/v1.22)
-(прежнее обозначение S4.22). Локальная редакция от 06.11.2026 — v1.26. Следующий номер — v1.27.
+C65 (100 нФ, 0805) расположен на стороне NiceNano у R33 и подключён между
+MCU_RESET и GND. Следующий номер — v1.28.
 
 [MAIN](design/Meshcore_NaIon/Meshcore_NaIon.kicad_pro)
 

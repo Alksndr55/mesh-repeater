@@ -1,9 +1,9 @@
-"""Add invisible component-body hit targets to native KiCad schematic PDFs.
+"""Add component-body hit targets and filter reference search in KiCad PDFs.
 
-The native artwork and visible text are preserved. Existing text has priority
-over the appended targets, so a pin or net label remains independently usable.
-No editable schematic is written. The output replaces the PDF only after its
-complete PDFium rendering and every added reference have been verified.
+The artwork is preserved, and searchable occurrences of a reference are limited
+to its label and body. Existing pin and net text keeps hit-testing priority.
+No editable schematic is written. Replacement requires a matching PDFium render
+and a successful search audit for every reference on every page.
 """
 from __future__ import annotations
 
@@ -20,7 +20,9 @@ from circuit_io import children, one, properties, sexpr, value
 
 sys.path.insert(0, str(Path(__file__).resolve().parent / 'vendor'))
 from pypdf import PdfReader, PdfWriter
-from pypdf.generic import (ArrayObject, DecodedStreamObject, DictionaryObject,
+from pypdf._cmap import get_encoding
+from pypdf._text_extraction import mult
+from pypdf.generic import (ArrayObject, ContentStream, DecodedStreamObject, DictionaryObject,
                            FloatObject, NameObject, NumberObject)
 
 PT_PER_MM = 72 / 25.4
@@ -158,7 +160,10 @@ def schematic_pages(schematic):
             for other in bodies:
                 require(not overlaps(box, other['body_mm']),
                         'Overlapping symbol bodies: ' + ref + '/' + other['reference'])
-            bodies.append({'reference': ref, 'body_mm': box})
+            label = next(p for p in children(symbol, 'property') if value(p[1]) == 'Reference')
+            at = one(label, 'at')
+            bodies.append({'reference': ref, 'body_mm': box,
+                           'label_mm': tuple(map(float, at[1:3])) if at else None})
         pages[number] = {'source': path, 'paper_mm': size, 'bodies': bodies}
         for sheet in children(tree, 'sheet'):
             filename = properties(sheet).get('Sheetfile')
@@ -174,6 +179,91 @@ def schematic_pages(schematic):
     visit(root, 1)
     require(set(pages) == set(range(1, len(pages)+1)), 'Non-contiguous PDF page mapping')
     return pages, sources
+
+
+def isolate_reference_search(writer, page, native, references, height):
+    """Keep the printed artwork, but exclude mentions in notes from PDF search."""
+    stream = ContentStream(page.get_contents(), writer)
+    fonts = page['/Resources']['/Font']
+    font_maps = {name: get_encoding(font.get_object()) for name, font in fonts.items()}
+    pattern = re.compile(r'(?<![A-Za-z0-9])(?:' +
+                         '|'.join(sorted(references, key=len, reverse=True)) +
+                         r')(?![A-Za-z0-9])', re.IGNORECASE)
+    identity = [1, 0, 0, 1, 0, 0]
+    matrix, text_matrix, saved = identity, identity, []
+    font_name = None
+    candidates, runs = {}, {}
+    for index, (args, operator) in enumerate(stream.operations):
+        if operator == b'q':
+            saved.append((matrix, font_name))
+        elif operator == b'Q':
+            matrix, font_name = saved.pop()
+        elif operator == b'cm':
+            matrix = mult(args, matrix)
+        elif operator == b'BT':
+            text_matrix = identity
+        elif operator == b'Tm':
+            text_matrix = args
+        elif operator == b'Tf':
+            font_name = args[0]
+        elif operator == b'Tj':
+            encoding, cmap = font_maps[font_name]
+            raw = args[0].original_bytes
+            decoded = (raw.decode(encoding) if isinstance(encoding, str) else
+                       ''.join(encoding.get(byte, chr(byte)) for byte in raw))
+            decoded = ''.join(cmap.get(char, char) for char in decoded)
+            if not pattern.search(decoded):
+                continue
+            origin = mult(text_matrix, matrix)[4:6]
+            runs[index] = decoded
+            if decoded in references:
+                candidates.setdefault(decoded, []).append((index, origin))
+    keep = set()
+    labels = {}
+    for body in native['bodies']:
+        ref = body['reference']
+        matches = candidates.get(ref, [])
+        require(matches, 'Reference missing from native PDF page: ' + ref)
+        anchor = body['label_mm']
+        if anchor is None:
+            require(len(matches) == 1, 'Ambiguous reference without schematic text position: ' + ref)
+            index, origin = matches[0]
+        else:
+            x, y = anchor
+            label_point = (x*PT_PER_MM, height-y*PT_PER_MM)
+            index, origin = min(matches, key=lambda match: math.dist(match[1], label_point))
+            require(math.dist(origin, label_point) < 25, 'Reference text displaced from symbol: ' + ref)
+        keep.add(index)
+        labels[ref] = list(origin)
+    removed = []
+    replacements = {}
+    for index in sorted(runs.keys() - keep):
+        def split(match):
+            ref = match[0]
+            removed.append(ref.upper())
+            # A zero-width separator only affects extracted text. The KiCad
+            # glyphs and all of their visual positioning remain untouched.
+            return '\u200b'.join(ref)
+        replacements[index] = pattern.sub(split, runs[index]).encode('utf-16-be').hex()
+    if removed:
+        # Keep the original byte streams. Re-encoding all KiCad stroke-font
+        # operands through pypdf can change how existing glyphs are drawn.
+        raw = page.get_contents().get_data()
+        literal = rb'\((?:\\[\s\S]|[^()\\])*\)|<[0-9a-fA-F\s]+>'
+        spans = list(re.finditer(rb'(?:' + literal + rb')\s+Tj\b', raw))
+        indices = [i for i, (_, operator) in enumerate(stream.operations) if operator == b'Tj']
+        require(len(spans) == len(indices), 'Unverified PDF text operator positions')
+        pieces, end = [], 0
+        for index, span in zip(indices, spans):
+            if index in replacements:
+                pieces.extend([raw[end:span.start()],
+                               b'/Span << /ActualText <FEFF' + replacements[index].encode('ascii') + b'> >> BDC ',
+                               span[0], b' EMC'])
+                end = span.end()
+        rewritten = DecodedStreamObject()
+        rewritten.set_data(b''.join([*pieces, raw[end:]]))
+        page[NameObject('/Contents')] = writer._add_object(rewritten)
+    return labels, removed
 
 
 def add_body_font(writer, page, references):
@@ -235,6 +325,10 @@ def load_pdfium():
         'FPDFText_CountChars': (integer,[pointer]), 'FPDFText_GetUnicode': (ctypes.c_uint,[pointer,integer]),
         'FPDFText_GetCharBox': (integer,[pointer,integer,*([ctypes.POINTER(double)]*4)]),
         'FPDFText_GetCharIndexAtPos': (integer,[pointer,double,double,double,double]),
+        'FPDFText_FindStart': (pointer,[pointer,pointer,ctypes.c_ulong,integer]),
+        'FPDFText_FindNext': (integer,[pointer]),
+        'FPDFText_GetSchResultIndex': (integer,[pointer]),
+        'FPDFText_FindClose': (None,[pointer]),
     }
     for name,(result,args) in signatures.items():
         fn = getattr(dll,name)
@@ -247,6 +341,7 @@ def verify_pdf_render(original, enhanced, regions):
     buffers = [ctypes.create_string_buffer(raw) for raw in (original,enhanced)]
     docs = []
     proof = []
+    references = {region['reference'] for page in regions.values() for region in page}
     dll.FPDF_InitLibrary()
     try:
         for buf,raw in zip(buffers,(original,enhanced)):
@@ -281,6 +376,7 @@ def verify_pdf_render(original, enhanced, regions):
                         if dll.FPDFText_GetCharBox(textpage,i,ctypes.byref(left),ctypes.byref(right),ctypes.byref(bottom),ctypes.byref(top)):
                             chars.append((i,dll.FPDFText_GetUnicode(textpage,i),(left.value,bottom.value,right.value,top.value)))
                     verified = []
+                    targets = {}
                     for region in regions.get(index+1,[]):
                         x0,y0,x1,y1 = region['body_pdf']
                         ref = region['reference']; step = (x1-x0)/len(ref)
@@ -296,7 +392,31 @@ def verify_pdf_render(original, enhanced, regions):
                                 i = dll.FPDFText_GetCharIndexAtPos(textpage,x0+(x1-x0)*fx,y0+(y1-y0)*fy,0,0)
                                 hits += i in added
                         require(hits > 0, 'Body entirely covered by existing text: ' + ref)
-                        verified.append({'reference':ref,'body_hit_samples':hits,'samples':15})
+                        targets[ref] = (region, added, hits)
+                    boxes = {i: box for i, _, box in chars}
+                    for ref in sorted(references):
+                        term = ctypes.create_unicode_buffer(ref)
+                        search = dll.FPDFText_FindStart(textpage, term, 2, 0)  # Whole word.
+                        require(search, 'PDFium cannot search for ' + ref)
+                        result_indices = []
+                        try:
+                            while dll.FPDFText_FindNext(search):
+                                result_indices.append(dll.FPDFText_GetSchResultIndex(search))
+                        finally:
+                            dll.FPDFText_FindClose(search)
+                        if ref not in targets:
+                            require(not result_indices, f'Stray reference search result on page {index+1}: {ref}')
+                            continue
+                        region, added, hits = targets[ref]
+                        label = region['label_pdf']
+                        require(any(i in added for i in result_indices),
+                                'Body reference missing from PDFium search: ' + ref)
+                        require(len(result_indices) <= 2 and all(
+                            i in added or (i in boxes and math.dist(boxes[i][:2], label) < 10)
+                            for i in result_indices),
+                            f'Stray reference search result on page {index+1}: {ref}')
+                        verified.append({'reference':ref,'body_hit_samples':hits,'samples':15,
+                                         'reference_search_hits':len(result_indices)})
                     proof.append({'page':index+1,'render_144dpi_identical':True,
                                   'render_sha256':rendered[0][2], 'body_targets':verified})
                 finally:
@@ -321,6 +441,8 @@ def enhance_schematic_pdf(schematic_path, pdf_path):
     writer = PdfWriter()
     writer.clone_document_from_reader(reader)
     regions = {}
+    references = {body['reference'] for p in pages.values() for body in p['bodies']}
+    suppressed = {}
     for number,native in sorted(pages.items()):
         page = writer.pages[number-1]
         require(int(page.get('/Rotate',0))==0 and float(page.get('/UserUnit',1))==1,
@@ -330,17 +452,13 @@ def enhance_schematic_pdf(schematic_path, pdf_path):
                 'PDF/native sheet dimensions mismatch')
         require(tuple(page.cropbox)==tuple(page.mediabox) and float(page.mediabox.left)==0 and float(page.mediabox.bottom)==0,
                 'Unverified PDF crop or origin')
+        require(FONT_NAME not in page['/Resources'].get('/Font', {}),
+                'PDF already contains component-body targets')
+        labels, removed = isolate_reference_search(writer, page, native, references, h)
+        if removed:
+            suppressed[number] = removed
         if not native['bodies']:
             continue
-        fragments = []
-        page.extract_text(visitor_text=lambda text, *_: fragments.append(text))
-        # KiCad puts references and values in adjacent text objects; paragraph
-        # extraction can join R5 + 1M into R51M. Inspect text objects separately.
-        visible_refs = {token for fragment in fragments for token in
-                        re.findall(r'(?<![A-Za-z0-9_])[A-Za-z][A-Za-z0-9_]*(?![A-Za-z0-9_])',fragment)}
-        for body in native['bodies']:
-            require(body['reference'] in visible_refs,
-                    'Reference missing from native PDF page: ' + body['reference'])
         add_body_font(writer,page,[body['reference'] for body in native['bodies']])
         stream = []
         regions[number] = []
@@ -350,7 +468,8 @@ def enhance_schematic_pdf(schematic_path, pdf_path):
             ref = body['reference']; height = y1-y0
             horizontal = 100*(x1-x0)/(len(ref)*height)
             stream.append(f'q BT {FONT_NAME} {height:.9f} Tf {horizontal:.9f} Tz 3 Tr 1 0 0 1 {x0:.9f} {y0:.9f} Tm ({ref}) Tj ET Q\n')
-            regions[number].append({'reference':ref,'body_pdf':[x0,y0,x1,y1]})
+            regions[number].append({'reference':ref,'body_pdf':[x0,y0,x1,y1],
+                                    'label_pdf':labels[ref]})
         target = DecodedStreamObject()
         target.set_data(''.join(stream).encode('ascii'))
         old = page.get('/Contents')
@@ -381,5 +500,6 @@ def enhance_schematic_pdf(schematic_path, pdf_path):
             'schematic_sha256':{str(p):s for p,s in sorted(sources.items())},
             'components':sum(len(v) for v in regions.values()),'pages':len(pages),
             'body_regions':regions,'verification':visual_proof,
+            'suppressed_reference_mentions':suppressed,
             'original_text_has_priority':True,'schematics_unchanged':True,
-            'scope':'Body graphics only; existing text, pin labels and net names retain their original hit priority.'}
+            'scope':'Component bodies and printed references. Mentions in other text are excluded from reference search.'}

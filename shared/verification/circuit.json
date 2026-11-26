@@ -3,13 +3,13 @@
   "leading_product": "v1",
   "authority": "Shared native circuit is the electrical authority; it derives from leading v1. Physical product schematics are checked projections, not automatically generated files.",
   "canonical": "shared/schematic/MeshRepeater.kicad_sch",
-  "canonical_components": 150,
+  "canonical_components": 151,
   "canonical_net_groups": 106,
   "products": {
     "v1": {
-      "version": "v1.26",
-      "native_components": 154,
-      "canonical_components": 150,
+      "version": "v1.27",
+      "native_components": 155,
+      "canonical_components": 151,
       "physical_extras": 4,
       "projected_net_groups": 106,
       "models_checked": [
@@ -36,7 +36,7 @@
     {
       "name": "canonical component count",
       "passed": true,
-      "detail": 150
+      "detail": 151
     },
     {
       "name": "canonical contains functional circuit only",
@@ -163,11 +163,11 @@
     "shared/schematic/3dmodels/TDK_B57861S_Vertical_Approx.step": "605a437a0adc4d4ea826ad05a57c8fddf7ad756bc49f4fd55659f5e829762dc2",
     "shared/schematic/3dmodels/TI_DCT0008A.step": "5507e436c9a888714db3be0ead2e8a9dd78ebebcb8ebf748070695de62ec673e",
     "shared/schematic/3dmodels/TPS63802_DLA0010A.step": "e5e3775caacbf170bd75cf228bb8f9e615edc705298a8c430399939a4b3fd667",
-    "shared/schematic/BatteryMonitor.kicad_sch": "c3e2355b0ea5927de21f55886aeb415e136f9a9dce7ba61213864d474509d62b",
-    "shared/schematic/Converter.kicad_sch": "210e60f07452a52485acffee75df7bd6024e9d652fe21f630584bde0a6fec133",
+    "shared/schematic/BatteryMonitor.kicad_sch": "8f58de20f7874c35ec527a2d65d15480b754f677f1a32f4c3e506654e8e1972a",
+    "shared/schematic/Converter.kicad_sch": "4ad81c109190dd0b110128de462918ec307c1dac5439ff2aafd12b9102ab60bb",
     "shared/schematic/datasheets/LM393XK-Runic-datasheet.pdf": "deef619283f72ffca88edec89b63f7bb21b92f39e30a4d77501c68f83325ef71",
     "shared/schematic/fp-lib-table": "929ebd8ad899d3a0c4231cffab5f806e51cf756a4f2dc32f538793e41bb6aac7",
-    "shared/schematic/LTO_Balancer.kicad_sch": "78260634dcc16af4ba34c4b0cabb5768a0edf06811b1ce5372852b30c5b118c7",
+    "shared/schematic/LTO_Balancer.kicad_sch": "1b4f5384a7740ddc65490376bf0cd68f564d689d464a5c9af270fe2b61bd73ac",
     "shared/schematic/Meshcore.kicad_sym": "19d4253538c44e5035b8866fef46422965dbf2c815ba1079547e4142a655886c",
     "shared/schematic/Meshcore.pretty/BatteryHolder_Keystone_1060_1x2032.kicad_mod": "318b78aa5d1358a85ee459ab3066c94891e282421ccde246afc1680b9b5e97f9",
     "shared/schematic/Meshcore.pretty/C_0603_1608Metric.kicad_mod": "b572d165cd408fc7f013191402e4b4032f46d5d5042c51f2c8e89db2f02a1e54",
@@ -211,30 +211,30 @@
     "shared/schematic/Meshcore.pretty/TPS63802_DLA0010A.kicad_mod": "24d0f2becb9ec1c6b0840ecd46221e9e3a781b94c0cc926b18d09178c4b98952",
     "shared/schematic/Meshcore.pretty/TSSOP-16_4.4x5mm_P0.65mm.kicad_mod": "13f3e661d41daf99a48abae25d82fff9e31d24f7361004050d3e087208ca7f5a",
     "shared/schematic/MeshRepeater.kicad_pro": "803dbee50a78b732c6a49bb499e3ff0db99058fe5e3bbadee11c2f4d1a93c8e7",
-    "shared/schematic/MeshRepeater.kicad_sch": "fe5a7f5bde6e81ca282f7b1e00e649b6ebab9b21d319430133a50969ee74ad91",
-    "shared/schematic/Modules.kicad_sch": "ad22dab85723ae952a0eb439eb5e3bf3819bf673471be931b1e3700314157127",
-    "shared/schematic/RTC_IO.kicad_sch": "bafb490ef3cb0ab8c06b92e93ff0e6ab659c5bf1c6e64414d6c0d3ca022671d3",
+    "shared/schematic/MeshRepeater.kicad_sch": "7a3e16f776ed35ebb66a22eebf5b250da04e38dd5a17401a1e88db64ff415124",
+    "shared/schematic/Modules.kicad_sch": "aca619eee40c8647f45ea33de04e087dd8f2e7246fcb6282b5ddeec9c663e008",
+    "shared/schematic/RTC_IO.kicad_sch": "936308a58cbadb88b37d5b3048771e0b0e1a996cc91ff3cd02fd44b661a653c7",
     "shared/schematic/sym-lib-table": "de9c5f16b051d9120f3e3276ba4ff164cdfd3dbf03ff7e7c7aa164f605c4678d",
-    "shared/schematic/Thermal.kicad_sch": "5ad1897d56d1c70af247a501e033c08d276f45ddd69c0f14313750f12c385d5f",
-    "shared/schematic/Watchdog.kicad_sch": "867491a3abfc6a236f61e8134865293162935cc2fe049cc3233df5177a52302d",
-    "v1/design/Meshcore_NaIon/BatteryMonitor.kicad_sch": "8cd1d2081d35eae061b18fe9a94f610cb0f0951f61953c9537e6d2706caa3f57",
-    "v1/design/Meshcore_NaIon/Converter.kicad_sch": "75aca2bb1d1220d5377409b5cd9df49db09acd11b90ffc0e13f68e0c05d25098",
+    "shared/schematic/Thermal.kicad_sch": "abc3142d07633a732e8ee2b9956deba418f2b894985a61f02423d3b927800ca0",
+    "shared/schematic/Watchdog.kicad_sch": "7e90f9406eb6c6366bd21944817b91145c681085c1c0fb44e86e18ba43ea4b57",
+    "v1/design/Meshcore_NaIon/BatteryMonitor.kicad_sch": "71d25985256b49be0fdac65cdaca0216e742f57cb91aee535024246d75cfabd9",
+    "v1/design/Meshcore_NaIon/Converter.kicad_sch": "d98be5faee3a4ff1e238a3a84644cea165e00b8f91443daa721a46a6cd3f6526",
     "v1/design/Meshcore_NaIon/fp-lib-table": "929ebd8ad899d3a0c4231cffab5f806e51cf756a4f2dc32f538793e41bb6aac7",
-    "v1/design/Meshcore_NaIon/LTO_Balancer.kicad_sch": "08f81bd842de3ada250860d91f6510a63b80451a5494efa9720bcce5acd6f04d",
+    "v1/design/Meshcore_NaIon/LTO_Balancer.kicad_sch": "ec48dba4790a33feb8a3f1f96dc29e49684fafd328c1c5b0b67bc9b62b05c0ec",
     "v1/design/Meshcore_NaIon/Meshcore.kicad_sym": "19d4253538c44e5035b8866fef46422965dbf2c815ba1079547e4142a655886c",
-    "v1/design/Meshcore_NaIon/Meshcore_NaIon.kicad_pcb": "d63c8ce9715893fdf1ac01ed96e5871e03829d34514db07938c6bd416b29f462",
+    "v1/design/Meshcore_NaIon/Meshcore_NaIon.kicad_pcb": "2bfeed198162f9dbff2d4fe1f1bbf42338202a2093b40b03af518be6b4c98258",
     "v1/design/Meshcore_NaIon/Meshcore_NaIon.kicad_pro": "875da18af8e82cc2a15b76d5d1d224200dd3209ebcb9c54425a5c31355582997",
-    "v1/design/Meshcore_NaIon/Meshcore_NaIon.kicad_sch": "fd58e68615c53f80abc5fc272ef66b2d6129999b6b092def069ddf10e04d244a",
-    "v1/design/Meshcore_NaIon/model.json": "e83a16727031092d99a9d940c2647158d621908d1f77053bfe7fcce7b088a621",
-    "v1/design/Meshcore_NaIon/Modules.kicad_sch": "91615d42e3945bde8bf71cd6dc39e0c417ec25f8f5555a34dddcbdcab52a45d6",
-    "v1/design/Meshcore_NaIon/RTC_IO.kicad_sch": "e82e89e3f375b14b2eb8e13aa0de45406b777a0656f7ce97c15c8a9d230d993c",
+    "v1/design/Meshcore_NaIon/Meshcore_NaIon.kicad_sch": "a64419c61654859776f786d54bbbba14b6c2ed7a2a794e57ebbf3032e8c68a9e",
+    "v1/design/Meshcore_NaIon/model.json": "5a18d16dd50565d36e52b417005a876b5462b9a47735454dd1bd824e2c80e9a4",
+    "v1/design/Meshcore_NaIon/Modules.kicad_sch": "02099e7fa94eb48d3aa427b25980ffbe2ebbd9ac2a66916e8f1607ce61038191",
+    "v1/design/Meshcore_NaIon/RTC_IO.kicad_sch": "0e0bb27b8bd8bca81d35cc879a89ea0ffec47f56d48746f123544259e9e07907",
     "v1/design/Meshcore_NaIon/sym-lib-table": "de9c5f16b051d9120f3e3276ba4ff164cdfd3dbf03ff7e7c7aa164f605c4678d",
-    "v1/design/Meshcore_NaIon/Thermal.kicad_sch": "442de2e616def743a74d67d5a2bdc67bd51d20405b1b72a3ab4590c30ce6a04e",
-    "v1/design/Meshcore_NaIon/Watchdog.kicad_sch": "4e0a545809a1351a63c2f3e203e6c6b0fcbe6d7a2e53728a4de0e211aaaa5f12"
+    "v1/design/Meshcore_NaIon/Thermal.kicad_sch": "cf33dda18a3d5ac04ed599d432bdd26d5ccea08ed474b414060332f40cc18f5b",
+    "v1/design/Meshcore_NaIon/Watchdog.kicad_sch": "84fba5e49cd59e54f653a5f9f27f9a87562839e355849e18d4b2300af496542c"
   },
   "configuration_sha256": {
-    "project.json": "313ce355184bcef569bda2cfedad75d7c372e56fa62eb62431654d13f46f8969",
-    "shared/variants.json": "a3d474e0bd0b0605cdc6e529e37601279fb0a4cd6c258dcb3bb25613725c3512"
+    "project.json": "0198d3d59b78929e72e507aaa5a2f053eeb78a0512c8a6d7ae7538b6a519853d",
+    "shared/variants.json": "613ad0c51151fb8e7d084b62813d2b1f00fbec0da3fb58ab32a7674b0fe74ac2"
   },
   "commands": [
     {
